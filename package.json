@@ -1,0 +1,16 @@
+{
+  "name": "ghost-now",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "6.11.x"
+  },
+  "scripts": {
+    "start": "ghost start",
+    "postinstall": "ghost install local"
+  },
+  "dependencies": {
+    "ghost-cli": "^1.0.0"
+  }
+}
