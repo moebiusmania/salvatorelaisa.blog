@@ -8,9 +8,9 @@
   },
   "scripts": {
     "start": "ghost start",
-    "postinstall": "node index.js && ghost install local"
+    "postinstall": "ghost install local"
   },
   "dependencies": {
-    "ghost-cli": "^1.0.0"
+    "ghost-cli": "1.0.0"
   }
 }
