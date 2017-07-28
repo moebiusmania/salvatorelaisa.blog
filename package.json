@@ -7,6 +7,7 @@
     "node": "6.11.x"
   },
   "scripts": {
+    "start": "ghost start",
     "postinstall": "ghost install local --dir blog"
   },
   "dependencies": {
