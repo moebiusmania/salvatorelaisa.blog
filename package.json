@@ -7,7 +7,7 @@
     "node": "6.11.x"
   },
   "scripts": {
-    
+    "start": "node simple.js"
   },
   "dependencies": {
     "ghost-cli": "1.0.0"
