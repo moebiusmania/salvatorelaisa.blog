@@ -7,10 +7,10 @@
     "node": "6.11.x"
   },
   "scripts": {
-    "start": "ghost start",
-    "postinstall": "ghost install local --dir blog"
+    "start": "node index.js",
+    "postinstall": "knex-migrator init"
   },
   "dependencies": {
-    "ghost-cli": "1.0.0"
+    "ghost": "1.1.0"
   }
 }
