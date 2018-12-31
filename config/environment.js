@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +21,24 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    blog: {
+      title: 'Salvatore Laisa',
+      description: 'Blog personale',
+      coverImage: 'https://github.com/moebiusmania/blog-assets/blob/master/images/37146_1659639097009_5747307_n.jpg?raw=true',
+
+      navigation: [
+        {
+          label: 'Home',
+          route: 'index'
+        }, 
+        // {
+        //   label: 'Built by Chris Manson',
+        //   route: 'page',
+        //   id: 'chris-manson'
+        // }
+      ]
     }
   };
 
