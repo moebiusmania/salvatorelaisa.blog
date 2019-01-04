@@ -51,6 +51,7 @@
     "ember-source": "~3.6.0",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
+    "gh-pages": "^2.0.1",
     "loader.js": "^4.7.0",
     "prember": "^1.0.1",
     "qunit-dom": "^0.8.0"
