@@ -11,7 +11,7 @@ tags:
 ---
 
 ##### Quindi essenzialmente, che fai nella vita?
-Attualmente sono **Head of UI Engineering** presso [Bitrock](https://bitrock.it/). Se vi interessano le mie skills e la mia storia professionale/lavorativa il [mio profilo LinkedIn](https://it.linkedin.com/in/salvatorelaisa) potrà darvi tutte le risposte che cercate.
+Attualmente sono **Head of UI Engineering**  presso [Bitrock](https://bitrock.it/). Se vi interessano le mie skills e la mia storia professionale/lavorativa il [mio profilo LinkedIn](https://it.linkedin.com/in/salvatorelaisa) potrà darvi tutte le risposte che cercate.
 
 <!-- Attualmente sono **Lead Frontend Engineer** presso **[ContactLab](http://www.contactlab.com/it/)**. Tradotto in parole povere: sviluppo interfacce utente (*quello che vedete e cliccate/touchate*) di applicazioni Web.  -->
 
