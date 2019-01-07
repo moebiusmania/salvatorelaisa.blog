@@ -1,3 +1,7 @@
 .post-full-content h5 {
   color: inherit;
 }
+
+.post-full-content iframe {
+  width: 100%;
+}
