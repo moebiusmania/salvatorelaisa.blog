@@ -25,7 +25,7 @@ Come kilometri non mi sono spostato di tantissimo, dato che comunque ho preso ca
 
 Sono tutte piccole cose, ma messe insieme per uno che arriva dall'essere quasi il "*ragazzo di campagna*" fanno una certa differenza.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p6tRfEhPdaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="450" src="https://www.youtube.com/embed/p6tRfEhPdaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
