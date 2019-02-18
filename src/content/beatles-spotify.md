@@ -4,7 +4,7 @@ image: https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Sat Dec 26 2015 16:31:50 GMT+0100 (IST)
 tags:

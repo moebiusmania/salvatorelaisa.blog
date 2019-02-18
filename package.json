@@ -6,12 +6,16 @@
   "license": "MIT",
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "scripts": {
+    "start": "vuepress dev ./src",
     "deploy": "gh-pages -d dist",
+    "build:static": "vuepress build ./src -d ./dist",
     "build:cname": "cp ./CNAME ./dist/CNAME",
     "build:clean": "rm -rf dist",
-    "build": "npm run build:clean && npm run build && npm run build:cname"
+    "build": "npm run build:clean && npm run build:static && npm run build:cname"
   },
-  "devDependencies": {
-    
+  "devDependencies": {},
+  "dependencies": {
+    "vuepress": "1.0.0-alpha.39",
+    "vuepress-theme-casper": "1.0.2"
   }
 }

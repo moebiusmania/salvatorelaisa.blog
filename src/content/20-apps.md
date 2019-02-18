@@ -4,7 +4,7 @@ image: https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Sun Nov 17 2013 15:00:00 GMT+0100 (Central European Standard Time)
 tags:

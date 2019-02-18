@@ -4,7 +4,7 @@ image: https://farm8.staticflickr.com/7296/11419059095_b2e901a675_k.jpg
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Sat Feb 15 2014 18:00:00 GMT+0100 (Central European Standard Time)
 tags:

@@ -4,7 +4,7 @@ image: https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Et
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Sun Aug 20 2018 22:14:10 GMT+0100 (Central European Standard Time)
 tags:

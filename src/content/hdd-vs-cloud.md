@@ -4,7 +4,7 @@ image: https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg
 imageMeta:
   attribution:
   attributionLink: https://www.flickr.com/photos/wwarby/11644168395/
-featured: true
+type: post
 author: salvatore
 date: Sun Jun 07 2015 10:22:00 GMT+0100 (Central European Standard Time)
 tags:

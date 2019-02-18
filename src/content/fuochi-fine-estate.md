@@ -4,7 +4,7 @@ image: https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Mon Sep 7 2015 07:51:00 GMT+0100 (IST)
 tags:

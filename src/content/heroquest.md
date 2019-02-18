@@ -4,7 +4,7 @@ image: https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxre
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Sun Mar 01 2015 20:10:09 GMT+0100 (Central European Standard Time)
 tags:

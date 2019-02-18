@@ -4,7 +4,7 @@ image: https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-0.3
 imageMeta:
   attribution:
   attributionLink:
-featured: true
+type: post
 author: salvatore
 date: Thu Nov 2 2017 21:17:16 GMT+0100 (IST)
 tags:
