@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Mar 01 2015 20:10:09 GMT+0100 (Central European Standard Time)
+publish: 2015-03-01
 tags:
   - riflessioni
 ---

@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Mon Sep 7 2015 07:51:00 GMT+0100 (IST)
+publish: 2015-09-07
 tags:
   - eventi
 ---

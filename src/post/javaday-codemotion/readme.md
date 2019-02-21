@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Thu Jan 13 2011 15:00:00 GMT+0100 (IST)
+publish: 2011-01-13
 tags:
   - eventi
   - codemotion

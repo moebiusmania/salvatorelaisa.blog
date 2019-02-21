@@ -16,6 +16,6 @@
   "devDependencies": {},
   "dependencies": {
     "vuepress": "1.0.0-alpha.39",
-    "vuepress-theme-casper": "1.0.2"
+    "vuepress-theme-casper": "https://github.com/moebiusmania/vuepress-theme-casper"
   }
 }

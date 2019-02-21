@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Tue Apr 23 2013 19:00:00 GMT+0100 (Central European Standard Time)
+publish: 2013-04-23
 tags:
   - eventi
 ---

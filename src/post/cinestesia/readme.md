@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sat May 21 2011 18:00:00 GMT+0100 (IST)
+publish: 2011-05-21
 tags:
   - eventi
   - musica

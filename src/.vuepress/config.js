@@ -38,5 +38,8 @@ module.exports = {
       instagram: 'https://instagram.com/moebiusmania',
       linkedin: 'https://www.linkedin.com/in/salvatorelaisa'
     }
-  }
+  },
+  plugins: [
+    
+  ]
 }

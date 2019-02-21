@@ -7389,10 +7389,9 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-theme-casper@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-casper/-/vuepress-theme-casper-1.0.2.tgz#ec3b9b4cb19060d1d4ddf77fe9a68a4aef4154f9"
-  integrity sha512-j12Pyn3NSURW/Gki70YW5hfRnLUyBch4QUWHtOIJ7CoNXHVaPc7xxCCGX5HGZjoa3e3ZwKWITJ7mWxd+2eHpPw==
+"vuepress-theme-casper@https://github.com/moebiusmania/vuepress-theme-casper":
+  version "1.1.0"
+  resolved "https://github.com/moebiusmania/vuepress-theme-casper#4aed115cd967366e126a6536570b57d756230d0f"
   dependencies:
     lodash "^4.17.10"
     node-sass "^4.9.0"

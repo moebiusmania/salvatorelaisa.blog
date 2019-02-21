@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Nov 17 2013 15:00:00 GMT+0100 (Central European Standard Time)
+publish: 2013-11-17
 tags:
   - web
 ---

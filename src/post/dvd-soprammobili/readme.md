@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Thu Nov 2 2017 21:17:16 GMT+0100 (IST)
+publish: 2017-11-02
 tags:
   - video
   - dvd

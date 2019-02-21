@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Aug 29 2010 14:22:16 GMT+0100 (IST)
+publish: 2010-08-29
 tags:
   - tecnicismi
   - web

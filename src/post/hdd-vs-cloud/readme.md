@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Jun 07 2015 10:22:00 GMT+0100 (Central European Standard Time)
+publish: 2015-07-07
 tags:
   - tecnicismi
 ---

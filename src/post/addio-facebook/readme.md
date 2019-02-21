@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Fri Jan 4 2019 21:17:16 GMT+0100 (IST)
+publish: 2019-01-04
 tags:
   - social
   - facebook

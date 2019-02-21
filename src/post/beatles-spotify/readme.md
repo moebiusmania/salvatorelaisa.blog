@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Sat Dec 26 2015 16:31:50 GMT+0100 (IST)
+publish: 2015-12-26
 tags:
   - musica
   - beatles
