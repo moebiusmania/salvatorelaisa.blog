@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Tue Feb 24 2015 09:01:58 GMT+0100 (Central European Standard Time)
+publish: 2015-02-24
 tags:
   - blog
 ---
 
 Primo trasloco totale per il mio sito personale: ho cambiato **hosting, dominio, e sistema di pubblicazione**! 
+
+<!-- more -->
 
 Lato tecnico è una bella rivoluzione, ma anche sui contenuti e obiettivo del sito sto facendo dei bei cambiamenti: lo utilizzerò solamente come **blog personale**, con forse un paio di paginette statiche su di me e qualche mio progetto, e ho fatto un po di pulizia e ordine negli articoli trasportati da quello vecchio. Non mi sono autocensurato, semplicemente alcuni articoli erano in realtà più da portfolio (di allora), tutti gli altri sono qui, o stanno tornando, sistemati come marcatura e immagini.
 

@@ -16,6 +16,8 @@ tags:
 ---
 Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un **gioco di ruolo (*GdR*)**.
 
+<!-- more -->
+
 Poi è capitato un pomeriggio a casa di un vicino che aveva da poco comprato il gioco **HeroQuest** e ho fatto la mia prima partita: statuine, carte, stanza quasi al buio con giusto un paio di abat-jour accesi per fare atmosfera... uno dei pomeriggi ludici più belli della mia vita, non per altro me lo ricordo ancora così bene 🙂. 
 
 Per un annetto abbiamo ripetuto diverse volte il rito della partita a HeroQuest, quasi sempre con ottimi risultati. Ovviamente nonostante diverse suppliche mio padre si rifutò più volte di comprarmelo.

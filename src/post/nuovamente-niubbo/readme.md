@@ -7,11 +7,12 @@ imageMeta:
 type: post
 author: salvatore
 date: Sat Oct 17 2015 12:00:00 GMT+0100 (Central European Standard Time)
+publish: 2015-10-17
 tags:
   - riflessioni
 ---
 
-> **niubbo**: italianizzazione di newbie/noob che a sua volta è uno slang per dire "novellino" o "novizio".
+> **niubbo**: italianizzazione di newbie/noob che a sua volta è uno slang per dire "novellino" o "novizio". <!-- more -->
 
 Quando si è esperti in qualcosa c'è in genere la soddisfazione del poter fare più o meno quello che si vuole in quel preciso argomento, e c'è tanta soddisfazione nella padronanza che si è ottenuta, ma purtroppo il prezzo da pagare è la "perdita" (o la netta riduzione) del **fattore "wow"** che in alcuni casi può anche portare alla noia o all'appiattimento dell'esperienza.
 

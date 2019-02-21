@@ -16,6 +16,8 @@ tags:
 
 Per ben **4 anni** sono stato un’intrippatissimo utente [Firefox](https://www.mozilla.org/it/firefox/new/), dato il mio lavoro però sono “costretto” a sperimentare e lavorare anche su altri browser e questo mi ha portato nell’ultimo anno a scegliere come mio browser principale [Chrome](https://www.google.it/chrome/browser/desktop/) di Google.
 
+<!-- more -->
+
 A distanza di un anno da questo passaggio, continuando a lavorare anche con Firefox, ho potuto notare queste differenze:
 
 #### Chrome è più veloce

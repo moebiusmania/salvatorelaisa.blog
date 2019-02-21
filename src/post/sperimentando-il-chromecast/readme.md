@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Sat Feb 15 2014 18:00:00 GMT+0100 (Central European Standard Time)
+publish: 2014-02-15
 tags:
   - tecnicismi
 ---
 
 Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il **Chromecast**.
+
+<!-- more -->
 
 Per chi non lo conoscesse si tratta di una [specie di chiavetta](http://www.google.it/intl/it/chrome/devices/chromecast/) (leggesi *dongle*) da attaccare alla porta HDMI del televisore per poter fare streaming dei contenuti da smartphone / tablet/ pc.
 

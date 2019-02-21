@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Thu Nov 24 2011 21:00:00 GMT+0100 (IST)
+publish: 2011-11-24
 tags:
   - blog
 ---
 
 In 24 ore la [notizia](http://www.ilpost.it/2011/11/22/splinder-chiude-il-31-gennaio-2012/) ha fatto il giro del web, italiano si intende, **Splinder chiude**.
+
+<!-- more -->
 
 <!-- [](https://dl.dropboxusercontent.com/u/4531398/blog/Splinder-logo.gif) -->
 

@@ -18,6 +18,7 @@ tags:
 2. si possono ascoltare i loro pezzi gratuitamente e legalmente
 3. "Across the universe"
 4. tutti dovrebbero conoscere almeno una decina dei loro pezzi a memoria
+<!-- more -->
 5. ci sono 5 playlist tematiche ufficiali di Spotify sui Fab Four
 6. "Lucy in the sky with diamonds"
 7. potete leggervi (o cantare) i testi delle loro canzoni mentre li ascoltate (se finora eravate stati troppo pigri per farlo)

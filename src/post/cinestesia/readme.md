@@ -15,6 +15,8 @@ tags:
 
 Purtroppo anche quest'anno si chiuda la stagione di **[Cinestesia](https://www.facebook.com/cinestesia.pavia)**, la terza che seguo da quando ho scoperto quest'iniziativa.
 
+<!-- more -->
+
 Ogni terzo martedì del mese a [SpazioMusica](http://www.spaziomusicapavia.it/) (storico locale di Pavia noto per musica live ggggiusta) viene proiettato un film del cinema **anni '20 - '30 senza audio**, e dietro al telo su cui viene proiettato il film il collettivo **BluesForce** improvvisa al momento musiche ed effetti sonori per il film. Superfluo dire che il risultato è un qualcosa di inimmaginabile bellezza.
 
 Ogni anno viene scelto un **tema** diverso, questa stagione è stata la "sfida" tra Buster Keaton e Charlie Chaplin, quindi oltre ad ottimi film e ottima musica mi sono anche fatto due risate!

@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Mon Feb 21 2011 17:00:00 GMT+0100 (IST)
+publish: 2011-02-21
 tags:
   - talk
   - eventi
@@ -14,6 +15,8 @@ tags:
 ---
 
 Beh se proprio non ha niente da fare può fare un salto **a Roma il 5 Marzo** per il [Codemotion](http://www.codemotionworld.com/)!
+
+<!-- more -->
 
 L'evento (gratuito) sarà diviso in 7 tracce con un totale di 60 interventi nel giro della giornata e si palerà di linguaggi, di gaming, mobile, web e altro ancora!
 

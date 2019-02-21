@@ -12,7 +12,7 @@ tags:
   - tecnicismi
 ---
 
-Stamattina ero al [Radiant](http://www.parcoesposizioninovegro.it/le-fiere-a-z/radiant-and-silicon.html), una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare (*nerd smile*) e tra le "bancarelle" mi è caduto l'occhio su un Hard-disk da 3TB a circa 80/90 euro, essendo un mezzo ossessionato per l'archiviazione e i backup mi stava venenedo quasi istintivo prenderlo, ma poi mi sono fatto la solita domanda: **ma poi, che me ne faccio?**
+Stamattina ero al [Radiant](http://www.parcoesposizioninovegro.it/le-fiere-a-z/radiant-and-silicon.html), una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare <!-- more --> (*nerd smile*) e tra le "bancarelle" mi è caduto l'occhio su un Hard-disk da 3TB a circa 80/90 euro, essendo un mezzo ossessionato per l'archiviazione e i backup mi stava venenedo quasi istintivo prenderlo, ma poi mi sono fatto la solita domanda: **ma poi, che me ne faccio?**
 
 > In realtà è la domanda che, anche se non sembra, mi faccio tutte le volte che sto per comprare qualche nerdata.
 

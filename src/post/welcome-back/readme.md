@@ -7,6 +7,7 @@ imageMeta:
 type: post
 author: salvatore
 date: Mon Dec 30 2018 18:59:59 GMT+0100 (IST)
+publish: 2018-12-30
 tags:
   - tecnicismi
   - blog
@@ -15,6 +16,8 @@ tags:
 Ebbene si.
 
 Terzo "remake" di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (*ma di questo ne parleremo un'altra volta...*).
+
+<!-- more -->
 
 D'altronde per noi smanettoni il blog/sito personale è il giocattolo su cui possiamo fare tutte le sperimentazioni che vogliamo sapendo che alla peggio faremo solo un danno a noi stessi 🤣.
 

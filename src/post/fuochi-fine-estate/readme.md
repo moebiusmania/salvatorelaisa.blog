@@ -16,6 +16,8 @@ tags:
 
 Da circa 15 anni (stranamente non mi ricordo la prima esatta volta..) non manco mai allo spettacolo pirotecnico della Festa del Ticino di Pavia, che avviene ogni anno intorno alla prima settimana di Settembre.
 
+<!-- more -->
+
 Ho preso il vizio di chiamarli **fuochi di fine estate** perché le prime volte che ci andavo, frequentavo ancora l'ITIS di Pavia e lo spettacolo dei fuochi precedeva di qualche giorno l'inizio dell'anno scolastico marcando per molti motivi la fine dell'estate.
 
 Da allora un po come piccola tradizione personale non sono mai mancato a questo evento, compresi gli anni che erano stati annullati per pioggia 😛. 

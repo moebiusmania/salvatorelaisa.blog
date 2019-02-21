@@ -12,7 +12,7 @@ tags:
   - eventi
 ---
 
-Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del **[Codemotion](http://rome.codemotionworld.com/)** (*in teoria la quarta vista anche l'edizione intermedia di Venezia*), anche quest'anno ci sono andato nella veste di speaker ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di [Appsterdam Milano](http://www.appsterdammilan.com/), cosa che devo ammettere ha dato veramente un tocco un più al tutto specialmente viste le precedenti edizioni alle quali ero andato quasi da solo.
+Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del **[Codemotion](http://rome.codemotionworld.com/)** (*in teoria la quarta vista anche l'edizione intermedia di Venezia*), anche quest'anno ci sono andato nella veste di speaker <!-- more --> ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di [Appsterdam Milano](http://www.appsterdammilan.com/), cosa che devo ammettere ha dato veramente un tocco un più al tutto specialmente viste le precedenti edizioni alle quali ero andato quasi da solo.
 
 Potersi fare un paio di sane risate nerd con vecchi e nuovi conoscenti ha veramente dato quel tocco umano e di "emotion" ad un evento che ha già una buona dimensione umana e che è in grado di infonderti una valangata di nozioni tecniche e non in sole 24 ore.
 

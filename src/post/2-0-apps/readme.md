@@ -14,6 +14,8 @@ tags:
 
 Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!
 
+<!-- more -->
+
 Quando il direttore didattico di <a href="http://scuola.mohole.it" target="_blank">Mohole</a> mi disse a Luglio che aveva intenzione di rinominare la scuola di "Web 2.0" in "Web e Apps" rimasi sorpreso di come non fui stato in grado di suggerire io questa cosa, in quanto smanettone aziendale.\\n\\nCome è cambiato il web da come lo conoscevamo pochi anni fa ad oggi? E' cambiato per tante cose ma principalmente possiamo riassumere il tutto in 3 punti: **informazione**, **strumenti** e **fruizione**.
 
 #### Ha ancora senso parlare di "edizione straordinaria"? (informazione)

@@ -17,6 +17,8 @@ tags:
 ### Ma quindi, perché l'hai fatto?
 Non l'ho fatto per un singolo motivo preciso, diciamo che è più una raccolta di **"sintomi"** che una volta ponderati mi hanno fatto capire che tanto valeva compiere questo passo, li elenco brevemente:
 
+<!-- more -->
+
 * in 10 anni di account, i primi 5 sono stato abbastanza attivo, i restanti 5 invece più di qualche lettura di post o foto o like qua e la non ho praticamente fatto nulla, quindi di per se il mio profilo era già "fermo".
 * nessuna novità significativa è stata introdotta negli ultimi anni.
 * mediamente girano più condivisioni di altre fonti, persone o pagine, che contenuti genuini degli utenti.

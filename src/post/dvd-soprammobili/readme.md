@@ -14,7 +14,7 @@ tags:
   - nostalgia
 ---
 
-Mi accingo a prepararmi al mio prossimo trasloco e spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento... non li ho mai aperti (*e inseriti nel lettore*) e non mi ricordo neanche quando è stata l'ultima volta.
+Mi accingo a prepararmi al mio prossimo trasloco e spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento... <!-- more --> non li ho mai aperti (*e inseriti nel lettore*) e non mi ricordo neanche quando è stata l'ultima volta.
 
 Per quasi 3 anni ho avuto un [Nexus Player](https://www.asus.com/us/Home-Entertainment/Nexus_Player/) e da poco sono passato a un [Nvidia Shield TV](https://www.nvidia.com/en-us/shield/shield-tv/), ma indipendetemente dall'aggeggio, all'inizio questo era più un qualcosa che insieme al lettore DVD e la TV stessa mi fornivano varie opzioni per l'intrattenimento casalingo.
 

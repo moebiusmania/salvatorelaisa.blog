@@ -7,11 +7,12 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Oct 16 2011 15:00:00 GMT+0100 (Central European Standard Time)
+publish: 2011-10-16
 tags:
   - blog
 ---
 
-Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l'esatto **contrario**... 
+Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l'esatto **contrario**... <!-- more -->
 
 ho lavorato per anni senza averne propriamente uno mio. E' il paradosso per il quale facendo siti per altri non avevo tempo di farlo per me 🙂 però c'è stato un momento in cui ho avuto l'esigenza (*urgente*) di averlo e allora un po di fretta prendendo un'ottimo tema sviluppato da <a href="http://cudazi.com/" target="_blank">Cudazi</a> (*si chiama <a href="http://themeforest.net/item/open-by-cudazi/95080" target="_blank">Open</a>*) ho fatto un po di modifiche, più funzionali che di design... ed è uscito questo.
 

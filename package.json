@@ -15,6 +15,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@vuepress/plugin-back-to-top": "1.0.0-alpha.39",
+    "@vuepress/plugin-last-updated": "1.0.0-alpha.39",
     "vuepress": "1.0.0-alpha.39",
     "vuepress-theme-casper": "https://github.com/moebiusmania/vuepress-theme-casper"
   }

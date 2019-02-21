@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Thu Jun 2 2011 14:52:00 GMT+0100 (IST)
+publish: 2011-06-02
 tags:
   - fotografia
 ---
 
 Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂.
+
+<!-- more -->
 
 Ho sempre strizzato l’occhiolino però al mondo della fotografia e negli ultimi due anni mi ci sono impegnato abbastanza sia come conoscenze che come spese, cercando comunque di non esagerare. Con gli ultimi acquisti penso di aver raggiunto il mio setup ideale per le mie amatoriali-intrippate-non-stratosferiche ambizioni fotografiche, attualmente il mio “setup” è composto da:
 

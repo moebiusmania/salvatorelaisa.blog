@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Aug 20 2018 22:14:10 GMT+0100 (Central European Standard Time)
+publish: 2018-08-20
 tags:
   - gaming
 ---
 
-Questo lo inserisco nella lista "*giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe*".
+Questo lo inserisco nella lista "*giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe*". 
+
+<!-- more -->
 
 L'ho appunto comprato per caso e devo dire, ora che l'ho terminato, che è stato un ottimo acquisto e una bella storia in cui immergersi per un'intera serata.
 

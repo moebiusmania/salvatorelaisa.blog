@@ -13,7 +13,7 @@ tags:
   - codemotion
 ---
 
-Per quattro anni il **Javaday** Roma ha offerto un evento unico in Italia per contenuti, affluenza e spirito. L’atmosfera trascinante del Javaday ha saputo conquistare e coinvolgere i partecipanti e gli sponsor. Per continuare ad essere la manifestazione di riferimento degli sviluppatori, il Javaday si evolve e diviene **Codemotion**.
+Per quattro anni il **Javaday** Roma ha offerto un evento unico in Italia per contenuti, affluenza e spirito. L’atmosfera trascinante del Javaday ha saputo conquistare e coinvolgere i partecipanti e gli sponsor. <!-- more --> Per continuare ad essere la manifestazione di riferimento degli sviluppatori, il Javaday si evolve e diviene **Codemotion**.
 
 Codemotion compie un grande salto rispetto al Javaday: apre a tutti i linguaggi e tecnologie, catalizzando ancora di più sorgenti di creatività e opportunità di lavoro. Infine, sposta l’attenzione da un prodotto (Java, a suo tempo di Sun, ora di Oracle) ad una disciplina: **la programmazione**, a vantaggio di tutti.
 

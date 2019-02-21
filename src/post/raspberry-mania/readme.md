@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Wed Feb 06 2019 21:17:00 GMT+0100 (Central European Standard Time)
+publish: 2019-02-06
 tags:
   - iot
 ---
 
 Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) in regalo... ed è partita la mia nuova mania per questi mesi 🤣.
+
+<!-- more -->
 
 Veloce riassunto per chi non sapesse di cosa sto parlando, i **Raspberry Pi** sono dei *single-board computers* , ovviamente e volutamente di scarsa potenza di calcolo rispetto a un PC tradizionale, ma data la loro natura estremamente compatta e il prezzo contenuto sono ideali per progetti fai-da-te di domotica o **Internet of Things** (*IoT*).
 

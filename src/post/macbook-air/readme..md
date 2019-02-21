@@ -14,6 +14,8 @@ tags:
 
 Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](*http://www.apple.com/it/macbookair/*)**. 
 
+<!-- more -->
+
 Per quanto detesti le politiche e modus operandi della Apple non ho mai potuto negare la qualità dei loro prodotti (*sopratutto a livello hardware*) anche se, come sottolineo spesso, non sono esenti da difetti e problemi che spesso per "fanboysmo" molti non vogliono ammettere.
 
 Forse proprio perché tendo a essere molto critico con i computer indifferentemente dal marchio che c'è appiccicato sopra (ho usato per anni PC assemblati Windows, e il mio computer "casalingo" attuale è un notebook HP) sono rimasto molto colpito da questo Air.

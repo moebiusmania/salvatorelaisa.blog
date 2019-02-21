@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Sat Nov 3 2018 12:00:00 GMT+0100 (IST)
+publish: 2018-11-03
 tags:
   - riflessioni
 ---
 
 Qualche anno fa avrei, anzi ho, fatto i salti mortali pur di non trasferirmi a Milano... ma dopo 10 anni di pendolarismo dall'hinterland sud, ad Agosto dello scorso anno (*2017*) ho preso alla fine questa decisione e dal Novembre successivo mi sono spostato qui.
+
+<!-- more -->
 
 Anche se lavoro a Milano dal 2009, gran parte della mia vita *mondana* avveniva a **Pavia**, quindi il vivere a metà strada tra le due città mi faceva molto comodo. Ma i tempi cambiano, si diventa grandi (*per non dire che si invecchia 🤣*), si esce di meno, cominici ad avere giri di amici anche a Milano, chi come te frequentava il versante pavese ha cambiato città, ti ritrovi a passare più tempo in quella città che prima volevi evitare, ti accorgi che in fondo non è cosi male e sta migliorando, l'altra città dove spendevi il grosso dei weekend inizi a vederla si e no una volta al mese, inizi a essere stufo di fare avanti a indietro ogni giorno per essere sempre nello stesso posto... e a quel punto finiscono le scuse per non trasferirisi!
 
