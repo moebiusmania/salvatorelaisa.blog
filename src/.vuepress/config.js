@@ -2,7 +2,7 @@ module.exports = {
   title: 'Salvatore Laisa',
   description: 'Blog personale.',
   base: '/',
-  theme: 'vuepress-theme-casper',
+  // theme: 'vuepress-theme-casper',
   // head: [
   //   ['link', { rel: 'icon', href: '/favicon.png' }]
   // ],
