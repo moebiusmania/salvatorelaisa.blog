@@ -14,5 +14,10 @@ I've hard coded the credited theme within the VuePress instance codebase since I
 * compatibility with VuePress v1.0 (*alpha*)
 * fixed posts chronological sorting in home page
 
+<!-- ### VuePress plugins
+* pwa
+* google-analytics
+* back-to-top -->
+
 ### License
 The code in this repository is released under the [MIT license](LICENSE), except where is differently specified.
