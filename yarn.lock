@@ -7545,7 +7545,7 @@ vuepress-html-webpack-plugin@^3.2.0:
 
 "vuepress-theme-casper@https://github.com/moebiusmania/vuepress-theme-casper":
   version "1.1.0"
-  resolved "https://github.com/moebiusmania/vuepress-theme-casper#d39cdbce2094c0b7d2ac9d620a0029b7f107bc84"
+  resolved "https://github.com/moebiusmania/vuepress-theme-casper#2b4a3b242d0688acc33cd0acefa1da9e977700f4"
   dependencies:
     lodash "^4.17.10"
     node-sass "^4.9.0"
