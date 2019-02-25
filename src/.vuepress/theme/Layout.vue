@@ -127,6 +127,11 @@ export default {
     background-size: inherit;
   }
 
+  .global-ui {
+    position: relative;
+    z-index: 999;
+  }
+
   /* 3. Special Template Styles
   /* ---------------------------------------------------------- */
   @media (min-width: 900px) {

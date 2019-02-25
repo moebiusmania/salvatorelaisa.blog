@@ -1,6 +1,6 @@
 ---
 title: Machinarium - il mio ritorno ai "punta e clicca"
-image: http://amanita-design.net/img/wallpapers/machinarium/machinarium-wallpaper-cover-1920x1200.jpg
+image: https://amanita-design.net/img/wallpapers/machinarium/machinarium-wallpaper-cover-1920x1200.jpg
 imageMeta:
   attribution:
   attributionLink:
