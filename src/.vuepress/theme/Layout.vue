@@ -117,6 +117,16 @@ export default {
     width: 100%;
   }
 
+  .post-full-content {
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .site-header {
+    background-size: inherit;
+  }
+
   /* 3. Special Template Styles
   /* ---------------------------------------------------------- */
   @media (min-width: 900px) {

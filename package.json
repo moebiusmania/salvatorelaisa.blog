@@ -13,7 +13,9 @@
     "build:clean": "rm -rf dist",
     "build": "npm run build:clean && npm run build:static && npm run build:cname"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "1.0.0-alpha.0"
+  },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.0.0-alpha.39",
     "@vuepress/plugin-last-updated": "1.0.0-alpha.39",

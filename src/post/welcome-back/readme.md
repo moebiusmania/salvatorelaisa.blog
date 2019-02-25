@@ -27,7 +27,7 @@ E ora una breve lista delle novità:
 sono passato a un più esplicito **.blog**, tanto alla fine lo uso solo per questo... e come provider sono passato da GoDaddy all'italiana [Netsons](https://www.netsons.com/). Non dovendo fare nulla di particolare con il dominio ho trovato GoDaddy alquanto confusionario e furbetto sulla parte dei prezzi.
 
 #### Gestione e hosting del sito
-Dopo WordPress e Ghost è giunta l'ora di passare a uno static site generator. Ne ho scelto uno non molto famoso ma semplice (*che eral a cosa che volevo più di tutte*) e che riutilizza il tema Casper di Ghost, motivo per cui esteticamente non è cambiato molto.
+Dopo WordPress e Ghost è giunta l'ora di passare a uno static site generator. Non ci ho messo troppo a optare per [VuePress](https://vuepress.vuejs.org/)  dato che ultimamente l'ho molto apprezzato su altri progetti e perché ho trovato un [porting del tema Casper](https://github.com/alexander-heimbuch/vuepress-theme-casper), motivo per cui esteticamente non è cambiato molto.
 
 * **WordPress**: paradossalmente è diventato bloated per dei "banali" blog ed è abbastanza difficile da incastrare in un sistema di versionamento, altro paletto che ho posto fondamentale per questo remake.
 
