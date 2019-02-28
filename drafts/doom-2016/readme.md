@@ -7,11 +7,14 @@ imageMeta:
 type: post
 author: salvatore
 date: Sun Sep 02 2018 13:42:16 GMT+0100 (Central European Standard Time)
+publish: 2018-09-02
 tags:
   - gaming
 ---
 
 Avevo comprato l'ultimo Doom durante i saldi di natale 2017 ma era rimasto dormiente nella mia libreria di Steam. Poi l'[annuncio del prossimo capitolo](https://www.youtube.com/watch?v=CGq8Ee2gOe4), Doom Eternal, mi ha ricordato che era l'ora di bussare alle porte dell'inferno a colpi di fucile 😎.
+
+<!-- more -->
 
 Quando si parla di Doom c'è poco da dire...
 
