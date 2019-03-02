@@ -8,13 +8,15 @@
   "scripts": {
     "start": "vuepress dev ./src",
     "deploy": "gh-pages -d dist",
+    "new:post": "node ./new.js",
     "build:static": "vuepress build ./src -d ./dist",
     "build:cname": "cp ./CNAME ./dist/CNAME",
     "build:clean": "rm -rf dist",
     "build": "npm run build:clean && npm run build:static && npm run build:cname"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "1.0.0-alpha.0"
+    "@vuepress/plugin-pwa": "1.0.0-alpha.0",
+    "fs-extra": "7.0.1"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.0.0-alpha.39",

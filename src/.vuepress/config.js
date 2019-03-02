@@ -15,6 +15,7 @@ module.exports = {
     }
   },
   themeConfig: {
+    
     cover: 'https://github.com/moebiusmania/blog-assets/blob/master/images/37146_1659639097009_5747307_n.jpg?raw=true',
     nav: [{
       text: 'Home',
