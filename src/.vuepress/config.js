@@ -6,7 +6,7 @@ module.exports = {
   head: [
     // ['link', { rel: 'icon', href: '/favicon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#000000' }]
+    ['meta', { name: 'theme-color', content: '#000000' }],
   ],
   markdown: {
     anchor: {

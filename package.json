@@ -15,13 +15,13 @@
     "build": "npm run build:clean && npm run build:static && npm run build:cname"
   },
   "devDependencies": {
-    "@vuepress/plugin-pwa": "1.0.0-alpha.0",
     "fs-extra": "7.0.1"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "1.0.0-alpha.39",
-    "@vuepress/plugin-last-updated": "1.0.0-alpha.39",
-    "vuepress": "1.0.0-alpha.39",
-    "vuepress-theme-casper": "https://github.com/moebiusmania/vuepress-theme-casper"
+    "@vuepress/plugin-back-to-top": "1.0.0-alpha.40",
+    "@vuepress/plugin-last-updated": "1.0.0-alpha.40",
+    "@vuepress/plugin-pwa": "1.0.0-alpha.40",
+    "vuepress": "1.0.0-alpha.40",
+    "vuepress-theme-casper": "1.1.1"
   }
 }
