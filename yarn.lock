@@ -930,10 +930,10 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-last-updated@1.2.0", "@vuepress/plugin-last-updated@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.2.0.tgz#7b34065b793848b0482a222b7a6f1b7df3668cdc"
-  integrity sha512-j4uZb/MXDyG+v9QCG3T/rkiaOhC/ib7NKCt1cjn3GOwvWTDmB5UZm9EBhUpbDNrBgxW+SaHOe3kMVNO8bGOTGw==
+"@vuepress/plugin-last-updated@1.3.0", "@vuepress/plugin-last-updated@^1.2.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.3.0.tgz#4d83e6f0a05223971fe77a22f4fe26e5ad518410"
+  integrity sha512-zCg98YiCFzBo7hHh5CE4H7lO13QaexeNXKC8SC7aNopjhg1/+rzFKEWt5frARnYqhMrkhEqcegSuB4xWxNV+zQ==
   dependencies:
     cross-spawn "^6.0.5"
 
