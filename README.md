@@ -1,6 +1,6 @@
 # salvatorelaisa.blog
 
-[![Build Status](https://travis-ci.org/moebiusmania/salvatorelaisa.blog.svg?branch=master)](https://travis-ci.org/moebiusmania/salvatorelaisa.blog)
+![Build & deploy](https://github.com/moebiusmania/salvatorelaisa.blog/workflows/Build%20&%20deploy/badge.svg)
 
 Personal blog, based on [VuePress](https://vuepress.vuejs.org/) using [a port](https://github.com/alexander-heimbuch/vuepress-theme-casper) of the [Casper theme](https://github.com/TryGhost/Casper).
 
