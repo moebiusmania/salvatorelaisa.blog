@@ -19,6 +19,8 @@ tags:
 ---
 
 
+<!-- more -->
+
 `;
 
 fs.outputFile(`${dir}/readme.md`, boilerplate);
