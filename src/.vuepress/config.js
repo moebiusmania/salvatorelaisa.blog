@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    
+
     cover: 'https://github.com/moebiusmania/blog-assets/blob/master/images/37146_1659639097009_5747307_n.jpg?raw=true',
     nav: [{
       text: 'Home',
@@ -28,7 +28,7 @@ module.exports = {
     }, {
       text: 'Instagram',
       link: 'https://www.instagram.com/moebiusmania'
-    },{
+    }, {
       text: 'Github',
       link: 'https://github.com/moebiusmania'
     }, {
@@ -44,7 +44,10 @@ module.exports = {
   },
   plugins: [
     // '@vuepress/last-updated',
-    // '@vuepress/back-to-top',
+    '@vuepress/back-to-top',
+    '@vuepress/google-analytics', {
+      'ga': 'UA-169365214-1' // UA-00000000-0
+    },
     ['@vuepress/pwa', {
       'serviceWorker': true,
       'updatePopup': true,
