@@ -18,11 +18,10 @@ Mi accingo a prepararmi al mio prossimo trasloco e spostando i pochi DVD che ho 
 
 Per quasi 3 anni ho avuto un [Nexus Player](https://www.asus.com/us/Home-Entertainment/Nexus_Player/) e da poco sono passato a un [Nvidia Shield TV](https://www.nvidia.com/en-us/shield/shield-tv/), ma indipendetemente dall'aggeggio, all'inizio questo era più un qualcosa che insieme al lettore DVD e la TV stessa mi fornivano varie opzioni per l'intrattenimento casalingo.
 
-Questo anche perche 3 anni fa un qualunque device con Android TV non offriva molto di più di YouTube e Google Play Movies, ma anche lato Apple la situazione non cambiava molto... oggi invece mi trovo davanti a una schermata **simile** a questa:
+Questo anche perche 3 anni fa un qualunque device con Android TV non offriva molto di più di YouTube e Google Play Movies, ma anche lato Apple la situazione non cambiava molto... oggi invece mi trovo davanti a una schermata molto **simile** a questa:
 
-![TV Apps](https://images.unsplash.com/photo-1461151304267-38535e780c79?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=2912e6f0da58f88cc7397790ed92990d) <small>Photo by [Jens Kreuter](https://unsplash.com/@jenskreuter?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)</small>
-
-***NB**: no, non è casa mia e la mia tv e la Nvidia Shield, ero solo troppo pigro per scattare e caricare foto e ne ho presa una stock 😄.*
+![TV Apps](https://www.android.com/static/2016/img/tv/lessbrowsing.jpg)
+***NB**: Ero solo troppo pigro per scattare e caricare foto e ne ho presa una stock 😄.*
 
 oltre ai due servizi citati prima ora abbiamo anche Netflix (*che ha un catalogo in continua espansione*), Amazon Prime Video, [la Rai che si è data una prima svegliata](http://www.salvatorelaisa.me/2017/03/23/la-rai-ha-finalmente-capito-da-che-parte-deve-andare/) e qualche servizio "nuovo" come [TedTV](https://www.ted.com/) e HaystackTV (*aggregatore di news*). 
 
