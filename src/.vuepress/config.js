@@ -44,6 +44,8 @@ module.exports = {
   },
   plugins: [
     // '@vuepress/last-updated',
+    'seo',
+    '@vuepress/nprogress',
     '@vuepress/back-to-top',
     '@vuepress/google-analytics', {
       'ga': 'UA-169365214-1' // UA-00000000-0
