@@ -47,9 +47,9 @@ module.exports = {
     'seo',
     '@vuepress/nprogress',
     '@vuepress/back-to-top',
-    '@vuepress/google-analytics', {
-      'ga': 'UA-169365214-1' // UA-00000000-0
-    },
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-169365214-1'
+    }],
     ['@vuepress/pwa', {
       'serviceWorker': true,
       'updatePopup': true,
