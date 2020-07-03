@@ -17,7 +17,7 @@
   "devDependencies": {
     "fs-extra": "9.0.1",
     "node-sass": "4.14.1",
-    "sass-loader": "8.0.2"
+    "sass-loader": "9.0.0"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.5.2",
