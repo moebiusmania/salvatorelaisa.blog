@@ -20,7 +20,7 @@
     "sass-loader": "8.0.2"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "1.5.2",
+    "@vuepress/plugin-back-to-top": "1.5.3",
     "@vuepress/plugin-google-analytics": "1.5.2",
     "@vuepress/plugin-last-updated": "1.5.2",
     "@vuepress/plugin-nprogress": "1.5.2",
