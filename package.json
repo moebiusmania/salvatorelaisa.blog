@@ -15,7 +15,7 @@
     "build": "npm run build:clean && npm run build:static && npm run build:cname"
   },
   "devDependencies": {
-    "fs-extra": "9.0.1",
+    "fs-extra": "9.1.0",
     "node-sass": "4.14.1",
     "sass-loader": "10.1.1"
   },
