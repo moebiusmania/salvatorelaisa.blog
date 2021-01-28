@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "fs-extra": "9.1.0",
-    "node-sass": "4.14.1",
+    "node-sass": "5.0.0",
     "sass-loader": "10.1.1"
   },
   "dependencies": {
