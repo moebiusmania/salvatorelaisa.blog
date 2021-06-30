@@ -9,25 +9,25 @@ export default function Pagination({ totalPages, currentPage }) {
       <nav className="flex justify-between">
         {!prevPage && (
           <button rel="previous" className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            Previous
+            Precedente
           </button>
         )}
         {prevPage && (
           <Link href={currentPage - 1 === 1 ? `/post/` : `/post/page/${currentPage - 1}`}>
-            <button rel="previous">Previous</button>
+            <button rel="previous">Precedente</button>
           </Link>
         )}
         <span>
-          {currentPage} of {totalPages}
+          {currentPage} di {totalPages}
         </span>
         {!nextPage && (
           <button rel="next" className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            Next
+            Successivo
           </button>
         )}
         {nextPage && (
           <Link href={`/post/page/${currentPage + 1}`}>
-            <button rel="next">Next</button>
+            <button rel="next">Successivo</button>
           </Link>
         )}
       </nav>

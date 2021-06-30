@@ -1,31 +1,25 @@
 ---
 title: Il ritorno di HeroQuest... e invece no!
-image: https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true
-imageMeta:
-  attribution:
-  attributionLink:
-type: post
-author: salvatore
-date: Sun Mar 01 2015 20:10:09 GMT+0100 (Central European Standard Time)
-publish: 2015-03-01
-tags:
-  - riflessioni
+date: '2015-03-01'
+tags: ['pensieri']
+draft: false
+summary: 'Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR).'
 ---
 
-<iframe width="500" height="315" src="https://www.youtube.com/embed/wC2QJa8olUk" frameborder="0" allowfullscreen></iframe>
----
-Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un **gioco di ruolo (*GdR*)**.
+![](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true)
 
-<!-- more -->
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/wC2QJa8olUk" frameBorder="0" allowFullScreen></iframe>
 
-Poi è capitato un pomeriggio a casa di un vicino che aveva da poco comprato il gioco **HeroQuest** e ho fatto la mia prima partita: statuine, carte, stanza quasi al buio con giusto un paio di abat-jour accesi per fare atmosfera... uno dei pomeriggi ludici più belli della mia vita, non per altro me lo ricordo ancora così bene 🙂. 
+Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un **gioco di ruolo (_GdR_)**.
+
+Poi è capitato un pomeriggio a casa di un vicino che aveva da poco comprato il gioco **HeroQuest** e ho fatto la mia prima partita: statuine, carte, stanza quasi al buio con giusto un paio di abat-jour accesi per fare atmosfera... uno dei pomeriggi ludici più belli della mia vita, non per altro me lo ricordo ancora così bene 🙂.
 
 Per un annetto abbiamo ripetuto diverse volte il rito della partita a HeroQuest, quasi sempre con ottimi risultati. Ovviamente nonostante diverse suppliche mio padre si rifutò più volte di comprarmelo.
 
 Poi qualche giorno fa inciampo in questo video, e il gasamento diventa totale!
 
-<iframe width="500" height="315" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameborder="0" allowfullscreen></iframe>
----
+## <iframe width="100%" height="315" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameBorder="0" allowFullScreen></iframe>
+
 Clicco prontamente il link del progetto su **Kickstarter**, con già la mano pronta sulla carta di credito convinto che HeroQuest meriti un remake, ma purtroppo l'entusiasmo viene fermato dopo pochissimo:
 
 ![](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/Schermata-2015-03-02-alle-01-54-44.png?raw=true)
@@ -38,7 +32,6 @@ Ho dato un'occhiata al lavoro svolto dal gruppo spagnolo e devo dire che è note
 
 Mi spiace che alla fine **ci smena HeroQuest stesso** e tutte le persone che come me per un pò hanno sperato di rivedere su un tavolo questo bel gioco in compagnia di amici e ributtarsi in pomeriggi di partitoni in nome dei bei tempi.
 
-Se anni dopo sono entrato nel tunnel di **Diablo** & company (*League of Legends, Warcraft, Final Fantasy*) per me personalmente è tutto merito di HeroQuest.
+Se anni dopo sono entrato nel tunnel di **Diablo** & company (_League of Legends, Warcraft, Final Fantasy_) per me personalmente è tutto merito di HeroQuest.
 
 Peccato davvero.
-

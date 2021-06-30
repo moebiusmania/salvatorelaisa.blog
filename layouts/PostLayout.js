@@ -83,7 +83,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   {'Parlane su Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={editUrl(fileName)}>{'Vedi su GitHub'}</Link>
               </div>
             </div>
             <footer>

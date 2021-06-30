@@ -1,22 +1,14 @@
 ---
 title: Dove va il webdesigner?
-image: https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion.jpg
-imageMeta:
-  attribution:
-  attributionLink:
-type: post
-author: salvatore
-date: Mon Feb 21 2011 17:00:00 GMT+0100 (IST)
-publish: 2011-02-21
-tags:
-  - talk
-  - eventi
-  - codemotion
+date: '2011-02-21'
+tags: ['talk', 'eventi', 'codemotion']
+draft: false
+summary: 'Beh se proprio non ha niente da fare può fare un salto a Roma il 5 Marzo per il Codemotion!'
 ---
 
-Beh se proprio non ha niente da fare può fare un salto **a Roma il 5 Marzo** per il [Codemotion](http://www.codemotionworld.com/)!
+![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion.jpg)
 
-<!-- more -->
+Beh se proprio non ha niente da fare può fare un salto **a Roma il 5 Marzo** per il [Codemotion](http://www.codemotionworld.com/)!
 
 L'evento (gratuito) sarà diviso in 7 tracce con un totale di 60 interventi nel giro della giornata e si palerà di linguaggi, di gaming, mobile, web e altro ancora!
 
