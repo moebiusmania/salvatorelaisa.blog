@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
+    '@next/next/no-img-element': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {

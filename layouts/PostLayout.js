@@ -2,7 +2,6 @@ import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSeo } from '@/components/SEO'
-import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
@@ -48,7 +47,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <Image
+                    <img
                       src={siteMetadata.image}
                       width="38px"
                       height="38px"

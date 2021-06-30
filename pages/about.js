@@ -1,6 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-import Image from '@/components/Image'
 import { PageSeo } from '@/components/SEO'
 
 export default function About() {
@@ -19,7 +18,7 @@ export default function About() {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
-            <Image
+            <img
               src={siteMetadata.image}
               alt="avatar"
               width="192px"

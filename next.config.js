@@ -8,6 +8,11 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  images: {
+    loader: 'imgix',
+    path: '',
+    domains: ['salvatorelaisa.blog'],
+  },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
