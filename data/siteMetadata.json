@@ -1,0 +1,16 @@
+{
+  "title": "Salvatore Laisa",
+  "author": "Salvatore Laisa",
+  "headerTitle": "Salvatore Laisa",
+  "description": "Blog personale.",
+  "language": "it-IT",
+  "siteUrl": "https://salvatorelaisa.blog",
+  "siteRepo": "https://github.com/moebiusmania/salvatorelaisa.blog",
+  "image": "/static/images/avatar.png",
+  "socialBanner": "/static/images/twitter-card.png",
+  "github": "https://github.com/moebiusmania",
+  "twitter": "https://twitter.com/moebiusmania",
+  "youtube": "https://youtube.com",
+  "linkedin": "https://www.linkedin.com",
+  "locale": "it-IT"
+}
