@@ -1,6 +1,9 @@
 {
   "name": "sl-static",
   "version": "3.0.0",
+  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "license": "MIT",
+  "repository": "git@github.com:moebiusmania/salvatorelaisa.blog.git",
   "private": true,
   "scripts": {
     "start": "next-remote-watch ./data",
