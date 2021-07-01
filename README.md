@@ -1,23 +1,13 @@
 # salvatorelaisa.blog
 
-![Build & deploy](https://github.com/moebiusmania/salvatorelaisa.blog/workflows/Build%20&%20deploy/badge.svg)
+Personal blog built on top of the static site generator [Next.js](https://nextjs.org/) and the [
+tailwind-nextjs-starter-blog
+](https://github.com/timlrx/tailwind-nextjs-starter-blog) template.
 
-Personal blog, based on [VuePress](https://vuepress.vuejs.org/) using [a port](https://github.com/alexander-heimbuch/vuepress-theme-casper) of the [Casper theme](https://github.com/TryGhost/Casper).
+Hosting and Continous Deployment is based on Github Pages & Actions.
 
-Blogging functionalities are developed within the `vuepress-theme-casper` package, since VuePress itself isn't specifically designed for blogs but it exposes a rich set of APIs.
+The contents are personal thoughts and opinions. Images and videos that aren't of my own or made by me are always linked/embedded from external sources.
 
-The blog is hosted on [Github Pages](https://pages.github.com/) and [built by Travis CI](https://travis-ci.org/moebiusmania/salvatorelaisa.blog) each time a new commit hits the `master` branch.
+## License
 
-### Embedded `vuepress-theme-casper`
-I've hard coded the credited theme within the VuePress instance codebase since I've applied some changes tha haven't been marged yet into the main theme repository:
-
-* compatibility with VuePress v1.0 (*alpha*)
-* fixed posts chronological sorting in home page
-
-<!-- ### VuePress plugins
-* pwa
-* google-analytics
-* back-to-top -->
-
-### License
-The code in this repository is released under the [MIT license](LICENSE), except where is differently specified.
+released under the [MIT](LICENSE) license.
