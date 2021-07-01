@@ -11,7 +11,6 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "postbuild": "npm run export",
     "export": "next export",
-    "postexport": "cp ./CNAME ./out/CNAME",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
