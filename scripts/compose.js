@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const args = process.argv.slice(2)
 const title = args[0]
-const ext = typeof args[1] !== 'undefined' ? args[1] : 'mdx'
+const ext = typeof args[1] !== 'undefined' ? args[1] : 'md'
 // Remove special characters and replace space with -
 const fileName = title
   .toLowerCase()

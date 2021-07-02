@@ -12,6 +12,7 @@
     "postbuild": "npm run export",
     "export": "next export",
     "serve": "next start",
+    "new": "node scripts/compose.js",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install"
