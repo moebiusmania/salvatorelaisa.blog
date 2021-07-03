@@ -6,7 +6,7 @@ draft: false
 summary: "Ebbene si. Terzo 'remake' di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (ma di questo ne parleremo un'altra volta...)."
 ---
 
-![](https://images.unsplash.com/photo-1546074177-31bfa593f731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80)
+[![Photo by Sincerely Media su Unsplash](https://images.unsplash.com/photo-1546074177-31bfa593f731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80)](https://unsplash.com/@sincerelymedia) <small>_Foto di Sincerely Media su Unsplash_</small>
 
 Ebbene si.
 
