@@ -1,7 +1,7 @@
 ---
 title: Il peso dell'anima (dei laptop)
 date: '2012-09-06'
-tags: ['tecnicismi']
+tags: ['tecnicismi', 'device']
 draft: false
 summary: 'Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!'
 ---
@@ -36,7 +36,7 @@ Dopo 3 anni in cui mi porto dietro il laptop praticamente tutti i giorni inizio 
 
 Non vi dirò che è il miglior computer di sempre, ma di sicuro posso dire che è il miglior laptop che ho avuto tra le mani, molto probabilmente questo giudizio arriva dal fatto che fino a prima di comprarlo ero super convinto che non avrebbe retto il paragone con altri portatili e invece **specialmente per i miei scopi** e sommando tutti i fattori descritti prima, li supera decisamente. Questo è un laptop Pro, non gli altri.
 
-Recentemente ho anche cambiato smartphone prendendo un [Samsung Galaxy S3](http://www.samsung.com/it/promotions/galaxys3/) e devo dire che tra questi due dispositivi ho trovato molte cose in comune, il che ha rafforzato ciò che già molti "sospettavano" da tempo: il connubio tra leggerezza e potenza sarà il futuro non-affatto-remoto della tecnologia.
+Recentemente ho anche cambiato smartphone prendendo un [Samsung Galaxy S3](https://it.wikipedia.org/wiki/Samsung_Galaxy_S_III) e devo dire che tra questi due dispositivi ho trovato molte cose in comune, il che ha rafforzato ciò che già molti "sospettavano" da tempo: il connubio tra leggerezza e potenza sarà il futuro non-affatto-remoto della tecnologia.
 
 **PS:** lo sapevate che [il computer di Linus Torvalds](http://techcrunch.com/2012/04/19/an-interview-with-millenium-technology-prize-finalist-linus-torvalds/) è un MacBook Air (_ovviamente con installato Linux_)?
 

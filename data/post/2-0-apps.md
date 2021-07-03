@@ -6,7 +6,7 @@ draft: false
 summary: "Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!"
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2013/web-2.jpg)
+![abstract digital art](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2013/web-2.jpg)
 
 Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!
 

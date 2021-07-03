@@ -21,7 +21,7 @@ title: ${title}
 date: '${date}'
 tags: []
 draft: true
-summary: 
+summary: ""
 images: []
 ---
 `

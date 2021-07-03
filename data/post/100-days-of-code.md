@@ -6,7 +6,7 @@ draft: false
 summary: "L'inizio di un nuovo anno è spesso l'occasione per darsi appuntamento con dei nuovi `propositi`..."
 ---
 
-![](https://c2.staticflickr.com/4/3324/3260095534_170b48ca3b_o.jpg)
+![un pò di codice](https://c2.staticflickr.com/4/3324/3260095534_170b48ca3b_o.jpg)
 
 L'inizio di un nuovo anno è spesso l'occasione per darsi appuntamento con dei nuovi "propositi"...
 

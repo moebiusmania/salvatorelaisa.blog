@@ -57,27 +57,24 @@ export default function About() {
               insisto nel tenermi il mio pezzettino di www.
             </p>
             <h3>Disclaimer</h3>
-            <p>
-              <ul>
-                <li>
-                  I contenuti di questo blog sono esclusivamente opinioni personali, pensieri e
-                  recensioni in ordine sparso.
-                </li>
-                <li>
-                  La pubblicazione di nuovi articoli o aggiornamenti di esistenti è puramente
-                  saltuaria e non pianificata.
-                </li>
-                <li>
-                  Le recensioni che scrivo non sono sponsorizzate o basate su qualcosa di
-                  "regalato", ma bensì derivano da oggetti ottenuti grazie al mio povero
-                  portafoglio.
-                </li>
-                <li>
-                  Foto e video pubblicati negli articoli se non sono di mia creazione sono sempre
-                  embeddati o linkati dai rispettivi servizi o domini originali.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                I contenuti di questo blog sono esclusivamente opinioni personali, pensieri e
+                recensioni in ordine sparso.
+              </li>
+              <li>
+                La pubblicazione di nuovi articoli o aggiornamenti di esistenti è puramente
+                saltuaria e non pianificata.
+              </li>
+              <li>
+                Le recensioni che scrivo non sono sponsorizzate o basate su qualcosa di "regalato",
+                ma bensì derivano da oggetti ottenuti grazie al mio povero portafoglio.
+              </li>
+              <li>
+                Foto e video pubblicati negli articoli se non sono di mia creazione sono sempre
+                embeddati o linkati dai rispettivi servizi o domini originali.
+              </li>
+            </ul>
             <p>
               Se <strong>non</strong> siete d'accordo su qualcosa, e ci sta, basta premere il
               tastino per chiudere la tab.

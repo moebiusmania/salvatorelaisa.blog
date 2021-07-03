@@ -1,7 +1,7 @@
 ---
 title: Hard Disks grossi vs il Cloud
 date: '2015-07-07'
-tags: ['tecnicismi']
+tags: ['tecnicismi', 'device', 'web']
 draft: false
 summary: 'Stamattina ero al Radiant, una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare...'
 ---

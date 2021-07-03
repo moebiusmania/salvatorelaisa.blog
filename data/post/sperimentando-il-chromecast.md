@@ -1,7 +1,7 @@
 ---
 title: Sperimentando Il Chromecast
 date: '2014-02-15'
-tags: ['tecnicismi', 'tv']
+tags: ['tecnicismi', 'tv', 'device']
 draft: false
 summary: 'Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast.'
 ---

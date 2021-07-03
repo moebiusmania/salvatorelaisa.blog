@@ -1,7 +1,7 @@
 ---
 title: On the Android side
 date: '2010-12-07'
-tags: ['android', 'ios', 'mobile']
+tags: ['android', 'ios', 'mobile', 'device']
 draft: false
 summary: 'Ebbene sì, dopo **un anno di utenza iPhone**... sono passato al lato [Android](https://www.android.com/) della telefonia smart!'
 ---

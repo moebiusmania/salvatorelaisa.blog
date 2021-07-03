@@ -1,7 +1,7 @@
 ---
 title: DVD come soprammobili
 date: '2017-11-02'
-tags: ['video', 'dvd', 'nostalgia']
+tags: ['tv', 'dvd', 'nostalgia']
 draft: false
 summary: 'Mi accingo a prepararmi al mio prossimo trasloco e spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento...'
 ---

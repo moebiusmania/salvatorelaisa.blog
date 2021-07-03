@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi (Zero) Mania
 date: '2019-02-06'
-tags: ['iot', 'tecnicismi']
+tags: ['iot', 'tecnicismi', 'device']
 draft: false
 summary: 'Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un Raspberry Pi Zero in regalo... ed è partita la mia nuova mania per questi mesi 🤣.'
 ---
