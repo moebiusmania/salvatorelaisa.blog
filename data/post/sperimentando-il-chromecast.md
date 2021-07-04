@@ -6,7 +6,7 @@ draft: false
 summary: 'Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast.'
 ---
 
-![](https://farm8.staticflickr.com/7296/11419059095_b2e901a675_k.jpg)
+![Il logo del progetto Chromecast](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png) <small>_Il logo del progetto Chromecast_</small>
 
 Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il **Chromecast**.
 
@@ -16,9 +16,7 @@ Per chi non lo conoscesse si tratta di una [specie di chiavetta](http://www.goog
 
 Un punto sicuramente molto interessante è che il Chromecast permette a qualunque televisore con una porta HDMI (_in realtà HDMI 2 che comunque è in giro da 6-7 anni_) di diventare un po più **smart**, senza dovere spendere cifre astronomiche.
 
-![](https://farm8.staticflickr.com/7296/11419059095_b2e901a675_k.jpg)
-
-<small>*La primissima generazione (*e forma*) del Chromecast - Foto di [ปรัชญา สิงห์โต](https://www.flickr.com/photos/iannnnn/11419059095)*</small>
+![](https://farm8.staticflickr.com/7296/11419059095_b2e901a675_k.jpg) <small>*La primissima generazione (*e forma*) del Chromecast - Foto di [ปรัชญา สิงห์โต](https://www.flickr.com/photos/iannnnn/11419059095)*</small>
 
 Dopo anni passati a guardare contenuti video sullo schermo del PC, o più recentemente sullo smartphone, con questo aggeggino basta far girare un semplice primo setup, in cui sostanzialmente lo si collega alla **rete WiFi** di casa e poi premendo un pulsante all'interno delle app che supportano questo device, si trasmette questo contenuto alla TV, creando una nuova sinergia tra questi due oggetti.
 
@@ -36,7 +34,7 @@ Mentre usiamo lo smartphone come nuovo (_o ennesimo_) telecomando però, non sia
 
 Al contrario della situazione a inizio 2014, che ho preferito non cancellare per gusto di cronaca, oggi (_inizio 2017_) abbiamo fortunatamente a disposizione svariate fonti di contenuti per il dongle di Google, anche in italiano, in questo screenshot degli "highlight" delle app che lo supportano vedete che non mancano gli essenziali:
 
-![](https://github.com/moebiusmania/blog-assets/blob/master/images/2017/chromecast-apps.png?raw=true)
+![Alcuni dei servizi e app compatibili con il Chromecast](https://github.com/moebiusmania/blog-assets/blob/master/images/2017/chromecast-apps.png?raw=true) <small>_Alcuni dei servizi e app compatibili con il Chromecast_</small>
 
 ne anche nelle ultime versioni del [client ufficiale della Rai](https://play.google.com/store/apps/details?id=it.rainet) è possibile vedere tramite il Chromecast sia le dirette dei canali che contenuti in replay, portandoci molto vicini al rendere le televisioni dei dispositivi più dipendenti da Internet che da antenna.
 

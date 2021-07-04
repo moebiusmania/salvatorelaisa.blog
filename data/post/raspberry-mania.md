@@ -6,7 +6,7 @@ draft: false
 summary: 'Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un Raspberry Pi Zero in regalo... ed è partita la mia nuova mania per questi mesi 🤣.'
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2019/IMG_20190122_215800.jpg)
+![Il mio RPi Zero "nudo" collegato alla TV](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2019/IMG_20190122_215800.jpg) <small>_Il mio RPi Zero "nudo" collegato alla TV_</small>
 
 Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) in regalo... ed è partita la mia nuova mania per questi mesi 🤣.
 
@@ -65,7 +65,7 @@ A questo punto vi basta collegare il Raspberry alla tv, dargli energia e attacca
 
 Il vantaggio del settare il wifi è che [tramite il protocollo Samba](https://github.com/retropie/retropie-setup/wiki/Transferring-Roms#samba-shares) potrete collegarvi al Raspberry dal vostro computer (_ma devono essere sulla stessa rete_) e copiare le ROM dei giochi nelle cartelle dei vari emulatori in maniera easy peasy! E finalmente... let's game the '90s 🎮🤓!
 
-![Golden Axe](https://github.com/moebiusmania/blog-assets/blob/master/images/2019/goldenaxe.jpg?raw=true)
+![Giocarmi Golden Axe (Sega Megadrive) sulla TV grande... un sogno dell'infanzia ora diventato realtà!](https://github.com/moebiusmania/blog-assets/blob/master/images/2019/goldenaxe.jpg?raw=true) <small>_Giocarmi Golden Axe (Sega Megadrive) sulla TV grande... un sogno dell'infanzia ora diventato realtà!_ 🤓</small>
 
 Un paio di cose da notare:
 

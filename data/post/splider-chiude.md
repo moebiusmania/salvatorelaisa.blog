@@ -6,7 +6,7 @@ draft: false
 summary: 'In 24 ore la notizia ha fatto il giro del web, italiano si intende, Splinder chiude.'
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/blogospheregraphic.jpg)
+![La cara vecchia "tag cloud"](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/blogospheregraphic.jpg)
 
 In 24 ore la [notizia](http://www.ilpost.it/2011/11/22/splinder-chiude-il-31-gennaio-2012/) ha fatto il giro del web, italiano si intende, **Splinder chiude**.
 

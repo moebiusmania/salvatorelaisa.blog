@@ -6,7 +6,7 @@ draft: false
 summary: "E' dalla prima versione del 2008 che seguo con molto interesse l'evoluzione di Ubuntu, la distro Linux più user friendly e maggiormente in voga del momento"
 ---
 
-![https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png](https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png)
+![Il desktop di Ubuntu 11.04](https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png) <small>_Il desktop di Ubuntu 11.04_</small>
 
 E' dalla **prima versione del 2008** che seguo con molto interesse l'evoluzione di [Ubuntu](https://www.ubuntu-it.org/), la distro Linux più user friendly e maggiormente in voga del momento
 
