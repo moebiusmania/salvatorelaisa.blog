@@ -55,7 +55,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                       className="w-10 h-10 rounded-full"
                     />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                      <dt className="sr-only">Name</dt>
+                      <dt className="sr-only">Nome</dt>
                       <dd className="text-gray-900 dark:text-gray-100">{siteMetadata.author}</dd>
                       {typeof siteMetadata.twitter === 'string' && (
                         <>
@@ -78,11 +78,13 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
+                <Link href={discussUrl(slug)} rel="nofollow noopener noreferrer">
                   {'Parlane su Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'Vedi su GitHub'}</Link>
+                <Link href={editUrl(fileName)} rel="nofollow noopener noreferrer">
+                  {'Vedi su GitHub'}
+                </Link>
               </div>
             </div>
             <footer>

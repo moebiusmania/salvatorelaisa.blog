@@ -35,13 +35,9 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Questa dovrebbe essere la parte dove inizio a tirarmela con tanti inglesismi... e
-              invece no!
-            </p>
-            <p>
               Da piccolo volevo fare l'inventore, poi il programmatore ma a metà del 2000 mi sono
-              ritrovato web designer, e poi evoluto in frontend developer. E chissà cos'altro
-              diventerò in futuro...
+              ritrovato web designer, poi evoluto in frontend developer. E chissà cos'altro
+              diventerò in futuro... <i>[semi-cit]</i>
             </p>
             <h3>Perché un blog?</h3>
             <p>

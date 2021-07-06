@@ -1,12 +1,12 @@
 ---
 title: La fine dei Nexus
 date: '2017-04-03'
-tags: ['mobile', 'google', 'nexus', 'device']
+tags: ['mobile', 'google', 'nexus', 'device', 'android']
 draft: false
 summary: 'Quando anche un grande entusiasta e early adopter deve accettare la dura realtà...'
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2017/Google-Nexus-Smartphone-made-by-HTC-to-be-called-Pixel-Smartphone.png)
+![L'evoluzione degli smartphone Nexus dal One al 5](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2017/Google-Nexus-Smartphone-made-by-HTC-to-be-called-Pixel-Smartphone.png) <small>_L'evoluzione degli smartphone Nexus dal One al 5_</small>
 
 > Quando anche un grande entusiasta e early adopter deve accettare la dura realtà...
 
@@ -21,7 +21,7 @@ Sono stato possessore di **Nexus S, 5 e 5X** come smartphones, **Nexus 7 e 10** 
 
 Da Ottobre circa Google ha lanciato un nuovo programma [Made by Google](https://madeby.google.com/) che va in tutto e per tutto a sostituire il programma Nexus per alcuni principi come device progettati da Google ma prodotti da partner, esperienze Android native... ma con **marchio Google** e prezzi premium 😕.
 
-![Made by Google](https://storage.googleapis.com/madebygoog/v1/banners/madebygoogle_logo_banner.jpg)
+![Promo della nuova "famiglia" di prodotti Made by Google](https://storage.googleapis.com/madebygoog/v1/banners/madebygoogle_logo_banner.jpg) <small>_Promo della nuova "famiglia" di prodotti Made by Google_</small>
 
 La combinazione di un'esperienza Android pulita insieme al prezzo da "fascia media" erano tra i fattori principali che rendevano i Nexus qualcosa di molto appetitoso per gli smanettoni come me.
 
@@ -33,7 +33,7 @@ Dopo recenti annunci riguardo la "generazione 2" dei Pixel, è chiaro che chi co
 
 **Smartphone:** Attualmente il mio [Nexus 5X](http://lg.hdblog.it/schede-tecniche/lg-nexus-5x_i2961/) va alla grande, ma verso natale, a meno che di "estensioni" da parte di Google, finirà il supporto garantito per questo device, rendendo Android 8 l'ultimo che potrò installare. Quasi sicuramente nel 2018 cambierò smartphone e senza i Nexus non ho molte alternative...
 
-**Tablet:** il mio Nexus 10 mi ha servito molto bene nei suoi 4 anni nelle mie mani, purtroppo la batteria è arrivata alla fine del suo lifecycle e ormai una carica completa dura circa un'ora... l'ho rimpiazzato con un [Samsung Tab S2 da 8 pollici](http://samsung.hdblog.it/schede-tecniche/samsung-galaxy-tab-s2-8-0_i2908/), l'idea di un tablet un pochino più maneggevole come peso e dimensioni mi stuzzicava da un po e il [Google Now launcher](https://play.google.com/store/apps/details?id=com.google.android.launcher&hl=it) mi ha aiutato a mascherare il 90% della UI nativa dei Samsung, che decisamente non sopporto.\\n\\nIl Nexus 7 (2012) invece nonostante sia ancora nelle mani delle miei, ha avuto un declino abbastanza rapido come prestazioni ed è l'unico device di cui non sento l'esigenza di trovargli un successore.
+**Tablet:** il mio Nexus 10 mi ha servito molto bene nei suoi 4 anni nelle mie mani, purtroppo la batteria è arrivata alla fine del suo lifecycle e ormai una carica completa dura circa un'ora... l'ho rimpiazzato con un [Samsung Tab S2 da 8 pollici](http://samsung.hdblog.it/schede-tecniche/samsung-galaxy-tab-s2-8-0_i2908/), l'idea di un tablet un pochino più maneggevole come peso e dimensioni mi stuzzicava da un po e il [Google Now launcher](https://play.google.com/store/apps/details?id=com.google.android.launcher&hl=it) mi ha aiutato a mascherare il 90% della UI nativa dei Samsung, che decisamente non sopporto. Il Nexus 7 (2012) invece nonostante sia ancora nelle mani delle miei, ha avuto un declino abbastanza rapido come prestazioni ed è l'unico device di cui non sento l'esigenza di trovargli un successore.
 
 **Set-top-box (TV):** il Nexus Player non mi sta dando noie di alcun tipo, ma non essendoci successori "ufficiali" all'orizzonte ed essendo ormai giunto ai fatidici 2 anni di supporto di Google nella migliore delle ipotesi ha ancora un annetto di vita. La [Nvidia Shield TV](https://www.nvidia.com/it-it/shield/shield-tv/) mi sembra l'opzione migliore.
 
@@ -41,9 +41,9 @@ Dopo recenti annunci riguardo la "generazione 2" dei Pixel, è chiaro che chi co
 
 ## Momento nostalgia
 
-Ormai sembrano lontani i tempi in cui l'annuncio in anteprima di una famiglia di device Nexus e di un Android Marketù che supportasse diversi tipi di media oltre che le apps e ribattezzato in Play Store suonava come qualcosa di davvero rivoluzionario (_e molto atteso_) per la piattaforma Android 😎.
+Ormai sembrano lontani i tempi in cui l'annuncio in anteprima di una famiglia di device Nexus e di un Android Market che supportasse diversi tipi di media oltre che le apps e ribattezzato in Play Store suonava come qualcosa di davvero rivoluzionario (_e molto atteso_) per la piattaforma Android 😎.
 
-<iframe height="450" width="100%" src="https://www.youtube.com/embed/66-4uMQqerA" frameBorder="0" allowFullScreen></iframe>
+<iframe height="450" width="100%" src="https://www.youtube.com/embed/66-4uMQqerA" frameBorder="0" allowFullScreen></iframe> <small><i>Anteprima di The Verge del 2012 sul allora nuovo Android 4.2 e la prima "famigia" di device Nexus.</i></small>
 
 Se volete farvi un bel ripasso di cosa è stato esattamente il programma Nexus, potete guardarvi quest'ottimo video (_a livelli quasi da documentario_) prodotto dai ragazzi di [Android Authority](http://www.androidauthority.com/):
 
