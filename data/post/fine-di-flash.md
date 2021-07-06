@@ -1,6 +1,6 @@
 ---
 title: Un Web senza Flash
-date: '2021-01-02'
+date: '2021-01-04'
 tags: ['flash', 'web', 'nostalgia']
 draft: false
 summary: 'Dopo tanti anni dal primo annuncio ufficiale del pensionamento di Flash a fine 2020 da parte di Adobe, siamo arrivati al momento fatidico: da oggi siamo a tutti gli effetti in un Web senza più Flash.'
