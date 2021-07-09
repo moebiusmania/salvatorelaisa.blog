@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sun, 22 Dec 2019 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/google/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/google-stadia</guid>
+    <title>Google Stadia: inizia l&#39;era del cloud gaming?</title>
+    <link>https://salvatorelaisa.blog/post/google-stadia</link>
+    <description>Quando è stato annunciato a inizio primavera, si fece sentire come un fulmin a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, Stadia.</description>
+    <pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>google</category><category>cloud</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/google-plus-chiude</guid>
+    <title>Chiude Google+</title>
+    <link>https://salvatorelaisa.blog/post/google-plus-chiude</link>
+    <description>Google ha un notevole cimitero di prodotti, alcuni terminati ingiustamente, altri di cui non ne sentiamo la macanza e altri ancora... meh...</description>
+    <pubDate>Sun, 24 Feb 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>social</category><category>google</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/addio-nexus</guid>
+    <title>La fine dei Nexus</title>
+    <link>https://salvatorelaisa.blog/post/addio-nexus</link>
+    <description>Quando anche un grande entusiasta e early adopter deve accettare la dura realtà...</description>
+    <pubDate>Mon, 03 Apr 2017 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>mobile</category><category>google</category><category>nexus</category><category>device</category><category>android</category>
+  </item>
+
+    </channel>
+  </rss>

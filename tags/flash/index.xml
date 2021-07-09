@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Mon, 04 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/flash/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/fine-di-flash</guid>
+    <title>Un Web senza Flash</title>
+    <link>https://salvatorelaisa.blog/post/fine-di-flash</link>
+    <description>Dopo tanti anni dal primo annuncio ufficiale del pensionamento di Flash a fine 2020 da parte di Adobe, siamo arrivati al momento fatidico: da oggi siamo a tutti gli effetti in un Web senza più Flash.</description>
+    <pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>flash</category><category>web</category><category>nostalgia</category>
+  </item>
+
+    </channel>
+  </rss>

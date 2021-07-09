@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Wed, 05 Jan 2011 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/linux/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/ubuntu-11</guid>
+    <title>Ubuntu 11.04 (e in generale)</title>
+    <link>https://salvatorelaisa.blog/post/ubuntu-11</link>
+    <description>E&#39; dalla prima versione del 2008 che seguo con molto interesse l&#39;evoluzione di Ubuntu, la distro Linux più user friendly e maggiormente in voga del momento</description>
+    <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>ubuntu</category><category>linux</category><category>os</category><category>desktop</category>
+  </item>
+
+    </channel>
+  </rss>

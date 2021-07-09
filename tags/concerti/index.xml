@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Wed, 01 Sep 2010 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/concerti/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</guid>
+    <title>Transatlantic live @Alcatraz Milano</title>
+    <link>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</link>
+    <description>E&#39; brutto scoprire band che apprezzi davvero nei momenti in cui sono inattive, e nel caso dei Transatlantic che sono un side projects di vari musicisti coinvolti in altre band (*Dream Theater, Flower Kings, Marillion*) non è una situazione rara. Ma per fortuna dopo alcuni anni da quando li ho scoperti, questo è stato l&#39;anno di un nuovo album e nuovo tour che li ha finalmente riportati a Milano dove ho potuto vederli dal vivo 😎.</description>
+    <pubDate>Wed, 01 Sep 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>musica</category><category>concerti</category><category>eventi</category>
+  </item>
+
+    </channel>
+  </rss>

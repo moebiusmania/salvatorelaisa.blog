@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sun, 29 Aug 2010 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/browsers/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/chrome-over-firefox</guid>
+    <title>Chrome over Firefox</title>
+    <link>https://salvatorelaisa.blog/post/chrome-over-firefox</link>
+    <description>Per ben 4 anni sono stato un’intrippatissimo utente Firefox, dato il mio lavoro però sono costretto a sperimentare e lavorare anche su altri browser e questo mi ha portato nell’ultimo anno a scegliere come mio browser principale Chrome di Google.</description>
+    <pubDate>Sun, 29 Aug 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tecnicismi</category><category>web</category><category>browsers</category>
+  </item>
+
+    </channel>
+  </rss>

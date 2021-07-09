@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Thu, 02 Jun 2011 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/fotografia/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/setup-fotografico</guid>
+    <title>Setup Fotografico</title>
+    <link>https://salvatorelaisa.blog/post/setup-fotografico</link>
+    <description>Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂.</description>
+    <pubDate>Thu, 02 Jun 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>fotografia</category>
+  </item>
+
+    </channel>
+  </rss>

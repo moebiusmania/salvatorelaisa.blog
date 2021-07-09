@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Mon, 21 Feb 2011 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/talk/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/codemotion-2011-talk</guid>
+    <title>Dove va il webdesigner?</title>
+    <link>https://salvatorelaisa.blog/post/codemotion-2011-talk</link>
+    <description>Beh se proprio non ha niente da fare può fare un salto a Roma il 5 Marzo per il Codemotion!</description>
+    <pubDate>Mon, 21 Feb 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>talk</category><category>eventi</category><category>codemotion</category>
+  </item>
+
+    </channel>
+  </rss>

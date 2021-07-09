@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sat, 03 Nov 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/pensieri/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/milano-anniversario</guid>
+    <title>Un anno a Milano...</title>
+    <link>https://salvatorelaisa.blog/post/milano-anniversario</link>
+    <description>Qualche anno fa avrei, anzi ho, fatto i salti mortali pur di non trasferirmi a Milano... ma dopo 10 anni di pendolarismo dall&#39;hinterland sud, ad Agosto dello scorso anno (*2017*) ho preso alla fine questa decisione e dal Novembre successivo mi sono spostato qui.</description>
+    <pubDate>Sat, 03 Nov 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category><category>milano</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/meno-niubbo</guid>
+    <title>Un po meno niubbo</title>
+    <link>https://salvatorelaisa.blog/post/meno-niubbo</link>
+    <description>Ma solo un pochino di meno!</description>
+    <pubDate>Sat, 06 Feb 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/nuovamente-niubbo</guid>
+    <title>Il bello di essere niubbi (di nuovo)</title>
+    <link>https://salvatorelaisa.blog/post/nuovamente-niubbo</link>
+    <description>niubbo: italianizzazione di newbie/noob che a sua volta è uno slang per dire &#39;novellino&#39; o &#39;novizio&#39;.</description>
+    <pubDate>Sat, 17 Oct 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/fuochi-fine-estate</guid>
+    <title>La mia tradizione dei Fuochi di fine estate</title>
+    <link>https://salvatorelaisa.blog/post/fuochi-fine-estate</link>
+    <description>Che poi in verità, penso di essere solo io a chiamarli così 😄</description>
+    <pubDate>Mon, 07 Sep 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/heroquest</guid>
+    <title>Il ritorno di HeroQuest... e invece no!</title>
+    <link>https://salvatorelaisa.blog/post/heroquest</link>
+    <description>Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR).</description>
+    <pubDate>Sun, 01 Mar 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/2-0-apps</guid>
+    <title>Da 2.0 ad Apps</title>
+    <link>https://salvatorelaisa.blog/post/2-0-apps</link>
+    <description>Abbiamo vissuto (e stiamo vivendo tutt&#39;ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!</description>
+    <pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>web</category><category>pensieri</category><category>evoluzione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/2011</guid>
+    <title>2011</title>
+    <link>https://salvatorelaisa.blog/post/2011</link>
+    <description>Professionalmente non posso lamentarmi del 2010... tante soddisfazioni dai corsi a Mohole l&#39;esperienza a Better Software, il workshop di fotografia a Parigi e MoebiusMania.net che ha preso un bel giro.</description>
+    <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>nuovo anno</category><category>pensieri</category>
+  </item>
+
+    </channel>
+  </rss>

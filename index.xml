@@ -1,0 +1,434 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Fri, 02 Jul 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/the-nextjs-blog</guid>
+    <title>The Next(.js) blog</title>
+    <link>https://salvatorelaisa.blog/post/the-nextjs-blog</link>
+    <description>Devo ammettere che questo blog ormai ha visto più rifacimenti che articoli 🤣.</description>
+    <pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/fine-di-flash</guid>
+    <title>Un Web senza Flash</title>
+    <link>https://salvatorelaisa.blog/post/fine-di-flash</link>
+    <description>Dopo tanti anni dal primo annuncio ufficiale del pensionamento di Flash a fine 2020 da parte di Adobe, siamo arrivati al momento fatidico: da oggi siamo a tutti gli effetti in un Web senza più Flash.</description>
+    <pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>flash</category><category>web</category><category>nostalgia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/ut99-server-docker</guid>
+    <title>Creare un server privato di UT99 con Docker</title>
+    <link>https://salvatorelaisa.blog/post/ut99-server-docker</link>
+    <description>Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale.</description>
+    <pubDate>Sat, 07 Nov 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>docker</category><category>ut99</category><category>gaming</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/10-anni</guid>
+    <title>10 anni di blog!</title>
+    <link>https://salvatorelaisa.blog/post/10-anni</link>
+    <description>Nonostante i 3 cambi di dominio e altrettanti cambi di piattaforma e un indefinito numero di hosting providers, questo blog è riuscito a sopravvivere più o meno intatto ai suoi primi 10 anni 🥳🎊🎉.</description>
+    <pubDate>Fri, 21 Aug 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/fast-and-furious</guid>
+    <title>Fast and Furious</title>
+    <link>https://salvatorelaisa.blog/post/fast-and-furious</link>
+    <description>Dalle rapine ai camion al diventare agenti segreti che salvano il mondo con auto che volano il passo è stato non breve ma sicuramente imprevedibile, ma di certo &#39;Fast and Furious&#39; (il primo) ci ha insegnato a vivere la vita un quarto di miglio alla volta.</description>
+    <pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>film</category><category>nostalgia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/google-stadia</guid>
+    <title>Google Stadia: inizia l&#39;era del cloud gaming?</title>
+    <link>https://salvatorelaisa.blog/post/google-stadia</link>
+    <description>Quando è stato annunciato a inizio primavera, si fece sentire come un fulmin a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, Stadia.</description>
+    <pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>google</category><category>cloud</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/google-plus-chiude</guid>
+    <title>Chiude Google+</title>
+    <link>https://salvatorelaisa.blog/post/google-plus-chiude</link>
+    <description>Google ha un notevole cimitero di prodotti, alcuni terminati ingiustamente, altri di cui non ne sentiamo la macanza e altri ancora... meh...</description>
+    <pubDate>Sun, 24 Feb 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>social</category><category>google</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/raspberry-mania</guid>
+    <title>Raspberry Pi (Zero) Mania</title>
+    <link>https://salvatorelaisa.blog/post/raspberry-mania</link>
+    <description>Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un Raspberry Pi Zero in regalo... ed è partita la mia nuova mania per questi mesi 🤣.</description>
+    <pubDate>Wed, 06 Feb 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>iot</category><category>tecnicismi</category><category>device</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/addio-facebook</guid>
+    <title>Addio Facebook...</title>
+    <link>https://salvatorelaisa.blog/post/addio-facebook</link>
+    <description>Non l&#39;ho fatto per un singolo motivo preciso, diciamo che è più una raccolta di sintomi che una volta ponderati mi hanno fatto capire che tanto valeva compiere questo passo...</description>
+    <pubDate>Fri, 04 Jan 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>social</category><category>facebook</category><category>privacy</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/welcome-back</guid>
+    <title>Welcome back (again)</title>
+    <link>https://salvatorelaisa.blog/post/welcome-back</link>
+    <description>Ebbene si. Terzo &#39;remake&#39; di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (ma di questo ne parleremo un&#39;altra volta...).</description>
+    <pubDate>Sun, 30 Dec 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category><category>nuovo anno</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/milano-anniversario</guid>
+    <title>Un anno a Milano...</title>
+    <link>https://salvatorelaisa.blog/post/milano-anniversario</link>
+    <description>Qualche anno fa avrei, anzi ho, fatto i salti mortali pur di non trasferirmi a Milano... ma dopo 10 anni di pendolarismo dall&#39;hinterland sud, ad Agosto dello scorso anno (*2017*) ho preso alla fine questa decisione e dal Novembre successivo mi sono spostato qui.</description>
+    <pubDate>Sat, 03 Nov 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category><category>milano</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/doom-2016</guid>
+    <title>Doom (2016)</title>
+    <link>https://salvatorelaisa.blog/post/doom-2016</link>
+    <description>Avevo comprato l&#39;ultimo Doom durante i saldi di natale 2017 ma era rimasto dormiente nella mia libreria di Steam. Poi l&#39;annuncio del prossimo capitolo, Doom Eternal, mi ha ricordato che era l&#39;ora di bussare alle porte dell&#39;inferno a colpi di fucile 😎.</description>
+    <pubDate>Sun, 02 Sep 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</guid>
+    <title>The Vanishing of Ethan Carter</title>
+    <link>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</link>
+    <description>Questo lo inserisco nella lista &#39;giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe&#39;.</description>
+    <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/dvd-soprammobili</guid>
+    <title>DVD come soprammobili</title>
+    <link>https://salvatorelaisa.blog/post/dvd-soprammobili</link>
+    <description>Mi accingo a prepararmi al mio prossimo trasloco e spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento...</description>
+    <pubDate>Thu, 02 Nov 2017 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tv</category><category>dvd</category><category>nostalgia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/addio-nexus</guid>
+    <title>La fine dei Nexus</title>
+    <link>https://salvatorelaisa.blog/post/addio-nexus</link>
+    <description>Quando anche un grande entusiasta e early adopter deve accettare la dura realtà...</description>
+    <pubDate>Mon, 03 Apr 2017 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>mobile</category><category>google</category><category>nexus</category><category>device</category><category>android</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/100-days-of-code</guid>
+    <title>100 giorni di codice</title>
+    <link>https://salvatorelaisa.blog/post/100-days-of-code</link>
+    <description>L&#39;inizio di un nuovo anno è spesso l&#39;occasione per darsi appuntamento con dei nuovi `propositi`...</description>
+    <pubDate>Tue, 03 Jan 2017 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>iniziative</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/halloween-2016</guid>
+    <title>Halloween goodies</title>
+    <link>https://salvatorelaisa.blog/post/halloween-2016</link>
+    <description>Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween.</description>
+    <pubDate>Sat, 15 Oct 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>halloween</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/estate-autunno-eventi</guid>
+    <title>Tra l&#39;estate e l&#39;autunno c&#39;è sempre tanta roba!</title>
+    <link>https://salvatorelaisa.blog/post/estate-autunno-eventi</link>
+    <description>Ora che Settembre è iniziato e domani ci sarà la prima vera settimana lavorativa dopo Agosto inizio a dare un&#39;occhiata al calendario e segnarmi un po di cose, nella mia sfera di interessi è sempre un periodo pieno di cose interessanti!</description>
+    <pubDate>Sun, 04 Sep 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/machinarium</guid>
+    <title>Machinarium - il mio ritorno ai &quot;punta e clicca&quot;</title>
+    <link>https://salvatorelaisa.blog/post/machinarium</link>
+    <description>Tempo fa ho acquistato Machinarium sul Play Store tramite un&#39;offerta, ma per parecchio tempo (un anno credo) non l&#39;ho mai neanche installato.</description>
+    <pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/meno-niubbo</guid>
+    <title>Un po meno niubbo</title>
+    <link>https://salvatorelaisa.blog/post/meno-niubbo</link>
+    <description>Ma solo un pochino di meno!</description>
+    <pubDate>Sat, 06 Feb 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/beatles-spotify</guid>
+    <title>8 motivi per cui i Beatles su Spotify sono una gran cosa!</title>
+    <link>https://salvatorelaisa.blog/post/beatles-spotify</link>
+    <description></description>
+    <pubDate>Sat, 26 Dec 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>musica</category><category>beatles</category><category>spotify</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/nuovamente-niubbo</guid>
+    <title>Il bello di essere niubbi (di nuovo)</title>
+    <link>https://salvatorelaisa.blog/post/nuovamente-niubbo</link>
+    <description>niubbo: italianizzazione di newbie/noob che a sua volta è uno slang per dire &#39;novellino&#39; o &#39;novizio&#39;.</description>
+    <pubDate>Sat, 17 Oct 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/fuochi-fine-estate</guid>
+    <title>La mia tradizione dei Fuochi di fine estate</title>
+    <link>https://salvatorelaisa.blog/post/fuochi-fine-estate</link>
+    <description>Che poi in verità, penso di essere solo io a chiamarli così 😄</description>
+    <pubDate>Mon, 07 Sep 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/hdd-vs-cloud</guid>
+    <title>Hard Disks grossi vs il Cloud</title>
+    <link>https://salvatorelaisa.blog/post/hdd-vs-cloud</link>
+    <description>Stamattina ero al Radiant, una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare...</description>
+    <pubDate>Tue, 07 Jul 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tecnicismi</category><category>device</category><category>cloud</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/heroquest</guid>
+    <title>Il ritorno di HeroQuest... e invece no!</title>
+    <link>https://salvatorelaisa.blog/post/heroquest</link>
+    <description>Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR).</description>
+    <pubDate>Sun, 01 Mar 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/powered-by-ghost</guid>
+    <title>Powered by Ghost + OpenShift + GoDaddy</title>
+    <link>https://salvatorelaisa.blog/post/powered-by-ghost</link>
+    <description>Primo trasloco totale per il mio sito personale: ho cambiato hosting, dominio, e sistema di pubblicazione!</description>
+    <pubDate>Tue, 24 Feb 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/sperimentando-il-chromecast</guid>
+    <title>Sperimentando Il Chromecast</title>
+    <link>https://salvatorelaisa.blog/post/sperimentando-il-chromecast</link>
+    <description>Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast.</description>
+    <pubDate>Sat, 15 Feb 2014 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tecnicismi</category><category>tv</category><category>device</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/2-0-apps</guid>
+    <title>Da 2.0 ad Apps</title>
+    <link>https://salvatorelaisa.blog/post/2-0-apps</link>
+    <description>Abbiamo vissuto (e stiamo vivendo tutt&#39;ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!</description>
+    <pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>web</category><category>pensieri</category><category>evoluzione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/codemotion-2013</guid>
+    <title>Codemotion 2013 | codice, amici e tutto quello che c&#39;è in mezzo</title>
+    <link>https://salvatorelaisa.blog/post/codemotion-2013</link>
+    <description>Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del Codemotion anche quest&#39;anno ci sono andato nella veste di speaker ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di Appsterdam Milan...</description>
+    <pubDate>Tue, 23 Apr 2013 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/macbook-air</guid>
+    <title>Il peso dell&#39;anima (dei laptop)</title>
+    <link>https://salvatorelaisa.blog/post/macbook-air</link>
+    <description>Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!</description>
+    <pubDate>Thu, 06 Sep 2012 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tecnicismi</category><category>device</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/splider-chiude</guid>
+    <title>La fine di una (parte di) blogosfera</title>
+    <link>https://salvatorelaisa.blog/post/splider-chiude</link>
+    <description>In 24 ore la notizia ha fatto il giro del web, italiano si intende, Splinder chiude.</description>
+    <pubDate>Thu, 24 Nov 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>nostalgia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/tempo-di-2-0</guid>
+    <title>E&#39; tempo di 2.0</title>
+    <link>https://salvatorelaisa.blog/post/tempo-di-2-0</link>
+    <description>Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l&#39;esatto contrario...</description>
+    <pubDate>Sun, 16 Oct 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/setup-fotografico</guid>
+    <title>Setup Fotografico</title>
+    <link>https://salvatorelaisa.blog/post/setup-fotografico</link>
+    <description>Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂.</description>
+    <pubDate>Thu, 02 Jun 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>fotografia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/cinestesia</guid>
+    <title>Cinestesia - il cinema muto suonato live</title>
+    <link>https://salvatorelaisa.blog/post/cinestesia</link>
+    <description>Purtroppo anche quest&#39;anno si chiuda la stagione di Cinestesia, la terza che seguo da quando ho scoperto quest&#39;iniziativa.</description>
+    <pubDate>Sat, 21 May 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>musica</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/codemotion-2011-talk</guid>
+    <title>Dove va il webdesigner?</title>
+    <link>https://salvatorelaisa.blog/post/codemotion-2011-talk</link>
+    <description>Beh se proprio non ha niente da fare può fare un salto a Roma il 5 Marzo per il Codemotion!</description>
+    <pubDate>Mon, 21 Feb 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>talk</category><category>eventi</category><category>codemotion</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/javaday-codemotion</guid>
+    <title>Il Javaday cambia e diviene Codemotion</title>
+    <link>https://salvatorelaisa.blog/post/javaday-codemotion</link>
+    <description>Per quattro anni il Javaday Roma ha offerto un evento unico in Italia per contenuti, affluenza e spirito. L’atmosfera trascinante del Javaday ha saputo conquistare e coinvolgere i partecipanti e gli sponsor.</description>
+    <pubDate>Thu, 13 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>codemotion</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/2011</guid>
+    <title>2011</title>
+    <link>https://salvatorelaisa.blog/post/2011</link>
+    <description>Professionalmente non posso lamentarmi del 2010... tante soddisfazioni dai corsi a Mohole l&#39;esperienza a Better Software, il workshop di fotografia a Parigi e MoebiusMania.net che ha preso un bel giro.</description>
+    <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>nuovo anno</category><category>pensieri</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/ubuntu-11</guid>
+    <title>Ubuntu 11.04 (e in generale)</title>
+    <link>https://salvatorelaisa.blog/post/ubuntu-11</link>
+    <description>E&#39; dalla prima versione del 2008 che seguo con molto interesse l&#39;evoluzione di Ubuntu, la distro Linux più user friendly e maggiormente in voga del momento</description>
+    <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>ubuntu</category><category>linux</category><category>os</category><category>desktop</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/android-switch</guid>
+    <title>On the Android side</title>
+    <link>https://salvatorelaisa.blog/post/android-switch</link>
+    <description>Ebbene sì, dopo un anno di utenza iPhone... sono passato al lato [Android](https://www.android.com/) della telefonia smart!</description>
+    <pubDate>Tue, 07 Dec 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>android</category><category>ios</category><category>mobile</category><category>device</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</guid>
+    <title>Transatlantic live @Alcatraz Milano</title>
+    <link>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</link>
+    <description>E&#39; brutto scoprire band che apprezzi davvero nei momenti in cui sono inattive, e nel caso dei Transatlantic che sono un side projects di vari musicisti coinvolti in altre band (*Dream Theater, Flower Kings, Marillion*) non è una situazione rara. Ma per fortuna dopo alcuni anni da quando li ho scoperti, questo è stato l&#39;anno di un nuovo album e nuovo tour che li ha finalmente riportati a Milano dove ho potuto vederli dal vivo 😎.</description>
+    <pubDate>Wed, 01 Sep 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>musica</category><category>concerti</category><category>eventi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/chrome-over-firefox</guid>
+    <title>Chrome over Firefox</title>
+    <link>https://salvatorelaisa.blog/post/chrome-over-firefox</link>
+    <description>Per ben 4 anni sono stato un’intrippatissimo utente Firefox, dato il mio lavoro però sono costretto a sperimentare e lavorare anche su altri browser e questo mi ha portato nell’ultimo anno a scegliere come mio browser principale Chrome di Google.</description>
+    <pubDate>Sun, 29 Aug 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>tecnicismi</category><category>web</category><category>browsers</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/start</guid>
+    <title>Si comincia!</title>
+    <link>https://salvatorelaisa.blog/post/start</link>
+    <description>Lo so che ci ho messo un bel pò, ma sapete com&#39;è.... quando bisogna lavorare per se stessi non si è mai subito soddisfatti di quello che si sta facendo! 😄</description>
+    <pubDate>Sat, 21 Aug 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+    </channel>
+  </rss>

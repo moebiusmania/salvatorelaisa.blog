@@ -1,0 +1,64 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sat, 07 Nov 2020 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/gaming/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/ut99-server-docker</guid>
+    <title>Creare un server privato di UT99 con Docker</title>
+    <link>https://salvatorelaisa.blog/post/ut99-server-docker</link>
+    <description>Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale.</description>
+    <pubDate>Sat, 07 Nov 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>docker</category><category>ut99</category><category>gaming</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/google-stadia</guid>
+    <title>Google Stadia: inizia l&#39;era del cloud gaming?</title>
+    <link>https://salvatorelaisa.blog/post/google-stadia</link>
+    <description>Quando è stato annunciato a inizio primavera, si fece sentire come un fulmin a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, Stadia.</description>
+    <pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>google</category><category>cloud</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/doom-2016</guid>
+    <title>Doom (2016)</title>
+    <link>https://salvatorelaisa.blog/post/doom-2016</link>
+    <description>Avevo comprato l&#39;ultimo Doom durante i saldi di natale 2017 ma era rimasto dormiente nella mia libreria di Steam. Poi l&#39;annuncio del prossimo capitolo, Doom Eternal, mi ha ricordato che era l&#39;ora di bussare alle porte dell&#39;inferno a colpi di fucile 😎.</description>
+    <pubDate>Sun, 02 Sep 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</guid>
+    <title>The Vanishing of Ethan Carter</title>
+    <link>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</link>
+    <description>Questo lo inserisco nella lista &#39;giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe&#39;.</description>
+    <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/machinarium</guid>
+    <title>Machinarium - il mio ritorno ai &quot;punta e clicca&quot;</title>
+    <link>https://salvatorelaisa.blog/post/machinarium</link>
+    <description>Tempo fa ho acquistato Machinarium sul Play Store tramite un&#39;offerta, ma per parecchio tempo (un anno credo) non l&#39;ho mai neanche installato.</description>
+    <pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category>
+  </item>
+
+    </channel>
+  </rss>

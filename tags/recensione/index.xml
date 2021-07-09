@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sun, 02 Sep 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/recensione/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/doom-2016</guid>
+    <title>Doom (2016)</title>
+    <link>https://salvatorelaisa.blog/post/doom-2016</link>
+    <description>Avevo comprato l&#39;ultimo Doom durante i saldi di natale 2017 ma era rimasto dormiente nella mia libreria di Steam. Poi l&#39;annuncio del prossimo capitolo, Doom Eternal, mi ha ricordato che era l&#39;ora di bussare alle porte dell&#39;inferno a colpi di fucile 😎.</description>
+    <pubDate>Sun, 02 Sep 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</guid>
+    <title>The Vanishing of Ethan Carter</title>
+    <link>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</link>
+    <description>Questo lo inserisco nella lista &#39;giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe&#39;.</description>
+    <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>gaming</category><category>recensione</category>
+  </item>
+
+    </channel>
+  </rss>

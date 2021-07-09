@@ -1,0 +1,84 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Fri, 02 Jul 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/blog/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/the-nextjs-blog</guid>
+    <title>The Next(.js) blog</title>
+    <link>https://salvatorelaisa.blog/post/the-nextjs-blog</link>
+    <description>Devo ammettere che questo blog ormai ha visto più rifacimenti che articoli 🤣.</description>
+    <pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/10-anni</guid>
+    <title>10 anni di blog!</title>
+    <link>https://salvatorelaisa.blog/post/10-anni</link>
+    <description>Nonostante i 3 cambi di dominio e altrettanti cambi di piattaforma e un indefinito numero di hosting providers, questo blog è riuscito a sopravvivere più o meno intatto ai suoi primi 10 anni 🥳🎊🎉.</description>
+    <pubDate>Fri, 21 Aug 2020 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/welcome-back</guid>
+    <title>Welcome back (again)</title>
+    <link>https://salvatorelaisa.blog/post/welcome-back</link>
+    <description>Ebbene si. Terzo &#39;remake&#39; di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (ma di questo ne parleremo un&#39;altra volta...).</description>
+    <pubDate>Sun, 30 Dec 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category><category>nuovo anno</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/powered-by-ghost</guid>
+    <title>Powered by Ghost + OpenShift + GoDaddy</title>
+    <link>https://salvatorelaisa.blog/post/powered-by-ghost</link>
+    <description>Primo trasloco totale per il mio sito personale: ho cambiato hosting, dominio, e sistema di pubblicazione!</description>
+    <pubDate>Tue, 24 Feb 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/splider-chiude</guid>
+    <title>La fine di una (parte di) blogosfera</title>
+    <link>https://salvatorelaisa.blog/post/splider-chiude</link>
+    <description>In 24 ore la notizia ha fatto il giro del web, italiano si intende, Splinder chiude.</description>
+    <pubDate>Thu, 24 Nov 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>nostalgia</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/tempo-di-2-0</guid>
+    <title>E&#39; tempo di 2.0</title>
+    <link>https://salvatorelaisa.blog/post/tempo-di-2-0</link>
+    <description>Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l&#39;esatto contrario...</description>
+    <pubDate>Sun, 16 Oct 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/start</guid>
+    <title>Si comincia!</title>
+    <link>https://salvatorelaisa.blog/post/start</link>
+    <description>Lo so che ci ho messo un bel pò, ma sapete com&#39;è.... quando bisogna lavorare per se stessi non si è mai subito soddisfatti di quello che si sta facendo! 😄</description>
+    <pubDate>Sat, 21 Aug 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category>
+  </item>
+
+    </channel>
+  </rss>

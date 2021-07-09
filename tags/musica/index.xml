@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sat, 26 Dec 2015 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/musica/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/beatles-spotify</guid>
+    <title>8 motivi per cui i Beatles su Spotify sono una gran cosa!</title>
+    <link>https://salvatorelaisa.blog/post/beatles-spotify</link>
+    <description></description>
+    <pubDate>Sat, 26 Dec 2015 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>musica</category><category>beatles</category><category>spotify</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/cinestesia</guid>
+    <title>Cinestesia - il cinema muto suonato live</title>
+    <link>https://salvatorelaisa.blog/post/cinestesia</link>
+    <description>Purtroppo anche quest&#39;anno si chiuda la stagione di Cinestesia, la terza che seguo da quando ho scoperto quest&#39;iniziativa.</description>
+    <pubDate>Sat, 21 May 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>eventi</category><category>musica</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</guid>
+    <title>Transatlantic live @Alcatraz Milano</title>
+    <link>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</link>
+    <description>E&#39; brutto scoprire band che apprezzi davvero nei momenti in cui sono inattive, e nel caso dei Transatlantic che sono un side projects di vari musicisti coinvolti in altre band (*Dream Theater, Flower Kings, Marillion*) non è una situazione rara. Ma per fortuna dopo alcuni anni da quando li ho scoperti, questo è stato l&#39;anno di un nuovo album e nuovo tour che li ha finalmente riportati a Milano dove ho potuto vederli dal vivo 😎.</description>
+    <pubDate>Wed, 01 Sep 2010 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>musica</category><category>concerti</category><category>eventi</category>
+  </item>
+
+    </channel>
+  </rss>

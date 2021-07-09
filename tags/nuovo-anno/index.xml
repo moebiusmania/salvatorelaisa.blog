@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Salvatore Laisa</title>
+      <link>https://salvatorelaisa.blog/post</link>
+      <description>Blog personale.</description>
+      <language>it-IT</language>
+      <managingEditor>undefined (Salvatore Laisa)</managingEditor>
+      <webMaster>undefined (Salvatore Laisa)</webMaster>
+      <lastBuildDate>Sun, 30 Dec 2018 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://salvatorelaisa.blog/tags/nuovo-anno/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://salvatorelaisa.blog/post/welcome-back</guid>
+    <title>Welcome back (again)</title>
+    <link>https://salvatorelaisa.blog/post/welcome-back</link>
+    <description>Ebbene si. Terzo &#39;remake&#39; di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (ma di questo ne parleremo un&#39;altra volta...).</description>
+    <pubDate>Sun, 30 Dec 2018 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>blog</category><category>tecnicismi</category><category>nuovo anno</category>
+  </item>
+
+  <item>
+    <guid>https://salvatorelaisa.blog/post/2011</guid>
+    <title>2011</title>
+    <link>https://salvatorelaisa.blog/post/2011</link>
+    <description>Professionalmente non posso lamentarmi del 2010... tante soddisfazioni dai corsi a Mohole l&#39;esperienza a Better Software, il workshop di fotografia a Parigi e MoebiusMania.net che ha preso un bel giro.</description>
+    <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+    <author>undefined (Salvatore Laisa)</author>
+    <category>nuovo anno</category><category>pensieri</category>
+  </item>
+
+    </channel>
+  </rss>
