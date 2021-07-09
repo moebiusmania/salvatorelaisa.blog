@@ -2,7 +2,7 @@
 title: Fast and Furious
 date: '2020-04-20'
 tags: ['film', 'nostalgia']
-draft: true
+draft: false
 summary: "Dalle rapine ai camion al diventare agenti segreti che salvano il mondo con auto che volano il passo è stato non breve ma sicuramente imprevedibile, ma di certo 'Fast and Furious' (il primo) ci ha insegnato a vivere la vita un quarto di miglio alla volta."
 ---
 

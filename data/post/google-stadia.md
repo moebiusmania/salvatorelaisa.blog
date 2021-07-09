@@ -10,7 +10,7 @@ summary: 'Quando è stato annunciato a inizio primavera, si fece sentire come un
 
 Quando è stato [annunciato a inizio primavera](https://www.youtube.com/watch?v=nUih5C5rOrA), si fece sentire come un fulmine a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, [Stadia](https://stadia.google.com/).
 
-Io da bravo _early adopter_ mi sono prenotato subito una **Premiere Edition** che ho riceuvo a Novembre a un paio di giorni dal lancio ufficiale della piattaforma. Ma il mio obiettivo è, ora che sono a casa dei miei per i giorni di Natale, sfruttare questo periodo per capire se potrebbe essere realmente un'alternativa alle console.
+Io da bravo _early adopter_ mi sono prenotato subito una **Premiere Edition** che ho ricevuto a Novembre dopo un paio di giorni dal lancio ufficiale della piattaforma. Ma il mio obiettivo è, ora che sono a casa dei miei per i giorni di Natale, sfruttare questo periodo per capire se potrebbe essere realmente un'alternativa alle console.
 
 ## Cos'è il cloud gaming
 
