@@ -1,6 +1,8 @@
 import { NextSeo, ArticleJsonLd } from 'next-seo'
 import siteMetadata from '@/data/siteMetadata'
 
+const checkExternal = (url) => (url.search('http') > -1 ? true : false)
+
 export const SEO = {
   title: siteMetadata.title,
   description: siteMetadata.description,
@@ -12,7 +14,9 @@ export const SEO = {
     description: siteMetadata.description,
     images: [
       {
-        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
+        url: checkExternal(siteMetadata.socialBanner)
+          ? siteMetadata.socialBanner
+          : `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         alt: siteMetadata.title,
         width: 1200,
         height: 600,
@@ -59,7 +63,7 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
 
   const featuredImages = imagesArr.map((img) => {
     return {
-      url: `${siteMetadata.siteUrl}${img}`,
+      url: checkExternal(img) ? img : `${siteMetadata.siteUrl}${img}`,
       alt: title,
     }
   })
