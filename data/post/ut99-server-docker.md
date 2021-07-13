@@ -4,6 +4,8 @@ date: '2020-11-07'
 tags: ['docker', 'ut99', 'gaming', 'tecnicismi']
 draft: false
 summary: 'Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale.'
+images:
+  ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2020/LanParty_01.jpg']
 ---
 
 ![la schermata iniziale di UT99](https://external-preview.redd.it/Rz9Gwj1URmf6I4IGUTWLruCb58fAsPNE_qn2WQBu98I.png?auto=webp&s=cfc13c82491d8202b4feb655389f97e10c35b7c0)

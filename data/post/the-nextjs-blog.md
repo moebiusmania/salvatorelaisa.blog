@@ -4,6 +4,10 @@ date: '2021-07-02'
 tags: ['blog', 'tecnicismi']
 draft: false
 summary: 'Devo ammettere che questo blog ormai ha visto più rifacimenti che articoli 🤣.'
+images:
+  [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png',
+  ]
 ---
 
 ![il logo di Next.js](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png)
