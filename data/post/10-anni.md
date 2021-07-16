@@ -3,6 +3,10 @@ title: 10 anni di blog!
 date: '2020-08-21'
 tags: ['blog']
 draft: false
+images:
+  [
+    'https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+  ]
 summary: 'Nonostante i 3 cambi di dominio e altrettanti cambi di piattaforma e un indefinito numero di hosting providers, questo blog è riuscito a sopravvivere più o meno intatto ai suoi primi 10 anni 🥳🎊🎉.'
 ---
 

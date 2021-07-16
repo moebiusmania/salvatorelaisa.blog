@@ -3,6 +3,7 @@ title: Da 2.0 ad Apps
 date: '2013-11-17'
 tags: ['web', 'pensieri', 'evoluzione']
 draft: false
+images: ['https://farm7.staticflickr.com/6134/5958025625_46cea174fb_z_d.jpg']
 summary: "Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!"
 ---
 
