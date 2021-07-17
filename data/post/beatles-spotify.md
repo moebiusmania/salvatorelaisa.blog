@@ -4,9 +4,10 @@ date: '2015-12-26'
 tags: ['musica', 'beatles', 'spotify']
 draft: false
 summary: ''
+images: ['https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg']
 ---
 
-![](https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg)
+![La copertina dell'album "Help!"](https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg)<small>_La copertina dell'album "Help!"._</small>
 
 1. sono i migliori
 2. si possono ascoltare i loro pezzi gratuitamente e legalmente

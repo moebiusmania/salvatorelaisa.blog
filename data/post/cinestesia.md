@@ -4,9 +4,13 @@ date: '2011-05-21'
 tags: ['eventi', 'musica']
 draft: false
 summary: "Purtroppo anche quest'anno si chiuda la stagione di Cinestesia, la terza che seguo da quando ho scoperto quest'iniziativa."
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/10580782_1510345499210909_9183605874042474376_o.jpg',
+  ]
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/10580782_1510345499210909_9183605874042474376_o.jpg)
+![Una scena del film](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/10580782_1510345499210909_9183605874042474376_o.jpg)
 
 Purtroppo anche quest'anno si chiuda la stagione di **[Cinestesia](https://www.facebook.com/cinestesia.pavia)**, la terza che seguo da quando ho scoperto quest'iniziativa.
 

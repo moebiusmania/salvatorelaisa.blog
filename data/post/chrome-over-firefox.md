@@ -4,9 +4,13 @@ date: '2010-08-29'
 tags: ['tecnicismi', 'web', 'browsers']
 draft: false
 summary: 'Per ben 4 anni sono stato un’intrippatissimo utente Firefox, dato il mio lavoro però sono costretto a sperimentare e lavorare anche su altri browser e questo mi ha portato nell’ultimo anno a scegliere come mio browser principale Chrome di Google.'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/chrome_vs_firefox.jpg',
+  ]
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/chrome_vs_firefox.jpg)
+![I loghi di Chrome e Firefox a confronto.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/chrome_vs_firefox.jpg) <small>_I loghi di Chrome e Firefox a confronto._</small>
 
 Per ben **4 anni** sono stato un’intrippatissimo utente [Firefox](https://www.mozilla.org/it/firefox/new/), dato il mio lavoro però sono “costretto” a sperimentare e lavorare anche su altri browser e questo mi ha portato nell’ultimo anno a scegliere come mio browser principale [Chrome](https://www.google.it/chrome/browser/desktop/) di Google.
 

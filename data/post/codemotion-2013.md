@@ -4,9 +4,13 @@ date: '2013-04-23'
 tags: ['eventi']
 draft: false
 summary: "Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del Codemotion anche quest'anno ci sono andato nella veste di speaker ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di Appsterdam Milan..."
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2013/903052_10200881047414631_335274847_o-1.jpg',
+  ]
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2013/903052_10200881047414631_335274847_o-1.jpg)
+![Io e alcuni amici di Appsterdam Milan mentre pratichiamo dell'air coding 🤣...](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2013/903052_10200881047414631_335274847_o-1.jpg) <small>_Io e alcuni amici di Appsterdam Milan mentre pratichiamo dell'air coding 🤣..._</small>
 
 Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del **[Codemotion](http://rome.codemotionworld.com/)** (_in teoria la quarta vista anche l'edizione intermedia di Venezia_), anche quest'anno ci sono andato nella veste di speaker ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di [Appsterdam Milano](http://www.appsterdammilan.com/), cosa che devo ammettere ha dato veramente un tocco un più al tutto specialmente viste le precedenti edizioni alle quali ero andato quasi da solo.
 

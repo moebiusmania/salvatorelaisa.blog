@@ -4,6 +4,10 @@ date: '2017-04-03'
 tags: ['mobile', 'google', 'nexus', 'device', 'android']
 draft: false
 summary: 'Quando anche un grande entusiasta e early adopter deve accettare la dura realtà...'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2017/Google-Nexus-Smartphone-made-by-HTC-to-be-called-Pixel-Smartphone.png',
+  ]
 ---
 
 ![L'evoluzione degli smartphone Nexus dal One al 5](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2017/Google-Nexus-Smartphone-made-by-HTC-to-be-called-Pixel-Smartphone.png) <small>_L'evoluzione degli smartphone Nexus dal One al 5_</small>

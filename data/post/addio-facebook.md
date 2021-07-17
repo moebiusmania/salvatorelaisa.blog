@@ -10,7 +10,7 @@ images:
 summary: "Non l'ho fatto per un singolo motivo preciso, diciamo che è più una raccolta di sintomi che una volta ponderati mi hanno fatto capire che tanto valeva compiere questo passo..."
 ---
 
-![](https://images.unsplash.com/photo-1522159698025-071104a1ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+[![Foto di Thought Catalog su Unsplash](https://images.unsplash.com/photo-1522159698025-071104a1ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80)](https://unsplash.com/photos/tRL_Rkh6D8o) <small>_Foto di Thought Catalog su Unsplash_</small>
 
 ## Ma quindi, perché l'hai fatto?
 
