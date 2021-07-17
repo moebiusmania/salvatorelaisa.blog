@@ -4,6 +4,10 @@ date: '2018-08-20'
 tags: ['gaming', 'recensione']
 draft: false
 summary: "Questo lo inserisco nella lista 'giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe'."
+images:
+  [
+    'https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Ethan-Carter-1280x720.jpg',
+  ]
 ---
 
 ![La copertina del gioco](https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Ethan-Carter-1280x720.jpg) <small>_La copertina del gioco_</small>

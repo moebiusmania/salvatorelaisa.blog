@@ -4,6 +4,7 @@ date: '2010-09-01'
 tags: ['musica', 'concerti', 'eventi']
 draft: false
 summary: "E' brutto scoprire band che apprezzi davvero nei momenti in cui sono inattive, e nel caso dei Transatlantic che sono un side projects di vari musicisti coinvolti in altre band (*Dream Theater, Flower Kings, Marillion*) non è una situazione rara. Ma per fortuna dopo alcuni anni da quando li ho scoperti, questo è stato l'anno di un nuovo album e nuovo tour che li ha finalmente riportati a Milano dove ho potuto vederli dal vivo 😎."
+images: ['https://images-na.ssl-images-amazon.com/images/I/91mbDz6klkL._AC_SL1417_.jpg']
 ---
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/11952011" width="100%" height="480" frameBorder="0" allowFullScreen></iframe> <small>Una clip che ho registrato con la mia fotocamera bridge, il video è decente l'audio ovviamente distorce un po per il volume</small>

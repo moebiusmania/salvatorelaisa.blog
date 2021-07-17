@@ -22,7 +22,7 @@ date: '${date}'
 tags: []
 draft: true
 summary: ""
-images: []
+images: [""]
 ---
 `
 
