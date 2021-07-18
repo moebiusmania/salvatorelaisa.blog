@@ -38,14 +38,14 @@
     "remark-code-titles": "0.1.2",
     "remark-footnotes": "^3.0.0",
     "remark-math": "4.0.0",
-    "remark-slug": "6.0.0",
+    "remark-slug": "6.1.0",
     "tailwindcss": "2.2.4"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "11.0.1",
     "@svgr/webpack": "^5.5.0",
     "cross-env": "^7.0.3",
-    "eslint": "7.30.0",
+    "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",

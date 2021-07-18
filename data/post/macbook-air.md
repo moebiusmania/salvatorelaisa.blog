@@ -1,7 +1,7 @@
 ---
 title: Il peso dell'anima (dei laptop)
 date: '2012-09-06'
-tags: ['tecnicismi', 'device']
+tags: ['tecnicismi', 'device', 'laptop']
 draft: false
 summary: 'Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!'
 images:
