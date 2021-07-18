@@ -4,6 +4,10 @@ date: '2014-02-15'
 tags: ['tecnicismi', 'tv', 'device']
 draft: false
 summary: 'Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast.'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png',
+  ]
 ---
 
 ![Il logo del progetto Chromecast](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png) <small>_Il logo del progetto Chromecast_</small>

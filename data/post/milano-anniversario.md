@@ -4,9 +4,13 @@ date: '2018-11-03'
 tags: ['pensieri', 'milano']
 draft: false
 summary: "Qualche anno fa avrei, anzi ho, fatto i salti mortali pur di non trasferirmi a Milano... ma dopo 10 anni di pendolarismo dall'hinterland sud, ad Agosto dello scorso anno (*2017*) ho preso alla fine questa decisione e dal Novembre successivo mi sono spostato qui."
+images:
+  [
+    'https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80',
+  ]
 ---
 
-![](https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+[![Foto di Cristina Gottardi su Unsplash](https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80)](https://unsplash.com/photos/-YzMZYqwoH4) <small>_Foto di Cristina Gottardi su Unsplash_</small>
 
 Qualche anno fa avrei, anzi ho, fatto i salti mortali pur di non trasferirmi a Milano... ma dopo 10 anni di pendolarismo dall'hinterland sud, ad Agosto dello scorso anno (_2017_) ho preso alla fine questa decisione e dal Novembre successivo mi sono spostato qui.
 

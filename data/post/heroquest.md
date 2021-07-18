@@ -4,9 +4,11 @@ date: '2015-03-01'
 tags: ['pensieri']
 draft: false
 summary: 'Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR).'
+images:
+  ['https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true']
 ---
 
-![](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true)
+![La cover art di quello che doveva essere il remake di HeroQuest.](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true)<small>_La cover art di quello che doveva essere il remake di HeroQuest._</small>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/wC2QJa8olUk" frameBorder="0" allowFullScreen></iframe>
 

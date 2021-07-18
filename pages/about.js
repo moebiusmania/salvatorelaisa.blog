@@ -75,7 +75,7 @@ export default function About() {
               Se <strong>non</strong> siete d'accordo su qualcosa, e ci sta, basta premere il
               tastino per chiudere la tab.
             </p>
-            <h3>Privacy</h3>
+            <h3>Privacy policy</h3>
             <p>
               Non necessaria, dato che non sto tracciando il alcun modo le pagine di questo blog{' '}
               <span role="img" aria-label="smile">

@@ -4,9 +4,10 @@ date: '2015-02-24'
 tags: ['blog', 'tecnicismi']
 draft: false
 summary: 'Primo trasloco totale per il mio sito personale: ho cambiato hosting, dominio, e sistema di pubblicazione!'
+images: ['https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/ghost-logo.png']
 ---
 
-![](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/ghost-logo.png)
+![Il logo di Ghost.](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/ghost-logo.png) <small>_Il logo di Ghost._</small>
 
 Primo trasloco totale per il mio sito personale: ho cambiato **hosting, dominio, e sistema di pubblicazione**!
 

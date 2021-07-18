@@ -4,6 +4,10 @@ date: '2011-11-24'
 tags: ['blog', 'nostalgia']
 draft: false
 summary: 'In 24 ore la notizia ha fatto il giro del web, italiano si intende, Splinder chiude.'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/blogospheregraphic.jpg',
+  ]
 ---
 
 ![La cara vecchia "tag cloud"](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/blogospheregraphic.jpg)

@@ -4,6 +4,10 @@ date: '2019-02-06'
 tags: ['iot', 'tecnicismi', 'device']
 draft: false
 summary: 'Qualche giorno fa durante un evento alla sede milanese di Microsoft ho ricevuto un Raspberry Pi Zero in regalo... ed è partita la mia nuova mania per questi mesi 🤣.'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2019/IMG_20190122_215800.jpg',
+  ]
 ---
 
 ![Il mio RPi Zero "nudo" collegato alla TV](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2019/IMG_20190122_215800.jpg) <small>_Il mio RPi Zero "nudo" collegato alla TV_</small>

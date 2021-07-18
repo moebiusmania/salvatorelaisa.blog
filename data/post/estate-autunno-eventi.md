@@ -4,11 +4,15 @@ date: '2016-09-04'
 tags: ['eventi']
 draft: false
 summary: "Ora che Settembre è iniziato e domani ci sarà la prima vera settimana lavorativa dopo Agosto inizio a dare un'occhiata al calendario e segnarmi un po di cose, nella mia sfera di interessi è sempre un periodo pieno di cose interessanti!"
+images:
+  [
+    'https://images.unsplash.com/photo-1506899686410-4670690fccef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+  ]
 ---
 
 <script async src="//www.instagram.com/embed.js"></script>
 
-![](https://images.unsplash.com/photo-1506899686410-4670690fccef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80)
+[![Foto di Aaron Burden su Unsplash](https://images.unsplash.com/photo-1506899686410-4670690fccef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)](https://unsplash.com/photos/Zl8zGdnNcP8) <small>_Foto di Aaron Burden su Unsplash_</small>
 
 Ora che Settembre è iniziato e domani ci sarà la prima vera settimana lavorativa dopo Agosto inizio a dare un'occhiata al calendario e segnarmi un po di cose, nella mia sfera di interessi è sempre un periodo pieno di cose interessanti!
 

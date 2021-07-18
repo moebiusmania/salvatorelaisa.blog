@@ -4,9 +4,10 @@ date: '2015-10-17'
 tags: ['pensieri']
 draft: false
 summary: "niubbo: italianizzazione di newbie/noob che a sua volta è uno slang per dire 'novellino' o 'novizio'."
+images: ['https://c2.staticflickr.com/2/1103/1387926582_207a9c65aa_o.jpg']
 ---
 
-![](https://c2.staticflickr.com/2/1103/1387926582_207a9c65aa_o.jpg)
+[![Foto di Dan Cederholm su Flickr.](https://c2.staticflickr.com/2/1103/1387926582_207a9c65aa_o.jpg)](https://www.flickr.com/photos/simplebitsdan/1387926582/) <small>_Foto di Dan Cederholm su Flickr._</small>
 
 > **niubbo**: italianizzazione di newbie/noob che a sua volta è uno slang per dire "novellino" o "novizio".
 

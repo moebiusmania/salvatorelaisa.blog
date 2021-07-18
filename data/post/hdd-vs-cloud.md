@@ -4,9 +4,10 @@ date: '2015-07-07'
 tags: ['tecnicismi', 'device', 'cloud']
 draft: false
 summary: 'Stamattina ero al Radiant, una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare...'
+images: ['https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg']
 ---
 
-![](https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg)
+[![Foto di William Warby su Flickr](https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg)](https://www.flickr.com/photos/wwarby/11644168395/) <small>_Foto di William Warby su Flickr_</small>
 
 Stamattina ero al [Radiant](http://www.parcoesposizioninovegro.it/le-fiere-a-z/radiant-and-silicon.html), una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare (_nerd smile_) e tra le "bancarelle" mi è caduto l'occhio su un Hard-disk da 3TB a circa 80/90 euro, essendo un mezzo ossessionato per l'archiviazione e i backup mi stava venenedo quasi istintivo prenderlo, ma poi mi sono fatto la solita domanda: **ma poi, che me ne faccio?**
 

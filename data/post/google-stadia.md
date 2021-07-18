@@ -4,6 +4,10 @@ date: '2019-12-22'
 tags: ['gaming', 'google', 'cloud']
 draft: false
 summary: 'Quando è stato annunciato a inizio primavera, si fece sentire come un fulmin a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, Stadia.'
+images:
+  [
+    'https://play-lh.googleusercontent.com/oDMbRgRAJQwEtbvonfI9QkBKd5sCiqxgiIGgIQK1rVu77RFBjJwR53BbdhXRpriL9Rc',
+  ]
 ---
 
 ![Il logo di Google Stadia.](https://play-lh.googleusercontent.com/oDMbRgRAJQwEtbvonfI9QkBKd5sCiqxgiIGgIQK1rVu77RFBjJwR53BbdhXRpriL9Rc) <small>_Il logo di Google Stadia._</small>

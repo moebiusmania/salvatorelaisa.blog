@@ -4,6 +4,10 @@ date: '2020-04-20'
 tags: ['film', 'nostalgia']
 draft: false
 summary: "Dalle rapine ai camion al diventare agenti segreti che salvano il mondo con auto che volano il passo è stato non breve ma sicuramente imprevedibile, ma di certo 'Fast and Furious' (il primo) ci ha insegnato a vivere la vita un quarto di miglio alla volta."
+images:
+  [
+    'https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg',
+  ]
 ---
 
 ![La locandina del film, linkata da IMDB](https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg) <small>_La locandina del film, linkata da [IMDB](https://www.imdb.com/title/tt0232500/mediaindex)_</small>

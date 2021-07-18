@@ -4,9 +4,13 @@ date: '2012-09-06'
 tags: ['tecnicismi', 'device']
 draft: false
 summary: 'Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!'
+images:
+  [
+    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg',
+  ]
 ---
 
-![](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg)
+![Uno scatto promozionale del MacBook Air.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg)<small>_Uno scatto promozionale del MacBook Air._</small>
 
 Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](*http://www.apple.com/it/macbookair/*)**.
 

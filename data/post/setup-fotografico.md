@@ -4,6 +4,8 @@ date: '2011-06-02'
 tags: ['fotografia']
 draft: false
 summary: 'Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂.'
+images:
+  ['https://github.com/moebiusmania/blog-assets/blob/master/images/2011/IMG_2036.CR2.jpg?raw=true']
 ---
 
 ![Una foto scattata con la mia Canon in Provenza nel 2010](https://github.com/moebiusmania/blog-assets/blob/master/images/2011/IMG_2036.CR2.jpg?raw=true) <small>_Una foto scattata con la mia Canon in Provenza nel 2010_</small>

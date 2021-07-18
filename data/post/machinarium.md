@@ -4,9 +4,10 @@ date: '2016-02-14'
 tags: ['gaming']
 draft: false
 summary: "Tempo fa ho acquistato Machinarium sul Play Store tramite un'offerta, ma per parecchio tempo (un anno credo) non l'ho mai neanche installato."
+images: ['https://images6.alphacoders.com/606/thumb-1920-606348.jpg']
 ---
 
-![](https://images6.alphacoders.com/606/thumb-1920-606348.jpg)
+![La cover art del gioco.](https://images6.alphacoders.com/606/thumb-1920-606348.jpg)<small>_La cover art del gioco._</small>
 
 Tempo fa ho acquistato **[Machinarium](http://machinarium.net/)** sul Play Store tramite un'offerta, ma per parecchio tempo (un anno credo) non l'ho mai neanche installato.
 
