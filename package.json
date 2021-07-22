@@ -39,7 +39,7 @@
     "remark-footnotes": "^3.0.0",
     "remark-math": "4.0.0",
     "remark-slug": "6.1.0",
-    "tailwindcss": "2.2.4"
+    "tailwindcss": "2.2.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "11.0.1",
