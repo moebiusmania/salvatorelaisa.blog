@@ -42,6 +42,4 @@ Un lato "negativo" degli static site generator è che si perde l'editor integrat
 
 Con calma... torneranno 🤣.
 
----
-
 Detto questo, non mi rimane che iniziare questo 2019 sul web senza Facebook e con una nuova versione del sito _"torniamo-a-quando-le-pagine-statiche-erano-belle"_!

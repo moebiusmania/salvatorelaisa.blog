@@ -10,7 +10,7 @@ images:
   ]
 ---
 
-[![Foto di Chris Lawton su Unsplash](https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=fe51531f09a4f2cb1b4e0bd56dce9511)](https://unsplash.com/photos/Hys5qHaDbZQ) <small>_Foto di Chris Lawton su Unsplash_</small>
+[![Foto di Chris Lawton su Unsplash](https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&fit=max&s=fe51531f09a4f2cb1b4e0bd56dce9511)](https://unsplash.com/photos/Hys5qHaDbZQ) <small>_Foto di Chris Lawton su Unsplash_</small>
 
 Mentre mi preparo al mio prossimo trasloco, spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento... non li ho mai aperti (_e inseriti nel lettore_) e non mi ricordo neanche quando sia stata l'ultima volta.
 
