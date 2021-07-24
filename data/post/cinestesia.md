@@ -1,7 +1,7 @@
 ---
 title: Cinestesia - il cinema muto suonato live
 date: '2011-05-21'
-tags: ['eventi', 'musica']
+tags: ['eventi', 'musica', 'film']
 draft: false
 summary: "Purtroppo anche quest'anno si chiuda la stagione di Cinestesia, la terza che seguo da quando ho scoperto quest'iniziativa."
 images:

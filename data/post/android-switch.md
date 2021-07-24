@@ -33,7 +33,7 @@ Una piccolezza, ma comoda, se usate Chrome come browser principale c'è una simp
 
 ### A proposito di web... il browser!
 
-Il browser è (_ovviamente_) base [Webkit](https://webkit.org/), con supporto multi pagina stile tab nei browser desktop, una comoda funzione che cerca di adattare i testi della pagina allo schermo e favorire la lettura e supporto per **Flash Player 10.1**, quindi la possibilità di vedere il web per intero.
+Il browser è (_ovviamente_) basato su [Webkit](https://webkit.org/), con supporto multi pagina stile tab nei browser desktop, una comoda funzione che cerca di adattare i testi della pagina allo schermo e favorire la lettura e supporto per **Flash Player 10.1**, quindi la possibilità di vedere il web per intero.
 
 ### Il telefono (HTC si sta dando da fare!)
 
