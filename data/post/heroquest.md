@@ -10,7 +10,7 @@ images:
 
 ![La cover art di quello che doveva essere il remake di HeroQuest.](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true)<small>_La cover art di quello che doveva essere il remake di HeroQuest._</small>
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/wC2QJa8olUk" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/wC2QJa8olUk" frameBorder="0" allowFullScreen></iframe>
 
 Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un **gioco di ruolo (_GdR_)**.
 
@@ -20,7 +20,7 @@ Per un annetto abbiamo ripetuto diverse volte il rito della partita a HeroQuest,
 
 Poi qualche giorno fa inciampo in questo video, e il gasamento diventa totale!
 
-## <iframe width="100%" height="315" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameBorder="0" allowFullScreen></iframe>
+## <iframe width="100%" height="415" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameBorder="0" allowFullScreen></iframe>
 
 Clicco prontamente il link del progetto su **Kickstarter**, con già la mano pronta sulla carta di credito convinto che HeroQuest meriti un remake, ma purtroppo l'entusiasmo viene fermato dopo pochissimo:
 

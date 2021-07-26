@@ -22,7 +22,7 @@ E' stato uno di quei brevi periodi che non si possono avere "a comando" nella vi
 
 Qui potete vedere il video del mio talk, pubblicato dallo staff del Codemotion:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/gs8f9HJ-ZRE" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/gs8f9HJ-ZRE" frameBorder="0" allowFullScreen></iframe>
 
 Mentre qui potete consultare le slide che ho realizzato per l'evento:
 

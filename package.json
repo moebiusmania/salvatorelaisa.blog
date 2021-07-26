@@ -39,7 +39,7 @@
     "remark-footnotes": "^3.0.0",
     "remark-math": "4.0.0",
     "remark-slug": "6.1.0",
-    "tailwindcss": "2.2.6"
+    "tailwindcss": "2.2.7"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "11.0.1",
@@ -53,7 +53,7 @@
     "file-loader": "^6.0.0",
     "globby": "11.0.4",
     "husky": "7.0.1",
-    "lint-staged": "11.1.0",
+    "lint-staged": "11.1.1",
     "next-remote-watch": "^1.0.0",
     "prettier": "2.3.2",
     "rehype": "11.0.0",

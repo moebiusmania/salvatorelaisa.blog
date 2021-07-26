@@ -2,12 +2,15 @@
 title: Nexus 5
 date: '2014-03-29'
 tags: ['android', 'device', 'nexus', 'mobile']
-draft: true
+draft: false
 summary: "Ok, ora che lo sto utilizzando da qualche mese posso dire due paroline: il migliore smartphone Android su cui abbia messo le zampe finora! E parliamo del prezzo, 350€ il modello base e 400€ quello da 32gb (visto che però non c'è slot SD card ho optato per questo) per un device con Android stock su cui c'è preinstallata quella che ad oggi è la versione più performante dell'OS di Google, la 4.4 KitKat."
-images: ['']
+images:
+  [
+    'https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true',
+  ]
 ---
 
-![Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!](https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true) (_Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!_)
+![Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!](https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true) <small>_Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!_</small>
 
 Ok, ora che lo sto utilizzando da qualche mese posso dire due paroline: **il migliore smartphone Android su cui abbia messo le zampe finora!** E parliamo del prezzo, 350€ il modello base e 400€ quello da 32gb (_visto che però non c'è slot SD card ho optato per questo_) per un device con Android stock su cui c'è preinstallata quella che ad oggi è la versione più performante dell'OS di Google, la [4.4 KitKat](https://www.android.com/intl/it_it/versions/kit-kat-4-4/).
 
@@ -27,7 +30,7 @@ Detto questo, è importante sapere che questa fotocamera è buona ma molte delle
 
 Finché fate uno still, una foto a un paesaggio o cose normali non è un grande problema, ma se volete fare tanti scatti di fila... ecco, no.
 
-![Un esempio di foto decente nonostante la poca luce, scattata con il Nexus 5 usando la fotocamera stock.]()<small>_Un esempio di foto decente nonostante la poca luce, scattata con il Nexus 5 usando la fotocamera stock._</small>
+![Un esempio di foto decente nonostante la poca luce, scattata con il Nexus 5 usando la fotocamera stock.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/IMG_20140419_182208.jpeg)<small>_Un esempio di foto decente nonostante la poca luce, scattata con il Nexus 5 usando la fotocamera stock._</small>
 
 ## Chiudendo
 
