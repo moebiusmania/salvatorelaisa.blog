@@ -27,7 +27,7 @@ L'atmosfera è molto cupa e _industrial_ (cosa che ho apprezzato molto), potrei 
 
 Se lo stile del gioco e il genere vi stuzzicano, date un'occhiata al trailer:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/uwZBdWRSBRs" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/uwZBdWRSBRs" frameBorder="0" allowFullScreen></iframe>
 
 Il gioco è anche disponibile su sistemi desktop (Steam e non) e iOS, giocando sulla TV mi sta piacendo, ma su questo genere di giochi il **mouse** vince su un controller!
 
