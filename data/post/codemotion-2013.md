@@ -1,7 +1,7 @@
 ---
 title: Codemotion 2013 | codice, amici e tutto quello che c'è in mezzo
 date: '2013-04-23'
-tags: ['eventi']
+tags: ['eventi', 'codemotion']
 draft: false
 summary: "Il 22 e 23 Marzo si è tenuta a Roma la terza edizione del Codemotion anche quest'anno ci sono andato nella veste di speaker ma è stata la prima volta che ho seguito quasi entrambe le giornate di conferenza e sopratutto ci sono andato con i nuovi amici del gruppo di Appsterdam Milan..."
 images:
