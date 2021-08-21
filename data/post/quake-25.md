@@ -9,9 +9,25 @@ images: ['https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg?t=16
 
 > A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (_finalmente_) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/Pt8pwAOquUc" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe> <small><i>Il trailer per presentare la re-release di Quake e festeggiare i 25 anni.</i></small>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/Pt8pwAOquUc" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe> <small><i>Il trailer per presentare la re-release di Quake e festeggiare i 25 anni.</i></small>
 
 ## Perché Quake è fondamentale
+
+Purtroppo rispetto a tanti altri titoli storici il nome di Quake è finito un po' nel dimenticatoio, principalmente per lo scarso interesse interesse che è stato mostrato nell'ultimo decennio da Id Software e Bethesda verso questo franchise. Ma ci sono vari motivi per cui l'impatto del primo Quake nel panorama del gaming fu decisivo, la lista potrebbe essere più lunga di quanto si pensi, ma mi limito ai motivi principali:
+
+- è stato **il primo FPS basato su un engine completamente 3D**, dove Doom e i suoi rivali utilizzavano sprite 2D su contesti 3D e non sempre sfruttando la verticalità di questi ambienti
+- per il motivo sopra **ha dato una spinta considerevole all'allora nascente mercato degli acceleratori 3D**
+- la modalità multiplayer è stata **l'origine della scena competitiva odierna**, anche se il punto critico verrà raggiunto 3 anni dopo con Quake 3 (_e UT99_)
+- **alcune mod sviluppate dalla community sono divetate giochi standalone**, il più notevole tra questi è sicuramente [Team Fortress 2](https://www.teamfortress.com/) di Valve
+- il suo engine è diventato la [base di sviluppo per molti altri titoli]() negli anni successivi
+
+Va anche detto che non è tutto oro quel che luccica... se si va ad approfondire sulla [storia dello sviluppo di Quake](https://it.ign.com/aftershock-for-quake/183680/feature/il-terremoto-di-carmack-e-romero-i-25-anni-di-quake) si scoprirà che è stato un vero caso di _development hell_, il progetto originale **non** prevedeva che fosse un FPS e il caos derivato dallo sviluppo ha portato alla sgretolazione del team storico di Id Software con l'uscita dalla società di personaggi come [John Romero](https://it.wikipedia.org/wiki/John_Romero).
+
+## I miei ricordi con Quake
+
+Nel mio caso il "_periodo Quake_" si è sovrapposto a una fase delicata della mia vita personale, era l'estate del passaggio dalla terza media alla prima superiore e avevo appena perso mia madre.
+
+Quake era nell'aria già da qualche mese, ma con il [numero 88 di The Games Machine](https://i.ebayimg.com/images/g/pVoAAOSwNG5e4PWL/s-l1600.jpg) e il suo relativo CD-ROM allegato finalmente avevo tra le mani la versione shareware (_che comprendeva solo il primo de 4 episodi nei quali era diviso il gioco, quindi era più sostanzioso di una demo_) di Quake 😎.
 
 ## Cosa include la "nuova" versione
 
@@ -41,11 +57,11 @@ A proposito della soundtrack, è stata composta dai [Nine Inch Nails]() e potete
 
 Come anticipavo prima, questa nuova riediezione supporta alcune mod che esistono da anni per la versione "originale", tra queste alcune delle mie preferite sono:
 
-- [Arcane Dimensions]() - un esempio di cosa succede se si porta all'estremo l'engine del gioco: mappe enormi, centinaia di nemici che mischiano anche texture e architetture di diversi contesti ma il tutto cercando di non allontanarsi troppo da quello che è lo "spirito" di Quake.
-- [Slayer Testaments]() - e se DOOM 2016/Eternal fosse stato realizzato nell'engine di Quake?
-- [Quake 1.5]() - una versione "e mezzo" del gioco in cui vengono introdotti alcuni concetti e nemici da Quake 2, oltre che un riadattamento di tutta la campagna base.
-- Halloween Jam [1]()/[2]()/[3]() - una serie di mappe realizzate negli ultimi 3 anni a tema Halloween
-- [Christmas Jam 2020]() - simile a sopra ma qui il Natale è solo un pretesto per pubblicare questa collezione di mappe, non ci sono molti elementi a tema.
+- [Arcane Dimensions](https://www.moddb.com/mods/arcane-dimensions) - un esempio di cosa succede se si porta all'estremo l'engine del gioco: mappe enormi, centinaia di nemici che mischiano anche texture e architetture di diversi contesti ma il tutto cercando di non allontanarsi troppo da quello che è lo "spirito" di Quake.
+- [Slayer Testaments](https://www.moddb.com/mods/slayers-testament) - e se DOOM 2016/Eternal fosse stato realizzato nell'engine di Quake?
+<!-- - [Quake 1.5]() - una versione "e mezzo" del gioco in cui vengono introdotti alcuni concetti e nemici da Quake 2, oltre che un riadattamento di tutta la campagna base. -->
+- Halloween Jam [1](https://www.quaddicted.com/reviews/hwjam.html)/[2](https://www.quaddicted.com/reviews/hwjam2.html)/[3](https://www.quaddicted.com/reviews/hwjam3.html) - una serie di mappe realizzate negli ultimi 3 anni a tema Halloween
+- [Xmas Jam 2020](https://www.quaddicted.com/reviews/xmasjam2020.html) - simile a sopra ma qui il Natale è solo un pretesto per pubblicare questa collezione di mappe, non ci sono molti elementi a tema.
 
 ![Uno screenshot di Arcane Dimensions 1.8 eseguito nel nuovo Quake.](https://github.com/moebiusmania/blog-assets/blob/master/images/2021/quake-rr-ad.png?raw=true) <small>_Uno screenshot di Arcane Dimensions 1.8 eseguito nel nuovo Quake._</small>
 
