@@ -2,7 +2,7 @@
 title: Quake, un quarto di secolo dopo
 date: '2021-08-21'
 tags: ['gaming', 'retro']
-draft: true
+draft: false
 summary: A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (finalmente) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.
 images: ['https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg?t=1629409782']
 ---
@@ -27,7 +27,13 @@ Va anche detto che non è tutto oro quel che luccica... se si va ad approfondire
 
 Nel mio caso il "_periodo Quake_" si è sovrapposto a una fase delicata della mia vita personale, era l'estate del passaggio dalla terza media alla prima superiore e avevo appena perso mia madre.
 
-Quake era nell'aria già da qualche mese, ma con il [numero 88 di The Games Machine](https://i.ebayimg.com/images/g/pVoAAOSwNG5e4PWL/s-l1600.jpg) e il suo relativo CD-ROM allegato finalmente avevo tra le mani la versione shareware (_che comprendeva solo il primo de 4 episodi nei quali era diviso il gioco, quindi era più sostanzioso di una demo_) di Quake 😎.
+Quake era nell'aria già da qualche mese, ma con il [numero 88 di The Games Machine](https://i.ebayimg.com/images/g/pVoAAOSwNG5e4PWL/s-l1600.jpg) e il suo relativo CD-ROM allegato finalmente avevo tra le mani la versione shareware (_che comprendeva solo il primo de 4 episodi nei quali era diviso il gioco, quindi era più sostanzioso di una demo_) di Quake 😎! Quel numero di TGM era abbastanza sostanzioso essendo quello estivo che copriva Luglio e Agosto (_eh si, con le riviste cartacee funzionava così_ 👨‍🦳) e per i pochi giorni che l'ho avuto tra le mani prima di partire non l'ho filato molto dato che ero concentrato sul far funzionare la shareware di Quake sul mio [Intel 486](https://it.wikipedia.org/wiki/Intel_80486) a ben 10-15 frame al secondo 🤣.
+
+<!-- ![Purtroppo a distanza di anni ho perso la rivista, ma il silver disk di quel numero con la shareware di Quake è uno dei pezzi forti della mia collezione personale]() <small>_Purtroppo a distanza di anni ho perso la rivista, ma il silver disk di quel numero con la shareware di Quake è uno dei pezzi forti della mia collezione personale._ 🤓</small> -->
+
+Poi partito per la montagna in "ritiro sprituale" penso di aver letto la recensione di Quake almeno una volta al giorno, volevo prepararmi per il ritorno a casa per riprendere a giocare la shareware con maggior cognizione di quale fosse il ruolo di ogni singolo pixel e l'uscita del gioco completo.
+
+Lo comprai l'inverno successivo dopo il tanto atteso upgrade del PC di casa a un più performante [Pentium 133Mhz](https://it.wikipedia.org/wiki/Pentium) e quel punto fui finalmente in grado di godermi quei splendidi ambienti e modelli (_low poly_) completamente tridimensionali ad un framerate più che decente 🤓.
 
 ## Cosa include la "nuova" versione
 
@@ -49,9 +55,9 @@ E come ultima nota, ho provato alcune mod e mappe custom che già utilizzavo con
 
 ## La colonna sonora
 
-A proposito della soundtrack, è stata composta dai [Nine Inch Nails]() e potete ascoltarla anche tramite Spotify 😎.
+A proposito della soundtrack, è stata composta dai [Nine Inch Nails](https://it.wikipedia.org/wiki/Nine_Inch_Nails) e potete ascoltarla anche tramite Spotify 😎.
 
-<iframe src="https://open.spotify.com/embed/album/63W4cQKfF2HTjgRYZcQ0tU?theme=0" width="100%" height="380" frameBorder="0" allowTransparency="true"></iframe>
+<iframe src="https://open.spotify.com/embed/album/63W4cQKfF2HTjgRYZcQ0tU?theme=0" width="100%" height="380" frameBorder="0"></iframe>
 
 ## La community di modding
 
@@ -69,6 +75,6 @@ Per utilizzarle dovreste copiare la cartella della mod all'interno di `[director
 
 ## A questo punto...
 
-Visto il prezzo (_ed è anche disponibile su Game Pass_), citando [il post su UT99](/post/ut99-server-docker): **dateci dentro con i frag!** 🤓
+Visto il prezzo (_ed è anche disponibile su Game Pass_) e sopratutto vista l'inedità disponibilità del gioco sulle varie consoles, che aumenta notevolemente il vantaggio del multiplayer (_che come già detto sfrutta il crossplay_), non posso fare altro che citare [il post su UT99](/post/ut99-server-docker): **dateci dentro con i frag!** 🤓
 
 <iframe src="https://store.steampowered.com/widget/2310/" frameBorder="0" width="100%" height="200"></iframe>
