@@ -35,4 +35,6 @@ Quindi si, sulla carta c'è meno carne al fuoco rispetto al predecessore ma biso
 
 Fin qui credo il miglior gioco del 2020! Specie per la situazione davvero bislacca del lockdown nella quale ci troviamo, credo sia uno dei modi migliori per sfogarsi 😎.
 
+**Aggiunta di Novembre 2020**
+
 <iframe src="https://store.steampowered.com/widget/782330/235874/" frameBorder="0" width="100%" height="200" allowFullScreen></iframe>
