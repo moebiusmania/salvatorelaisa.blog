@@ -8,7 +8,8 @@
   "scripts": {
     "start": "next-remote-watch ./data",
     "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
+    "sitemap": "node --experimental-json-modules ./scripts/generate-sitemap.mjs",
+    "build": "next build && node --experimental-json-modules ./scripts/generate-sitemap.mjs",
     "postbuild": "npm run export",
     "export": "next export",
     "serve": "next start",
@@ -51,7 +52,7 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
     "file-loader": "^6.0.0",
-    "globby": "11.0.4",
+    "globby": "12.0.2",
     "husky": "7.0.4",
     "lint-staged": "12.1.2",
     "next-remote-watch": "^1.0.0",
