@@ -1,8 +1,8 @@
 import fs from 'fs'
 import { globby } from 'globby'
 import prettier from 'prettier'
-import siteMetadata from '../data/siteMetadata.json'
-import prettierConfig from '../.prettierrc.json'
+import siteMetadata from '../data/siteMetadata.json' assert { type: 'json' }
+import prettierConfig from '../.prettierrc.json' assert { type: 'json' }
 
 const pages = await globby([
   'pages/*.js',
