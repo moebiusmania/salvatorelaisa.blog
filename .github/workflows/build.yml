@@ -1,26 +1,25 @@
-# Build the website to produce the static files, 
+# Build the website to produce the static files,
 # also serves as a test for regressions
 
 name: Build
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [17.1.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build
