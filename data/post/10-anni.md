@@ -25,7 +25,7 @@ Nel mentre sono ovviamente cambiate anche tante altre cose fuori da questo spazi
 Per chi fosse così coraggioso da voler vedere le versioni precedenti, ecco qualche link da Wayback Machine:
 
 - [salvatorelaisa.net](https://web.archive.org/web/20210615000000*/salvatorelaisa.net) (_2010-2015_)
-  - la primissima versione del 2010 era una landing page in Flash, quindi ora è abbastanza invisibile... ma prima o poi troverò un modo di ripristinarla
+  - la primissima versione del 2010 era una landing page in Flash, quindi ora è abbastanza invisibile... ma <del>prima o poi troverò un modo di ripristinarla</del> ora potete vedere il [remake in HTML/CSS/JS](https://moebiusmania.github.io/sl-landingpage-2009/)!
   - dopo che ho lasciato andare questo dominio è stato registrato da qualche scammer, quindi non considerate tutto ciò che c'è da dopo il 2015
 - [salvatorelaisa.me](https://web.archive.org/web/20160801000000*/salvatorelaisa.me) (_2016-2018_)
   - di questo purtroppo pochi risultati sono funzionanti e quei pochi hanno molto risorse "rotte" quindi non si vede granché 😕
