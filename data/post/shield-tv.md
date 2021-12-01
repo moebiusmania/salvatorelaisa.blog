@@ -14,7 +14,7 @@ images:
 
 Il [Nexus Player](https://it.wikipedia.org/wiki/Nexus_Player) che possiedo fa bene il suo lavoro, ma visto che è stato concepito puramente per riproduzione video e il su futuro sembra abbastanza incerto (_[praticamente si sa che NON ci sarà un successore e non chiaro quanto durerà il supporto da parte di Google](/post/addio-nexus)_) volevo iniziare a fare un'occhiata a set-top-box alternativi basati su Android.
 
-E visto che mi sono trovato con un buono Amazon tra le mani, ho voluto dare una chance allo scatolotto di Nvidia di cui sentivo tanto parlare e che un mio collega mi ha caldamente raccomandato... e quindi eccomi qui dopo un paio di giorni di utilizzo della mia nuova [Shield TV](https://www.nvidia.com/it-it/shield/).
+E visto che mi sono trovato con un buono Amazon tra le mani, ho voluto dare una chance allo scatolotto di **Nvidia** di cui sentivo tanto parlare e che un mio collega mi ha caldamente raccomandato... e quindi eccomi qui dopo un paio di giorni di utilizzo della mia nuova [Shield TV](https://www.nvidia.com/it-it/shield/).
 
 ## Cosa cambia rispetto al Nexus Player?
 
@@ -35,4 +35,16 @@ Ci sono dei giochi Android _ottimizzati/esclusivi_ per Shield TV, quelli gratuit
 
 E' più facile dire **che credo sia il modo migliore di avere dei giochi da smartphone, ottimizzati, sulla TV**.
 
-C'è però incluso questo sistema [GeForce Now]() che permette di **streammare giochi da un PC sulla TV** e alcuni giochi **direttamente da dei server** (_idea simile a quella di OnLive di alcuni anni fa_) che effettivament concede a questo device un un fattore di differenziazione da altri set-top-box molto interessante. Da notare però che si è legati nel primo caso all'avere un PC da gaming discretamente potente e nel secondo caso all'avere una buona (_anzi, buonissima_) connessione a internet... e purtroppo dove sono ora la mia connessione è abbastanza pietosa per permettermi di testarlo 😭.
+C'è però incluso questo sistema [GeForce Now](https://www.nvidia.com/it-it/geforce-now/) che permette di **streammare giochi da un PC sulla TV** e alcuni giochi **direttamente da dei server** (_idea simile a quella di OnLive di alcuni anni fa_) che effettivament concede a questo device un un fattore di differenziazione da altri set-top-box molto interessante. Da notare però che si è legati nel primo caso all'avere un PC da gaming discretamente potente e nel secondo caso all'avere una buona (_anzi, buonissima_) connessione a internet... e purtroppo dove sono ora la mia connessione è abbastanza pietosa per permettermi di testarlo 😭.
+
+#### Aggiunta di Marzo 2019
+
+In questo anno e mezzo che mi sono trasferito a Milano e ho una connessione a internet in **fibra** ottica a `100Mbps`, ho avuto modo di apprezzare decisamente meglio la piattaforma _GeForce Now_ sopratutto sulla Shield TV, a parte qualche sgranata occasionale la latenza è mediamente ottima. Anche giocando in due a titoli "veloci" come _Mortal Kombat X_ ci sono dei momenti in cui ti dimentichi completamente del fatto che il gioco **non è eseguito sull'hardware che hai sotto la TV**.
+
+Sicuramente questo aumenta il valore della Shield TV sopratutto per chi vuole in un unico e piccolo device:
+
+1. un buon media server
+2. tutti i maggiori servizi di streaming
+3. una soluzione di gaming occasionale (_basata su titoli per PC_)
+
+anche se rimango dell'idea che siamo ancora lontani dal poter sostituire una vera console.

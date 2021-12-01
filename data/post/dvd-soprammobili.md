@@ -12,7 +12,7 @@ images:
 
 [![Foto di Chris Lawton su Unsplash](https://images.unsplash.com/photo-1481137344492-d5a150a97f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&fit=max&s=fe51531f09a4f2cb1b4e0bd56dce9511)](https://unsplash.com/photos/Hys5qHaDbZQ) <small>_Foto di Chris Lawton su Unsplash_</small>
 
-Mentre mi preparo al mio prossimo trasloco, spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento... non li ho mai aperti (_e inseriti nel lettore_) e non mi ricordo neanche quando sia stata l'ultima volta.
+Mentre mi preparo al mio prossimo trasloco, spostando i pochi DVD che ho deciso di tenere con me mi rendo conto che in poco più di anno che sono stato in questo appartamento... **non li ho mai aperti** (_e inseriti nel lettore_) e non mi ricordo neanche quando sia stata l'ultima volta.
 
 Per quasi 3 anni ho avuto un [Nexus Player](https://it.wikipedia.org/wiki/Nexus_Player) e da poco sono passato a un [Nvidia Shield TV](https://www.nvidia.com/en-us/shield/shield-tv/), ma indipendetemente dall'aggeggio, all'inizio questo era più un qualcosa che insieme al lettore DVD e la TV stessa mi fornivano varie opzioni per lo svago casalingo.
 

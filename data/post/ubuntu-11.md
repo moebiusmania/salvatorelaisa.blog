@@ -17,7 +17,7 @@ In questi anni ho sperimentato Ubuntu in 2 situazioni, un [vecchio Sony Vaio](ht
 
 Dato che quando parlo di Ubuntu mi ritrovo a sorbirmi le solite domande, faccio delle mini faq generiche che **principalmente si riferiscono alle mie esperienze personali**.
 
-## Linux e' difficile da usare
+## Linux è difficile da usare
 
 Il Linux originale sì, Ubuntu si pone come sistema operativo **gratuito** basato su Linux con un interfaccia grafica molto simile a Windows e Mac OS e quindi **user friendly**. Se sapete usare Windows XP e successivi, sapete usare Ubuntu. Esiste un "software center" che, oltre ad essere nato prima, è molto simile ai vari app store che oggi conosciamo su smartphone e PC.
 
@@ -33,7 +33,7 @@ Al contrario di altri OS (_come Windows Vista_) Ubuntu è molto **leggero**e pu�
 
 Linux è risaputamente molto più sicuro di Windows (_dite ciao agli antivirus_) e ha un **ciclo di rilascio di 6 mesi**, quindi è aggiornato e corretto anche in termini di sicurezza molto spesso e per un OS gratuito è una gran cosa. Windows XP ha noti problemi di sicurezza e Microsoft stessa suggerisce all\'utenza di aggionarsi alle versioni più recenti come Vista e Seven, in più gli aggiornamenti di XP saranno discontinuati nel giro di un paio di anni, il che significa che quando questo accadrà e avrete un problema non ci sarà nessuno a risolverlo.
 
-## Non e' adatto per lavorare
+## Non è adatto per lavorare
 
 Su questo punto sono **parzialmente** d'accordo, dipende cosa ci si deve fare, ma per "classic\" lavori d'ufficio come usare fogli elettronici, scrivere documenti, mail e lavorare con database va benissimo e per una piccola azienda con budget limitati si parla di un risparmio che può far comodo. Anche in ambito casalingo finche si rimane con le solite routine (_mail, social network, scaricare foto da fotocamere, vedere video_) va più che bene.
 
