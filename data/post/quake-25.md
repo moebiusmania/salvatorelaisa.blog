@@ -9,7 +9,7 @@ images: ['https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg?t=16
 
 > A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (_finalmente_) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.
 
-<iframe class="w-full" height="450" src="https://www.youtube.com/embed/Pt8pwAOquUc" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe> <small><i>Il trailer per presentare la re-release di Quake e festeggiare i 25 anni.</i></small>
+<iframe className="w-full" height="450" src="https://www.youtube.com/embed/Pt8pwAOquUc" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe> <small><i>Il trailer per presentare la re-release di Quake e festeggiare i 25 anni.</i></small>
 
 ## Perché Quake è fondamentale
 
@@ -59,7 +59,7 @@ E come ultima nota, ho provato alcune mod e mappe custom che già utilizzavo con
 
 A proposito della soundtrack, è stata composta dai [Nine Inch Nails](https://it.wikipedia.org/wiki/Nine_Inch_Nails) e potete ascoltarla anche tramite Spotify 😎.
 
-<iframe src="https://open.spotify.com/embed/album/63W4cQKfF2HTjgRYZcQ0tU?theme=0" class="w-full" height="400" frameBorder="0"></iframe>
+<iframe src="https://open.spotify.com/embed/album/63W4cQKfF2HTjgRYZcQ0tU?theme=0" className="w-full" height="400" frameBorder="0"></iframe>
 
 ## La community di modding
 
