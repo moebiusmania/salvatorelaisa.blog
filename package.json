@@ -54,7 +54,7 @@
     "file-loader": "^6.0.0",
     "globby": "12.0.2",
     "husky": "7.0.4",
-    "lint-staged": "12.1.3",
+    "lint-staged": "12.1.4",
     "next-remote-watch": "^1.0.0",
     "prettier": "2.5.1",
     "rehype": "12.0.0",
