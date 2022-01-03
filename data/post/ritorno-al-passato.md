@@ -20,13 +20,17 @@ Tuttavia il processo non è sempre così banale, nonostante molti dei miei proge
 
 Ecco un breve recap di quali zombie ho riportato in vita:
 
-| **Nome**            | **Anno**    | **Cos'è?**                                                                                     | **Era in..**               | **...ora è in** |
-| ------------------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------- | --------------- |
-| Moebiusmania.net    | 2008 / 2014 | il mio blog tecnico di tutorial e guide di web development                                     | WordPress                  | Next.js SSG     |
-| iMarcuz             | 2009        | la mia prima e banale app per iOS (_mai pubblicata su AppStore_), progetto molto goliardico 🤣 | Appcelerator Titanium (JS) | Flutter (Dart)  |
-| Contact page        | 2009        | una landing page con i miei contatti che era visualizzata sul vecchio dominio .net             | Flash AS3                  | HTML/CSS/JS     |
-| Tunzap              | 2011        | Un progetto mai terminato e mai pubblicato di una UI per fare scaffolding di progetti web      | HTML/CSS + jQuery          | HTML/CSS/JS     |
-| Mohole landing page | 2012        | pagina "portale" per la scuola Mohole dove ho lavorato dal 2009 al 2014                        | HTML/CSS + jQuery          | HTML/CSS/JS     |
+<div style={{ overflowX: 'auto' }}>
+
+| **Nome**                                                            | **Anno**    | **Cos'è?**                                                                                     | **Era in..**               | **...ora è in** |
+| ------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------- | --------------- |
+| [Moebiusmania.net](https://github.com/moebiusmania/mm-blog)         | 2008 / 2014 | il mio blog tecnico di tutorial e guide di web development                                     | WordPress                  | Next.js SSG     |
+| [iMarcuz](https://github.com/moebiusmania/imarcuz-flutter)          | 2009        | la mia prima e banale app per iOS (_mai pubblicata su AppStore_), progetto molto goliardico 🤣 | Appcelerator Titanium (JS) | Flutter (Dart)  |
+| [Contact page](https://github.com/moebiusmania/sl-landingpage-2009) | 2009        | una landing page con i miei contatti che era visualizzata sul vecchio dominio .net             | Flash AS3                  | HTML/CSS/JS     |
+| [Tunzap](https://github.com/moebiusmania/tunzap)                    | 2011        | Un progetto mai terminato e mai pubblicato di una UI per fare scaffolding di progetti web      | HTML/CSS + jQuery          | HTML/CSS/JS     |
+| [Mohole - portale](https://github.com/moebiusmania/mohole-2012)     | 2012        | pagina "portale" per la scuola Mohole dove ho lavorato dal 2009 al 2014                        | HTML/CSS + jQuery          | HTML/CSS/JS     |
+
+</div>
 
 Ovviamente [tutti i sorgenti di questi progetti sono disponibili su Github](https://github.com/moebiusmania?tab=repositories&q=restoration), in alcuni casi anche del codice originale (_di cui non mi faccio vanto_).
 
