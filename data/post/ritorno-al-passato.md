@@ -21,6 +21,7 @@ Tuttavia il processo non è sempre così banale, nonostante molti dei miei proge
 Ecco un breve recap di quali zombie ho riportato in vita:
 
 <div style={{ overflowX: 'auto' }}>
+<div style={{ minWidth: '650px' }}>
 
 | **Nome**                                                            | **Anno**    | **Cos'è?**                                                                                     | **Era in..**               | **...ora è in** |
 | ------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------- | --------------- |
@@ -30,6 +31,7 @@ Ecco un breve recap di quali zombie ho riportato in vita:
 | [Tunzap](https://github.com/moebiusmania/tunzap)                    | 2011        | Un progetto mai terminato e mai pubblicato di una UI per fare scaffolding di progetti web      | HTML/CSS + jQuery          | HTML/CSS/JS     |
 | [Mohole - portale](https://github.com/moebiusmania/mohole-2012)     | 2012        | pagina "portale" per la scuola Mohole dove ho lavorato dal 2009 al 2014                        | HTML/CSS + jQuery          | HTML/CSS/JS     |
 
+</div>
 </div>
 
 Ovviamente [tutti i sorgenti di questi progetti sono disponibili su Github](https://github.com/moebiusmania?tab=repositories&q=restoration), in alcuni casi anche del codice originale (_di cui non mi faccio vanto_).

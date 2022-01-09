@@ -20,7 +20,7 @@ Questo anche perche 3 anni fa un qualunque device con Android TV non offriva mol
 
 ![TV Apps](https://www.android.com/static/2016/img/tv/lessbrowsing.jpg) <small>_**NB**: Ero solo troppo pigro per scattare e caricare foto e ne ho presa una stock_ 😄</small>
 
-oltre ai due servizi citati prima ora abbiamo anche Netflix (_che ha un catalogo in continua espansione_), Amazon Prime Video, [la Rai che si è data una prima svegliata](/2017/rai-tv-app/) e qualche servizio "nuovo" come [TedTV](https://www.ted.com/) e HaystackTV (_aggregatore di news_).
+oltre ai due servizi citati prima ora abbiamo anche Netflix (_che ha un catalogo in continua espansione_), Amazon Prime Video, [la Rai che si è data una prima svegliata](/post/rai-tv-app) e qualche servizio "nuovo" come [TedTV](https://www.ted.com/) e HaystackTV (_aggregatore di news_).
 
 Ora i contenuti in formato puramente digitale possono essere l'**unico** intrattenimento casalingo, specie per chi come me non passa molte ore in casa durante la settimana, e nel weekend una volta che ti sei visto un paio di film o puntate di serie tv e qualche video random qua e la... hai anche altro da fare 😆.
 
