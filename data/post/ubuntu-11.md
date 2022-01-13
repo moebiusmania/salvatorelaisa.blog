@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 11.04 (e in generale)
-date: '2011-01-05'
+date: '2011-05-01'
 tags: ['ubuntu', 'linux', 'os', 'desktop']
 draft: false
 summary: "E' dalla prima versione del 2008 che seguo con molto interesse l'evoluzione di Ubuntu, la distro Linux più user friendly e maggiormente in voga del momento"
