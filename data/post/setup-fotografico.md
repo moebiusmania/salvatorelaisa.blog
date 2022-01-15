@@ -36,4 +36,4 @@ Oggi è ancora un servizio molto valido (_offrono gratuitamente un 1TB di archiv
 
 Motivo per cui mi sono limitato a caricarne giusto un paio per provare.
 
-**Google Drive&Photo:** quando non voglio per forza pubblicare qualcosa mi limito a caricarle sul cloud allo scopo di backup. Google Drive ha [un prezzo molto accattivante](https://www.google.com/drive/pricing/) per passare dai 15gb gratuiti a 100, permettedomi così di uploadare anche i file .raw e Google Photos da quando si è staccato dal suo sfortunato padre (_Google+_) è stato molto migliorato rendendolo uno strumento molto utile per organizzare le foto e fare un editing di base.
+**Google Drive & Photo:** quando non voglio per forza pubblicare qualcosa mi limito a caricarle sul cloud allo scopo di backup. Google Drive ha [un prezzo molto accattivante](https://www.google.com/drive/pricing/) per passare dai 15gb gratuiti a 100, permettedomi così di uploadare anche i file .raw e Google Photos da quando si è staccato dal suo sfortunato padre (_Google+_) è stato molto migliorato rendendolo uno strumento molto utile per organizzare le foto e fare un editing di base.
