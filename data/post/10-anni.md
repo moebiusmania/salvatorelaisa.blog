@@ -28,7 +28,7 @@ Per chi fosse così coraggioso da voler vedere le versioni precedenti, ecco qual
   - la primissima versione del 2010 era una landing page in Flash, quindi ora è abbastanza invisibile... ma <del>prima o poi troverò un modo di ripristinarla</del> ora potete vedere il [remake in HTML/CSS/JS](https://moebiusmania.github.io/sl-landingpage-2009/)!
   - dopo che ho lasciato andare questo dominio è stato registrato da qualche scammer, quindi non considerate tutto ciò che c'è da dopo il 2015
 - [salvatorelaisa.me](https://web.archive.org/web/20160801000000*/salvatorelaisa.me) (_2016-2018_)
-  - di questo purtroppo pochi risultati sono funzionanti e quei pochi hanno molto risorse "rotte" quindi non si vede granché 😕
+  - di questo purtroppo pochi risultati sono funzionanti e quei pochi hanno molte risorse "rotte" quindi non si vede granché 😕
 - [salvatorelaisa.blog](https://github.com/moebiusmania/salvatorelaisa.blog/commits/main) (_dal 2019 ad ora_)
   - questo per qualche strano motivo non è stato archiviato da Wayback Machine, tuttavia essendo la versione statica e completamente versionata su Github volendo posso sempre accedere alle versioni precedenti dal repository
 

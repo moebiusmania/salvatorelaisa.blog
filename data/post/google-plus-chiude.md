@@ -24,7 +24,7 @@ Diciamoci la verità, all'inizio Google+ poteva dare lezioni a Facebook su **tan
 
 ## Alcune sue features sono diventate app standalone (e di gran successo)
 
-Tanti oggi conoscono [Google Photos](https://www.google.com/intl/it/photos/about/) e/o [Hangouts](https://hangouts.google.com/), ma non tutti forse si ricordano che queste app che per molti oggi possono anche essere essenziali, fino a metà dello scorso decennio erano funzionalità interne a Google+.
+Tanti oggi conoscono [Google Photos](https://www.google.com/intl/it/photos/about/) e/o <del>Hangouts</del>[Google Meet](https://meet.google.com/), ma non tutti forse si ricordano che queste app che per molti oggi possono anche essere essenziali, fino a metà dello scorso decennio erano funzionalità interne a Google+.
 
 Staccare queste funzionalità in app separate è stato sicuramente un beneficio per tutti gli utenti (_e anche per Google_) ma allo stesso tempo una delle batoste che ha disincentivato gli utenti ad utilizzare il social.
 

@@ -26,13 +26,13 @@ sono passato a un più esplicito **.blog**, tanto alla fine lo uso solo per ques
 
 ## Gestione e hosting del sito
 
-Dopo WordPress e Ghost è giunta l'ora di passare a uno static site generator. Non ci ho messo troppo a optare per [VuePress](https://vuepress.vuejs.org/) dato che ultimamente l'ho molto apprezzato su altri progetti e perché ho trovato un [porting del tema Casper](https://github.com/alexander-heimbuch/vuepress-theme-casper), motivo per cui esteticamente non è cambiato molto.
+Dopo WordPress e Ghost è giunta l'ora di passare a uno static site generator. Non ci ho messo troppo a optare per [VuePress](https://vuepress.vuejs.org/) dato che ultimamente l'ho molto apprezzato su altri progetti e perché ho trovato un [porting del tema Casper](https://github.com/alexander-heimbuch/vuepress-theme-casper), <del>motivo per cui esteticamente non è cambiato molto</del>.
 
 - **WordPress**: paradossalmente è diventato bloated per dei "banali" blog ed è abbastanza difficile da incastrare in un sistema di versionamento, altro paletto che ho posto fondamentale per questo remake.
 
 - **Ghost**: mi piaceva molto, ma i continui cambi nel sistema di installazione in ogni major release lo hanno reso problematico da aggiornare/mantenere.
 
-Usando uno static site generator posso continuare a scrivere in Markdown ma hostare il sito su una GitHub page, like a boss 😎.
+Usando uno static site generator posso continuare a scrivere in Markdown ma hostare il sito su una GitHub page, like a boss 😎 con costi molti più bassi e tempi di caricamento decisamente migliori, per non parlare del fatto che con una pagina statica non esistono problemi di sicurezza.
 
 ## Editor
 
