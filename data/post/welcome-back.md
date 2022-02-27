@@ -32,11 +32,13 @@ Dopo WordPress e Ghost è giunta l'ora di passare a uno static site generator. N
 
 - **Ghost**: mi piaceva molto, ma i continui cambi nel sistema di installazione in ogni major release lo hanno reso problematico da aggiornare/mantenere.
 
-Usando uno static site generator posso continuare a scrivere in Markdown ma hostare il sito su una GitHub page, like a boss 😎 con costi molti più bassi e tempi di caricamento decisamente migliori, per non parlare del fatto che con una pagina statica non esistono problemi di sicurezza.
+Usando uno **static site generator posso** continuare a scrivere in Markdown ma hostare il sito su una GitHub page, like a boss 😎 con **costi molti più bassi e tempi di caricamento decisamente migliori**, per non parlare del fatto che con una pagina statica non esistono problemi di sicurezza.
+
+Un altro piccolo vantaggio di questa soluzione è che i contenuti vivono insieme al codice nel repository Github, quindi versionamento e backup sono parte del sistema e in più sono unificati, al contrario dei classici CMS che richiedono un backup specifico del database.
 
 ## Editor
 
-Un lato "negativo" degli static site generator è che si perde l'editor integrato in sistemi come WordPress e Ghost, ma come dicevo prima essendo basato su Markdown posso sia editare direttamente da GitHub che scrivere un file in locale (_e offline_) usando un qualunque editor compatibile. Per adesso userò il buon Visual Studio Code, che fa il suo sporco lavoro anche come editor per Markdown, più avanti magari ne sperimenterò di altri.
+Un lato "negativo" degli static site generator è che si perde l'editor integrato in sistemi come WordPress e Ghost, ma come dicevo prima essendo basato su **Markdown** posso sia editare direttamente da GitHub che scrivere un file in locale (_e offline_) usando un qualunque editor compatibile. Per adesso userò il buon Visual Studio Code, che fa il suo sporco lavoro anche come editor per Markdown, più avanti magari ne sperimenterò di altri.
 
 ## I vecchi contenuti?
 
