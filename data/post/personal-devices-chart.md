@@ -51,6 +51,8 @@ Anche di questo ne ho [già parlato abbondatemente in questo blog qualche anno f
 
 ### iPod Shuffle e Nano 4gen (_audio player, 2007-2010_)
 
+Ho smesso di usarlo **solo** perché il passaggio all'iPhone lo aveva reso ridondante, ma se devo essere 100% onesto, un po mi "manca". Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con scatola e tutto quanto, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accede più.
+
 ### Samsung Tab S2 (_tablet 8 pollici, 2016-2017_)
 
 ### iMac (_6gen - 2008-2011_)
@@ -58,6 +60,8 @@ Anche di questo ne ho [già parlato abbondatemente in questo blog qualche anno f
 ### Apple Time Capsule (_wifi AP/HDD esterno, 2009-2014_)
 
 ### Controller Xbox 360 (_gamepad, 2011 ad oggi_)
+
+### Canon EOS 450D (_fotocamera reflex, 2009 ad oggi_)
 
 ---
 
@@ -101,6 +105,8 @@ Google at its worst.
 
 ### Acer Windows Vista PC (_laptop, 2007-2009_)
 
+### Sony Cyber-Shot (_lente per smartphone, 2013_)
+
 ---
 
 ## In conclusione
@@ -110,3 +116,5 @@ Ho deliberatamente omesso qualche dispositivo da queste due liste perché in qua
 - **Nokia 6600 (_telefono, 2005-2007_)** - il mitico ovetto! era figo, tanto figo, ma era ancora "solamente" un telefono, quindi non mi ha dato/lasciato nulla, se non la soddisfazione di averlo 😎. E' stato il primo telefono che ho avuto con una fotocamera, ma la qualità era talmente bassa che ad oggi penso che siano sopravvisute giusto 3 o 4 foto che ho fatto da quel robino.
 
 - **Nexus Player (_set-top-box, 2015-2017_)** - il primo e unico set-top-box Android TV creato direttamente da Google. Piccolo, carino e funzionale ma di fatto non mi dava nulla in più di quanto mi avesse dato la rivoluzione del Chromecast e il tanto atteso avvento dei servizi di streaming in Italia, se non giusto la piccola comodità di poter accedere a tali contenuti senza bisogno di scomodare lo smartphone.
+
+- **GoPro 3 (_videocamera compatta, 2013-2014_)** - nella prima metà del decennio 2010-2020 GoPro in generale ha avuto un discreto _momentum_, in realtà io la comprai solo per riutilizzare il credito della lente CyberShot che avevo restituito quindi non ho mai trovato particolare interesse per queste videocamere compatte. Tutto ok dal mio punto di vista, ma semplicemente è stato un'acquisto di poca utilità per me.
