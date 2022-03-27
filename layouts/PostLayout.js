@@ -78,7 +78,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300 mb-6">
                 <Link href={discussUrl(slug)} rel="nofollow noopener noreferrer">
                   {'Parlane su Twitter'}
                 </Link>
@@ -87,6 +87,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   {'Vedi su GitHub'}
                 </Link>
               </div>
+              <Tip isLargeScreen={true} />
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">

@@ -77,7 +77,7 @@ export default function About() {
               tastino per chiudere la tab.
             </p>
             <h3>Privacy policy</h3>
-            <p>
+            <p className="mb-12">
               Non necessaria, dato che non sto tracciando il alcun modo le pagine di questo blog{' '}
               <span role="img" aria-label="smile">
                 🙂
@@ -86,6 +86,7 @@ export default function About() {
               <i>YouTube, Instagram, ecc</i>) eseguono sempre qualche forma di tracciamento, ma
               appunto, non dipendono da me o da questo sito.
             </p>
+            <Tip isLargeScreen={true} />
           </div>
           <Tip />
         </div>
