@@ -22,12 +22,13 @@ or manually:
 - clone the `_template.md` file
 - edit the cloned file with your content
 
-## Added features
+## Customizations
 
 I've added some small new features over the starting template to handle some more blog-specific funcionalities
 
 - code ported to be compliant with node.js **v17+** (_especially ES Modules_)
 - "posts by year" page template, available at `/post/year/[a-year-between-2010-and-current]`
+- ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
 
 ## License
 
