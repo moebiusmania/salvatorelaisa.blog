@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+import Tip from '@/components/Tip'
 import { PageSeo } from '@/components/SEO'
 
 export default function About() {
@@ -86,6 +87,7 @@ export default function About() {
               appunto, non dipendono da me o da questo sito.
             </p>
           </div>
+          <Tip />
         </div>
       </div>
     </>

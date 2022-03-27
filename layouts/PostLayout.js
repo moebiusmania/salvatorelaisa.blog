@@ -3,6 +3,7 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
+import Tip from '@/components/Tip'
 import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/post/${fileName}`
@@ -126,7 +127,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-8">
+              <div className="pt-4 xl:pt-8 mb-10">
                 <Link
                   href="/post"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
@@ -134,6 +135,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   &larr; Torna al blog
                 </Link>
               </div>
+              <Tip />
             </footer>
           </div>
         </div>
