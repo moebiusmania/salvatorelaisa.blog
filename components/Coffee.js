@@ -1,12 +1,17 @@
 const Coffee = () => {
   const styles = [
+    'no-underline',
     'bg-sky-500',
     'hover:bg-sky-600',
     'text-white',
+    'hover:text-white',
     'flex',
+    'gap-2',
+    'items-center',
+    'justify-center',
     'rounded-lg',
     'py-3',
-    'px-5',
+    'px-8',
     'text-xl',
     'font-semibold',
   ]
@@ -78,7 +83,7 @@ const Coffee = () => {
         rel="noreferrer noopener"
         target="_blank"
       >
-        {icon} <span className="ml-3">Offrimi un caffé</span>
+        {icon} <span>Offrimi un caffé</span>
       </a>
     </>
   )
