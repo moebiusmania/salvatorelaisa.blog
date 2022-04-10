@@ -4,13 +4,14 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import Tip from '@/components/Tip'
+import Twitter from '@/components/social-icons/twitter.svg'
 import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/post/${fileName}`
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
+  `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     `${siteMetadata.siteUrl}/post/${slug}`
-  )}`
+  )} @moebiusmania - `
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -79,12 +80,20 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300 mb-6">
-                <Link href={discussUrl(slug)} rel="nofollow noopener noreferrer">
+                <Link
+                  href={discussUrl(slug)}
+                  rel="nofollow noopener noreferrer"
+                  className="hover:text-blue-600 underline decoration-dotted"
+                >
                   {'Parlane su Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)} rel="nofollow noopener noreferrer">
-                  {'Vedi su GitHub'}
+                <Link
+                  href={editUrl(fileName)}
+                  rel="nofollow noopener noreferrer"
+                  className="hover:text-blue-600 underline decoration-dotted"
+                >
+                  {'Codice sorgente su GitHub'}
                 </Link>
               </div>
               <Tip isLargeScreen={true} />

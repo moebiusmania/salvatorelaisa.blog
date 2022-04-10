@@ -1,5 +1,4 @@
 import siteMetadata from '@/data/siteMetadata'
-import SocialIcon from '@/components/social-icons'
 import Tip from '@/components/Tip'
 import { PageSeo } from '@/components/SEO'
 
