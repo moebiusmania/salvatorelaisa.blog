@@ -4,7 +4,7 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import Tip from '@/components/Tip'
-import Twitter from '@/components/social-icons/twitter.svg'
+import ReadingTime from '@/components/ReadingTime'
 import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/post/${fileName}`
@@ -16,7 +16,7 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, readingTime } = frontMatter
 
   return (
     <SectionContainer>
@@ -37,6 +37,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
+                <ReadingTime value={readingTime.text} />
               </div>
             </div>
           </header>

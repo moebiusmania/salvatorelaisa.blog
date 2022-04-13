@@ -26,9 +26,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter('post')
-  if (params.year == 2022) {
+  /*if (params.year === 2022) {
     console.log(allPosts)
-  }
+  }*/
 
   const filteredPosts = allPosts.filter(
     (post) => post.draft !== true && post.date && post.date.includes(params.year)

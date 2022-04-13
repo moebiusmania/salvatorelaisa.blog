@@ -24,11 +24,12 @@ or manually:
 
 ## Customizations
 
-I've added some small new features over the starting template to handle some more blog-specific funcionalities
+I've added some small new features over the starting template to handle some more blog-specific functionalities
 
 - code ported to be compliant with node.js **v17+** (_especially ES Modules_)
 - "posts by year" page template, available at `/post/year/[a-year-between-2010-and-current]`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
+- "reading time" for posts
 
 ## License
 
