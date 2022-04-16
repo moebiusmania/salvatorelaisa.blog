@@ -1,8 +1,8 @@
 ---
 title: I device che mi hanno cambiato la vita (e quelli che invece... no)
-date: '2022-03-21'
+date: '2022-09-21'
 tags: ['device', 'pensieri', 'nostalgia']
-draft: true
+draft: false
 summary: 'Visto che questo anno vado per i 40 e ultimamente mi sono capitate varie discussioni con amici e colleghi in cui ho chiaccherato di device belli e brutti che ho avuto, ho realizzato che questo è un ottimo momento per fare un riassunto personale di come (e cosa) nel corso della mia vita la tecnologia abbia avuto impatti diretti nel mio quotidiano.'
 images: ['']
 ---
@@ -43,7 +43,7 @@ Ed ecco che finalmente con un solo disco ti puoi portare in giro tutta la musica
 
 ### Chromecast (_TV dongle, 2013 ad oggi_)
 
-Non voglio ripetere [quanto già scritto a suo tempo](/post/sperimentando-il-chromecast). Ddiciamo che riguardandolo ora, a quasi un decennio di distanza
+Non voglio ripetere [quanto già scritto a suo tempo](/post/sperimentando-il-chromecast). Diciamo che riguardandolo ora, a quasi un decennio di distanza
 
 ### Macbook Air (_laptop, 2012-2014_)
 
@@ -87,23 +87,35 @@ Ma tornando ai vari lettori che ho avuto: tra **durate delle batterie al limite 
 
 ### Moto360 (_smarwatch, 2014-2016_)
 
+Eh sì, ci ho provato anche con gli smartwatch 😂, nel 2014 ho voluto provare questa nuova categoria di device e il neonato Android Wear. Tutto sommato faceva il suo lavoro il problema principale è legato in generale a tutti gli smartwatch che non hanno **mai** trovato un ruolo reale nell'utilizzo quotidiano medio e la batteria che durava grosso modo una giornata scarsa.
+
 ### Macbook (_laptop, 2009-2010_)
 
+Questo è tra i pochi device Apple di cui mi sono davvero pentito di aver speso soldi. Il discorso è simile a quello dei lettori MP3: il Macbook di allora (_quello bianco plasticoso per intenderci_) era un pessimo affare dato che con 300-400 euro in più avrei potuto prendere il Pro, e l'ho fatto poco tempo dopo.
+
 ### Tablet Toshiba (_2011_)
+
+Quando venne presentato il primo iPad io mi ero [da poco convertito ad Android](/post/android-switch), quindi appena furono disponibili i primi tablet Android in Italia sono corso a comprarne: un Toshiba di cui non mi ricordo neanche il modello.
+
+Per certe cose era una scommessa persa in partenza per altre c'erano delle possibilità, ma ovviamente si è concretizzato uno degli scenari peggiori come sempre: scarsa batteria, peso eccessivo, schermo touch poco reattivo, software di base scadente (\*che ho sostituito dopo un paio di giorni\*\*)
 
 ### Nokia N95 (_telefono/smartphone, 2008-2009_)
 
 ### Le 3 o 4 cuffie da viaggio della Sony che ho avuto (_cuffie, 2009-2018_)
 
+A partire dal 2009 per una decina di anni ho lavorato a Milano mentre vivevo nel
+
 ### Nexus 5X (_smartphone, 2016-2018_)
 
-Google at its worst.
+Google at its worst. Credo che questo sia un ottimo esempio di cose da **non** fare: creare un device mediocre, prezzarlo sopra la media e dargli un nome simile a quello del miglior device della sua linea per fare _"clickbait"_ e renderlo inutilizzabile dopo un paio di update del OS.
 
 ### Macbook PRO (_laptop, 2010-2012_)
 
 ### Samsung S3 + CyanogenMOD (_smartphone, 2012-2013_)
 
 ### Acer Windows Vista PC (_laptop, 2007-2009_)
+
+Di questo [ne ho accennato brevemente nel mio post sul MacBook Air](/post/macbook-air), certo comprare un portatile da 17" quando sei una fase della tua vita in cui vai spesso in giro non è stata una furbata, ma l'offerta con cui lo comprai era buona e pensavo che un PC "certificato" [Windows Vista](https://it.wikipedia.org/wiki/Windows_Vista) avrebbe dato risultati decenti. Ma sappiamo bene com'è andata a finire la storia con Vista...
 
 ### Sony Cyber-Shot (_lente per smartphone, 2013_)
 
@@ -116,5 +128,7 @@ Ho deliberatamente omesso qualche dispositivo da queste due liste perché in qua
 - **Nokia 6600 (_telefono, 2005-2007_)** - il mitico ovetto! era figo, tanto figo, ma era ancora "solamente" un telefono, quindi non mi ha dato/lasciato nulla, se non la soddisfazione di averlo 😎. E' stato il primo telefono che ho avuto con una fotocamera, ma la qualità era talmente bassa che ad oggi penso che siano sopravvisute giusto 3 o 4 foto che ho fatto da quel robino.
 
 - **Nexus Player (_set-top-box, 2015-2017_)** - il primo e unico set-top-box Android TV creato direttamente da Google. Piccolo, carino e funzionale ma di fatto non mi dava nulla in più di quanto mi avesse dato la rivoluzione del Chromecast e il tanto atteso avvento dei servizi di streaming in Italia, se non giusto la piccola comodità di poter accedere a tali contenuti senza bisogno di scomodare lo smartphone.
+
+- **Nvidia Shield TV (_set-top-box, 2017-2020_)** - potete [rileggervi il post](/post/shield-tv) se volete, ma TL;DR è stato giuso un miglioramento hardware rispetto al Nexus Player. Nota particolare: è stato il device che mi ha fatto scoprire il cloud gaming.
 
 - **GoPro 3 (_videocamera compatta, 2013-2014_)** - nella prima metà del decennio 2010-2020 GoPro in generale ha avuto un discreto _momentum_, in realtà io la comprai solo per riutilizzare il credito della lente CyberShot che avevo restituito quindi non ho mai trovato particolare interesse per queste videocamere compatte. Tutto ok dal mio punto di vista, ma semplicemente è stato un'acquisto di poca utilità per me.
