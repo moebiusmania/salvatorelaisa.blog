@@ -1,5 +1,5 @@
 ---
-title: Sperimentando Il Chromecast
+title: Sperimentando il Chromecast
 date: '2014-02-15'
 tags: ['tecnicismi', 'tv', 'device']
 draft: false
@@ -44,4 +44,4 @@ ne anche nelle ultime versioni del [client ufficiale della Rai](https://play.goo
 
 ## In conclusione
 
-Per un **prezzo di <del>35€</del> 39€ (_dalla 2a generazione_)** e considerando il fatto che è davvero facile da reperire (_lo trovate sia online sul Play Store che in diversi negozi tipo Mediaworld_) direi che ne vale davvero la pena, sopratutto se come me siete interessati a rendere più utile la vostra TV.
+Per un **prezzo di <del>35€</del> 39€ (_dalla 2a generazione_)** e considerando il fatto che è davvero facile da reperire (_lo trovate sia online sul <del>Play</del>Google Store che in diversi negozi generici tipo Mediaworld_) direi che ne vale davvero la pena, sopratutto se come me siete interessati a rendere più utile la vostra TV senza doverla.
