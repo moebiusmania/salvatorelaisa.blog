@@ -31,11 +31,7 @@ Mi dispiace solo per il fatto che non compro più libri in librerie, ma questo �
 
 ### Lettore CD-MP3 portatile (_2003-2005_)
 
-Ecco di questo mi spiace non ricordarmi il modello e non avere una foto in giro (_o magari ce l'ho ma non l'ho ancora trovata_), ma qui parliamo di una di quelle tipologie di prodotti che azzeccava in pieno le esigenze di un periodo specifico. Sono i primi anni post-2000, praticamente chiunque abbia un PC ha un **masterizzatore**, chi ancora non ha una **connessione a internet** in casa la avrà entro qualche mese, l'**MP3** come formato audio e lo scambio (_illegale_) di questi file via **P2P** è nel suo periodo di picco.
-
-Unico problema: anche se in un giorno ti scaricavi 10 album musicali diversi, i CD potevano contenere solamente 70 minuti di musica come audio quindi per ogni album ti serviva un CD scrivibile per poterteli ascoltare in giro... questo fino a quando qualcuno non ha avuto la brillante idea di aggiungere la lettura dei file MP3 nei lettori CD portatili.
-
-Ed ecco che finalmente con un solo disco ti puoi portare in giro tutta la musica che ci stava in 650MB senza dover per forza cambiare CD in continuazione... un sogno divenuto realtà e l'anello mancante che ci ha permesso di vivere l'inizio del futuro della musica.
+Di questo ne ho già parlato nel [post sull'iPod](/post/era-ipod). Prodotto azzeccato per il suo (_breve_) tempo.
 
 ### iPhone 3GS (_smartphone, 2009-2010_)
 
@@ -51,7 +47,7 @@ Anche di questo ne ho [già parlato abbondatemente in questo blog qualche anno f
 
 ### iPod Shuffle e Nano 4gen (_audio player, 2007-2010_)
 
-Ho smesso di usarlo **solo** perché il passaggio all'iPhone lo aveva reso ridondante, ma se devo essere 100% onesto, un po mi "manca". Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con scatola e tutto quanto, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accede più.
+Sul mio rapporto con gli iPod [ho un post dedicato](/post/era-ipod) dato che a Maggio di quest'anno è stato discontinuato definitivamente.
 
 ### Samsung Tab S2 (_tablet 8 pollici, 2016-2017_)
 
@@ -81,9 +77,7 @@ Un'altra prematura vittima dell'usura. Cuffie eccellenti sia come qualità dell'
 
 ### Quasi tutti i lettori MP3 pre-iPod che ho avuto (_2001-2007_)
 
-Come ho già detto sopra, l'iPod era indiscutibilmente superiore a qualunque altro lettore MP3 dei suoi tempi. In realtà è colpa mia (_come sempre_) perché gli iPod esistevano già da qualche anno e io come tanti altri ci ho messo vari lettori medio/economici a capire questa cosa.
-
-Ma tornando ai vari lettori che ho avuto: tra **durate delle batterie al limite del ridicolo, schermi LCD illeggibili anche in condizioni favorevoli, plastica che perdeva il colore dopo pochi mesi di utilizzo**... si capisce perché sono inevitabilmente finito sul player di Apple.
+Ne ho già tristemente parlato nel [post sull'iPod](/post/era-ipod)
 
 ### Moto360 (_smarwatch, 2014-2016_)
 
