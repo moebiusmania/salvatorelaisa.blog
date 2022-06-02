@@ -11,15 +11,15 @@ images: ['']
 
 Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quello che di fatto è una realtà da diversa anni: [l'era dell'iPod è finita](https://www.apple.com/newsroom/2022/05/the-music-lives-on/) 😭.
 
-Ora mi aspetto che pioveranno articoli, video, servizi televisivi su quanto l'iPod sia stato rivoluzionario e bla blabla... e purtroppo è stato così 🤓 quindi voglio aggregarmi a questo coro (_che sia già iniziato o no_) e raccontare la mia esperienza con gli iPod.
+Ora mi aspetto che pioveranno articoli, video, servizi televisivi su quanto l'iPod sia stato rivoluzionario e bla bla bla... e purtroppo è stato così 🤓 quindi voglio aggregarmi a questo coro (_che sia già iniziato o no_) e raccontare la mia esperienza con gli iPod.
 
 ## Non la solita storia
 
 Ebbene no, non vi racconterò di come io sia stato uno dei primi utilizzatori della prima versione dell'iPod e di come ho guardato il futuro dritto negli occhi senza alcun indugio.
 
-**All'iPod ci sono arrivato tardi, molto tardi, intorno al 2007**. E nonostante tutto, in quei quasi 3 anni in cui l'ho usato è diventato uno dei miei device preferiti.
+**All'iPod ci sono arrivato tardi, molto tardi, intorno al 2007**. E nonostante tutto, in quei circa 3 anni in cui l'ho usato è diventato uno dei miei device preferiti.
 
-E' stato il device che mi ha trasformato da completo disinterrato ad Apple & co in un _"Apple enthusiast"_ per alcuni anni.
+E' stato il device che mi ha trasformato da completo disinterrato ad Apple & co in un _"Apple enthusiast"_ per diverso tempo.
 
 ## Il mio inizio della musica digitale
 
@@ -40,6 +40,14 @@ e appunto **l'iPod nel 2001**.
 
 ## I primi device
 
+Quindi... sono i primi anni post-2000, praticamente chiunque abbia un PC ha un **masterizzatore**, chi ancora non ha una **connessione a internet** in casa la avrà entro qualche mese, l'**MP3** come formato audio e lo scambio (_illegale_) di questi file via **P2P** è nel suo periodo di picco.
+
+Iniziano i primi problemi del scrivere su CD i file audio scaricati da internet: **i CD potevano contenere solamente 70 minuti di musica** come audio, quindi per ogni album ti serviva un CD scrivibile per ascoltarli in giro... questo fino a quando qualcuno non ha avuto la brillante idea di aggiungere **la lettura dei file MP3 nei lettori CD portatili**.
+
+Ed ecco che finalmente con un solo disco ti puoi portare in giro tutta la musica che ci stava in 650MB (_parliamo di circa una decina di album_). Un sogno divenuto realtà e l'anello mancante che ci ha permesso di vivere l'inizio del futuro della musica!
+
+Parallelamente ai lettori CD-MP3 emergono anche i molto più compatti lettori MP3 digitali che nel giro di breve tempo cannibalizzano il mercato dei loro rivali dato che offrono gli stessi vantaggi ma senza la scomodità legata alla poca praticità dell'utilizzo dei CD fuori da casa (_qualcuno magari si ricorderà i problemi dei CD che "saltavano" nei lettori delle autoradio e il disturbo di fondo appena iniziavano a degradarsi..._)
+
 ## Enter the iPod (shuffle -> nano)
 
 ## "iPhone piglia tutto"
@@ -48,7 +56,7 @@ A metà del 2009 ho preso l'iPhone 3GS, per qualche settimana sono co-esistiti n
 
 Purtroppo quello, a mia insaputa, è stato l'addio definitivo all'iPod. Tra i vari smartphone e servizi musicali che sono seguiti non ho ovviamente avuto più nessun motivo per riutilizzare un device dedicato esclusivamente per la musica.
 
-Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con scatola e tutto quanto, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accede più.
+Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con scatola e tutto quanto, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accende più.
 
 ## E adesso?
 
@@ -62,8 +70,4 @@ Ma tornando ai vari lettori che ho avuto: tra **durate delle batterie al limite 
 
 ### Lettore CD-MP3 portatile (_2003-2005_)
 
-Ecco di questo mi spiace non ricordarmi il modello e non avere una foto in giro (_o magari ce l'ho ma non l'ho ancora trovata_), ma qui parliamo di una di quelle tipologie di prodotti che azzeccava in pieno le esigenze di un periodo specifico. Sono i primi anni post-2000, praticamente chiunque abbia un PC ha un **masterizzatore**, chi ancora non ha una **connessione a internet** in casa la avrà entro qualche mese, l'**MP3** come formato audio e lo scambio (_illegale_) di questi file via **P2P** è nel suo periodo di picco.
-
-Unico problema: anche se in un giorno ti scaricavi 10 album musicali diversi, i CD potevano contenere solamente 70 minuti di musica come audio quindi per ogni album ti serviva un CD scrivibile per poterteli ascoltare in giro... questo fino a quando qualcuno non ha avuto la brillante idea di aggiungere la lettura dei file MP3 nei lettori CD portatili.
-
-Ed ecco che finalmente con un solo disco ti puoi portare in giro tutta la musica che ci stava in 650MB senza dover per forza cambiare CD in continuazione... un sogno divenuto realtà e l'anello mancante che ci ha permesso di vivere l'inizio del futuro della musica.
+Ecco di questo mi spiace non ricordarmi il modello e non avere una foto in giro (_o magari ce l'ho ma non l'ho ancora trovata_), ma qui parliamo di una di quelle tipologie di prodotti che azzeccava in pieno le esigenze di un periodo specifico.
