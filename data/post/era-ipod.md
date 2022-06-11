@@ -52,11 +52,11 @@ Parallelamente ai lettori CD-MP3 emergono anche i molto più compatti lettori MP
 
 ## "iPhone piglia tutto"
 
-A metà del 2009 ho preso l'iPhone 3GS, per qualche settimana sono co-esistiti nelle mie tasche, poi quando ho sincronizzato tutta la musica sul melafonino e capito un paio di cose... ho realizzato che potevo lasciare l'iPod a casa.
+A metà del 2009 ho preso [l'iPhone 3GS](), per qualche settimana sono co-esistiti nelle mie tasche, poi quando ho sincronizzato tutta la musica sul melafonino e capito un paio di cose... ho realizzato che potevo lasciare l'iPod a casa 🤓.
 
-Purtroppo quello, a mia insaputa, è stato l'addio definitivo all'iPod. Tra i vari smartphone e servizi musicali che sono seguiti non ho ovviamente avuto più nessun motivo per riutilizzare un device dedicato esclusivamente per la musica.
+Purtroppo quello, a mia insaputa, **è stato l'addio definitivo all'iPod** 😭. Tra i vari smartphone e servizi musicali cloud che si sono seguiti velocemente nei pochi anni dopo, non ho ovviamente avuto più nessun motivo per riutilizzare un device dedicato esclusivamente per la musica.
 
-Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con scatola e tutto quanto, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accende più.
+Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sigh_), ma lo Shuffle ce l'ho ancora con la sua scatoletta piccina, purtroppo credo che nel corso degli anni la batteria si sia deteriorata oltre il recuperabile e quindi non si carica ne accende più.
 
 ## E adesso?
 
