@@ -23,8 +23,6 @@ Le "regole" sono abbastanza semplici
 
 ne quindi... ecco il mio repo Github per questo challenge!
 
-<!-- <a class="embedly-card" href="https://github.com/moebiusmania/100-days-of-code/blob/master/log.md">moebiusmania/100-days-of-code</a> -->
-
 Ci vediamo tra 100 giorni!
 
 <small>\*Foto di copertina di **[Ruiwen Chua](https://www.flickr.com/photos/ruiwen/3260095534/)\***</small>

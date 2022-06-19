@@ -29,8 +29,6 @@ Nel mio caso il "_periodo Quake_" si è sovrapposto a una fase delicata della mi
 
 Quake era nell'aria già da qualche mese, ma con il [numero 88 di The Games Machine](https://i.ebayimg.com/images/g/pVoAAOSwNG5e4PWL/s-l1600.jpg) e il suo relativo CD-ROM allegato finalmente avevo tra le mani la versione shareware (_che comprendeva solo il primo de 4 episodi nei quali era diviso il gioco, quindi era più sostanzioso di una demo_) di Quake 😎! Quel numero di TGM era abbastanza sostanzioso essendo quello estivo che copriva Luglio e Agosto (_eh si, con le riviste cartacee funzionava così_ 👨‍🦳) e per i pochi giorni che l'ho avuto tra le mani prima di partire non l'ho filato molto dato che ero concentrato sul far funzionare la shareware di Quake sul mio [Intel 486](https://it.wikipedia.org/wiki/Intel_80486) a ben 10-15 frame al secondo 🤣.
 
-<!-- ![Purtroppo a distanza di anni ho perso la rivista, ma il silver disk di quel numero con la shareware di Quake è uno dei pezzi forti della mia collezione personale]() <small>_Purtroppo a distanza di anni ho perso la rivista, ma il silver disk di quel numero con la shareware di Quake è uno dei pezzi forti della mia collezione personale._ 🤓</small> -->
-
 Poi partito per la montagna in "ritiro sprituale" penso di aver letto la recensione di Quake almeno una volta al giorno, volevo prepararmi per il ritorno a casa per riprendere a giocare la shareware con maggior cognizione di quale fosse il ruolo di ogni singolo pixel e l'uscita del gioco completo.
 
 Lo comprai l'inverno successivo dopo il tanto atteso upgrade del PC di casa a un più performante [Pentium 133Mhz](https://it.wikipedia.org/wiki/Pentium) e quel punto fui finalmente in grado di godermi quei splendidi ambienti e modelli (_low poly_) completamente tridimensionali ad un framerate più che decente 🤓.
@@ -67,7 +65,6 @@ Come anticipavo prima, questa nuova riediezione supporta alcune mod che esistono
 
 - [Arcane Dimensions](https://www.moddb.com/mods/arcane-dimensions) - un esempio di cosa succede se si porta all'estremo l'engine del gioco: mappe enormi, centinaia di nemici che mischiano anche texture e architetture di diversi contesti ma il tutto cercando di non allontanarsi troppo da quello che è lo "spirito" di Quake.
 - [Slayer Testaments](https://www.moddb.com/mods/slayers-testament) - e se DOOM 2016/Eternal fosse stato realizzato nell'engine di Quake?
-<!-- - [Quake 1.5]() - una versione "e mezzo" del gioco in cui vengono introdotti alcuni concetti e nemici da Quake 2, oltre che un riadattamento di tutta la campagna base. -->
 - Halloween Jam [1](https://www.quaddicted.com/reviews/hwjam.html)/[2](https://www.quaddicted.com/reviews/hwjam2.html)/[3](https://www.quaddicted.com/reviews/hwjam3.html) - una serie di mappe realizzate negli ultimi 3 anni a tema Halloween
 - [Xmas Jam 2020](https://www.quaddicted.com/reviews/xmasjam2020.html) - simile a sopra ma qui il Natale è solo un pretesto per pubblicare questa collezione di mappe, non ci sono molti elementi a tema.
 
