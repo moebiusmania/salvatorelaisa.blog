@@ -12,7 +12,7 @@ images:
 
 ![Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!](https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true) <small>_Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!_</small>
 
-Ok, ora che lo sto utilizzando da qualche mese posso dire due paroline: **il migliore smartphone Android su cui abbia messo le zampe finora!** E parliamo del prezzo, 350€ il modello base e 400€ quello da 32gb (_visto che però non c'è slot SD card ho optato per questo_) per un device con Android stock su cui c'è preinstallata quella che ad oggi è la versione più performante dell'OS di Google, la [4.4 KitKat](https://www.android.com/intl/it_it/versions/kit-kat-4-4/).
+Ok, ora che lo sto utilizzando da qualche mese posso dire due paroline: **il migliore smartphone Android su cui abbia messo le zampe finora!** E parliamo del prezzo, 350€ il modello base e 400€ quello da 32gb (_visto che però non c'è slot SD card ho optato per questa versione_) per un device con Android stock su cui c'è preinstallata quella che ad oggi è la versione più performante dell'OS di Google, la [4.4 KitKat](https://www.android.com/intl/it_it/versions/kit-kat-4-4/).
 
 Poi dopo i miei recenti acquisti del Chromecast e del tablet Nexus 10 (_dopo una lunga caccia, dato che non lo vendono in Italia..._) posso definirmi un _power user_ della piattaforma Android 🤓.
 
