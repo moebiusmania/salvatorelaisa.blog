@@ -1,6 +1,6 @@
 ---
 title: I device che mi hanno cambiato la vita (e quelli che invece... no)
-date: '2022-09-21'
+date: '2022-10-21'
 tags: ['device', 'pensieri', 'nostalgia']
 draft: true
 summary: 'Visto che questo anno vado per i 40 e ultimamente mi sono capitate varie discussioni con amici e colleghi in cui ho chiaccherato di device belli e brutti che ho avuto, ho realizzato che questo è un ottimo momento per fare un riassunto personale di come (e cosa) nel corso della mia vita la tecnologia abbia avuto impatti diretti nel mio quotidiano.'

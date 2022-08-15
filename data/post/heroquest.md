@@ -20,7 +20,7 @@ Per un annetto abbiamo ripetuto diverse volte il rito della partita a HeroQuest,
 
 Poi qualche giorno fa inciampo in questo video, e il gasamento diventa totale!
 
-## <iframe width="100%" height="415" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/2iaC-UpA5r4" frameBorder="0" allowFullScreen></iframe>
 
 Clicco prontamente il link del progetto su **Kickstarter**, con già la mano pronta sulla carta di credito convinto che HeroQuest meriti un remake, ma purtroppo l'entusiasmo viene fermato dopo pochissimo:
 
@@ -37,3 +37,7 @@ Mi spiace che alla fine **ci smena HeroQuest stesso** e tutte le persone che com
 Se anni dopo sono entrato nel tunnel di **Diablo** & company (_League of Legends, Warcraft, Final Fantasy_) per me personalmente è tutto merito di HeroQuest.
 
 Peccato davvero.
+
+#### Aggiunta di Agosto 2022
+
+Alla fine HeroQuest [è tornato per davvero](https://www.amazon.it/Hasbro-Gaming-Heroquest-Avventura-Miniature/dp/B09M9FWPVG/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PYPXI2TJJAAG&keywords=hero+quest&qid=1660553434&sprefix=hero+ques%2Caps%2C158&sr=8-3) e in via ufficiale 😎.

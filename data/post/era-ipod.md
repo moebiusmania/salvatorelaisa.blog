@@ -2,7 +2,7 @@
 title: L'era dell'iPod
 date: '2022-05-15'
 tags: ['device', 'musica', 'evoluzione']
-draft: true
+draft: false
 summary: "Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quello che di fatto è una realtà da diversa anni: l'era dell'iPod è finita 😭"
 images:
   ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/ipod-apple.png']
@@ -12,7 +12,7 @@ images:
 
 > **SPOILER**: è finita...
 
-Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quello che di fatto è una realtà da diversa anni: [l'era dell'iPod è finita](https://www.apple.com/newsroom/2022/05/the-music-lives-on/) 😭.
+Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quella che di fatto è una realtà da diversa anni: [l'era dell'iPod è finita](https://www.apple.com/newsroom/2022/05/the-music-lives-on/) 😭.
 
 Ora mi aspetto che pioveranno articoli, video, servizi televisivi su quanto l'iPod sia stato rivoluzionario e bla bla bla... e purtroppo è stato così 🤓 quindi voglio aggregarmi a questo coro (_che sia già iniziato o no_) e raccontare la mia esperienza con gli iPod.
 
@@ -20,11 +20,11 @@ Ora mi aspetto che pioveranno articoli, video, servizi televisivi su quanto l'iP
 
 Ebbene no, non vi racconterò di come io sia stato uno dei primi utilizzatori della prima versione dell'iPod e di come ho guardato il futuro dritto negli occhi senza alcun indugio.
 
-**All'iPod ci sono arrivato tardi, molto tardi, intorno al 2007**. E nonostante tutto, in quei circa 3 anni in cui l'ho usato è diventato uno dei miei device preferiti.
+**All'iPod ci sono arrivato tardi, molto tardi, intorno al 2006/2007**. E nonostante tutto, in quei circa 3 anni in cui l'ho usato è diventato uno dei miei device preferiti.
 
 E' stato il device che mi ha trasformato da completo disinterrato ad Apple & co in un _"Apple enthusiast"_ per diverso tempo.
 
-## Il mio inizio della musica digitale
+## Il mio inizio con la musica digitale 🎧
 
 Facciamo qualche passo indietro... all'inizio c'era il "Registratore di Suoni" di Windows 95/98 e la TV di camera mia. [MTV era una cosa nuova in Italia](<https://it.wikipedia.org/wiki/MTV_(Italia)>) ed ero molto gasato per quello, registravo su videocassetta i video delle mie canzoni preferite e un giorno ho provato a utilizzare un microfono per PC e il suddetto software per registrare l'audio da una di queste videocassette... e funzionava! Certo parliamo di fare `.wav` con un po di disturbi in mezzo ma avevo iniziato a creare una piccola libreria di file audio digitali.
 
@@ -52,15 +52,37 @@ Ed ecco che finalmente con un solo disco ti puoi portare in giro tutta la musica
 
 ![Non ne sono sicuro al 100%, ma forse avevo proprio questo nel periodo 2000-2005...](https://images.philips.com/is/image/PhilipsConsumer/AZT3202_17-IMS-en_US?wid=840&hei=720&$jpglarge$) <small>_Non ne sono sicuro al 100%, ma forse avevo proprio questo nel periodo 2000-2005..._</small>
 
-Parallelamente ai lettori CD-MP3 emergono anche i molto più compatti **lettori MP3 digitali** che nel giro di breve tempo cannibalizzano il mercato dei loro rivali dato che offrono gli stessi vantaggi ma senza la scomodità legata alla poca praticità dell'utilizzo dei CD fuori da casa (_qualcuno magari si ricorderà i problemi dei CD che "saltavano" nei lettori delle autoradio e il disturbo di fondo appena iniziavano a degradarsi..._)
+Parallelamente ai lettori CD-MP3 emergono anche i molto più compatti **lettori MP3 digitali** che nel giro di breve tempo cannibalizzano il mercato dei loro rivali dato che offrono gli stessi vantaggi ma senza la scomodità legata alla poca praticità dell'utilizzo dei CD fuori da casa (_qualcuno magari si ricorderà i problemi dei CD che "saltavano" nei lettori delle autoradio e il disturbo di fondo appena iniziavano a degradarsi..._) e anche per il fatto che erano molto più piccoli.
 
-Sia i lettori CD-MP3 che i lettori MP3 portatili erano di fatto quelle tipologie di prodotti che azzeccavano in pieno le esigenze di un periodo specifico, rimaneva comunque lo scoglio "tecnico" del software: c'erano troppi software per scaricare musica, pochi modi per farlo legalmente in modo comodo e anche il catalogare la musica sul proprio PC richiedeva un certo sforzo.
+![Questo assomiglia molto a uno dei vari MP3 player abbastanza scabrosi che ho avuto ai tempi.](https://live.staticflickr.com/169/389269282_42e84c5d71_b.jpg) <small>_Questo assomiglia molto a uno dei vari MP3 player abbastanza scabrosi che ho avuto ai tempi. Foto di [ryanlei su Flickr](https://www.flickr.com/photos/ryanlei/389269282/in/photolist-Ap7cm-9K145R-6L77Y-bWhjYp-axVwj-nBukc-7rgN35-76epvW-ghaCY-8Me7xu-axVoW-25PK5HK-3B73cV-6myF8R-zmTei-axVoS-axVoR-8aYg3X-2kP9Gz-axVoT-axVoU-5drkA7-7rgMSm-4R6PfV-axVoV-xeNY6-7r7qmc-8GuF2n-3bDUYB-4nSCSw-3NQDZ-Ap7cg-5dn1b6-etAXi-5iqa3T-4jRU1-4HirBU-8jDbFN-9iKP7u-ncosBc-4H6ozp-33ACSc-aAuhY-2kCQWWn-u6K5Fr-4qkGTX-7ZwAh6-23hgZEU-7tHDe7-4pkivD)_</small>
 
-## Enter the iPod (shuffle -> nano)
+Sia i lettori CD-MP3 che i lettori MP3 portatili erano di fatto quelle tipologie di prodotti che **azzeccavano in pieno le esigenze di un periodo specifico**, rimaneva comunque lo scoglio "tecnico" del software: c'erano troppi software per scaricare musica, pochi modi per farlo legalmente in modo pratico e anche il catalogare la musica sul proprio PC richiedeva un era un lavoro sulle spalle di noi poveri utenti.
 
-## "iPhone piglia tutto"
+## Enter the iPod (Shuffle -> Nano)
 
-A metà del 2009 ho preso [l'iPhone 3GS](https://en.wikipedia.org/wiki/IPhone_3GS), per qualche settimana sono co-esistiti nelle mie tasche, poi quando ho sincronizzato tutta la musica sul melafonino e capito un paio di cose... ho realizzato che potevo lasciare l'iPod a casa 🤓.
+Poi un giorno di fine estate del 2006 mentre ero in giro in un qualche negozio tipo Saturn (_sì, ricordatevi che avevamo anche i Saturn in Italia..._) o Euronics passo davanti al bancone degli iPod e vedo lo [Shuffle](https://web.archive.org/web/20061228062827/http://www.apple.com/ipodshuffle/): costa poco, è piccino e dato che avevo rotto l'ennesimo MP3 player ho deciso di fare questo piccolo passo per la mia esperienza della musica digitale e l'ho comprato.
+
+Sì aveva solo **1gb di spazio**, che oggi sembra ridicolo, ma considerato il periodo e il fatto che era un dispositivo pensato **esclusivamente** per la musica, significava avere più di una dozzina di album attaccati addosso con una molletta (_che ho sempre trovato una delle feature più belle in assoluto_). Non era dotato di schermo e questo rendeva la navigazione degli album non sempre comodissima, ma è stato il device che mi ha fatto scoprire [iTunes](https://web.archive.org/web/20061228075920/http://www.apple.com/itunes/) e la facilità con cui **in un solo passaggio**:
+
+1. si rippava un CD audio nel formato audio di Apple
+2. veniva aggiunto al tuo catalogo iTunes con copertina e informazioni corrette
+3. veniva syncato sul tuo iPod se era collegato e c'era spazio disponibile
+
+Ovvero lo **zen dell'esperienza per la musica digitale di allora**!
+
+![Ma quanto era figo il Nano di 4a generazione?](https://live.staticflickr.com/3218/2910413691_ed3815cd97_b.jpg) <small>_Ma quanto era figo il Nano di 4a generazione? Foto di [Jamie McCall su Flickr](https://www.flickr.com/photos/jamiemc/2910413691/in/photolist-5rbCAp-5rfVrE-5rbBDX-5rfYT3-3ERSv4-5rfZKE-5rfWhN-5ziNEU-5phizX-3ES1h8-9Vo945-vSMAC-48zptz-9NET95-5VevTe-5VevWD-5ViSYs-63r3NY-vSMHw-crSuVU-crSRdA-crShQb-crSbmL-crSjuL-crSc9G-crSkeA-crSwH7-crSGkd-crSihm-crSYC7-crSub5-9efwsk-aguTGV-crShny-crSdv1-9Vkj3g-crSyxd-crRUbC-crSBEj-crRYnN-crSyR7-crSLj9-crSeFh-crSS7q-crSKwN-crSSSJ-crSPSj-crT11S-crSG27-crSh4W)_</small>
+
+Dopo circa un annetto di utilizzo dello Shuffle sono poi passato al [iPod Nano di 4a generazione](https://web.archive.org/web/20070716195602/http://www.apple.com/ipodnano/): finalmente avevo uno schermo LCD, molto più spazio (_non mi ricordo se 4gb o 8gb_), la mitica rotella di selezione, la possibilità di caricare e guardare anche foto e video, qualche semplice giochino comodo per intrattenermi durante brevi tappe in metropolitana.
+
+Ovviamente il passaggio da Shuffle a Nano è stato **praticamente indolore** dato che a quel punto avevo già una discreta libreria su iTunes e il sync su un nuovo device era praticamente identico a un normale sync con il solito.
+
+Per i due anni successivi non ci sono stati cambiamenti significativi, ma la cosa non mi dispiaceva, il **bello era proprio quello**: funzionava tutto, sempre, in maniera semplice e veloce. Al punto che non si sentiva la necessità, o meglio non si riusciva a immaginare, qualcosa di più comodo.
+
+**Questo è stato in tutto e per tutto l'iPod che mi ha fatto innamorare dell'iPod** e mi ha portato pian piano, insieme al lavoro di webdesigner, a portarmi sempre più verso i prodotti Apple e per un 3-4 anni avere raticamente quasi tutto l'ecosistema allora disponibile 🤓.
+
+## 📱 "iPhone piglia tutto"
+
+Durante la seconda metà del 2009 ho preso [l'iPhone 3GS](https://en.wikipedia.org/wiki/IPhone_3GS) e per qualche settimana è co-esistito nelle mie tasche con l'iPod Nano, poi quando ho sincronizzato tutta la musica sul melafonino e capito un paio di cose... ho realizzato che potevo lasciare l'iPod a casa 🤓.
 
 Purtroppo quello, a mia insaputa, **è stato l'addio definitivo all'iPod** 😭. Tra i vari smartphone e servizi musicali cloud che si sono seguiti velocemente nei pochi anni successivi, non ho ovviamente avuto più nessun motivo per riutilizzare un device dedicato esclusivamente per la musica.
 
@@ -68,16 +90,14 @@ Il Nano non so che fine abbia fatto, probabimente l'ho regalato a qualcuno (_sig
 
 ## E adesso?
 
-Guardandomi indietro ho solo un leggero rimorso per non aver creduto al iPod per tempo e godermelo almeno un paio di anni in più.
+Guardandomi indietro ho solo un leggero rimorso per non aver creduto al iPod per tempo e godermelo almeno un paio di anni in più invece di aver sprecato soldi con vari MP3 player economici che hanno in un modo o nell'altro presentato problemi tipo **durate delle batterie al limite del ridicolo, schermi LCD illeggibili anche in condizioni favorevoli, plastica che perdeva il colore dopo pochi mesi di utilizzo**.
 
-Oggi iTunes di fatto non esiste più ma ha un [successore spirituale in Apple Music](https://www.apple.com/it/apple-music/) e l'iPod come dispositivo era già diventato abbastanza irrilevante da una decina di anni vista la sua assimilazione negli smartphones, ma nonostante tutto **non possiamo negare in alcun modo l'impatto che hanno avuto** sia sull'industria della musica che sul modo accedere e ascoltare musica per gran parte delle persone.
+Oggi iTunes di fatto non esiste più ma ha un [successore spirituale in Apple Music](https://www.apple.com/it/apple-music/) e per l'utenza non Apple in generale [Spotify](https://www.spotify.com/) ormai rappresenta l'incarnazione di tutti i vantaggi introdotti 20 anni fa dal software Apple e l'iPod come dispositivo era già diventato abbastanza irrilevante da una decina di anni vista la sua assimilazione negli smartphones, ma nonostante tutto **non possiamo negare in alcun modo l'impatto che hanno avuto** sia sull'industria della musica che sul modo accedere e ascoltare musica per gran parte delle persone.
 
-Onestamente mi piacerebbe se spuntasse fuori qualche nuovo dispositivo specifico per la musica, ma realisticamente non credo succederà mai...
+Onestamente mi piacerebbe se spuntasse fuori qualche nuovo dispositivo specifico per la musica. Qui ci vedrei bene **Spotify** magari in collaborazione con qualche società di hardware tipo [Sony](https://electronics.sony.com/audio/walkman-digital-recorders/c/walkman-mp3-players): un aggeggio compatto, che ti permette di syncare offline album e playlist dal servizio di streaming così da poter uscire di casa anche senza smartphone qualche volta. Ma realisticamente non credo succederà mai...
 
----
+Quindi eccoci qui a fare "_ciao_" con la manina all'era del iPod 👋
 
-### Quasi tutti i lettori MP3 pre-iPod che ho avuto (_2001-2007_)
+Per chiudere, se nel mentre vi è nata la curiosità di conoscere meglio la storia del iPod in generale, vi lascio a questo ottimo documentario su Youtube:
 
-Come ho già detto sopra, l'iPod era indiscutibilmente superiore a qualunque altro lettore MP3 dei suoi tempi. In realtà è colpa mia (_come sempre_) perché gli iPod esistevano già da qualche anno e io come tanti altri ci ho messo vari lettori medio/economici a capire questa cosa.
-
-Ma tornando ai vari lettori che ho avuto: tra **durate delle batterie al limite del ridicolo, schermi LCD illeggibili anche in condizioni favorevoli, plastica che perdeva il colore dopo pochi mesi di utilizzo**... si capisce perché sono inevitabilmente finito sul player di Apple.
+<iframe className="w-full" height="450" src="https://www.youtube.com/embed/t9oLpD4FAO4" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe>
