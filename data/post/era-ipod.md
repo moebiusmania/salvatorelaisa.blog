@@ -1,6 +1,6 @@
 ---
 title: L'era dell'iPod
-date: '2022-05-15'
+date: '2022-05-22'
 tags: ['device', 'musica', 'evoluzione']
 draft: false
 summary: "Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quello che di fatto è una realtà da diversa anni: l'era dell'iPod è finita 😭"
