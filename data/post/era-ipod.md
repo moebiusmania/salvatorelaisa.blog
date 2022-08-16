@@ -60,7 +60,9 @@ Sia i lettori CD-MP3 che i lettori MP3 portatili erano di fatto quelle tipologie
 
 ## Enter the iPod (Shuffle -> Nano)
 
-Poi un giorno di fine estate del 2006 mentre ero in giro in un qualche negozio tipo Saturn (_sì, ricordatevi che avevamo anche i Saturn in Italia..._) o Euronics passo davanti al bancone degli iPod e vedo lo [Shuffle](https://web.archive.org/web/20061228062827/http://www.apple.com/ipodshuffle/): costa poco, è piccino e dato che avevo rotto l'ennesimo MP3 player ho deciso di fare questo piccolo passo per la mia esperienza della musica digitale e l'ho comprato.
+Poi un giorno di fine estate del 2006 mentre ero in giro in un qualche negozio tipo Saturn (_sì, ricordatevi che avevamo anche i Saturn in Italia..._) o Euronics passo davanti al bancone degli iPod e vedo lo [Shuffle](https://web.archive.org/web/20061228062827/http://www.apple.com/ipodshuffle/) (_più esattamente quello di 2a generazione_): costa poco, è piccino e dato che avevo rotto l'ennesimo MP3 player ho deciso di fare questo piccolo passo per la mia esperienza della musica digitale e l'ho comprato.
+
+![Il piccolo ma molto versatile iPod Shuffle di 2a generazione.](https://live.staticflickr.com/221/465497119_31f256ab04_b.jpg) <small>_Il piccolo ma molto versatile iPod Shuffle di 2a generazione. Fodo di [hdaniel su Flickr](https://www.flickr.com/photos/hdaniel/465497119/)_</small>
 
 Sì aveva solo **1gb di spazio**, che oggi sembra ridicolo, ma considerato il periodo e il fatto che era un dispositivo pensato **esclusivamente** per la musica, significava avere più di una dozzina di album attaccati addosso con una molletta (_che ho sempre trovato una delle feature più belle in assoluto_). Non era dotato di schermo e questo rendeva la navigazione degli album non sempre comodissima, ma è stato il device che mi ha fatto scoprire [iTunes](https://web.archive.org/web/20061228075920/http://www.apple.com/itunes/) e la facilità con cui **in un solo passaggio**:
 
@@ -70,15 +72,15 @@ Sì aveva solo **1gb di spazio**, che oggi sembra ridicolo, ma considerato il pe
 
 Ovvero lo **zen dell'esperienza per la musica digitale di allora**!
 
-![Ma quanto era figo il Nano di 4a generazione?](https://live.staticflickr.com/3218/2910413691_ed3815cd97_b.jpg) <small>_Ma quanto era figo il Nano di 4a generazione? Foto di [Jamie McCall su Flickr](https://www.flickr.com/photos/jamiemc/2910413691/in/photolist-5rbCAp-5rfVrE-5rbBDX-5rfYT3-3ERSv4-5rfZKE-5rfWhN-5ziNEU-5phizX-3ES1h8-9Vo945-vSMAC-48zptz-9NET95-5VevTe-5VevWD-5ViSYs-63r3NY-vSMHw-crSuVU-crSRdA-crShQb-crSbmL-crSjuL-crSc9G-crSkeA-crSwH7-crSGkd-crSihm-crSYC7-crSub5-9efwsk-aguTGV-crShny-crSdv1-9Vkj3g-crSyxd-crRUbC-crSBEj-crRYnN-crSyR7-crSLj9-crSeFh-crSS7q-crSKwN-crSSSJ-crSPSj-crT11S-crSG27-crSh4W)_</small>
-
 Dopo circa un annetto di utilizzo dello Shuffle sono poi passato al [iPod Nano di 4a generazione](https://web.archive.org/web/20070716195602/http://www.apple.com/ipodnano/): finalmente avevo uno schermo LCD, molto più spazio (_non mi ricordo se 4gb o 8gb_), la mitica rotella di selezione, la possibilità di caricare e guardare anche foto e video, qualche semplice giochino comodo per intrattenermi durante brevi tappe in metropolitana.
 
-Ovviamente il passaggio da Shuffle a Nano è stato **praticamente indolore** dato che a quel punto avevo già una discreta libreria su iTunes e il sync su un nuovo device era praticamente identico a un normale sync con il solito.
+![Ma quanto era figo il Nano di 4a generazione?](https://live.staticflickr.com/3218/2910413691_ed3815cd97_b.jpg) <small>_Ma quanto era figo il Nano di 4a generazione? Foto di [Jamie McCall su Flickr](https://www.flickr.com/photos/jamiemc/2910413691/in/photolist-5rbCAp-5rfVrE-5rbBDX-5rfYT3-3ERSv4-5rfZKE-5rfWhN-5ziNEU-5phizX-3ES1h8-9Vo945-vSMAC-48zptz-9NET95-5VevTe-5VevWD-5ViSYs-63r3NY-vSMHw-crSuVU-crSRdA-crShQb-crSbmL-crSjuL-crSc9G-crSkeA-crSwH7-crSGkd-crSihm-crSYC7-crSub5-9efwsk-aguTGV-crShny-crSdv1-9Vkj3g-crSyxd-crRUbC-crSBEj-crRYnN-crSyR7-crSLj9-crSeFh-crSS7q-crSKwN-crSSSJ-crSPSj-crT11S-crSG27-crSh4W)_</small>
 
-Per i due anni successivi non ci sono stati cambiamenti significativi, ma la cosa non mi dispiaceva, il **bello era proprio quello**: funzionava tutto, sempre, in maniera semplice e veloce. Al punto che non si sentiva la necessità, o meglio non si riusciva a immaginare, qualcosa di più comodo.
+Ovviamente il passaggio da Shuffle a Nano è stato **praticamente indolore** dato che a quel punto avevo già una discreta libreria su iTunes e il sync su un nuovo device era praticamente identico a un normale sync con il solito. Per i due anni successivi non ci sono stati cambiamenti significativi, ma la cosa non mi dispiaceva, il **bello era proprio quello**: funzionava tutto, sempre, in maniera semplice e veloce. Al punto che non si sentiva la necessità, o meglio non si riusciva a immaginare, qualcosa di più comodo.
 
 **Questo è stato in tutto e per tutto l'iPod che mi ha fatto innamorare dell'iPod** e mi ha portato pian piano, insieme al lavoro di webdesigner, a portarmi sempre più verso i prodotti Apple e per un 3-4 anni avere raticamente quasi tutto l'ecosistema allora disponibile 🤓.
+
+Due paroline vanno spese anche su **iTunes** a questo punto, io non l'ho mai trovato particolarmente accattivante come software ma di fatto risolveva tutti i problemi legati all'acquisto e gestione della musica digitale di cui ho parlato prima. Poi dato che entrambi gli iPod che ho avuto venivano venduti con un loro minuscolo dock di ricarica e sync, spesso l'aggiunta di nuovi album su device o aggiornamenti di playlist avvenivano in automatico in background ogni volta che collegavo il device.
 
 ## 📱 "iPhone piglia tutto"
 
