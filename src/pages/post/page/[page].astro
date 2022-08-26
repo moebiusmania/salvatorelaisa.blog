@@ -1,0 +1,46 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../config';
+
+export async function getStaticPaths({ paginate }) {
+  const pages = (await Astro.glob('./../../post/*.{md,mdx}'))
+		.filter(post => !post.frontmatter.draft)
+		.sort(
+			(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
+		);
+  return paginate(pages, { pageSize: 10 });
+}
+// All paginated data is passed on the "page" prop
+const { page } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<content>
+				<ul>
+					{page.data.map((post) => (
+						<li>
+							<time datetime={post.frontmatter.date}>
+								{new Date(post.frontmatter.date).toLocaleDateString('it-it', {
+									year: 'numeric',
+									month: 'short',
+									day: 'numeric',
+								})}
+							</time>
+							<a href={post.url}>{post.frontmatter.title}</a>
+						</li>
+					))}
+				</ul>
+			</content>
+			<Footer />
+		</main>
+	</body>
+</html>
