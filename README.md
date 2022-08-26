@@ -1,36 +1,64 @@
-# salvatorelaisa.blog
+# Astro Starter Kit: Blog
 
-Personal blog built on top of the static site generator [Next.js](https://nextjs.org/) and the [
-tailwind-nextjs-starter-blog
-](https://github.com/timlrx/tailwind-nextjs-starter-blog) template.
-
-Hosting and Continous Deployment is based on Github Pages & Actions.
-
-The contents are personal thoughts and opinions. Images and videos that aren't of my own or made by me are always linked/embedded from external sources.
-
-## Creating a new post
-
-With an NPM script:
-
-```bash
-$ npm run new "post title"
+```
+npm init astro -- --template blog
 ```
 
-or manually:
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
 
-- go in the `data/post` folder
-- clone the `_template.md` file
-- edit the cloned file with your content
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Customizations
 
-I've added some small new features over the starting template to handle some more blog-specific functionalities
+![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
 
-- code ported to be compliant with node.js **v17+** (_especially ES Modules_)
-- "posts by year" page template, available at `/post/year/[a-year-between-2010-and-current]`
-- ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
-- "reading time" for posts
+Features:
 
-## License
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-Code released under the [MIT](LICENSE) license.
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+├── public/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
