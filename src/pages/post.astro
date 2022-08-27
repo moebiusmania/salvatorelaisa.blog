@@ -1,30 +1,30 @@
 ---
-import Page from '../layouts/page.astro';
+import Page from '../layouts/page.astro'
+import PostPreview from '../components/PostPreview.astro'
+import Container from '../components/Container.astro'
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./post/*.{md,mdx}'))
-	.filter(post => !post.frontmatter.draft)
-	.sort(
-		(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
-	)
-	.filter((post, index) => index < 10 );
+  .filter((post) => !post.frontmatter.draft)
+  .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
+  .filter((post, index) => index < 10)
 ---
 
 <Page>
-	<content>
-		<ul>
-			{posts.map((post) => (
-				<li>
-					<time datetime={post.frontmatter.date}>
-						{new Date(post.frontmatter.date).toLocaleDateString('it-it', {
-							year: 'numeric',
-							month: 'short',
-							day: 'numeric',
-						})}
-					</time>
-					<a href={post.url}>{post.frontmatter.title}</a>
-				</li>
-			))}
-		</ul>
-	</content>
+  <Container>
+    <h1
+      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+    >
+      Tutti gli articoli
+    </h1>
+    <input
+      type="text"
+      placeholder="Cerca tra gli articoli"
+      class="input input-bordered w-full md:max-w-xl my-10"
+    />
+
+    <ul class="-my-8 divide-y-2 divide-gray-100">
+      {posts.map((post) => <PostPreview post={post} />)}
+    </ul>
+  </Container>
 </Page>

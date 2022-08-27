@@ -1,64 +1,39 @@
-# Astro Starter Kit: Blog
+# salvatorelaisa.blog
 
-```
-npm init astro -- --template blog
-```
+Personal blog built on top of the [Astro](https://astro.build/) static site generator.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+Hosting and Continous Deployment is based on Github Pages & Actions.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The contents are **my own personal thoughts and opinions**. Images and videos that aren't of my own or made by me are always linked/embedded from external sources.
 
+## Creating a new post
 
-![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
+With an NPM script:
 
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-├── public/
-├── src/
-│   ├── components/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+```bash
+$ npm run new "post title"
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+or manually:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- go in the `src/pages/post` folder
+- clone the `_template.md` file
+- edit the cloned file with your content
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Customizations
 
-## 🧞 Commands
+I've added some small new features over the starting Astro blog template to handle some more blog-specific functionalities
 
-All commands are run from the root of the project, from a terminal:
+- live textual search for posts (_by title and excerpt_)
+- filter posts by tag
+- "posts by year" page template, available at `/post/year/[a-year-between-2010-and-current]`
+- ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
+- "reading time" for posts
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+## Can I use this to bootstrap my new Astro blog?
 
-## 👀 Want to learn more?
+Sure you can! But this repo is not structured as a template for new projects so you will need to delete all of my content (_which is **not** free to use_) and references and add your own. It's not difficult but just a bit tedious, have fun!
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## License
 
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Code released under the [MIT](LICENSE) license.
