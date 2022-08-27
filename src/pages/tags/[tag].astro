@@ -1,0 +1,46 @@
+---
+import Page from '../../layouts/page.astro'
+import PostPreview from '../../components/PostPreview.astro'
+import Container from '../../components/Container.astro'
+
+export async function getStaticPaths() {
+  const pages = (await Astro.glob('./../post/*.{md,mdx}'))
+    .filter((post) => !post.frontmatter.draft)
+    .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
+
+  const allTags = pages
+    .map((page) => page.frontmatter.tags)
+    .reduce((prev, curr) => prev.concat(curr))
+
+  const tags = [...new Set(allTags)].map((tag) => ({
+    params: { tag }
+  }))
+
+  console.log(tags)
+
+  return tags
+}
+
+const { tag } = Astro.params
+const { page, filter } = Astro.props;
+console.log(Astro)
+---
+
+<Page>
+  <Container>
+     <h1
+      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 capitalize"
+    >
+      {tag}
+    </h1>
+    <!--<input
+      type="text"
+      placeholder="Cerca tra gli articoli"
+      class="input input-bordered w-full md:max-w-xl my-10"
+    /> 
+    <ul class="-my-8 divide-y-2 divide-gray-100">
+      {page.data.map((post) => <PostPreview post={post} />)}
+    </ul>-->
+  </Container>
+
+</Page>

@@ -3,7 +3,6 @@ import Page from '../layouts/page.astro'
 import PostPreview from '../components/PostPreview.astro'
 import Container from '../components/Container.astro'
 
-// Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./post/*.{md,mdx}'))
   .filter((post) => !post.frontmatter.draft)
   .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
