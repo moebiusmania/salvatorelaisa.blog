@@ -37,7 +37,7 @@ const { post } = Astro.props as Props
       {
         post.frontmatter.tags.map((tag: string) => (
           <a
-            class="mr-3 text-sm font-medium text-primary uppercase hover:text-primary-focus dark:hover:text-blue-400"
+            class="mr-3 text-sm font-medium text-primary uppercase hover:text-primary-focus"
             href="/tags/film"
             href={`/tags/${tag}`}
           >
@@ -46,7 +46,7 @@ const { post } = Astro.props as Props
         ))
       }
     </div>
-    <p class="leading-relaxed mt-6">{post.frontmatter.summary}</p>
+    <p class="leading-relaxed mt-6 dark:text-base-content">{post.frontmatter.summary}</p>
     <a class="text-primary hover:text-primary-focus inline-flex items-center mt-4" href={post.url}>
       Continua a leggere
       <svg

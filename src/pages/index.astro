@@ -12,7 +12,7 @@ const posts = (await Astro.glob('./post/*.{md,mdx}'))
 <Page>
   <Container>
     <p class="text-xl leading-7 text-secondary">Blog personale.</p>
-    <ul class="my-8 divide-y-2 divide-gray-100">
+    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
   </Container>

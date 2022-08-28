@@ -13,6 +13,7 @@ import { SITE_TITLE } from '../config'
     button.addEventListener('click', () => {
       const html = document.querySelector('html')
       const current = html.getAttribute('data-theme')
+      html.classList.toggle('dark')
       html.setAttribute('data-theme', current === LIGHT ? DARK : LIGHT)
     })
   })
@@ -36,10 +37,10 @@ import { SITE_TITLE } from '../config'
       <span class="ml-3 text-xl">{SITE_TITLE}</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <HeaderLink class="mr-5 hover:text-gray-900" href="/post">Cerca</HeaderLink>
-      <HeaderLink class="mr-5 hover:text-gray-900" href="/about">About</HeaderLink>
-      <HeaderLink class="mr-5 hover:text-gray-900" href="/tags">Tags</HeaderLink>
-      <a class="mr-5 hover:text-gray-900 cursor-pointer" id="theme"
+      <HeaderLink class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/post">Cerca</HeaderLink>
+      <HeaderLink class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/about">About</HeaderLink>
+      <HeaderLink class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/tags">Tags</HeaderLink>
+      <a class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" id="theme"
         ><span class="dark:hidden">go dark</span><span class="hidden dark:inline">go light</span>
       </a>
     </nav>
