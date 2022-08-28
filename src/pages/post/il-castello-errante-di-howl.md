@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il castello errante di Howl
 date: '2022-08-16'
 tags: ['film', 'nostalgia']

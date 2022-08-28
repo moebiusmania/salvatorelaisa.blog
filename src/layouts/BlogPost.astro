@@ -1,47 +1,55 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Container from '../components/Container.astro'
+import Tip from '../components/Tip.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 
-export interface Props {
-	content: {
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-		heroImage?: string;
-	};
-}
-
-const {
-	content: { title, description, pubDate, updatedDate, heroImage },
-} = Astro.props as Props;
+const { frontmatter, url } = Astro.props
+const title = `${frontmatter.title} - ${SITE_TITLE}`
+const date = new Date(frontmatter.date).toLocaleDateString('it-it', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  weekday: 'long'
+})
+const source = `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/pages${url}.md`
+const twitter = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`https://salvatorelaisa.blog${url}`)} @moebiusmania - `
 ---
 
-<html>
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
+<!DOCTYPE html>
+<html lang="it-IT" data-theme="corporate">
+  <head>
+    <BaseHead title={title} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Container>
+        <article class="prose max-w-none prose-a:text-primary">
+          <header class="text-center">
+            <dd class="text-base font-medium leading-6 mb-2">
+              <time datetime={frontmatter.date}>Pubblicato: {date}</time>
+            </dd>
+            <h1
+              class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+            >
+              {frontmatter.title}
+            </h1>
+          </header>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImage && (
-					<img
-						width={720}
-						height={360}
-						src={heroImage}
-						alt=""
-					/>
-				)}
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
-				<hr/>
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
+          <slot />
+        </article>
+        <hr class="my-8" />
+        <div class="py-6 text-sm flex justify-center">
+          <a target="_blank" rel="nofollow noopener noreferrer" href={twitter} class="hover:text-primary underline decoration-dotted">Parlane su Twitter</a>
+          <span class="inline-block px-2">•</span> 
+          <a target="_blank" rel="nofollow noopener noreferrer" href={source} class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
+        </div>
+        <Tip />
+      </Container>
+      <Footer />
+    </main>
+  </body>
 </html>
