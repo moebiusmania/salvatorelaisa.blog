@@ -17,6 +17,7 @@ const date = [
 ].join('-')
 
 const frontMatter = `---
+layout: ../../layouts/BlogPost.astro
 title: ${title}
 date: '${date}'
 tags: []

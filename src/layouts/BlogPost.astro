@@ -7,15 +7,15 @@ import Tip from '../components/Tip.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 
 const { frontmatter, url } = Astro.props
-const title = `${frontmatter.title} - ${SITE_TITLE}`
-const date = new Date(frontmatter.date).toLocaleDateString('it-it', {
+const title: string = `${frontmatter.title} - ${SITE_TITLE}`
+const date: string = new Date(frontmatter.date).toLocaleDateString('it-it', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
   weekday: 'long'
 })
-const source = `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/pages${url}.md`
-const twitter = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`https://salvatorelaisa.blog${url}`)} @moebiusmania - `
+const source: string = `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/pages${url}.md`
+const twitter: string = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`https://salvatorelaisa.blog${url}`)} @moebiusmania - `
 ---
 
 <!DOCTYPE html>

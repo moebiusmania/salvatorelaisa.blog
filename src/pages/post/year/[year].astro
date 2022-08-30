@@ -4,20 +4,26 @@ import PostPreview from '../../../components/PostPreview.astro'
 import Container from '../../../components/Container.astro'
 
 export async function getStaticPaths() {
-  const BASE = 2010
-  const CURRENT = new Date().getFullYear()
-  const difference = CURRENT - BASE
-  const years = Array.from(new Array(difference), (e, i) => BASE + i).map((e) => e.toString())
+  const BASE: number = 2010
+  const CURRENT: number = new Date().getFullYear()
+  const difference: number = CURRENT - BASE
+  const years: string[] = Array.from(
+    new Array(difference),
+    (e: number, i: number): number => BASE + i
+  ).map((e: number): string => e.toString())
 
   return years.map((year) => ({
-    params: { year }
+    params: { year },
   }))
 }
 
 const { year } = Astro.params
 
 const posts = (await Astro.glob('./../../post/*.{md,mdx}'))
-  .filter((post) => !post.frontmatter.draft && post.frontmatter.date && post.frontmatter.date.includes(year))
+  .filter(
+    (post) =>
+      !post.frontmatter.draft && post.frontmatter.date && post.frontmatter.date.includes(year)
+  )
   .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
 ---
 

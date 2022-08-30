@@ -1,15 +1,6 @@
 ---
 export interface Props {
-  post: {
-    url: string
-    title: string
-    frontmatter: {
-      title: string
-      summary: string
-      date: string
-      tags: string[]
-    }
-  }
+  post: Record<string, any>
 }
 
 const { post } = Astro.props as Props
