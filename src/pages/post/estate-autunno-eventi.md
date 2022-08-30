@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Tra l'estate e l'autunno c'è sempre tanta roba!
 date: '2016-09-04'
 tags: ['eventi']

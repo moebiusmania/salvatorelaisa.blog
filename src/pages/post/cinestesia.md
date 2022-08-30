@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Cinestesia - il cinema muto suonato live
 date: '2011-05-21'
 tags: ['eventi', 'musica', 'film']

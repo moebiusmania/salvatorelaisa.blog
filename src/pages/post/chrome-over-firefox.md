@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Chrome over Firefox
 date: '2010-08-29'
 tags: ['tecnicismi', 'web', 'browsers']

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Codemotion 2013 | codice, amici e tutto quello che c'è in mezzo
 date: '2013-04-23'
 tags: ['eventi', 'codemotion']

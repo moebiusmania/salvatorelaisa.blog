@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: La mia tradizione dei Fuochi di fine estate
 date: '2015-09-07'
 tags: ['eventi', 'pensieri']

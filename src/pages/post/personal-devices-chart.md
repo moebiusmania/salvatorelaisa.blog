@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: I device che mi hanno cambiato la vita (e quelli che invece... no)
 date: '2022-10-21'
 tags: ['device', 'pensieri', 'nostalgia']

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Halloween goodies
 date: '2016-10-15'
 tags: ['eventi', 'halloween']

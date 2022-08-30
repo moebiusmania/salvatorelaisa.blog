@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: The Vanishing of Ethan Carter
 date: '2018-08-20'
 tags: ['gaming', 'recensione']

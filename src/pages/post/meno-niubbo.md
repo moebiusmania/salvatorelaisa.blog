@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Un po meno niubbo
 date: '2016-02-06'
 tags: ['pensieri']

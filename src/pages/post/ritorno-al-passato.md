@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Ritorno al passato
 date: '2021-12-27'
 tags: ['tecnicismi', 'nostalgia', 'web']

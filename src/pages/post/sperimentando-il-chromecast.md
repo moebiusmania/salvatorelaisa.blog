@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Sperimentando il Chromecast
 date: '2014-02-15'
 tags: ['tecnicismi', 'tv', 'device']

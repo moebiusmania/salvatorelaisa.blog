@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il ritorno di HeroQuest... e invece no!
 date: '2015-03-01'
 tags: ['pensieri']

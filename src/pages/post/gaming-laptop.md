@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il mio primo laptop da gaming
 date: '2017-11-25'
 tags: ['device', 'laptop', 'gaming']

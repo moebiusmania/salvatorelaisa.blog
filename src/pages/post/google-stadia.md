@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: "Google Stadia: inizia l'era del cloud gaming?"
 date: '2019-12-22'
 tags: ['gaming', 'google', 'cloud']

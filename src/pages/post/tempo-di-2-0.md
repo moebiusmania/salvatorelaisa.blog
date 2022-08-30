@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: E' tempo di 2.0
 date: '2011-10-16'
 tags: ['blog']

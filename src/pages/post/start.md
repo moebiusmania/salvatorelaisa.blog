@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Si comincia!
 date: '2010-08-21'
 tags: ['blog']

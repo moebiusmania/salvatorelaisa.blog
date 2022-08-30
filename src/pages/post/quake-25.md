@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Quake, un quarto di secolo dopo
 date: '2021-08-21'
 tags: ['gaming', 'retro']

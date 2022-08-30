@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Github Codespaces
 date: '2021-08-14'
 tags: ['tecnicismi', 'web']

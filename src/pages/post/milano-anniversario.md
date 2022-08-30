@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Un anno a Milano...
 date: '2018-11-03'
 tags: ['pensieri', 'milano']

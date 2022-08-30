@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: La fine dei Nexus
 date: '2017-04-03'
 tags: ['mobile', 'google', 'nexus', 'device', 'android']

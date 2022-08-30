@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Assassin's Creed (tutta la saga)
 date: '2020-28-10'
 tags: ['gaming', 'recensioni']

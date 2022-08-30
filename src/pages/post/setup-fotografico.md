@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Setup Fotografico
 date: '2011-06-02'
 tags: ['fotografia']

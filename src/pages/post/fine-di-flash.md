@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Un Web senza Flash
 date: '2021-01-04'
 tags: ['flash', 'web', 'nostalgia']

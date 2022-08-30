@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Metro-mania!
 date: '2012-07-27'
 tags: ['web', 'evoluzione', 'desktop', 'mobile']

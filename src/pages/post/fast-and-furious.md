@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Fast and Furious
 date: '2020-04-20'
 tags: ['film', 'nostalgia']

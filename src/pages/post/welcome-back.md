@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Welcome back (again)
 date: '2018-12-30'
 tags: ['blog', 'tecnicismi', 'nuovo anno']

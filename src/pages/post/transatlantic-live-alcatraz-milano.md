@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Transatlantic live @Alcatraz Milano
 date: '2010-09-01'
 tags: ['musica', 'concerti', 'eventi']

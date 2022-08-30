@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: The Next(.js) blog
 date: '2021-07-02'
 tags: ['blog', 'tecnicismi']

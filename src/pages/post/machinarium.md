@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Machinarium - il mio ritorno ai "punta e clicca"
 date: '2016-02-14'
 tags: ['gaming']

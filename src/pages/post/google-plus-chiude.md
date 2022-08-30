@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Chiude Google+
 date: '2019-02-24'
 tags: ['social', 'google']

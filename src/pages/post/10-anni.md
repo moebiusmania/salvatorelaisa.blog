@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: 10 anni di blog!
 date: '2020-08-21'
 tags: ['blog']

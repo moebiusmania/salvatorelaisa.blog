@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Creare un server privato di UT99 con Docker
 date: '2020-11-07'
 tags: ['docker', 'ut99', 'gaming', 'tecnicismi']

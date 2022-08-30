@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: L'era dell'iPod
 date: '2022-05-22'
 tags: ['device', 'musica', 'evoluzione']

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Ubuntu 11.04 (e in generale)
 date: '2011-05-01'
 tags: ['ubuntu', 'linux', 'os', 'desktop']

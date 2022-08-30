@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: La Rai ha finalmente capito da che parte deve andare
 date: '2017-03-23'
 tags: ['tv', 'evoluzione']

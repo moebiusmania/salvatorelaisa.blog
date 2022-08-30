@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il Javaday cambia e diviene Codemotion
 date: '2011-01-13'
 tags: ['eventi', 'codemotion']

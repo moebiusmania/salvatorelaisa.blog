@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Addio Facebook...
 date: '2019-01-04'
 tags: ['social', 'facebook', 'privacy']

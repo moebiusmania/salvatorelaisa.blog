@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: DVD come soprammobili
 date: '2017-11-02'
 tags: ['tv', 'dvd', 'nostalgia']

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: La fine di una (parte di) blogosfera
 date: '2011-11-24'
 tags: ['blog', 'nostalgia']

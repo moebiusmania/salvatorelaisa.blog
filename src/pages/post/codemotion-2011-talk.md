@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Dove va il webdesigner?
 date: '2011-02-21'
 tags: ['talk', 'eventi', 'codemotion']

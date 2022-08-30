@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Nvidia Shield TV
 date: '2017-07-19'
 tags: ['tv', 'device', 'android']

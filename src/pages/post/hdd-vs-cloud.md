@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Hard Disks grossi vs il Cloud
 date: '2015-07-07'
 tags: ['tecnicismi', 'device', 'cloud']

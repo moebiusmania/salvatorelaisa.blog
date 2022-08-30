@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Raspberry Pi (Zero) Mania
 date: '2019-02-06'
 tags: ['iot', 'tecnicismi', 'device', 'linux']

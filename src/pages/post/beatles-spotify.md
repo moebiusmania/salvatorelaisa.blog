@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: 8 motivi per cui i Beatles su Spotify sono una gran cosa!
 date: '2015-12-26'
 tags: ['musica', 'beatles', 'spotify']

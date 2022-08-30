@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: On the Android side
 date: '2010-12-07'
 tags: ['android', 'ios', 'mobile', 'device']

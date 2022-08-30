@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Powered by Ghost + OpenShift + GoDaddy
 date: '2015-02-24'
 tags: ['blog', 'tecnicismi']

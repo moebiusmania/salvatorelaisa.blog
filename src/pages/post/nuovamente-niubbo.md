@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il bello di essere niubbi (di nuovo)
 date: '2015-10-17'
 tags: ['pensieri']

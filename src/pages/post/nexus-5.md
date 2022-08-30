@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Nexus 5
 date: '2014-03-29'
 tags: ['android', 'device', 'nexus', 'mobile']

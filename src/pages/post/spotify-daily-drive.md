@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Spotify Daily Drive è il mio vero radio-killer
 date: '2022-03-26'
 tags: ['spotify', 'musica', 'servizi']

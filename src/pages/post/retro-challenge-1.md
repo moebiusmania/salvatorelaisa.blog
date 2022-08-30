@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Un pomeriggio di 10 anni fa, oggi
 date: '2022-10-13'
 tags: ['nostalgia', 'challenge', 'fotografia']

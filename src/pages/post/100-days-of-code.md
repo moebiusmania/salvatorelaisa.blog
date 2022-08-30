@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: 100 giorni di codice
 date: '2017-01-03'
 tags: ['iniziative']

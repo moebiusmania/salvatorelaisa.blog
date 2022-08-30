@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Da 2.0 ad Apps
 date: '2013-11-17'
 tags: ['web', 'pensieri', 'evoluzione']

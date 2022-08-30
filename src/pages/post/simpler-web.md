@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Una volta qui era tutta campagna...
 date: '2022-01-15'
 tags: ['web', 'pensieri', 'nostalgia', 'evoluzione', 'browsers']
