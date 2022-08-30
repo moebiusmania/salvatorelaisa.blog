@@ -3,8 +3,10 @@ import Page from '../../../layouts/page.astro'
 import PostPreview from '../../../components/PostPreview.astro'
 import Container from '../../../components/Container.astro'
 
+type Post = Record<string, any>
+
 export async function getStaticPaths({ paginate }) {
-  const pages: Record<string, any>[] = (await Astro.glob('./../../post/*.{md,mdx}'))
+  const pages: Post[] = (await Astro.glob('./../../post/*.{md,mdx}'))
     .filter((post) => !post.frontmatter.draft)
     .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
   return paginate(pages, { pageSize: 10 })
@@ -16,7 +18,7 @@ const { page } = Astro.props
 <Page>
   <Container>
     <ul class="-my-8 divide-y-2 divide-gray-100">
-      {page.data.map((post: Record<string, any>) => <PostPreview post={post} />)}
+      {page.data.map((post: Post) => <PostPreview post={post} />)}
     </ul>
   </Container>
 </Page>
