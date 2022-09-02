@@ -1,4 +1,6 @@
 ---
+import { reading } from "../utils"
+
 export interface Props {
   post: Record<string, any>
 }
@@ -39,7 +41,7 @@ const { post } = Astro.props as Props
     </div>
     <p class="leading-relaxed mt-6 dark:text-base-content">{post.frontmatter.summary}</p>
     <a class="text-primary hover:text-primary-focus inline-flex items-center mt-4" href={post.url}>
-      Continua a leggere
+      Continua a leggere ({reading(post.rawContent)})
       <svg
         class="w-4 h-4 ml-2"
         viewBox="0 0 24 24"

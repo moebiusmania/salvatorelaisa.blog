@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: E il quattro vien da se
-date: '2022-08-29'
+date: '2022-09-03'
 tags: ['tecnicismi', 'blog']
 draft: false
 summary: ""
@@ -11,7 +11,7 @@ images: [""]
 Ma per riassumere, cosa ci ho guadagnato in questa migrazione?
 
 ## Meno dipendenze da gestire
-Il file `package.json` contava ben **42** dipendenze (_42... coincidenze?_) che purtroppo non erano facili da tenere aggiornate dato che a volte si pestavano i piedi tra di loro. Ora ne ho solo **7**. Questo si traduce anche in **build più veloci** (_una build della v3 constro una della v4_) e di conseguenza minor minutaggio consumato nel tier gratuito di Github Actions.
+Il file `package.json` contava ben **42** dipendenze (_42... coincidenze?_) che purtroppo non erano facili da tenere aggiornate dato che a volte si pestavano i piedi tra di loro. Ora ne ho solo **8**. Questo si traduce anche in **build più veloci** (_una build della v3 constro una della v4_) e di conseguenza minor minutaggio consumato nel tier gratuito di Github Actions.
 
 ## Developer Experience
 Oltre a quanto detto sopra ora posso finalmente usare **Typescript** nei sorgenti, nella versione precedente il tentativo di portare il template su TS non era proprio andato a buon fine. Lavorare con i file `.astro` rispeto al `JSX` non mi sta dispiacendo, anche se conto di migrare i componenti a Vue più avanti (_sì, Astro è cross-framework_). Sto usando ancora [Tailwind]() ma con meno customizzazioni e con l'aggiunta di [DaisyUI]() come libreria per le poche component UI che uso, ma sopratutto per [i temi](), così ogni tanto potrò giocare a cambiare il _look&feel_ del blog.

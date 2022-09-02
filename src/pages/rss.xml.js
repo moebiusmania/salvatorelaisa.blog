@@ -10,7 +10,6 @@ export const get = () =>
     description: SITE_DESCRIPTION,
     site: import.meta.env.SITE,
     items: posts.map((post) => {
-      console.log(post)
       const frontmatter = { ...post.frontmatter, pubDate: post.frontmatter.date }
       const link = `https://www.salvatorelaisa.blog${post.url}`
       return { ...post, frontmatter, link, title: post.frontmatter.title }

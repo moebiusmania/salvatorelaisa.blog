@@ -9,6 +9,6 @@ export default defineConfig({
   server: {
     host: true
   },
-  site: 'https://example.com',
+  site: 'https://salvatorelaisa.blog',
   integrations: [mdx(), sitemap(), tailwind()]
 });

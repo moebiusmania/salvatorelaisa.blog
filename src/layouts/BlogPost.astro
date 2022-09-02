@@ -5,8 +5,9 @@ import Footer from '../components/Footer.astro'
 import Container from '../components/Container.astro'
 import Tip from '../components/Tip.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+import { reading } from '../utils'
 
-const { frontmatter, url } = Astro.props
+const { frontmatter, url, rawContent } = Astro.props
 const title: string = `${frontmatter.title} - ${SITE_TITLE}`
 const date: string = new Date(frontmatter.date).toLocaleDateString('it-it', {
   year: 'numeric',
@@ -28,15 +29,17 @@ const twitter: string = `https://twitter.com/intent/tweet?text=${encodeURICompon
     <main>
       <Container>
         <article class="prose max-w-none prose-a:text-primary">
-          <header class="text-center">
+          <header class="text-center mb-12">
             <dd class="text-base font-medium leading-6 mb-2">
               <time datetime={frontmatter.date}>Pubblicato: {date}</time>
             </dd>
             <h1
-              class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+              class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 mb-4"
             >
               {frontmatter.title}
             </h1>
+            <p class="my-2">Tags: {frontmatter.tags.map((tag: string) => <a class="uppercase inline-block mx-1 no-underline hover:text-primary-focus hover:underline" href={`/tags/${tag}`}>{tag}</a> )}</p>
+            <p class="my-2"><small>Tempo di lettura: {reading(rawContent)}</small></p>
           </header>
 
           <slot />

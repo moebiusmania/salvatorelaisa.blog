@@ -6,15 +6,26 @@ import { SITE_TITLE } from '../config'
 <script is:inline>
   const LIGHT = 'corporate'
   const DARK = 'night'
+  const KEY = 'theme'
 
   document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('#theme')
+    const html = document.querySelector('html')
+    const local = localStorage.getItem(KEY)
+
+    if (local) {
+      local === DARK ?? html.classList.add('dark')
+      html.setAttribute('data-theme', local)
+    }
 
     button.addEventListener('click', () => {
-      const html = document.querySelector('html')
       const current = html.getAttribute('data-theme')
+      const value = current === LIGHT ? DARK : LIGHT
+
       html.classList.toggle('dark')
-      html.setAttribute('data-theme', current === LIGHT ? DARK : LIGHT)
+      html.setAttribute('data-theme', value)
+
+      localStorage.setItem(KEY, value)
     })
   })
 </script>
