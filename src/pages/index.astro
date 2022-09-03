@@ -16,5 +16,10 @@ const posts = (await Astro.glob('./post/*.{md,mdx}'))
     <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
+    <div class="flex justify-end text-base font-medium leading-6">
+      <a href="/post" class="text-primary hover:primary-focus" aria-label="Tutti gli articoli">
+        Tutti gli articoli &rarr;
+      </a>
+    </div>
   </Container>
 </Page>

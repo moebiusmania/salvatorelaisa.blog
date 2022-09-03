@@ -1,5 +1,5 @@
 ---
-import { reading } from "../utils"
+import { reading } from '../utils'
 
 export interface Props {
   post: Record<string, any>
@@ -31,7 +31,6 @@ const { post } = Astro.props as Props
         post.frontmatter.tags.map((tag: string) => (
           <a
             class="mr-3 text-sm font-medium text-primary uppercase hover:text-primary-focus"
-            href="/tags/film"
             href={`/tags/${tag}`}
           >
             {tag}
