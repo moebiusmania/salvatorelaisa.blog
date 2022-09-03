@@ -1,0 +1,47 @@
+---
+import Page from '../../../layouts/page.astro'
+import PostPreview from '../../../components/PostPreview.astro'
+import Container from '../../../components/Container.astro'
+
+export async function getStaticPaths() {
+  const BASE: number = 2010
+  const CURRENT: number = new Date().getFullYear()
+  const difference: number = CURRENT - BASE
+  const years: string[] = Array.from(
+    new Array(difference),
+    (e: number, i: number): number => BASE + i
+  ).map((e: number): string => e.toString())
+
+  return years.map((year) => ({
+    params: { year },
+  }))
+}
+
+const { year } = Astro.params
+
+const posts = (await Astro.glob('./../../post/*.{md,mdx}'))
+  .filter(
+    (post) =>
+      !post.frontmatter.draft && post.frontmatter.date && post.frontmatter.date.includes(year)
+  )
+  .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
+---
+
+<Page>
+  <Container>
+    <p class="text-xl leading-7 text-secondary mb-3">{posts.length} articoli trovati</p>
+    <h1
+      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 capitalize"
+    >
+      Ricerca per anno: {year}
+    </h1>
+    <!--<input
+      type="text"
+      placeholder="Cerca tra gli articoli"
+      class="input input-bordered w-full md:max-w-xl my-10"
+    /> -->
+    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
+      {posts.map((post) => <PostPreview post={post} />)}
+    </ul>
+  </Container>
+</Page>

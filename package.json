@@ -1,75 +1,28 @@
 {
   "name": "sl-static",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "repository": "git@github.com:moebiusmania/salvatorelaisa.blog.git",
   "private": true,
   "scripts": {
-    "start": "next-remote-watch ./data",
-    "dev": "next dev",
-    "sitemap": "node --experimental-json-modules ./scripts/generate-sitemap.mjs",
-    "build": "next build && node --experimental-json-modules ./scripts/generate-sitemap.mjs",
-    "postbuild": "npm run export",
-    "export": "next export",
-    "serve": "next start",
-    "new": "node scripts/compose.js",
-    "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky install"
-  },
-  "dependencies": {
-    "@mapbox/rehype-prism": "0.8.0",
-    "@tailwindcss/forms": "0.5.2",
-    "@tailwindcss/typography": "0.5.2",
-    "autoprefixer": "10.4.7",
-    "gray-matter": "^4.0.2",
-    "image-size": "1.0.1",
-    "next": "12.1.6",
-    "next-mdx-remote": "3.0.8",
-    "next-seo": "5.4.0",
-    "next-themes": "0.2.0",
-    "postcss": "8.4.14",
-    "preact": "10.8.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "reading-time": "1.5.0",
-    "rehype-katex": "6.0.2",
-    "remark-autolink-headings": "7.0.1",
-    "remark-code-titles": "0.1.2",
-    "remark-footnotes": "4.0.1",
-    "remark-math": "5.1.1",
-    "remark-slug": "7.0.1",
-    "tailwindcss": "3.1.3"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "new": "node scripts/compose.js"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "12.1.6",
-    "@svgr/webpack": "6.2.1",
-    "cross-env": "^7.0.3",
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.1.6",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-jsx-a11y": "6.5.1",
-    "eslint-plugin-prettier": "4.0.0",
-    "file-loader": "^6.0.0",
-    "globby": "13.1.2",
-    "husky": "8.0.1",
-    "lint-staged": "12.4.1",
-    "next-remote-watch": "^1.0.0",
-    "prettier": "2.7.1",
-    "rehype": "12.0.1",
-    "remark-frontmatter": "4.0.1",
-    "remark-parse": "10.0.1",
-    "remark-stringify": "10.0.2",
-    "unified": "10.1.2",
-    "unist-util-visit": "4.1.0"
+    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/rss": "^1.0.0",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.1.5"
   },
-  "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
-    ]
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.7",
+    "daisyui": "^2.24.0",
+    "reading-time": "^1.5.0"
   }
 }

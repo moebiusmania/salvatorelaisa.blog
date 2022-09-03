@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogPost.astro
 title: Il primo decennio con Android
 date: '2020-12-06'
 tags: ['android', 'ios', 'mobile', 'device']

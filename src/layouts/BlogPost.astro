@@ -1,0 +1,59 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Container from '../components/Container.astro'
+import Tip from '../components/Tip.astro'
+import { SITE_TITLE } from '../config'
+import { reading } from '../utils'
+
+const { frontmatter, url, rawContent } = Astro.props
+const title: string = `${frontmatter.title} - ${SITE_TITLE}`
+const cover: string = frontmatter.images.length ? frontmatter.images[0] : '';
+const date: string = new Date(frontmatter.date).toLocaleDateString('it-it', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  weekday: 'long'
+})
+const source: string = `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/pages${url}.md`
+const twitter: string = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`https://salvatorelaisa.blog${url}`)} @moebiusmania - `
+---
+
+<!DOCTYPE html>
+<html lang="it-IT" data-theme="corporate">
+  <head>
+    <BaseHead title={title} description={frontmatter.summary} image={cover} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Container>
+        <article class="prose max-w-none prose-a:text-primary">
+          <header class="text-center mb-12">
+            <dd class="text-base font-medium leading-6 mb-2">
+              <time datetime={frontmatter.date}>Pubblicato: {date}</time>
+            </dd>
+            <h1
+              class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 mb-4"
+            >
+              {frontmatter.title}
+            </h1>
+            <p class="my-2">Tags: {frontmatter.tags.map((tag: string) => <a class="uppercase inline-block mx-1 no-underline hover:text-primary-focus hover:underline" href={`/tags/${tag}`}>{tag}</a> )}</p>
+            <p class="my-2"><small>Tempo di lettura: {reading(rawContent)}</small></p>
+          </header>
+
+          <slot />
+        </article>
+        <hr class="my-8" />
+        <div class="py-6 text-sm flex justify-center">
+          <a target="_blank" rel="nofollow noopener noreferrer" href={twitter} class="hover:text-primary underline decoration-dotted">Parlane su Twitter</a>
+          <span class="inline-block px-2">•</span> 
+          <a target="_blank" rel="nofollow noopener noreferrer" href={source} class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
+        </div>
+        <Tip />
+      </Container>
+      <Footer />
+    </main>
+  </body>
+</html>

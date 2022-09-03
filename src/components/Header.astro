@@ -1,0 +1,64 @@
+---
+import HeaderLink from './HeaderLink.astro'
+import { SITE_TITLE } from '../config'
+---
+
+<script is:inline>
+  const LIGHT = 'corporate'
+  const DARK = 'night'
+  const KEY = 'theme'
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('#theme')
+    const html = document.querySelector('html')
+    const local = localStorage.getItem(KEY)
+
+    if (local) {
+      local === DARK ?? html.classList.add('dark')
+      html.setAttribute('data-theme', local)
+    }
+
+    button.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme')
+      const value = current === LIGHT ? DARK : LIGHT
+
+      html.classList.toggle('dark')
+      html.setAttribute('data-theme', value)
+
+      localStorage.setItem(KEY, value)
+    })
+  })
+</script>
+
+<header class="text-gray-600 body-font">
+  <div class="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-base-content mb-4 md:mb-0" href="/">
+      <img
+        src="/static/images/avatar.png"
+        alt={SITE_TITLE}
+        class="w-10 h-10 text-white rounded-full"
+      />
+      <span class="ml-3 text-xl">{SITE_TITLE}</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <HeaderLink class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/post"
+        >Cerca</HeaderLink
+      >
+      <HeaderLink
+        class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content"
+        href="/about">About</HeaderLink
+      >
+      <HeaderLink class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/tags"
+        >Tags</HeaderLink
+      >
+      <a class="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" id="theme"
+        ><span class="dark:hidden">go dark</span><span class="hidden dark:inline">go light</span>
+      </a>
+    </nav>
+    <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button> -->
+  </div>
+</header>

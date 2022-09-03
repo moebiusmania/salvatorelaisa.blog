@@ -17,6 +17,7 @@ const date = [
 ].join('-')
 
 const frontMatter = `---
+layout: ../../layouts/BlogPost.astro
 title: ${title}
 date: '${date}'
 tags: []
@@ -26,6 +27,6 @@ images: [""]
 ---
 `
 
-fs.writeFile(`data/post/${fileName}.${ext}`, frontMatter, (err) => {
+fs.writeFile(`src/pages/post/${fileName}.${ext}`, frontMatter, (err) => {
   if (err) throw err
 })

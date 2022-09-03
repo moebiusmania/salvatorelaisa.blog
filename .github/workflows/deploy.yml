@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.3.x]
+        node-version: [18.7.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -27,6 +27,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
           # Build directory to deploy
-          build_dir: out
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
