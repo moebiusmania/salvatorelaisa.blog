@@ -23,8 +23,18 @@ const posts = (await Astro.glob('./post/*.{md,mdx}'))
       class="input input-bordered w-full md:max-w-xl my-10"
     />
 
-    <ul class="-my-8 divide-y-2 divide-gray-100">
+    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
+
+    <div class="pt-6 pb-8 space-y-2 md:space-y-5">
+      <nav class="flex justify-between">
+        <div class="text-neutral opacity-40">Precedente</div>
+        <span>1 di 6</span>
+        <a class="text-primary hover:text-primary-focus" href="/post/page/2">
+          <button>Successivo</button>
+        </a>
+      </nav>
+    </div>
   </Container>
 </Page>

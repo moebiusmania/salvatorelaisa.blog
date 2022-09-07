@@ -17,7 +17,7 @@ const { page } = Astro.props
 
 <Page>
   <Container>
-    <ul class="-my-8 divide-y-2 divide-gray-100">
+    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
       {page.data.map((post: Post) => <PostPreview post={post} />)}
     </ul>
   </Container>

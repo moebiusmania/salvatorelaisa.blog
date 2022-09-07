@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: E il quattro vien da se
-date: '2022-09-03'
+date: '2022-09-10'
 tags: ['tecnicismi', 'blog']
 draft: true
 summary: ''
