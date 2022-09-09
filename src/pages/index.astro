@@ -17,7 +17,7 @@ const posts = (await Astro.glob('./post/*.{md,mdx}'))
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
     <div class="flex justify-end text-base font-medium leading-6">
-      <a href="/post" class="text-primary hover:primary-focus" aria-label="Tutti gli articoli">
+      <a href="/post/page/1" class="text-primary hover:primary-focus" aria-label="Tutti gli articoli">
         Tutti gli articoli &rarr;
       </a>
     </div>
