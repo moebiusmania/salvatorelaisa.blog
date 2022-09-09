@@ -18,7 +18,7 @@
     "@astrojs/rss": "^1.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.1.6"
+    "astro": "^1.1.7"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
