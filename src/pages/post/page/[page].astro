@@ -27,18 +27,34 @@ const { page } = Astro.props
       placeholder="Cerca tra gli articoli"
       class="input input-bordered w-full md:max-w-xl my-10"
     />
-    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
+    <ul class="my-8 divide-y divide-primary-content">
       {page.data.map((post: Post) => <PostPreview post={post} />)}
     </ul>
     <div class="pt-6 pb-8 space-y-2 md:space-y-5">
       <nav class="flex justify-between">
-        { page.url.prev ? <a class="text-primary hover:text-primary-focus" href={page.url.prev}>
-          <button>&larr; Precedente</button>
-        </a> : <button disabled class="text-neutral opacity-40">&larr; Precedente</button> }
+        {
+          page.url.prev ? (
+            <a class="text-primary hover:text-primary-focus" href={page.url.prev}>
+              <button>&larr; Precedente</button>
+            </a>
+          ) : (
+            <button disabled class="text-neutral opacity-40">
+              &larr; Precedente
+            </button>
+          )
+        }
         <span>Pagina {page.currentPage} di {page.lastPage}</span>
-        { page.url.next ? <a class="text-primary hover:text-primary-focus" href={page.url.next}>
-          <button>Successivo &rarr;</button>
-        </a> : <button disabled class="text-neutral opacity-40">Successivo &rarr;</button>}
+        {
+          page.url.next ? (
+            <a class="text-primary hover:text-primary-focus" href={page.url.next}>
+              <button>Successivo &rarr;</button>
+            </a>
+          ) : (
+            <button disabled class="text-neutral opacity-40">
+              Successivo &rarr;
+            </button>
+          )
+        }
       </nav>
     </div>
   </Container>

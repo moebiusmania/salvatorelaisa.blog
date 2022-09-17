@@ -40,7 +40,7 @@ const posts = (await Astro.glob('./../../post/*.{md,mdx}'))
       placeholder="Cerca tra gli articoli"
       class="input input-bordered w-full md:max-w-xl my-10"
     /> -->
-    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
+    <ul class="my-8 divide-y divide-primary-content">
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
   </Container>

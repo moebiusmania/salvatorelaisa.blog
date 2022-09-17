@@ -13,7 +13,7 @@ export async function getStaticPaths() {
     .reduce((prev, curr) => prev.concat(curr))
 
   const tags = [...new Set(allTags)].map((tag) => ({
-    params: { tag }
+    params: { tag },
   }))
 
   return tags
@@ -25,7 +25,6 @@ const posts = (await Astro.glob('./../post/*.{md,mdx}'))
   .filter((post) => !post.frontmatter.draft)
   .filter((post) => post.frontmatter.tags.includes(tag))
   .sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
-
 ---
 
 <Page>
@@ -41,9 +40,8 @@ const posts = (await Astro.glob('./../post/*.{md,mdx}'))
       placeholder="Cerca tra gli articoli"
       class="input input-bordered w-full md:max-w-xl my-10"
     /> -->
-    <ul class="my-8 divide-y-2 divide-gray-100 dark:divide-neutral-focus">
+    <ul class="my-8 divide-y divide-primary-content">
       {posts.map((post) => <PostPreview post={post} />)}
     </ul>
   </Container>
-
 </Page>
