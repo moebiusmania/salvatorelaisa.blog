@@ -8,7 +8,7 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
-    themes: ['night', 'corporate', 'halloween'],
-    darkTheme: 'night',
+    themes: ['corporate', 'halloween'],
+    darkTheme: 'halloween',
   },
 }
