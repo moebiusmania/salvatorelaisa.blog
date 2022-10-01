@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
+import BaseHead from '../components/BaseHead.vue'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.vue'
 import Container from '../components/Container.vue'
@@ -13,7 +13,7 @@ const title: string = `${frontmatter.title} - ${SITE_TITLE}`
 <!DOCTYPE html>
 <html lang="it-IT" data-theme="corporate">
   <head>
-    <BaseHead title={title} description={SITE_DESCRIPTION} />
+    <BaseHead title={title} description={SITE_DESCRIPTION} generator={Astro.generator} url={Astro.url} />
   </head>
   <body>
     <Header />

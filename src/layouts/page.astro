@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
+import BaseHead from '../components/BaseHead.vue'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.vue'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
@@ -8,7 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 <!DOCTYPE html>
 <html lang="it-IT" data-theme="corporate">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} generator={Astro.generator} url={Astro.url} />
   </head>
   <body>
     <Header />

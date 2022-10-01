@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
+import BaseHead from '../components/BaseHead.vue'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.vue'
 import Container from '../components/Container.vue'
@@ -23,7 +23,7 @@ const twitter: string = `https://twitter.com/intent/tweet?text=${encodeURICompon
 <!DOCTYPE html>
 <html lang="it-IT" data-theme="corporate">
   <head>
-    <BaseHead title={title} description={frontmatter.summary} image={cover} />
+    <BaseHead title={title} description={frontmatter.summary} image={cover} generator={Astro.generator} url={Astro.url} />
   </head>
   <body>
     <Header />
