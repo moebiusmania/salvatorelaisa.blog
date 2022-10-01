@@ -1,7 +1,7 @@
 ---
 import Page from '../layouts/page.astro'
-import PostPreview from '../components/PostPreview.astro'
-import Container from '../components/Container.astro'
+import PostPreview from '../components/PostPreview.vue'
+import Container from '../components/Container.vue'
 import { SITE_DESCRIPTION } from '../config'
 
 const posts = (await Astro.glob('./post/*.{md,mdx}'))
@@ -11,7 +11,7 @@ const posts = (await Astro.glob('./post/*.{md,mdx}'))
 ---
 
 <Page>
-  <Container>
+  <Container client:load>
     <p class="text-xl leading-7 text-secondary">{SITE_DESCRIPTION}</p>
     <ul class="my-8 divide-y divide-primary-content">
       {posts.map((post) => <PostPreview post={post} />)}

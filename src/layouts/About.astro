@@ -1,9 +1,9 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import Container from '../components/Container.astro'
-import Tip from '../components/Tip.astro'
+import Footer from '../components/Footer.vue'
+import Container from '../components/Container.vue'
+import Tip from '../components/Tip.vue'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 
 const { frontmatter } = Astro.props
@@ -18,7 +18,7 @@ const title: string = `${frontmatter.title} - ${SITE_TITLE}`
   <body>
     <Header />
     <main>
-      <Container>
+      <Container client:load>
         <article class="prose max-w-none prose-a:text-primary">
           <header>
             <h1

@@ -1,7 +1,7 @@
 ---
 import Page from '../../../layouts/page.astro'
-import PostPreview from '../../../components/PostPreview.astro'
-import Container from '../../../components/Container.astro'
+import PostPreview from '../../../components/PostPreview.vue'
+import Container from '../../../components/Container.vue'
 
 type Post = Record<string, any>
 
@@ -16,7 +16,7 @@ const { page } = Astro.props
 ---
 
 <Page>
-  <Container>
+  <Container client:load>
     <h1
       class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
     >

@@ -1,9 +1,9 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import Container from '../components/Container.astro'
-import Tip from '../components/Tip.astro'
+import Footer from '../components/Footer.vue'
+import Container from '../components/Container.vue'
+import Tip from '../components/Tip.vue'
 import { SITE_TITLE } from '../config'
 import { reading } from '../utils'
 
@@ -28,7 +28,7 @@ const twitter: string = `https://twitter.com/intent/tweet?text=${encodeURICompon
   <body>
     <Header />
     <main>
-      <Container>
+      <Container client:load>
         <article class="prose max-w-none prose-a:text-primary">
           <header class="text-center mb-12">
             <dd class="text-base font-medium leading-6 mb-2">

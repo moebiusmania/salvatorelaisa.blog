@@ -1,6 +1,6 @@
 ---
 import Page from '../layouts/page.astro'
-import Container from '../components/Container.astro'
+import Container from '../components/Container.vue'
 
 const pages = (await Astro.glob('./post/*.{md,mdx}'))
   .filter((post) => !post.frontmatter.draft)
@@ -15,7 +15,7 @@ const tags = [...new Set(allTags)]
 ---
 
 <Page>
-  <Container>
+  <Container client:load>
     <div
       class="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:justify-center md:items-center md:divide-y-0 md:flex-row md:space-x-6 md:mt-24"
     >

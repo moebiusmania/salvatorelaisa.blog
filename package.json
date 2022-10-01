@@ -21,8 +21,10 @@
     "astro": "^1.4.0"
   },
   "dependencies": {
+    "@astrojs/vue": "^1.1.0",
     "@tailwindcss/typography": "^0.5.7",
     "daisyui": "^2.31.0",
-    "reading-time": "^1.5.0"
+    "reading-time": "^1.5.0",
+    "vue": "^3.2.40"
   }
 }

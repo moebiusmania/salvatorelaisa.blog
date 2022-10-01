@@ -1,7 +1,7 @@
 ---
 import Page from '../../../layouts/page.astro'
-import PostPreview from '../../../components/PostPreview.astro'
-import Container from '../../../components/Container.astro'
+import PostPreview from '../../../components/PostPreview.vue'
+import Container from '../../../components/Container.vue'
 
 export async function getStaticPaths() {
   const BASE: number = 2010
@@ -28,7 +28,7 @@ const posts = (await Astro.glob('./../../post/*.{md,mdx}'))
 ---
 
 <Page>
-  <Container>
+  <Container client:load>
     <p class="text-xl leading-7 text-secondary mb-3">{posts.length} articoli trovati</p>
     <h1
       class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 capitalize"
