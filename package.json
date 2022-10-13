@@ -1,30 +1,20 @@
 {
-  "name": "sl-static",
-  "version": "4.0.0",
-  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
-  "license": "MIT",
-  "repository": "git@github.com:moebiusmania/salvatorelaisa.blog.git",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "new": "node scripts/compose.js"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^0.11.3",
-    "@astrojs/rss": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^2.0.2",
-    "astro": "^1.4.0"
+    "@nuxt/content": "^2.1.1",
+    "@nuxtjs/tailwindcss": "^5.3.5",
+    "nuxt": "3.0.0-rc.11",
+    "reading-time": "^1.5.0"
   },
   "dependencies": {
-    "@astrojs/vue": "^1.1.0",
     "@tailwindcss/typography": "^0.5.7",
-    "daisyui": "^2.31.0",
-    "reading-time": "^1.5.0",
-    "vue": "^3.2.40"
+    "daisyui": "^2.31.0"
   }
 }

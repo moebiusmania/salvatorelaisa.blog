@@ -1,7 +1,0 @@
-<template>
-  <content class="text-gray-600 body-font overflow-hidden">
-    <div class="max-w-5xl px-5 py-16 mx-auto">
-      <slot />
-    </div>
-  </content>
-</template>
