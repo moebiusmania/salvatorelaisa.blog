@@ -21,12 +21,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm run build
+      - run: npm run generate
 
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
           # Build directory to deploy
-          build_dir: dist
+          build_dir: .output/public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
