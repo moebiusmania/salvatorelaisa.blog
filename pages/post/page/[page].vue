@@ -37,9 +37,14 @@ const posts: ParsedContent[] = await queryContent()
           class="text-primary hover:text-primary-focus"
           :href="`/post/page/${prev}`"
         >
-          <button>&larr; Precedente</button>
+          <button aria-label="precedente">&larr; Precedente</button>
         </NuxtLink>
-        <button v-else disabled class="text-neutral opacity-40">
+        <button
+          aria-label="precedente"
+          v-else
+          disabled
+          class="text-neutral opacity-40"
+        >
           &larr; Precedente
         </button>
 
@@ -50,9 +55,14 @@ const posts: ParsedContent[] = await queryContent()
           class="text-primary hover:text-primary-focus"
           :href="`/post/page/${next}`"
         >
-          <button>Successivo &rarr;</button>
+          <button aria-label="successivo">Successivo &rarr;</button>
         </NuxtLink>
-        <button v-else disabled class="text-neutral opacity-40">
+        <button
+          aria-label="successivo"
+          v-else
+          disabled
+          class="text-neutral opacity-40"
+        >
           Successivo &rarr;
         </button>
       </nav>

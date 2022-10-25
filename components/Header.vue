@@ -52,6 +52,7 @@ const onClick = (e: MouseEvent): void => {
           >Tags</HeaderLink
         >
         <button
+          aria-label="theme switcher"
           class="w-6 h-6 pt-0.5 cursor-pointer hover:text-neutral-focus dark:hover:text-neutral-content"
           id="theme"
           @click="onClick"
