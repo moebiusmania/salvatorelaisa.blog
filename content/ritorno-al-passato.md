@@ -20,8 +20,8 @@ Tuttavia il processo non è sempre così banale, nonostante molti dei miei proge
 
 Ecco un breve recap di quali zombie ho riportato in vita:
 
-<div style={{ overflowX: 'auto' }}>
-<div style={{ minWidth: '650px' }}>
+<div style="overflow-x: auto">
+<div style="min-width: 650px">
 
 | **Nome**                                                            | **Anno**    | **Cos'è?**                                                                                     | **Era in..**               | **...ora è in**       |
 | ------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------- | --------------------- |
