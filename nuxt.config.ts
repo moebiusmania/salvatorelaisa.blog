@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   content: {
     markdown: {
-      toc: { depth: undefined, searchDepth: undefined },
+      anchorLinks: false,
+      remarkPlugins: ['remark-reading-time'],
     },
   },
 });

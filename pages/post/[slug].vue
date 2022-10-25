@@ -29,42 +29,28 @@ const twitter = (url: string): string =>
           <time :datetime="date">Pubblicato: {{ date(post.date) }}</time>
         </dd>
         <h1
-          class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 mb-4"
-        >
+          class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 mb-4">
           {{ post.title }}
         </h1>
         <p class="my-2">
           Tags:
-          <NuxtLink
-            v-for="tag in post.tags"
+          <NuxtLink v-for="tag in post.tags"
             class="uppercase inline-block mx-1 no-underline hover:text-primary-focus hover:underline"
-            :href="`/tags/${tag}`"
-            >{{ tag }}</NuxtLink
-          >
+            :href="`/tags/${tag}`">{{ tag }}</NuxtLink>
         </p>
         <p class="my-2">
-          <small>Tempo di lettura: {{ "1 minuto" }}</small>
+          <small>Tempo di lettura: {{ post.readingTime.text.replace("min read", "minuti") }}</small>
         </p>
       </header>
       <ContentRenderer :value="post" />
     </article>
     <hr class="my-8 border-primary-content" />
     <div class="py-6 text-sm flex justify-center">
-      <a
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        :href="twitter(post._path)"
-        class="hover:text-primary underline decoration-dotted"
-        >Parlane su Twitter</a
-      >
+      <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(post._path)"
+        class="hover:text-primary underline decoration-dotted">Parlane su Twitter</a>
       <span class="inline-block px-2">•</span>
-      <a
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        :href="source(post._path)"
-        class="hover:text-primary underline decoration-dotted"
-        >Codice sorgente su GitHub</a
-      >
+      <a target="_blank" rel="nofollow noopener noreferrer" :href="source(post._path)"
+        class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
     </div>
     <Tip />
   </div>
