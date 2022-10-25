@@ -1,10 +1,10 @@
 <script lang="ts" setup>
+import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+
 const route = useRoute();
 const slug: string = route.params.slug as string;
 
-const { data: post } = await useAsyncData("post", () =>
-  queryContent(`/${slug}`).findOne()
-);
+const post: ParsedContent = await queryContent(`/${slug}`).findOne()
 
 const date = (src: string): string =>
   new Date(src).toLocaleDateString("it-it", {
@@ -20,6 +20,7 @@ const twitter = (url: string): string =>
   `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     `https://salvatorelaisa.blog${url}`
   )} @moebiusmania - `;
+
 </script>
 <template>
   <div>

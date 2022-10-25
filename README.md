@@ -14,7 +14,9 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 - [Tailwind.CSS](https://tailwindcss.com/) - utility-first CSS framework
   - [Typography](https://tailwindcss.com/docs/typography-plugin) - (plugin) typographic defaults for HTML
   - [DaisyUI](https://daisyui.com/) - components library built on top of Tailwind.css
-- [reading-time](https://www.npmjs.com/package/reading-time) - Medium's like reading time estimation
+- [remark-reading-time](https://www.npmjs.com/package/remark-reading-time) - Medium's like reading time estimation
+- [rss](https://www.npmjs.com/package/rss) - utility to help create the RSS `.xml` file
+- [sitemap](https://www.npmjs.com/package/sitemap) - utility to help create the sitemap `.xml` file
 
 ## Creating a new post
 
