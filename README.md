@@ -34,7 +34,7 @@ or manually:
 
 ## Customizations
 
-I've added some small new features over the starting Astro blog template to handle some more blog-specific functionalities
+I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
 - live textual search for posts (_by title and excerpt only_)
 - filter posts by tag

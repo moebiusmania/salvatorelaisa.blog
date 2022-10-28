@@ -9,7 +9,7 @@ const today: Date = new Date()
       <p
         class="text-sm dark:text-base-content sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-primary-content sm:py-2 sm:mt-0 mt-4 flex">
         &copy; {{ today.getFullYear() }} — sviluppato con
-        <a href="https://astro.build/" class="text-primary ml-1" rel="noopener noreferrer" target="_blank">Astro</a>
+        <a href="https://v3.nuxtjs.org/" class="text-primary ml-1" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>
       <div class="w-36 sm:ml-auto sm:mt-0 mt-4 flex justify-center md:justify-end gap-3">
         <a class="hover:text-primary-focus" href="https://github.com/moebiusmania" target="_blank"
