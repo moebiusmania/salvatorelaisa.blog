@@ -102,4 +102,4 @@ Quindi eccoci qui a fare "_ciao_" con la manina all'era del iPod 👋
 
 Per chiudere, se nel mentre vi è nata la curiosità di conoscere meglio la storia del iPod in generale, vi lascio a questo ottimo documentario su Youtube:
 
-<iframe className="w-full" height="450" src="https://www.youtube.com/embed/t9oLpD4FAO4" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="450" src="https://www.youtube.com/embed/t9oLpD4FAO4" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>

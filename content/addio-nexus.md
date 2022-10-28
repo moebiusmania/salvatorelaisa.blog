@@ -47,10 +47,10 @@ Dopo recenti annunci riguardo la "generazione 2" dei Pixel, è chiaro che chi co
 
 Sono passati solo 5 anni ma ormai sembrano lontani i tempi in cui l'annuncio in anteprima di una famiglia di device Nexus e di un Android Market che supportasse diversi tipi di media oltre che le apps e ribattezzato in Play Store suonava come qualcosa di davvero rivoluzionario (_e molto atteso_) per la piattaforma Android 😎.
 
-<iframe className="w-full" height="450" src="https://www.youtube.com/embed/66-4uMQqerA" frameBorder="0" allowFullScreen></iframe> <small><i>Anteprima di The Verge del 2012 sul allora nuovo Android 4.2 e la prima "famiglia" di device Nexus.</i></small>
+<iframe loading="lazy" class="w-full" height="450" src="https://www.youtube.com/embed/66-4uMQqerA" frameborder="0" allowfullscreen></iframe> <small><i>Anteprima di The Verge del 2012 sul allora nuovo Android 4.2 e la prima "famiglia" di device Nexus.</i></small>
 
 Se volete farvi un bel ripasso di cosa è stato esattamente il programma Nexus, potete guardarvi quest'ottimo video (_a livelli quasi da documentario_) prodotto dai ragazzi di [Android Authority](http://www.androidauthority.com/):
 
-<iframe className="w-full" height="450" src="https://www.youtube.com/embed/8h_TOz1kSXU" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="450" src="https://www.youtube.com/embed/8h_TOz1kSXU" frameborder="0" allowfullscreen></iframe>
 
 detto questo... **addio Nexus**, un pochino ci mancherete (_a me di sicuro_)!

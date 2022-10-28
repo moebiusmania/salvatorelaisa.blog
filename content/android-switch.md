@@ -39,7 +39,7 @@ Il browser è (_ovviamente_) basato su [Webkit](https://webkit.org/), con suppor
 
 Come dicevo in apertura ho preso un [Desire della HTC](https://it.wikipedia.org/wiki/HTC_Desire), marca che ho sempre rispettato e che negli ultimi mesi in quanto a dispositivi all'avanguardia si sta dando molto da fare!
 
-<iframe width="100%" height="430" src="https://www.youtube.com/embed/dLxsxnlGFnE" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" width="100%" height="430" src="https://www.youtube.com/embed/dLxsxnlGFnE" frameborder="0" allowfullscreen></iframe>
 
 Le cose più notevoli di questo device sono:
 

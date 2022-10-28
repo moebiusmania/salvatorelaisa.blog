@@ -37,7 +37,7 @@ const updateHead = () =>
     htmlAttrs: {
       lang: "it-IT",
       "data-theme": theme.value,
-      class: theme.value === DARK ?? "dark",
+      class: theme.value === DARK ? "dark" : 'light',
     },
   });
 
