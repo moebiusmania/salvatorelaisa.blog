@@ -28,7 +28,7 @@ Il concetto è abbastanza semplice, anziché avere una console o un PC potente c
 
 Tanti si sono dimenticati, ma in realtà una soluzione **molto** simile venne presentata 10 anni fa con un prodotto di nome [OnLive](https://it.wikipedia.org/wiki/OnLive).
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/HHZW2j9lHTg" frameBorder="0" allowFullScreen></iframe> <small><i>Una video recensione di OnLive del 2011</i></small>
+<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/HHZW2j9lHTg" frameborder="0" allowfullscreen></iframe> <small><i>Una video recensione di OnLive del 2011</i></small>
 
 ## Esiste il settore?
 

@@ -40,4 +40,4 @@ Se siete già utenti Android sia casual che appassionati o siete interessati a d
 
 Per una recensione "vera" e professionale vi lascio ai ragazzi di [The Verge](https://www.theverge.com/2013/11/4/5062724/google-nexus-5-review):
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/umW0xnRu-VU" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="400" src="https://www.youtube.com/embed/umW0xnRu-VU" frameborder="0" allowfullscreen></iframe>

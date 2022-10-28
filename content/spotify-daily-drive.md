@@ -33,4 +33,4 @@ E ora posso avere lo stesso risultato, in maniera anche più sintetica, senza do
 
 E giusto per chiudere con una citazione **super-classica**:
 
-<iframe className="w-full" height="450" src="https://www.youtube-nocookie.com/embed/W8r-tXRLazs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> <small><i>...e comunque no, alla fine sono stati i Podcast e la musica in streaming!</i></small>
+<iframe loading="lazy" class="w-full" height="450" src="https://www.youtube-nocookie.com/embed/W8r-tXRLazs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <small><i>...e comunque no, alla fine sono stati i Podcast e la musica in streaming!</i></small>

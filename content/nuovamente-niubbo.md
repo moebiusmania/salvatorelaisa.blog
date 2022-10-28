@@ -27,6 +27,6 @@ Mi rendo però conto che iniziare un nuovo percorso, ritornare niubbo ogni tanto
 
 Recentemente ho visto un video molto interessante dei vari TED talks riguardo l'apprendimento di nuove skills e di come **le prime 20 ore** possano fare la differenza:
 
-<iframe width="100%" height="450" src="https://www.youtube.com/embed/5MgBikgcWnY" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="450" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
 
 Comunque 20 o 30 o 100 ore... mi sto divertendo un sacco a ricominciare da capo! 😎

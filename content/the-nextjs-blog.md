@@ -24,7 +24,7 @@ Beh come si può vedere ho cambiato layout proseguendo la mia strada verso il mi
 
 Con l'età che avanza apprezzo sempre di più le cose semplici ed immediate quindi volevo che il mio blog fosse il primo esempio di questo tipo. Che poi è anche qualcosa che paga sotto alcune metriche, come per esempio:
 
-<iframe width="100%" height="260" src="/lighthouse/20210702.html" frameBorder="0" allowFullScreen></iframe> <small><i>Il report di Lighthouse della home page di questo sito del 02/07/2021</i></small>
+<iframe loading="lazy" class="w-full" height="260" src="/lighthouse/20210702.html" frameborder="0" allowfullscreen></iframe> <small><i>Il report di Lighthouse della home page di questo sito del 02/07/2021</i></small>
 
 E, piccola nota, ho **rimosso lo script di Google Analytics**, quindi io non avrò alcun dato su visualizzazioni e dintorni (_ecchissene_) e voi un posto in meno nel web dove verrete tracciati 😉.
 

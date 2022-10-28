@@ -18,7 +18,7 @@ Veloce riassunto per chi non sapesse di cosa sto parlando, i **Raspberry Pi** so
 
 Il modello Zero accentua il fattore dimensioni ridotte (_e ovviamente ha una potenza di calcolo inferiore ai modelli 2/3_) ma questo gli permette di essere venduto **in commercio a soli 5 euro, 10 nel caso del modello che include il ricevitore WiFi**.
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/jFoA4u4x2uk" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="500" src="https://www.youtube.com/embed/jFoA4u4x2uk" frameborder="0" allowfullscreen></iframe>
 
 ## Carino... ma che ci faccio?
 

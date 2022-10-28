@@ -62,5 +62,5 @@ Che dire... meh 🙄.
 
 Ma resto dell'idea che la migliore sintesi sia del film che di gran parte di quello che ho detto la si possa trovare direttamente nel trailer:
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/2TAOizOnNPo" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
 <small>(volevo embeddare il trailer in italiano ma l'unico che ho trovato su YouTube aveva una qualità davvero troppo bassa...)</small>

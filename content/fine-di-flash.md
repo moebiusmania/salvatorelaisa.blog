@@ -60,7 +60,7 @@ In quegli anni vennero annunciate cose come il [runtime AIR](https://help.adobe.
 
 Insomma, con la Flash Platform **si potevano fare cose fighissime**, pubblicare su molte piattaforme e tutti i suoi tool offrivano dei workflow integrati che non esistevano (_e per certi aspetti ancora non esistono_) da nessun'altra parte. Il lato negativo era ovviamente il dover svuoare il portafoglio ad Adobe e i suoi tool e legarsi in maniera indissolubile alla piattaforma.
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/tgwi0lWgX8w" frameBorder="0" allowFullScreen></iframe> <small><i>Una delle ultime iterazioni del Flash Player con il supporto per il 3D nativo, questa demo "Max Racer venne utilizzata per dimostrarne le potenzioalità...nel 2010!</i></small>
+<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/tgwi0lWgX8w" frameborder="0" allowfullscreen></iframe> <small><i>Una delle ultime iterazioni del Flash Player con il supporto per il 3D nativo, questa demo "Max Racer venne utilizzata per dimostrarne le potenzioalità...nel 2010!</i></small>
 
 ## Verso la fine
 

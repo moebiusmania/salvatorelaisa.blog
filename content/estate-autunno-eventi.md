@@ -55,7 +55,7 @@ Il castello di Belgioioso è sempre un'ottima cornice per eventi, e il Next Vint
 Gli [eventi **TED** indipendenti](www.tedxmilano.it) tornano a Milano!
 Questa volta non mi sono fatto trovare impreparato e ho già comprato il biglietto. E per prepararmi mi sto guardando la registrazione dell'edizione precedente:
 
-<iframe width="100%" height="515" src="https://www.youtube.com/embed/ZbPR7lkZyTQ?list=PLsRNoUx8w3rPflea6YPxnaw-iUpuqEwvf" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="515" src="https://www.youtube.com/embed/ZbPR7lkZyTQ?list=PLsRNoUx8w3rPflea6YPxnaw-iUpuqEwvf" frameborder="0" allowfullscreen></iframe>
 
 ## Comics & Games <small>(28 Ottobre - 1 Novembre, Lucca)</small>
 

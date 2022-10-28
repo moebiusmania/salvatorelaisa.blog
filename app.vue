@@ -3,7 +3,7 @@ import { Ref } from "vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
 const LIGHT: string = "corporate";
-const DARK: string = "halloween";
+const DARK: string = "night";
 const theme: Ref<string> = ref(LIGHT);
 
 const switchTheme = () => {
@@ -19,7 +19,7 @@ const updateHead = () =>
       { name: "description", content: SITE_DESCRIPTION },
     ],
     link: [
-      { rel: "alternate", type: "application/rss+xml", href: "/index.xml" },
+      { rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
       { rel: "icon", type: "image/png", href: "/static/favicons/favicon.ico" },
       {
         rel: "icon",

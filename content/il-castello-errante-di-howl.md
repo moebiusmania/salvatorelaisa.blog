@@ -38,7 +38,7 @@ Non starò a ripetere quanto è [già stato detto](https://it.wikipedia.org/wiki
 
 E' un mix di sensazioni difficile da spiegare, lo stile e l'ambientazione fanno tanto, ma anche la storia godibile su più livelli per bambini e adulti, e ovviamente la musica:
 
-<iframe src="https://open.spotify.com/embed/album/5fqlZFKYqvkIe2jdDGt2nl?theme=0" className="w-full rounded-xl" height="400" frameBorder="0"></iframe>
+<iframe src="https://open.spotify.com/embed/album/5fqlZFKYqvkIe2jdDGt2nl?theme=0" loading="lazy" class="w-full rounded-xl" height="400" frameborder="0"></iframe>
 
 Se non l'avete ancora visto, al momento è disponibile su Netflix.
 

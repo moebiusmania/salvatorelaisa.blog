@@ -16,7 +16,7 @@ Da qualche giorno finalmente la feature è stata resa disponibile a tutti gli ut
 
 Per avere una rapida idea di cos'è e perché è così dannatamente figo meglio dare un'occhiata al video introduttivo del team di Github:
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/_W9B7qc9lVc" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/_W9B7qc9lVc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 Una delle parti che mi fa davvero impazzire e che è già disponibile per tutti è la possibilità di **aprire il codice di un repo in un'istanza di VS Code direttamente nel browser**! Questo apre alcuni scenari interessanti per chi utilizza o vorrebbe utilizzare di più per lavori "tenici" dei tablet, perché tendenzialmente mette a disposizione di questa categoria di device l'editor più usato degli ultimi anni (_che finora non è stato mai pubblicato su piattaforme non desktop..._).
 

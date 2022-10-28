@@ -20,4 +20,4 @@ Ogni anno viene scelto un **tema** diverso, questa stagione è stata la "sfida" 
 
 Nell'attesa della prossima stagione potete seguire il [blog di Zio Burp](http://www.zioburp.net/), uno dei componenti della BluesForce, o direttamente il sito di SpazioMusica per saperne di più e informarvi sulle date della prossima stagione.
 
-<iframe width="100%" height="415" src="https://www.youtube.com/embed/JnOmGNCtAek" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/JnOmGNCtAek" frameborder="0" allowfullscreen></iframe>

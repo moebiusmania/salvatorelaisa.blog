@@ -60,4 +60,4 @@ A questo punto...
 
 # ...buon divertimento a suon di frag 😎
 
-<iframe src="https://store.steampowered.com/widget/13240/679/" frameBorder="0" width="100%" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/13240/679/" frameborder="0" loading="lazy" class="w-full" height="190"></iframe>

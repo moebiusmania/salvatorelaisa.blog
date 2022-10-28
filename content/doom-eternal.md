@@ -37,4 +37,4 @@ Fin qui credo il miglior gioco del 2020! Specie per la situazione davvero bislac
 
 **Aggiunta di Novembre 2020**
 
-<iframe src="https://store.steampowered.com/widget/782330/235874/" frameBorder="0" width="100%" height="200" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" src="https://store.steampowered.com/widget/782330/235874/" frameborder="0" height="200" allowfullscreen></iframe>

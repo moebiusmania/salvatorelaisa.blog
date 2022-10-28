@@ -51,6 +51,6 @@ Se come me avete l'hobby della fotografia qui ci sono vari consigli su come sfru
 
 - [Vampires: Folklore, fantasy and fact - Michael Molina](https://www.youtube.com/watch?v=_0ThKRmySoU) | Questo secondo me è un video **must** per ogni 31 ottobre! Viene raccontato come è nato il mito dei vampiri nelle varie culture e come è stato trasformato nel corso dei secoli.
 
-<iframe width="100%" height="515" src="https://www.youtube.com/embed/_0ThKRmySoU" frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" class="w-full" height="515" src="https://www.youtube.com/embed/_0ThKRmySoU" frameborder="0" allowfullscreen></iframe>
 
 **PS:** riproverò a fare qualcosa di simile i primi di Dicembre per natale.

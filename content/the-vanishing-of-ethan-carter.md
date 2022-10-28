@@ -52,4 +52,4 @@ Sarà l'età che avanza ma sto apprezzando storie (_indipendentemente dal media_
 
 Quindi se la pensate come me e vi trovaste nella situazione di avere una mezza giornata abbondante libera e questo titolo a prezzo scontato, non indugiate!
 
-<iframe src="https://store.steampowered.com/widget/258520/" frameBorder="0" width="100%" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/258520/" frameborder="0" loading="lazy" class="w-full" height="190"></iframe>
