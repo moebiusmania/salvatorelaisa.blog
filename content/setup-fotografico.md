@@ -30,7 +30,7 @@ Ho sempre strizzato l’occhiolino però al mondo della fotografia e negli ultim
 
 Oggi è ancora un servizio molto valido (_offrono gratuitamente un 1TB di archiviazione esclusivamente per foto e video_) che rimane legato al mondo della fotografia _digitale-classica_, motivo per cui ha perso una buona parte della sua popolarità.
 
-![https://farm7.staticflickr.com/6022/6200601778_915613aba4_z.jpg](https://farm7.staticflickr.com/6022/6200601778_915613aba4_z.jpg)
+![https://live.staticflickr.com/6022/6200601778_915613aba4_c_d.jpg](https://live.staticflickr.com/6022/6200601778_915613aba4_c_d.jpg)
 <small>_"San Michele - Pavia" [su Flickr](https://www.flickr.com/photos/moebius06/6200601778/in/dateposted-public/)_</small>
 
 **Instagram**: con l'ascesa della _phoneography_ è arrivato Instagram. Travasando i file delle foto (_jpg ovviamente_) qua e la fino a farli arrivare sullo smartphone, anche le foto scattare con le reflex possono arrivare su questo social fotografico dominato dai filtri, tuttavia il formato non proprio di alta qualità (_giustificato dal tipo di device che principalmente fornisce la linfa vitale di questo servizio_) non le farà risaltare in maniera particolare rispetto a quelle scattate con lo smartphone.
