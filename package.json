@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.2.1",
-    "@nuxtjs/tailwindcss": "^6.1.1",
+    "@nuxtjs/tailwindcss": "^6.1.2",
     "nuxt": "^3.0.0-rc.12",
     "remark-reading-time": "^2.0.1",
     "rss": "^1.2.2",
@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
-    "daisyui": "^2.33.0"
+    "daisyui": "^2.37.0"
   }
 }

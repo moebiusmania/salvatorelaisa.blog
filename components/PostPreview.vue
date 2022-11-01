@@ -19,7 +19,7 @@ defineProps<{
         }}
       </span>
     </div>
-    <div class="md:flex-grow">
+    <div class="w-full md:flex-grow">
       <NuxtLink :href="`/post${post._path}`">
         <h2 class="text-2xl font-medium text-base-content title-font mb-2">
           {{ post.title }}
