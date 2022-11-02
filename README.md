@@ -28,7 +28,7 @@ $ npm run new "post title"
 
 or manually:
 
-- go in the `src/pages/post` folder
+- go in the `content` folder
 - clone the `_template.md` file
 - edit the cloned file with your content
 
@@ -36,9 +36,9 @@ or manually:
 
 I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
-- live textual search for posts (_by title and excerpt only_)
+<!-- - live textual search for posts (_by title and excerpt only_) -->
 - filter posts by tag
-- "posts by year" page template, available at `/post/year/[a-year-between-2010-and-current]`
+- "posts by year" page template, available at `/post/year`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
 - "reading time" for posts
 
