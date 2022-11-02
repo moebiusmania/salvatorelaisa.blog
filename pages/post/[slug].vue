@@ -1,10 +1,12 @@
 <script lang="ts" setup>
 import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import { SITE_TITLE } from "@/utils/config";
 
 const route = useRoute();
 const slug: string = route.params.slug as string;
 
 const post: ParsedContent = await queryContent(`/${slug}`).findOne()
+const title: string = `${SITE_TITLE} - ${post.title}`
 
 const date = (src: string): string =>
   new Date(src).toLocaleDateString("it-it", {
@@ -24,6 +26,24 @@ const twitter = (url: string): string =>
 </script>
 <template>
   <div>
+
+    <Head>
+      <Title>{{ title }}</Title>
+      <Meta name="title" :content="title" />
+
+      <!-- Open Graph / Facebook -->
+      <Meta property="og:type" content="website" />
+      <Meta property="og:url" :content="`https://salvatorelaisa.blog/post${post._path}`" />
+      <Meta property="og:title" :content="title" />
+      <Meta property="og:image" :content="post.images[0]" />
+
+      <!-- Twitter -->
+      <Meta property="twitter:card" content="summary_large_image" />
+      <Meta property="twitter:url" :content="`https://salvatorelaisa.blog/post${post._path}`" />
+      <Meta property="twitter:title" :content="title" />
+      <Meta property="twitter:image" :content="post.images[0]" />
+    </Head>
+
     <article class="prose max-w-none prose-a:text-primary">
       <header class="text-center mb-12">
         <dd class="text-base font-medium leading-6 mb-2">

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ParsedContent } from "@nuxt/content/dist/runtime/types";
-import { SITE_DESCRIPTION } from "@/utils/config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
 const posts: ParsedContent[] = await queryContent()
   .where({ draft: false })
@@ -11,6 +11,25 @@ const posts: ParsedContent[] = await queryContent()
 
 <template>
   <div>
+
+    <Head>
+      <Meta name="generator" content="Nuxt" />
+
+      <!-- Open Graph / Facebook -->
+      <Meta property="og:type" content="website" />
+      <Meta property="og:url" content="https://salvatorelaisa.blog" />
+      <Meta property="og:title" :content="SITE_TITLE" />
+      <Meta property="og:description" :content="SITE_DESCRIPTION" />
+      <Meta property="og:image" content="https://salvatorelaisa.blog/static/images/twitter-card.png" />
+
+      <!-- Twitter -->
+      <Meta property="twitter:card" content="summary_large_image" />
+      <Meta property="twitter:url" content="https://salvatorelaisa.blog" />
+      <Meta property="twitter:title" :content="SITE_TITLE" />
+      <Meta property="twitter:description" :content="SITE_DESCRIPTION" />
+      <Meta property="twitter:image" content="https://salvatorelaisa.blog/static/images/twitter-card.png" />
+    </Head>
+
     <p class="text-xl leading-7 text-secondary">{{ SITE_DESCRIPTION }}</p>
 
     <ul class="my-8 divide-y divide-primary-content">
