@@ -1,16 +1,20 @@
 ---
-title: "Google Stadia: inizia l'era del cloud gaming?"
+title: "[CHIUSO] Google Stadia: inizia l'era del cloud gaming?"
 date: '2019-12-22'
 tags: ['gaming', 'google', 'cloud']
 draft: false
 summary: 'Quando è stato annunciato a inizio primavera, si fece sentire come un fulmin a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, Stadia.'
 images:
   [
-    'https://play-lh.googleusercontent.com/oDMbRgRAJQwEtbvonfI9QkBKd5sCiqxgiIGgIQK1rVu77RFBjJwR53BbdhXRpriL9Rc',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Stadia_logo.svg/1024px-Google_Stadia_logo.svg.png',
   ]
 ---
 
-![Il logo di Google Stadia.](https://play-lh.googleusercontent.com/oDMbRgRAJQwEtbvonfI9QkBKd5sCiqxgiIGgIQK1rVu77RFBjJwR53BbdhXRpriL9Rc) <small>_Il logo di Google Stadia._</small>
+![Il logo di Google Stadia.](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Stadia_logo.svg/1024px-Google_Stadia_logo.svg.png) <small>_Il logo di Google Stadia._</small>
+
+**Aggiornamento di Novembre 2022**: come troppo spesso accade nel mondo dei prodotti Google, è stata recentemente [annunciata la chiusura di Stadia a partire da Gennaio 2023](https://support.google.com/stadia/answer/12790109). Tutte le cose che si dovevano dire sono già state dette, c'è dell'ironia nel vedere che questo post è stato scritto successivamente a quello sulla [chiusura di Google+](/post/google-plus-chiude). E mentre si aggiunge ancora una volta una lapide nel cimitero virtuale di Google, posso rileggermi con una prospettiva diversa questo mio post di allora sapendo che essere un *early-adopter* è una rischiosa vita di mix tra gioie e dolori 🤓. 
+
+---
 
 Quando è stato [annunciato a inizio primavera](https://www.youtube.com/watch?v=nUih5C5rOrA), si fece sentire come un fulmine a ciel sereno: non solo Google entra nel mondo del gaming, ma lo fa introducendo una delle prime piattaforme di cloud gaming alle masse, [Stadia](https://stadia.google.com/).
 
