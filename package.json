@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.2.2",
+    "@nuxt/content": "^2.3.0",
     "@nuxtjs/tailwindcss": "^6.1.3",
     "nuxt": "^3.0.0",
     "remark-reading-time": "^2.0.1",
@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
-    "daisyui": "^2.41.0"
+    "daisyui": "^2.46.0"
   }
 }
