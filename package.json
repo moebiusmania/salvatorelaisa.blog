@@ -5,7 +5,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "new": "node scripts/compose.js"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
