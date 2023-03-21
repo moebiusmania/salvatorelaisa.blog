@@ -67,10 +67,10 @@ const twitter = (url: string): string =>
     </article>
     <hr class="my-8 border-primary-content" />
     <div class="py-6 text-sm flex justify-center">
-      <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(post._path)"
+      <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(post._path || "")"
         class="hover:text-primary underline decoration-dotted">Parlane su Twitter</a>
       <span class="inline-block px-2">•</span>
-      <a target="_blank" rel="nofollow noopener noreferrer" :href="source(post._path)"
+      <a target="_blank" rel="nofollow noopener noreferrer" :href="source(post._path || "")"
         class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
     </div>
     <Tip />
