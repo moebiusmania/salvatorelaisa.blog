@@ -24,7 +24,7 @@ jobs:
       - run: npm run generate
 
       - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.0.1
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           # Build directory to deploy
           build_dir: .output/public
