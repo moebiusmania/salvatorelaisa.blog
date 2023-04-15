@@ -11,8 +11,14 @@ const switchTheme = () => {
   updateHead();
 };
 
-const updateHead = () =>
-  useHead({
+const updateHead = () => {
+  const htmlAttrs = {
+      lang: "it-IT",
+      "data-theme": theme.value,
+      class: theme.value === DARK ? "dark" : 'light',
+    }
+
+  return useHead({
     title: SITE_TITLE,
     meta: [
       { name: "title", content: SITE_TITLE },
@@ -34,13 +40,10 @@ const updateHead = () =>
         href: "/static/favicons/favicon-32x32.png",
       },
     ],
-    htmlAttrs: {
-      lang: "it-IT",
-      "data-theme": theme.value,
-      class: theme.value === DARK ? "dark" : 'light',
-    },
+    htmlAttrs
   });
-
+}
+  
 updateHead();
 </script>
 
