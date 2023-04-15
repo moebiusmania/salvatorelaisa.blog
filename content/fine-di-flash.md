@@ -16,7 +16,7 @@ Dopo tanti anni dal primo [annuncio ufficiale del pensionamento di Flash](https:
 
 Lo so benissimo che ci sarà gente con una qualche lacrimuccia trattenuta come me e altri che inneggiano al _"era ora"_, anche se di fatto questa è stata solo una formalità, **ormai Flash era diventato incredibilmente irrilevante già dal 2012-2013**.
 
-## Ricapitolando: che era Flash?
+## Ricapitolando: cos'era Flash?
 
 Visto che quando si parla di fatti avvenuti più di 5 anni prima dalla data attuale, sul web si parla praticamente di _ere geologiche_, non posso dare per scontato che tutti sappiano/si ricordino che cosa fosse Flash, quindi faccio un recap veloce.
 
