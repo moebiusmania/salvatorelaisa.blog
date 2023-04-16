@@ -1,11 +1,17 @@
 ---
 title: E il quattro vien da se
-date: '2022-09-10'
+date: '2022-10-25'
 tags: ['tecnicismi', 'blog']
-draft: true
-summary: ''
-images: ['']
+draft: false
+summary: 'Ed eccoci a un altra puntata di "io che riscrivo da zero questo blog per sperimentare nuove soluzioni" 🤓. Anche questa volta ho solo cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la soluzione descritta in precedenza.'
+images: ['https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg']
 ---
+
+<img src="https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg" width="100%" alt="Il logo del framework Nuxt 3" /> <small>_Il logo del framework Nuxt 3_</small>
+
+Ed eccoci a un'altra puntata di *"io che riscrivo da zero questo blog per sperimentare nuove soluzioni"* 🤓. Anche questa volta ho **solo** cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la [soluzione descritta in precedenza](/post/the-nextjs-blog).
+
+Sono passato da `Next.js` a [Nuxt](https://nuxt.com/) (*versione 3*), il nome suona simile di proposito dato che è un framework per web apps molto simile a Next.js ma basato su `Vue` anziche `React`. E' una specie di ritorno alla `v2`che era scritta con il più acerbo `VuePress`, ma dato che la semplicità e immediatezza di Vue mi ha sempre fatto gola, non ho resitito alla tentazione di poter utilizzare un framework potente ma semplice per questo blog!
 
 Ma per riassumere, cosa ci ho guadagnato in questa migrazione?
 
@@ -15,7 +21,7 @@ Il file `package.json` contava ben **42** dipendenze (_42... coincidenze?_) che 
 
 ## Developer Experience
 
-Oltre a quanto detto sopra ora posso finalmente usare **Typescript** nei sorgenti, nella versione precedente il tentativo di portare il template su TS non era proprio andato a buon fine. Lavorare con i file `.vue` rispeto al `JSX` non mi sta dispiacendo, anche se conto di migrare i componenti a Vue più avanti (_sì, Astro è cross-framework_). Sto usando ancora [Tailwind](https://tailwindcss.com/) ma con meno customizzazioni dirette e con l'aggiunta di [DaisyUI](https://daisyui.com) come libreria per le poche component UI che uso, ma sopratutto per [i temi](https://daisyui.com/themes), così ogni tanto potrò giocare a cambiare il _look&feel_ del blog.
+Oltre a quanto detto sopra ora posso finalmente usare **Typescript** nei sorgenti, nella versione precedente il tentativo di portare il template su TS non era proprio andato a buon fine. Lavorare con i file `.vue` rispeto al `JSX` non mi sta affatto dispiacendo. Sto usando ancora [Tailwind](https://tailwindcss.com/) ma con meno customizzazioni dirette e con l'aggiunta di [DaisyUI](https://daisyui.com) come libreria per le poche component UI che uso, ma sopratutto per [i temi](https://daisyui.com/themes), così ogni tanto potrò giocare a cambiare il _look&feel_ del blog.
 
 Essendomi scritto quasi tutti i file da zero ho maggiore conoscenza della codebase e mi viene più facile fare modifiche.
 
