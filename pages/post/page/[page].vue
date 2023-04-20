@@ -7,6 +7,12 @@ const limit: number = 10;
 const prev: number = page - 1;
 const next: number = page + 1;
 
+const allPosts: ParsedContent[] = await queryContent()
+  .where({ draft: false })
+  .find()
+
+const totalPages: number = Math.ceil(allPosts.length / limit)
+
 const posts: ParsedContent[] = await queryContent()
   .where({ draft: false })
   .sort({ date: -1 })
@@ -38,7 +44,7 @@ const posts: ParsedContent[] = await queryContent()
           &larr; Precedente
         </button>
 
-        <span>Pagina {{ page }}</span>
+        <span>Pagina {{ page }} di {{ totalPages }}</span>
 
         <NuxtLink v-if="posts.length === limit" class="text-primary hover:text-primary-focus"
           :href="`/post/page/${next}`">

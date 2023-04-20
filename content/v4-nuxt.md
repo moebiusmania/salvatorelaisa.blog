@@ -1,17 +1,17 @@
 ---
 title: E il quattro vien da se
-date: '2022-10-25'
-tags: ['tecnicismi', 'blog']
+date: "2022-10-25"
+tags: ["tecnicismi", "blog"]
 draft: false
 summary: 'Ed eccoci a un altra puntata di "io che riscrivo da zero questo blog per sperimentare nuove soluzioni" 🤓. Anche questa volta ho solo cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la soluzione descritta in precedenza.'
-images: ['https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg']
+images: ["https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg"]
 ---
 
 <img src="https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg" width="100%" alt="Il logo del framework Nuxt 3" /> <small>_Il logo del framework Nuxt 3_</small>
 
-Ed eccoci a un'altra puntata di *"io che riscrivo da zero questo blog per sperimentare nuove soluzioni"* 🤓. Anche questa volta ho **solo** cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la [soluzione descritta in precedenza](/post/the-nextjs-blog).
+Ed eccoci a un'altra puntata di _"io che riscrivo da zero questo blog per sperimentare nuove soluzioni"_ 🤓. Anche questa volta ho **solo** cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la [soluzione descritta in precedenza](/post/the-nextjs-blog).
 
-Sono passato da `Next.js` a [Nuxt](https://nuxt.com/) (*versione 3*), il nome suona simile di proposito dato che è un framework per web apps molto simile a Next.js ma basato su `Vue` anziche `React`. E' una specie di ritorno alla `v2`che era scritta con il più acerbo `VuePress`, ma dato che la semplicità e immediatezza di Vue mi ha sempre fatto gola, non ho resitito alla tentazione di poter utilizzare un framework potente ma semplice per questo blog!
+Sono passato da `Next.js` a [Nuxt](https://nuxt.com/) (_versione 3_), il nome suona simile di proposito dato che è un framework per web apps molto simile a Next.js ma basato su `Vue` anziche `React`. E' una specie di ritorno alla `v2`che era scritta con il più acerbo `VuePress`, ma dato che la semplicità e immediatezza di Vue mi ha sempre fatto gola, non ho resitito alla tentazione di poter utilizzare un framework potente ma semplice per questo blog!
 
 Ma per riassumere, cosa ci ho guadagnato in questa migrazione?
 
@@ -34,7 +34,8 @@ Nuxt punta a generare file finali con meno codice Javascript rispetto a Next.js 
 Il layout è rimasto grossomodo molto simile, qualche aggiustatina alla configurazione di header e footer, il menu su schermi piccoli ora è sempre visibile. Il cambiamento più grande è nel formato degli articoli su desktop: **ho completamente rimosso quella specie di sidebar che c'era prima** lasciando il 100% dello spazio del contenitore per... i contenuti! (_chi l'avrebbe mai detto..._)
 
 ## Privacy e tracking
+
 Rimango convinto della mia opinione di circa 2 anni fa di **non utilizzare alcuna forma di tracking o profilazione degli utenti su questo sito**. Alla fine è un blog personale dove elaboro alcuni dei miei pensieri, non ho nessun piano editoriale in mente e tantomeno progetti di monetizzazione. Quindi che ci sia 1, 10 o 100 visitatori mi importa davvero poco.
 
-Questo mi permette di non dover aggiungere ulteriore codice Javascript a carico dei visitatori e di liberarmi dei vari banner legati all'orripilante questione di 
+Questo mi permette di non dover aggiungere ulteriore codice Javascript a carico dei visitatori e di liberarmi dei vari banner legati all'orripilante questione di
 "cookie policy".
