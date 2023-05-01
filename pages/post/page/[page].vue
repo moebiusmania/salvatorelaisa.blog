@@ -10,6 +10,7 @@ const limit: number = 10;
 
 const allPosts: ParsedContent[] = await queryContent()
   .where({ draft: false })
+  .sort({ date: -1 })
   .find();
 
 const totalPages: number = Math.ceil(allPosts.length / limit);
@@ -28,12 +29,7 @@ const onTyping = async (event: Event) => {
   search.value = target.value;
 
   if (target.value.length > 0) {
-    const results: ParsedContent[] = await queryContent()
-      .where({ draft: false })
-      .sort({ date: -1 })
-      .find();
-
-    const filtered: ParsedContent[] = results.filter((post) => {
+    const filtered: ParsedContent[] = allPosts.filter((post) => {
       const title: string = post.title?.toString() || "";
       return title.toLowerCase().includes(target.value.toLowerCase());
     });
