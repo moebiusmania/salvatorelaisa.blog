@@ -24,14 +24,18 @@ const initial: ParsedContent[] = await queryContent()
 
 posts.value = initial;
 
-const onTyping = async (event: Event) => {
-  const target = event.target as HTMLInputElement;
-  search.value = target.value;
+const onClear = (): void => {
+  search.value = "";
+  posts.value = initial;
+};
 
-  if (target.value.length > 0) {
+const onTyping = async (value: string) => {
+  search.value = value;
+
+  if (value.length > 0) {
     const filtered: ParsedContent[] = allPosts.filter((post) => {
       const title: string = post.title?.toString() || "";
-      return title.toLowerCase().includes(target.value.toLowerCase());
+      return title.toLowerCase().includes(value.toLowerCase());
     });
 
     posts.value = filtered;
@@ -48,16 +52,12 @@ const onTyping = async (event: Event) => {
     >
       Tutti gli articoli
     </h1>
-    <input
-      type="text"
+    <Search
       :value="search"
-      placeholder="Cerca tra gli articoli (per titolo)"
-      class="input input-bordered input-primary w-full md:max-w-xl my-10"
-      @input="onTyping"
+      :results="posts.length"
+      @typing="onTyping"
+      @clear="onClear"
     />
-    <p v-if="search.length !== 0">
-      Risultato ricerca: <strong>{{ posts.length }}</strong> articoli
-    </p>
     <ul class="my-8 divide-y divide-primary-content">
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
