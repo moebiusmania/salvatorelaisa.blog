@@ -55,6 +55,9 @@ const onTyping = async (event: Event) => {
       class="input input-bordered input-primary w-full md:max-w-xl my-10"
       @input="onTyping"
     />
+    <p v-if="search.length !== 0">
+      Risultato ricerca: <strong>{{ posts.length }}</strong> articoli
+    </p>
     <ul class="my-8 divide-y divide-primary-content">
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
