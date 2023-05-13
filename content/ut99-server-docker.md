@@ -1,11 +1,13 @@
 ---
 title: Creare un server privato di UT99 con Docker
-date: '2020-11-07'
-tags: ['docker', 'ut99', 'gaming', 'tecnicismi']
+date: "2020-11-07"
+tags: ["docker", "ut99", "gaming", "tecnicismi"]
 draft: false
-summary: 'Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale.'
+summary: "Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale."
 images:
-  ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2020/LanParty_01.jpg']
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2020/LanParty_01.jpg",
+  ]
 ---
 
 ![la schermata iniziale di UT99](https://external-preview.redd.it/Rz9Gwj1URmf6I4IGUTWLruCb58fAsPNE_qn2WQBu98I.png?auto=webp&s=cfc13c82491d8202b4feb655389f97e10c35b7c0)
@@ -59,5 +61,7 @@ I passaggi non sono complessi, ma bisogna conoscere un minimo gli strumenti:
 A questo punto...
 
 # ...buon divertimento a suon di frag 😎
+
+**Aggiornamento di Maggio 2023:** sfortunamente Unreal Tournament (1999) è stato rimosso dagli store digitali dalla stessa Epic, quindi in link di Steam che avevo aggiunto qui sotto non è più funzionante. Nulla è realmente perduto su internet... ma non posso dire altro!
 
 <iframe src="https://store.steampowered.com/widget/13240/679/" frameborder="0" loading="lazy" class="w-full" height="190"></iframe>

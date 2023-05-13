@@ -1,13 +1,17 @@
 ---
 title: Fast and Furious
-date: '2020-04-20'
-tags: ['film', 'nostalgia']
+date: "2020-04-20"
+tags: ["film", "nostalgia"]
 draft: false
 summary: "Dalle rapine ai camion al diventare agenti segreti che salvano il mondo con auto che volano il passo è stato non breve ma sicuramente imprevedibile, ma di certo 'Fast and Furious' (il primo) ci ha insegnato a vivere la vita un quarto di miglio alla volta."
 images:
   [
-    'https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg',
+    "https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg",
   ]
+head.script:
+  - src: "https://platform.twitter.com/widgets.js"
+    async: true
+    charSet: "utf-8"
 ---
 
 ![La locandina del film, linkata da IMDB](https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg) <small>_La locandina del film, linkata da [IMDB](https://www.imdb.com/title/tt0232500/mediaindex)_</small>
@@ -17,7 +21,6 @@ images:
 Nel bel mezzo di questo entusiasmante lockdown, qualche giorno fa l'account twitter di Netflix Italia pubblica questo post:
 
 <blockquote className="twitter-tweet"><p lang="en" dir="ltr">GNAUUUUUUUUUU 💨<br /><br />💪 Fast and Furious<br />😎 2 Fast 2 Furious<br />🗼 The Fast and the Furious: Tokyo Drift<br />🚓 Fast &amp; Furious - Solo parti originali<br />🇧🇷 Fast &amp; Furious 5<br />🇬🇧 Fast &amp; Furious 6<br />😭 Fast &amp; Furious 7<br /><br />Sono ora disponibili.</p>— Netflix Italia (@NetflixIT) <a href="https://twitter.com/NetflixIT/status/1251065433802899457?ref_src=twsrc%5Etfw">April 17, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
 Praticamente il 90% della saga di Fast and Furious disponibile da streammare, mi scatta subito l'idea del rewatch ma sopratutto mi chiedo: _"da quant'è che non vedo il primo?"_. Tanto, troppo tempo, quindi è ora di darci dentro: **rewatch time!**.
 
@@ -30,6 +33,14 @@ E pensare che non l'ho neanche visto al cinema, ma nella saletta di un locale de
 Da quel momento per me e i miei amici divenne subito un film di culto, non sono mai stato un particolare fan di auto da corsa e tuning, ma quel film era semplicemente irresistibile.
 
 Ci ha lasciato tanti modi dire come _"un quarto di miglio"_ e ovviamente ogni volta che si combina qualcosa di un po roccambolesco con la macchina è un attimo dire _"...alla Fast and Furious"_ 😎.
+
+## Gli impatti nel resto del mondo
+
+Ovviamente la cosa non si è fermata a me e il mio gruppetto di amici, altrimenti ora non saremmo davanti a un franchise che tra film, spinoff e una serie animata su Netflix è prossima al ventennio di esistenza!
+
+Ai tempi mi ricordo che l'impatto del primo film fu fortissimo, nel bene e nel male se ne parlava un po ovunque, sopratutto mi ricordo la grandissima attesa e aspettativa (_ovviamente in buona parte delusa_) per il secondo capitolo un anno e qualcosa dopo.
+
+Nell'ambito dei videogiochi, **[Need for Speed](https://it.wikipedia.org/wiki/Need_for_Speed)** è stato quello che più di tutti ha subito l'impatto dell'esplosione di popolarità di Fast & Furious: i 3 capitoli usciti immeditamante dopo il film, ovvero _NFS Underground_ - _NFS Underground 2_ e _NFS Most Wanted_, oltre a essere quelli considerati da molti l'apice della saga di NFS, introducevano una modalità carrierà con diverse cutscenes tra una gara e l'altra (_nel caso di Most Wanted erano sequenze live action_) che raccontavano una trama che _per pura coincidenza_ girava intorno a vicende legate alle corse clandestine di auto truccate 😎.
 
 ## Y2K style
 
@@ -62,5 +73,9 @@ Che dire... meh 🙄.
 
 Ma resto dell'idea che la migliore sintesi sia del film che di gran parte di quello che ho detto la si possa trovare direttamente nel trailer:
 
-<iframe loading="lazy" class="w-full" height="415" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" class="w-full" height="460" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
 <small>(volevo embeddare il trailer in italiano ma l'unico che ho trovato su YouTube aveva una qualità davvero troppo bassa...)</small>
+
+se poi volete approfondire con un piccolo "documentario" molto meno soggettivo e che racconta qualche storiella interessante (_tipo che Vien Diesel all'inizio non voleva fare seguiti del film..._) vi consiglio questo video (_in inglese_):
+
+<iframe loading="lazy" class="w-full" height="460" src="https://www.youtube.com/embed/Bthqxc8hn1g" frameborder="0" allowfullscreen></iframe>
