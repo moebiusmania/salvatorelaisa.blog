@@ -7,7 +7,7 @@ summary: 'Ed eccoci a un altra puntata di "io che riscrivo da zero questo blog p
 images: ["https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg"]
 ---
 
-<img src="https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg" width="100%" alt="Il logo del framework Nuxt 3" /> <small>_Il logo del framework Nuxt 3_</small>
+<img src="https://nuxt.com/assets/design-kit/logo/full-logo-green-dark.svg" style="width: 100%" width="100" alt="Il logo del framework Nuxt 3" /> <small>_Il logo del framework Nuxt 3_</small>
 
 Ed eccoci a un'altra puntata di _"io che riscrivo da zero questo blog per sperimentare nuove soluzioni"_ 🤓. Anche questa volta ho **solo** cambiato il framework di generazione delle pagine ma sono rimasto ai file Markdown per i contenuti e la [soluzione descritta in precedenza](/post/the-nextjs-blog).
 

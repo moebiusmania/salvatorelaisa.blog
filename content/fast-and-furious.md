@@ -8,10 +8,6 @@ images:
   [
     "https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg",
   ]
-head.script:
-  - src: "https://platform.twitter.com/widgets.js"
-    async: true
-    charSet: "utf-8"
 ---
 
 ![La locandina del film, linkata da IMDB](https://m.media-amazon.com/images/M/MV5BNjQ1YjNhNTEtNzZiNS00OGYzLWJjZmYtMDc3NWNlZmIxZDZhXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_FMjpg_UX1000_.jpg) <small>_La locandina del film, linkata da [IMDB](https://www.imdb.com/title/tt0232500/mediaindex)_</small>

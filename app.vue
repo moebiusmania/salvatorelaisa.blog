@@ -13,10 +13,10 @@ const switchTheme = () => {
 
 const updateHead = () => {
   const htmlAttrs = {
-      lang: "it-IT",
-      "data-theme": theme.value,
-      class: theme.value === DARK ? "dark" : 'light',
-    }
+    lang: "it-IT",
+    "data-theme": theme.value,
+    class: theme.value === DARK ? "dark" : "light",
+  };
 
   return useHead({
     title: SITE_TITLE,
@@ -24,6 +24,14 @@ const updateHead = () => {
       { name: "title", content: SITE_TITLE },
       { name: "description", content: SITE_DESCRIPTION },
     ],
+    // script: [
+    //   {
+    //     src: "https://platform.twitter.com/widgets.js",
+    //     crossorigin: "anonymous",
+    //     defer: true,
+    //     async: true,
+    //   },
+    // ],
     link: [
       { rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
       { rel: "icon", type: "image/png", href: "/static/favicons/favicon.ico" },
@@ -40,10 +48,10 @@ const updateHead = () => {
         href: "/static/favicons/favicon-32x32.png",
       },
     ],
-    htmlAttrs
+    htmlAttrs,
   });
-}
-  
+};
+
 updateHead();
 </script>
 
