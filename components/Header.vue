@@ -28,7 +28,7 @@ const onClick = (e: MouseEvent): void => {
           :pathname="route.path">About</HeaderLink>
         <HeaderLink className="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/tags"
           :pathname="route.path">Tags</HeaderLink>
-        <button aria-label="theme switcher"
+        <button aria-label="theme switcher" data-toggle-theme="dark,corporate"
           class="w-6 h-6 pt-0.5 cursor-pointer hover:text-neutral-focus dark:hover:text-neutral-content" id="theme"
           @click="onClick">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor">
