@@ -2,15 +2,8 @@
 import { Ref } from "vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-import { themeChange } from 'theme-change'
-
-if (process.client) {
-  themeChange(false)
-}
-
-
 const LIGHT: string = "corporate";
-const DARK: string = "dark";
+const DARK: string = "night";
 const theme: Ref<string> = ref(LIGHT);
 
 const switchTheme = () => {
@@ -21,8 +14,8 @@ const switchTheme = () => {
 const updateHead = () => {
   const htmlAttrs = {
     lang: "it-IT",
-    //"data-theme": theme.value,
-    //class: theme.value === DARK ? "dark" : "light",
+    "data-theme": theme.value,
+    class: theme.value === DARK ? "dark" : "light",
   };
 
   return useHead({

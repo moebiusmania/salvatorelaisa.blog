@@ -1,15 +1,15 @@
 ---
 title: On the Android side
-date: '2010-12-07'
-tags: ['android', 'ios', 'mobile', 'device']
+date: "2010-12-07"
+tags: ["android", "ios", "mobile", "device"]
 draft: false
-summary: '[AGGIORNATO 2020] Ebbene sì, dopo un anno di utenza iPhone... sono passato al lato [Android](https://www.android.com/) della telefonia smart!'
-images: ['https://www.android.com/static/2016/img/share/andy-lg.png']
+summary: "[AGGIORNATO 2020] Ebbene sì, dopo un anno di utenza iPhone... sono passato al lato [Android](https://www.android.com/) della telefonia smart!"
+images: ["https://www.android.com/static/2016/img/share/andy-lg.png"]
 ---
 
 ![https://www.android.com/static/2016/img/share/andy-lg.png](https://www.android.com/static/2016/img/share/andy-lg.png)
 
-> Tra fine del 2020 e inizio 2021 ho aggiornato l'articolo aggiungedo una mia retrospettiva 10 anni dopo, se non vuoi leggere tutto puoi [saltare direttamente alla parte nuova](#10-anni-dopo).
+> Tra fine del 2020 e inizio 2021 ho aggiornato l'articolo aggiungedo una mia retrospettiva 10 anni dopo, se non vuoi leggere tutto puoi [saltare direttamente alla parte nuova](#_10-anni-dopo).
 
 ---
 
@@ -64,11 +64,12 @@ Ho scritto un papiro ed è meglio che mi fermo, perché potrei andare avanti a s
 Ero indeciso se scrivere un post a parte ma alla fine ho preferito continuare questo per mantenere una linearità nel contesto e nella discussione.
 
 ## 10 anni dopo...
+
 Beh che dire, ovviamente oggi ci troviamo davanti a una situazione molto più stabile e matura, tuttavia **Android non è più l'alternativa geek** in mezzo ad altri sistemi mobile ma condivide con iOS quello che ormai è un duopolio.
 
-Questo da sicuramente molta più sicurezza nella sua scelta ma ha fortemente limitato quell'aspetto più "sperimentale" e "divertente" che offriva agli utenti. E' un pò il prezzo da pagare per avere le cose facili e che funzionano subito, e la pigrizia che sto coltivando negli ultimi anni ringrazia, mi rimane solo un leggero senso di nostalgia per quei primi anni passati a cambiare continuamente device, ROM, launcher, installare app allora inaccessbili tramite *side-loading*...
+Questo da sicuramente molta più sicurezza nella sua scelta ma ha fortemente limitato quell'aspetto più "sperimentale" e "divertente" che offriva agli utenti. E' un pò il prezzo da pagare per avere le cose facili e che funzionano subito, e la pigrizia che sto coltivando negli ultimi anni ringrazia, mi rimane solo un leggero senso di nostalgia per quei primi anni passati a cambiare continuamente device, ROM, launcher, installare app allora inaccessbili tramite _side-loading_...
 
-Per me il picco di questo primo decennio è stato intorno al 2014, quando avevo [il Nexus 5 come telefono](/post/nexus-5), il Nexus 10 come tablet e [il primo Chromecast](/post/sperimentando-il-chromecast): in quegli anni Android (*ai tempi versione 4 con la 5 all'orizzonte*) iniziava a essere più affidabile e con buone feature, i portabandiera Nexus 4 e 5 sono stati dei device apprezzati da molti e davvero economici, i produttori di terze parti specialmente Samsung iniziavano a spingere verso hardware sempre più competitivo con iPhone, si iniziava a parlare di [Android Wear](https://developer.android.com/wear) e [Auto](https://www.android.com/auto/), lo store di Google appena re-brandizzato in Play aveva un buon parco di app (*ma anche tanto schifo...*) e iniziavano ad aprirsi in Italia le porte agli altri servizi come libri, film e musica. Insomma... c'era tantissimo fermento!
+Per me il picco di questo primo decennio è stato intorno al 2014, quando avevo [il Nexus 5 come telefono](/post/nexus-5), il Nexus 10 come tablet e [il primo Chromecast](/post/sperimentando-il-chromecast): in quegli anni Android (_ai tempi versione 4 con la 5 all'orizzonte_) iniziava a essere più affidabile e con buone feature, i portabandiera Nexus 4 e 5 sono stati dei device apprezzati da molti e davvero economici, i produttori di terze parti specialmente Samsung iniziavano a spingere verso hardware sempre più competitivo con iPhone, si iniziava a parlare di [Android Wear](https://developer.android.com/wear) e [Auto](https://www.android.com/auto/), lo store di Google appena re-brandizzato in Play aveva un buon parco di app (_ma anche tanto schifo..._) e iniziavano ad aprirsi in Italia le porte agli altri servizi come libri, film e musica. Insomma... c'era tantissimo fermento!
 
 ![Android al suo picco più alto dello scorso decennio.](https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true) <small>_L'ecosistema Android al suo picco più alto dello scorso decennio._</small>
 
@@ -78,7 +79,7 @@ Una sorta di timeline di 🟢 WIN/🔴 FAIL per questo primo decennio di Android
 
 - 🟢 Scoprire che non c'era bisogno di syncare il device con il PC (_ai tempi era davvero una cosa nuova_)
 - 🟢 Flashare per la prima volta **una ROM custom** su un device
-- 🔴 il primo tablet Android che ho preso, davvero disastroso (*un Toshiba di cui non mi ricordo neanche il modello, pesante come un mattone e con la UI da telefono "stretchata" sullo schermo di un tablet*)
+- 🔴 il primo tablet Android che ho preso, davvero disastroso (_un Toshiba di cui non mi ricordo neanche il modello, pesante come un mattone e con la UI da telefono "stretchata" sullo schermo di un tablet_)
 - 🟢 quando attivarono in Italia i servizi **Google Play Books, Music e Movies**, eliminando il gap tra l'offerta di servizi dell'ecosistema iOS e Android
 - 🟢 quando ho preso il primo **Chromecast**
 - 🟢 come già detto i **Nexus 5 e 10**
@@ -86,5 +87,3 @@ Una sorta di timeline di 🟢 WIN/🔴 FAIL per questo primo decennio di Android
 - 🟢 **Google Photo** che diventa un'app standalone staccandosi da Google+
 - 🔴 il vertiginoso aumento di prezzo dei device nel passaggio da Nexus a Pixel
 - 🔴 i millemila **servizi e rebranding delle app di chat di Google**
-
-

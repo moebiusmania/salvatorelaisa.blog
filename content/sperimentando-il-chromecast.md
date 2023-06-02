@@ -1,13 +1,17 @@
 ---
 title: Sperimentando il Chromecast
-date: '2014-02-15'
-tags: ['tecnicismi', 'tv', 'device']
+date: "2014-02-15"
+tags: ["tecnicismi", "tv", "device"]
 draft: false
-summary: 'Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast.'
+summary: "Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il Chromecast."
 images:
   [
-    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png',
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png",
   ]
+---
+
+> A giugno 2023 ho aggiornato l'articolo aggiungedo una piccola retrospettiva ora che la 1<sup>a</sup> generazione di Chromecast (_esattamente quella di cui parlo in questo articolo_) [è stata discontinuata](https://9to5google.com/2023/05/30/chromecast-no-updates/), se non vuoi leggere tutto puoi [saltare direttamente alla parte nuova](#verso-la-fine).
+
 ---
 
 ![Il logo del progetto Chromecast](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2014/google-chromecast-badge-color.png) <small>_Il logo del progetto Chromecast_</small>
@@ -45,3 +49,25 @@ ne anche nelle ultime versioni del [client ufficiale della Rai](https://play.goo
 ## In conclusione
 
 Per un **prezzo di <del>35€</del> 39€ (_dalla 2a generazione_)** e considerando il fatto che è davvero facile da reperire (_lo trovate sia online sul <del>Play</del>Google Store che in diversi negozi generici tipo Mediaworld_) direi che ne vale davvero la pena, sopratutto se come me siete interessati a rendere più utile la vostra TV senza doverla.
+
+---
+
+## Verso la fine?
+
+A quasi un decennio (_mancano davvero pochi mesi_) dall'annuncio del primo Chromecast, Google ha terminato il supporto per questa versione del dongle che ha iniziato tutto, ma questa volta non è un male:
+
+- sono appunto passati 10 anni
+- le nuove generazioni non sono impattate da questa notizia
+- era super economica
+
+Personalmente credo che pian piano vedremo sparire del tutto il Chromecast, **alla fine ha fatto il suo lavoro**: _aiutare nella transizione delle TV verso l'aggiunta dei contenuti video via web_.
+
+![Chromecast 1a generazione, 2013-2023](https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2015/08/chromecast.png?w=1500&quality=82&strip=all&ssl=1)
+
+Oggi gran parte delle TV in vendita (_e vendute_) include **nativamente** supporto a Netflix, YouTube, ecc.., i set-top-box tipo Apple TV sono più diffusi e anche le console come Playstation e Xbox hanno integrate app per quasi tutte le piattaforme di video streaming... quindi il bisogno di aggiungere un dongle alla TV per accedere ai suddetti servizi è quasi scomparso.
+
+Anche io onestamente uso il Chromecast in maniera molto marginale da un po' di anni, per lo più è un aggeggio piccino che mi porto dietro durante viaggi o quando vado a casa dei miei genitori.
+
+Possiamo dire che è stato uno dei pochi casi di un prodotto hardware di Google davvero azzeccato: risolveva 1 solo problema, costava poco, era facile da usare e appunto aveva una prospettiva di vita "naturale" limitata.
+
+
