@@ -91,13 +91,15 @@ Questo è tra i pochi device Apple di cui mi sono davvero pentito di aver speso 
 
 Quando venne presentato il primo iPad io mi ero [da poco convertito ad Android](/post/android-switch), quindi appena furono disponibili i primi tablet Android in Italia sono corso a comprarne: un Toshiba di cui non mi ricordo neanche il modello.
 
-Per certe cose era una scommessa persa in partenza per altre c'erano delle possibilità, ma ovviamente si è concretizzato uno degli scenari peggiori come sempre: scarsa batteria, peso eccessivo, schermo touch poco reattivo, software di base scadente (\*che ho sostituito dopo un paio di giorni\*\*)
+Per certe cose era una scommessa persa in partenza per altre c'erano delle possibilità, ma ovviamente si è concretizzato uno degli scenari peggiori come sempre: scarsa batteria, peso eccessivo, schermo touch poco reattivo, software di base scadente (*che ho sostituito dopo un paio di giorni*)
 
 ### Nokia N95 (_telefono/smartphone, 2008-2009_)
 
-### Le 3 o 4 cuffie da viaggio della Sony che ho avuto (_cuffie, 2009-2018_)
+### Le 2 o 3 cuffie da viaggio della Sony che ho avuto (_cuffie, 2009-2018_)
 
-A partire dal 2009 per una decina di anni ho lavorato a Milano mentre vivevo nel
+A partire dal 2009 per una decina di anni ho lavorato a Milano mentre vivevo nella provincia sud, prendendo la metropolitana tutti i giorni è praticamente obbligatorio avere delle cuffie (*a meno che non vuoi sentire i discorsi e le telefonate degli altri, e in generale il brusio*), solo che ero nel periodo in cui stavo apprezzando molto di più le **cuffie over-ear** che sono fantastiche per isolarsi, ma scomode come portabilità, specie quando hai uno zaino già abbastanza pieno.
+
+Per questo motivo quando ho visto queste cuffie pieghevoli della Sony ho pensato fossero la soluzione ideale per il tempo che spendevo in metro ai tempi (*quasi 1h tra andata e ritorno*), le ho prese e sono stato soddisfatto... finché non si sono rotte in meno di un anno. Allora ne ho comprato un altro paio identiche che sono durate poco di più... fino a rompersi di nuovo. 🤦‍♂️
 
 ### Nexus 5X (_smartphone, 2016-2018_)
 
