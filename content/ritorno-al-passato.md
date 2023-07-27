@@ -37,7 +37,7 @@ Ecco un breve recap di quali zombie ho riportato in vita:
 
 Ovviamente [tutti i sorgenti di questi progetti sono disponibili su Github](https://github.com/moebiusmania?tab=repositories&q=restoration), in alcuni casi anche del codice originale (_di cui non mi faccio vanto_).
 
-Con [Next.js](https://nextjs.org/) e il file di [backup di Splinder](post/splinder-chiude) ho anche ricreato una copia del mio primissimo blog personale (_2003-2008_), ma onestamente quello non penso di ri-pubblicarlo da nessuna parte perché è abbastanza imbarazzante 🤣.
+Con [Next.js](https://nextjs.org/) e il file di [backup di Splinder](/post/splinder-chiude) ho anche ricreato una copia del mio primissimo blog personale (_2003-2008_), ma onestamente quello non penso di ri-pubblicarlo da nessuna parte perché è abbastanza imbarazzante 🤣.
 
 Ho sempre una certa nostaglia per il web pre-mobile (_circa 2012?_) e penso che ci scriverò un post a riguardo tra non molto, sopratutto perché credo che sia stato dimenticato e _"sovrascritto"_ troppo velocemente.
 

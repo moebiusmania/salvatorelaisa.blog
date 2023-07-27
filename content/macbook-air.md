@@ -12,7 +12,7 @@ images:
 
 ![Uno scatto promozionale del MacBook Air.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg)<small>_Uno scatto promozionale del MacBook Air._</small>
 
-Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](*http://www.apple.com/it/macbookair/*)**.
+Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](https://www.apple.com/it/macbookair/)**.
 
 Per quanto detesti le politiche e modus operandi della Apple non ho mai potuto negare la qualità dei loro prodotti (_sopratutto a livello hardware_) anche se, come sottolineo spesso, non sono esenti da difetti e problemi che spesso per "fanboysmo" molti non vogliono ammettere.
 
@@ -20,7 +20,7 @@ Forse proprio perché tendo a essere molto critico con i computer indifferenteme
 
 ## La mia storia con i laptop, un po al contrario...
 
-Quando ho iniziato a fare il freelance verso il 2006 avevo un **17 pollici**, non ci giravo molto ma quando lo facevo, diciamo che perdevo qualche chilo in sudore e la batteria durava sempre una ciofeca! Poi sono passato a un **15 pollici**, meno ingombro e meno peso, finalmente superavo l'ora di autonomia con la batteria... ma la sfiga vuole che in quel periodo ero dipendente presso [IBS.it](*http://www.ibs.it/*) e avevo una macchina aziendale su cui lavorare, quindi il laptop l'avrò portato in giro pochissime volte (_se non per qualche mitico Lan Party con gli amici!_). A metà 2009 cambio lavoro e inizio a [Mohole](*http://www.mohole.it/*), il tragitto casa-lavoro diventa molto più lungo di prima e decido di passare a un **13 pollici** MacBook Pro, stracomoda la portabilità il peso è ancora inferiore rispetto al laptop di prima ma con tuttà sincerità: io di Pro non ho mai capito cosa ci fosse. Sono delle belle macchine ma molti programmi hanno tempi di avvio/esecuzioni biblici sopratutto la Creative Suite e le applicazioni non proprio native, ma anche quelle native a volte avevano le loro sorpresine.
+Quando ho iniziato a fare il freelance verso il 2006 avevo un **17 pollici**, non ci giravo molto ma quando lo facevo, diciamo che perdevo qualche chilo in sudore e la batteria durava sempre una ciofeca! Poi sono passato a un **15 pollici**, meno ingombro e meno peso, finalmente superavo l'ora di autonomia con la batteria... ma la sfiga vuole che in quel periodo ero dipendente presso [IBS.it](https://www.ibs.it/) e avevo una macchina aziendale su cui lavorare, quindi il laptop l'avrò portato in giro pochissime volte (_se non per qualche mitico Lan Party con gli amici!_). A metà 2009 cambio lavoro e inizio a [Mohole](https://www.mohole.it/), il tragitto casa-lavoro diventa molto più lungo di prima e decido di passare a un **13 pollici** MacBook Pro, stracomoda la portabilità il peso è ancora inferiore rispetto al laptop di prima ma con tuttà sincerità: io di Pro non ho mai capito cosa ci fosse. Sono delle belle macchine ma molti programmi hanno tempi di avvio/esecuzioni biblici sopratutto la Creative Suite e le applicazioni non proprio native, ma anche quelle native a volte avevano le loro sorpresine.
 
 ## Primi impatti
 
