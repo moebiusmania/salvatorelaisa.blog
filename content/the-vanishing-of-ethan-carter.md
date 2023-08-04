@@ -1,16 +1,21 @@
 ---
 title: The Vanishing of Ethan Carter
-date: '2018-08-20'
-tags: ['gaming', 'recensione']
+date: "2018-08-20"
+tags: ["gaming", "recensione"]
 draft: false
 summary: "Questo lo inserisco nella lista 'giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe'."
+platforms:
+  [
+    { label: "PC - Asus RoG", url: "/post/gaming-laptop" },
+    { label: "Nvidia Shield TV", url: "/post/shield-tv" },
+  ]
 images:
   [
-    'https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Ethan-Carter-1280x720.jpg',
+    "https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Ethan-Carter-1280x720.jpg",
   ]
 ---
 
-![La copertina del gioco](https://www.serialgamer.it/wp-content/uploads/2018/01/The-Vanishing-of-Ethan-Carter-1280x720.jpg) <small>_La copertina del gioco_</small>
+![La copertina del gioco](https://gamersdecrypted.com/wp-content/uploads/2015/07/maxresdefault.jpg) <small>_La copertina del gioco_</small>
 
 Questo lo inserisco nella lista "_giochi sviluppati da non-so-chi che compri quasi a caso perché sono in offertissima su Steam ma che si rivelano essere delle bombe_".
 
@@ -32,6 +37,8 @@ L'area in cui ci troviamo è quasi interamente esplorabile e per nostra (s)fortu
 
 Battute a parte, la mancanza di una UI onnipresente a schermo, l'impossibilità di prendere scorciatoie o velocizzare gli spostamenti e l'[Unreal Engine 4](https://www.unrealengine.com/en-US/what-is-unreal-engine-4) su cui è basato il gioco ci permettono di apprezzare il dettaglio e il realismo dell'ambientazione che è un fattore **fondamentale** di questa esperienza:
 
+![](https://github.com/moebiusmania/blog-assets/blob/master/images/2018/ethancarter1.png?raw=true)
+<small>Sopra: uno screenshot scattato dal mio PC, sotto: una delle immagini promozionali </small>
 ![](https://steamcdn-a.akamaihd.net/steam/apps/258520/ss_9b86bfc8b10ed17804f033a4a8de209fe90a1280.1920x1080.jpg?t=1459438035)
 
 Anche lato audio non ci sono delusioni, le musiche non sono particolarmente memorabili ma si fondono bene con l'ambiente e la storia e il **raro voiceover** del protagonista secondo me è ben interpretato, suona molto come il classico detective introverso del 1940 🤓.

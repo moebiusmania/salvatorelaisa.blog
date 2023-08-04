@@ -16,6 +16,10 @@ const date = (src: string): string =>
     weekday: "long",
   });
 
+const isReview = (tags: Array<string>): boolean => {
+  return tags.includes("gaming") && tags.includes("recensione");
+};
+
 const source = (url: string): string =>
   `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content${url}.md`;
 const twitter = (url: string): string =>
@@ -71,6 +75,15 @@ const twitter = (url: string): string =>
           <small
             >Tempo di lettura:
             {{ post.readingTime.text.replace("min read", "minuti") }}</small
+          >
+        </p>
+        <p v-if="isReview(post.tags)" class="my-2">
+          Giocato su:
+          <NuxtLink
+            v-for="platform in post.platforms"
+            :href="platform.url"
+            class="badge badge-primary mx-1 !text-base-100 no-underline"
+            >{{ platform.label }}</NuxtLink
           >
         </p>
       </header>

@@ -1,20 +1,20 @@
 ---
 title: Il mio primo laptop da gaming
-date: '2017-11-25'
-tags: ['device', 'laptop', 'gaming']
+date: "2017-11-25"
+tags: ["device", "laptop", "gaming"]
 draft: false
 summary: "Prima o poi sarebbe dovuto succedere. Poi il recente trasloco e l'aver finalmente ammesso a me stesso che sono entrato nella fase in cui la sera si esce meno spesso di prima mi hanno fatto ritrovare con più tempo libero di prima."
 images:
   [
-    'https://github.com/moebiusmania/blog-assets/blob/master/images/2017/IMG_20180812_191827.jpeg?raw=true',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2017/IMG_20180812_191827.jpeg?raw=true",
   ]
 ---
 
 ![Il mio Asus ROG pulito e aggiornato (update: foto di Agosto 2018).](https://github.com/moebiusmania/blog-assets/blob/master/images/2017/IMG_20180812_191827.jpeg?raw=true)<small>_Il mio Asus ROG pulito e aggiornato (update: foto di Agosto 2018)._</small>
 
-> Prima o poi sarebbe dovuto succedere. Poi il [recente trasloco](/post/dvd-soprammobili) e l'aver finalmente ammesso a me stesso che sono entrato nella fase in cui la sera si esce meno spesso di prima mi hanno fatto ritrovare con più tempo libero di prima.
+> Prima o poi sarebbe dovuto succedere. Poi il [recente trasloco](/post/dvd-soprammobili) e l'aver finalmente ammesso a me stesso che sono entrato nella fase in cui la sera si esce meno spesso di prima mi hanno fatto ritrovare con un pò più tempo libero.
 
-Anche se negli ultimi anni sono stato **molto** più a _"basso profilo"_ il gaming è sempre stata una delle mie passioni, ma non mi sono più lasciato andare a dell'hardware dedicato dai tempi della mia gloriosa [3dfx VooDoo 2](https://it.wikipedia.org/wiki/Voodoo_2) 🤣 perché appunto avevo molto meno tempo libero tra amici, band e lavoro (_che per un certo tempo ha occupato anche tempo extra, ma per passione e voglia di imparare_) e quindi i pochi giochi su cui sono rimasto legato, sopratutto [World of Warcraft](https://worldofwarcraft.com/it-it/), li ho giocati per lo più su hardware legato al mio lavoro. E sappiamo tutti che i Mac per quanto siano delle ottime macchine non splendono molto sul campo del gaming, anche per scarsa disponibilità di titoli portati su piattaforma Apple.
+Anche se negli ultimi anni sono stato **molto** più a _"basso profilo"_ il gaming è sempre stata una delle mie passioni, ma non mi sono più lasciato andare a dell'hardware dedicato dai tempi della mia gloriosa [3dfx VooDoo 2](https://it.wikipedia.org/wiki/Voodoo_2) 🤣 perché appunto avevo molto meno tempo libero tra amici, band e lavoro (_che per un certo tempo ha occupato anche tempo extra, ma per passione e voglia di imparare_) e quindi i pochi giochi su cui sono rimasto legato, sopratutto [World of Warcraft](https://worldofwarcraft.com/it-it/), li ho giocati per lo più su hardware più orientato al mio lavoro. E sappiamo tutti che i Mac per quanto siano delle ottime macchine non splendono molto sul campo del gaming, anche per scarsa disponibilità di titoli portati su piattaforma Apple.
 
 ![Cara vecchia VooDoo 2... la mia primissima GPU!](https://github.com/moebiusmania/blog-assets/blob/master/images/2017/helios_v2_03.jpg?raw=true) <small>_Cara vecchia VooDoo 2... la mia primissima GPU!_</small>
 
