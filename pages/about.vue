@@ -11,10 +11,10 @@ const { data } = await useAsyncData("about", () =>
         <h1
           class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
         >
-          {{ data.title }}
+          {{ data?.title }}
         </h1>
       </header>
-      <ContentRenderer :value="data" />
+      <ContentRenderer :value="data || {}" />
       <hr class="my-8" />
     </article>
     <Tip />

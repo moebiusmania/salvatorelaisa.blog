@@ -29,19 +29,16 @@ const onClear = (): void => {
   posts.value = initial;
 };
 
-const onTyping = async (value: string) => {
+const filtered = (value: string): ParsedContent[] =>
+  allPosts.filter((post) => {
+    const title: string = post.title?.toString() || "";
+    return title.toLowerCase().includes(value.toLowerCase());
+  });
+
+const onTyping = async (value: string): Promise<void> => {
   search.value = value;
 
-  if (value.length > 0) {
-    const filtered: ParsedContent[] = allPosts.filter((post) => {
-      const title: string = post.title?.toString() || "";
-      return title.toLowerCase().includes(value.toLowerCase());
-    });
-
-    posts.value = filtered;
-  } else {
-    posts.value = initial;
-  }
+  posts.value = value.length > 0 ? filtered(value) : initial;
 };
 </script>
 
