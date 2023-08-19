@@ -1,9 +1,31 @@
 <script lang="ts" setup>
 import { ParsedContent } from "@nuxt/content/dist/runtime/types";
 
-const posts: ParsedContent[] = await queryContent("/devices")
-  .sort({ date: -1 })
-  .find();
+const route = useRoute();
+const slug: string = route.query.slug as string;
+
+const getAll = async (): Promise<ParsedContent[]> => {
+  const posts: ParsedContent[] = await queryContent("/devices")
+    .sort({ purchase: -1 })
+    .find();
+
+  return posts;
+};
+
+const getOne = async (): Promise<ParsedContent[]> => {
+  const posts: ParsedContent[] = await queryContent("/devices")
+    .where({ _path: `/devices/${slug}` })
+    .find();
+
+  return posts;
+};
+
+const getColumns = (slug: string): string =>
+  `my-8 divide-y divide-primary-content grid gap-6 md:grid-cols-1 ${
+    slug ? "" : "md:grid-cols-2 lg:grid-cols-3"
+  }`;
+
+const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 </script>
 
 <template>
@@ -18,9 +40,7 @@ const posts: ParsedContent[] = await queryContent("/devices")
       piccola traccia storica senza dover per forza scrivere un post dedicato
       per ognuno di questi.
     </p>
-    <ul
-      class="my-8 divide-y divide-primary-content grid gap-6 md:grid-cols-1 lg:grid-cols-2"
-    >
+    <ul :class="getColumns(slug)">
       <DeviceCard v-for="post in posts" :device="post" />
     </ul>
   </div>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import External from "./icons/External.server.vue";
+import Doc from "./icons/Doc.server.vue";
 
 defineProps<{
   device: ParsedContent;
@@ -19,12 +21,16 @@ defineProps<{
           >{{ tag }}</span
         >
       </div>
-      <h2 v-if="device.post" class="card-title">
-        <NuxtLink class="underline" :href="device.post">{{
-          device.title
-        }}</NuxtLink>
+      <h2 class="card-title">
+        <NuxtLink
+          class="underline hover:text-primary"
+          :href="device.post || device.url"
+        >
+          {{ device.title }}
+        </NuxtLink>
+        <External v-if="device.url" class="w-4 h-4 inline-block" />
+        <Doc v-if="device.post" class="w-4 h-4 inline-block" />
       </h2>
-      <h2 v-else class="card-title">{{ device.title }}</h2>
       <ContentRenderer :value="device" />
     </div>
   </article>
