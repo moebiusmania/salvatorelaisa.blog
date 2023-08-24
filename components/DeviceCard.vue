@@ -6,6 +6,11 @@ import Doc from "./icons/Doc.server.vue";
 defineProps<{
   device: ParsedContent;
 }>();
+
+const formatDate = (date: string): string => {
+  const parts = date.split("-");
+  return parts.length === 1 ? date : new Date(date).toLocaleDateString("it");
+};
 </script>
 
 <template>
@@ -21,6 +26,10 @@ defineProps<{
           >{{ tag }}</span
         >
       </div>
+      <p class="text-sm flex-none">
+        Data di acquisto:
+        {{ formatDate(device.purchase) }}
+      </p>
       <h2 class="card-title">
         <NuxtLink
           class="underline hover:text-primary"

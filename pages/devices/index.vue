@@ -40,6 +40,10 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
       piccola traccia storica senza dover per forza scrivere un post dedicato
       per ognuno di questi.
     </p>
+    <p class="mt-2">
+      L'ordine è cronologico sulla base del giorno o periodo in cui li ho
+      comprati.
+    </p>
     <ul :class="getColumns(slug)">
       <DeviceCard v-for="post in posts" :device="post" />
     </ul>
