@@ -41,6 +41,7 @@ I've added some small new features over the starting Nuxt template to handle som
 - "posts by year" page template, available at `/post/year`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
 - "reading time" for posts
+- "personal devices timeleine" section
 
 ## Can I use this to bootstrap my new Nuxt blog?
 
