@@ -39,9 +39,12 @@ const tags: Array<Tag> = [...new Set(allTags)]
       </h1>
     </div>
     <div class="flex flex-wrap max-w-lg">
-      <div v-for="tag in tags" class="mt-2 mb-2 mr-5">
+      <div
+        v-for="tag in tags"
+        class="mt-2 mb-2 mr-5 transition-all hover:underline"
+      >
         <NuxtLink
-          class="mr-3 text-sm font-medium text-primary uppercase hover:primary-focus"
+          class="mr-3 text-sm font-medium text-primary uppercase hover:text-primary-focus"
           :href="`/tags/${tag.label}`"
           >{{ tag.label }}</NuxtLink
         ><NuxtLink
