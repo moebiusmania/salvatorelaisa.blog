@@ -2,6 +2,18 @@
 import { ParsedContent } from "@nuxt/content/dist/runtime/types";
 import { ref, Ref } from "vue";
 
+definePageMeta({
+  pageTransition: {
+    name: "slide-right",
+    mode: "out-in",
+  },
+  middleware(to, from) {
+    // @ts-ignore
+    to.meta.pageTransition.name =
+      +to.params.id > +from.params.id ? "slide-left" : "slide-right";
+  },
+});
+
 const route = useRoute();
 const search: Ref<string> = ref("");
 const posts: Ref<ParsedContent[]> = ref([]);
@@ -57,7 +69,11 @@ const onTyping = async (value: string): Promise<void> => {
     />
     <ul class="my-8 divide-y divide-primary-content">
       <TransitionGroup name="list">
-        <PostPreview v-for="post in posts" :post="post" />
+        <PostPreview
+          v-for="post in posts"
+          :post="post"
+          :key="post._path?.replace('/', '')"
+        />
       </TransitionGroup>
     </ul>
     <Pagination
@@ -93,4 +109,8 @@ const onTyping = async (value: string): Promise<void> => {
 .list-leave-active {
   position: absolute;
 }
+</style>
+
+<style>
+@import "../../../utils/slide-animations.css";
 </style>
