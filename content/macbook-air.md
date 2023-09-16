@@ -1,16 +1,16 @@
 ---
 title: Il peso dell'anima (dei laptop)
-date: '2012-09-06'
-tags: ['tecnicismi', 'device', 'laptop']
+date: "2012-09-06"
+tags: ["tecnicismi", "device", "laptop"]
 draft: false
-summary: 'Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!'
+summary: "Dopo vari mesi che ci pensavo su alla fine ho preso un MacBook Air!"
 images:
   [
-    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2023/mbair.png?raw=true",
   ]
 ---
 
-![Uno scatto promozionale del MacBook Air.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2012/macbook-air-2nd-gen.jpg)<small>_Uno scatto promozionale del MacBook Air._</small>
+![Macbook Air 2011 su una scrivania secondo Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/mbair.png?raw=true)<small>_Immagine generata con Midjourney_</small>
 
 Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](https://www.apple.com/it/macbookair/)**.
 

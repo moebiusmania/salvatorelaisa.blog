@@ -1,13 +1,13 @@
 ---
 title: E' tempo di 2.0
-date: '2011-10-16'
-tags: ['blog']
+date: "2011-10-16"
+tags: ["blog"]
 draft: false
 summary: "Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l'esatto contrario..."
-images: ['https://farm2.staticflickr.com/1024/542633062_5afd852183_o_d.jpg']
+images: ["https://farm2.staticflickr.com/1024/542633062_5afd852183_o_d.jpg"]
 ---
 
-[![Foto di Banalities su Flickr](https://farm2.staticflickr.com/1024/542633062_5afd852183_o_d.jpg)](https://www.flickr.com/photos/richardsummers/542633062/) <small>_Foto di Banalities su Flickr_</small>
+![Foto di Banalities su Flickr](https://farm2.staticflickr.com/1024/542633062_5afd852183_o_d.jpg) <small>_Foto di Banalities su [Flickr](https://www.flickr.com/photos/richardsummers/542633062/)_</small>
 
 Ho messo su questo sito da poco più di un anno. Nonostante dico sempre ad aspiranti webdesigners di partire dal loro sito, io ho fatto l'esatto **contrario**...
 
