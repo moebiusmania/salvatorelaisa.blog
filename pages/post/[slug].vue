@@ -82,5 +82,5 @@ const isReview = (tags: Array<string>): boolean => {
 </template>
 
 <style>
-@import "../../../utils/slide-animations.css";
+@import "../../utils/slide-animations.css";
 </style>
