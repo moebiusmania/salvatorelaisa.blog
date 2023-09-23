@@ -1,10 +1,11 @@
 ---
 title: Doom Eternal
-date: '2020-04-3'
-tags: ['gaming', 'recensione']
+date: "2020-04-3"
+tags: ["gaming", "recensione"]
 draft: true
-summary: 'E dopo 2 anni di attesa da quando ho visto la preview alla QuakeCon 2018, ecco che finalmente esce Doom Eternal! In realtà è uscito qualche settimana fa ma ho preferito scrivere questo post dopo aver finito la mia prima run 😈.'
-images: ['']
+summary: "E dopo 2 anni di attesa da quando ho visto la preview alla QuakeCon 2018, ecco che finalmente esce Doom Eternal! In realtà è uscito qualche settimana fa ma ho preferito scrivere questo post dopo aver finito la mia prima run 😈."
+platforms: [{ label: "PC - MSI Gaming Infinite A", url: "#" }]
+images: [""]
 ---
 
 E dopo 2 anni di attesa da quando ho visto la preview alla QuakeCon 2018, ecco che finalmente esce Doom Eternal! In realtà è uscito qualche settimana fa ma ho preferito scrivere questo post dopo aver finito la mia prima run 😈.
