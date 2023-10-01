@@ -9,7 +9,6 @@ const postYear: number = new Date(date).getFullYear();
 const current: number = new Date().getFullYear();
 
 const isOutdated: boolean = current - postYear > 2;
-console.log(postYear, current, isOutdated);
 </script>
 
 <template>
