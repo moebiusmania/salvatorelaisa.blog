@@ -9,15 +9,15 @@
     "new": "node scripts/compose.js"
   },
   "devDependencies": {
-    "@nuxt/content": "2.8.2",
+    "@nuxt/content": "2.8.5",
     "@nuxtjs/tailwindcss": "6.8.0",
-    "nuxt": "3.7.3",
+    "nuxt": "3.7.4",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "7.1.1"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.5.10",
-    "daisyui": "3.7.7"
+    "daisyui": "3.8.2"
   }
 }
