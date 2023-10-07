@@ -18,7 +18,7 @@ images:
 
 Da qualche mesetto ho acquistato un aggeggino prodotto da Google che si sta dimostrando più interessante di quanto pensassi: il **Chromecast**.
 
-Per chi non lo conoscesse si tratta di una [specie di chiavetta](http://www.google.it/intl/it/chrome/devices/chromecast/) (leggesi _dongle_) da attaccare alla porta HDMI del televisore per poter fare streaming dei contenuti da smartphone / tablet/ pc.
+Per chi non lo conoscesse si tratta di una [specie di chiavetta](http://www.google.it/intl/it/chrome/devices/chromecast/) (_leggesi "dongle"_) da attaccare alla porta HDMI del televisore per poter fare streaming dei contenuti da smartphone / tablet/ pc.
 
 ## Smartphone e TV uniscono le forze
 
@@ -69,5 +69,3 @@ Oggi gran parte delle TV in vendita (_e vendute_) include **nativamente** suppor
 Anche io onestamente uso il Chromecast in maniera molto marginale da un po' di anni, per lo più è un aggeggio piccino che mi porto dietro durante viaggi o quando vado a casa dei miei genitori.
 
 Possiamo dire che è stato uno dei pochi casi di un prodotto hardware di Google davvero azzeccato: risolveva 1 solo problema, costava poco, era facile da usare e appunto aveva una prospettiva di vita "naturale" limitata.
-
-

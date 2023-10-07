@@ -1,10 +1,13 @@
 ---
 title: Ubuntu 11.04 (e in generale)
-date: '2011-05-01'
-tags: ['ubuntu', 'linux', 'os', 'desktop']
+date: "2011-05-01"
+tags: ["ubuntu", "linux", "os", "desktop"]
 draft: false
 summary: "E' dalla prima versione del 2008 che seguo con molto interesse l'evoluzione di Ubuntu, la distro Linux più user friendly e maggiormente in voga del momento"
-images: ['https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png']
+images:
+  [
+    "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png",
+  ]
 ---
 
 ![Il desktop di Ubuntu 11.04](https://upload.wikimedia.org/wikipedia/commons/a/a1/Ubuntu_11.04_%28csb%29.png) <small>_Il desktop di Ubuntu 11.04_</small>
@@ -13,7 +16,7 @@ E' dalla **prima versione del 2008** che seguo con molto interesse l'evoluzione 
 
 e dopo aver installato l'ultimissima release (**la 11.04**) sento di non poter fare a meno di dedicare un piccolo post sul mio punto di vista riguardo questo sistema operativo.
 
-In questi anni ho sperimentato Ubuntu in 2 situazioni, un [vecchio Sony Vaio](https://web.archive.org/web/20060715185333/http://www.soundwallmusic.net/) senza scheda grafica e mezzo giga di ram (_che è il computer di famiglia_) e una **macchina virtuale** su un MacBook Pro, e in entrambi i casi ho sempre avuto dei buoni risultati. Considerate poi che l'interfaccia grafica non è spartana comprende animazioni, multi desktop e dall'ultima versione un simil-dock e tutto ciò riesco a godermelo anche sul Vaio senza scheda grafica, non con delle prestazioni da urlo ma neanche in modo _"scattoso"_.
+In questi anni ho sperimentato Ubuntu in 2 situazioni, un [vecchio Sony Vaio](https://icecat.biz/it/p/sony/vgn-fe21h/notebooks-VAIO+VGN-FE21H-456635.html) senza scheda grafica e mezzo giga di ram (_che è il computer di famiglia_) e una **macchina virtuale** su un MacBook Pro, e in entrambi i casi ho sempre avuto dei buoni risultati. Considerate poi che l'interfaccia grafica non è spartana comprende animazioni, multi desktop e dall'ultima versione un simil-dock e tutto ciò riesco a godermelo anche sul Vaio senza scheda grafica, non con delle prestazioni da urlo ma neanche in modo _"scattoso"_.
 
 Dato che quando parlo di Ubuntu mi ritrovo a sorbirmi le solite domande, faccio delle mini faq generiche che **principalmente si riferiscono alle mie esperienze personali**.
 
@@ -27,7 +30,7 @@ Può darsi, gran parte dei software commerciali non hanno una versione per Linux
 
 ## Non gira sul mio computer di X anni fa
 
-Al contrario di altri OS (_come Windows Vista_) Ubuntu è molto **leggero**e può essere tranquillamente installato su macchine vecchie, in automatico se non vengono rilevate prestazioni ottimali vengono disabilitati effetti grafici e animazioni e se non bastasse esiste una versione più leggera graficamente che prende il nome di [Xubuntu](http://xubuntu.org/).
+Al contrario di altri OS (_come Windows Vista_) Ubuntu è molto **leggero** e può essere tranquillamente installato su macchine vecchie, in automatico se non vengono rilevate prestazioni ottimali vengono disabilitati effetti grafici e animazioni e se non bastasse esiste una versione più leggera graficamente che prende il nome di [Xubuntu](http://xubuntu.org/).
 
 ## Ho Windows XP e mi trovo benissimo, perche dovrei passare a Ubuntu?
 
