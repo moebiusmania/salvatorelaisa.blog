@@ -19,6 +19,6 @@ const isOutdated: boolean = current - postYear > 2;
     </svg>
     <span><strong>ATTENZIONE!</strong> Questo post ha qualche anno sulle spalle, quindi è molto probabile che il contesto
       degli argomenti
-      trattati non sia più attuale. Controlla la data prima di continuare a leggere 🙂</span>
+      trattati non sia più attuale. Controlla la data di pubblicazione prima di continuare a leggere 🙂</span>
   </div>
 </template>

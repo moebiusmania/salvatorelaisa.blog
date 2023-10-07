@@ -1,11 +1,13 @@
 ---
 title: Setup Fotografico
-date: '2011-06-02'
-tags: ['fotografia']
+date: "2011-06-02"
+tags: ["fotografia"]
 draft: false
-summary: 'Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂.'
+summary: "Non ho l’ambizione di fare il fotografo, mi piace il mio lavoro 🙂."
 images:
-  ['https://github.com/moebiusmania/blog-assets/blob/master/images/2011/IMG_2036.CR2.jpg?raw=true']
+  [
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2011/IMG_2036.CR2.jpg?raw=true",
+  ]
 ---
 
 ![Una foto scattata con la mia Canon in Provenza nel 2010](https://github.com/moebiusmania/blog-assets/blob/master/images/2011/IMG_2036.CR2.jpg?raw=true) <small>_Una foto scattata con la mia Canon in Provenza nel 2010_</small>
@@ -37,4 +39,4 @@ Oggi è ancora un servizio molto valido (_offrono gratuitamente un 1TB di archiv
 
 Motivo per cui mi sono limitato a caricarne giusto un paio per provare.
 
-**Google Drive & Photo:** quando non voglio per forza pubblicare qualcosa mi limito a caricarle sul cloud allo scopo di backup. Google Drive ha [un prezzo molto accattivante](https://www.google.com/drive/pricing/) per passare dai 15gb gratuiti a 100, permettedomi così di uploadare anche i file .raw e Google Photos da quando si è staccato dal suo sfortunato padre (_Google+_) è stato molto migliorato rendendolo uno strumento molto utile per organizzare le foto e fare un editing di base.
+**Google Drive & Photo:** quando non voglio per forza pubblicare qualcosa mi limito a caricarle sul cloud allo scopo di backup. Google Drive ha [un prezzo molto accattivante](https://www.google.com/drive/pricing/) per passare dai 15gb gratuiti a 100, permettedomi così di uploadare anche i file `.raw` e Google Photos da quando si è staccato dal suo sfortunato padre (_[Google+](/post/google-plus-chiude)_) è stato molto migliorato rendendolo uno strumento abbastanza utile per organizzare le foto e fare un editing di base.
