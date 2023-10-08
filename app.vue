@@ -2,20 +2,22 @@
 import { Ref } from "vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-const LIGHT: string = "corporate";
-const DARK: string = "night";
-const theme: Ref<string> = ref(LIGHT);
+const route = useRoute()
 
-const switchTheme = () => {
-  theme.value = theme.value === DARK ? LIGHT : DARK;
-  updateHead();
-};
+const themes: { [k: string]: string } = {
+  dark: "night",
+  light: "corporate",
+}
+
+const current: string = route.query.theme as string;
+
+const theme: Ref<string> = ref(themes[current] || themes.light);
 
 const updateHead = () => {
   const htmlAttrs = {
     lang: "it-IT",
     "data-theme": theme.value,
-    class: theme.value === DARK ? "dark" : "light",
+    class: theme.value === themes.dark ? "dark" : "light",
   };
 
   return useHead({
@@ -56,7 +58,7 @@ updateHead();
 </script>
 
 <template>
-  <Header :dark="theme === DARK" @theme="switchTheme" />
+  <Header :dark="theme === themes.dark" />
   <main>
     <Container>
       <NuxtPage />
