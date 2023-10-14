@@ -1,11 +1,28 @@
 <script setup lang="ts">
-import HeaderLink from "./HeaderLink.vue";
 import { SITE_TITLE } from "@/utils/config";
+
+const classes = "mr-5 hover:text-neutral-focus dark:hover:text-neutral-content"
+const nav: Array<{
+  name: string,
+  href: string
+}> = [{
+  name: "Cerca",
+  href: "/post/page/1"
+}, {
+  name: "About",
+  href: "/about"
+}, {
+  name: "Tags",
+  href: "/tags"
+}]
 
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
+const router = useRouter();
 
 const toggleTheme = () => dark ? route.path : `${route.path}?theme=dark`;
+
+const isActive = (href: string, route: any) => [classes, { underline: href === route.path }];
 </script>
 
 <template>
@@ -16,13 +33,9 @@ const toggleTheme = () => dark ? route.path : `${route.path}?theme=dark`;
         <span class="ml-3 text-xl">{{ SITE_TITLE }}</span>
       </NuxtLink>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <HeaderLink className="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/post/page/1"
-          :pathname="route.path">Cerca</HeaderLink>
-        <HeaderLink className="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/about"
-          :pathname="route.path">About</HeaderLink>
-        <HeaderLink className="mr-5 hover:text-neutral-focus dark:hover:text-neutral-content" href="/tags"
-          :pathname="route.path">Tags</HeaderLink>
-        <NuxtLink aria-label="theme switcher" :href="toggleTheme()"
+        <NuxtLink v-for="(item, index) in nav" :key="index" :class="isActive(item.href, route)" :href="item.href">{{
+          item.name }}</NuxtLink>
+        <a aria-label="theme switcher" :href="toggleTheme()"
           class="w-6 h-6 pt-0.5 cursor-pointer hover:text-neutral-focus dark:hover:text-neutral-content" id="theme">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor">
             <path v-if="dark" class="sun" fill-rule="evenodd"
@@ -30,7 +43,7 @@ const toggleTheme = () => dark ? route.path : `${route.path}?theme=dark`;
               clip-rule="evenodd"></path>
             <path v-else class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
           </svg>
-        </NuxtLink>
+        </a>
       </nav>
     </div>
   </header>
