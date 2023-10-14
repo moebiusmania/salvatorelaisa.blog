@@ -18,7 +18,6 @@ const nav: Array<{
 
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
-const router = useRouter();
 
 const toggleTheme = () => dark ? route.path : `${route.path}?theme=dark`;
 
