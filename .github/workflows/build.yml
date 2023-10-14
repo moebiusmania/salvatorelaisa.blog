@@ -11,9 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [18.18.x]
+
     steps:
       - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
-
-      - run: bun install --frozen-lockfile
-      - run: bun run generate
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run generate
