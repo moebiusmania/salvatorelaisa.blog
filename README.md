@@ -36,11 +36,13 @@ or manually:
 
 I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
+- light/dark mode switcher
 - live textual search for posts (_by title only_)
 - filter posts by tag
 - "posts by year" page template, available at `/post/year`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
 - "reading time" for posts
+- "old post warning" for 2+ years old content
 - "personal devices timeleine" section
 
 ## Can I use this to bootstrap my new Nuxt blog?

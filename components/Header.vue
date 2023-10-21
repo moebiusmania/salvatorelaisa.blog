@@ -19,7 +19,7 @@ const nav: Array<{
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
 
-const toggleTheme = () => dark ? route.path : `${route.path}?theme=dark`;
+const toggleTheme = (dark: boolean) => dark ? route.path : `${route.path}?theme=dark`;
 
 const isActive = (href: string, route: any) => [classes, { underline: href === route.path }];
 </script>
@@ -34,7 +34,7 @@ const isActive = (href: string, route: any) => [classes, { underline: href === r
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <NuxtLink v-for="(item, index) in nav" :key="index" :class="isActive(item.href, route)" :href="item.href">{{
           item.name }}</NuxtLink>
-        <a aria-label="theme switcher" :href="toggleTheme()"
+        <a aria-label="theme switcher" :href="toggleTheme(dark)"
           class="w-6 h-6 pt-0.5 cursor-pointer hover:text-neutral-focus dark:hover:text-neutral-content" id="theme">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor">
             <path v-if="dark" class="sun" fill-rule="evenodd"
