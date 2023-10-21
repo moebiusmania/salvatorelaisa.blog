@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/content": "2.8.5",
     "@nuxtjs/tailwindcss": "6.8.0",
-    "nuxt": "3.7.4",
+    "nuxt": "3.8.0",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "7.1.1"
