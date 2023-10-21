@@ -10,7 +10,7 @@ images:
 summary: "Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!"
 ---
 
-![immagine astratta generata con Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/apps-abstract.png?raw=true)<small>_Immagine generata con Midjourney_</small>
+![immagine astratta generata con Midjourney](https://cdn.midjourney.com/7c084772-a751-437e-85aa-a0ce580d72be/0_3.webp)<small>_Immagine generata con Midjourney_</small>
 
 Abbiamo vissuto (_e stiamo vivendo tutt'ora_) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!
 
@@ -20,7 +20,7 @@ Come è cambiato il web da come lo conoscevamo pochi anni fa ad oggi? E' cambiat
 
 ## Ha ancora senso parlare di "edizione straordinaria"? (informazione)
 
-![Una pila di vecchi giornali in mezzo alla strada immaginata da Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/old_newspapers.png?raw=true)
+![Una pila di vecchi giornali in mezzo alla strada immaginata da Midjourney](https://cdn.midjourney.com/379bef31-b91b-4feb-ba20-a3715a53c55a/0_0.webp)
 
 I **blog**, che sono stati forse i principali portabandiera del web 2.0, sono completamente cambiati.
 
@@ -30,7 +30,7 @@ Ormai molti telegiornali e giornali devono affidarsi ai social network per poter
 
 ## Possiamo ancora chiamarle "pagine web"? (strumenti)
 
-![immagine astratta del WWW generate con Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/browser_abstract.png?raw=true)
+![immagine astratta del WWW generate con Midjourney](https://cdn.midjourney.com/efd1ca0f-df8d-45c6-a3a5-5e8fa7ad55df/0_3.webp)
 
 I classici "siti web" si sono molto evoluti di qualche anno fa ora sono vere e proprie **Web Apps**: Gmail, Facebook, YouTube per citarne alcuni fra i più famosi sono la quintessenza del software slegato dal sistema operativo.
 
@@ -42,7 +42,7 @@ Molti servizi "classici" stanno iniziando a spostarsi completamente su web e alc
 
 ## Abbiamo già nuovi strumenti per andare su web e continueranno a cambiare (fruizione)
 
-![vari smartphones e tablets sul tavolo di un negozio, immaginato da Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/devices.png?raw=true)
+![vari smartphones e tablets sul tavolo di un negozio, immaginato da Midjourney](https://cdn.midjourney.com/d9d8a1fa-628a-4965-a74a-7c5779e46f84/0_2.webp)
 
 Il web è nato dai PC ma sta proseguendo su **altri dispositivi**, oggi stiamo iniziando a farlo con Smartphones e Tablet, domani da TV e occhiali.
 

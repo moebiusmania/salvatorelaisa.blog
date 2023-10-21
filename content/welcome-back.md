@@ -1,11 +1,11 @@
 ---
 title: Welcome back (again)
-date: '2018-12-30'
-tags: ['blog', 'tecnicismi', 'nuovo anno']
+date: "2018-12-30"
+tags: ["blog", "tecnicismi", "nuovo-anno"]
 draft: false
 images:
   [
-    'https://images.unsplash.com/photo-1546074177-31bfa593f731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80',
+    "https://images.unsplash.com/photo-1546074177-31bfa593f731?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
   ]
 summary: "Ebbene si. Terzo 'remake' di questo blog... e non accade neanche a caso, ma alla vigilia di inizio anno 2019 e della chiusura del mio account su Facebook (ma di questo ne parleremo un'altra volta...)."
 ---
