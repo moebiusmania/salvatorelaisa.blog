@@ -10,7 +10,7 @@ images:
   ]
 ---
 
-![Macbook Air 2011 su una scrivania secondo Midjourney](https://github.com/moebiusmania/blog-assets/blob/master/images/2023/mbair.png?raw=true)<small>_Immagine generata con Midjourney_</small>
+![Macbook Air 2011 su una scrivania secondo Midjourney](https://cdn.midjourney.com/df5636c5-59a6-4094-8923-7b2eddd0a784/0_1.webp)<small>_Immagine generata con Midjourney_</small>
 
 Dopo vari mesi che ci pensavo su alla fine ho preso un **[MacBook Air](https://www.apple.com/it/macbookair/)**.
 
