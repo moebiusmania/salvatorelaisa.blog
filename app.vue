@@ -58,7 +58,7 @@ updateHead();
 </script>
 
 <template>
-  <Header :dark="theme === themes.dark" />
+  <Header :dark="current === 'dark'" />
   <main>
     <Container>
       <NuxtPage />
