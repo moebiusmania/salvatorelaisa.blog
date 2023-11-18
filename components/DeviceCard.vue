@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import type { ParsedContent } from "@nuxt/content/dist/runtime/types";
 import External from "./icons/External.server.vue";
 import Doc from "./icons/Doc.server.vue";
 
@@ -20,21 +20,14 @@ const formatDate = (date: string): string => {
     </figure>
     <div class="card-body">
       <div>
-        <span
-          v-for="tag in device.tags"
-          class="badge badge-primary mr-2 !text-base-100 no-underline"
-          >{{ tag }}</span
-        >
+        <span v-for="tag in device.tags" class="badge badge-primary mr-2 !text-base-100 no-underline">{{ tag }}</span>
       </div>
       <p class="text-sm flex-none">
         Data di acquisto:
         {{ formatDate(device.purchase) }}
       </p>
       <h2 class="card-title">
-        <NuxtLink
-          class="underline hover:text-primary"
-          :href="device.post || device.url"
-        >
+        <NuxtLink class="underline hover:text-primary" :href="device.post || device.url">
           {{ device.title }}
         </NuxtLink>
         <External v-if="device.url" class="w-4 h-4 inline-block" />

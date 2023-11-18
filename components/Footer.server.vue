@@ -7,7 +7,7 @@ const today: Date = new Date();
     <div class="max-w-5xl px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <span class="ml-3 text-xl text-base-content">Salvatore Laisa Blog</span>
       <p
-        class="text-sm dark:text-base-content sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-primary-content sm:py-2 sm:mt-0 mt-4 flex">
+        class="text-sm dark:text-base-content sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutral-content dark:sm:border-neutral sm:py-2 sm:mt-0 mt-4 flex">
         &copy; 2010 - {{ today.getFullYear() }} — sviluppato con
         <a href="https://v3.nuxtjs.org/" class="text-primary ml-1" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>

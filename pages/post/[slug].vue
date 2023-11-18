@@ -64,7 +64,7 @@ const isReview = (tags: Array<string>): boolean => {
       </header>
       <ContentRenderer :value="post" />
     </article>
-    <hr class="my-8 border-primary-content" />
+    <hr class="my-8 border-neutral-content dark:border-neutral" />
     <Sharing :url="post._path" />
     <Tip />
   </div>
