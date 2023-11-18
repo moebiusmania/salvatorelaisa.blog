@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Ref } from "vue";
+import type { Ref } from "vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
 const route = useRoute()
 
 const themes: { [k: string]: string } = {
-  dark: "night",
+  dark: "sunset",
   light: "corporate",
 }
 

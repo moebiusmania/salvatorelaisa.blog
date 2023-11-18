@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import type { ParsedContent } from "@nuxt/content/dist/runtime/types";
 import { SITE_TITLE } from "@/utils/config";
 
 definePageMeta({
@@ -55,8 +55,8 @@ const isReview = (tags: Array<string>): boolean => {
         <p class="my-2">
           Tags:
           <NuxtLink v-for="tag in post.tags"
-            class="uppercase inline-block mx-1 no-underline hover:text-primary-focus hover:underline"
-            :href="`/tags/${tag}`">{{ tag }}</NuxtLink>
+            class="uppercase inline-block mx-1 no-underline hover:text-primary hover:underline" :href="`/tags/${tag}`">{{
+              tag }}</NuxtLink>
         </p>
         <ReadingTime :value="post.readingTime.text" />
         <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms" />

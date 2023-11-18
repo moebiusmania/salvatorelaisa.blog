@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import type { ParsedContent } from "@nuxt/content/dist/runtime/types";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
 const posts: ParsedContent[] = await queryContent()
@@ -32,12 +32,12 @@ const posts: ParsedContent[] = await queryContent()
 
     <p class="text-xl leading-7 text-secondary">{{ SITE_DESCRIPTION }}</p>
 
-    <ul class="my-8 divide-y divide-primary-content">
+    <ul class="my-8 divide-y divide-neutral-content dark:divide-neutral">
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
 
     <section class="flex justify-end text-base font-medium leading-6">
-      <NuxtLink href="/post/page/1" class="text-primary hover:primary-focus" aria-label="Tutti gli articoli">
+      <NuxtLink href="/post/page/1" class="text-primary hover:primary" aria-label="Tutti gli articoli">
         Tutti gli articoli &rarr;
       </NuxtLink>
     </section>

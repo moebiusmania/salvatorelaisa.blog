@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { ParsedContent } from "@nuxt/content/dist/runtime/types";
-import { ref, Ref } from "vue";
+import type { ParsedContent } from "@nuxt/content/dist/runtime/types";
+import type { Ref } from "vue";
+import { ref } from "vue";
 
 definePageMeta({
   pageTransition: {
@@ -57,32 +58,17 @@ const onTyping = async (value: string): Promise<void> => {
 <template>
   <div>
     <h1
-      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
-    >
+      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
       Tutti gli articoli
     </h1>
-    <Search
-      :value="search"
-      :results="posts.length"
-      @typing="onTyping"
-      @clear="onClear"
-    />
-    <ul class="my-8 divide-y divide-primary-content">
+    <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
+    <ul class="my-8 divide-y divide-neutral-content dark:divide-neutral">
       <TransitionGroup name="list">
-        <PostPreview
-          v-for="post in posts"
-          :post="post"
-          :key="post._path?.replace('/', '')"
-        />
+        <PostPreview v-for="post in posts" :post="post" :key="post._path?.replace('/', '')" />
       </TransitionGroup>
     </ul>
-    <Pagination
-      v-if="search.length === 0"
-      :total-pages="totalPages"
-      :page="page"
-      :limit="limit"
-      :all-posts="posts.length"
-    />
+    <Pagination v-if="search.length === 0" :total-pages="totalPages" :page="page" :limit="limit"
+      :all-posts="posts.length" />
   </div>
 </template>
 
@@ -92,7 +78,8 @@ const onTyping = async (value: string): Promise<void> => {
   https://vuejs.org/guide/built-ins/transition-group.html
 -->
 <style>
-.list-move, /* apply transition to moving elements */
+.list-move,
+/* apply transition to moving elements */
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;

@@ -16,8 +16,8 @@ const years: Array<string> = Array.from(new Array(difference), (e, i) => BASE + 
     </div>
     <div class="flex flex-wrap max-w-lg">
       <div v-for="year in years" class="mt-2 mb-2 mr-5">
-        <NuxtLink class="mr-3 text-sm font-medium text-primary uppercase hover:primary-focus"
-          :href="`/post/year/${year}`">{{ year }}</NuxtLink>
+        <NuxtLink class="mr-3 text-sm font-medium text-primary uppercase hover:primary" :href="`/post/year/${year}`">{{
+          year }}</NuxtLink>
         <!-- <NuxtLink class="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
           :href="`/year/${tag.label}`">({{ tag.items }})</NuxtLink> -->
       </div>

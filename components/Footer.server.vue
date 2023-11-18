@@ -12,8 +12,7 @@ const today: Date = new Date();
         <a href="https://v3.nuxtjs.org/" class="text-primary ml-1" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>
       <div class="w-36 sm:ml-auto sm:mt-0 mt-4 flex justify-center md:justify-end gap-3">
-        <a class="hover:text-primary-focus" href="https://github.com/moebiusmania" target="_blank"
-          rel="noopener noreferrer">
+        <a class="hover:text-primary" href="https://github.com/moebiusmania" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub icon</title>
@@ -23,8 +22,8 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary-focus" href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg"
-          target="_blank" rel="noopener noreferrer">
+        <a class="hover:text-primary" href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg" target="_blank"
+          rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>YouTube icon</title>
@@ -34,7 +33,7 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary-focus" href="https://www.linkedin.com/in/salvatorelaisa" target="_blank"
+        <a class="hover:text-primary" href="https://www.linkedin.com/in/salvatorelaisa" target="_blank"
           rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,8 +44,7 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary-focus" href="https://twitter.com/moebiusmania" target="_blank"
-          rel="noopener noreferrer">
+        <a class="hover:text-primary" href="https://twitter.com/moebiusmania" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>Twitter icon</title>

@@ -16,11 +16,10 @@ const posts: ParsedContent[] = await queryContent()
       {{ posts.length }} articoli trovati
     </p>
     <h1
-      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 capitalize"
-    >
+      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 capitalize">
       Ricerca per anno: {{ year }}
     </h1>
-    <ul class="my-8 divide-y divide-primary-content">
+    <ul class="my-8 divide-y divide-neutral-content dark:divide-neutral">
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
   </div>
