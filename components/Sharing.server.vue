@@ -16,20 +16,10 @@ const { url } = defineProps<Props>();
 
 <template>
   <div class="py-6 text-sm flex justify-center">
-    <a
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      :href="twitter(url || '')"
-      class="hover:text-primary underline decoration-dotted"
-      >Parlane su Twitter</a
-    >
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')"
+      class="hover:text-primary underline decoration-dotted">Parlane su X (<i>Twitter</i>)</a>
     <span class="inline-block px-2">•</span>
-    <a
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      :href="source(url || '')"
-      class="hover:text-primary underline decoration-dotted"
-      >Codice sorgente su GitHub</a
-    >
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')"
+      class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
   </div>
 </template>
