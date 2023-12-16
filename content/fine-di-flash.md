@@ -1,13 +1,13 @@
 ---
 title: Un Web senza Flash
-date: '2021-01-04'
-tags: ['flash', 'web', 'nostalgia']
+date: "2021-01-04"
+tags: ["flash", "web", "retrospettiva"]
 draft: false
 images:
   [
-    'https://github.com/moebiusmania/blog-assets/blob/master/images/2021/Flash-Player-warning.jpg?raw=true',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2021/Flash-Player-warning.jpg?raw=true",
   ]
-summary: 'Dopo tanti anni dal primo annuncio ufficiale del pensionamento di Flash a fine 2020 da parte di Adobe, siamo arrivati al momento fatidico: da oggi siamo a tutti gli effetti in un Web senza più Flash.'
+summary: "Dopo tanti anni dal primo annuncio ufficiale del pensionamento di Flash a fine 2020 da parte di Adobe, siamo arrivati al momento fatidico: da oggi siamo a tutti gli effetti in un Web senza più Flash."
 ---
 
 ![Il messaggio di avviso di fine supporto per il Flash Player.](https://github.com/moebiusmania/blog-assets/blob/master/images/2021/Flash-Player-warning.jpg?raw=true) <small>_Il messaggio di avviso di fine supporto per il Flash Player._</small>

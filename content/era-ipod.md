@@ -1,11 +1,13 @@
 ---
 title: L'era dell'iPod
-date: '2022-05-22'
-tags: ['device', 'musica', 'evoluzione']
+date: "2022-05-22"
+tags: ["device", "musica", "evoluzione", "retrospettiva"]
 draft: false
 summary: "Ok gente ci siamo, con un comunicato improvviso di qualche giorno fa, Apple ha ufficializzato quello che di fatto è una realtà da diversa anni: l'era dell'iPod è finita 😭"
 images:
-  ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/ipod-apple.png']
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/ipod-apple.png",
+  ]
 ---
 
 ![La homepage di apple.com dopo il lancio del primo iPod nel 2001.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/ipod-apple.png) <small>_La homepage di apple.com dopo il lancio del primo iPod nel 2001._</small>

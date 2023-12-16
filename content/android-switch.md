@@ -77,6 +77,7 @@ Da li in poi nulla di particolarmente nuovo se non [la migrazione dai più speri
 
 Una sorta di timeline di 🟢 WIN/🔴 FAIL per questo primo decennio di Android:
 
+<!--
 - 🟢 Scoprire che non c'era bisogno di syncare il device con il PC (_ai tempi era davvero una cosa nuova_)
 - 🟢 Flashare per la prima volta **una ROM custom** su un device
 - 🔴 il primo tablet Android che ho preso, davvero disastroso (_un Toshiba di cui non mi ricordo neanche il modello, pesante come un mattone e con la UI da telefono "stretchata" sullo schermo di un tablet_)
@@ -87,3 +88,7 @@ Una sorta di timeline di 🟢 WIN/🔴 FAIL per questo primo decennio di Android
 - 🟢 **Google Photo** che diventa un'app standalone staccandosi da Google+
 - 🔴 il vertiginoso aumento di prezzo dei device nel passaggio da Nexus a Pixel
 - 🔴 i millemila **servizi e rebranding delle app di chat di Google**
+-->
+
+::timeline{events="🟢 Scoprire che non c'era bisogno di syncare il device con il PC (ai tempi era davvero una cosa nuova), 🟢 Flashare per la prima volta una ROM custom su un device, 🔴 il primo tablet Android che ho preso (Toshiba Folio),🟢 quando attivarono in Italia i servizi Google Play Books/Music e Movies eliminando il gap tra l'offerta di servizi dell'ecosistema iOS e Android, 🟢 il primo Chromecast,🟢 come già detto i Nexus 5 e 10, 🔴 il Nexus 7 perché è invecchiato male troppo velocemente, 🟢 Google Photos che diventa un'app standalone staccandosi da Google+, 🔴 il vertiginoso aumento di prezzo dei device nel passaggio da Nexus a Pixel, 🔴 i millemila servizi e rebranding delle app di chat di Google" years="2010,2011,,2012,2013,2014,,2015,2016,2018"}
+::

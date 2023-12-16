@@ -15,10 +15,10 @@ const formatDate = (date: string): string => {
 
 <template>
   <article class="card bg-neutral-content shadow-xl border-none">
-    <figure class="p-4 bg-base-100">
+    <figure class="p-4 bg-white">
       <img :src="device.image" :alt="device.title" />
     </figure>
-    <div class="card-body">
+    <div class="card-body dark:text-base-100">
       <div>
         <span v-for="tag in device.tags" class="badge badge-primary mr-2 !text-base-100 no-underline">{{ tag }}</span>
       </div>

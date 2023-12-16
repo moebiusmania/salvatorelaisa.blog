@@ -1,7 +1,7 @@
 ---
 title: 10 anni di blog!
 date: "2020-08-21"
-tags: ["blog"]
+tags: ["blog", "retrospettiva"]
 draft: false
 images:
   [

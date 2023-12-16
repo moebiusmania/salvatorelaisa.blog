@@ -1,8 +1,8 @@
 ---
 title: Kindle Paperwhite
-purchase: '2017-11-21'
-tags: ['ebook', 'reader']
-image: 'https://www.blogrecensioni.it/wp-content/uploads/2017/11/616y1qzHetL._SL1000_.jpg'
+purchase: "2017-11-21"
+tags: ["ebook", "reader"]
+image: "https://images.everyeye.it/img-screenshot/amazon-kindle-paperwhite-2015-v1-440305.jpg"
 url: https://www.amazon.it/kindle-paperwhite-16-gb-ora-con-schermo-da-68%E2%80%99%E2%80%99-e-tonalita-della-luce-regolabile-con-pubblicita/dp/B09TMP5Y2S
 ---
 
