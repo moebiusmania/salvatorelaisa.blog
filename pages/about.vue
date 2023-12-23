@@ -6,17 +6,44 @@ const { data } = await useAsyncData("about", () =>
 
 <template>
   <div>
-    <article class="prose max-w-none prose-a:text-primary">
+    <article class="prose prose-a:text-primary">
       <header>
-        <h1
-          class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
-        >
-          {{ data?.title }}
-        </h1>
+        <h1>{{ data?.title }}</h1>
       </header>
       <ContentRenderer :value="data || {}" />
-      <hr class="my-8" />
+      <hr />
     </article>
     <Tip />
   </div>
 </template>
+
+<style scoped>
+article {
+  max-width: none;
+
+  & h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 2.25rem;
+
+    @media (min-width: 640px) {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+  }
+
+  & hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+</style>

@@ -1,27 +1,6 @@
-<script setup lang="ts">
-const styles: string[] = [
-  'no-underline',
-  'bg-sky-500',
-  'hover:bg-sky-600',
-  'text-white',
-  'hover:text-white',
-  'flex',
-  'gap-2',
-  'items-center',
-  'justify-center',
-  'rounded-lg',
-  'py-3',
-  'px-8',
-  'text-xl',
-  'font-semibold',
-]
-</script>
-
 <template>
-  <a :class="styles.join(' ')" href="https://www.buymeacoffee.com/moebiusmania" rel="noreferrer noopener"
-    target="_blank">
-    <svg class="flex items-center" width="25px" height="32px" viewBox="0 0 884 1279" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+  <a href="https://www.buymeacoffee.com/moebiusmania" rel="noreferrer noopener" target="_blank">
+    <svg width="25px" height="32px" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z"
         fill="#0D0C22"></path>
       <path d="M803.896 388.891L802.916 389.166L803.896 388.891Z" fill="#0D0C22"></path>
@@ -58,3 +37,33 @@ const styles: string[] = [
     <span>Offrimi un caffé</span>
   </a>
 </template>
+
+<style scoped>
+a {
+  display: flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgb(14, 165, 233);
+
+  &:hover {
+    color: #ffffff;
+    background: rgb(2, 132, 199);
+  }
+
+  & svg {
+    display: flex;
+    align-items: center;
+  }
+}
+</style>

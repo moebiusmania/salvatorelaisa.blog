@@ -15,7 +15,17 @@ const { value = new Date().toISOString() } = defineProps<Props>();
 </script>
 
 <template>
-  <dd class="text-base font-medium leading-6 mb-2">
+  <dd>
     <time :datetime="date">Pubblicato: {{ date(value) }}</time>
   </dd>
 </template>
+
+<style scoped>
+dd {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+</style>

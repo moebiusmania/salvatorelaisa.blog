@@ -15,11 +15,33 @@ const { url } = defineProps<Props>();
 </script>
 
 <template>
-  <div class="py-6 text-sm flex justify-center">
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')"
-      class="hover:text-primary underline decoration-dotted">Parlane su X (<i>Twitter</i>)</a>
-    <span class="inline-block px-2">•</span>
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')"
-      class="hover:text-primary underline decoration-dotted">Codice sorgente su GitHub</a>
+  <div>
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')" class="hover:text-primary">Parlane su
+      X (<i>Twitter</i>)</a>
+    <span>•</span>
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')" class="hover:text-primary">Codice
+      sorgente su GitHub</a>
   </div>
 </template>
+
+<style scoped>
+div {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  & a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  & span {
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+</style>
