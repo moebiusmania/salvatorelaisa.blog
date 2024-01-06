@@ -45,18 +45,14 @@ const isReview = (tags: Array<string>): boolean => {
       <Meta property="twitter:image" :content="post.images[0]" />
     </Head>
 
-    <article class="prose max-w-none prose-a:text-primary">
-      <header class="text-center mb-12">
+    <article class="prose prose-a:text-primary">
+      <header>
         <Published :value="post.date" />
-        <h1
-          class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 mb-4">
-          {{ post.title }}
-        </h1>
-        <p class="my-2">
+        <h1>{{ post.title }}</h1>
+        <p>
           Tags:
-          <NuxtLink v-for="tag in post.tags"
-            class="uppercase inline-block mx-1 no-underline hover:text-primary hover:underline" :href="`/tags/${tag}`">{{
-              tag }}</NuxtLink>
+          <NuxtLink v-for="tag in post.tags" class="hover:text-primary" :href="`/tags/${tag}`">{{
+            tag }}</NuxtLink>
         </p>
         <ReadingTime :value="post.readingTime.text" />
         <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms" />
@@ -64,11 +60,66 @@ const isReview = (tags: Array<string>): boolean => {
       </header>
       <ContentRenderer :value="post" />
     </article>
-    <hr class="my-8 border-neutral-content dark:border-neutral" />
+    <hr class="border-neutral-content dark:border-neutral" />
     <Sharing :url="post._path" />
     <Tip />
   </div>
 </template>
+
+<style scoped>
+div {
+  &>article {
+    max-width: none;
+
+    & header {
+      margin-bottom: 3rem;
+      text-align: center;
+
+      &>h1 {
+        margin-bottom: 1rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 2.25rem;
+
+        @media (min-width: 640px) {
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          line-height: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 3rem;
+          line-height: 1;
+        }
+      }
+
+      &>p {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        & a {
+          display: inline-block;
+          margin-left: 0.25rem;
+          margin-right: 0.25rem;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &>hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+</style>
 
 <style>
 @import "../../utils/slide-animations.css";

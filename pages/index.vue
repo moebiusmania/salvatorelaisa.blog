@@ -30,16 +30,41 @@ const posts: ParsedContent[] = await queryContent()
       <Meta property="twitter:image" content="https://salvatorelaisa.blog/static/images/twitter-card.png" />
     </Head>
 
-    <p class="text-xl leading-7 text-secondary">{{ SITE_DESCRIPTION }}</p>
+    <p class="text-secondary">{{ SITE_DESCRIPTION }}</p>
 
-    <ul class="my-8 divide-y divide-neutral-content dark:divide-neutral">
+    <ul class="divide-neutral-content dark:divide-neutral">
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
 
-    <section class="flex justify-end text-base font-medium leading-6">
+    <section>
       <NuxtLink href="/post/page/1" class="text-primary hover:primary" aria-label="Tutti gli articoli">
         Tutti gli articoli &rarr;
       </NuxtLink>
     </section>
   </div>
 </template>
+
+<style scoped>
+div {
+  &>p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  &>ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top-width: 1px;
+  }
+
+  &>section {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+}
+</style>

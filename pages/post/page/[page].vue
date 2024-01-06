@@ -57,12 +57,9 @@ const onTyping = async (value: string): Promise<void> => {
 
 <template>
   <div>
-    <h1
-      class="text-3xl font-extrabold leading-9 tracking-tight text-base-content sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-      Tutti gli articoli
-    </h1>
+    <h1 class="text-base-content">Tutti gli articoli</h1>
     <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
-    <ul class="my-8 divide-y divide-neutral-content dark:divide-neutral">
+    <ul>
       <TransitionGroup name="list">
         <PostPreview v-for="post in posts" :post="post" :key="post._path?.replace('/', '')" />
       </TransitionGroup>
@@ -71,6 +68,35 @@ const onTyping = async (value: string): Promise<void> => {
       :all-posts="posts.length" />
   </div>
 </template>
+
+<style scoped>
+div {
+  & h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 2.25rem;
+
+    @media (min-width: 640px) {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+
+  & ul {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top-width: 1px;
+  }
+}
+</style>
 
 <!-- 
   just following the Vue 3 docs here

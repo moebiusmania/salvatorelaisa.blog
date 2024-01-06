@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { SITE_TITLE } from "@/utils/config";
 
-const classes = "mr-5 hover:text-neutral dark:hover:text-neutral-content"
+const classes = "navitem hover:text-neutral dark:hover:text-neutral-content"
 const nav: Array<{
   name: string,
   href: string
@@ -21,22 +21,22 @@ const route = useRoute();
 
 const toggleTheme = (dark: boolean) => dark ? route.path : `${route.path}?theme=dark`;
 
-const isActive = (href: string, route: any) => [classes, { underline: href === route.path }];
+const isActive = (href: string, route: any) => [classes, { "router-link-active": href === route.path }];
 </script>
 
 <template>
-  <header class="text-gray-600 body-font">
-    <div class="max-w-5xl mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <NuxtLink class="flex title-font font-medium items-center text-base-content mb-4 md:mb-0" href="/">
-        <img src="/static/images/avatar.png" :alt="SITE_TITLE" class="w-10 h-10 text-white rounded-full" />
-        <span class="ml-3 text-xl">{{ SITE_TITLE }}</span>
+  <header>
+    <div>
+      <NuxtLink class="text-base-content" href="/">
+        <img src="/static/images/avatar.png" :alt="SITE_TITLE" />
+        <span>{{ SITE_TITLE }}</span>
       </NuxtLink>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <nav>
         <NuxtLink v-for="(item, index) in nav" :key="index" :class="isActive(item.href, route)" :href="item.href">{{
           item.name }}</NuxtLink>
         <a aria-label="theme switcher" :href="toggleTheme(dark)"
-          class="w-6 h-6 pt-0.5 cursor-pointer hover:text-neutral dark:hover:text-neutral-content" id="theme">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor">
+          class="hover:text-neutral dark:hover:text-neutral-content" id="theme">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
             <path v-if="dark" class="sun" fill-rule="evenodd"
               d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
               clip-rule="evenodd"></path>
@@ -47,3 +47,79 @@ const isActive = (href: string, route: any) => [classes, { underline: href === r
     </div>
   </header>
 </template>
+
+<style scoped>
+header {
+  color: #4B5563;
+
+  &>div {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 64rem;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &>a {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+      font-weight: 500;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      & img {
+        border-radius: 9999px;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: #ffffff;
+      }
+
+      & span {
+        margin-left: 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    }
+
+    &>nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-left: auto;
+
+      @media (min-width: 768px) {}
+
+      &>a.navitem {
+        margin-right: 1.25rem;
+      }
+
+      &>a.router-link-active {
+        text-decoration: underline;
+      }
+
+      & a#theme {
+        padding-top: 0.125rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+
+        & svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+</style>

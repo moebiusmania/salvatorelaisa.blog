@@ -13,12 +13,12 @@ const next: number = page + 1;
 </script>
 
 <template>
-  <div class="pt-6 pb-8 space-y-2 md:space-y-5">
-    <nav class="flex justify-between">
+  <div>
+    <nav>
       <NuxtLink v-if="prev > 0" class="text-primary hover:text-primary" :href="`/post/page/${prev}`">
         <button aria-label="precedente">&larr; Precedente</button>
       </NuxtLink>
-      <button aria-label="precedente" v-else disabled class="text-neutral opacity-40">
+      <button aria-label="precedente" v-else disabled class="text-neutral">
         &larr; Precedente
       </button>
 
@@ -27,9 +27,30 @@ const next: number = page + 1;
       <NuxtLink v-if="allPosts === limit" class="text-primary hover:text-primary" :href="`/post/page/${next}`">
         <button aria-label="successivo">Successivo &rarr;</button>
       </NuxtLink>
-      <button aria-label="successivo" v-else disabled class="text-neutral opacity-40">
+      <button aria-label="successivo" v-else disabled class="text-neutral">
         Successivo &rarr;
       </button>
     </nav>
   </div>
 </template>
+
+<style scoped>
+div {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  margin-top: 0.5rem;
+
+  @media (min-width: 768px) {
+    margin-top: 1.25rem;
+  }
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+      opacity: 0.4;
+    }
+  }
+}
+</style>
