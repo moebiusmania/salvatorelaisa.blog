@@ -29,9 +29,7 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 
 <template>
   <div>
-    <h1>
-      Devices
-    </h1>
+    <h1 class="text-base-content">Devices</h1>
     <p>
       Un breve riassunto dei miei vari device passati e presenti per avere una
       piccola traccia storica senza dover per forza scrivere un post dedicato
@@ -68,12 +66,8 @@ div {
     }
   }
 
-  &>p:first-child {
+  &>p {
     margin-top: 1rem;
-  }
-
-  &>p:last-child {
-    margin-top: 0.5rem;
   }
 
   & ul {
@@ -81,7 +75,7 @@ div {
     margin-top: 2rem;
     margin-bottom: 2rem;
     gap: 1.5rem;
-    border-top-width: 1px;
+    border-top-width: 0px;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));

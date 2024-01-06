@@ -1,0 +1,24 @@
+/*
+Badge component from DaisyUI
+https://daisyui.com/components/badge
+*/
+
+.sl-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 200ms;
+  height: 22px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 0.563rem;
+  padding-right: 0.563rem;
+  border: 1px solid var(--badge-bg);
+  border-radius: 4px;
+  color: var(--badge-text);
+  background-color: var(--badge-bg);
+}

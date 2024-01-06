@@ -14,19 +14,19 @@ const formatDate = (date: string): string => {
 </script>
 
 <template>
-  <article class="card bg-neutral-content">
+  <article class="bg-neutral-content">
     <figure>
       <img :src="device.image" :alt="device.title" />
     </figure>
-    <div class="card-body dark:text-base-100">
+    <div class="dark:text-base-100">
       <div>
-        <span v-for="tag in device.tags" class="badge badge-primary !text-base-100">{{ tag }}</span>
+        <span v-for="tag in device.tags" class="sl-badge">{{ tag }}</span>
       </div>
       <p>
         Data di acquisto:
         {{ formatDate(device.purchase) }}
       </p>
-      <h2 class="card-title">
+      <h2>
         <NuxtLink class="hover:text-primary" :href="device.post || device.url">
           {{ device.title }}
         </NuxtLink>
@@ -38,17 +38,44 @@ const formatDate = (date: string): string => {
   </article>
 </template>
 
+<style>
+@import url('./Badge.css');
+</style>
+
 <style scoped>
+/* 
+Card component from DaisyUI
+https://daisyui.com/components/card/
+*/
+
 article {
   border-style: none;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
 
   & figure {
     padding: 1rem;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: unset;
+    border-end-end-radius: unset;
   }
 
   &>div {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 32px;
+
     & span {
       margin-right: 0.5rem;
       text-decoration: none;
@@ -61,6 +88,13 @@ article {
     }
 
     &>h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+
       & a {
         text-decoration: underline;
       }

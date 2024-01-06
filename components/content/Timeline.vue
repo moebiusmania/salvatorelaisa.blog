@@ -32,8 +32,44 @@ const getItems = (list: string): string[] => list.split(",").map((item) => item.
 </template>
 
 <style scoped>
+/* 
+Timeline component from DaisyUI 
+https://daisyui.com/components/timeline/
+*/
 section {
   & ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    --timeline-row-start: 0;
+
+    & li {
+      --timeline-col-start: 0;
+      --timeline-row-start: minmax(0, 1fr);
+      --timeline-row-end: minmax(0, 1fr);
+      justify-items: center;
+      display: grid;
+      flex-shrink: 0;
+      align-items: center;
+      grid-template-rows: var(--timeline-row-start, minmax(0, 1fr)) auto var(--timeline-row-end, minmax(0, 1fr));
+      grid-template-columns: var(--timeline-col-start, minmax(0, 1fr)) auto var(--timeline-col-end, minmax(0, 1fr));
+      position: relative;
+
+      & hr {
+        width: 0.25rem;
+        height: 100%;
+        border-width: 0px;
+      }
+
+      & hr:first-child {
+        margin-top: 0px;
+      }
+
+      & hr:last-child {
+        margin-top: 0px;
+      }
+    }
+
     & div.timeline-start {
       font-weight: 700;
     }
