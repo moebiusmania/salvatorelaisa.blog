@@ -6,12 +6,12 @@ const today: Date = new Date();
   <footer>
     <div>
       <span>Salvatore Laisa Blog</span>
-      <p class="dark:text-base-content sm:border-neutral-content dark:sm:border-neutral">
+      <p>
         &copy; 2010 - {{ today.getFullYear() }} — sviluppato con
-        <a href="https://v3.nuxtjs.org/" class="text-primary" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
+        <a href="https://v3.nuxtjs.org/" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>
       <div>
-        <a class="hover:text-primary" href="https://github.com/moebiusmania" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/moebiusmania" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub icon</title>
@@ -21,8 +21,7 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary" href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg" target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>YouTube icon</title>
@@ -32,8 +31,7 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary" href="https://www.linkedin.com/in/salvatorelaisa" target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/salvatorelaisa" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn icon</title>
@@ -43,7 +41,7 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a class="hover:text-primary" href="https://twitter.com/moebiusmania" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/moebiusmania" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>X (Twitter) icon</title>
@@ -70,6 +68,8 @@ footer {
     flex-direction: column;
     align-items: center;
     max-width: 64rem;
+    margin: 0 auto;
+    justify-content: center;
 
     @media (min-width: 640px) {
       flex-direction: row;
@@ -86,6 +86,7 @@ footer {
       margin-top: 1rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
+      color: var(--text-content-dark);
 
       @media (min-width: 640px) {
         padding-top: 0.5rem;
@@ -98,6 +99,7 @@ footer {
 
       & a {
         margin-left: 0.25rem;
+        color: var(--primary);
       }
     }
 
@@ -121,6 +123,10 @@ footer {
           width: 1.25rem;
           height: 1.25rem;
         }
+      }
+
+      & a:hover {
+        color: var(--primary);
       }
     }
   }

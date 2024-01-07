@@ -12,10 +12,14 @@ const { platforms = [] } = defineProps<Props>();
 <template>
   <p>
     Giocato su:
-    <NuxtLink v-for="platform in platforms" :href="platform.url" class="badge badge-primary !text-base-100">{{
+    <NuxtLink v-for="platform in platforms" :href="platform.url" class="sl-badge">{{
       platform.label }}</NuxtLink>
   </p>
 </template>
+
+<style>
+@import url('./Badge.css');
+</style>
 
 <style scoped>
 p {
