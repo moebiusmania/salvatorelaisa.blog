@@ -1,9 +1,15 @@
 html.light {
+  --primary: oklch(0.6039 0.228 269.1);
+  --text-dark: inherit;
   --badge-bg: oklch(0.6039 0.228 269.1);
   --badge-text: oklch(1 0 0);
+  --bg-neutral: oklch(0.958796 0.008588 247.915);
 }
 
 html.dark {
+  --primary: oklch(0.747039 0.158278 39.947);
+  --text-dark: oklch(0.22 0.019 237.69);
   --badge-bg: oklch(0.747039 0.158278 39.947);
   --badge-text: oklch(0.22 0.019 237.69);
+  --bg-neutral: oklch(0.7 0.019 237.69);
 }

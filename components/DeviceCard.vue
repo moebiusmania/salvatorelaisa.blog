@@ -14,11 +14,11 @@ const formatDate = (date: string): string => {
 </script>
 
 <template>
-  <article class="bg-neutral-content">
+  <article>
     <figure>
       <img :src="device.image" :alt="device.title" />
     </figure>
-    <div class="dark:text-base-100">
+    <div>
       <div>
         <span v-for="tag in device.tags" class="sl-badge">{{ tag }}</span>
       </div>
@@ -27,7 +27,7 @@ const formatDate = (date: string): string => {
         {{ formatDate(device.purchase) }}
       </p>
       <h2>
-        <NuxtLink class="hover:text-primary" :href="device.post || device.url">
+        <NuxtLink :href="device.post || device.url">
           {{ device.title }}
         </NuxtLink>
         <External v-if="device.url" />
@@ -55,6 +55,7 @@ article {
   display: flex;
   flex-direction: column;
   border-radius: 4px;
+  background-color: var(--bg-neutral);
 
   & figure {
     padding: 1rem;
@@ -75,6 +76,7 @@ article {
     flex-direction: column;
     gap: 0.5rem;
     padding: 32px;
+    color: var(--text-dark);
 
     & span {
       margin-right: 0.5rem;
@@ -95,8 +97,13 @@ article {
       line-height: 1.75rem;
       font-weight: 600;
 
-      & a {
+      &>a {
         text-decoration: underline;
+      }
+
+      &>a:hover {
+        color: var(--primary);
+        text-decoration-color: var(--primary);
       }
 
       & svg {
@@ -104,6 +111,11 @@ article {
         width: 1rem;
         height: 1rem;
       }
+    }
+
+    &>div {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
     }
   }
 }
