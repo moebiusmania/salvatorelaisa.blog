@@ -6,6 +6,11 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +21,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: 💻 Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
@@ -32,6 +37,6 @@ jobs:
         with:
           path: .output/public
 
-      - name: Deploy to GitHub Pages
+      - name: 🏁 Deploy to GitHub Pages
         id: gh-pages
         uses: actions/deploy-pages@v4
