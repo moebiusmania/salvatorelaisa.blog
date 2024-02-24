@@ -10,8 +10,9 @@
   },
   "devDependencies": {
     "@nuxt/content": "2.12.0",
+    "@nuxthq/studio": "1.0.11",
     "@nuxtjs/tailwindcss": "6.11.4",
-    "nuxt": "3.10.2",
+    "nuxt": "3.10.3",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "7.1.1"
