@@ -1,0 +1,16 @@
+{
+  "id": "IDGzS9QcT1",
+  "head": {
+    "link": [],
+    "style": [
+      {
+        "key": "island-style-qp0WWgRHkx",
+        "innerHTML": "div[data-v-bae147d3]{margin-top:.5rem;padding-bottom:2rem;padding-top:1.5rem}@media (min-width:768px){div[data-v-bae147d3]{margin-top:1.25rem}}div nav[data-v-bae147d3]{display:flex;justify-content:space-between}div nav button[data-v-bae147d3]{opacity:.4}"
+      }
+    ]
+  },
+  "html": "<div data-island-uid data-v-bae147d3><nav data-v-bae147d3><a href=\"/post/page/2\" class=\"text-primary hover:text-primary\" data-v-bae147d3><button aria-label=\"precedente\" data-v-bae147d3>← Precedente</button></a><span data-v-bae147d3>Pagina 3 di 6</span><a href=\"/post/page/4\" class=\"text-primary hover:text-primary\" data-v-bae147d3><button aria-label=\"successivo\" data-v-bae147d3>Successivo →</button></a></nav></div>",
+  "state": {},
+  "components": {},
+  "slots": {}
+}

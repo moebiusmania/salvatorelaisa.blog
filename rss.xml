@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Salvatore Laisa]]></title>
+        <description><![CDATA[Salvatore Laisa]]></description>
+        <link>https://salvatorelaisa.blog</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 24 Feb 2024 10:48:13 GMT</lastBuildDate>
+        <atom:link href="https://salvatorelaisa.blog/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[La bellezza di Midjourney]]></title>
+            <description><![CDATA[ Il prompt per generare questa immagine è stato: "the beauty of midjourney's art, 8k --ar 16:9"]]></description>
+            <link>https://salvatorelaisa.blog/post/midjourney</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/midjourney</guid>
+            <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[E' davvero l'ora di costruire un secondo cervello]]></title>
+            <description><![CDATA[Immagine generata con Midjourney]]></description>
+            <link>https://salvatorelaisa.blog/post/second-brain</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/second-brain</guid>
+            <pubDate>Sat, 16 Sep 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il ritorno dell'oscuro viandante]]></title>
+            <description><![CDATA[La splash screen di Diablo II: Resurrected.]]></description>
+            <link>https://salvatorelaisa.blog/post/diablo-ii-resurrected</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/diablo-ii-resurrected</guid>
+            <pubDate>Sat, 24 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[MacBook Air (M)2 - il ritorno]]></title>
+            <description><![CDATA[Uno scatto promozionale del MacBook Air M2.]]></description>
+            <link>https://salvatorelaisa.blog/post/macbook-air-m2</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/macbook-air-m2</guid>
+            <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[E il quattro vien da se]]></title>
+            <description><![CDATA[ Il logo del framework Nuxt 3]]></description>
+            <link>https://salvatorelaisa.blog/post/v4-nuxt</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/v4-nuxt</guid>
+            <pubDate>Tue, 25 Oct 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il castello errante di Howl]]></title>
+            <description><![CDATA[ La locandina del film, linkata da IMDB]]></description>
+            <link>https://salvatorelaisa.blog/post/il-castello-errante-di-howl</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/il-castello-errante-di-howl</guid>
+            <pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[L'era dell'iPod]]></title>
+            <description><![CDATA[ La homepage di apple.com dopo il lancio del primo iPod nel 2001.]]></description>
+            <link>https://salvatorelaisa.blog/post/era-ipod</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/era-ipod</guid>
+            <pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Spotify Daily Drive è il mio vero radio-killer]]></title>
+            <description><![CDATA[ L'introduzione per la playlist dal client desktop.]]></description>
+            <link>https://salvatorelaisa.blog/post/spotify-daily-drive</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/spotify-daily-drive</guid>
+            <pubDate>Sat, 26 Mar 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ritorno al passato]]></title>
+            <description><![CDATA[ Foto di Simon Schwyter su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/ritorno-al-passato</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/ritorno-al-passato</guid>
+            <pubDate>Mon, 27 Dec 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Quake, un quarto di secolo dopo]]></title>
+            <link>https://salvatorelaisa.blog/post/quake-25</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/quake-25</guid>
+            <pubDate>Sat, 21 Aug 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Github Codespaces]]></title>
+            <description><![CDATA[ La pagina promo di Github Codespaces.]]></description>
+            <link>https://salvatorelaisa.blog/post/github-codespaces</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/github-codespaces</guid>
+            <pubDate>Sat, 14 Aug 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Next(.js) blog]]></title>
+            <link>https://salvatorelaisa.blog/post/the-nextjs-blog</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/the-nextjs-blog</guid>
+            <pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Un Web senza Flash]]></title>
+            <description><![CDATA[ Il messaggio di avviso di fine supporto per il Flash Player.]]></description>
+            <link>https://salvatorelaisa.blog/post/fine-di-flash</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/fine-di-flash</guid>
+            <pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Creare un server privato di UT99 con Docker]]></title>
+            <link>https://salvatorelaisa.blog/post/ut99-server-docker</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/ut99-server-docker</guid>
+            <pubDate>Sat, 07 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[10 anni di blog!]]></title>
+            <description><![CDATA[ Foto di Sincerely Media su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/10-anni</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/10-anni</guid>
+            <pubDate>Fri, 21 Aug 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Fast and Furious]]></title>
+            <description><![CDATA[ La locandina del film, linkata da IMDB]]></description>
+            <link>https://salvatorelaisa.blog/post/fast-and-furious</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/fast-and-furious</guid>
+            <pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[[CHIUSO] Google Stadia: inizia l'era del cloud gaming?]]></title>
+            <description><![CDATA[ Il logo di Google Stadia.]]></description>
+            <link>https://salvatorelaisa.blog/post/google-stadia</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/google-stadia</guid>
+            <pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Chiude Google+]]></title>
+            <description><![CDATA[ Un'altra aggiunta al cimitero di Google...]]></description>
+            <link>https://salvatorelaisa.blog/post/google-plus-chiude</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/google-plus-chiude</guid>
+            <pubDate>Sun, 24 Feb 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Raspberry Pi (Zero) Mania]]></title>
+            <description><![CDATA[ Il mio RPi Zero "nudo" collegato alla TV]]></description>
+            <link>https://salvatorelaisa.blog/post/raspberry-mania</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/raspberry-mania</guid>
+            <pubDate>Wed, 06 Feb 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Addio Facebook...]]></title>
+            <description><![CDATA[ Foto di Thought Catalog su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/addio-facebook</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/addio-facebook</guid>
+            <pubDate>Fri, 04 Jan 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Welcome back (again)]]></title>
+            <description><![CDATA[ Foto di Sincerely Media su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/welcome-back</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/welcome-back</guid>
+            <pubDate>Sun, 30 Dec 2018 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Un anno a Milano...]]></title>
+            <description><![CDATA[ Foto di Cristina Gottardi su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/milano-anniversario</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/milano-anniversario</guid>
+            <pubDate>Sat, 03 Nov 2018 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Doom (2016)]]></title>
+            <description><![CDATA[Il logo del nuovo DOOM.]]></description>
+            <link>https://salvatorelaisa.blog/post/doom-2016</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/doom-2016</guid>
+            <pubDate>Sun, 02 Sep 2018 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Vanishing of Ethan Carter]]></title>
+            <description><![CDATA[ La copertina del gioco]]></description>
+            <link>https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/the-vanishing-of-ethan-carter</guid>
+            <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il mio primo laptop da gaming]]></title>
+            <description><![CDATA[Il mio Asus ROG pulito e aggiornato (update: foto di Agosto 2018).]]></description>
+            <link>https://salvatorelaisa.blog/post/gaming-laptop</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/gaming-laptop</guid>
+            <pubDate>Sat, 25 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[DVD come soprammobili]]></title>
+            <description><![CDATA[ Foto di Chris Lawton su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/dvd-soprammobili</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/dvd-soprammobili</guid>
+            <pubDate>Thu, 02 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Nvidia Shield TV]]></title>
+            <description><![CDATA[ La scatola della Shield TV, appena arrivata!]]></description>
+            <link>https://salvatorelaisa.blog/post/shield-tv</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/shield-tv</guid>
+            <pubDate>Wed, 19 Jul 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La fine dei Nexus]]></title>
+            <description><![CDATA[ L'evoluzione degli smartphone Nexus dal One al 5]]></description>
+            <link>https://salvatorelaisa.blog/post/addio-nexus</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/addio-nexus</guid>
+            <pubDate>Mon, 03 Apr 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La Rai ha finalmente capito da che parte deve andare]]></title>
+            <description><![CDATA[ Screenshot promozionale della nuova app presente sui vari store.]]></description>
+            <link>https://salvatorelaisa.blog/post/rai-tv-app</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/rai-tv-app</guid>
+            <pubDate>Thu, 23 Mar 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[100 giorni di codice]]></title>
+            <description><![CDATA[ Foto di Ruiwen Chua su Flickr]]></description>
+            <link>https://salvatorelaisa.blog/post/100-days-of-code</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/100-days-of-code</guid>
+            <pubDate>Tue, 03 Jan 2017 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Halloween goodies]]></title>
+            <description><![CDATA[Un mio scatto "hallowiniano" uploadato su Flickr.]]></description>
+            <link>https://salvatorelaisa.blog/post/halloween-2016</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/halloween-2016</guid>
+            <pubDate>Sat, 15 Oct 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Tra l'estate e l'autunno c'è sempre tanta roba!]]></title>
+            <link>https://salvatorelaisa.blog/post/estate-autunno-eventi</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/estate-autunno-eventi</guid>
+            <pubDate>Sun, 04 Sep 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Machinarium - il mio ritorno ai "punta e clicca"]]></title>
+            <description><![CDATA[La cover art del gioco.]]></description>
+            <link>https://salvatorelaisa.blog/post/machinarium</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/machinarium</guid>
+            <pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Un po meno niubbo]]></title>
+            <description><![CDATA[ Foto di roujo su Flickr.]]></description>
+            <link>https://salvatorelaisa.blog/post/meno-niubbo</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/meno-niubbo</guid>
+            <pubDate>Sat, 06 Feb 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[8 motivi per cui i Beatles su Spotify sono una gran cosa!]]></title>
+            <description><![CDATA[La copertina dell'album "Help!".]]></description>
+            <link>https://salvatorelaisa.blog/post/beatles-spotify</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/beatles-spotify</guid>
+            <pubDate>Sat, 26 Dec 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il bello di essere niubbi (di nuovo)]]></title>
+            <description><![CDATA[ Foto di Dan Cederholm su Flickr.]]></description>
+            <link>https://salvatorelaisa.blog/post/nuovamente-niubbo</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/nuovamente-niubbo</guid>
+            <pubDate>Sat, 17 Oct 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La mia tradizione dei Fuochi di fine estate]]></title>
+            <description><![CDATA[ Foto di Fabio Rossi su Flickr]]></description>
+            <link>https://salvatorelaisa.blog/post/fuochi-fine-estate</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/fuochi-fine-estate</guid>
+            <pubDate>Mon, 07 Sep 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hard Disks grossi vs il Cloud]]></title>
+            <description><![CDATA[ Foto di William Warby su Flickr]]></description>
+            <link>https://salvatorelaisa.blog/post/hdd-vs-cloud</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/hdd-vs-cloud</guid>
+            <pubDate>Tue, 07 Jul 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il ritorno di HeroQuest... e invece no!]]></title>
+            <description><![CDATA[La cover art di quello che doveva essere il remake di HeroQuest.]]></description>
+            <link>https://salvatorelaisa.blog/post/heroquest</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/heroquest</guid>
+            <pubDate>Sun, 01 Mar 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Powered by Ghost + OpenShift + GoDaddy]]></title>
+            <description><![CDATA[ Il logo di Ghost.]]></description>
+            <link>https://salvatorelaisa.blog/post/powered-by-ghost</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/powered-by-ghost</guid>
+            <pubDate>Tue, 24 Feb 2015 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Nexus 5]]></title>
+            <description><![CDATA[ Nexus 5, Nexus 10 e Chromecast, ovvero la famiglia di device Google/Android al completo!]]></description>
+            <link>https://salvatorelaisa.blog/post/nexus-5</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/nexus-5</guid>
+            <pubDate>Sat, 29 Mar 2014 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sperimentando il Chromecast]]></title>
+            <link>https://salvatorelaisa.blog/post/sperimentando-il-chromecast</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/sperimentando-il-chromecast</guid>
+            <pubDate>Sat, 15 Feb 2014 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Da 2.0 ad Apps]]></title>
+            <description><![CDATA[Immagine generata con Midjourney]]></description>
+            <link>https://salvatorelaisa.blog/post/2-0-apps</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/2-0-apps</guid>
+            <pubDate>Sun, 17 Nov 2013 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Codemotion 2013 | codice, amici e tutto quello che c'è in mezzo]]></title>
+            <description><![CDATA[ Io e alcuni amici di Appsterdam Milan mentre pratichiamo dell'air coding 🤣...]]></description>
+            <link>https://salvatorelaisa.blog/post/codemotion-2013</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/codemotion-2013</guid>
+            <pubDate>Tue, 23 Apr 2013 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il peso dell'anima (dei laptop)]]></title>
+            <description><![CDATA[Immagine generata con Midjourney]]></description>
+            <link>https://salvatorelaisa.blog/post/macbook-air</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/macbook-air</guid>
+            <pubDate>Thu, 06 Sep 2012 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Metro-mania!]]></title>
+            <description><![CDATA[ Foto di bytekut su Flickr]]></description>
+            <link>https://salvatorelaisa.blog/post/metro-mania</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/metro-mania</guid>
+            <pubDate>Fri, 27 Jul 2012 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La fine di una (parte di) blogosfera]]></title>
+            <link>https://salvatorelaisa.blog/post/splinder-chiude</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/splinder-chiude</guid>
+            <pubDate>Thu, 24 Nov 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[E' tempo di 2.0]]></title>
+            <description><![CDATA[ Foto di Banalities su Flickr]]></description>
+            <link>https://salvatorelaisa.blog/post/tempo-di-2-0</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/tempo-di-2-0</guid>
+            <pubDate>Sun, 16 Oct 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Setup Fotografico]]></title>
+            <description><![CDATA[ Una foto scattata con la mia Canon in Provenza nel 2010]]></description>
+            <link>https://salvatorelaisa.blog/post/setup-fotografico</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/setup-fotografico</guid>
+            <pubDate>Thu, 02 Jun 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Cinestesia - il cinema muto suonato live]]></title>
+            <link>https://salvatorelaisa.blog/post/cinestesia</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/cinestesia</guid>
+            <pubDate>Sat, 21 May 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ubuntu 11.04 (e in generale)]]></title>
+            <description><![CDATA[ Il desktop di Ubuntu 11.04]]></description>
+            <link>https://salvatorelaisa.blog/post/ubuntu-11</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/ubuntu-11</guid>
+            <pubDate>Sun, 01 May 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dove va il webdesigner?]]></title>
+            <description><![CDATA[ Un banner di Codemotion 2011.]]></description>
+            <link>https://salvatorelaisa.blog/post/codemotion-2011-talk</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/codemotion-2011-talk</guid>
+            <pubDate>Mon, 21 Feb 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Il Javaday cambia e diviene Codemotion]]></title>
+            <description><![CDATA[ Un banner di Codemotion 2011.]]></description>
+            <link>https://salvatorelaisa.blog/post/javaday-codemotion</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/javaday-codemotion</guid>
+            <pubDate>Thu, 13 Jan 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[2011]]></title>
+            <description><![CDATA[ Foto di Giacomo Alonzi su Unsplash]]></description>
+            <link>https://salvatorelaisa.blog/post/2011</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/2011</guid>
+            <pubDate>Wed, 05 Jan 2011 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[On the Android side]]></title>
+            <link>https://salvatorelaisa.blog/post/android-switch</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/android-switch</guid>
+            <pubDate>Tue, 07 Dec 2010 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Transatlantic live @Alcatraz Milano]]></title>
+            <link>https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/transatlantic-live-alcatraz-milano</guid>
+            <pubDate>Wed, 01 Sep 2010 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Chrome over Firefox]]></title>
+            <description><![CDATA[ I loghi di Chrome e Firefox a confronto.]]></description>
+            <link>https://salvatorelaisa.blog/post/chrome-over-firefox</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/chrome-over-firefox</guid>
+            <pubDate>Sun, 29 Aug 2010 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Si comincia!]]></title>
+            <description><![CDATA[ Uno screenshot della landing page in Flash che era live su questo sito prima di creare il blog.]]></description>
+            <link>https://salvatorelaisa.blog/post/start</link>
+            <guid isPermaLink="true">https://salvatorelaisa.blog/post/start</guid>
+            <pubDate>Sat, 21 Aug 2010 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

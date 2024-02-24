@@ -1,0 +1,20 @@
+{
+  "id": "HrIOT2YOuB",
+  "head": {
+    "link": [],
+    "style": [
+      {
+        "key": "island-style-EK3PA94IG4",
+        "innerHTML": ".sl-badge{align-items:center;background-color:var(--badge-bg);border:1px solid var(--badge-bg);border-radius:4px;color:var(--badge-text);display:inline-flex;font-size:.875rem;height:22px;justify-content:center;line-height:20px;padding-left:.563rem;padding-right:.563rem;transition-duration:.2s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(0,0,.2,1);width:-moz-fit-content;width:fit-content}"
+      },
+      {
+        "key": "island-style-7XPga7TPoJ",
+        "innerHTML": "p[data-v-2ad57a7e]{margin-bottom:.5rem;margin-top:.5rem}p a[data-v-2ad57a7e]{margin-left:.25rem;margin-right:.25rem;text-decoration:none}"
+      }
+    ]
+  },
+  "html": "<p data-island-uid data-v-2ad57a7e> Giocato su: <!--[--><a href=\"https://www.tuttoandroid.net/android/recensione-nexus-player-237731/\" rel=\"noopener noreferrer\" class=\"sl-badge\" data-v-2ad57a7e>Nexus Player (Android)</a><!--]--></p>",
+  "state": {},
+  "components": {},
+  "slots": {}
+}

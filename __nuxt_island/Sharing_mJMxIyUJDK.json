@@ -1,0 +1,16 @@
+{
+  "id": "mJMxIyUJDK",
+  "head": {
+    "link": [],
+    "style": [
+      {
+        "key": "island-style-KGFY8xA0Sb",
+        "innerHTML": "div[data-v-e07015d5]{display:flex;font-size:.875rem;justify-content:center;line-height:1.25rem;padding-bottom:1.5rem;padding-top:1.5rem}div a[data-v-e07015d5]{text-decoration:underline;text-decoration-style:dotted}div span[data-v-e07015d5]{display:inline-block;padding-left:.5rem;padding-right:.5rem}"
+      }
+    ]
+  },
+  "html": "<div data-island-uid data-v-e07015d5><a target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://twitter.com/intent/tweet?text=https%3A%2F%2Fsalvatorelaisa.blog%2Faddio-facebook @moebiusmania - \" class=\"hover:text-primary\" data-v-e07015d5>Parlane su X (<i data-v-e07015d5>Twitter</i>)</a><span data-v-e07015d5>•</span><a target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content/addio-facebook.md\" class=\"hover:text-primary\" data-v-e07015d5>Codice sorgente su GitHub</a></div>",
+  "state": {},
+  "components": {},
+  "slots": {}
+}
