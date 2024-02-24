@@ -23,10 +23,6 @@ jobs:
       - run: npm ci
       - run: npm run generate
 
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          # Build directory to deploy
-          build_dir: .output/public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
