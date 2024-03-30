@@ -23,12 +23,10 @@ const { platforms = [] } = defineProps<Props>();
 
 <style scoped>
 p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: var(--sp-1) 0;
 
   & a {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin: 0 var(--sp-05);
     text-decoration: none;
   }
 }

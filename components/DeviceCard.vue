@@ -54,11 +54,11 @@ article {
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
+  border-radius: var(--sp-05);
   background-color: var(--bg-neutral);
 
   & figure {
-    padding: 1rem;
+    padding: var(--sp-2);
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -74,25 +74,25 @@ article {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 32px;
+    gap: var(--sp-1);
+    padding: var(--sp-4);
     color: var(--text-dark);
 
     & span {
-      margin-right: 0.5rem;
+      margin-right: var(--sp-1);
       text-decoration: none;
     }
 
     &>p {
       flex: none;
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 1.25rem;
     }
 
     &>h2 {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: var(--sp-1);
       font-size: 1.25rem;
       line-height: 1.75rem;
       font-weight: 600;

@@ -13,10 +13,7 @@ section {
 
   &>div {
     margin: 0 auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: var(--sp-8) var(--sp-3);
     max-width: 64rem;
   }
 }

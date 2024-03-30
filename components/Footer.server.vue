@@ -61,10 +61,7 @@ footer {
 
   &>div {
     display: flex;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: var(--sp-4) var(--sp-3);
     flex-direction: column;
     align-items: center;
     max-width: 64rem;
@@ -76,24 +73,22 @@ footer {
     }
 
     &>span {
-      margin-left: 0.75rem;
+      margin-left: var(--sp-3);
       font-size: 1.25rem;
       line-height: 1.75rem;
     }
 
     &>p {
       display: flex;
-      margin-top: 1rem;
+      margin-top: var(--sp-2);
       font-size: 0.875rem;
       line-height: 1.25rem;
       color: var(--text-content-dark);
 
       @media (min-width: 640px) {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
+        padding: var(--sp-1) 0 var(--sp-1) var(--sp-2);
         margin-top: 0;
-        margin-left: 1rem;
+        margin-left: var(--sp-2);
         border-left-width: 2px;
       }
 
@@ -105,7 +100,7 @@ footer {
 
     &>div {
       display: flex;
-      margin-top: 1rem;
+      margin-top: var(--sp-2);
       gap: 0.75rem;
       justify-content: center;
       width: 9rem;

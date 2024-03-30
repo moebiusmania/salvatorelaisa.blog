@@ -37,7 +37,7 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
     </p>
     <p>
       L'ordine è cronologico sulla base del giorno o periodo in cui li ho
-      comprati.
+      comprati, ma non di tutti mi ricordo la data esatta...
     </p>
     <ul :class="getColumns(slug)">
       <DeviceCard v-for="post in posts" :device="post" />
@@ -48,14 +48,15 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 <style scoped>
 div {
   &>p {
-    margin-top: 1rem;
+    margin-top: var(--sp-2);
   }
 
   & ul {
     display: grid;
+    margin: var(--sp-3) 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    gap: 1.5rem;
+    gap: var(--sp-3);
     border-top-width: 0px;
 
     @media (min-width: 768px) {

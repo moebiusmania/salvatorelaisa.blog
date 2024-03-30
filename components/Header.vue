@@ -52,7 +52,7 @@ header {
 
   &>div {
     display: flex;
-    padding: 1.25rem;
+    padding: var(--sp-3);
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -65,7 +65,7 @@ header {
 
     &>a {
       display: flex;
-      margin-bottom: 1rem;
+      margin-bottom: var(--sp-2);
       align-items: center;
       font-weight: 500;
       color: var(--text-base-content);
@@ -75,14 +75,14 @@ header {
       }
 
       & img {
-        border-radius: 9999px;
+        border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;
         color: #ffffff;
       }
 
       & span {
-        margin-left: 0.75rem;
+        margin-left: var(--sp-2);
         font-size: 1.25rem;
         line-height: 1.75rem;
       }
@@ -100,7 +100,7 @@ header {
       }
 
       &>a.navitem {
-        margin-right: 1.25rem;
+        margin-right: var(--sp-3);
 
         &:hover {
           color: var(--header-link-hover);
@@ -113,7 +113,7 @@ header {
       }
 
       & a#theme {
-        padding-top: 0.125rem;
+        padding-top: 0;
         width: 1.5rem;
         height: 1.5rem;
         cursor: pointer;

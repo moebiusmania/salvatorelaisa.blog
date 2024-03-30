@@ -50,8 +50,7 @@ defineProps<{
 <style scoped>
 li {
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: var(--sp-4) 0;
   flex-wrap: wrap;
 
   @media (min-width: 768px) {
@@ -60,7 +59,7 @@ li {
 
   &>div:first-child {
     display: flex;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--sp-3);
     flex-direction: column;
 
     @media (min-width: 768px) {
@@ -69,7 +68,7 @@ li {
     }
 
     & span {
-      margin-top: 0.25rem;
+      margin-top: var(--sp-05);
     }
   }
 
@@ -81,7 +80,7 @@ li {
     }
 
     & h2 {
-      margin-bottom: 0.5rem;
+      margin-bottom: var(--sp-1);
       font-size: 1.5rem;
       line-height: 2rem;
       font-weight: 500;
@@ -92,7 +91,7 @@ li {
       flex-wrap: wrap;
 
       &>a {
-        margin-right: 0.75rem;
+        margin-right: var(--sp-2);
         font-size: 0.875rem;
         line-height: 1.25rem;
         font-weight: 500;
@@ -101,20 +100,19 @@ li {
     }
 
     & p {
-      margin-top: 1.5rem;
+      margin-top: var(--sp-3);
       line-height: 1.625;
     }
 
     &>a:last-child {
       display: inline-flex;
-      margin-top: 1rem;
+      margin-top: var(--sp-2);
       align-items: center;
 
       & svg {
-        margin-left: 0.5rem;
+        margin-left: var(--sp-1);
         width: 1rem;
         height: 1rem;
-
       }
     }
   }

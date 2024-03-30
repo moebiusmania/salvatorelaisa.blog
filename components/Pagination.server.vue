@@ -36,20 +36,24 @@ const next: number = page + 1;
 
 <style scoped>
 div {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: var(--sp-3);
+  padding-bottom: var(--sp-4);
   margin-top: 0.5rem;
 
   @media (min-width: 768px) {
-    margin-top: 1.25rem;
+    margin-top: var(--sp-2);
   }
 
   & nav {
     display: flex;
     justify-content: space-between;
 
-    & button {
+    &>button {
       opacity: 0.4;
+    }
+
+    &>a {
+      opacity: 1;
     }
   }
 }

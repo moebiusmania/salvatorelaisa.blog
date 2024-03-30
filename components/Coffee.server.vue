@@ -41,14 +41,11 @@
 <style scoped>
 a {
   display: flex;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  gap: 0.5rem;
+  padding: var(--sp-2) var(--sp-4);
+  gap: var(--sp-1);
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: var(--sp-1);
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;

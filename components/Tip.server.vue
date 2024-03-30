@@ -17,7 +17,7 @@ section {
   margin: 0 auto;
 
   & p {
-    margin-bottom: 1rem;
+    margin-bottom: var(--sp-2);
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-style: italic;

@@ -36,8 +36,7 @@ const { results, value } = defineProps<Props>();
 
 <style scoped>
 form {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin: var(--sp-5) 0;
 
   & input {
     width: 100%;

@@ -12,7 +12,6 @@ defineProps<{
 
 <style scoped>
 p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: var(--sp-1) 0;
 }
 </style>

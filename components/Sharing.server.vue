@@ -16,7 +16,8 @@ const { url } = defineProps<Props>();
 
 <template>
   <div>
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')" class="hover:text-primary">Parlane su
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')" class="hover:text-primary">Parlane
+      su
       X (<i>Twitter</i>)</a>
     <span>•</span>
     <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')" class="hover:text-primary">Codice
@@ -27,8 +28,7 @@ const { url } = defineProps<Props>();
 <style scoped>
 div {
   display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: var(--sp-3) 0;
   justify-content: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -40,8 +40,7 @@ div {
 
   & span {
     display: inline-block;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0 var(--sp-1);
   }
 }
 </style>
