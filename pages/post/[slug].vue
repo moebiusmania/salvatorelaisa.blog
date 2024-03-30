@@ -52,7 +52,7 @@ const isReview = (tags: Array<string>): boolean => {
         <p>
           Tags:
           <NuxtLink v-for="tag in post.tags" class="hover:text-primary" :href="`/tags/${tag}`">{{
-            tag }}</NuxtLink>
+        tag }}</NuxtLink>
         </p>
         <ReadingTime :value="post.readingTime.text" />
         <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms" />
@@ -76,22 +76,8 @@ div {
       text-align: center;
 
       &>h1 {
-        margin-bottom: 1rem;
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-        font-weight: 800;
-        letter-spacing: -0.025em;
-        line-height: 2.25rem;
-
-        @media (min-width: 640px) {
-          font-size: 2.25rem;
-          line-height: 2.5rem;
-          line-height: 2.5rem;
-        }
-
         @media (min-width: 768px) {
           font-size: 3rem;
-          line-height: 1;
         }
       }
 

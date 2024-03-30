@@ -47,25 +47,6 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 
 <style scoped>
 div {
-  & h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    line-height: 2.25rem;
-
-    @media (min-width: 640px) {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      line-height: 2.5rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 3.75rem;
-      line-height: 1;
-    }
-  }
-
   &>p {
     margin-top: 1rem;
   }

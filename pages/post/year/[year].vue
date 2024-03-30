@@ -33,26 +33,6 @@ div {
     line-height: 1.75rem;
   }
 
-  & h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    line-height: 2.25rem;
-    text-transform: capitalize;
-
-    @media (min-width: 640px) {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      line-height: 2.5rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 3.75rem;
-      line-height: 1;
-    }
-  }
-
   & ul {
     margin-top: 2rem;
     margin-bottom: 2rem;

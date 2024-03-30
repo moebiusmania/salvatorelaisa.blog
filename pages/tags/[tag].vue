@@ -24,7 +24,7 @@ const posts: ParsedContent[] = await queryContent()
 
 <style scoped>
 div {
-  &p {
+  & p {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -32,23 +32,7 @@ div {
   }
 
   & h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    line-height: 2.25rem;
     text-transform: capitalize;
-
-    @media (min-width: 640px) {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      line-height: 2.5rem;
-    }
-
-    @media (min-width: 768px) {
-      font-size: 3.75rem;
-      line-height: 1;
-    }
   }
 
   & ul {

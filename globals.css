@@ -1,4 +1,18 @@
+/* SPACING TOKENS */
+
+html {
+  --spacing-unit: 8px;
+  --sp-05: calc(var(--spacing-unit) / 2);
+  --sp-1: calc(var(--spacing-unit) * 1);
+  --sp-2: calc(var(--spacing-unit) * 2);
+  --sp-3: calc(var(--spacing-unit) * 3);
+  --sp-4: calc(var(--spacing-unit) * 4);
+}
+
+/* COLOR TOKENS */
+
 html.light {
+  --white: #fff;
   --primary: oklch(0.6039 0.228 269.1);
   --text-dark: inherit;
   --text-content-dark: inherit;
@@ -22,4 +36,25 @@ html.dark {
 
   --badge-bg: var(--primary);
   --badge-text: var(--text-dark);
+}
+
+/* TYPOGRAPHY ELEMENTS */
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 2.25rem;
+
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
