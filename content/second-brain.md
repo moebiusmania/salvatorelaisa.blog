@@ -74,7 +74,9 @@ Il "difetto" principale di Obsidian è il suo non essere "batteries included" qu
 
 Motivo per cui ci sto agganciando qualche plugin di terze parti:
 
-- [Remotely save](https://github.com/remotely-save/remotely-save) per syncare il vault tra i vari device utilizzando OneDrive come controparte remota all'archivio locale
+- sync dei dati tra più dispositivi:
+  - ~~[Remotely save](https://github.com/remotely-save/remotely-save) per syncare il vault tra i vari device utilizzando OneDrive come controparte remota all'archivio locale~~
+  - da **Aprile 2024** sto utilizzando il nuovo piano [Sync Standard](https://obsidian.md/sync) di Obsidian di circa 48€ annuali, ed è dannatamente comodo!s
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban) per le poche board che utilizzo per tenere traccia di libri, giochi e serie (_e salutare [Trello](https://trello.com/it)_)
 - [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin) per i pochi disegni che faccio, tramite appunto l'ottima [webapp di Excalidraw](https://excalidraw.com/)
 
