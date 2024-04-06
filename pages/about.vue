@@ -6,7 +6,7 @@ const { data } = await useAsyncData("about", () =>
 
 <template>
   <div>
-    <article class="prose prose-a:text-primary">
+    <article class="content">
       <header>
         <h1>{{ data?.title }}</h1>
       </header>
@@ -26,12 +26,14 @@ article {
       font-size: 3rem;
       line-height: 1;
     }
-
   }
 
   & hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: var(--sp-4) 0;
+  }
+
+  a {
+    color: var(--primary);
   }
 }
 </style>

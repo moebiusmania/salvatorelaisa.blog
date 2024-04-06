@@ -6,23 +6,20 @@ const years: Array<string> = Array.from(new Array(difference), (e, i) => BASE + 
 </script>
 
 <template>
-  <div class="dark:divide-gray-700">
+  <div>
     <div>
       <h1>Anni</h1>
     </div>
     <div>
       <div v-for="year in years">
-        <NuxtLink class="text-primary hover:primary" :href="`/post/year/${year}`">{{
-        year }}</NuxtLink>
-        <!-- <NuxtLink class="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
-          :href="`/year/${tag.label}`">({{ tag.items }})</NuxtLink> -->
+        <NuxtLink :href="`/post/year/${year}`">{{ year }}</NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-div {
+section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,43 +28,59 @@ div {
   border-color: #E5E7EB;
 
   @media (min-width: 768px) {
-    margin-top: 6rem;
-    margin-left: 1.5rem;
+    margin-top: var(--sp-8);
+    margin-left: var(--sp-3);
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-top-width: 0;
   }
 
-  & div:first-child {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-    margin-left: 0.5rem;
+  &>div:first-child {
+    padding-top: var(--sp-3);
+    padding-bottom: var(--sp-4);
+    margin-left: var(--sp-1);
 
     @media (min-width: 768px) {
-      margin-top: 1.25rem;
-    }
-
-    & h1 {
-      text-transform: capitalize;
+      margin-top: var(--sp-3);
     }
   }
 
-  & div:last-child {
+  & h1 {
+    text-transform: capitalize;
+  }
+
+  &>div:last-child {
     display: flex;
     flex-wrap: wrap;
     max-width: 32rem;
 
-    & div {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      margin-right: 1.25rem;
+    &>div {
+      margin-top: var(--sp-1);
+      margin-bottom: var(--sp-1);
+      margin-right: var(--sp-3);
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
 
-      & a {
-        margin-right: 0.75rem;
+      :hover {
+        text-decoration: underline;
+      }
+
+      &>a:first-child {
+        margin-right: var(--sp-2);
         font-size: 0.875rem;
         line-height: 1.25rem;
         font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      &>a:last-child {
+        margin-left: calc(var(--sp-1) * -1);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        color: #4B5563;
         text-transform: uppercase;
       }
     }

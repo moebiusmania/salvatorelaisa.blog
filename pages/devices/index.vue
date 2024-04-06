@@ -29,7 +29,7 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 
 <template>
   <div>
-    <h1 class="text-base-content">Devices</h1>
+    <h1>Devices</h1>
     <p>
       Un breve riassunto dei miei vari device passati e presenti per avere una
       piccola traccia storica senza dover per forza scrivere un post dedicato
@@ -47,6 +47,10 @@ const posts: ParsedContent[] = slug ? await getOne() : await getAll();
 
 <style scoped>
 div {
+  &>h1 {
+    color: var(--text-base-content);
+  }
+
   &>p {
     margin-top: var(--sp-2);
   }
@@ -54,8 +58,6 @@ div {
   & ul {
     display: grid;
     margin: var(--sp-3) 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     gap: var(--sp-3);
     border-top-width: 0px;
 

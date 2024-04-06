@@ -18,11 +18,10 @@ const { results, value } = defineProps<Props>();
 </script>
 
 <template>
-  <form class="form-control">
-    <div class="input-group">
-      <input type="text" :value="value" placeholder="Cerca tra gli articoli (per titolo)"
-        class="input input-bordered input-primary" @input="onTyping" />
-      <button v-if="value.length !== 0" class="btn btn-square" type="button" @click="emit('clear')">
+  <form>
+    <div>
+      <input type="text" :value="value" placeholder="Cerca tra gli articoli (per titolo)" @input="onTyping" />
+      <button v-if="value.length !== 0" type="button" @click="emit('clear')">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -38,17 +37,54 @@ const { results, value } = defineProps<Props>();
 form {
   margin: var(--sp-5) 0;
 
+  & div {
+    display: flex;
+    align-items: center;
+  }
+
   & input {
     width: 100%;
+    border-color: var(--primary);
+    appearance: none;
+    height: 3rem;
+    padding-left: var(--sp-2);
+    padding-right: var(--sp-2);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 2px;
 
     @media (min-width: 768px) {
       max-width: 36rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: var(--primary);
+      outline: var(--primary);
+      outline-style: solid;
+      outline-width: 2px;
+      outline-offset: 2px;
     }
   }
 
   & svg {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  & button {
+    display: inline-flex;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-base-content);
+    background-color: oklch(0.93 0 0);
   }
 }
 </style>

@@ -93,9 +93,6 @@ article {
       display: flex;
       align-items: center;
       gap: var(--sp-1);
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      font-weight: 600;
 
       &>a {
         text-decoration: underline;

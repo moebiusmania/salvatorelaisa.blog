@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxthq/studio"],
+  modules: ["@nuxt/content", "@nuxthq/studio"],
   experimental: {
     componentIslands: true,
   },

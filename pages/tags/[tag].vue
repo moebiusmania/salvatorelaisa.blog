@@ -12,11 +12,11 @@ const posts: ParsedContent[] = await queryContent()
 
 <template>
   <div>
-    <p class="text-secondary">
+    <p>
       {{ posts.length }} articoli trovati con il tag
     </p>
-    <h1 class="text-base-content">{{ tag }}</h1>
-    <ul class="divide-neutral-content dark:divide-neutral">
+    <h1>{{ tag }}</h1>
+    <ul>
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
   </div>
@@ -25,20 +25,21 @@ const posts: ParsedContent[] = await queryContent()
 <style scoped>
 div {
   & p {
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--sp-2);
     font-size: 1.25rem;
     line-height: 1.75rem;
     line-height: 1.75rem;
+    color: var(--text-secondary-content);
   }
 
   & h1 {
     text-transform: capitalize;
+    color: var(--text-base-content);
   }
 
   & ul {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-top-width: 1px;
+    border-top: 1px solid rgb(229, 231, 235);
+    margin: var(--sp-4) 0;
   }
 }
 </style>

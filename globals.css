@@ -18,9 +18,11 @@ html {
 html.light {
   --white: #fff;
   --primary: oklch(0.6039 0.228 269.1);
+  --secondary: oklch(0.223899 0.031305 278.072 / 0.8);
   --text-dark: inherit;
   --text-content-dark: inherit;
   --text-base-content: oklch(0.223899 0.031305 278.072);
+  --text-secodary-content: oklch(0.653694 0.054756 256.688);
   --bg-neutral: oklch(0.958796 0.008588 247.915);
 
   --header-link-hover: inherit;
@@ -60,5 +62,49 @@ h1 {
   @media (min-width: 768px) {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-base-content);
+
+  & h1 {
+    margin-bottom: var(--sp-5);
+  }
+
+  & h2 {
+    margin-top: var(--sp-5);
+    margin-bottom: var(--sp-3);
+  }
+
+  & p {
+    margin: var(--sp-3) 0;
+  }
+
+  & ul, 
+  & ol {
+    margin-bottom: var(--sp-3);
+    padding-left: var(--sp-3);
+
+    & li {
+      margin: var(--sp-1) 0;
+      padding-left: var(--sp-1);
+    }
+  }
+
+  & ul {
+    list-style: disc;
+  }
+
+  & a {
+    color: var(--primary)
   }
 }

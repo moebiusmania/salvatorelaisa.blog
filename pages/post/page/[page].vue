@@ -57,7 +57,7 @@ const onTyping = async (value: string): Promise<void> => {
 
 <template>
   <div>
-    <h1 class="text-base-content">Tutti gli articoli</h1>
+    <h1>Tutti gli articoli</h1>
     <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
     <ul>
       <TransitionGroup name="list">
@@ -71,9 +71,14 @@ const onTyping = async (value: string): Promise<void> => {
 
 <style scoped>
 div {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    color: var(--text-base-content)
+  }
+
   & ul {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: var(--sp-3) 0;
     border-top-width: 1px;
   }
 }

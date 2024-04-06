@@ -12,13 +12,9 @@ const posts: ParsedContent[] = await queryContent()
 
 <template>
   <div>
-    <p class="text-secondary">
-      {{ posts.length }} articoli trovati
-    </p>
-    <h1 class="text-base-content">
-      Ricerca per anno: {{ year }}
-    </h1>
-    <ul class="divide-neutral-content dark:divide-neutral">
+    <p>{{ posts.length }} articoli trovati</p>
+    <h1>Ricerca per anno: {{ year }}</h1>
+    <ul>
       <PostPreview v-for="post in posts" :post="post" />
     </ul>
   </div>
@@ -26,17 +22,21 @@ const posts: ParsedContent[] = await queryContent()
 
 <style scoped>
 div {
+  & h1 {
+    color: var(--text-base-content);
+  }
+
   & p {
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--sp-2);
     font-size: 1.25rem;
     line-height: 1.75rem;
     line-height: 1.75rem;
+    color: var(--text-secondary-content);
   }
 
   & ul {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-top-width: 1px;
+    border-top: 1px solid rgb(229, 231, 235);
+    margin: var(--sp-4) 0;
   }
 }
 </style>

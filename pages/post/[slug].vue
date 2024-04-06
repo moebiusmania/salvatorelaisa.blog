@@ -45,13 +45,13 @@ const isReview = (tags: Array<string>): boolean => {
       <Meta property="twitter:image" :content="post.images[0]" />
     </Head>
 
-    <article class="prose prose-a:text-primary">
+    <article class="content">
       <header>
         <Published :value="post.date" />
         <h1>{{ post.title }}</h1>
         <p>
           Tags:
-          <NuxtLink v-for="tag in post.tags" class="hover:text-primary" :href="`/tags/${tag}`">{{
+          <NuxtLink v-for="tag in post.tags" :href="`/tags/${tag}`">{{
         tag }}</NuxtLink>
         </p>
         <ReadingTime :value="post.readingTime.text" />
@@ -60,7 +60,7 @@ const isReview = (tags: Array<string>): boolean => {
       </header>
       <ContentRenderer :value="post" />
     </article>
-    <hr class="border-neutral-content dark:border-neutral" />
+    <hr />
     <Sharing :url="post._path" />
     <Tip />
   </div>
@@ -72,7 +72,7 @@ div {
     max-width: none;
 
     & header {
-      margin-bottom: 3rem;
+      margin-bottom: var(--sp-6);
       text-align: center;
 
       &>h1 {
@@ -82,13 +82,11 @@ div {
       }
 
       &>p {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin: var(--sp-1) 0;
 
         & a {
           display: inline-block;
-          margin-left: 0.25rem;
-          margin-right: 0.25rem;
+          margin: 0 var(--sp-05);
           text-decoration: none;
           text-transform: uppercase;
 
@@ -101,8 +99,8 @@ div {
   }
 
   &>hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    border-top: 1px solid rgb(229, 231, 235);
+    margin: var(--sp-3) 0;
   }
 }
 </style>

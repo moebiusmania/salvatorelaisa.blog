@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <li>
     <div>
-      <span class="text-secondary">
+      <span>
         {{
           new Date(post.date).toLocaleDateString("it-it", {
             year: "numeric",
@@ -21,19 +21,19 @@ defineProps<{
     </div>
     <div>
       <NuxtLink :href="`/post${post._path}`">
-        <h2 class="text-base-content">
+        <h2>
           {{ post.title }}
         </h2>
       </NuxtLink>
       <div>
-        <NuxtLink v-for="tag in post.tags" class="text-primary hover:text-primary" :href="`/tags/${tag}`">
+        <NuxtLink v-for="tag in post.tags" :href="`/tags/${tag}`">
           {{ tag }}
         </NuxtLink>
       </div>
-      <p class="dark:text-base-content">
+      <p>
         {{ post.summary }}
       </p>
-      <NuxtLink class="text-primary hover:text-primary" :href="`/post${post._path}`">
+      <NuxtLink :href="`/post${post._path}`">
         Continua a leggere ({{
           post.readingTime.text.replace("min read", "minuti")
         }})
@@ -69,6 +69,7 @@ li {
 
     & span {
       margin-top: var(--sp-05);
+      color: var(--secondary)
     }
   }
 
@@ -81,9 +82,7 @@ li {
 
     & h2 {
       margin-bottom: var(--sp-1);
-      font-size: 1.5rem;
-      line-height: 2rem;
-      font-weight: 500;
+      color: var(--text-base-content)
     }
 
     &>div {
@@ -96,6 +95,11 @@ li {
         line-height: 1.25rem;
         font-weight: 500;
         text-transform: uppercase;
+        color: var(--primary);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -108,6 +112,7 @@ li {
       display: inline-flex;
       margin-top: var(--sp-2);
       align-items: center;
+      color: var(--primary);
 
       & svg {
         margin-left: var(--sp-1);

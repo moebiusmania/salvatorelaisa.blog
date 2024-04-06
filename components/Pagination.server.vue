@@ -15,19 +15,19 @@ const next: number = page + 1;
 <template>
   <div>
     <nav>
-      <NuxtLink v-if="prev > 0" class="text-primary hover:text-primary" :href="`/post/page/${prev}`">
+      <NuxtLink v-if="prev > 0" :href="`/post/page/${prev}`">
         <button aria-label="precedente">&larr; Precedente</button>
       </NuxtLink>
-      <button aria-label="precedente" v-else disabled class="text-neutral">
+      <button aria-label="precedente" v-else disabled>
         &larr; Precedente
       </button>
 
       <span>Pagina {{ page }} di {{ totalPages }}</span>
 
-      <NuxtLink v-if="allPosts === limit" class="text-primary hover:text-primary" :href="`/post/page/${next}`">
+      <NuxtLink v-if="allPosts === limit" :href="`/post/page/${next}`">
         <button aria-label="successivo">Successivo &rarr;</button>
       </NuxtLink>
-      <button aria-label="successivo" v-else disabled class="text-neutral">
+      <button aria-label="successivo" v-else disabled>
         Successivo &rarr;
       </button>
     </nav>
@@ -48,13 +48,23 @@ div {
     display: flex;
     justify-content: space-between;
 
+    &>a {
+      opacity: 1;
+      color: var(--primary);
+
+      &>button {
+        color: var(--primary);
+      }
+    }
+
     &>button {
+      color: var(--text-base-content)
+    }
+
+    &>button:disabled {
       opacity: 0.4;
     }
 
-    &>a {
-      opacity: 1;
-    }
   }
 }
 </style>

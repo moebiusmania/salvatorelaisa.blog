@@ -16,11 +16,11 @@ const { url } = defineProps<Props>();
 
 <template>
   <div>
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')" class="hover:text-primary">Parlane
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')">Parlane
       su
       X (<i>Twitter</i>)</a>
     <span>•</span>
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')" class="hover:text-primary">Codice
+    <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')">Codice
       sorgente su GitHub</a>
   </div>
 </template>
@@ -36,6 +36,11 @@ div {
   & a {
     text-decoration: underline;
     text-decoration-style: dotted;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary);
+    }
   }
 
   & span {
