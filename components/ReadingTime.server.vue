@@ -5,13 +5,13 @@ defineProps<{
 </script>
 
 <template>
-  <p>
+  <p class="reading">
     <small>Tempo di lettura: {{ value.replace("min read", "minuti") }}</small>
   </p>
 </template>
 
 <style scoped>
-p {
-  margin: var(--sp-1) 0;
+p.reading {
+  margin: 0 0 var(--sp-1);
 }
 </style>
