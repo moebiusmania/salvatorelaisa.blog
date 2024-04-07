@@ -48,7 +48,7 @@ const isActive = (href: string, route: any) => ["navitem", { "router-link-active
 
 <style scoped>
 header {
-  color: #4B5563;
+  color: var(--text-base-content);
 
   &>div {
     display: flex;
@@ -101,6 +101,7 @@ header {
 
       &>a.navitem {
         margin-right: var(--sp-3);
+        color: var(--text-base-content);
 
         &:hover {
           color: var(--header-link-hover);

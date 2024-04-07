@@ -71,6 +71,12 @@ h2 {
   line-height: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* CONTENT SPECIFIC STYLES */
 .content {
   font-size: 1rem;
   line-height: 1.75;
@@ -105,6 +111,12 @@ h2 {
   }
 
   & a {
-    color: var(--primary)
+    color: var(--primary);
+  }
+
+  & img {
+    height: auto;
+    max-width: 100%;
+    display: block;
   }
 }

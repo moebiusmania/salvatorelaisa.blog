@@ -76,6 +76,8 @@ div {
       text-align: center;
 
       &>h1 {
+        margin: var(--sp-2) 0;
+
         @media (min-width: 768px) {
           font-size: 3rem;
         }

@@ -81,6 +81,7 @@ li {
     }
 
     & h2 {
+      margin-top: 0;
       margin-bottom: var(--sp-1);
       color: var(--text-base-content)
     }

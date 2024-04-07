@@ -10,7 +10,7 @@ const today: Date = new Date();
         &copy; 2010 - {{ today.getFullYear() }} — sviluppato con
         <a href="https://v3.nuxtjs.org/" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>
-      <div>
+      <div class="social">
         <a href="https://github.com/moebiusmania" target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@ footer {
 
     &>p {
       display: flex;
-      margin-top: var(--sp-2);
+      margin: var(--sp-2) 0 0 0;
       font-size: 0.875rem;
       line-height: 1.25rem;
       color: var(--text-content-dark);
@@ -98,7 +98,7 @@ footer {
       }
     }
 
-    &>div {
+    &>.social {
       display: flex;
       margin-top: var(--sp-2);
       gap: 0.75rem;
@@ -113,7 +113,9 @@ footer {
         justify-content: flex-end;
       }
 
-      & a {
+      &>a {
+        color: var(--text-base-content) !important;
+
         & svg {
           width: 1.25rem;
           height: 1.25rem;
