@@ -11,9 +11,7 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 - [Nuxt 3](https://v3.nuxtjs.org/) - main application framework
   - [Vue 3](https://vuejs.org/) - UI component library
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
-- [Tailwind.CSS](https://tailwindcss.com/) - utility-first CSS framework
-  - [Typography](https://tailwindcss.com/docs/typography-plugin) - (plugin) typographic defaults for HTML
-  - [DaisyUI](https://daisyui.com/) - components library built on top of Tailwind.css
+- [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, leveraging [Vue's CSS Module](https://vuejs.org/api/sfc-css-features.html#css-modules) support
 - [remark-reading-time](https://www.npmjs.com/package/remark-reading-time) - Medium's like reading time estimation
 - [rss](https://www.npmjs.com/package/rss) - utility to help create the RSS `.xml` file
 - [sitemap](https://www.npmjs.com/package/sitemap) - utility to help create the sitemap `.xml` file
