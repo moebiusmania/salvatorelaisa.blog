@@ -68,6 +68,14 @@ article {
     border-start-end-radius: inherit;
     border-end-start-radius: unset;
     border-end-end-radius: unset;
+    width: 100%;
+    margin: 0;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &>div {
@@ -78,9 +86,10 @@ article {
     padding: var(--sp-4);
     color: var(--text-dark);
 
-    & span {
-      margin-right: var(--sp-1);
-      text-decoration: none;
+    &>div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-1);
     }
 
     &>p {
@@ -93,6 +102,7 @@ article {
       display: flex;
       align-items: center;
       gap: var(--sp-1);
+      margin: 0;
 
       &>a {
         text-decoration: underline;

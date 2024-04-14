@@ -55,9 +55,10 @@ div {
     margin-top: var(--sp-2);
   }
 
-  & ul {
+  &>ul {
     display: grid;
     margin: var(--sp-3) 0;
+    padding: 0;
     gap: var(--sp-3);
     border-top-width: 0px;
 

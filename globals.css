@@ -119,4 +119,11 @@ a {
     max-width: 100%;
     display: block;
   }
+
+  & blockquote {
+    font-size: 1.1em;
+    margin-left: 0;
+    padding-left: var(--sp-2);
+    border-left: 4px solid var(--primary);
+  }
 }
