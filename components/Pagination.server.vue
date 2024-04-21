@@ -47,6 +47,7 @@ div {
   & nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &>a {
       opacity: 1;
@@ -57,8 +58,19 @@ div {
       }
     }
 
-    &>button {
-      color: var(--text-base-content)
+    & button {
+      color: var(--text-base-content);
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: var(--sp-1) var(--sp-2);
+      border-radius: 2px;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--primary);
+      }
     }
 
     &>button:disabled {
