@@ -14,9 +14,9 @@ const posts: ParsedContent[] = await queryContent()
   <div>
     <p>{{ posts.length }} articoli trovati</p>
     <h1>Ricerca per anno: {{ year }}</h1>
-    <ul>
+    <PostsList>
       <PostPreview v-for="post in posts" :post="post" />
-    </ul>
+    </PostsList>
   </div>
 </template>
 
@@ -32,11 +32,6 @@ div {
     line-height: 1.75rem;
     line-height: 1.75rem;
     color: var(--text-secondary-content);
-  }
-
-  & ul {
-    border-top: 1px solid rgb(229, 231, 235);
-    margin: var(--sp-4) 0;
   }
 }
 </style>

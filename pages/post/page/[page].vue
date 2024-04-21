@@ -59,11 +59,11 @@ const onTyping = async (value: string): Promise<void> => {
   <div>
     <h1>Tutti gli articoli</h1>
     <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
-    <ul>
+    <PostsList>
       <TransitionGroup name="list">
         <PostPreview v-for="post in posts" :post="post" :key="post._path?.replace('/', '')" />
       </TransitionGroup>
-    </ul>
+    </PostsList>
     <Pagination v-if="search.length === 0" :total-pages="totalPages" :page="page" :limit="limit"
       :all-posts="posts.length" />
   </div>
@@ -75,11 +75,6 @@ div {
     font-size: 3.75rem;
     line-height: 1;
     color: var(--text-base-content)
-  }
-
-  & ul {
-    margin: var(--sp-3) 0;
-    border-top-width: 1px;
   }
 }
 </style>

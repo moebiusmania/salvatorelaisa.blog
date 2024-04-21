@@ -16,9 +16,9 @@ const posts: ParsedContent[] = await queryContent()
       {{ posts.length }} articoli trovati con il tag
     </p>
     <h1>{{ tag }}</h1>
-    <ul>
+    <PostsList>
       <PostPreview v-for="post in posts" :post="post" />
-    </ul>
+    </PostsList>
   </div>
 </template>
 
@@ -35,11 +35,6 @@ div {
   & h1 {
     text-transform: capitalize;
     color: var(--text-base-content);
-  }
-
-  & ul {
-    border-top: 1px solid rgb(229, 231, 235);
-    margin: var(--sp-4) 0;
   }
 }
 </style>

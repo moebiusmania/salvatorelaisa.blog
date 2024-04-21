@@ -32,9 +32,9 @@ const posts: ParsedContent[] = await queryContent()
 
     <p>{{ SITE_DESCRIPTION }}</p>
 
-    <ul>
+    <PostsList>
       <PostPreview v-for="post in posts" :post="post" />
-    </ul>
+    </PostsList>
 
     <section>
       <NuxtLink href="/post/page/1" aria-label="Tutti gli articoli">
@@ -52,11 +52,6 @@ div {
     color: var(--text-secondary-content);
   }
 
-  &>ul {
-    border-top: 1px solid rgb(229, 231, 235);
-    margin: var(--sp-4) 0;
-  }
-
   &>section {
     display: flex;
     justify-content: flex-end;
@@ -64,9 +59,6 @@ div {
     line-height: 1.5rem;
     font-weight: 500;
 
-    &>a {
-      color: var(--primary)
-    }
   }
 }
 </style>
