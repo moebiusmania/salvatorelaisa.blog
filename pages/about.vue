@@ -29,6 +29,8 @@ article {
   }
 
   & hr {
+    border: 0;
+    border-top: 1px solid rgb(229, 231, 235);
     margin: var(--sp-4) 0;
   }
 

@@ -93,6 +93,7 @@ header {
       flex-wrap: wrap;
       font-size: 1rem;
       line-height: 1.5rem;
+      gap: var(--sp-3);
       justify-content: center;
 
       @media (min-width: 768px) {
@@ -100,7 +101,7 @@ header {
       }
 
       &>a.navitem {
-        margin-right: var(--sp-3);
+        /* margin-right: var(--sp-3); */
         color: var(--text-base-content);
 
         &:hover {

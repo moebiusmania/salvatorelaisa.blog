@@ -126,4 +126,8 @@ a {
     padding-left: var(--sp-2);
     border-left: 4px solid var(--primary);
   }
+
+  & iframe.w-full {
+    width: 100%;
+  }
 }
