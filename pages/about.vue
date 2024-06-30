@@ -30,7 +30,7 @@ article {
 
   & hr {
     border: 0;
-    border-top: 1px solid rgb(229, 231, 235);
+    border-top: 1px solid var(--border);
     margin: var(--sp-4) 0;
   }
 
