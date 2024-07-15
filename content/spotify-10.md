@@ -1,14 +1,18 @@
 ---
 title: Un decennio con Spotify
-date: "2023-12-02"
-tags: ["spotify", "musica", "servizi", "retrospettiva"]
+date: '2023-12-02'
+tags:
+  - spotify
+  - musica
+  - servizi
+  - retrospettiva
 draft: false
-summary: "Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (se non mi ricordo male era ottobre del 2013), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro."
+summary: Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (se non mi ricordo male era ottobre del 2013), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro.
 images:
-  ["https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp"]
+  - https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp
 ---
 
-![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp) <small>_Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_</small>
+![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp) _Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_
 
 Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (_se non mi ricordo male era ottobre del 2013_), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro.
 
@@ -43,7 +47,17 @@ _basta far partire una delle dozzina di migliaia di playlist dedicate a contesti
 
 Poi ovviamente un servizio nato durante il boom dei social network non poteva non includere qualche aspetto _social_ che ha contribuito a renderlo popolare, sopratutto le playlist collaborative e le funzionalità di condivisione (_condividere musica prima dello streaming non era proprio immediato..._).
 
-## Breve recap
+Questo ha affossato maggiormente la vendita di musica su supporti fisici, sopratutto i CD che già erano in declino alla fine del primo decennio del 2000 (_l’era dell’iPod_), ma creando quello strano paradosso per cui dopo vari decenni le vendite dei vinili hanno superato quelle dei CD.
+
+## Compact nostalgia
+
+Se ci pensiamo bene, i CD sono stati un formato con una vita strana: hanno avuto circa un ventennio di ciclo vitale per lo più diviso a metà tra il mercato della musica “normale” e quello digitale, prima che questo li cannibalizzasse. Essendo io un figlio degli anni 80, ho molti più ricordi sull’usare i CD (_che sono esplosi di popolarità in Italia nella prima metà degli anni 90_) che sull’usare le audiocassette.
+
+Nei primi anni 2000 i CD ci hanno permesso di mescolare la “gestualità” di crearci le nostre compilation, come le generazioni prima di noi utilizzando le cassette, ma con il vantaggio di utilizzare file `.mp3` scaricati poco prima comodamente da casa invece di dover dipendere dai passaggi in radio o scambi tra cerchie di amici delle canzoni che ci interessano.
+
+Come già accennato, se l’era dell’iPod è stata quella che ci ha fatto intendere che questa “fase-di-mezzo” della convivenza tra CD e MP3 non sarebbe durata molto, l’era dello streaming e di Spotify è stata quella che ci ha dato la prova che era solo una fase figlia del suo tempo e non più necessaria.
+
+## Breve recap di questi 10 anni di Spotify
 
 10 anni nel mondo della tecnologia equivalgono a un'era geologica, ecco perché preferisco condensare nella timeline qui sotto i pochi momenti che sono stati significativi per me in questa decade di Spotify:
 
@@ -53,7 +67,7 @@ Poi ovviamente un servizio nato durante il boom dei social network non poteva no
 - **2016** - _ho inziato a salvarmi ogni playlist Wrapped_
 - **2018** - _passaggio ad account Family_
 - **2022** - _il Daily Drive_
-- **2023** - _demo del "DJ personale" generato con AI (arriverà per davvero?)_
+- **2023** - _demo del "DJ personale" generato con machine learning e modelli vocali (arriverà per davvero?)_
 
 di un paio di questi "eventi" ho anche [scritto dei post](/tags/spotify).
 
