@@ -16,6 +16,8 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 - [rss](https://www.npmjs.com/package/rss) - utility to help create the RSS `.xml` file
 - [sitemap](https://www.npmjs.com/package/sitemap) - utility to help create the sitemap `.xml` file
 
+I'm also integrating with [Nuxt Studio](https://nuxt.studio/) to play a bit with **visual editing**, which comes pretty handy when editing/writing content from devices like the iPad Mini.
+
 ## Creating a new post
 
 With an NPM script:
