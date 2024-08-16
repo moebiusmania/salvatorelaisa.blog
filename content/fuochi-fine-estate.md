@@ -1,10 +1,12 @@
 ---
 title: La mia tradizione dei Fuochi di fine estate
-date: '2015-09-07'
-tags: ['eventi', 'pensieri']
+date: "2015-09-07"
+tags:
+  - "eventi"
+  - "pensieri"
 draft: false
-summary: 'Che poi in verità, penso di essere solo io a chiamarli così 😄'
-images: ['https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg']
+summary: "Che poi in verità, penso di essere solo io a chiamarli così 😄"
+images: ["https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg"]
 ---
 
 [![Foto di Fabio Rossi su Flickr](https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg)](https://www.flickr.com/photos/fabiorossi77/2862367881/) <small>_Foto di Fabio Rossi su Flickr_</small>
@@ -22,3 +24,13 @@ A partire dal 2005 sono stati "integrati" nel weekend della notte bianca di Pavi
 L'unico problema è che si comincia a invecchiare e di anno in anno sta iniziando ad acquisire dei tratti sempre più nostalgici per me, specialmente ripensando alle prime volte che li vedevo e nel ripensare cosa è successo/cambiato dall'anno precedente.
 
 Quindi... ci vediamo nel 2016, fuochi di fine estate!
+
+---
+
+### 2024, le tradizioni si aggiornano
+
+E quando meno te lo aspetti ecco che arriva la grande novità: **da quest'anno (_2024_) i "fuochi di fine estate" non saranno più fuochi ma bensi uno spettacolo di droni e musica 🤯!**
+
+Come [riportato da alcuni giornali locali](https://www.quatarobpavia.it/droni-luminosi-festa-del-ticino-2024/), dovrebbe essere una scelta più attenta all'ambiente e gli animali domestici, ma vederemo il mese prossimo se oltre a queste attenzioni la versione aggiornata dei "fuochi" sarà anche divertente 🤓.
+
+<!-- **Aggiornamento di Settembre 2024:** bla bla -->

@@ -22,6 +22,7 @@ const { value = new Date().toISOString() } = defineProps<Props>();
 
 <style scoped>
 dd {
+  margin: 0;
   margin-bottom: var(--sp-1);
   font-size: 1rem;
   line-height: 1.5rem;

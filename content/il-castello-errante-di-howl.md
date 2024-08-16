@@ -1,12 +1,14 @@
 ---
 title: Il castello errante di Howl
-date: '2022-08-16'
-tags: ['film', 'nostalgia']
+date: "2022-08-16"
+tags:
+  - "film"
+  - "nostalgia"
 draft: false
-summary: 'Ieri, con soli 17 anni di ritardo, ho finalmente recuperato il mio film preferito di Miyazaki al cinema. 👴'
+summary: "Ieri, con soli 17 anni di ritardo, ho finalmente recuperato il mio film preferito di Miyazaki al cinema. 👴"
 images:
   [
-    'https://m.media-amazon.com/images/M/MV5BZWM1ZGI3NGQtZWRiZC00MWJiLWFkNGQtYzZhODJkYjRiYTk3XkEyXkFqcGdeQXVyMjgyNDU4MjE@._V1_FMjpg_UX680_.jpg',
+    "https://m.media-amazon.com/images/M/MV5BZWM1ZGI3NGQtZWRiZC00MWJiLWFkNGQtYzZhODJkYjRiYTk3XkEyXkFqcGdeQXVyMjgyNDU4MjE@._V1_FMjpg_UX680_.jpg",
   ]
 ---
 

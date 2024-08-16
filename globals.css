@@ -49,7 +49,7 @@ html.dark {
 }
 
 html {
-  background-color: var(--bg-neutral);
+  background-color: var(--bg);
 }
 
 /* TYPOGRAPHY ELEMENTS */
@@ -124,8 +124,10 @@ a {
 
   & img {
     height: auto;
+    width: 100%;
     max-width: 100%;
     display: block;
+    margin-bottom: var(--sp-2);
   }
 
   & blockquote {
