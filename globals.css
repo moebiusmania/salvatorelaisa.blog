@@ -130,6 +130,11 @@ a {
     margin-bottom: var(--sp-2);
   }
 
+  & img, & iframe {
+    min-height: 350px;
+    background-color: var(--bg-neutral);
+  }
+
   & blockquote {
     font-size: 1.1em;
     margin-left: 0;
