@@ -6,11 +6,11 @@ draft: false
 summary: 'Come purtroppo sto notando sempre più spesso negli ultimi anni, "il tempo vola" e mi ritrovo qui con un fiammeggiante MacBook Air M2 a quasi 11 anni dopo da quando raccontavo su questo stesso blog le impressioni con il modello di allora (credo fosse quello del 2011).'
 images:
   [
-    "https://www.apple.com/v/macbook-air-m2/e/images/specs/mba_display__bz3tou32mbiq_large_2x.jpg",
+    "https://unsplash.com/photos/e6AwLzfLq3M/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI0MDcxNzQxfA&force=true&w=1920",
   ]
 ---
 
-![Uno scatto promozionale del MacBook Air M2.](https://www.apple.com/v/macbook-air-m2/e/images/specs/mba_display__bz3tou32mbiq_large_2x.jpg)<small>_Uno scatto promozionale del MacBook Air M2._</small>
+![Foto di Joshua Chehov su Unsplash.](https://unsplash.com/photos/e6AwLzfLq3M/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI0MDcxNzQxfA&force=true&w=1920)<small>_Foto di [Joshua Chehov](https://unsplash.com/it/foto/un-primo-piano-di-un-laptop-apple-su-un-tavolo-e6AwLzfLq3M) su Unsplash._</small>
 
 Come purtroppo sto notando sempre più spesso negli ultimi anni, _"il tempo vola"_ e mi ritrovo qui con un fiammeggiante [MacBook Air M2](https://www.apple.com/it/macbook-air-m2/) a quasi **11 anni dopo** da quando [raccontavo su questo stesso blog](/post/macbook-air) le impressioni con il modello di allora (_credo fosse quello del 2011_).
 

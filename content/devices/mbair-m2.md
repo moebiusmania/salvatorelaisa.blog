@@ -2,7 +2,7 @@
 title: Macbook Air M2
 purchase: "2023-03-15"
 tags: ["laptop", "apple"]
-image: "https://www.apple.com/v/macbook-air-m2/e/images/specs/mba_display__bz3tou32mbiq_large_2x.jpg"
+image: "https://unsplash.com/photos/e6AwLzfLq3M/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI0MDcxNzQxfA&force=true&w=1920"
 post: "/post/macbook-air-m2"
 ---
 
