@@ -1,21 +1,26 @@
 ---
 title: iPad Mini - il vero PC portatile
-date: '2024-08-19'
+date: "2024-08-19"
 tags:
   - "device"
   - "ios"
   - "pensieri"
 draft: true
 summary: ""
-images: [""]
+images:
+  [
+    "https://www.apple.com/v/ipad-mini/q/images/overview/design/new_design__227ki0c376am_large.png",
+  ]
 ---
 
-![qualche foto qui]()<small>_qualche foto qui_</small>
+![Immagine promozionale di Apple.](https://www.apple.com/v/ipad-mini/q/images/overview/design/new_design__227ki0c376am_large.png)<small>_Immagine promozionale di Apple._</small>
 
 ## Accessori
+
 Diciamoci la verità, oggi è molto difficile che un device sia perfetto per le nostre necessità _out-of-the-box_, ma il lato positivo è che con qualche accessorio possiamo "plasmarlo" per adattarsi ai nostri utilizzi. Preferisco dividerli in due categorie:
 
 Quelli con cui "non esco senza"
+
 - **smart cover** (_circa 20€_) - poter posizione l'iPad in verticale per guardare dei video o sdraiato ma leggermente inclinato per poter leggere e interagie con lo schermo per me è un must. E' davvero un peccato che una cover di questo tipo anche molto basilare non sia inclusa con il tablet.
 - **clone Apple Pen** (_circa 30€_) -
 - **cuffie wireless** - da qualche mese uso delle cuffie Sony simil-Airpods che ho sempre con me a prescindere, con il tablet sono comode in qualunque momento mi capiti di dover guardarmi qualcosa o giocare.
@@ -27,6 +32,7 @@ Quelli che invece possono essere utili occasionalmente
 - **gamepad** - di questo ne parliamo più nel dettaglio dopo, ma diciamo che se avete già un qualunque gamepad per casa (_PlayStation, Xbox o generico bluetooth_) potete usarlo quasi sicuramente con l'iPad, e godervi meglio qualche sessione di gaming.
 
 ## Come lo uso
+
 Qui posso dividerlo in qualche piccolo scenario:
 
 - **🏠 a casa**, è dove lo utilizzo di meno, per lo più in momenti di relax sul divano o per qualche rara videochiamata.
@@ -36,6 +42,7 @@ Qui posso dividerlo in qualche piccolo scenario:
 per il prossimo caso, è meglio un paragrafino a parte.
 
 ## Viaggi
+
 Qui secondo me è dove questo device splende per davvero 🌟.
 
 Innanzitutto, il grosso vantaggio è che **mi viene molto difficile lavorare o fare cose molto impegnative con l'iPad Mini**, cosa che invece potrebbe succedere se mi porto dietro un laptop, e questo lo rende un device perfetto per viaggi e vacanze: hai tutto l'intrattenimento digitale che vuoi senza correre nel rischio della "_produttività fuoriorario a sproposito_".
@@ -48,13 +55,26 @@ E come già detto all'inizio, è molto leggero e portabile quindi non occupa spa
 ## Gaming
 
 ## Performance della batteria
+
 Non nascondo che questo è l'unico device sul quale **non mi faccio problemi a tenere la modalità "risparmio energetico" (_l'icona della batteria colorata di giallo_) sempre attiva.**
 
 Questo mi permette di poterlo trovare quasi sempre pronto quando lo uso in casa (_che è il mio scenario di basso utilizzo_) e non avere particolari problemi di batteria durante i giorni del weekend (_in cui lo uso di più_) nei quali torna spesso a casa tra il 50% e 40% di carica.
 
 Considerando poi i suoi quasi 2 anni di vita, posso dire che al momento non sto notando segni particolari di decadimento della batteria, ma purtroppo su iPadOS non c'è modo di vedere la vita residua.
 
+## E non vogliamo parlare di qualche app?
+
+In genere questo è un argomento molto personale, ma posso condividere quelle che per me sono app essenziali sul mio iPad Mini e di fatto che utilizzo più spesso:
+
+- [Brave]() - ormai da qualche anno il mio browser predefinito su ogni dispositivo. Affidabile, veloce e con qualche feature utile bultin come adblocker e possibilità di riprodurre video di Youtube anche a schermo bloccato o offline.
+- [Mozilla VPN]() -
+- [Feedly]() -
+- [Obsidian]() -
+
+oltre al già citato [Darkroom](https://apps.apple.com/us/app/darkroom-photo-video-editor/id953286746) e alcune delle app preinstallate su iPadOS come Freeform, Reminders
+
 ## In conclusione
+
 Ci sono alcune cose che rovinano un pò il romanticismo di quanto detto finora:
 
 - la posizione della fotocamera anteriore (_se fosse messa "sopra" quando il tablet è rotazione landscape, sarebbe perfetta, ma invece..._)
@@ -62,4 +82,4 @@ Ci sono alcune cose che rovinano un pò il romanticismo di quanto detto finora:
 - il costo più alto rispetto all'[iPad base](https://www.apple.com/it/ipad/compare/?modelList=ipad-mini-6th-gen,ipad-10th-gen,ipad-air-11-m2) da 10", e se si passa a modelli con SIM a maggiore spazio, iniziamo davvero ad esagerare 😕
 - in generale mancanza di update o notizie di tali dal rilascio di questa 6a generazione nel 2021
 
-detto questo rimango della mia idea che i tablet, e specialmente quelli con il formato degli 8" dell'iPad Mini, hanno tutte le carte in regole per coesistere anche se si possiedono già smartphone e PC, e anzi in certi contesti 
+detto questo ammetto di aver molto sottovalutato questo tipo di device in passato, mentre ora mi rendo che seppur non "_indispensabile_" un tablet mini è incredibilmente comodo ed è **il vero computer portatile** in questa fase del mercato consumer tech.
