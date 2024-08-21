@@ -78,6 +78,7 @@ section {
         display: flex;
         gap: var(--sp-1);
         align-items: center;
+        border: 0;
       }
 
       @media (min-width: 768px) {

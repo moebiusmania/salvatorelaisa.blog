@@ -71,7 +71,7 @@ In genere questo è un argomento molto personale, ma posso condividere quelle ch
 - [Feedly]() -
 - [Obsidian]() -
 
-oltre al già citato [Darkroom](https://apps.apple.com/us/app/darkroom-photo-video-editor/id953286746) e alcune delle app preinstallate su iPadOS come Freeform, Reminders
+oltre al già citato [Darkroom](https://apps.apple.com/us/app/darkroom-photo-video-editor/id953286746) e alcune delle app preinstallate su iPadOS come [Freeform](https://apps.apple.com/it/app/freeform/id6443742539), [Reminders](https://apps.apple.com/us/app/reminders/id1108187841), 
 
 ## In conclusione
 

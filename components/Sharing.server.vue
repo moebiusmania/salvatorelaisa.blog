@@ -6,10 +6,10 @@ interface Props {
 const source = (url: string): string =>
   `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content${url}.md`;
 
-const twitter = (url: string): string =>
-  `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-    `https://salvatorelaisa.blog${url}`
-  )} @moebiusmania - `;
+// const twitter = (url: string): string =>
+//   `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+//     `https://salvatorelaisa.blog${url}`
+//   )} @moebiusmania - `;
 
 const threads = (url: string): string =>
   `https://threads.net/intent/post?text=${encodeURIComponent(
@@ -24,9 +24,9 @@ const { url } = defineProps<Props>();
     <a target="_blank" rel="nofollow noopener noreferrer" :href="threads(url || '')">Parlane
       su Threads</a>
     <span>•</span>
-    <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')">Parlane
+    <!-- <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')">Parlane
       su X (<i>Twitter</i>)</a>
-    <span>•</span>
+    <span>•</span> -->
     <a target="_blank" rel="nofollow noopener noreferrer" :href="source(url || '')">Codice
       sorgente su GitHub</a>
   </div>
