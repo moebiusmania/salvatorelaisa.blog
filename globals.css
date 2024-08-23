@@ -128,10 +128,13 @@ a {
     max-width: 100%;
     display: block;
     margin-bottom: var(--sp-2);
+    min-height: 350px;
   }
 
-  & img, & iframe {
-    min-height: 350px;
+  & img[data-error], & iframe[data-error] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://placehold.co/600x350?text=Ooops!+Immagine+non+trovata+...);
     background-color: var(--bg-neutral);
   }
 
@@ -144,5 +147,6 @@ a {
 
   & iframe.w-full {
     width: 100%;
+    min-height: 150px;
   }
 }

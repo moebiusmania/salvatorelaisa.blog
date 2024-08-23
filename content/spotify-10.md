@@ -61,13 +61,9 @@ Come già accennato, se l’era dell’iPod è stata quella che ci ha fatto inte
 
 10 anni nel mondo della tecnologia equivalgono a un'era geologica, ecco perché preferisco condensare nella timeline qui sotto i pochi momenti che sono stati significativi per me in questa decade di Spotify:
 
-- **(ottobre) 2013** - _Spotify apre il servizio in Italia_
-- **(fine) 2013** - _Arrivano gli album_
-- **2015** - _i Beatles su Spotify_
-- **2016** - _ho inziato a salvarmi ogni playlist Wrapped_
-- **2018** - _passaggio ad account Family_
-- **2022** - _il Daily Drive_
-- **2023** - _demo del "DJ personale" generato con machine learning e modelli vocali (arriverà per davvero?)_
+
+::timeline{items="(ottobre) 2013 - Spotify apre il servizio in Italia, (fine) 2013 - Arrivano gli album, 2015 - i Beatles su Spotify, 2016 - ho inziato a salvarmi ogni playlist Wrapped, 2018 - passaggio ad account Family, 2022 - il Daily Drive, 2023 - demo del 'DJ personale' generato con machine learning e modelli vocali arriverà per davvero?"}
+::
 
 di un paio di questi "eventi" ho anche [scritto dei post](/tags/spotify).
 

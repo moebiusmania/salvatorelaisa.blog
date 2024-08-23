@@ -1,6 +1,6 @@
 ---
 title: iPad Mini - il vero PC portatile
-date: "2024-08-19"
+date: "2024-06-30"
 tags:
   - "device"
   - "ios"
@@ -13,7 +13,7 @@ images:
   ]
 ---
 
-![Immagine promozionale di Apple.](https://www.apple.com/v/ipad-mini/q/images/overview/design/new_design__227ki0c376am_large.png)<small>_Immagine promozionale di Apple._</small>
+![Immagine promozionale di Apple.](https://www.apple.com/v/ipad-mini/q/iages/overview/design/new_design__227ki0c376am_large.png)<small>_Immagine promozionale di Apple._</small>
 
 ## Accessori
 
@@ -50,9 +50,20 @@ Innanzitutto, il grosso vantaggio è che **mi viene molto difficile lavorare o f
 - **durante il viaggio in se:** che sia in treno, bus o aereo, è comodissimo per potersi guardare qualche film o serie TV (_magari scaricati in modalità offline prima della partenza_), leggere o giocare a qualcosina di leggero, rendendo di fatto il viaggio più scorrevole.
 - **in albergo o airbnb:** come detto prima, di fatto è un mini PC, quindi poter fare tutto quello che si fa di solito tra guardare pagine web, social, ecc su uno schermo un po più largo e comodo di quello del telefono. Se poi ci sono di mezzo una penna touch e un'applicazione tipo [Darkroom](https://apps.apple.com/us/app/darkroom-photo-video-editor/id953286746), è anche incredibilmente comodo per dare qualche sistemata a foto scattate durante la giornata, sia con smartphone che fotocamera a parte (_ma in questo caso serve un adatattore per poter leggere le schede microSD_).
 
+certo sono quasi tutte cose che si potrebbero fare anche solo con lo smartphone, ma a parte lo schermo più grande c'è anche il grosso vantaggio che **stai consumando la batteria di un device meno indispensabile**, e durante un viaggio o vacanza è sempre preferibile non far morire il telefono a metà giornata...
+
 E come già detto all'inizio, è molto leggero e portabile quindi non occupa spazio necessario in zaini o borse.
 
 ## Gaming
+
+Non sono un fan del mobile gaming, ma in alcune circostanze è comodo per passare il tempo e distrarsi un po. Anche qui ho due casi d'uso per il tablet:
+
+- **giochi "locali":** ovvero quelli che normalmente si installano dall'App Store. Ne ho pochi installati (_[Vampire Survivors]() ed [Hearthstone]() per citarne un paio_), alcuni di questi anche con grafiche notevoli e devo dire che le performance si sono sempre dimostrate buone.
+- **game streaming:** ovvero utilizzando servizi come [Xcloud]() o [GeForce Now]() per streammare giochi da internet o l'[app di Xbox]() per connettermi in remoto alla console e usarla come server di stream. Ovviamente qui l'incognita è la qualità della connessione, durante viaggi è abbastanza sconsigliabile ma quando poi ci si collega ad un WiFi "fisso" può essere un'opzione più che valida.
+
+Ho provato alcuni mesi gratuiti di [Apple Arcade](https://www.apple.com/apple-arcade/) per quanto ci siano pochi giochi interessanti, apprezzo il l'idea per cui i titoli presenti in questo catalogo sono versioni in cui vengono **rimosse eventuali microtransazioni**, da poco ho scoperto che l'abbonamento a Netflix da accesso a un modello simile di giochi _"Netflix Edition"_ tra cui il mio amato [Dead Cells](https://apps.apple.com/us/app/dead-cells-netflix-edition/id6450374417), quindi la scelta non manca.
+
+Quindi anche su questo punto, iPad Mini promosso in pieno che si tratti di qualche partitella in treno, in albergo, sale di attesa, ecc... se poi come accennato all'inizio collegate anche un gampad, abbiamo davvero una piccola console tra le mani!
 
 ## Performance della batteria
 
@@ -82,4 +93,4 @@ Ci sono alcune cose che rovinano un pò il romanticismo di quanto detto finora:
 - il costo più alto rispetto all'[iPad base](https://www.apple.com/it/ipad/compare/?modelList=ipad-mini-6th-gen,ipad-10th-gen,ipad-air-11-m2) da 10", e se si passa a modelli con SIM a maggiore spazio, iniziamo davvero ad esagerare 😕
 - in generale mancanza di update o notizie di tali dal rilascio di questa 6a generazione nel 2021
 
-detto questo ammetto di aver molto sottovalutato questo tipo di device in passato, mentre ora mi rendo che seppur non "_indispensabile_" un tablet mini è incredibilmente comodo ed è **il vero computer portatile** in questa fase del mercato consumer tech.
+detto questo ammetto di aver molto sottovalutato questo tipo di device in passato, mentre ora mi rendo che seppur non "_indispensabile_" un tablet mini è incredibilmente comodo ed è **il vero computer portatile** di questa fase del mercato consumer tech.
