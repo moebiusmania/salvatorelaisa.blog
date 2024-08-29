@@ -1,6 +1,6 @@
 # salvatorelaisa.blog
 
-Personal blog built on top of the [Nuxt](https://v3.nuxtjs.org/) framework and exported as a static website.
+Personal blog built on top of the [Nuxt](https://nuxt.com/) framework and exported as a static website.
 
 Hosting and Continous Deployment is based on Github Pages & Actions.
 
@@ -8,9 +8,10 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 ## Built on top of
 
-- [Nuxt 3](https://v3.nuxtjs.org/) - main application framework
+- [Nuxt 3](https://nuxt.com/) - main application framework
   - [Vue 3](https://vuejs.org/) - UI component library
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
+  - [@nuxt/studio](https://nuxt.studio/) - module to enable the integration with the Nuxt Studio editing UI
 - [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, leveraging [Vue's CSS Module](https://vuejs.org/api/sfc-css-features.html#css-modules) support
 - [remark-reading-time](https://www.npmjs.com/package/remark-reading-time) - Medium's like reading time estimation
 - [rss](https://www.npmjs.com/package/rss) - utility to help create the RSS `.xml` file
@@ -36,8 +37,9 @@ or manually:
 
 I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
-- light/dark mode switcher
+- light/dark mode switcher (_client side_)
 - live textual search for posts (_by title only_)
+- "comments" to post through [Threads](https://www.threads.net/) or check the source markdown file on Github
 - filter posts by tag
 - "posts by year" page template, available at `/post/year`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button

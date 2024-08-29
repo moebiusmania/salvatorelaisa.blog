@@ -123,18 +123,22 @@ a {
   }
 
   & img {
-    height: auto;
+    /* height: auto; */
     width: 100%;
     max-width: 100%;
     display: block;
     margin-bottom: var(--sp-2);
-    min-height: 350px;
+    min-height: 150px;
+
+    @media (min-width: 768px) {
+      min-height: 350px;
+    }
   }
 
   & img[data-error], & iframe[data-error] {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(https://placehold.co/600x350?text=Ooops!+Immagine+non+trovata+...);
+    /* background-image: url(https://placehold.co/600x350?text=Ooops!+Immagine+non+trovata+...); */
     background-color: var(--bg-neutral);
   }
 
