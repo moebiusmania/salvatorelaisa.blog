@@ -29,16 +29,16 @@ const tags: Array<Tag> = [...new Set(allTags)]
 
 <template>
   <section>
-    <div>
+    <hgroup>
       <h1>Tags</h1>
-    </div>
-    <div>
-      <div v-for="tag in tags">
+    </hgroup>
+    <ul>
+      <li v-for="tag in tags">
         <NuxtLink :href="`/tags/${tag.label}`">
           {{ tag.label }}</NuxtLink>
         <NuxtLink :href="`/tags/${tag.label}`">({{ tag.items }})</NuxtLink>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -61,7 +61,7 @@ section {
     gap: var(--sp-3);
   }
 
-  &>div:first-child {
+  &>hgroup {
     padding-top: var(--sp-3);
     padding-bottom: var(--sp-4);
     margin-left: var(--sp-1);
@@ -75,39 +75,48 @@ section {
     text-transform: capitalize;
   }
 
-  &>div:last-child {
+  &>ul {
     display: flex;
     flex-wrap: wrap;
     max-width: 32rem;
+    padding: 0;
 
-    &>div {
+    &>li {
+      list-style: none;
       margin-top: var(--sp-1);
       margin-bottom: var(--sp-1);
       margin-right: var(--sp-3);
-      transition-property: all;
+      /* transition-property: all;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 300ms;
+      transition-duration: 300ms; */
 
-      :hover {
-        text-decoration: underline;
+      &>a {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       &>a:first-child {
         margin-right: var(--sp-2);
-        font-size: 0.875rem;
-        line-height: 1.25rem;
         font-weight: 500;
-        text-transform: uppercase;
-        color: var(--primary)
+        color: var(--primary);
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 400ms;
+
+        &:hover {
+          /* text-shadow: 2px 2px 0 rgb(75, 85, 99); */
+        }
       }
 
       &>a:last-child {
         margin-left: calc(var(--sp-1) * -1);
-        font-size: 0.875rem;
-        line-height: 1.25rem;
         font-weight: 600;
         color: rgb(75, 85, 99);
-        text-transform: uppercase;
       }
     }
   }
