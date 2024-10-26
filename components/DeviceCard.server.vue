@@ -84,7 +84,7 @@ article {
     flex-direction: column;
     gap: var(--sp-1);
     padding: var(--sp-4);
-    color: var(--text-dark);
+    color: var(--text-base-content);
 
     &>div {
       display: flex;

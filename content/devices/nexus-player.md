@@ -2,7 +2,7 @@
 title: Nexus Player
 purchase: '2015-05-09'
 tags: ['android', 'media player']
-image: 'https://www.yourlifeupdated.net/wp-content/uploads/2015/04/nexusplayer-official.jpg'
+image: 'https://images.icecat.biz/img/gallery/27217625_2220277311.jpg'
 url: "https://it.wikipedia.org/wiki/Nexus_Player"
 ---
 
