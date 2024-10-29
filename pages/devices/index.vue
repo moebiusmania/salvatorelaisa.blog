@@ -5,19 +5,15 @@ const route = useRoute();
 const slug: string = route.query.slug as string;
 
 const getAll = async (): Promise<ParsedContent[]> => {
-  const posts: ParsedContent[] = await queryContent("/devices")
+  return await queryContent("/devices")
     .sort({ purchase: -1 })
     .find();
-
-  return posts;
 };
 
 const getOne = async (): Promise<ParsedContent[]> => {
-  const posts: ParsedContent[] = await queryContent("/devices")
+  return  await queryContent("/devices")
     .where({ _path: `/devices/${slug}` })
     .find();
-
-  return posts;
 };
 
 const getColumns = (slug: string): string =>
@@ -53,6 +49,7 @@ div {
 
   &>p {
     margin-top: var(--sp-2);
+    line-height: 1.50em;
   }
 
   &>ul {

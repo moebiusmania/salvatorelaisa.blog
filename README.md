@@ -8,8 +8,7 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 ## Built on top of
 
-- [Nuxt 3](https://nuxt.com/) - main application framework
-  - [Vue 3](https://vuejs.org/) - UI component library
+- [Nuxt 3](https://nuxt.com/) - main application framework based on [Vue 3](https://vuejs.org/)
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
   - [@nuxt/studio](https://nuxt.studio/) - module to enable the integration with the Nuxt Studio editing UI
 - [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, leveraging [Vue's CSS Module](https://vuejs.org/api/sfc-css-features.html#css-modules) support
