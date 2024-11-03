@@ -6,16 +6,22 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "new": "node scripts/compose.js"
+    "new": "node scripts/compose.js",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@nuxt/content": "2.13.4",
     "@nuxt/image": "1.8.1",
     "@nuxthq/studio": "2.2.1",
+    "@vitejs/plugin-vue": "5.1.4",
+    "@vue/test-utils": "2.4.6",
+    "happy-dom": "15.8.0",
     "nuxt": "3.13.2",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
-    "sitemap": "8.0.0"
+    "sitemap": "8.0.0",
+    "vitest": "2.1.4"
   },
   "dependencies": {
     "modern-normalize": "3.0.1"

@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PostPreview > renders correctly 1`] = `
+"<li data-v-ef65044c="">
+  <div data-v-ef65044c=""><span data-v-ef65044c="">20 marzo 2024</span></div>
+  <div data-v-ef65044c="">
+    <nuxtlink data-v-ef65044c="" href="/post/test-post">
+      <h2 data-v-ef65044c="">Test Post Title</h2>
+    </nuxtlink>
+    <div data-v-ef65044c="">
+      <nuxtlink data-v-ef65044c="" href="/tags/test">test</nuxtlink>
+      <nuxtlink data-v-ef65044c="" href="/tags/vue">vue</nuxtlink>
+    </div>
+    <p data-v-ef65044c="">This is a test post summary</p>
+    <nuxtlink data-v-ef65044c="" href="/post/test-post"> Continua a leggere (5 minuti) <svg data-v-ef65044c="" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path data-v-ef65044c="" d="M5 12h14"></path>
+        <path data-v-ef65044c="" d="M12 5l7 7-7 7"></path>
+      </svg></nuxtlink>
+  </div>
+</li>"
+`;

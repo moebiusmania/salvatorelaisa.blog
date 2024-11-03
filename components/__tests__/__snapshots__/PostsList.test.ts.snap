@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PostsList > renders correctly 1`] = `
+"<ul data-v-6c67b3d0="">
+  <li>Test post item</li>
+</ul>"
+`;

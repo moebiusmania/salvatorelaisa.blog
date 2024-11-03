@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sharing > renders correctly 1`] = `
+"<div data-v-5d755431=""><a data-v-5d755431="" target="_blank" rel="nofollow noopener noreferrer" href="https://threads.net/intent/post?text=https%3A%2F%2Fsalvatorelaisa.blog%2Fblog%2Ftest-article @moebiusmania - ">Parlane su Threads</a><span data-v-5d755431="">•</span>
+  <!-- <a target="_blank" rel="nofollow noopener noreferrer" :href="twitter(url || '')">Parlane
+      su X (<i>Twitter</i>)</a>
+    <span>•</span> --><a data-v-5d755431="" target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content/blog/test-article.md">Codice sorgente su GitHub</a>
+</div>"
+`;
