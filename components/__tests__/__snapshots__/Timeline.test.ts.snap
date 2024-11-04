@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Timeline > matches snapshot 1`] = `
+"<ul data-v-8c6e1942="" class="timeline">
+  <li data-v-8c6e1942="">Event 1</li>
+  <li data-v-8c6e1942="">Event 2</li>
+  <li data-v-8c6e1942="">Event 3</li>
+</ul>"
+`;

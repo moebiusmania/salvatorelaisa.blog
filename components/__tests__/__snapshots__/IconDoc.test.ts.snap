@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DocIcon > matches snapshot 1`] = `
+"<svg fill="#000000" version="1.1" id="XMLID_253_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <g id="document-text">
+      <g>
+        <path d="M22,24H2V0h13.4L22,6.6V24z M4,22h16V9h-7V2H4V22z M15,7h4.6L15,2.4V7z M16,17H6v-2h10V17z M18,13H6v-2h12V13z M11,9H6V7 h5V9z"></path>
+      </g>
+    </g>
+  </g>
+</svg>"
+`;

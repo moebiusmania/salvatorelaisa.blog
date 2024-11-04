@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DeviceCard > matches snapshot 1`] = `
+"<article data-v-26916834="">
+  <figure data-v-26916834=""><img data-v-26916834="" src="/test-image.jpg" alt="Test Device"></figure>
+  <div data-v-26916834="">
+    <div data-v-26916834=""><span data-v-26916834="" class="sl-badge">tag1</span><span data-v-26916834="" class="sl-badge">tag2</span></div>
+    <p data-v-26916834=""> Data di acquisto: 20/03/2024</p>
+    <h2 data-v-26916834=""><a data-v-26916834="" href="">Test Device</a><svg data-v-26916834="" fill="#000000" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M14 3.5L8.5 9 7 7.5 12.5 2H10V0h6v6h-2V3.5zM6 0v2H2v12h12v-4h2v6H0V0h6z" fill-rule="evenodd"></path>
+        </g>
+      </svg>
+      <!--v-if-->
+    </h2>
+    <div data-v-26916834=""></div>
+  </div>
+</article>"
+`;
