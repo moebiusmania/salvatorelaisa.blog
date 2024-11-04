@@ -25,7 +25,7 @@ describe('DeviceCard', () => {
         components: {
           // Mock the Nuxt-specific components
           NuxtLink: {
-            template: '<a :href=""><slot /></a>',
+            template: '<a href=""><slot /></a>',
             props: ['href']
           },
           ContentRenderer: {

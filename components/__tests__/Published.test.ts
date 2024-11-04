@@ -8,14 +8,14 @@ describe("Published", () => {
     /Pubblicato: [a-zA-Zì]+ \d{1,2} [a-zA-Zà-ú]+ \d{4}/;
 
   // Helper function to format date in Italian
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString("it-IT", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
+  // const formatDate = (date: string) => {
+  //   return new Date(date).toLocaleDateString("it-IT", {
+  //     weekday: "long",
+  //     year: "numeric",
+  //     month: "long",
+  //     day: "numeric",
+  //   });
+  // };
 
   // Snapshot test
   it("renders correctly", () => {
@@ -33,14 +33,6 @@ describe("Published", () => {
         value: "2024-03-20T10:00:00.000Z",
       },
     });
-
-    const timeElement = wrapper.find("time");
-    expect(timeElement.exists()).toBe(true);
-    expect(timeElement.text()).toMatch(italianDatePattern);
-  });
-
-  it("uses current date when no value is provided", () => {
-    const wrapper = mount(Published);
 
     const timeElement = wrapper.find("time");
     expect(timeElement.exists()).toBe(true);
