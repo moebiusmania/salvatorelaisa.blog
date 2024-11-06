@@ -16,7 +16,7 @@
     "@nuxthq/studio": "2.2.1",
     "@vitejs/plugin-vue": "5.1.4",
     "@vue/test-utils": "2.4.6",
-    "happy-dom": "15.8.0",
+    "happy-dom": "15.10.2",
     "nuxt": "3.13.2",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
