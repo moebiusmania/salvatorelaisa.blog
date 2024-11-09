@@ -4,7 +4,12 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
 
-  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxthq/studio",
+    "@nuxt/image",
+    "@nuxt/test-utils/module",
+  ],
 
   experimental: {
     componentIslands: true,

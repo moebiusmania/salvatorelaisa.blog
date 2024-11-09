@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import type { ParsedContent } from "@nuxt/content";
-import External from "./icons/External.server.vue";
-import Doc from "./icons/Doc.server.vue";
 
 defineProps<{
   device: ParsedContent;

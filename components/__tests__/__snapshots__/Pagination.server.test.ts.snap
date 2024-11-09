@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination > renders correctly 1`] = `
+"<div data-v-b2d456d3="">
+  <nav data-v-b2d456d3=""><a data-v-b2d456d3="" href="/post/page/1"><button data-v-b2d456d3="" aria-label="precedente">← Precedente</button></a><span data-v-b2d456d3="">Pagina 2 di 5</span><button data-v-b2d456d3="" aria-label="successivo" disabled=""> Successivo → </button></nav>
+</div>"
+`;

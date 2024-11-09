@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > renders correctly 1`] = `
+"<header data-v-a81738bd="">
+  <div data-v-a81738bd="">
+    <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
+    <nav data-v-a81738bd="">
+      <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-a81738bd="" href="/about" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-a81738bd="" href="/tags" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path data-v-a81738bd="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg></a>
+    </nav>
+  </div>
+</header>"
+`;
+
+exports[`Header > renders site logo with correct attributes 1`] = `
+"<header data-v-a81738bd="">
+  <div data-v-a81738bd="">
+    <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
+    <nav data-v-a81738bd="">
+      <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-a81738bd="" href="/about" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-a81738bd="" href="/tags" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path data-v-a81738bd="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg></a>
+    </nav>
+  </div>
+</header>"
+`;
