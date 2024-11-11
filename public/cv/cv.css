@@ -66,18 +66,22 @@ header {
 
 figure {
   margin: 0;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 450px;
     min-height: 300px;
-    background-color: #ddd;
   }
 
   & figcaption {
     line-height: 1.4;
-    margin: 1em 0;
+    padding: 1.5em 0;
+    background-color: #fff;
   }
 }
 
