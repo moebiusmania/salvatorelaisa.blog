@@ -12,7 +12,7 @@ images:
 
 ![Foto di Joshua Chehov su Unsplash.](https://unsplash.com/photos/e6AwLzfLq3M/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI0MDcxNzQxfA&force=true&w=1920)<small>_Foto di [Joshua Chehov](https://unsplash.com/it/foto/un-primo-piano-di-un-laptop-apple-su-un-tavolo-e6AwLzfLq3M) su Unsplash._</small>
 
-Come purtroppo sto notando sempre più spesso negli ultimi anni, _"il tempo vola"_ e mi ritrovo qui con un fiammeggiante [MacBook Air M2](https://www.apple.com/it/macbook-air-m2/) a quasi **11 anni dopo** da quando [raccontavo su questo stesso blog](/post/macbook-air) le impressioni con il modello di allora (_credo fosse quello del 2011_).
+Come purtroppo sto notando sempre più spesso negli ultimi anni, _"il tempo vola"_ e mi ritrovo qui con un fiammeggiante [MacBook Air M2](https://www.apple.com/it/macbook-air-m2/) a quasi **11 anni di distanza** da quando [raccontavo su questo stesso blog](/post/macbook-air) le impressioni con il modello di allora (_credo fosse quello del 2011_).
 
 ## La mia storia con i laptop continua...
 
@@ -48,7 +48,7 @@ Questo modello ha solamente due porte `USB-C` sul lato sinistro, anche se ora so
 
 Quindi per poter usare un mouse e collegarmi a uno schermo con HDMI, che non sono cose che faccio spesso ma ogni tanto mi servono, devo comunque avere un dongle. Per adesso sto riutilizzando lo stesso dongle che ho usato negli ultimi 4 anni circa con i MacBook Pro, fortunatamente **la disposizione delle porte USB-C coincide con i vecchi pro** ma quando è inserito non posso attaccare l'alimentazione nella porta magsafe... ma per fortuna che come già detto la durata media della batteria compensa il piccolo disagio.
 
-## Update 2024: Un anno dopo
+## Update Marzo 2024: Un anno dopo
 
 Con 12 mesi in più sulle spalle di utilizzo che sono spaziati dal portarlo in giro, a usarlo come "desktop replacement" a casa, da task come coding di piccoli progetti a sessioni di gaming (_sia con giochi "locali" che tramite servizi come GeForce Now_) posso dire che **poco è cambiato rispetto alle prime impressioni** di un anno fa.
 

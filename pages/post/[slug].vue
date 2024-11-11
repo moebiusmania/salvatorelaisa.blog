@@ -52,7 +52,7 @@ const isReview = (tags: Array<string>): boolean => {
         <p>
           Tags:
           <NuxtLink v-for="tag in post.tags" :href="`/tags/${tag}`">{{
-        tag }}</NuxtLink>
+            tag }}</NuxtLink>
         </p>
         <ReadingTime :value="post.readingTime.text" />
         <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms" />
@@ -102,7 +102,7 @@ div {
 
   &>hr {
     border: 0;
-    border-top: 1px solid rgb(229, 231, 235);
+    border-top: 1px solid var(--border);
     margin: var(--sp-3) 0;
   }
 }

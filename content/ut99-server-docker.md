@@ -64,4 +64,4 @@ A questo punto...
 
 **Aggiornamento di Maggio 2023:** sfortunamente Unreal Tournament (1999) è stato rimosso dagli store digitali dalla stessa Epic, quindi in link di Steam che avevo aggiunto qui sotto non è più funzionante. Nulla è realmente perduto su internet... ma non posso dire altro!
 
-<iframe src="https://store.steampowered.com/widget/13240/679/" frameborder="0" loading="lazy" class="w-full" height="190"></iframe>
+<!-- <iframe src="https://store.steampowered.com/widget/13240/679/" frameborder="0" loading="lazy" class="w-full" height="190"></iframe> -->
