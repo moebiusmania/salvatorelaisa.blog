@@ -4,9 +4,7 @@ date: "2013-11-17"
 tags: ["web", "pensieri", "evoluzione"]
 draft: false
 images:
-  [
-    "https://github.com/moebiusmania/blog-assets/blob/master/images/2023/apps-abstract.png?raw=true",
-  ]
+  ["https://cdn.midjourney.com/7c084772-a751-437e-85aa-a0ce580d72be/0_3.webp"]
 summary: "Abbiamo vissuto (e stiamo vivendo tutt'ora) una vera evoluzione di quello che è stato il Web 2.0 , magari non ci siamo resi conto di questi cambiamenti proprio perché avvenivano un pezzo per volta proprio sotto il nostro naso!"
 ---
 

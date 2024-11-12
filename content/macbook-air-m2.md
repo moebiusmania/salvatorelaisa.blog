@@ -54,4 +54,4 @@ Con 12 mesi in più sulle spalle di utilizzo che sono spaziati dal portarlo in g
 
 Ero un pò preoccupato per gli `8gb` di memoria RAM ma onestamente mi sembra di vedere che qui MacOS giochi un ruolo abbastanza importante sull'ottimizzazione e per gran parte del tempo non si nota alcun problema. Ho notato rallentamenti a causa della poca RAM solo dopo sessioni di diversi giorni (_se non settimane_) senza riavvii, ma solo mettendo il laptop in modalità "sleep" quando non lo utilizzavo.
 
-Oggi con il modello `M3` fresco di fabbrica, questo modello `M2` è stato abbassato di prezzo alla stessa cifra per cui l'ho comprato io un anno fa tramite offerta. Se non vi interessano le performance extra del nuovo processore, questo modello rimane un'opzione validissima.
+Oggi con il modello `M3` fresco di fabbrica, questo modello `M2` è stato abbassato di prezzo alla stessa cifra per cui l'ho comprato io un anno fa tramite offerta, e in più adesso **è disponibile con `16gb` di RAM di default**. Se non vi interessano le performance extra del nuovo processore, questo modello rimane un'opzione validissima.

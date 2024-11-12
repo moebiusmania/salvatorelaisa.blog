@@ -6,13 +6,11 @@ tags:
   - "retrospettiva"
 draft: false
 images:
-  [
-    "https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-  ]
+  ["https://cdn.midjourney.com/8c687e33-5520-4671-b444-e9ff31332a79/0_3.png"]
 summary: "Nonostante i 3 cambi di dominio e altrettanti cambi di piattaforma e un indefinito numero di hosting providers, questo blog è riuscito a sopravvivere più o meno intatto ai suoi primi 10 anni 🥳🎊🎉."
 ---
 
-[![Foto di Sincerely Media su Unsplash](https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80)](https://unsplash.com/@sincerelymedia) <small>_Foto di Sincerely Media su Unsplash_</small>
+![foto di una macchina da scrivere su una scrivania di legno, generata con Midjourney](https://cdn.midjourney.com/8c687e33-5520-4671-b444-e9ff31332a79/0_3.png)<small>_Immagine generata con Midjourney_</small>
 
 Nonostante i 3 cambi di dominio (_solo il primo livello, `.net` poi `.me` e l'attuale `.blog`_) e altrettanti cambi di piattaforma (_WordPress poi Ghost e ora Vuepress_) e un indefinito numero di hosting providers (_sicuri mi ricordo MediaTemple, OpenShift e l'attuale Github Pages_), questo blog è riuscito a sopravvivere più o meno intatto ai suoi primi 10 anni 🥳🎊🎉.
 
