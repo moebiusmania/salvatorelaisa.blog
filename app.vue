@@ -1,30 +1,20 @@
 <script setup lang="ts">
-import type { Ref } from "vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-const themes: { [k: string]: string } = {
+const options: { [k: string]: string } = {
   dark: "sunset",
   light: "corporate",
 }
 
-const current: Ref<string> = ref("light");
-
-const theme: Ref<string> = ref(themes[current.value] || themes.light);
+const theme = useState<"light" | "dark">('theme', () => 'light')
 
 const changeTheme = () => {
-  current.value = current.value === "dark" ? "light" : "dark";
-  theme.value = themes[current.value] || themes.light;
-  // updateHead()
-  updateDocument(current.value);
-}
-
-const updateDocument = (update: string) => {
+  theme.value = theme.value === "light" ? "dark" : "light";
   if (document) {
-    document.documentElement.setAttribute("data-theme", theme.value);
-    document.documentElement.className = update;
+    document.documentElement.setAttribute("data-theme", options[theme.value]);
+    document.documentElement.className = theme.value;
   }
 }
-
 
 useHead({
   title: SITE_TITLE,
@@ -58,8 +48,8 @@ useHead({
   ],
   htmlAttrs: {
     lang: "it-IT",
-    "data-theme": theme.value,
-    class: document && document.documentElement.classList.contains("dark") ? "dark" : "light",
+    "data-theme": options[theme.value],
+    class: theme.value,
   }
 });
 
@@ -67,7 +57,7 @@ useHead({
 </script>
 
 <template>
-  <Header :dark="current === 'dark'" @change-theme="changeTheme" />
+  <Header :dark="theme === 'dark'" @change-theme="changeTheme" />
   <main>
     <Container>
       <NuxtPage />
