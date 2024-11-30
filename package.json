@@ -17,11 +17,11 @@
     "@nuxt/test-utils": "3.14.4",
     "@nuxthq/studio": "2.2.1",
     "@vue/test-utils": "2.4.6",
-    "nuxt": "3.14.159",
+    "nuxt": "3.14.1592",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "8.0.0",
-    "vitest": "2.1.4"
+    "vitest": "2.1.6"
   },
   "dependencies": {
     "modern-normalize": "3.0.1"
