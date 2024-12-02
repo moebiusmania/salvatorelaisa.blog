@@ -1,7 +1,12 @@
 
+:root {
+  --primary: rgb(94, 172, 217);
+  --black: #333;
+}
+
 main {
   font-family: "Calibri", sans-serif;
-  color: #333;
+  color: var(--black);
   font-size: 16px; 
   max-width: 800px;
   margin: 0 auto;
@@ -19,7 +24,7 @@ main {
   }
 
   & a {
-    color: rgb(94, 172, 217);
+    color: var(--primary);
     text-decoration: none;
 
     &:hover {
@@ -98,7 +103,7 @@ section#skills {
     & li {
       line-height: 1.5;
       padding: 0;
-      background-color: rgb(94, 172, 217);
+      background-color: var(--primary);
       color: white;
       border-radius: 5px;
       padding: 0.1em 0.5em;
@@ -116,7 +121,7 @@ section#education {
       font-size: 1.8em;
 
       & span {
-        color:rgb(94, 172, 217);
+        color: var(--primary);
       }
     }
 
