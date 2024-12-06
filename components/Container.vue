@@ -9,7 +9,7 @@
 <style scoped>
 section {
   overflow: hidden;
-  color: #4B5563;
+  color: var(--text);
 
   &>div {
     margin: 0 auto;

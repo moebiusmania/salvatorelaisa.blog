@@ -69,7 +69,7 @@ const today: Date = new Date();
 
 <style scoped>
 footer {
-  color: #4B5563;
+  color: var(--text);
 
   &>div {
     display: flex;

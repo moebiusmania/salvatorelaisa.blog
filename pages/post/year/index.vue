@@ -80,7 +80,7 @@ section {
         font-size: 0.875rem;
         line-height: 1.25rem;
         font-weight: 600;
-        color: #4B5563;
+        color: var(--text);
         text-transform: uppercase;
       }
     }

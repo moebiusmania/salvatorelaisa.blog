@@ -78,12 +78,18 @@ header {
         border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;
-        color: #ffffff;
+        color: var(--white);
+        border: 1px solid var(--primary);
+        transition: box-shadow 0.2s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 0 5px var(--primary);
+        }
       }
 
       & span {
         margin-left: var(--sp-2);
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         line-height: 1.75rem;
       }
     }

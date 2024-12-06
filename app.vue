@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-const options: { [k: string]: string } = {
-  dark: "sunset",
-  light: "corporate",
+type Theme = "dark" | "light" | "xmas" | "xmas-dark";
+
+const options: { [k: string]: Theme } = {
+  dark: "xmas-dark",
+  light: "xmas",
 }
 
-const theme = useState<"light" | "dark">('theme', () => 'light')
+const theme = useState<Theme>('theme', () => options.light)
 
 const changeTheme = () => {
-  theme.value = theme.value === "light" ? "dark" : "light";
+  theme.value = theme.value === options.light ? options.dark : options.light;
   if (document) {
     document.documentElement.setAttribute("data-theme", options[theme.value]);
     document.documentElement.className = theme.value;
@@ -57,7 +59,7 @@ useHead({
 </script>
 
 <template>
-  <Header :dark="theme === 'dark'" @change-theme="changeTheme" />
+  <Header :dark="theme === options.dark" @change-theme="changeTheme" />
   <main>
     <Container>
       <NuxtPage />

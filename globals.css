@@ -19,6 +19,7 @@ html.light {
   --white: #fff;
   --primary: oklch(0.6039 0.228 269.1);
   --secondary: oklch(0.223899 0.031305 278.072 / 0.8);
+  --text: #4B5563;
   --text-dark: inherit;
   --text-content-dark: inherit;
   --text-base-content: oklch(0.223899 0.031305 278.072);
@@ -35,6 +36,7 @@ html.light {
 
 html.dark {
   --primary: oklch(0.747039 0.158278 39.947);
+  --text: oklch(0.773835 0.043586 245.097);
   --text-dark: oklch(0.22 0.019 237.69);
   --text-content-dark: oklch(0.773835 0.043586 245.097);
   --text-base-content: var(--text-content-dark);
@@ -46,6 +48,47 @@ html.dark {
 
   --badge-bg: var(--primary);
   --badge-text: var(--text-dark);
+}
+
+/**
+* XMAS THEME from https://coolors.co/palette/f2545b-a93f55-19323c-f3f7f0-8c5e58
+*/
+html.xmas {
+  --white: #F3F7F0;
+  --primary: #F2545B;
+  --secondary: #A93F55;
+  --text: #19323C;
+  --text-dark: inherit;
+  --text-content-dark: inherit;
+  --text-base-content: var(--text);
+  --text-secodary-content: var(--text);
+  --bg: var(--white);
+  --bg-neutral: oklch(0.958796 0.008588 247.915);
+
+  --header-link-hover: inherit;
+  --border: rgba(25, 50, 60, 0.2);
+
+  --badge-bg: var(--primary);
+  --badge-text: oklch(1 0 0);
+}
+
+html.xmas-dark {
+  --white: #19323C;
+  --primary: #F2545B;
+  --secondary: #A93F55;
+  --text: #F3F7F0;
+  --text-dark: inherit;
+  --text-content-dark: inherit;
+  --text-base-content: var(--text);
+  --text-secodary-content: var(--text);
+  --bg: var(--white);
+  --bg-neutral: oklch(0.958796 0.008588 247.915);
+
+  --header-link-hover: inherit;
+  --border: rgb(243, 247, 240, 0.2);
+
+  --badge-bg: var(--primary);
+  --badge-text: oklch(1 0 0);
 }
 
 html {
