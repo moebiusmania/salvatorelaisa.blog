@@ -62,6 +62,7 @@ useHead({
   <Header :dark="theme === options.dark" @change-theme="changeTheme" />
   <main>
     <Container>
+      <Snow />
       <NuxtPage />
     </Container>
     <Footer />
@@ -71,4 +72,5 @@ useHead({
 <style>
 @import 'node_modules/modern-normalize/modern-normalize.css';
 @import './globals.css';
+@import './utils/themes/xmas.css';
 </style>
