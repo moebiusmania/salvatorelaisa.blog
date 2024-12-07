@@ -23,15 +23,9 @@ article {
 
   & h1 {
     @media (min-width: 768px) {
-      font-size: 3rem;
+      /* font-size: 3rem; */
       line-height: 1;
     }
-  }
-
-  & hr {
-    border: 0;
-    border-top: 1px solid var(--border);
-    margin: var(--sp-4) 0;
   }
 
   a {

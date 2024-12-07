@@ -7,6 +7,9 @@ const nav: Array<{
   name: string,
   href: string
 }> = [{
+  name: "🎁",
+  href: "/xmas"
+}, {
   name: "Cerca",
   href: "/post/page/1"
 }, {

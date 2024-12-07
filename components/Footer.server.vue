@@ -5,7 +5,7 @@ const today: Date = new Date();
 <template>
   <footer>
     <div>
-      <span>Salvatore Laisa Blog</span>
+      <span>Salvatore Laisa Blog 🎄</span>
       <p>
         &copy; 2010 - {{ today.getFullYear() }} — sviluppato con
         <a href="https://nuxt.com/" rel="noopener noreferrer" target="_blank">Nuxt 3</a>

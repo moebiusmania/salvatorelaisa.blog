@@ -44,7 +44,8 @@ I've added some small new features over the starting Nuxt template to handle som
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
 - "reading time" for posts
 - "old post warning" for 2+ years old content
-- "personal devices timeleine" section
+- "personal devices timeline" section
+- CSS themes support (_at the moment only an "xmas" one is included_)
 
 ## Can I use this to bootstrap my new Nuxt blog?
 
