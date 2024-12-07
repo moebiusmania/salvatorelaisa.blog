@@ -30,7 +30,7 @@ html.xmas-dark {
   --text-base-content: var(--text);
   --text-secodary-content: var(--text);
   --bg: var(--white);
-  --bg-neutral: oklch(0.958796 0.008588 247.915);
+  --bg-neutral: var(--secondary);
 
   --header-link-hover: inherit;
   --border: rgb(243, 247, 240, 0.2);
