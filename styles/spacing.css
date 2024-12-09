@@ -1,0 +1,13 @@
+/* SPACING TOKENS */
+:root {
+  --spacing-unit: 8px;
+  --sp-05: calc(var(--spacing-unit) / 2);
+  --sp-1: calc(var(--spacing-unit) * 1);
+  --sp-2: calc(var(--spacing-unit) * 2);
+  --sp-3: calc(var(--spacing-unit) * 3);
+  --sp-4: calc(var(--spacing-unit) * 4);
+  --sp-5: calc(var(--spacing-unit) * 5);
+  --sp-6: calc(var(--spacing-unit) * 6);
+  --sp-7: calc(var(--spacing-unit) * 7);
+  --sp-8: calc(var(--spacing-unit) * 8);
+}

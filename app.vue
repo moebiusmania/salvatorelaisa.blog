@@ -71,6 +71,7 @@ useHead({
 
 <style>
 @import 'node_modules/modern-normalize/modern-normalize.css';
-@import './globals.css';
-@import './utils/themes/xmas.css';
+@import './styles/spacing.css';
+@import './styles/themes/xmas.css';
+@import './styles/typography.css';
 </style>
