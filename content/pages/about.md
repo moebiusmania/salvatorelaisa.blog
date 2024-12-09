@@ -18,4 +18,4 @@ Se **non** siete d'accordo su qualcosa, e ci sta, basta premere il tastino per c
 
 ## Privacy policy
 
-Nello spirito del "_web di una volta_" in questo blog **non** ho sono implementati sistemi di tracking o analytics dei contenuti e non sono presenti banner pubblicitari, quindi non viene settato alcun tipo di cookie nel vostro browser 🙂. Tuttavia ricordo che le piattaforme da cui faccio embed di contenuti (_YouTube, Instagram, ecc_) eseguono sempre qualche forma di tracciamento, ma appunto, non dipendono da me o da questo sito.
+Nello spirito del "_web di una volta_" in questo blog **non** sono implementati sistemi di tracking o analytics dei contenuti e non sono presenti banner pubblicitari, quindi non viene settato alcun tipo di cookie nel vostro browser 🙂. Tuttavia ricordo che le piattaforme da cui faccio embed di contenuti (_YouTube, Instagram, ecc_) eseguono sempre qualche forma di tracciamento, ma appunto, non dipendono da me o da questo sito.

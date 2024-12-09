@@ -1,34 +1,21 @@
+<script setup lang="ts">
+const { count = 10 } = defineProps<{
+  count?: number
+}>()
+
+const icons = ['❅', '❆']
+
+const snowflakes = Array.from({ length: count }, (_, index) => ({
+  id: index,
+  icon: icons[Math.floor(Math.random() * icons.length)],
+}))
+
+</script>
+
 <template>
   <div class="snowflakes" aria-hidden="true">
-    <div class="snowflake">
-      ❅
-    </div>
-    <div class="snowflake">
-      ❅
-    </div>
-    <div class="snowflake">
-      ❆
-    </div>
-    <div class="snowflake">
-      ❄
-    </div>
-    <div class="snowflake">
-      ❅
-    </div>
-    <div class="snowflake">
-      ❆
-    </div>
-    <div class="snowflake">
-      ❄
-    </div>
-    <div class="snowflake">
-      ❅
-    </div>
-    <div class="snowflake">
-      ❆
-    </div>
-    <div class="snowflake">
-      ❄
+    <div class="snowflake" v-for="snowflake in snowflakes" :key="snowflake.id">
+      {{ snowflake.icon }}
     </div>
   </div>
 </template>

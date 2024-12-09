@@ -26,7 +26,7 @@ const isOutdated: boolean = current - postYear > 2;
 
 <style scoped>
 div {
-  background-color: oklch(0.93 0 0);
+  background-color: var(--bg-neutral);
   display: grid;
   gap: var(--sp-2);
   width: 100%;
