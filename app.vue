@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-type Theme = "dark" | "light" | "xmas" | "xmas-dark";
+type Theme = "dark" | "light";
 
 const options: { [k: string]: Theme } = {
-  dark: "xmas-dark",
-  light: "xmas",
+  dark: "dark",
+  light: "light",
 }
 
 const theme = useState<Theme>('theme', () => options.light)

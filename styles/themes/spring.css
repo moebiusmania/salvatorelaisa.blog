@@ -1,11 +1,11 @@
 /**
-* XMAS THEME built on top of https://coolors.co/palette/f2545b-a93f55-19323c-f3f7f0-8c5e58
+* SPRING THEME built on top of https://coolors.co/palette/bce784-5dd39e-348aa7-525174-513b56
 */
 html.light {
-  --white: #F3F7F0;
-  --primary: #F2545B;
-  --secondary: #A93F55;
-  --text: #19323C;
+  --white: #F2E8CF;
+  --primary: #A7C957;
+  --secondary: #6A994E;
+  --text: #386641;
   --text-dark: inherit;
   --text-content-dark: inherit;
   --text-base-content: var(--text);
