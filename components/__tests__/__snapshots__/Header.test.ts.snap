@@ -5,7 +5,6 @@ exports[`Header > renders correctly 1`] = `
   <div data-v-a81738bd="">
     <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
     <nav data-v-a81738bd="">
-      <nuxt-link-stub data-v-a81738bd="" href="/xmas" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/about" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/tags" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -21,7 +20,6 @@ exports[`Header > renders site logo with correct attributes 1`] = `
   <div data-v-a81738bd="">
     <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
     <nav data-v-a81738bd="">
-      <nuxt-link-stub data-v-a81738bd="" href="/xmas" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/about" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-a81738bd="" href="/tags" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">

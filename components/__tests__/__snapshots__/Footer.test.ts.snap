@@ -10,12 +10,12 @@ exports[`Footer > renders correctly 1`] = `
     <span
       data-v-15497882=""
     >
-      Salvatore Laisa Blog 🎄
+      Salvatore Laisa Blog
     </span>
     <p
       data-v-15497882=""
     >
-       © 2010 - 2024 — sviluppato con 
+       © 2010 - 2025 — sviluppato con 
       <a
         data-v-15497882=""
         href="https://nuxt.com/"
