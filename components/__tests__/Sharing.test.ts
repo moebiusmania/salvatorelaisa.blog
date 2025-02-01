@@ -28,34 +28,35 @@ describe("Sharing", () => {
     );
   });
 
-  it("generates correct Threads URL", () => {
+  it("generates correct Bluesky URL", () => {
     const wrapper = mount(Sharing, {
       props: {
         url: "/blog/test-article",
       },
     });
 
-    const threadsLink = wrapper.find('a[href*="threads.net"]');
-    expect(threadsLink.exists()).toBe(true);
-    expect(threadsLink.attributes("href")).toContain(
-      "https://threads.net/intent/post?text="
+    const bskyLink = wrapper.find('a[href*="bsky.app"]');
+    expect(bskyLink.exists()).toBe(true);
+    expect(bskyLink.attributes("href")).toContain(
+      "https://bsky.app/intent/compose?text="
     );
-    expect(threadsLink.attributes("href")).toContain(
-      encodeURIComponent("https://salvatorelaisa.blog/blog/test-article")
+    expect(bskyLink.attributes("href")).toContain(
+      encodeURIComponent("https://salvatorelaisa.blog/post/blog/test-article")
     );
+    expect(bskyLink.attributes("href")).toContain("@moebiusmania.bsky.social");
   });
 
   it("handles undefined URL gracefully", () => {
     const wrapper = mount(Sharing);
 
     const sourceLink = wrapper.find('a[href*="github.com"]');
-    const threadsLink = wrapper.find('a[href*="threads.net"]');
+    const bskyLink = wrapper.find('a[href*="bsky.app"]');
 
     expect(sourceLink.attributes("href")).toBe(
       "https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content.md"
     );
-    expect(threadsLink.attributes("href")).toContain(
-      encodeURIComponent("https://salvatorelaisa.blog")
+    expect(bskyLink.attributes("href")).toContain(
+      encodeURIComponent("https://salvatorelaisa.blog/post")
     );
   });
 

@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare",
     "new": "node scripts/compose.js",
     "test": "vitest",
+    "test:update": "vitest -u",
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
