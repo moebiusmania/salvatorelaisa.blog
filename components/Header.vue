@@ -82,7 +82,7 @@ header {
         width: 2.5rem;
         height: 2.5rem;
         color: var(--white);
-        border: 1px solid var(--primary);
+        border: 2px solid var(--primary);
         transition: box-shadow 0.2s ease-in-out;
 
         &:hover {

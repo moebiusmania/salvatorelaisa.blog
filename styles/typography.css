@@ -1,6 +1,7 @@
 
 html {
   background-color: var(--bg);
+  font-family: "Lexend", sans-serif;
 }
 
 /* TYPOGRAPHY ELEMENTS */
@@ -25,8 +26,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.7rem;
   line-height: 2rem;
 }
 
@@ -51,6 +52,7 @@ a {
   }
 
   & p {
+    font-size: 1.125rem;
     margin: var(--sp-3) 0;
   }
 
@@ -60,6 +62,7 @@ a {
     padding-left: var(--sp-3);
 
     & li {
+      font-size: 1.125rem;
       margin: var(--sp-1) 0;
       padding-left: var(--sp-1);
     }
@@ -109,5 +112,14 @@ a {
     border: 0;
     border-top: 1px solid var(--border);
     margin: var(--sp-4) 0;
+  }
+
+  & small {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  & strong {
+    font-weight: 800;
   }
 }

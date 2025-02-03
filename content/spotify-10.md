@@ -1,6 +1,6 @@
 ---
 title: Un decennio con Spotify
-date: '2023-12-02'
+date: "2023-12-02"
 tags:
   - spotify
   - musica
@@ -12,7 +12,7 @@ images:
   - https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp
 ---
 
-![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp) _Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_
+![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp) <small>_Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_</small>
 
 Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (_se non mi ricordo male era ottobre del 2013_), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro.
 
@@ -60,7 +60,6 @@ Come già accennato, se l’era dell’iPod è stata quella che ci ha fatto inte
 ## Breve recap di questi 10 anni di Spotify
 
 10 anni nel mondo della tecnologia equivalgono a un'era geologica, ecco perché preferisco condensare nella timeline qui sotto i pochi momenti che sono stati significativi per me in questa decade di Spotify:
-
 
 ::timeline{items="(ottobre) 2013 - Spotify apre il servizio in Italia, (fine) 2013 - Arrivano gli album, 2015 - i Beatles su Spotify, 2016 - ho inziato a salvarmi ogni playlist Wrapped, 2018 - passaggio ad account Family, 2022 - il Daily Drive, 2023 - demo del 'DJ personale' generato con machine learning e modelli vocali arriverà per davvero?"}
 ::

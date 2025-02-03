@@ -9,7 +9,14 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@nuxt/image",
     "@nuxt/test-utils/module",
+    "@nuxtjs/google-fonts",
   ],
+
+  googleFonts: {
+    families: {
+      Lexend: [300, 400, 700, 800],
+    },
+  },
 
   experimental: {
     componentIslands: true,

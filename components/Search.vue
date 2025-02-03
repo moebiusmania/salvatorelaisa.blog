@@ -52,7 +52,7 @@ form {
     font-size: 1rem;
     line-height: 1.5rem;
     border: 1px solid var(--primary);
-    border-radius: 2px;
+    /* border-radius: 2px; */
 
     @media (min-width: 768px) {
       max-width: 36rem;
