@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount } from "@vue/test-utils";
-import Outdated from "../Outdated.server.vue";
+import Outdated from "../Outdated.vue";
 
 describe("Outdated", () => {
   // Mock current date to ensure consistent testing
