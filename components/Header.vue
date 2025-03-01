@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SITE_TITLE } from "@/utils/config";
+import { SITE_TITLE, SEASON_EMOJI } from "@/utils/config";
 
 defineEmits(['changeTheme'])
 
@@ -32,6 +32,7 @@ const isActive = (href: string, route: any) => ["navitem", { "router-link-active
       <NuxtLink href="/">
         <img src="/static/images/avatar.png" :alt="SITE_TITLE" />
         <span>{{ SITE_TITLE }}</span>
+        <span>{{ SEASON_EMOJI }}</span>
       </NuxtLink>
       <nav>
         <NuxtLink v-for="(item, index) in nav" :key="index" :class="isActive(item.href, route)" :href="item.href">{{

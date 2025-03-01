@@ -1,11 +1,11 @@
 /**
-* SPRING THEME built on top of https://coolors.co/palette/bce784-5dd39e-348aa7-525174-513b56
+* SPRING THEME built on top of https://coolors.co/palette/1a535c-4ecdc4-f7fff7-ff6b6b-ffe66d
 */
 html.light {
-  --white: #F2E8CF;
-  --primary: #A7C957;
-  --secondary: #6A994E;
-  --text: #386641;
+  --white: #f7fff7;
+  --primary: #ff6b6b;
+  --secondary: #348aa7;
+  --text: #1a535c;
   --text-dark: inherit;
   --text-content-dark: inherit;
   --text-base-content: var(--text);
@@ -21,10 +21,10 @@ html.light {
 }
 
 html.dark {
-  --white: #19323C;
-  --primary: #F2545B;
-  --secondary: #A93F55;
-  --text: #F3F7F0;
+  --white: #1a535c;
+  --primary: #ff6b6b;
+  --secondary: #348aa7;
+  --text: #f7fff7;
   --text-dark: inherit;
   --text-content-dark: inherit;
   --text-base-content: var(--text);

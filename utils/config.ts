@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
+export const SEASON_EMOJI = "🌤️🌻";
