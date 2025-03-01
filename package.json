@@ -23,7 +23,7 @@
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "8.0.0",
-    "vitest": "3.0.6"
+    "vitest": "3.0.7"
   },
   "dependencies": {
     "modern-normalize": "3.0.1"
