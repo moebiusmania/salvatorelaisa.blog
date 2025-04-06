@@ -27,7 +27,7 @@ La postazione da cui lo sto giocando invece è radicalmente diversa dato che ho 
 
 ![I personaggi/classi di Diablo II in posa prima dell'inizio della festa.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-chars.png)<small>_I personaggi/classi di Diablo II in posa prima dell'inizio della festa._</small>
 
-Quindi sono passato dal mio vecchio PC di camera mia a casa dei miei (_del quale non mi ricordo minimamente le spec dato che erano periodo di cambiamenti_), con monitor CRT 14" o 16" (_credo_), tastiera e mouse dalla plastica grigio-sporco e seggiolina low-cost da ufficio a una Xbox Series X, TV da 46", divano dell'appartamento dove sono ora e controller.
+Quindi sono passato dal mio vecchio PC di camera mia a casa dei miei (_del quale non mi ricordo minimamente le spec dato che erano periodo di cambiamenti_), con monitor CRT 14" o 16" (_credo_), tastiera e mouse di colore grigio-sporco e seggiolina low-cost da ufficio a una Xbox Series X, TV da 46", divano dell'appartamento dove sono ora e controller.
 
 Un discreto divario di differenza, ma l'ho fatto anche per "ravvivare" un po l'esperienza: i vari Diablo I,II e III li ho sempre giocati tutti su PC con tastiera e mouse quindi visto che l'offerta di D2R su console era molto appetibile ho voluto introdurre questa novità all'operazione nostalgia.
 
@@ -47,7 +47,7 @@ Devo ammettere che il mood e il tema delle location di Diablo II era talmente be
 
 **Atto IV:** qui si va con il surreale viaggiando letteralmente all'inferno. E' l'atto più corto del gioco, si mixa un pò il gotico del primo atto con elementi più fantasy. Niente di particolarmente notevole a parte la cattedrale nella quale si svolge lo scontro finale. A posteriori possiamo dire che è stato un po un prototipo per alcune aree che verranno poi introdotte in Diablo III.
 
-**Atto V:** questo in realtà come già detto all'inizio è un'area per lo più nuova per me. Abbastanza ispirato alle steppe eurasiatiche come design, le zone sono in generale più grandi ma non mi ha detto nulla di che.
+**Atto V:** questo in realtà come già detto all'inizio è un'area per lo più nuova per me. Abbastanza ispirato alle steppe eurasiatiche come design, le zone sono in generale più grandi ma come area non mi ha detto nulla di che.
 
 ## La massima espressione di "cinematica"
 

@@ -83,19 +83,19 @@ footer {
 
   &>div {
     display: flex;
-    padding: var(--sp-4) var(--sp-3);
+    padding: var(--sp-4) 0;
     flex-direction: column;
     align-items: center;
     max-width: 64rem;
     margin: 0 auto;
     justify-content: center;
+    gap: var(--sp-3);
 
     @media (min-width: 640px) {
       flex-direction: row;
     }
 
     &>span {
-      margin-left: var(--sp-3);
       font-size: 1.25rem;
       line-height: 1.75rem;
     }
@@ -110,7 +110,6 @@ footer {
       @media (min-width: 640px) {
         padding: var(--sp-1) 0 var(--sp-1) var(--sp-2);
         margin-top: 0;
-        margin-left: var(--sp-2);
         border-left-width: 2px;
       }
 
