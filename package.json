@@ -7,7 +7,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "new": "node scripts/compose.js",
+    "new:post": "node scripts/post.js",
+    "new:device": "node scripts/device.js",
     "test": "vitest",
     "test:update": "vitest -u",
     "test:coverage": "vitest run --coverage"
