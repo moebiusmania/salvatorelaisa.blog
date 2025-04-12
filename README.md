@@ -24,7 +24,7 @@ I'm also integrating with [Nuxt Studio](https://nuxt.studio/) to play a bit with
 With an NPM script:
 
 ```bash
-$ npm run new "post title"
+$ npm run new:post "post title"
 ```
 
 or manually:
@@ -33,12 +33,19 @@ or manually:
 - clone the `_template.md` file
 - edit the cloned file with your content
 
+you can also create a new "device card" for the related page with:
+
+```bash
+$ npm run new:device "device name"
+```
+
 ## Customizations
 
 I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
 - light/dark mode switcher (_client side_)
 - live textual search for posts (_by title only_)
+- pinned posts (_just add `pinned: true` in the frontmatter_)
 - "comments" to post through [Threads](https://www.threads.net/) or check the source markdown file on Github
 - filter posts by tag
 - "posts by year" page template, available at `/post/year`
