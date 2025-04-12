@@ -1,12 +1,12 @@
 ---
 title: Github Codespaces
-date: '2021-08-14'
-tags: ['tecnicismi', 'web']
+date: "2021-08-14"
+tags: ["tecnicismi", "web"]
 draft: false
-summary: 'Da qualche giorno finalmente la feature è stata resa disponibile a tutti gli utenti di Github: si può finalmente testare Github Codespaces!'
+summary: "Da qualche giorno finalmente la feature è stata resa disponibile a tutti gli utenti di Github: si può finalmente testare Github Codespaces!"
 images:
   [
-    'https://github.com/moebiusmania/blog-assets/blob/master/images/2021/GitHub-Codespaces.png?raw=true',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2021/GitHub-Codespaces.png?raw=true",
   ]
 ---
 
@@ -22,7 +22,7 @@ Una delle parti che mi fa davvero impazzire e che è già disponibile per tutti 
 
 Poi certo è una cosa comoda in tante altre circostanze sopratutto abbinando la possibilità di "noleggiare" l'ambiente di lavoro in cloud e quindi permettendo di lavorare anche da PC o device normalmente poco performanti come hardware.
 
-#### Aggiunta di Febbraio 2022
+### Aggiunta di Febbraio 2022
 
 Purtroppo nonostante l'entusiasmo e le ottime prospettive, gli ambienti di sviluppo cloud di GH Codespace sono disponibili **esclusivamente** per gli account di team o org. E da VS Code nel browser non è possibile sfruttare nessun altro tipo di soluzione custom 😕.
 

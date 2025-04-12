@@ -43,3 +43,13 @@ Per chi fosse così coraggioso da voler vedere le versioni precedenti e avere un
 Difficile da dirsi ora, ma dato che non contavo neanche di arrivare 10 forse non è così improbabile!
 
 **Aggiornamento di Settembre 2023:** aggiunti un po di dettagli sulle varie "ere" del blog.
+
+<!--
+
+---
+
+## Checkpoint dei 15
+
+prova
+
+-->

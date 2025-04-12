@@ -1,11 +1,10 @@
 ---
 title: Il ritorno di HeroQuest... e invece no!
-date: '2015-03-01'
-tags: ['pensieri']
+date: "2015-03-01"
+tags: ["pensieri"]
 draft: false
-summary: 'Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR).'
-images:
-  ['https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true']
+summary: "Quando vidi per la prima volta questo spot in tv da bambino non mi aveva attirato molto, andavo alle elementari e non avevo la minima idea di cosa fosse un gioco di ruolo (GdR)."
+images: "https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true"
 ---
 
 ![La cover art di quello che doveva essere il remake di HeroQuest.](https://github.com/moebiusmania/blog-assets/blob/master/images/2015/maxresdefault.jpg?raw=true)<small>_La cover art di quello che doveva essere il remake di HeroQuest._</small>
@@ -38,6 +37,4 @@ Se anni dopo sono entrato nel tunnel di **Diablo** & company (_League of Legends
 
 Peccato davvero.
 
-#### Aggiunta di Agosto 2022
-
-Alla fine HeroQuest [è tornato per davvero](https://www.amazon.it/Hasbro-Gaming-Heroquest-Avventura-Miniature/dp/B09M9FWPVG/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PYPXI2TJJAAG&keywords=hero+quest&qid=1660553434&sprefix=hero+ques%2Caps%2C158&sr=8-3) e in via ufficiale 😎.
+**Aggiornamento di Agosto 2022:** Alla fine HeroQuest [è tornato per davvero](https://www.amazon.it/Hasbro-Gaming-Heroquest-Avventura-Miniature/dp/B09M9FWPVG/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PYPXI2TJJAAG&keywords=hero+quest&qid=1660553434&sprefix=hero+ques%2Caps%2C158&sr=8-3) e in via ufficiale 😎.

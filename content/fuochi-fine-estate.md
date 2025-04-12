@@ -27,10 +27,10 @@ Quindi... ci vediamo nel 2016, fuochi di fine estate!
 
 ---
 
-### 2024, le tradizioni si aggiornano
+## 2024, le tradizioni si aggiornano
 
 E quando meno te lo aspetti ecco che arriva la grande novità: **da quest'anno (_2024_) i "fuochi di fine estate" non saranno più fuochi ma bensi uno spettacolo di droni e musica 🤯!**
 
 Come [riportato da alcuni giornali locali](https://www.quatarobpavia.it/droni-luminosi-festa-del-ticino-2024/), dovrebbe essere una scelta più attenta all'ambiente e gli animali domestici, ma vederemo il mese prossimo se oltre a queste attenzioni la versione aggiornata dei "fuochi" sarà anche divertente 🤓.
 
-<!-- **Aggiornamento di Settembre 2024:** bla bla -->
+**Aggiornamento di Settembre 2024:** alla fine a causa maltempo 🌧️ la chiusura della Festa del Ticino 2024 è stata annullata... vedremo come andrà l'anno prossimo!
