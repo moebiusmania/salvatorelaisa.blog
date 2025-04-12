@@ -2,11 +2,19 @@
 import type { ParsedContent } from "@nuxt/content";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
+const nonDrafts: ParsedContent[] = await queryContent()
+  .where({ draft: false })
+  .find();
+
 const posts: ParsedContent[] = await queryContent()
   .where({ draft: false })
   .sort({ date: -1 })
   .limit(5)
   .find();
+
+const pinnedPost = nonDrafts.find(post => post.pinned === true);
+
+pinnedPost ? posts.unshift(pinnedPost) : posts;
 </script>
 
 <template>

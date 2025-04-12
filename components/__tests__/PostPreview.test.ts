@@ -14,12 +14,30 @@ describe("PostPreview", () => {
     },
   };
 
-  // Snapshot test
+  // Snapshot test for regular post
   it("renders correctly", () => {
     const wrapper = mount(PostPreview, {
       props: {
         post: {
           ...mockPost,
+          body: {
+            type: "root",
+            children: [],
+          },
+          _id: "test-id",
+        },
+      },
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  // Snapshot test for pinned post
+  it("renders pinned post correctly", () => {
+    const wrapper = mount(PostPreview, {
+      props: {
+        post: {
+          ...mockPost,
+          pinned: true,
           body: {
             type: "root",
             children: [],

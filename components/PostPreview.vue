@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ParsedContent } from "@nuxt/content";
+import { PINNED_POST_DESCRIPTION } from "~/utils/config";
 
 defineProps<{
   post: ParsedContent;
@@ -7,8 +8,9 @@ defineProps<{
 </script>
 
 <template>
-  <li>
-    <div>
+  <li :class="{ 'pinned': post.pinned }">
+    <span v-if="post.pinned" class="badge" :title="PINNED_POST_DESCRIPTION">in evidenza</span>
+    <time>
       <span>
         {{
           new Date(post.date).toLocaleDateString("it-it", {
@@ -18,7 +20,7 @@ defineProps<{
           })
         }}
       </span>
-    </div>
+    </time>
     <div>
       <NuxtLink :href="`/post${post._path}`">
         <h2>
@@ -52,12 +54,50 @@ li {
   display: flex;
   padding: var(--sp-4) 0;
   flex-wrap: wrap;
+  position: relative;
+
+  &.pinned {
+    margin: var(--sp-4) 0;
+    border: 1px solid var(--primary);
+    border-top: 10px solid var(--primary);
+    border-bottom: 10px solid var(--primary);
+    padding: var(--sp-2);
+    /* box-shadow: 0 0 20px 0 var(--primary); */
+
+    @media (min-width: 768px) {
+      border: 1px solid var(--primary);
+      border-left: 10px solid var(--primary);
+      padding-left: var(--sp-1);
+    }
+
+    & .badge {
+      position: absolute;
+      top: -35px;
+      left: -1px;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: var(--sp-1);
+      cursor: help;
+      text-transform: uppercase;
+
+      @media (min-width: 768px) {
+        top: unset;
+        bottom: 0;
+      }
+    }
+
+    &>time {
+      @media (min-width: 768px) {
+        width: 14rem;
+      }
+    }
+  }
 
   @media (min-width: 768px) {
     flex-wrap: nowrap;
   }
 
-  &>div:first-child {
+  &>time {
     display: flex;
     margin-bottom: var(--sp-3);
     flex-direction: column;
