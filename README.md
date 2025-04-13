@@ -54,6 +54,29 @@ I've added some small new features over the starting Nuxt template to handle som
 - "old post warning" for 2+ years old content
 - "personal devices timeline" section
 - CSS themes support (_at the moment only an "xmas" one is included_)
+- basic CLI stats (_total posts, drafts, device cards_)
+
+## CLI stats
+
+Very basic stats can be generated on the terminal using
+
+```bash
+$ npm run stats
+```
+
+it will output a table like this
+
+```bash
+📊 Blog quick stats
+┌─────────┬─────────────────────────┬───────┐
+│ (index) │ Category                │ Count │
+├─────────┼─────────────────────────┼───────┤
+│ 0       │ '📄 Posts'              │  2    │
+│ 1       │ '📝 Drafts'             │  1    │
+│ 2       │ '📱 Device Cards'       │  2    │
+│ 3       │ '📝 Device Card Drafts' │  1    │
+└─────────┴─────────────────────────┴───────┘
+```
 
 ## Can I use this to bootstrap my new Nuxt blog?
 
