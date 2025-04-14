@@ -4,7 +4,7 @@ date: "2021-07-02"
 tags: ["blog", "tecnicismi"]
 draft: false
 summary: "Devo ammettere che questo blog ormai ha visto più rifacimenti che articoli 🤣."
-images: "https://wallpapercave.com/wp/wp11846968.png"
+images: ["https://wallpapercave.com/wp/wp11846968.png"]
 ---
 
 ![il logo di Next.js](https://wallpapercave.com/wp/wp11846968.png)

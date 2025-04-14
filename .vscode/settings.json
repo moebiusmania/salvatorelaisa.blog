@@ -4,5 +4,8 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
