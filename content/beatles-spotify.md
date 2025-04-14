@@ -1,10 +1,10 @@
 ---
 title: 8 motivi per cui i Beatles su Spotify sono una gran cosa!
-date: '2015-12-26'
-tags: ['musica', 'beatles', 'spotify']
+date: "2015-12-26"
+tags: ["musica", "beatles", "spotify"]
 draft: false
-summary: 'SPOILER: sono i migliori!'
-images: ['https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg']
+summary: "SPOILER: sono i migliori!"
+images: ["https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg"]
 ---
 
 ![La copertina dell'album "Help!"](https://i.ytimg.com/vi/B6H2mVK1M20/maxresdefault.jpg)<small>_La copertina dell'album "Help!"._</small>

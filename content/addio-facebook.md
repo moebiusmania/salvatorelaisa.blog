@@ -1,11 +1,11 @@
 ---
 title: Addio Facebook...
-date: '2019-01-04'
-tags: ['social', 'facebook', 'privacy']
+date: "2019-01-04"
+tags: ["social", "facebook", "privacy"]
 draft: false
 images:
   [
-    'https://images.unsplash.com/photo-1522159698025-071104a1ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80',
+    "https://images.unsplash.com/photo-1522159698025-071104a1ddbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
   ]
 summary: "Non l'ho fatto per un singolo motivo preciso, diciamo che è più una raccolta di sintomi che una volta ponderati mi hanno fatto capire che tanto valeva compiere questo passo..."
 ---

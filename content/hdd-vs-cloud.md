@@ -1,10 +1,10 @@
 ---
 title: Hard Disks grossi vs il Cloud
-date: '2015-07-07'
-tags: ['tecnicismi', 'device', 'cloud']
+date: "2015-07-07"
+tags: ["tecnicismi", "device", "cloud"]
 draft: false
-summary: 'Stamattina ero al Radiant, una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare...'
-images: ['https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg']
+summary: "Stamattina ero al Radiant, una fiera che di tanto in tanto mi piace bazzicare visto che ogni volta ne esco con qualche gadget low cost con cui giochicchiare..."
+images: ["https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg"]
 ---
 
 [![Foto di William Warby su Flickr](https://farm3.staticflickr.com/2827/11644168395_64ba267dac_h.jpg)](https://www.flickr.com/photos/wwarby/11644168395/) <small>_Foto di William Warby su Flickr_</small>

@@ -7,7 +7,7 @@ tags:
   - ""
 draft: true
 summary: ""
-images: ""
+images: [""]
 ---
 
 `;

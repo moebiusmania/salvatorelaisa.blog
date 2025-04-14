@@ -1,10 +1,10 @@
 ---
 title: Halloween goodies
-date: '2016-10-15'
-tags: ['eventi', 'halloween']
+date: "2016-10-15"
+tags: ["eventi", "halloween"]
 draft: false
-summary: 'Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween.'
-images: ['https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg']
+summary: "Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween."
+images: ["https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg"]
 ---
 
 ![Un mio scatto "hallowiniano" uploadato su Flickr](https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg)<small>_Un mio scatto "hallowiniano" [uploadato su Flickr](https://www.flickr.com/photos/moebius06/6307073191/)._</small>

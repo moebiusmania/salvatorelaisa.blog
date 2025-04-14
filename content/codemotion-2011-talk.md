@@ -1,11 +1,13 @@
 ---
 title: Dove va il webdesigner?
-date: '2011-02-21'
-tags: ['talk', 'eventi', 'codemotion']
+date: "2011-02-21"
+tags: ["talk", "eventi", "codemotion"]
 draft: false
-summary: 'Beh se proprio non ha niente da fare può fare un salto a Roma il 5 Marzo per il Codemotion!'
+summary: "Beh se proprio non ha niente da fare può fare un salto a Roma il 5 Marzo per il Codemotion!"
 images:
-  ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion.jpg']
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion.jpg",
+  ]
 ---
 
 ![Un banner di Codemotion 2011.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion.jpg) <small>_Un banner di Codemotion 2011._</small>

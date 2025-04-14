@@ -1,11 +1,13 @@
 ---
 title: Si comincia!
-date: '2010-08-21'
-tags: ['blog']
+date: "2010-08-21"
+tags: ["blog"]
 draft: false
 summary: "Lo so che ci ho messo un bel pò, ma sapete com'è.... quando bisogna lavorare per se stessi non si è mai subito soddisfatti di quello che si sta facendo! 😄"
 images:
-  ['https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/toon_me.webp']
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/toon_me.webp",
+  ]
 ---
 
 ![Uno screenshot della landing page in Flash che era live su questo sito prima di creare il blog.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2010/toon_me.webp) <small>_Uno screenshot della landing page in Flash che era live su questo sito prima di creare il blog._</small>

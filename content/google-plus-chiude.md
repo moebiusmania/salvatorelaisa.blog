@@ -1,10 +1,13 @@
 ---
 title: Chiude Google+
-date: '2019-02-24'
-tags: ['social', 'google']
+date: "2019-02-24"
+tags: ["social", "google"]
 draft: false
-summary: 'Google ha un notevole cimitero di prodotti, alcuni terminati ingiustamente, altri di cui non ne sentiamo la macanza e altri ancora... meh...'
-images: ['https://www.goldengraphic.it/blog/wp-content/uploads/2019/02/Addioa-GooglePlus.jpg']
+summary: "Google ha un notevole cimitero di prodotti, alcuni terminati ingiustamente, altri di cui non ne sentiamo la macanza e altri ancora... meh..."
+images:
+  [
+    "https://www.goldengraphic.it/blog/wp-content/uploads/2019/02/Addioa-GooglePlus.jpg",
+  ]
 ---
 
 ![Un'altra aggiunta al cimitero di Google...](https://www.goldengraphic.it/blog/wp-content/uploads/2019/02/Addioa-GooglePlus.jpg) <small>_Un'altra aggiunta al cimitero di Google..._</small>

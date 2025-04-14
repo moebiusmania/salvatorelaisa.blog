@@ -1,12 +1,12 @@
 ---
 title: Nexus 5
-date: '2014-03-29'
-tags: ['android', 'device', 'nexus', 'mobile']
+date: "2014-03-29"
+tags: ["android", "device", "nexus", "mobile"]
 draft: false
 summary: "Ok, ora che lo sto utilizzando da qualche mese posso dire due paroline: il migliore smartphone Android su cui abbia messo le zampe finora! E parliamo del prezzo, 350€ il modello base e 400€ quello da 32gb (visto che però non c'è slot SD card ho optato per questo) per un device con Android stock su cui c'è preinstallata quella che ad oggi è la versione più performante dell'OS di Google, la 4.4 KitKat."
 images:
   [
-    'https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2014/IMG_20131215_114606_2_2.jpeg?raw=true",
   ]
 ---
 

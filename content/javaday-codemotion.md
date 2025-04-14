@@ -1,12 +1,12 @@
 ---
 title: Il Javaday cambia e diviene Codemotion
-date: '2011-01-13'
-tags: ['eventi', 'codemotion']
+date: "2011-01-13"
+tags: ["eventi", "codemotion"]
 draft: false
-summary: 'Per quattro anni il Javaday Roma ha offerto un evento unico in Italia per contenuti, affluenza e spirito. L’atmosfera trascinante del Javaday ha saputo conquistare e coinvolgere i partecipanti e gli sponsor.'
+summary: "Per quattro anni il Javaday Roma ha offerto un evento unico in Italia per contenuti, affluenza e spirito. L’atmosfera trascinante del Javaday ha saputo conquistare e coinvolgere i partecipanti e gli sponsor."
 images:
   [
-    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion2011.png',
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2011/codemotion2011.png",
   ]
 ---
 

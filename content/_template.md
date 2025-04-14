@@ -1,11 +1,11 @@
 ---
 title: My fancy title
 date: "2021-01-31"
-tags: 
+tags:
   - "hello"
 draft: true
 summary: ""
-images: []
+images: [""]
 ---
 
 Draft post which should not display

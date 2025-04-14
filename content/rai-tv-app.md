@@ -1,10 +1,13 @@
 ---
 title: La Rai ha finalmente capito da che parte deve andare
-date: '2017-03-23'
-tags: ['tv', 'evoluzione']
+date: "2017-03-23"
+tags: ["tv", "evoluzione"]
 draft: false
 summary: "La recentemente aggiornata applicazione per smart TV e la nuova policy del catalogo permettono di usufruire dei contenuti della televisione di stato in maniera più dinamica e senza per forza un'antenna televisiva. Era ora, dato che siamo costretti a pagarla..."
-images: ['https://github.com/moebiusmania/blog-assets/blob/master/images/2017/unnamed.png?raw=true']
+images:
+  [
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2017/unnamed.png?raw=true",
+  ]
 ---
 
 ![Screenshot promozionale della nuova app presente sui vari store.](https://github.com/moebiusmania/blog-assets/blob/master/images/2017/unnamed.png?raw=true) <small>_Screenshot promozionale della nuova app presente sui vari store._</small>

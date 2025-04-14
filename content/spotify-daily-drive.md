@@ -1,12 +1,12 @@
 ---
 title: Spotify Daily Drive è il mio vero radio-killer
-date: '2022-03-26'
-tags: ['spotify', 'musica', 'servizi']
+date: "2022-03-26"
+tags: ["spotify", "musica", "servizi"]
 draft: false
 summary: "In realtà questa feature esiste in Italia già dall'autuno, ma per qualche strano motivo mi era sfuggita... poi grazie a una notifica dell'app mobile, ho scoperto la mia nuova dipendenza giornaliera!"
 images:
   [
-    'https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/spotify-daily-drive.png',
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2022/spotify-daily-drive.png",
   ]
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: Nvidia Shield TV
-date: '2017-07-19'
-tags: ['tv', 'device', 'android']
+date: "2017-07-19"
+tags: ["tv", "device", "android"]
 draft: false
 summary: "Il Nexus Player che possiedo fa bene il suo lavoro, ma visto che è stato concepito puramente per riproduzione video e il su futuro sembra abbastanza incerto (praticamente si sa che NON ci sarà un successore e non chiaro quanto durerà il supporto da parte di Google) volevo iniziare a fare un'occhiata a set-top-box alternativi basati su Android."
 images:
   [
-    'https://github.com/moebiusmania/blog-assets/blob/master/images/2017/IMG_20170712_141947.jpeg?raw=true',
+    "https://github.com/moebiusmania/blog-assets/blob/master/images/2017/IMG_20170712_141947.jpeg?raw=true",
   ]
 ---
 
