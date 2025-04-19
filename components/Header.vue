@@ -5,19 +5,30 @@ defineEmits(['changeTheme'])
 
 const nav: Array<{
   name: string,
-  href: string
+  href: string,
+  title: string,
+  external?: boolean
 }> = [{
   //   name: "🎁",
   //   href: "/xmas"
+  //   title: "Cotenuti speciali natalizi"
   // }, {
+  name: "🌍",
+  href: "https://www.earthday.org/earth-day-2025/",
+  title: "Giornata della terra 2025",
+  external: true
+}, {
   name: "Cerca",
-  href: "/post/page/1"
+  href: "/post/page/1",
+  title: "Tutti gli articoli del blog"
 }, {
   name: "About",
-  href: "/about"
+  href: "/about",
+  title: "Qualche riga su di me"
 }, {
   name: "Tags",
-  href: "/tags"
+  href: "/tags",
+  title: "Articoli per tag"
 }]
 
 const { dark } = defineProps<{ dark: boolean }>();
@@ -35,8 +46,9 @@ const isActive = (href: string, route: any) => ["navitem", { "router-link-active
         <span>{{ SEASON_EMOJI }}</span>
       </NuxtLink>
       <nav>
-        <NuxtLink v-for="(item, index) in nav" :key="index" :class="isActive(item.href, route)" :href="item.href">{{
-          item.name }}</NuxtLink>
+        <NuxtLink v-for="(item, index) in nav" :title="item.title" :key="index" :class="isActive(item.href, route)"
+          :href="item.href" :target="item.external ? '_blank' : '_self'">{{
+            item.name }}</NuxtLink>
         <a class="navitem" aria-label="theme switcher" href="#" id="theme" @click="$emit('changeTheme')">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
             <path v-if="dark" class="sun" fill-rule="evenodd"
