@@ -9,10 +9,10 @@ tags:
 draft: false
 summary: Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (se non mi ricordo male era ottobre del 2013), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro.
 images:
-  - https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp
+  - https://raw.githubusercontent.com/moebiusmania/blog-assets/refs/heads/master/images/2023/spotify.webp
 ---
 
-![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://cdn.midjourney.com/5d262b82-3661-4277-adeb-032dded3a845/0_0.webp) <small>_Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_</small>
+![Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"](https://raw.githubusercontent.com/moebiusmania/blog-assets/refs/heads/master/images/2023/spotify.webp) <small>_Il prompt Midjourney per generare questa immagine è stato: "person listening to music with earphones, green ambient light --ar 16:9 --v 5.2"_</small>
 
 Con il 2023 che giunge alla conclusione, ho realizzato che sono passati 10 anni dall'arrivo di Spotify in Italia (_se non mi ricordo male era ottobre del 2013_), e come mia abitudine mi sono fermato un attimo a pensarci su e riguardare indietro.
 
