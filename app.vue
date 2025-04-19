@@ -23,6 +23,7 @@ useHead({
   meta: [
     { name: "title", content: SITE_TITLE },
     { name: "description", content: SITE_DESCRIPTION },
+    { name: "og:description", content: SITE_DESCRIPTION },
   ],
   // script: [
   //   {
