@@ -22,7 +22,7 @@
     "@nuxthq/studio": "2.2.1",
     "@nuxtjs/google-fonts": "3.2.0",
     "@vue/test-utils": "2.4.6",
-    "gray-matter": "4.0.3",
+    "happy-dom": "17.4.4",
     "nuxt": "3.16.2",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
