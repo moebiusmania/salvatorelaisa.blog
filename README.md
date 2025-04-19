@@ -6,7 +6,7 @@ Hosting and Continous Deployment is based on Github Pages & Actions.
 
 The contents are **my own personal thoughts and opinions**. Images and videos that aren't of my own or made by me are always linked/embedded from external sources.
 
-## Built on top of
+## 🛠️ Built on top of
 
 - [Nuxt 3](https://nuxt.com/) - main application framework based on [Vue 3](https://vuejs.org/)
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
@@ -19,27 +19,7 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 I'm also integrating with [Nuxt Studio](https://nuxt.studio/) to play a bit with **visual editing**, which comes pretty handy when editing/writing content from devices like the iPad Mini.
 
-## Creating a new post
-
-With an NPM script:
-
-```bash
-$ npm run new:post "post title"
-```
-
-or manually:
-
-- go in the `content` folder
-- clone the `_template.md` file
-- edit the cloned file with your content
-
-you can also create a new "device card" for the related page with:
-
-```bash
-$ npm run new:device "device name"
-```
-
-## Customizations
+## ⚙️ Customizations
 
 I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
 
@@ -56,32 +36,21 @@ I've added some small new features over the starting Nuxt template to handle som
 - CSS themes support (_at the moment only an "xmas" one is included_)
 - basic CLI stats (_total posts, drafts, device cards_)
 
-## CLI stats
+## 💻 CLI commands
 
-Very basic stats can be generated on the terminal using
+Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some custom scripts to better manage the blog through terminal:
 
-```bash
-$ npm run stats
-```
+| Command              | Description                     |
+| -------------------- | ------------------------------- |
+| `npm run new:post`   | Create new blog post            |
+| `npm run new:device` | Create new device card          |
+| `npm run stats`      | Generate simple blog statistics |
+| `npm run drafts`     | List draft posts                |
 
-it will output a table like this
-
-```bash
-📊 Blog quick stats
-┌─────────┬─────────────────────────┬───────┐
-│ (index) │ Category                │ Count │
-├─────────┼─────────────────────────┼───────┤
-│ 0       │ '📄 Posts'              │  2    │
-│ 1       │ '📝 Drafts'             │  1    │
-│ 2       │ '📱 Device Cards'       │  2    │
-│ 3       │ '📝 Device Card Drafts' │  1    │
-└─────────┴─────────────────────────┴───────┘
-```
-
-## Can I use this to bootstrap my new Nuxt blog?
+## 👀 Can I use this to bootstrap my new Nuxt blog?
 
 Sure you can! But this repo is not structured as a template for new projects so you will need to delete all of my content (_which is **not** free to use_) and references and add your own. It's not difficult but just a bit tedious, have fun!
 
-## License
+## 📄 License
 
 Code released under the [MIT](LICENSE) license.
