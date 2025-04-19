@@ -12,7 +12,8 @@
     "test": "vitest",
     "test:update": "vitest -u",
     "test:coverage": "vitest run --coverage",
-    "stats": "node scripts/stats.js"
+    "stats": "node scripts/stats.js",
+    "drafts": "node scripts/drafts.js"
   },
   "devDependencies": {
     "@nuxt/content": "2.13.4",
@@ -21,10 +22,12 @@
     "@nuxthq/studio": "2.2.1",
     "@nuxtjs/google-fonts": "3.2.0",
     "@vue/test-utils": "2.4.6",
+    "gray-matter": "4.0.3",
     "nuxt": "3.16.2",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
     "sitemap": "8.0.0",
+    "table": "6.9.0",
     "vitest": "3.1.1"
   },
   "dependencies": {
