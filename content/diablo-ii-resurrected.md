@@ -7,11 +7,11 @@ summary: 'Nell''ormai lontano 2000 usciva uno di quei casi rari videoludici di s
 platforms: [{ label: "Xbox Series X", url: "#" }]
 images:
   [
-    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-logo.png",
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-logo.webp",
   ]
 ---
 
-![La splash screen di Diablo II: Resurrected.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-logo.png)<small>_La splash screen di Diablo II: Resurrected._</small>
+![La splash screen di Diablo II: Resurrected.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-logo.webp)<small>_La splash screen di Diablo II: Resurrected._</small>
 
 Nell'ormai lontano 2000 usciva uno di quei casi rari videoludici di sequel che oscura completamente il capitolo precedente: **parliamo ovviamente di Diablo II**. Nonostante la versione **"Resurrected"** (_ovvero completamente rifatta da zero_) di questo gioco sia uscita nel 2021, qualche giorno fa grazie a una bella offertona dovuta per lo più all'uscita del quarto capitolo della saga, l'ho aggiunto alla mia libreria. E ragazzi... che _feels_!
 
@@ -25,7 +25,7 @@ Nonostante questo sia un remake da zero dell'originale, **per il 90% di quello c
 
 La postazione da cui lo sto giocando invece è radicalmente diversa dato che ho deliberatamente scelto di acquistare **la versione per console Xbox invece di quella PC** 🤓.
 
-![I personaggi/classi di Diablo II in posa prima dell'inizio della festa.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-chars.png)<small>_I personaggi/classi di Diablo II in posa prima dell'inizio della festa._</small>
+![I personaggi/classi di Diablo II in posa prima dell'inizio della festa.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-chars.webp)<small>_I personaggi/classi di Diablo II in posa prima dell'inizio della festa._</small>
 
 Quindi sono passato dal mio vecchio PC di camera mia a casa dei miei (_del quale non mi ricordo minimamente le spec dato che erano periodo di cambiamenti_), con monitor CRT 14" o 16" (_credo_), tastiera e mouse di colore grigio-sporco e seggiolina low-cost da ufficio a una Xbox Series X, TV da 46", divano dell'appartamento dove sono ora e controller.
 
@@ -41,7 +41,7 @@ Devo ammettere che il mood e il tema delle location di Diablo II era talmente be
 
 **Atto II:** qui è dove cominciano a introdurre novità: si passa al deserto e una forte ispirazione filo-egiziana, e poi l'hub principale... ahhh Lut Gholein! qui ci ho speso davvero le ore ai tempi e rigiocandoci ora mi ricordo ancora ogni angolo di questa mini-città. E quelle dannate bestiacce saltellanti nelle zone all'aperto 🤬...
 
-![Una delle location più insolite nel secondo atto del gioco.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-arcane.png)<small>_Una delle location più insolite nel secondo atto del gioco._</small>
+![Una delle location più insolite nel secondo atto del gioco.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/diablo2r-arcane.webp)<small>_Una delle location più insolite nel secondo atto del gioco._</small>
 
 **Atto III:** continua il trend delle nuove ambientazioni introducendo la città di Kurast e un'ambientazione in stile Maya/Inca/civiltà del Centroamerica. Concetto interessante ma purtroppo però non ho molto amato il layout dell'hub di questo atto e in generale anche le aree successive sono un po frustranti come "forme" (_vero che ogni area è generata casualmente ad ogni partita, ma ci sono chiari pattern che si ripetono_).
 

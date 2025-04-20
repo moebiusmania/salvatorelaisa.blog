@@ -5,10 +5,12 @@ tags: ["ai", "pensieri", "evoluzione"]
 draft: false
 summary: "Se c'è una cosa che non so fare ma che davvero avrei voluto esserne capace, quello è disegnare. Che siano fumetti, ritratti, paesaggi o anche qualcosa di astratto, ho sempre invidiato le persone che prendono in mano una matita e in pochi minuti sanno tirare fuori qualcosa di interessante, indipendentemente dalla complessità."
 images:
-  ["https://cdn.midjourney.com/dcacda8c-fb6b-4785-9298-1564540e76db/0_0.webp"]
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/midjourney.webp",
+  ]
 ---
 
-![Il prompt per generare questa immagine è stato: "the beauty of midjourney's art, 8k --ar 16:9"](https://cdn.midjourney.com/dcacda8c-fb6b-4785-9298-1564540e76db/0_0.webp) <small>_Il prompt per generare questa immagine è stato: "the beauty of midjourney's art, 8k --ar 16:9"_</small>
+![Il prompt per generare questa immagine è stato: "the beauty of midjourney's art, 8k --ar 16:9"](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/midjourney.webp) <small>_Il prompt per generare questa immagine è stato: "the beauty of midjourney's art, 8k --ar 16:9"_</small>
 
 Se c'è una cosa che non so fare ma che davvero avrei voluto esserne capace, quello è **disegnare**.
 
