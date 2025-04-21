@@ -40,12 +40,29 @@ I've added some small new features over the starting Nuxt template to handle som
 
 Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some custom scripts to better manage the blog through terminal:
 
-| Command              | Description                     |
-| -------------------- | ------------------------------- |
-| `npm run new:post`   | Create new blog post            |
-| `npm run new:device` | Create new device card          |
-| `npm run stats`      | Generate simple blog statistics |
-| `npm run drafts`     | List draft posts                |
+| Command                             | Description                     |
+| ----------------------------------- | ------------------------------- |
+| `npm run new:post`                  | Create new blog post            |
+| `npm run new:device`                | Create new device card          |
+| `npm run stats`                     | Generate simple blog statistics |
+| `npm run drafts`                    | List draft posts                |
+| `npm run convert:webp path/to/file` | Convert images to `.webp`       |
+
+## 🖼️ Converting images to .webp
+
+To achieve better page loading performance, you should [use as much as possible formats like the `.webp`](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images).
+
+For this reason I've included a simple converter script based on [sharp](https://sharp.pixelplumbing.com/) that can convert a single file or a whote folder of `.png`, `.jpg`/`.jpeg` files and convert them to `.webp` format, making it very easy to do some optimizations.
+
+```bash
+npm run convert:webp path/to/file-or-folder
+```
+
+the default `.webp` quality is set to `90`, but you can change this using an optional flag
+
+```bash
+npm run convert:webp path/to/file-or-folder -- --quality 100
+```
 
 ## 👀 Can I use this to bootstrap my new Nuxt blog?
 

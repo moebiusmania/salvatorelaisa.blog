@@ -13,7 +13,8 @@
     "test:update": "vitest -u",
     "test:coverage": "vitest run --coverage",
     "stats": "node scripts/stats.js",
-    "drafts": "node scripts/drafts.js"
+    "drafts": "node scripts/drafts.js",
+    "convert:webp": "node scripts/images-converter.js"
   },
   "devDependencies": {
     "@nuxt/content": "2.13.4",
@@ -26,6 +27,7 @@
     "nuxt": "3.16.2",
     "remark-reading-time": "2.0.1",
     "rss": "1.2.2",
+    "sharp": "0.34.1",
     "sitemap": "8.0.0",
     "table": "6.9.0",
     "vitest": "3.1.1"
