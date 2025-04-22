@@ -1,23 +1,16 @@
 <script setup lang="ts">
-import { SITE_TITLE, SEASON_EMOJI } from "@/utils/config";
+import { SITE_TITLE, SEASON_EMOJI, EVENTS } from "@/utils/config";
 
-defineEmits(['changeTheme'])
-
-const nav: Array<{
+export interface NavItem {
   name: string,
   href: string,
   title: string,
   external?: boolean
-}> = [{
-  //   name: "🎁",
-  //   href: "/xmas"
-  //   title: "Cotenuti speciali natalizi"
-  // }, {
-  name: "🌍",
-  href: "https://www.earthday.org/earth-day-2025/",
-  title: "Giornata della terra 2025",
-  external: true
-}, {
+}
+
+defineEmits(['changeTheme'])
+
+const items: Array<NavItem> = [{
   name: "Cerca",
   href: "/post/page/1",
   title: "Tutti gli articoli del blog"
@@ -31,6 +24,8 @@ const nav: Array<{
   title: "Articoli per tag"
 }]
 
+const nav: Array<NavItem> = [EVENTS.earthDay, ...items]
+
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
 
@@ -41,7 +36,7 @@ const isActive = (href: string, route: any) => ["navitem", { "router-link-active
   <header>
     <div>
       <NuxtLink href="/">
-        <img src="/static/images/avatar.png" :alt="SITE_TITLE" />
+        <img src="/static/images/avatar.webp" :alt="SITE_TITLE" />
         <span>{{ SITE_TITLE }}</span>
         <span>{{ SEASON_EMOJI }}</span>
       </NuxtLink>

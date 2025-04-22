@@ -72,6 +72,6 @@ useHead({
 <style>
 @import 'node_modules/modern-normalize/modern-normalize.css';
 @import './styles/spacing.css';
-@import './styles/themes/spring.css';
+@import './styles/themes/default.css';
 @import './styles/typography.css';
 </style>
