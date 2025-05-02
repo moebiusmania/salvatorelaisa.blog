@@ -64,6 +64,12 @@ the default `.webp` quality is set to `90`, but you can change this using an opt
 npm run convert:webp path/to/file-or-folder -- --quality 100
 ```
 
+## How to change theme
+
+It's easier as changing a line in the `/utils/config.ts`, however you need a CSS theme file with the same name in `/public/styles/themes`.
+
+If you wante to create a new theme you can just copy and rename one of the existing files and change the values of the CSS variables in it.
+
 ## 👀 Can I use this to bootstrap my new Nuxt blog?
 
 Sure you can! But this repo is not structured as a template for new projects so you will need to delete all of my content (_which is **not** free to use_) and references and add your own. It's not difficult but just a bit tedious, have fun!

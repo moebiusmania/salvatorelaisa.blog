@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
+import { SITE_TITLE, SITE_DESCRIPTION, CURRENT_THEME } from "@/utils/config";
 
+// Add theme constant with proper typing
+type BlogTheme = 'default' | 'spring' | 'xmas'
 type Theme = "dark" | "light";
 
 const options: { [k: string]: Theme } = {
@@ -9,6 +11,16 @@ const options: { [k: string]: Theme } = {
 }
 
 const theme = useState<Theme>('theme', () => options.light)
+
+// Add computed property for theme import
+const themeImport = computed(() => {
+  const themes: Record<BlogTheme, string> = {
+    default: '/styles/themes/default.css',
+    spring: '/styles/themes/spring.css',
+    xmas: '/styles/themes/xmas.css'
+  }
+  return themes[CURRENT_THEME]
+})
 
 const changeTheme = () => {
   theme.value = theme.value === options.light ? options.dark : options.light;
@@ -48,6 +60,10 @@ useHead({
       sizes: "32x32",
       href: "/static/favicons/favicon-32x32.png",
     },
+    { rel: "stylesheet", href: "/styles/normalize.css" },
+    { rel: "stylesheet", href: "/styles/spacing.css" },
+    { rel: "stylesheet", href: themeImport.value },
+    { rel: "stylesheet", href: "/styles/typography.css" },
   ],
   htmlAttrs: {
     lang: "it-IT",
@@ -56,7 +72,6 @@ useHead({
   }
 });
 
-//updateDocument(current.value);
 </script>
 
 <template>
@@ -68,10 +83,3 @@ useHead({
     <Footer />
   </main>
 </template>
-
-<style>
-@import 'node_modules/modern-normalize/modern-normalize.css';
-@import './styles/spacing.css';
-@import './styles/themes/default.css';
-@import './styles/typography.css';
-</style>
