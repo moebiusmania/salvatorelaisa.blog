@@ -122,4 +122,32 @@ a {
   & strong {
     font-weight: 800;
   }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--sp-4);
+
+    & thead {
+      & th {
+        background-color: var(--bg-neutral);
+        font-weight: 700;
+        text-align: left;
+        padding: var(--sp-1);
+      }
+    }
+    
+    & tbody {
+      & tr {
+        & td {
+          padding: var(--sp-1);
+          border-bottom: 1px solid var(--border);
+        }
+
+        &:nth-child(even) {
+          /* background-color: var(--border); */
+        }
+      }
+    }
+  }
 }
