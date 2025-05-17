@@ -48,6 +48,22 @@ Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some c
 | `npm run drafts`                    | List draft posts                |
 | `npm run convert:webp path/to/file` | Convert images to `.webp`       |
 
+## ✅ Built-in todo utility
+
+I've added an internal file-based todo list utility, it can be useful if you need to keep some notes within the project. The list is stored and read from a `todo.md` file. **This is a very simple solution**, with no interest in replacing full fledged todo app.
+
+You can create and edit the file manually, but there are some small NPM scripts that can help to manage it:
+
+| Command                         | Description                                |
+| ------------------------------- | ------------------------------------------ |
+| `npm run todo:init`             | Create the `todo.md` file                  |
+| `npm run todo:list`             | As it says, print the list on the terminal |
+| `npm run todo:add -- "content"` | Add "content" to the todo list             |
+| `npm run todo:done -- 1`        | Set todo item with provided index as done  |
+| `npm run todo:remove -- 1`      | Remove todo item based on provided index   |
+
+> **Note:** the `todo.md` file **is git-ignored by default** so if you want it to be synced on every cloned copy of the repo you will have to remove it from the the `.gitignore`, but remember that in case of a public repository the file will be visible to anyone.
+
 ## 🖼️ Converting images to .webp
 
 To achieve better page loading performance, you should [use as much as possible formats like the `.webp`](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images).

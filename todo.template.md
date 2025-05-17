@@ -1,0 +1,2 @@
+- [x] publish blog
+- [ ] write posts
