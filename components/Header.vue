@@ -24,7 +24,7 @@ const items: Array<NavItem> = [{
   title: "Articoli per tag"
 }]
 
-const nav: Array<NavItem> = [EVENTS.earthDay, ...items]
+const nav: Array<NavItem> = [...items]
 
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
