@@ -2,7 +2,7 @@
 import { SITE_TITLE, SITE_DESCRIPTION, CURRENT_THEME } from "@/utils/config";
 
 // Add theme constant with proper typing
-type BlogTheme = 'default' | 'spring' | 'xmas'
+type BlogTheme = 'default' | 'spring' | 'summer' | 'xmas'
 type Theme = "dark" | "light";
 
 const options: { [k: string]: Theme } = {
@@ -17,6 +17,7 @@ const themeImport = computed(() => {
   const themes: Record<BlogTheme, string> = {
     default: '/styles/themes/default.css',
     spring: '/styles/themes/spring.css',
+    summer: '/styles/themes/summer.css',
     xmas: '/styles/themes/xmas.css'
   }
   return themes[CURRENT_THEME]
