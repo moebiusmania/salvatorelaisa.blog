@@ -24,7 +24,7 @@ describe("Outdated", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  it("shows warning when post is older than 2 years", () => {
+  it("shows warning when post is older than 3 years", () => {
     const wrapper = mount(Outdated, {
       props: {
         date: "2020-01-01",
@@ -41,17 +41,17 @@ describe("Outdated", () => {
   it("doesn't show warning for recent posts", () => {
     const wrapper = mount(Outdated, {
       props: {
-        date: "2023-01-01",
+        date: "2022-01-01",
       },
     });
 
     expect(wrapper.find("div").exists()).toBe(false);
   });
 
-  it("handles edge case of exactly 2 years", () => {
+  it("handles edge case of exactly 3 years", () => {
     const wrapper = mount(Outdated, {
       props: {
-        date: "2022-01-01",
+        date: "2021-01-01",
       },
     });
 
@@ -106,7 +106,8 @@ describe("Outdated", () => {
   it("calculates year difference correctly", () => {
     // Test various years
     const testCases = [
-      { date: "2021-01-01", shouldShow: true },
+      { date: "2020-01-01", shouldShow: true },
+      { date: "2021-01-01", shouldShow: false },
       { date: "2022-01-01", shouldShow: false },
       { date: "2023-01-01", shouldShow: false },
       { date: "2024-01-01", shouldShow: false },

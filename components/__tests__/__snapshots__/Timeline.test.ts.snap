@@ -1,9 +1,17 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Timeline > matches snapshot 1`] = `
-"<ul data-v-8c6e1942="" class="timeline">
-  <li data-v-8c6e1942="">Event 1</li>
-  <li data-v-8c6e1942="">Event 2</li>
-  <li data-v-8c6e1942="">Event 3</li>
-</ul>"
+"<div data-v-8c6e1942="" class="timeline-container">
+  <ul data-v-8c6e1942="" class="timeline">
+    <li data-v-8c6e1942="" class="timeline-item">
+      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 1</span></div>
+    </li>
+    <li data-v-8c6e1942="" class="timeline-item">
+      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 2</span></div>
+    </li>
+    <li data-v-8c6e1942="" class="timeline-item">
+      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 3</span></div>
+    </li>
+  </ul>
+</div>"
 `;
