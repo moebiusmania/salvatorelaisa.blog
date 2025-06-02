@@ -48,6 +48,7 @@ useHead({
   // ],
   link: [
     { rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
+    { rel: "manifest", href: "/manifest.json" },
     { rel: "icon", type: "image/png", href: "/static/favicons/favicon.ico" },
     {
       rel: "icon",
@@ -83,4 +84,5 @@ useHead({
     </Container>
     <Footer />
   </main>
+  <PWAInstallBanner />
 </template>

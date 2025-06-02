@@ -1,0 +1,47 @@
+{
+  "name": "Salvatore Laisa - Blog",
+  "short_name": "SalvatoreLaisa",
+  "description": "Blog personale di Salvatore Laisa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fefcf8",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "it",
+  "categories": ["blog", "personal", "technology"],
+  "form_factor": ["wide", "narrow"],
+  "icons": [
+    {
+      "src": "/static/favicons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Vai alla homepage",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+} 
