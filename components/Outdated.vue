@@ -8,7 +8,7 @@ const { date = "" } = defineProps<Props>();
 const postYear: number = new Date(date).getFullYear();
 const current: number = new Date().getFullYear();
 
-const isOutdated: boolean = current - postYear > 2;
+const isOutdated: boolean = current - postYear > 3;
 </script>
 
 <template>
