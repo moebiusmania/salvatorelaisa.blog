@@ -28,7 +28,7 @@
     "@nuxthq/studio": "2.2.1",
     "@nuxtjs/google-fonts": "3.2.0",
     "@vue/test-utils": "2.4.6",
-    "happy-dom": "18.0.1",
+    "happy-dom": "17.6.3",
     "nuxt": "3.17.5",
     "remark-reading-time": "2.0.2",
     "rss": "1.2.2",
