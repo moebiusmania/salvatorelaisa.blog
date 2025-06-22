@@ -10,7 +10,7 @@ images:
   ]
 ---
 
-![Raffigurazione artistica secondo Midjourney di "building a second brain"](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/secondbrain.webp)
+![Immagine generata con Midjourney di un macchinario strutturato a forma di cervello umano.](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2023/secondbrain.webp)
 <small>_Immagine generata con Midjourney_</small>
 
 Nei mesi scorsi mi sono letto ["Building a second brain"](https://www.buildingasecondbrain.com/) di Tiago Forte, un libro bene o male famoso sul tema dell'organizzazione dei nostri (_non troppo_) piccoli archivi di conoscenza personali. Non l'ho trovato male ma va ammesso che per metà il libro è un ripetersi di concetti o aneddoti per riempire pagine, come dicono in molti:

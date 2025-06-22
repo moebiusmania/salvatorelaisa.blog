@@ -12,7 +12,8 @@ const today: Date = new Date();
         <a href="https://nuxt.com/" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
       </p>
       <div class="social">
-        <a href="https://github.com/moebiusmania" target="_blank" rel="noopener noreferrer">
+        <a aria-label="il mio profilo GitHub" href="https://github.com/moebiusmania" target="_blank"
+          rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub</title>
@@ -22,7 +23,8 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg" target="_blank" rel="noopener noreferrer">
+        <a aria-label="il mio canale YouTube" href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg"
+          target="_blank" rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>YouTube</title>
@@ -32,7 +34,8 @@ const today: Date = new Date();
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/in/salvatorelaisa" target="_blank" rel="noopener noreferrer">
+        <a aria-label="il mio profilo LinkedIn" href="https://www.linkedin.com/in/salvatorelaisa" target="_blank"
+          rel="noopener noreferrer">
           <svg role="img" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>LinkedIn</title>
@@ -64,7 +67,8 @@ const today: Date = new Date();
           </svg>
         </a> -->
 
-        <a href="https://bsky.app/profile/moebiusmania.bsky.social" target="_blank" rel="noopener noreferrer">
+        <a aria-label="il mio profilo Bluesky" href="https://bsky.app/profile/moebiusmania.bsky.social" target="_blank"
+          rel="noopener noreferrer">
 
           <svg role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3.268 64 68.414"
             width="2232" height="2500">

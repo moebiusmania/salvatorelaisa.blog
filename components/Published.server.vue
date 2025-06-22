@@ -15,13 +15,13 @@ const { value = new Date().toISOString() } = defineProps<Props>();
 </script>
 
 <template>
-  <dd>
-    <time :datetime="date">Pubblicato: {{ date(value) }}</time>
-  </dd>
+  <div role="contentinfo" aria-label="Data di pubblicazione">
+    <time :datetime="value">Pubblicato: {{ date(value) }}</time>
+  </div>
 </template>
 
 <style scoped>
-dd {
+div {
   margin: 0;
   margin-bottom: var(--sp-1);
   font-size: 1rem;

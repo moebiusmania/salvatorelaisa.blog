@@ -13,8 +13,8 @@ const snowflakes = Array.from({ length: count }, (_, index) => ({
 </script>
 
 <template>
-  <div class="snowflakes" aria-hidden="true">
-    <div class="snowflake" v-for="snowflake in snowflakes" :key="snowflake.id">
+  <div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
+    <div v-for="snowflake in snowflakes" :key="snowflake.id" class="snowflake" role="presentation" aria-hidden="true">
       {{ snowflake.icon }}
     </div>
   </div>
