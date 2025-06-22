@@ -30,6 +30,7 @@ exports[`Footer > renders correctly 1`] = `
       data-v-15497882=""
     >
       <a
+        aria-label="il mio profilo GitHub"
         data-v-15497882=""
         href="https://github.com/moebiusmania"
         rel="noopener noreferrer"
@@ -57,6 +58,7 @@ exports[`Footer > renders correctly 1`] = `
         </svg>
       </a>
       <a
+        aria-label="il mio canale YouTube"
         data-v-15497882=""
         href="https://www.youtube.com/channel/UCxaNVAQjuYZdpCrDukpVnxg"
         rel="noopener noreferrer"
@@ -84,6 +86,7 @@ exports[`Footer > renders correctly 1`] = `
         </svg>
       </a>
       <a
+        aria-label="il mio profilo LinkedIn"
         data-v-15497882=""
         href="https://www.linkedin.com/in/salvatorelaisa"
         rel="noopener noreferrer"
@@ -131,6 +134,7 @@ exports[`Footer > renders correctly 1`] = `
           &lt;/svg&gt;
         &lt;/a&gt; -->
       <a
+        aria-label="il mio profilo Bluesky"
         data-v-15497882=""
         href="https://bsky.app/profile/moebiusmania.bsky.social"
         rel="noopener noreferrer"

@@ -1,10 +1,3 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Published > renders correctly 1`] = `
-"<dd data-v-1e534244=""><time data-v-1e534244="" datetime="(src) => new Date(src).toLocaleDateString(&quot;it-it&quot;, {
-      year: &quot;numeric&quot;,
-      month: &quot;long&quot;,
-      day: &quot;numeric&quot;,
-      weekday: &quot;long&quot;
-    })">Pubblicato: mercoledì 20 marzo 2024</time></dd>"
-`;
+exports[`Published > renders correctly 1`] = `"<div data-v-1e534244="" role="contentinfo" aria-label="Data di pubblicazione"><time data-v-1e534244="" datetime="2024-03-20T10:00:00.000Z">Pubblicato: mercoledì 20 marzo 2024</time></div>"`;

@@ -7,16 +7,6 @@ describe("Published", () => {
   const italianDatePattern =
     /Pubblicato: [a-zA-Zì]+ \d{1,2} [a-zA-Zà-ú]+ \d{4}/;
 
-  // Helper function to format date in Italian
-  // const formatDate = (date: string) => {
-  //   return new Date(date).toLocaleDateString("it-IT", {
-  //     weekday: "long",
-  //     year: "numeric",
-  //     month: "long",
-  //     day: "numeric",
-  //   });
-  // };
-
   // Snapshot test
   it("renders correctly", () => {
     const wrapper = mount(Published, {
@@ -59,8 +49,8 @@ describe("Published", () => {
       },
     });
 
-    const ddElement = wrapper.find("dd");
-    expect(ddElement.exists()).toBe(true);
+    const divElement = wrapper.find("div");
+    expect(divElement.exists()).toBe(true);
   });
 
   it("handles different date formats", () => {
