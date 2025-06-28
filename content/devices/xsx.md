@@ -2,7 +2,7 @@
 title: Xbox Series X
 purchase: "2022-06-15"
 tags: ["console", "gaming", "media", "player"]
-image: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?ver=8361"
+image: "https://cms-assets.xboxservices.com/assets/bc/40/bc40fdf3-85a6-4c36-af92-dca2d36fc7e5.png?n=642227_Hero-Gallery-0_A1_857x676.png"
 url: "https://www.xbox.com/it-IT/consoles/xbox-series-x"
 ---
 

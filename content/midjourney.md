@@ -28,7 +28,7 @@ Adesso non voglio arrivare a dire di aver completamente rimosso il mio limite su
 
 Per quanto riguarda specialmente questo blog e alcuni altri piccoli progetti che seguo, invece di passare ore a cercare foto e immagini di supporto (_si, sembra banale ma a volte la ricerca di un'immagine più o meno adatta alle esigenze e con licenza di utilizzo permissive, non è proprio una cosa immediata_) posso lanciarmi in qualche prompt con Midjourney e in 3-4 tentativi arrivare a un risulto molto vicino a quello che mi interessa.
 
-![L'immagine di copertina del post precedente, prompt: "building a second brain, --ar 16:9 --v 5.2"](https://cdn.midjourney.com/39b9d64d-ebd0-4187-aec6-8172435b4728/0_1.webp) <small>_L'immagine di copertina del post precedente, prompt: "building a second brain, --ar 16:9 --v 5.2"_</small>
+![Immagine di un cervello meccanico.](https://cdn.midjourney.com/39b9d64d-ebd0-4187-aec6-8172435b4728/0_1.webp) <small>_L'immagine di copertina del post precedente, prompt: "building a second brain, --ar 16:9 --v 5.2"_</small>
 
 Certo la cosa mi è "costata" 2-3 settimane di fare pratica con Midjourney (_e la sub mensile..._) e iniziare a capire come scrivere i prompt per arrivare a quello che voglio, ma ora è per lo più tutto di gudagnato.
 
@@ -40,7 +40,7 @@ Un'aspetto che trovo molto affascinate è anche la possibilità di poter utilizz
 
 Come dicevo prima può essere comodo per creare copertine per post o workshop, ma anche per crearsi wallpaper (_sia su PC che mobile_) specialmente da quando è stata aggiunta la possibilità di fare **upscale** delle immagini generate, ma anche grafiche decorative per biglietti di vario tipo.
 
-![Un esempio di wallpaper generato con Midjourney e poi upscalato per risoluzione 1440p, prompt: "relaxing desktop background pattern --ar 16:10 --v 5.2"](https://cdn.midjourney.com/14b942a4-1af7-4e90-9c26-257977d48797/0_1.webp) <small>_Un esempio di wallpaper generato con Midjourney e poi upscalato per risoluzione 1440p, prompt: "relaxing desktop background pattern --ar 16:10 --v 5.2"_</small>
+![Wallpaper spaziale astratto disegnato sullo stile di "starry night" di Van Gogh.](https://cdn.midjourney.com/14b942a4-1af7-4e90-9c26-257977d48797/0_1.webp) <small>_Un esempio di wallpaper generato con Midjourney e poi upscalato per risoluzione 1440p, prompt: "relaxing desktop background pattern --ar 16:10 --v 5.2"_</small>
 
 O anche solo divertirsi provando a ricreare scene dai propri ricordi o variazioni di scene iconiche di film 🤓.
 
