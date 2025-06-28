@@ -32,7 +32,7 @@ describe("Pagination", () => {
   it("renders page direction correctly", () => {
     const wrapper = createWrapper(2, 3);
     const links = wrapper.findAll("a");
-    links.forEach((link, index) => {
+    links.forEach((link) => {
       expect(link.text()).toBe(`← Precedente`);
     });
   });

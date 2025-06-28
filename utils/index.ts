@@ -1,5 +1,3 @@
-type RawContent = <T>() => string;
-
 const KEY: string = "theme";
 
 export const LIGHT: string = "corporate";

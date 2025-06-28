@@ -2,7 +2,7 @@
 const BASE: number = 2010
 const CURRENT: number = new Date().getFullYear()
 const difference: number = (CURRENT - BASE) + 1
-const years: Array<string> = Array.from(new Array(difference), (e, i) => BASE + i).map((e) => e.toString())
+const years: Array<string> = Array.from({ length: difference }, (e, i) => BASE + i).map((e) => e.toString())
 </script>
 
 <template>

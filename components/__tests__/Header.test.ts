@@ -1,7 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { mount } from "@vue/test-utils";
 import Header from "../Header.vue";
-import { SITE_TITLE } from "@/utils/config";
 
 // Mock useRoute
 vi.mock("#app", () => ({
