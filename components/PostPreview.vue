@@ -129,9 +129,10 @@ li {
     &>div {
       display: flex;
       flex-wrap: wrap;
+      gap: var(--sp-1);
 
       &>a {
-        margin-right: var(--sp-2);
+        /* margin-right: var(--sp-2); */
         font-size: 0.875rem;
         line-height: 1.25rem;
         font-weight: 500;

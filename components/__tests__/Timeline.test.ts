@@ -45,20 +45,6 @@ describe("Timeline", () => {
     expect(listItems[2].text()).toBe("Item 3");
   });
 
-  it("renders with title and description", () => {
-    const items = "Item 1,Item 2";
-    const wrapper = mount(Timeline, {
-      props: {
-        items,
-        title: "My Timeline",
-        description: "A test timeline",
-      },
-    });
-
-    expect(wrapper.find("h2").text()).toBe("My Timeline");
-    expect(wrapper.find("p").text()).toBe("A test timeline");
-  });
-
   it("matches snapshot", () => {
     const items = "Event 1,Event 2,Event 3";
     const wrapper = mount(Timeline, {

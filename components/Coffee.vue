@@ -49,12 +49,12 @@ a {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
-  background: rgb(14, 165, 233);
+  background: var(--primary);
 
   &:hover {
-    color: #ffffff;
+    color: var(--white);
     background: rgb(2, 132, 199);
   }
 

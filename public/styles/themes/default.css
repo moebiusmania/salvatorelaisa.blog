@@ -3,33 +3,33 @@
 */
 html.light {
   --white: #fff;
-  --primary: oklch(0.6039 0.228 269.1);
-  --secondary: oklch(0.223899 0.031305 278.072 / 0.8);
+  --primary: #2563eb;
+  --secondary: #2d2d2dcc;
   --text: #4B5563;
   --text-dark: inherit;
   --text-content-dark: inherit;
-  --text-base-content: oklch(0.223899 0.031305 278.072);
-  --text-secodary-content: oklch(0.653694 0.054756 256.688);
+  --text-base-content: #2a2a2a;
+  --text-secodary-content: #6b7280;
   --bg: var(--white);
-  --bg-neutral: oklch(0.958796 0.008588 247.915);
+  --bg-neutral: #f5f5f5;
 
   --header-link-hover: inherit;
   --border: rgb(229, 231, 235);
 
   --badge-bg: var(--primary);
-  --badge-text: oklch(1 0 0);
+  --badge-text: #ffffff;
 }
 
 html.dark {
-  --primary: oklch(0.747039 0.158278 39.947);
-  --text: oklch(0.773835 0.043586 245.097);
-  --text-dark: oklch(0.22 0.019 237.69);
-  --text-content-dark: oklch(0.773835 0.043586 245.097);
+  --primary: #f59e0b;
+  --text: #d1d5db;
+  --text-dark: #1f2937;
+  --text-content-dark: #d1d5db;
   --text-base-content: var(--text-content-dark);
   --bg: var(--text-dark);
   --bg-neutral: var(--text-dark);
 
-  --header-link-hover: oklch(0.7 0.019 237.69);
+  --header-link-hover: #9ca3af;
   --border: #4B5563;
 
   --badge-bg: var(--primary);

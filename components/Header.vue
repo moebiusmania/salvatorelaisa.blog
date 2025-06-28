@@ -36,7 +36,7 @@ const isActive = (href: string, route: any) => ["navitem", { "router-link-active
   <header>
     <div>
       <NuxtLink href="/">
-        <img src="/static/images/avatar.webp" :alt="SITE_TITLE" />
+        <img src="/static/images/avatar.webp" alt="Il mio avatar in pixel art" />
         <span>{{ SITE_TITLE }}</span>
         <span>{{ SEASON_EMOJI }}</span>
       </NuxtLink>

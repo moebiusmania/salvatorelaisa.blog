@@ -5,7 +5,7 @@ interface Props {
   description?: string;
 }
 
-const { items = "", title, description } = defineProps<Props>();
+const { items = "", title = "Timeline degli eventi", description = "Alcuni eventi che ho vissuto relativi all'articolo visualizzati in ordine cronologico" } = defineProps<Props>();
 const list = items.split(",").filter(item => item.trim());
 
 // Add methods for keyboard interaction
@@ -21,8 +21,6 @@ const handleItemClick = (event: KeyboardEvent) => {
 <template>
   <section class="timeline-container" role="region" :aria-label="title"
     :aria-describedby="description ? 'timeline-description' : undefined">
-    <h2 v-if="title" class="timeline-title" id="timeline-title">{{ title }}</h2>
-    <p v-if="description" class="timeline-description" id="timeline-description">{{ description }}</p>
 
     <ul class="timeline" role="list" :aria-label="`${list.length} timeline items`">
       <li v-for="(item, index) in list" :key="index" class="timeline-item" role="listitem" :tabindex="0"
@@ -46,22 +44,6 @@ const handleItemClick = (event: KeyboardEvent) => {
   max-width: 600px;
   margin: 0 auto;
   padding: var(--sp-4) var(--sp-2);
-}
-
-.timeline-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-primary, #1f2937);
-  margin-bottom: var(--sp-2);
-  text-align: center;
-}
-
-.timeline-description {
-  font-size: 1rem;
-  color: var(--text-secondary, #6b7280);
-  margin-bottom: var(--sp-4);
-  text-align: center;
-  line-height: 1.5;
 }
 
 .timeline {
