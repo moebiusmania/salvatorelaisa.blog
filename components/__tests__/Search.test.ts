@@ -1,16 +1,29 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { mount } from "@vue/test-utils";
 import Search from "./../Search.vue";
 
 describe("Search", () => {
-  it("renders properly", () => {
+  beforeEach(() => {
+    // Reset any global state that might affect tests
+  });
+
+  it("renders properly with JavaScript enabled", async () => {
     const wrapper = mount(Search, {
       props: {
         results: 0,
         value: "",
       },
     });
-    expect(wrapper.find("input").exists()).toBe(true);
+
+    // Wait for onMounted to execute
+    await wrapper.vm.$nextTick();
+
+    const input = wrapper.find("input");
+    expect(input.exists()).toBe(true);
+    expect(input.attributes("disabled")).toBeUndefined();
+    expect(input.attributes("placeholder")).toBe(
+      "Cerca tra gli articoli (per titolo)"
+    );
   });
 
   it("emits typing event when input changes", async () => {
@@ -20,6 +33,9 @@ describe("Search", () => {
         value: "",
       },
     });
+
+    // Wait for onMounted to execute
+    await wrapper.vm.$nextTick();
 
     await wrapper.find("input").setValue("test");
     expect(wrapper.emitted("typing")).toBeTruthy();
@@ -34,6 +50,9 @@ describe("Search", () => {
       },
     });
 
+    // Wait for onMounted to execute
+    await wrapper.vm.$nextTick();
+
     expect(wrapper.find("button").exists()).toBe(true);
   });
 
@@ -45,7 +64,53 @@ describe("Search", () => {
       },
     });
 
+    // Wait for onMounted to execute
+    await wrapper.vm.$nextTick();
+
     await wrapper.find("button").trigger("click");
     expect(wrapper.emitted("clear")).toBeTruthy();
+  });
+
+  it("shows disabled placeholder when JavaScript is not available", () => {
+    const wrapper = mount(Search, {
+      props: {
+        results: 0,
+        value: "",
+      },
+    });
+
+    // Don't wait for onMounted, so isJavaScriptEnabled remains false
+    const input = wrapper.find("input");
+    expect(input.attributes("placeholder")).toBe(
+      "Ricerca disattivata, JavaScript non disponibile"
+    );
+  });
+
+  it("input is disabled when JavaScript is not available", () => {
+    const wrapper = mount(Search, {
+      props: {
+        results: 0,
+        value: "",
+      },
+    });
+
+    // Don't wait for onMounted, so isJavaScriptEnabled remains false
+    const input = wrapper.find("input");
+    expect(input.attributes("disabled")).toBe("");
+  });
+
+  it("input is enabled after JavaScript loads", async () => {
+    const wrapper = mount(Search, {
+      props: {
+        results: 0,
+        value: "",
+      },
+    });
+
+    // Wait for onMounted to execute
+    await wrapper.vm.$nextTick();
+
+    const input = wrapper.find("input");
+    expect(input.attributes("disabled")).toBeUndefined();
   });
 });
