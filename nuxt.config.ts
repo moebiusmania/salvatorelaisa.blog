@@ -1,5 +1,9 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },

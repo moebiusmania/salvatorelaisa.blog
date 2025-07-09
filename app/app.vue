@@ -5,12 +5,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, CURRENT_THEME } from "@/utils/config";
 type BlogTheme = 'default' | 'spring' | 'summer' | 'xmas'
 type Theme = "dark" | "light";
 
-const options: { [k: string]: Theme } = {
+const options: Record<Theme, Theme> = {
   dark: "dark",
   light: "light",
 }
 
-const theme = useState<Theme>('theme', () => options.light)
+const theme = useState<Theme>('theme', () => "light")
 
 // Add computed property for theme import
 const themeImport = computed(() => {
@@ -24,10 +24,12 @@ const themeImport = computed(() => {
 })
 
 const changeTheme = () => {
-  theme.value = theme.value === options.light ? options.dark : options.light;
+  const currentTheme = theme.value;
+  const newTheme: Theme = currentTheme === "light" ? "dark" : "light";
+  theme.value = newTheme;
   if (document) {
-    document.documentElement.setAttribute("data-theme", options[theme.value]);
-    document.documentElement.className = theme.value;
+    document.documentElement.setAttribute("data-theme", newTheme);
+    document.documentElement.className = newTheme;
   }
 }
 
@@ -69,7 +71,7 @@ useHead({
   ],
   htmlAttrs: {
     lang: "it-IT",
-    "data-theme": options[theme.value],
+    "data-theme": theme.value,
     class: theme.value,
   }
 });

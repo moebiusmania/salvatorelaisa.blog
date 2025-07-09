@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import Timeline from "../../components/content/Timeline.server.vue";
+import Timeline from "../content/Timeline.server.vue";
 
 describe("Timeline", () => {
   it("renders correctly with provided items", () => {

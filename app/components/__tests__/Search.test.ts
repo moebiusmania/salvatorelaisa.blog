@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { mount } from "@vue/test-utils";
-import Search from "./../Search.vue";
+import Search from "../Search.vue";
 
 describe("Search", () => {
   beforeEach(() => {

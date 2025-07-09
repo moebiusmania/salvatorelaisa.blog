@@ -106,5 +106,5 @@ div {
 </style>
 
 <style>
-@import "../../../styles/slide-animations.css";
+@import "@/styles/slide-animations.css";
 </style>

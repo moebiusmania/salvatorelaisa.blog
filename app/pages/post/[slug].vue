@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { ParsedContent } from "@nuxt/content";
-import { SITE_TITLE } from "@/utils/config";
+import { SITE_TITLE } from "../../utils/config";
 
 definePageMeta({
   pageTransition: {
@@ -109,5 +109,5 @@ div {
 </style>
 
 <style>
-@import "../../styles/slide-animations.css";
+@import "@/styles/slide-animations.css";
 </style>
