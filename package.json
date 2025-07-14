@@ -35,7 +35,7 @@
     "oxlint": "1.6.0",
     "remark-reading-time": "2.0.2",
     "rss": "1.2.2",
-    "sharp": "0.34.2",
+    "sharp": "0.34.3",
     "sitemap": "8.0.0",
     "table": "6.9.0",
     "vitest": "3.2.4"

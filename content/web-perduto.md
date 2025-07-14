@@ -8,10 +8,15 @@ tags:
   - "fotografia"
 draft: true
 summary: ""
-images: [""]
+images:
+  [
+    "https://raw.githubusercontent.com/moebiusmania/blog-assets/refs/heads/master/images/2025/lostweb-sora.webp",
+  ]
 ---
 
-In più di un occasione mi sono ritrovato a sentire la mancanza di come era il web di tanti anni fa. Non saprei dire esattamente di quanti anni fa, forse indicativamente "fino al 2012", quando il web aveva ancora qualche traccia di contenuti originali e i social per quanto fossero entrati a gamba tesa nelle nostre vite e iniziassero a essere invadenti, erano ancora guidati dall'idea di avere "persone che interagiscono tra loro".
+![Un'immagine generata con Sora che prova a riassumere astrattamente il mood e keyword del web di metà 2000.](https://raw.githubusercontent.com/moebiusmania/blog-assets/refs/heads/master/images/2025/lostweb-sora.webp)<small>_Immagine generata con Sora._</small>
+
+In più di un occasione mi sono ritrovato a sentire la mancanza di come era il web di tanti anni fa. Non saprei dire esattamente di quanti anni fa, forse indicativamente _"fino al 2012"_, quando il web aveva ancora qualche traccia di contenuti originali e i social per quanto fossero entrati a gamba tesa nelle nostre vite e iniziassero a essere invadenti, erano ancora guidati dall'idea di avere "persone che interagiscono tra loro".
 
 | Piattaforma | Sostituisce      | Note                                                                                                                        |
 | ----------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
