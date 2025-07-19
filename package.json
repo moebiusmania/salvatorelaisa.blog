@@ -24,7 +24,7 @@
     "todo:done": "node scripts/todo.js done"
   },
   "devDependencies": {
-    "@nuxt/content": "2.13.4",
+    "@nuxt/content": "3.6.3",
     "@nuxt/image": "1.10.0",
     "@nuxt/test-utils": "3.19.2",
     "@nuxthq/studio": "2.2.1",
@@ -41,6 +41,7 @@
     "vitest": "3.2.4"
   },
   "dependencies": {
+    "better-sqlite3": "12.2.0",
     "modern-normalize": "3.0.1"
   }
 }

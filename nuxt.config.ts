@@ -1,16 +1,10 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
-
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
 
   modules: [
     "@nuxt/content",
-    "@nuxthq/studio",
     "@nuxt/image",
     "@nuxt/test-utils/module",
     "@nuxtjs/google-fonts",
@@ -33,9 +27,8 @@ export default defineNuxtConfig({
   },
 
   content: {
-    markdown: {
+    renderer: {
       anchorLinks: false,
-      remarkPlugins: ["remark-reading-time"],
     },
   },
 
