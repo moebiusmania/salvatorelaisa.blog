@@ -1,13 +1,14 @@
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content";
+import type { ContentCollectionItem } from "@nuxt/content";
 
 const route = useRoute();
 const year: string = route.params.year as string;
 
-const posts: ParsedContent[] = await queryContent()
-  .where({ draft: false, date: { $regex: year } })
-  .sort({ date: -1 })
-  .find();
+const posts: ContentCollectionItem[] = await queryCollection("content")
+  .where("draft", "=", false)
+  .where("date", "LIKE", `${year}%`)
+  .order("date", "DESC")
+  .all();
 </script>
 
 <template>

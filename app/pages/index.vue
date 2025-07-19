@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content";
+import type { ContentCollectionItem } from "@nuxt/content";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
-const nonDrafts: ParsedContent[] = await queryContent()
-  .where({ draft: false })
-  .find();
+const nonDrafts: ContentCollectionItem[] = await queryCollection("content")
+  .where("draft", "=", false)
+  .all();
 
-const posts: ParsedContent[] = await queryContent()
-  .where({ draft: false })
-  .sort({ date: -1 })
+const posts: ContentCollectionItem[] = await queryCollection("content")
+  .where("draft", "=", false)
+  .order("date", "DESC")
   .limit(5)
-  .find();
+  .all();
 
 const pinnedPost = nonDrafts.find(post => post.pinned === true);
 

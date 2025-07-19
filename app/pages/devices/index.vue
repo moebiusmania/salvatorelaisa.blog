@@ -1,26 +1,27 @@
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content";
+import type { DevicesCollectionItem } from "@nuxt/content";
 
 const route = useRoute();
 const slug: string = route.query.slug as string;
 
-const getAll = async (): Promise<ParsedContent[]> => {
-  return await queryContent("/devices")
-    .sort({ purchase: -1 })
-    .find();
+const getAll = async (): Promise<DevicesCollectionItem[]> => {
+  return await queryCollection("devices")
+    .where("draft", "IS NULL")
+    .order("purchase", "DESC")
+    .all();
 };
 
-const getOne = async (): Promise<ParsedContent[]> => {
-  return  await queryContent("/devices")
-    .where({ _path: `/devices/${slug}` })
-    .find();
+const getOne = async (): Promise<DevicesCollectionItem[]> => {
+  return await queryCollection("devices")
+    .where("path", "=", `/devices/${slug}`)
+    .all();
 };
 
 const getColumns = (slug: string): string =>
   `divide-neutral-content dark:divide-neutral ${slug ? "" : "multi"
   }`;
 
-const posts: ParsedContent[] = slug ? await getOne() : await getAll();
+const posts: DevicesCollectionItem[] = slug ? await getOne() : await getAll();
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content";
+import type { ContentCollectionItem } from "@nuxt/content";
 import { SITE_TITLE } from "../../utils/config";
 
 definePageMeta({
@@ -10,15 +10,17 @@ definePageMeta({
   middleware(to, from) {
     // @ts-ignore
     to.meta.pageTransition.name =
-      +to.params.id > +from.params.id ? "slide-left" : "slide-right";
+      +(to.params.id || 0) > +(from.params.id || 0) ? "slide-left" : "slide-right";
   },
 });
 
 const route = useRoute();
 const slug: string = route.params.slug as string;
 
-const post: ParsedContent = await queryContent(`/${slug}`).findOne();
-const title: string = `${SITE_TITLE} - ${post.title}`;
+const post: ContentCollectionItem | null = await queryCollection("content")
+  .where("_path", "=", `/${slug}`)
+  .first();
+const title: string = `${SITE_TITLE} - ${post?.title}`;
 
 const isReview = (tags: Array<string>): boolean => {
   return tags.includes("gaming") && tags.includes("recensione");
@@ -26,7 +28,7 @@ const isReview = (tags: Array<string>): boolean => {
 </script>
 
 <template>
-  <div>
+  <div v-if="post">
 
     <Head>
       <Title>{{ title }}</Title>
@@ -34,15 +36,15 @@ const isReview = (tags: Array<string>): boolean => {
 
       <!-- Open Graph / Facebook -->
       <Meta property="og:type" content="website" />
-      <Meta property="og:url" :content="`https://salvatorelaisa.blog/post${post._path}`" />
+      <Meta property="og:url" :content="`https://salvatorelaisa.blog/post${post.path}`" />
       <Meta property="og:title" :content="title" />
-      <Meta property="og:image" :content="post.images[0]" />
+      <Meta property="og:image" :content="post.meta.images[0]" />
 
       <!-- Twitter -->
       <Meta property="twitter:card" content="summary_large_image" />
-      <Meta property="twitter:url" :content="`https://salvatorelaisa.blog/post${post._path}`" />
+      <Meta property="twitter:url" :content="`https://salvatorelaisa.blog/post${post.path}`" />
       <Meta property="twitter:title" :content="title" />
-      <Meta property="twitter:image" :content="post.images[0]" />
+      <Meta property="twitter:image" :content="post.meta.images[0]" />
     </Head>
 
     <article class="content">
@@ -54,14 +56,14 @@ const isReview = (tags: Array<string>): boolean => {
           <NuxtLink v-for="tag in post.tags" :href="`/tags/${tag}`">{{
             tag }}</NuxtLink>
         </p>
-        <ReadingTime :value="post.readingTime.text" />
-        <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms" />
+        <ReadingTime :value="post.readingTime" />
+        <GamingPlatforms v-if="isReview(post.tags)" :platforms="post.platforms || []" />
         <Outdated :date="post.date" />
       </header>
       <ContentRenderer :value="post" />
     </article>
     <hr />
-    <Sharing :url="post._path" />
+    <Sharing :url="post.path" />
     <Tip />
   </div>
 </template>

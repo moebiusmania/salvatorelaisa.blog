@@ -6,11 +6,20 @@ describe("PostPreview", () => {
   const mockPost = {
     _path: "/test-post",
     title: "Test Post Title",
+    description: "Test description",
     date: "2024-03-20T10:00:00.000Z",
     tags: ["test", "vue"],
-    summary: "This is a test post summary",
-    readingTime: {
-      text: "5 min read",
+    pinned: false,
+    draft: false,
+    readingTime: 5,
+    path: "/test-post",
+    seo: {},
+    id: "test-post",
+    stem: "test-post",
+    extension: "md",
+    meta: {
+      summary: "This is a test post summary",
+      images: [],
     },
   };
 
@@ -21,10 +30,9 @@ describe("PostPreview", () => {
         post: {
           ...mockPost,
           body: {
-            type: "root",
-            children: [],
+            type: "minimark",
+            value: [],
           },
-          _id: "test-id",
         },
       },
     });
@@ -39,10 +47,9 @@ describe("PostPreview", () => {
           ...mockPost,
           pinned: true,
           body: {
-            type: "root",
-            children: [],
+            type: "minimark",
+            value: [],
           },
-          _id: "test-id",
         },
       },
     });

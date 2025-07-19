@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content";
+import type { ContentCollectionItem } from "@nuxt/content";
 
 type Tag = {
   label: string;
   items: number;
 };
 
-const posts: Array<ParsedContent> = await queryContent()
-  .where({ draft: false })
-  .find();
+const posts: Array<ContentCollectionItem> = await queryCollection("content")
+  .where("draft", "=", false)
+  .all();
 
 const allTags: Array<string> = posts
   .map((post) => post.tags)
@@ -20,7 +20,7 @@ const tags: Array<Tag> = [...new Set(allTags)]
       label: tag,
       items:
         posts.filter(
-          (page: ParsedContent): Array<ParsedContent> => page.tags.includes(tag)
+          (page: ContentCollectionItem): boolean => page.tags.includes(tag)
         ).length || 0,
     })
   )

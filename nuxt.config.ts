@@ -33,4 +33,16 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-08-20",
+
+  hooks: {
+    "content:file:afterParse"(ctx) {
+      const { file, content } = ctx;
+
+      const wordsPerMinute = 180;
+      const text = typeof file.body === "string" ? file.body : "";
+      const wordCount = text.split(/\s+/).length;
+
+      content.readingTime = Math.ceil(wordCount / wordsPerMinute);
+    },
+  },
 });

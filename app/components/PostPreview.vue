@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { ParsedContent } from "@nuxt/content";
+import type { ContentCollectionItem } from "@nuxt/content";
 import { PINNED_POST_DESCRIPTION } from "~/utils/config";
 
 defineProps<{
-  post: ParsedContent;
+  post: ContentCollectionItem;
 }>();
 </script>
 
@@ -22,7 +22,7 @@ defineProps<{
       </span>
     </time>
     <div>
-      <NuxtLink :href="`/post${post._path}`">
+      <NuxtLink :href="`/post${post.path}`">
         <h2>
           {{ post.title }}
         </h2>
@@ -33,12 +33,12 @@ defineProps<{
         </NuxtLink>
       </div>
       <p>
-        {{ post.summary }}
+        {{ post.meta?.summary || post.summary }}
       </p>
-      <NuxtLink :href="`/post${post._path}`">
+      <NuxtLink :href="`/post${post.path}`">
         Continua a leggere ({{
-          post.readingTime.text.replace("min read", "minuti")
-        }})
+          post.readingTime
+        }}) minuti
         <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
           stroke-linejoin="round">
           <path d="M5 12h14"></path>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { ParsedContent } from "@nuxt/content";
+import type { DevicesCollectionItem } from "@nuxt/content";
 
 defineProps<{
-  device: ParsedContent;
+  device: DevicesCollectionItem;
 }>();
 
 const formatDate = (date: string): string => {
