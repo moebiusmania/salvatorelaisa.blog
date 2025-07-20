@@ -18,7 +18,7 @@ const route = useRoute();
 const slug: string = route.params.slug as string;
 
 const post: ContentCollectionItem | null = await queryCollection("content")
-  .where("_path", "=", `/${slug}`)
+  .where("path", "=", `/${slug}`)
   .first();
 const title: string = `${SITE_TITLE} - ${post?.title}`;
 

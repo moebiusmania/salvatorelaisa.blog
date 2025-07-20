@@ -20,12 +20,6 @@ export default defineNuxtConfig({
     componentIslands: true,
   },
 
-  nitro: {
-    prerender: {
-      routes: ["/sitemap.xml", "/rss.xml"],
-    },
-  },
-
   content: {
     renderer: {
       anchorLinks: false,
