@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/test-utils/module",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/sitemap",
   ],
 
   googleFonts: {
@@ -25,13 +24,14 @@ export default defineNuxtConfig({
     renderer: {
       anchorLinks: false,
     },
+    // Disable caching in test environment to prevent SQLite corruption
+    ...(process.env.NODE_ENV === "test" && {
+      cache: false,
+      storage: "memory",
+    }),
   },
 
   compatibilityDate: "2024-08-20",
-
-  site: {
-    url: "https://salvatorelaisa.blog",
-  },
 
   hooks: {
     "content:file:afterParse"(ctx) {
