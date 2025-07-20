@@ -22,7 +22,7 @@ exports[`Footer > renders correctly 1`] = `
         rel="noopener noreferrer"
         target="_blank"
       >
-        Nuxt 3
+        Nuxt 4
       </a>
     </p>
     <div

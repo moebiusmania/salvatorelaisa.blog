@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/test-utils/module",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/sitemap",
   ],
 
   googleFonts: {
@@ -27,6 +28,10 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-08-20",
+
+  site: {
+    url: "https://salvatorelaisa.blog",
+  },
 
   hooks: {
     "content:file:afterParse"(ctx) {

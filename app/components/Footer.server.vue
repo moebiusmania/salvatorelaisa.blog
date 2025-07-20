@@ -9,7 +9,7 @@ const today: Date = new Date();
       <span>{{ SITE_TITLE }} Blog {{ SEASON_EMOJI }}</span>
       <p>
         &copy; 2010 - {{ today.getFullYear() }} — sviluppato con
-        <a href="https://nuxt.com/" rel="noopener noreferrer" target="_blank">Nuxt 3</a>
+        <a href="https://nuxt.com/" rel="noopener noreferrer" target="_blank">Nuxt 4</a>
       </p>
       <div class="social">
         <a aria-label="il mio profilo GitHub" href="https://github.com/moebiusmania" target="_blank"
