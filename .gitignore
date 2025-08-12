@@ -9,7 +9,7 @@ dist
 .DS_Store
 todo.md
 .content
-.data
+.data/content/contents.sqlite
 *.db
 *.sqlite
 *.sqlite3

@@ -1,6 +1,6 @@
 ---
 title: Assassin's Creed (tutta la saga)
-date: "2020-28-10"
+date: "2020-10-28"
 tags: ["gaming", "recensioni"]
 draft: true
 summary: ""
