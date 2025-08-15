@@ -77,6 +77,12 @@ a {
     text-decoration: underline;
   }
 
+  & del {
+    & > a {
+      opacity: 0.5;
+    }
+  }
+
   & img {
     /* height: auto; */
     width: 100%;

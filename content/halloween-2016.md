@@ -11,13 +11,15 @@ images: ["https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg"]
 
 Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween. Ora non avrei il tempo (_e forse un po anche la voglia_) di creare materiale ad hoc e scrivere più articoli... ma uno solo di wrap-up di cose interessanti in giro per il web, perché no :) .
 
+> _**Aggiornamento di Agosto 2025:** i link ~~barrati~~ sono riferimenti ai link originali del post che purtroppo ad oggi risultano **broken - 404** ma che ho voluto mantenere per "memoria storica"._
+
 ## Wallpapers
 
 Perché non "addobbare" il PC (o il Mac o quello che volete :P ) a tema con qualche sfondo cupo o autunnale?
 
-- [Where Halloween Smiles Are Born](http://www.vladstudio.com/it/wallpaper/?where_halloween_smiles_are_born)
-- [Library](http://www.vladstudio.com/en/wallpaper/?library)
-- [A Cheshire Kitten (Halloween Night)](http://www.vladstudio.com/en/wallpaper/?halloween_kitten)
+- ~~[Where Halloween Smiles Are Born](http://www.vladstudio.com/it/wallpaper/?where_halloween_smiles_are_born)~~
+- ~~[Library](http://www.vladstudio.com/en/wallpaper/?library)~~
+- ~~[A Cheshire Kitten (Halloween Night)](http://www.vladstudio.com/en/wallpaper/?halloween_kitten)~~
 
 ## Grafica
 
@@ -34,7 +36,7 @@ Tutorial di grafica, brochures, flyers e vari assets grafici che possono essere 
 
 Template per email o siti.
 
-- [Malleus Maleficarum–Horror Party/Event Web Flyer](https://themeforest.net/item/malleus-maleficarumhorror-partyevent-web-flyer/2867206?s_rank=8)
+- ~~[Malleus Maleficarum–Horror Party/Event Web Flyer](https://themeforest.net/item/malleus-maleficarumhorror-partyevent-web-flyer/2867206?s_rank=8)~~
 - [Zombie - Animated 404 Page](https://themeforest.net/item/zombie-animated-404-page/9599753?s_rank=5)
 - [Halloween Sale - Responsive Email Template](https://themeforest.net/item/halloween-sale-responsive-email-template/5913102?s_rank=3)
 - [Scary - Halloween Email Campaign Template](https://themeforest.net/item/scary-halloween-email-campaign-template/5647878?s_rank=2)
@@ -45,7 +47,7 @@ Se come me avete l'hobby della fotografia qui ci sono vari consigli su come sfru
 
 - [Halloween Photography Tips](http://digital-photography-school.com/halloween-photography-tips/)
 - [Tips To Improve Your Scary Images](http://www.apogeephoto.com/5-tips-to-improve-your-halloween-photography/)
-- [Tips for great Halloween photography](http://www.digital-photo-secrets.com/tip/2715/tips-for-great-halloween-photography/)
+- ~~[Tips for great Halloween photography](http://www.digital-photo-secrets.com/tip/2715/tips-for-great-halloween-photography/)~~
 
 ## Varie
 
