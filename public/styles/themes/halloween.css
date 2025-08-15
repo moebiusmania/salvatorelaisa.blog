@@ -1,0 +1,37 @@
+/**
+* HALLOWEEN THEME built on top of https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28
+*/
+html.light {
+  --white: #FFFCF2;
+  --primary: #EB5E28;
+  --secondary: #403D39;
+  --text: #252422;
+  --text-dark: inherit;
+  --text-content-dark: inherit;
+  --text-base-content: var(--text);
+  --text-secodary-content: var(--secondary);
+  --bg: var(--white);
+  --bg-neutral: #f5f5f5;
+
+  --header-link-hover: inherit;
+  --border: rgb(229, 231, 235);
+
+  --badge-bg: var(--primary);
+  --badge-text: var(--white);
+}
+
+html.dark {
+  --primary: #f59e0b;
+  --text: #d1d5db;
+  --text-dark: #1f2937;
+  --text-content-dark: #d1d5db;
+  --text-base-content: var(--text-content-dark);
+  --bg: var(--text-dark);
+  --bg-neutral: var(--text-dark);
+
+  --header-link-hover: #9ca3af;
+  --border: #4B5563;
+
+  --badge-bg: var(--primary);
+  --badge-text: var(--text-dark);
+}

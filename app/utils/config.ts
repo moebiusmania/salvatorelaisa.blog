@@ -9,6 +9,11 @@ export const EVENTS = {
     href: "/events/xmas",
     title: "Contenuti speciali natalizi",
   },
+  halloween: {
+    name: "🎃",
+    href: "/events/halloween",
+    title: "Contenuti speciali di Halloween",
+  },
   earthDay: {
     name: "🌍",
     href: "https://www.earthday.org/earth-day-2025/",
