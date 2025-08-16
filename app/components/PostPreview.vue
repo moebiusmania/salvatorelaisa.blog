@@ -33,7 +33,7 @@ defineProps<{
         </NuxtLink>
       </div>
       <p>
-        {{ post.meta?.summary || post.summary }}
+        {{ post.meta?.summary || "" }}
       </p>
       <NuxtLink :href="`/post${post.path}`">
         Continua a leggere ({{
@@ -50,6 +50,30 @@ defineProps<{
 </template>
 
 <style scoped>
+@keyframes badgePulse {
+
+  0%,
+  100% {
+    background-color: var(--primary);
+  }
+
+  50% {
+    background-color: hsl(270, 80%, 60%);
+  }
+}
+
+@keyframes borderPulse {
+
+  0%,
+  100% {
+    border-color: var(--primary);
+  }
+
+  60% {
+    border-color: hsl(270, 80%, 60%);
+  }
+}
+
 li {
   display: flex;
   padding: var(--sp-4) 0;
@@ -62,7 +86,8 @@ li {
     border-top: 10px solid var(--primary);
     border-bottom: 10px solid var(--primary);
     padding: var(--sp-2);
-    /* box-shadow: 0 0 20px 0 var(--primary); */
+    animation: borderPulse 5s ease-in-out infinite;
+    box-shadow: 0 0 10px 0 var(--primary);
 
     @media (min-width: 768px) {
       border: 1px solid var(--primary);
@@ -79,6 +104,7 @@ li {
       padding: var(--sp-1);
       cursor: help;
       text-transform: uppercase;
+      animation: badgePulse 5s ease-in-out infinite;
 
       @media (min-width: 768px) {
         top: unset;

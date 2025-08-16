@@ -15,15 +15,26 @@ Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare deg
 
 ## Wallpapers
 
-Perché non "addobbare" il PC (o il Mac o quello che volete :P ) a tema con qualche sfondo cupo o autunnale?
+Perché non "addobbare" il propri device con qualche sfondo cupo o autunnale?
 
 - ~~[Where Halloween Smiles Are Born](http://www.vladstudio.com/it/wallpaper/?where_halloween_smiles_are_born)~~
 - ~~[Library](http://www.vladstudio.com/en/wallpaper/?library)~~
 - ~~[A Cheshire Kitten (Halloween Night)](http://www.vladstudio.com/en/wallpaper/?halloween_kitten)~~
 
+<!-- ## Audio
+
+Un pò di musica o effetti sonori per creare il mood giusto durante questo periodo.
+
+- [Horrorli](https://horrorli.fps.hu/) - ispirato a [Noisli](https://www.noisli.com/), è un generatore di "audio da atmosfera" a tema appunto horror.
+- [Lofi Girl Halloween 2024](https://www.youtube.com/watch?v=D6TSIHxNzfU) - una playlist di musica lofi per l'occasione, ottima come background casalingo. -->
+
 ## Grafica
 
+<!-- ## Design -->
+
 Tutorial di grafica, brochures, flyers e vari assets grafici che possono essere utili in varie occasioni sotto Halloween.
+
+<!-- - [Coolor palette](https://coolors.co/palettes/popular/halloween) - _raccolta di palette di colori con tag "halloween"_ -->
 
 - [How to Make a Fun and Cute Halloween Pattern Vector!](http://vectips.com/tutorials/make-a-fun-and-cute-halloween-pattern-vector/?utm_content=buffere668d&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 - [Halloween Mask Vectors](https://www.vecteezy.com/vector-art/90968-halloween-mask-vectors)
@@ -35,6 +46,8 @@ Tutorial di grafica, brochures, flyers e vari assets grafici che possono essere 
 ## Web
 
 Template per email o siti.
+
+<!-- - [Halloween landing page](https://codepen.io/leonam-silva-de-souza/pen/gOVxVeE) -->
 
 - ~~[Malleus Maleficarum–Horror Party/Event Web Flyer](https://themeforest.net/item/malleus-maleficarumhorror-partyevent-web-flyer/2867206?s_rank=8)~~
 - [Zombie - Animated 404 Page](https://themeforest.net/item/zombie-animated-404-page/9599753?s_rank=5)
@@ -51,7 +64,7 @@ Se come me avete l'hobby della fotografia qui ci sono vari consigli su come sfru
 
 ## Varie
 
-- [Vampires: Folklore, fantasy and fact - Michael Molina](https://www.youtube.com/watch?v=_0ThKRmySoU) | Questo secondo me è un video **must** per ogni 31 ottobre! Viene raccontato come è nato il mito dei vampiri nelle varie culture e come è stato trasformato nel corso dei secoli.
+- [Vampires: Folklore, fantasy and fact - Michael Molina](https://www.youtube.com/watch?v=_0ThKRmySoU) - _Questo secondo me è un video **must** per ogni 31 ottobre! Viene raccontato come è nato il mito dei vampiri nelle varie culture e come è stato trasformato nel corso dei secoli._
 
 <iframe loading="lazy" class="w-full" height="515" src="https://www.youtube.com/embed/_0ThKRmySoU" frameborder="0" allowfullscreen></iframe>
 
