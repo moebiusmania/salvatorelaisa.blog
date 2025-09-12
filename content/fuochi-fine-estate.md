@@ -35,3 +35,5 @@ E quando meno te lo aspetti ecco che arriva la grande novità: **da quest'anno (
 Come [riportato da alcuni giornali locali](https://www.quatarobpavia.it/droni-luminosi-festa-del-ticino-2024/), dovrebbe essere una scelta più attenta all'ambiente e gli animali domestici, ma vederemo il mese prossimo se oltre a queste attenzioni la versione aggiornata dei "fuochi" sarà anche divertente 🤓.
 
 **Aggiornamento di Settembre 2024:** alla fine a causa maltempo 🌧️ lo spettacolo di chiusura della Festa del Ticino 2024 è stata annullata... vedremo come andrà l'anno prossimo!
+
+**Aggiornamento di Settembre 2025** dopo un pò di confusione iniziale, alla fine la novità di quest'anno è stato uno spettacolo **piro-musicale**, quindi sempre fuochi d'artificio (_anche se quelli "rumorosi" erano notevolmente ridotti_) accompagnati da 5-6 canzoni in una specie di coreografia. E' durato forse un pochino di meno, sui 20 minuti in tutto, ma è stato comunque piacevole e comunque una variazione sul tema che non si è allontanata troppo dall'evento tradizionale.

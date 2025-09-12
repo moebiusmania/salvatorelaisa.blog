@@ -16,10 +16,10 @@ const theme = useState<Theme>('theme', () => "light")
 const themeImport = computed(() => {
   const themes: Record<BlogTheme, string> = {
     default: '/styles/themes/default.css',
+    halloween: '/styles/themes/halloween.css',
     spring: '/styles/themes/spring.css',
     summer: '/styles/themes/summer.css',
-    xmas: '/styles/themes/xmas.css',
-    halloween: '/styles/themes/halloween.css'
+    xmas: '/styles/themes/xmas.css'
   }
   return themes[CURRENT_THEME]
 })

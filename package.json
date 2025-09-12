@@ -31,8 +31,8 @@
     "@nuxtjs/sitemap": "7.4.3",
     "@vue/test-utils": "2.4.6",
     "happy-dom": "18.0.1",
-    "nuxt": "4.0.3",
-    "oxlint": "1.11.2",
+    "nuxt": "4.1.1",
+    "oxlint": "1.15.0",
     "sharp": "0.34.3",
     "table": "6.9.0",
     "vitest": "3.2.4"
