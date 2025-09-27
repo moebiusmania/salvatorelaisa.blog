@@ -24,21 +24,21 @@
     "todo:done": "node scripts/todo.js done"
   },
   "devDependencies": {
-    "@nuxt/content": "3.6.3",
+    "@nuxt/content": "3.7.1",
     "@nuxt/image": "1.11.0",
     "@nuxt/test-utils": "3.19.2",
     "@nuxtjs/google-fonts": "3.2.0",
-    "@nuxtjs/sitemap": "7.4.3",
+    "@nuxtjs/sitemap": "7.4.7",
     "@vue/test-utils": "2.4.6",
     "happy-dom": "18.0.1",
-    "nuxt": "4.1.1",
-    "oxlint": "1.15.0",
-    "sharp": "0.34.3",
+    "nuxt": "4.1.2",
+    "oxlint": "1.18.0",
+    "sharp": "0.34.4",
     "table": "6.9.0",
     "vitest": "3.2.4"
   },
   "dependencies": {
-    "better-sqlite3": "12.2.0",
+    "better-sqlite3": "12.4.1",
     "modern-normalize": "3.0.1"
   }
 }

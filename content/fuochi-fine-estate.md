@@ -7,7 +7,7 @@ tags:
 draft: false
 summary: "Che poi in verità, penso di essere solo io a chiamarli così 😄"
 images: ["https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg"]
-pinned: true
+pinned: false
 ---
 
 [![Foto di Fabio Rossi su Flickr](https://c2.staticflickr.com/4/3212/2862367881_8b473f72ca_o.jpg)](https://www.flickr.com/photos/fabiorossi77/2862367881/) <small>_Foto di Fabio Rossi su Flickr_</small>
