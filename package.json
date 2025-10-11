@@ -30,7 +30,7 @@
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/sitemap": "7.4.7",
     "@vue/test-utils": "2.4.6",
-    "happy-dom": "18.0.1",
+    "happy-dom": "20.0.0",
     "nuxt": "4.1.2",
     "oxlint": "1.18.0",
     "sharp": "0.34.4",
