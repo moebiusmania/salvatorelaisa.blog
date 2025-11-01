@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween Landing Page</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      :root {
+        --header-height: 3.5rem;
+
+        --first-color: hsl(25, 90%, 54%);
+        --first-color-alt: hsl(25, 85%, 50%);
+        --title-color: hsl(25, 48%, 12%);
+        --text-color: hsl(25, 32%, 24%);
+        --white-color: hsl(0, 0%, 100%);
+        --body-color: hsl(18, 58%, 82%);
+
+        --body-font: "Montserrat", sans-serif;
+        --second-font: "Jolly Lodger", system-ui;
+        --biggest-font-size: 3.5rem;
+        --normal-font-size: 0.938rem;
+
+        --font-regular: 400;
+        --font-semi-bold: 600;
+
+        --z-tooltip: 10;
+        --z-fixed: 100;
+      }
+
+      @media screen and (min-width: 1150px) {
+        :root {
+          --biggest-font-size: 8rem;
+          --normal-font-size: 1rem;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      body {
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--body-color);
+        color: var(--text-color);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        max-width: 100%;
+        margin-inline: 1.5rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .main {
+        overflow: hidden;
+      }
+
+      /*HEADER*/
+
+      .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        z-index: var(--z-fixed);
+        transition: box-shadow 0.4s;
+      }
+
+      .nav {
+        position: relative;
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-logo {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+        transition: color 0.4s;
+      }
+
+      .nav-logo:hover {
+        color: var(--first-color);
+      }
+
+      .nav-toggle,
+      .nav-close {
+        display: flex;
+        font-size: 1.5rem;
+        color: var(--title-color);
+        cursor: pointer;
+      }
+
+      .nav-list {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+      }
+
+      .nav-link {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+        transition: color 0.4s;
+      }
+
+      .nav-link:hover {
+        color: var(--first-color);
+      }
+
+      .nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+
+      /*MAIN*/
+
+      .home-container {
+        height: 100vh;
+        padding-top: 7rem;
+        row-gap: 2rem;
+      }
+
+      .home-data {
+        text-align: center;
+      }
+
+      .home-title {
+        font: var(--font-regular) var(--biggest-font-size) var(--second-font);
+        line-height: 100%;
+        color: var(--title-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .home-description {
+        margin-bottom: 1.5rem;
+      }
+
+      .home-button {
+        display: inline-flex;
+        background-color: var(--first-color);
+        color: var(--white-color);
+        font-weight: var(--font-semi-bold);
+        padding: 1rem 2rem;
+        border-radius: 4rem;
+        box-shadow: 0 16px 32px hsla(25, 90%, 40%, 0.3);
+        transition: background-color 0.4s;
+      }
+
+      .home-button:hover {
+        background-color: var(--first-color-alt);
+      }
+
+      .home-images {
+        position: relative;
+        justify-self: center;
+      }
+
+      .home-img1,
+      .home-img2 {
+        width: 300px;
+      }
+
+      .home-img1 {
+        filter: drop-shadow(0 16px 48px hsla(25, 90%, 40%, 0.5));
+      }
+
+      .home-img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: flicker 8s linear infinite;
+      }
+
+      @keyframes flicker {
+        0% {
+          opacity: 0;
+        }
+
+        31.98% {
+          opacity: 0;
+        }
+        32% {
+          opacity: 1;
+        }
+        32.8% {
+          opacity: 1;
+        }
+        32.82% {
+          opacity: 0;
+        }
+        34.98% {
+          opacity: 0;
+        }
+        35% {
+          opacity: 1;
+        }
+        35.7% {
+          opacity: 1;
+        }
+        35.72% {
+          opacity: 0;
+        }
+        36.98% {
+          opacity: 0;
+        }
+        37% {
+          opacity: 1;
+        }
+        37.6% {
+          opacity: 1;
+        }
+        37.62% {
+          opacity: 1;
+        }
+
+        67.98% {
+          opacity: 1;
+        }
+        68% {
+          opacity: 1;
+        }
+        68.4% {
+          opacity: 1;
+        }
+        68.42% {
+          opacity: 0;
+        }
+
+        95.98% {
+          opacity: 0;
+        }
+        96% {
+          opacity: 1;
+        }
+        96.7% {
+          opacity: 1;
+        }
+        96.72% {
+          opacity: 0;
+        }
+        98.98% {
+          opacity: 0;
+        }
+        99% {
+          opacity: 1;
+        }
+        99.6% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .atropos-inner {
+        overflow: initial !important;
+      }
+
+      .shadow-header {
+        background-color: var(--body-color);
+        box-shadow: 0 2px 16px hsla(25, 48%, 12%, 0.2);
+      }
+
+      @media screen and (max-width: 320px) {
+        .container {
+          margin-inline: 1rem;
+        }
+      }
+
+      @media screen and (max-width: 350px) and (max-height: 680px) {
+        .home-container {
+          height: 780px;
+        }
+      }
+
+      @media screen and (min-width: 576px) {
+        .home-container {
+          grid-template-columns: 380px;
+          justify-content: center;
+        }
+      }
+
+      @media screen and (min-width: 1150px) {
+        /* .container{ margin-inline: auto;} */
+
+        .nav {
+          height: calc(var(--header-height) + 2rem);
+        }
+
+        .nav-toggle,
+        .nav-close {
+          display: none;
+        }
+
+        .nav-list {
+          flex-direction: row;
+          column-gap: 5rem;
+        }
+
+        .home-container {
+          grid-template-columns: 512px 560px;
+          align-items: center;
+          column-gap: 3rem;
+        }
+
+        .home-data {
+          text-align: initial;
+        }
+
+        .home-description {
+          padding-right: 9rem;
+          margin-bottom: 3rem;
+        }
+
+        .home-img1,
+        .home-img2 {
+          width: 560px;
+        }
+      }
+
+      @media screen and (max-width: 1150px) {
+        .nav-menu {
+          position: fixed;
+          top: -120%;
+          left: 0;
+          background-color: var(--body-color);
+          box-shadow: 0 2px 16px hsla(25, 48%, 12%, 0.2);
+          width: 100%;
+          padding-block: 5rem;
+          transition: top 0.4s;
+        }
+
+        .show-menu {
+          top: 0;
+        }
+      }
+
+      @media screen and (max-width: 1150px) and (min-height: 900px) {
+        .home-container {
+          align-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Halloween</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <!-- <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Events</a></li>
+            <li><a href="#" class="nav-link">Visit us</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul> -->
+
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-apps-2-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home">
+        <div class="home-container container grid">
+          <div class="home-data">
+            <h1 class="home-title">
+              Halloween <br />
+              a casa!
+            </h1>
+
+            <p class="home-description">
+              Una festa spettrale che non puoi perdere, unisciti a noi per
+              un'esperienza unica!
+              <br />
+              il <strong>31 ottobre 2025</strong> alle <strong>18:00</strong>
+            </p>
+
+            <a href="#" class="home-button">Conferma partecipazione</a>
+          </div>
+
+          <div class="home-images atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <img
+                    src="https://i.postimg.cc/C1bjdYbt/pumpkin-1.png"
+                    alt="image"
+                    data-atropos-offset="10"
+                    class="home-img1"
+                  />
+                  <img
+                    src="https://i.postimg.cc/NF4m74Jk/pumpkin-2.png"
+                    alt="image"
+                    data-atropos-offset="10"
+                    class="home-img2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script>
+      // Showing or Toggling Menu
+
+      const navMenu = document.getElementById("nav-menu");
+      const navToggle = document.getElementById("nav-toggle");
+      const navClose = document.getElementById("nav-close");
+
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.add("show-menu");
+        });
+      }
+
+      if (navClose) {
+        navClose.addEventListener("click", () => {
+          navMenu.classList.remove("show-menu");
+        });
+      }
+
+      //Clicking in one option, removes nav mobile
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      const linkAction = () => {
+        const navMenu = document.getElementById("nav-menu");
+        navMenu.classList.remove("show-menu");
+      };
+
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+      //Adding Atropos function
+
+      const myAtropos = Atropos({
+        el: ".home-images",
+        shadow: false,
+        highlight: false,
+      });
+
+      //Shadowheader when scroll is higher than 50% view hight
+
+      const shadowHeader = () => {
+        const header = document.getElementById("header");
+        this.scrollY >= 50
+          ? header.classList.add("shadow-header")
+          : header.classList.remove("shadow-header");
+      };
+      window.addEventListener("scroll", shadowHeader);
+    </script>
+  </body>
+</html>
