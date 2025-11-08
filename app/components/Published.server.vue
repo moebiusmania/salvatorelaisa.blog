@@ -1,15 +1,15 @@
 <script setup lang="ts">
 interface Props {
-  value: string;
+	value: string;
 }
 
 const date = (src: string): string =>
-  new Date(src).toLocaleDateString("it-it", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    weekday: "long",
-  });
+	new Date(src).toLocaleDateString("it-it", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+		weekday: "long",
+	});
 
 const { value = new Date().toISOString() } = defineProps<Props>();
 </script>

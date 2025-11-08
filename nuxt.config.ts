@@ -1,47 +1,47 @@
 export default defineNuxtConfig({
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
-  },
+	app: {
+		pageTransition: { name: "page", mode: "out-in" },
+	},
 
-  modules: [
-    "@nuxt/content",
-    "@nuxt/image",
-    "@nuxt/test-utils/module",
-    "@nuxtjs/google-fonts",
-  ],
+	modules: [
+		"@nuxt/content",
+		"@nuxt/image",
+		"@nuxt/test-utils/module",
+		"@nuxtjs/google-fonts",
+	],
 
-  googleFonts: {
-    families: {
-      Lexend: [300, 400, 700, 800],
-    },
-  },
+	googleFonts: {
+		families: {
+			Lexend: [300, 400, 700, 800],
+		},
+	},
 
-  experimental: {
-    componentIslands: true,
-  },
+	experimental: {
+		componentIslands: true,
+	},
 
-  content: {
-    renderer: {
-      anchorLinks: false,
-    },
-    // Disable caching in test environment to prevent SQLite corruption
-    ...(process.env.NODE_ENV === "test" && {
-      cache: false,
-      storage: "memory",
-    }),
-  },
+	content: {
+		renderer: {
+			anchorLinks: false,
+		},
+		// Disable caching in test environment to prevent SQLite corruption
+		...(process.env.NODE_ENV === "test" && {
+			cache: false,
+			storage: "memory",
+		}),
+	},
 
-  compatibilityDate: "2024-08-20",
+	compatibilityDate: "2024-08-20",
 
-  hooks: {
-    "content:file:afterParse"(ctx) {
-      const { file, content } = ctx;
+	hooks: {
+		"content:file:afterParse"(ctx) {
+			const { file, content } = ctx;
 
-      const wordsPerMinute = 180;
-      const text = typeof file.body === "string" ? file.body : "";
-      const wordCount = text.split(/\s+/).length;
+			const wordsPerMinute = 180;
+			const text = typeof file.body === "string" ? file.body : "";
+			const wordCount = text.split(/\s+/).length;
 
-      content.readingTime = Math.ceil(wordCount / wordsPerMinute);
-    },
-  },
+			content.readingTime = Math.ceil(wordCount / wordsPerMinute);
+		},
+	},
 });

@@ -1,20 +1,24 @@
 <script setup lang="ts">
 interface Props {
-  items: string;
-  title?: string;
-  description?: string;
+	items: string;
+	title?: string;
+	description?: string;
 }
 
-const { items = "", title = "Timeline degli eventi", description = "Alcuni eventi che ho vissuto relativi all'articolo visualizzati in ordine cronologico" } = defineProps<Props>();
-const list = items.split(",").filter(item => item.trim());
+const {
+	items = "",
+	title = "Timeline degli eventi",
+	description = "Alcuni eventi che ho vissuto relativi all'articolo visualizzati in ordine cronologico",
+} = defineProps<Props>();
+const list = items.split(",").filter((item) => item.trim());
 
 // Add methods for keyboard interaction
 const handleItemClick = (event: KeyboardEvent) => {
-  const target = event.target as HTMLElement;
-  if (target.classList.contains('timeline-item')) {
-    // Add any click handling logic here
-    console.log('Timeline item clicked:', target.getAttribute('aria-label'));
-  }
+	const target = event.target as HTMLElement;
+	if (target.classList.contains("timeline-item")) {
+		// Add any click handling logic here
+		console.log("Timeline item clicked:", target.getAttribute("aria-label"));
+	}
 };
 </script>
 

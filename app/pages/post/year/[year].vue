@@ -5,10 +5,10 @@ const route = useRoute();
 const year: string = route.params.year as string;
 
 const posts: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .where("date", "LIKE", `${year}%`)
-  .order("date", "DESC")
-  .all();
+	.where("draft", "=", false)
+	.where("date", "LIKE", `${year}%`)
+	.order("date", "DESC")
+	.all();
 </script>
 
 <template>

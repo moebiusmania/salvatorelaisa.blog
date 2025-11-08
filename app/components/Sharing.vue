@@ -1,10 +1,10 @@
 <script setup lang="ts">
 interface Props {
-  url?: string;
+	url?: string;
 }
 
 const source = (url: string): string =>
-  `https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content${url}.md`;
+	`https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/content${url}.md`;
 
 // const twitter = (url: string): string =>
 //   `https://twitter.com/intent/tweet?text=${encodeURIComponent(
@@ -17,9 +17,9 @@ const source = (url: string): string =>
 //   )} @moebiusmania - `;
 
 const bsky = (url: string): string =>
-  `https://bsky.app/intent/compose?text=${encodeURIComponent(
-    `https://salvatorelaisa.blog/post${url}`
-  )} @moebiusmania.bsky.social - `;
+	`https://bsky.app/intent/compose?text=${encodeURIComponent(
+		`https://salvatorelaisa.blog/post${url}`,
+	)} @moebiusmania.bsky.social - `;
 
 const { url } = defineProps<Props>();
 </script>

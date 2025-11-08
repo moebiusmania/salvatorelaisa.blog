@@ -1,37 +1,37 @@
 /**
-* Default color theme
-*/
+ * Default color theme
+ */
 html.light {
-  --white: #fff;
-  --primary: #2563eb;
-  --secondary: #2d2d2dcc;
-  --text: #4B5563;
-  --text-dark: inherit;
-  --text-content-dark: inherit;
-  --text-base-content: #2a2a2a;
-  --text-secodary-content: #6b7280;
-  --bg: var(--white);
-  --bg-neutral: #f5f5f5;
+	--white: #fff;
+	--primary: #2563eb;
+	--secondary: #2d2d2dcc;
+	--text: #4b5563;
+	--text-dark: inherit;
+	--text-content-dark: inherit;
+	--text-base-content: #2a2a2a;
+	--text-secodary-content: #6b7280;
+	--bg: var(--white);
+	--bg-neutral: #f5f5f5;
 
-  --header-link-hover: inherit;
-  --border: rgb(229, 231, 235);
+	--header-link-hover: inherit;
+	--border: rgb(229, 231, 235);
 
-  --badge-bg: var(--primary);
-  --badge-text: #ffffff;
+	--badge-bg: var(--primary);
+	--badge-text: #ffffff;
 }
 
 html.dark {
-  --primary: #f59e0b;
-  --text: #d1d5db;
-  --text-dark: #1f2937;
-  --text-content-dark: #d1d5db;
-  --text-base-content: var(--text-content-dark);
-  --bg: var(--text-dark);
-  --bg-neutral: var(--text-dark);
+	--primary: #f59e0b;
+	--text: #d1d5db;
+	--text-dark: #1f2937;
+	--text-content-dark: #d1d5db;
+	--text-base-content: var(--text-content-dark);
+	--bg: var(--text-dark);
+	--bg-neutral: var(--text-dark);
 
-  --header-link-hover: #9ca3af;
-  --border: #4B5563;
+	--header-link-hover: #9ca3af;
+	--border: #4b5563;
 
-  --badge-bg: var(--primary);
-  --badge-text: var(--text-dark);
+	--badge-bg: var(--primary);
+	--badge-text: var(--text-dark);
 }

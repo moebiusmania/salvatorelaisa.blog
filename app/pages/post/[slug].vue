@@ -3,27 +3,29 @@ import type { ContentCollectionItem } from "@nuxt/content";
 import { SITE_TITLE } from "../../utils/config";
 
 definePageMeta({
-  pageTransition: {
-    name: "slide-right",
-    mode: "out-in",
-  },
-  middleware(to, from) {
-    // @ts-ignore
-    to.meta.pageTransition.name =
-      +(to.params.id || 0) > +(from.params.id || 0) ? "slide-left" : "slide-right";
-  },
+	pageTransition: {
+		name: "slide-right",
+		mode: "out-in",
+	},
+	middleware(to, from) {
+		// @ts-ignore
+		to.meta.pageTransition.name =
+			+(to.params.id || 0) > +(from.params.id || 0)
+				? "slide-left"
+				: "slide-right";
+	},
 });
 
 const route = useRoute();
 const slug: string = route.params.slug as string;
 
 const post: ContentCollectionItem | null = await queryCollection("content")
-  .where("path", "=", `/${slug}`)
-  .first();
+	.where("path", "=", `/${slug}`)
+	.first();
 const title: string = `${SITE_TITLE} - ${post?.title}`;
 
 const isReview = (tags: Array<string>): boolean => {
-  return tags.includes("gaming") && tags.includes("recensione");
+	return tags.includes("gaming") && tags.includes("recensione");
 };
 </script>
 

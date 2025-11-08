@@ -1,9 +1,9 @@
 <script setup lang="ts">
 interface Props {
-  platforms: Array<{
-    label: string;
-    url: string;
-  }>;
+	platforms: Array<{
+		label: string;
+		url: string;
+	}>;
 }
 
 const { platforms = [] } = defineProps<Props>();

@@ -3,16 +3,16 @@ import type { ContentCollectionItem } from "@nuxt/content";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/utils/config";
 
 const nonDrafts: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .all();
+	.where("draft", "=", false)
+	.all();
 
 const posts: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .order("date", "DESC")
-  .limit(5)
-  .all();
+	.where("draft", "=", false)
+	.order("date", "DESC")
+	.limit(5)
+	.all();
 
-const pinnedPost = nonDrafts.find(post => post.pinned === true);
+const pinnedPost = nonDrafts.find((post) => post.pinned === true);
 
 pinnedPost ? posts.unshift(pinnedPost) : posts;
 </script>

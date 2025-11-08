@@ -5,21 +5,20 @@ const route = useRoute();
 const slug: string = route.query.slug as string;
 
 const getAll = async (): Promise<DevicesCollectionItem[]> => {
-  return await queryCollection("devices")
-    .where("draft", "IS NULL")
-    .order("purchase", "DESC")
-    .all();
+	return await queryCollection("devices")
+		.where("draft", "IS NULL")
+		.order("purchase", "DESC")
+		.all();
 };
 
 const getOne = async (): Promise<DevicesCollectionItem[]> => {
-  return await queryCollection("devices")
-    .where("path", "=", `/devices/${slug}`)
-    .all();
+	return await queryCollection("devices")
+		.where("path", "=", `/devices/${slug}`)
+		.all();
 };
 
 const getColumns = (slug: string): string =>
-  `divide-neutral-content dark:divide-neutral ${slug ? "" : "multi"
-  }`;
+	`divide-neutral-content dark:divide-neutral ${slug ? "" : "multi"}`;
 
 const posts: DevicesCollectionItem[] = slug ? await getOne() : await getAll();
 </script>

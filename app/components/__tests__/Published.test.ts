@@ -3,70 +3,70 @@ import { mount } from "@vue/test-utils";
 import Published from "../Published.server.vue";
 
 describe("Published", () => {
-  // Helper constant for the Italian date regex pattern
-  const italianDatePattern =
-    /Pubblicato: [a-zA-Zì]+ \d{1,2} [a-zA-Zà-ú]+ \d{4}/;
+	// Helper constant for the Italian date regex pattern
+	const italianDatePattern =
+		/Pubblicato: [a-zA-Zì]+ \d{1,2} [a-zA-Zà-ú]+ \d{4}/;
 
-  // Snapshot test
-  it("renders correctly", () => {
-    const wrapper = mount(Published, {
-      props: {
-        value: "2024-03-20T10:00:00.000Z",
-      },
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-  });
+	// Snapshot test
+	it("renders correctly", () => {
+		const wrapper = mount(Published, {
+			props: {
+				value: "2024-03-20T10:00:00.000Z",
+			},
+		});
+		expect(wrapper.html()).toMatchSnapshot();
+	});
 
-  it("formats date correctly in Italian", () => {
-    const wrapper = mount(Published, {
-      props: {
-        value: "2024-03-20T10:00:00.000Z",
-      },
-    });
+	it("formats date correctly in Italian", () => {
+		const wrapper = mount(Published, {
+			props: {
+				value: "2024-03-20T10:00:00.000Z",
+			},
+		});
 
-    const timeElement = wrapper.find("time");
-    expect(timeElement.exists()).toBe(true);
-    expect(timeElement.text()).toMatch(italianDatePattern);
-  });
+		const timeElement = wrapper.find("time");
+		expect(timeElement.exists()).toBe(true);
+		expect(timeElement.text()).toMatch(italianDatePattern);
+	});
 
-  // it("sets correct datetime attribute", () => {
-  //   const testDate = "2024-03-20T10:00:00.000Z";
-  //   const wrapper = mount(Published, {
-  //     props: {
-  //       value: testDate,
-  //     },
-  //   });
+	// it("sets correct datetime attribute", () => {
+	//   const testDate = "2024-03-20T10:00:00.000Z";
+	//   const wrapper = mount(Published, {
+	//     props: {
+	//       value: testDate,
+	//     },
+	//   });
 
-  //   const timeElement = wrapper.find("time");
-  //   const expectedDate = formatDate(testDate);
-  //   expect(timeElement.attributes("datetime")).toBe(expectedDate);
-  // });
+	//   const timeElement = wrapper.find("time");
+	//   const expectedDate = formatDate(testDate);
+	//   expect(timeElement.attributes("datetime")).toBe(expectedDate);
+	// });
 
-  it("applies correct styling", () => {
-    const wrapper = mount(Published, {
-      props: {
-        value: "2024-03-20T10:00:00.000Z",
-      },
-    });
+	it("applies correct styling", () => {
+		const wrapper = mount(Published, {
+			props: {
+				value: "2024-03-20T10:00:00.000Z",
+			},
+		});
 
-    const divElement = wrapper.find("div");
-    expect(divElement.exists()).toBe(true);
-  });
+		const divElement = wrapper.find("div");
+		expect(divElement.exists()).toBe(true);
+	});
 
-  it("handles different date formats", () => {
-    const testDates = [
-      "2024-01-01T00:00:00.000Z",
-      "2024-12-31T23:59:59.999Z",
-      "2024-06-15T12:30:00.000Z",
-    ];
+	it("handles different date formats", () => {
+		const testDates = [
+			"2024-01-01T00:00:00.000Z",
+			"2024-12-31T23:59:59.999Z",
+			"2024-06-15T12:30:00.000Z",
+		];
 
-    testDates.forEach((date) => {
-      const wrapper = mount(Published, {
-        props: { value: date },
-      });
-      const timeElement = wrapper.find("time");
-      expect(timeElement.exists()).toBe(true);
-      expect(timeElement.text()).toMatch(italianDatePattern);
-    });
-  });
+		testDates.forEach((date) => {
+			const wrapper = mount(Published, {
+				props: { value: date },
+			});
+			const timeElement = wrapper.find("time");
+			expect(timeElement.exists()).toBe(true);
+			expect(timeElement.text()).toMatch(italianDatePattern);
+		});
+	});
 });

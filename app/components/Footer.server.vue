@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SITE_TITLE, SEASON_EMOJI } from '@/utils/config';
+import { SITE_TITLE, SEASON_EMOJI } from "@/utils/config";
 const today: Date = new Date();
 </script>
 

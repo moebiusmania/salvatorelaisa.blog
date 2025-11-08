@@ -1,15 +1,15 @@
 <script setup lang="ts">
 interface Props {
-  value: number | string;
+	value: number | string;
 }
 
 const props = defineProps<Props>();
 
 const formatReadingTime = (value: number | string): string => {
-  if (typeof value === 'number') {
-    return `${value} minuti`;
-  }
-  return value.replace('min read', 'minuti');
+	if (typeof value === "number") {
+		return `${value} minuti`;
+	}
+	return value.replace("min read", "minuti");
 };
 </script>
 

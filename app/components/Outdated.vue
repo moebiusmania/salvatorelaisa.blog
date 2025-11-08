@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-  date: string;
+	date: string;
 }
 
 const { date = "" } = defineProps<Props>();

@@ -1,15 +1,14 @@
 <script setup lang="ts">
 const { count = 10 } = defineProps<{
-  count?: number
-}>()
+	count?: number;
+}>();
 
-const icons = ['❅', '❆']
+const icons = ["❅", "❆"];
 
 const snowflakes = Array.from({ length: count }, (_, index) => ({
-  id: index,
-  icon: icons[Math.floor(Math.random() * icons.length)],
-}))
-
+	id: index,
+	icon: icons[Math.floor(Math.random() * icons.length)],
+}));
 </script>
 
 <template>

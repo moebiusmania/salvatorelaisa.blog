@@ -1,40 +1,40 @@
 /**
-* Summer color theme - Sun, Sky, and Sand
-*/
+ * Summer color theme - Sun, Sky, and Sand
+ */
 html.light {
-  --white: #FFF8E7;                    /* Warm sand/cream */
-  --primary: #4A90E2;                  /* Clear sky blue */
-  --secondary: #E67E22;                /* Warm terracotta/clay */
-  --accent: #FF8A65;                   /* Warm sunset coral */
-  --text: #2C3E50;                     /* Deep ocean blue for text */
-  --text-dark: inherit;
-  --text-content-dark: inherit;
-  --text-base-content: #2C3E50;
-  --text-secodary-content: #5D6D7E;    /* Muted blue-gray */
-  --bg: var(--white);
-  --bg-neutral: #F5F7FA;               /* Light cloud */
+	--white: #fff8e7; /* Warm sand/cream */
+	--primary: #4a90e2; /* Clear sky blue */
+	--secondary: #e67e22; /* Warm terracotta/clay */
+	--accent: #ff8a65; /* Warm sunset coral */
+	--text: #2c3e50; /* Deep ocean blue for text */
+	--text-dark: inherit;
+	--text-content-dark: inherit;
+	--text-base-content: #2c3e50;
+	--text-secodary-content: #5d6d7e; /* Muted blue-gray */
+	--bg: var(--white);
+	--bg-neutral: #f5f7fa; /* Light cloud */
 
-  --header-link-hover: inherit;
-  --border: #E8F4FD;                   /* Very light sky blue */
+	--header-link-hover: inherit;
+	--border: #e8f4fd; /* Very light sky blue */
 
-  --badge-bg: var(--primary);
-  --badge-text: var(--white);
+	--badge-bg: var(--primary);
+	--badge-text: var(--white);
 }
 
 html.dark {
-  --primary: #64B5F6;                  /* Bright summer sky */
-  --secondary: #FFB74D;                /* Warm sunset */
-  --accent: #FF7043;                   /* Sunset coral */
-  --text: #E3F2FD;                     /* Light sky */
-  --text-dark: #0F172A;                /* Very dark navy/black */
-  --text-content-dark: #E3F2FD;
-  --text-base-content: var(--text-content-dark);
-  --bg: var(--text-dark);
-  --bg-neutral: #1E293B;               /* Dark slate blue */
+	--primary: #64b5f6; /* Bright summer sky */
+	--secondary: #ffb74d; /* Warm sunset */
+	--accent: #ff7043; /* Sunset coral */
+	--text: #e3f2fd; /* Light sky */
+	--text-dark: #0f172a; /* Very dark navy/black */
+	--text-content-dark: #e3f2fd;
+	--text-base-content: var(--text-content-dark);
+	--bg: var(--text-dark);
+	--bg-neutral: #1e293b; /* Dark slate blue */
 
-  --header-link-hover: #90CAF9;        /* Light blue hover */
-  --border: #3F51B5;                   /* Medium blue border */
+	--header-link-hover: #90caf9; /* Light blue hover */
+	--border: #3f51b5; /* Medium blue border */
 
-  --badge-bg: var(--primary);
-  --badge-text: var(--text-dark);
+	--badge-bg: var(--primary);
+	--badge-text: var(--text-dark);
 }

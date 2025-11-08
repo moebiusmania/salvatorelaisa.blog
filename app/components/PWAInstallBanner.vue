@@ -1,84 +1,88 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 
-const showBanner = ref(false)
-const deferredPrompt = ref<any>(null)
+const showBanner = ref(false);
+const deferredPrompt = ref<any>(null);
 
 const dismissBanner = () => {
-  showBanner.value = false
-  localStorage.setItem('pwa-install-dismissed', 'true')
-}
+	showBanner.value = false;
+	localStorage.setItem("pwa-install-dismissed", "true");
+};
 
 const installPWA = async () => {
-  if (deferredPrompt.value) {
-    deferredPrompt.value.prompt()
-    const { outcome } = await deferredPrompt.value.userChoice
+	if (deferredPrompt.value) {
+		deferredPrompt.value.prompt();
+		const { outcome } = await deferredPrompt.value.userChoice;
 
-    if (outcome === 'accepted') {
-      console.log('PWA installed successfully')
-    }
+		if (outcome === "accepted") {
+			console.log("PWA installed successfully");
+		}
 
-    deferredPrompt.value = null
-    dismissBanner()
-  }
-}
+		deferredPrompt.value = null;
+		dismissBanner();
+	}
+};
 
 onMounted(() => {
-  console.log('PWA Banner: Component mounted')
+	console.log("PWA Banner: Component mounted");
 
-  // Check if user already dismissed the banner
-  const dismissed = localStorage.getItem('pwa-install-dismissed')
-  if (dismissed) {
-    console.log('PWA Banner: Previously dismissed by user')
-    return
-  }
+	// Check if user already dismissed the banner
+	const dismissed = localStorage.getItem("pwa-install-dismissed");
+	if (dismissed) {
+		console.log("PWA Banner: Previously dismissed by user");
+		return;
+	}
 
-  // Check if app is already installed
-  if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) {
-    console.log('PWA Banner: App already running in standalone mode')
-    return
-  }
+	// Check if app is already installed
+	if (
+		window.matchMedia &&
+		window.matchMedia("(display-mode: standalone)").matches
+	) {
+		console.log("PWA Banner: App already running in standalone mode");
+		return;
+	}
 
-  // Check if running in PWA mode on iOS
-  const isInStandaloneMode = (navigator as any).standalone
-  if (isInStandaloneMode) {
-    console.log('PWA Banner: Running in iOS standalone mode')
-    return
-  }
+	// Check if running in PWA mode on iOS
+	const isInStandaloneMode = (navigator as any).standalone;
+	if (isInStandaloneMode) {
+		console.log("PWA Banner: Running in iOS standalone mode");
+		return;
+	}
 
-  // Listen for beforeinstallprompt event
-  window.addEventListener('beforeinstallprompt', (e) => {
-    console.log('PWA Banner: beforeinstallprompt event fired')
-    e.preventDefault()
-    deferredPrompt.value = e
-    showBanner.value = true
-  })
+	// Listen for beforeinstallprompt event
+	window.addEventListener("beforeinstallprompt", (e) => {
+		console.log("PWA Banner: beforeinstallprompt event fired");
+		e.preventDefault();
+		deferredPrompt.value = e;
+		showBanner.value = true;
+	});
 
-  // Show banner for iOS users (Safari doesn't support beforeinstallprompt)
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
-  const isSafari = /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)
+	// Show banner for iOS users (Safari doesn't support beforeinstallprompt)
+	const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+	const isSafari =
+		/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
 
-  console.log('PWA Banner: Device detection', {
-    isIOS,
-    isSafari,
-    userAgent: navigator.userAgent,
-    isInStandaloneMode
-  })
+	console.log("PWA Banner: Device detection", {
+		isIOS,
+		isSafari,
+		userAgent: navigator.userAgent,
+		isInStandaloneMode,
+	});
 
-  if (isIOS && isSafari && !isInStandaloneMode) {
-    console.log('PWA Banner: Showing for iOS Safari')
-    showBanner.value = true
-  }
+	if (isIOS && isSafari && !isInStandaloneMode) {
+		console.log("PWA Banner: Showing for iOS Safari");
+		showBanner.value = true;
+	}
 
-  // For testing purposes - show banner after 3 seconds if no other conditions met
-  // Remove this in production
-  setTimeout(() => {
-    if (!showBanner.value && !dismissed && !isInStandaloneMode) {
-      console.log('PWA Banner: Showing test banner (remove in production)')
-      showBanner.value = true
-    }
-  }, 3000)
-})
+	// For testing purposes - show banner after 3 seconds if no other conditions met
+	// Remove this in production
+	setTimeout(() => {
+		if (!showBanner.value && !dismissed && !isInStandaloneMode) {
+			console.log("PWA Banner: Showing test banner (remove in production)");
+			showBanner.value = true;
+		}
+	}, 3000);
+});
 </script>
 
 <template>

@@ -1,33 +1,33 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 
 export interface Props {
-  results: number;
-  value: string;
+	results: number;
+	value: string;
 }
 
 const emit = defineEmits<{
-  (e: "typing", value: string): void;
-  (e: "clear"): void;
+	(e: "typing", value: string): void;
+	(e: "clear"): void;
 }>();
 
-const isJavaScriptEnabled = ref(false)
+const isJavaScriptEnabled = ref(false);
 
 onMounted(() => {
-  isJavaScriptEnabled.value = true
-})
+	isJavaScriptEnabled.value = true;
+});
 
 const onTyping = (event: Event) => {
-  const target = event.target as HTMLInputElement;
-  emit("typing", target.value);
+	const target = event.target as HTMLInputElement;
+	emit("typing", target.value);
 };
 
 const { results, value } = defineProps<Props>();
 
 const placeholders = {
-  enabled: "Cerca tra gli articoli (per titolo)",
-  disabled: "Ricerca disattivata, JavaScript non disponibile"
-}
+	enabled: "Cerca tra gli articoli (per titolo)",
+	disabled: "Ricerca disattivata, JavaScript non disponibile",
+};
 </script>
 
 <template>

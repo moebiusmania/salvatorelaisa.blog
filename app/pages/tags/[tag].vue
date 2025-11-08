@@ -5,10 +5,10 @@ const route = useRoute();
 const tag: string = route.params.tag as string;
 
 const posts: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .where("tags", "LIKE", `%${tag}%`)
-  .order("date", "DESC")
-  .all();
+	.where("draft", "=", false)
+	.where("tags", "LIKE", `%${tag}%`)
+	.order("date", "DESC")
+	.all();
 </script>
 
 <template>

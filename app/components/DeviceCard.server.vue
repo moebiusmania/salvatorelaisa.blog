@@ -2,12 +2,12 @@
 import type { DevicesCollectionItem } from "@nuxt/content";
 
 defineProps<{
-  device: DevicesCollectionItem;
+	device: DevicesCollectionItem;
 }>();
 
 const formatDate = (date: string): string => {
-  const parts = date.split("-");
-  return parts.length === 1 ? date : new Date(date).toLocaleDateString("it");
+	const parts = date.split("-");
+	return parts.length === 1 ? date : new Date(date).toLocaleDateString("it");
 };
 </script>
 

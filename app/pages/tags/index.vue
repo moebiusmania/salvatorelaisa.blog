@@ -2,29 +2,29 @@
 import type { ContentCollectionItem } from "@nuxt/content";
 
 type Tag = {
-  label: string;
-  items: number;
+	label: string;
+	items: number;
 };
 
 const posts: Array<ContentCollectionItem> = await queryCollection("content")
-  .where("draft", "=", false)
-  .all();
+	.where("draft", "=", false)
+	.all();
 
 const allTags: Array<string> = posts
-  .map((post) => post.tags)
-  .reduce((prev, curr) => prev.concat(curr));
+	.map((post) => post.tags)
+	.reduce((prev, curr) => prev.concat(curr));
 
 const tags: Array<Tag> = [...new Set(allTags)]
-  .map(
-    (tag: string): Tag => ({
-      label: tag,
-      items:
-        posts.filter(
-          (page: ContentCollectionItem): boolean => page.tags.includes(tag)
-        ).length || 0,
-    })
-  )
-  .sort((a: Tag, b: Tag): number => b.items - a.items);
+	.map(
+		(tag: string): Tag => ({
+			label: tag,
+			items:
+				posts.filter((page: ContentCollectionItem): boolean =>
+					page.tags.includes(tag),
+				).length || 0,
+		}),
+	)
+	.sort((a: Tag, b: Tag): number => b.items - a.items);
 </script>
 
 <template>

@@ -3,7 +3,7 @@ import type { ContentCollectionItem } from "@nuxt/content";
 import { PINNED_POST_DESCRIPTION } from "~/utils/config";
 
 defineProps<{
-  post: ContentCollectionItem;
+	post: ContentCollectionItem;
 }>();
 </script>
 

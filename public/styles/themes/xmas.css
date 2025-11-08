@@ -1,40 +1,40 @@
 /**
-* XMAS THEME built on top of https://coolors.co/palette/f2545b-a93f55-19323c-f3f7f0-8c5e58
-*/
+ * XMAS THEME built on top of https://coolors.co/palette/f2545b-a93f55-19323c-f3f7f0-8c5e58
+ */
 html.light {
-  --white: #F3F7F0;
-  --primary: #F2545B;
-  --secondary: #A93F55;
-  --text: #19323C;
-  --text-dark: inherit;
-  --text-content-dark: inherit;
-  --text-base-content: var(--text);
-  --text-secodary-content: var(--text);
-  --bg: var(--white);
-  --bg-neutral: oklch(0.958796 0.008588 247.915);
+	--white: #f3f7f0;
+	--primary: #f2545b;
+	--secondary: #a93f55;
+	--text: #19323c;
+	--text-dark: inherit;
+	--text-content-dark: inherit;
+	--text-base-content: var(--text);
+	--text-secodary-content: var(--text);
+	--bg: var(--white);
+	--bg-neutral: oklch(0.958796 0.008588 247.915);
 
-  --header-link-hover: inherit;
-  --border: rgba(25, 50, 60, 0.2);
+	--header-link-hover: inherit;
+	--border: rgba(25, 50, 60, 0.2);
 
-  --badge-bg: var(--primary);
-  --badge-text: oklch(1 0 0);
+	--badge-bg: var(--primary);
+	--badge-text: oklch(1 0 0);
 }
 
 html.dark {
-  --white: #19323C;
-  --primary: #F2545B;
-  --secondary: #A93F55;
-  --text: #F3F7F0;
-  --text-dark: inherit;
-  --text-content-dark: inherit;
-  --text-base-content: var(--text);
-  --text-secodary-content: var(--text);
-  --bg: var(--white);
-  --bg-neutral: var(--secondary);
+	--white: #19323c;
+	--primary: #f2545b;
+	--secondary: #a93f55;
+	--text: #f3f7f0;
+	--text-dark: inherit;
+	--text-content-dark: inherit;
+	--text-base-content: var(--text);
+	--text-secodary-content: var(--text);
+	--bg: var(--white);
+	--bg-neutral: var(--secondary);
 
-  --header-link-hover: inherit;
-  --border: rgb(243, 247, 240, 0.2);
+	--header-link-hover: inherit;
+	--border: rgb(243, 247, 240, 0.2);
 
-  --badge-bg: var(--primary);
-  --badge-text: oklch(1 0 0);
+	--badge-bg: var(--primary);
+	--badge-text: oklch(1 0 0);
 }

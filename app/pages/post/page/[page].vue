@@ -4,15 +4,17 @@ import type { Ref } from "vue";
 import { ref } from "vue";
 
 definePageMeta({
-  pageTransition: {
-    name: "slide-right",
-    mode: "out-in",
-  },
-  middleware(to, from) {
-    // @ts-ignore
-    to.meta.pageTransition.name =
-      +(to.params.id || 0) > +(from.params.id || 0) ? "slide-left" : "slide-right";
-  },
+	pageTransition: {
+		name: "slide-right",
+		mode: "out-in",
+	},
+	middleware(to, from) {
+		// @ts-ignore
+		to.meta.pageTransition.name =
+			+(to.params.id || 0) > +(from.params.id || 0)
+				? "slide-left"
+				: "slide-right";
+	},
 });
 
 const route = useRoute();
@@ -22,36 +24,36 @@ const page: number = parseInt(route.params.page as string);
 const limit: number = 10;
 
 const allPosts: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .order("date", "DESC")
-  .all();
+	.where("draft", "=", false)
+	.order("date", "DESC")
+	.all();
 
 const totalPages: number = Math.ceil(allPosts.length / limit);
 
 const initial: ContentCollectionItem[] = await queryCollection("content")
-  .where("draft", "=", false)
-  .order("date", "DESC")
-  .skip(limit * (page - 1))
-  .limit(limit)
-  .all();
+	.where("draft", "=", false)
+	.order("date", "DESC")
+	.skip(limit * (page - 1))
+	.limit(limit)
+	.all();
 
 posts.value = initial;
 
 const onClear = (): void => {
-  search.value = "";
-  posts.value = initial;
+	search.value = "";
+	posts.value = initial;
 };
 
 const filtered = (value: string): ContentCollectionItem[] =>
-  allPosts.filter((post) => {
-    const title: string = post.title?.toString() || "";
-    return title.toLowerCase().includes(value.toLowerCase());
-  });
+	allPosts.filter((post) => {
+		const title: string = post.title?.toString() || "";
+		return title.toLowerCase().includes(value.toLowerCase());
+	});
 
 const onTyping = async (value: string): Promise<void> => {
-  search.value = value;
+	search.value = value;
 
-  posts.value = value.length > 0 ? filtered(value) : initial;
+	posts.value = value.length > 0 ? filtered(value) : initial;
 };
 </script>
 

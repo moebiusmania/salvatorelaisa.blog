@@ -1,9 +1,9 @@
 <script setup lang="ts">
 export interface Props {
-  totalPages: number;
-  page: number;
-  limit: number;
-  allPosts: number;
+	totalPages: number;
+	page: number;
+	limit: number;
+	allPosts: number;
 }
 
 const { totalPages, page, limit, allPosts } = defineProps<Props>();
