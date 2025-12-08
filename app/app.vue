@@ -79,12 +79,13 @@ useHead({
 </script>
 
 <template>
-  <Header :dark="theme === options.dark" @change-theme="changeTheme" />
-  <main>
-    <Container>
-      <NuxtPage />
-    </Container>
-    <Footer />
-  </main>
-  <PWAInstallBanner />
+	<Header :dark="theme === options.dark" @change-theme="changeTheme" />
+	<Snow />
+	<main>
+		<Container>
+			<NuxtPage />
+		</Container>
+		<Footer />
+	</main>
+	<PWAInstallBanner />
 </template>

@@ -2,6 +2,7 @@
 	"recommendations": [
 		"vue.volar",
 		"github.vscode-github-actions",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"biomejs.biome"
 	]
 }
