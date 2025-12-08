@@ -26,22 +26,22 @@
 		"todo:done": "node scripts/todo.js done"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.3.4",
-		"@nuxt/content": "3.8.0",
+		"@biomejs/biome": "2.3.8",
+		"@nuxt/content": "3.9.0",
 		"@nuxt/image": "2.0.0",
-		"@nuxt/test-utils": "3.20.1",
+		"@nuxt/test-utils": "3.21.0",
 		"@nuxtjs/google-fonts": "3.2.0",
-		"@nuxtjs/sitemap": "7.4.7",
+		"@nuxtjs/sitemap": "7.4.9",
 		"@vue/test-utils": "2.4.6",
-		"happy-dom": "20.0.10",
+		"better-sqlite3": "12.5.0",
+		"happy-dom": "20.0.11",
 		"nuxt": "4.2.1",
-		"oxlint": "1.26.0",
+		"oxlint": "1.31.0",
 		"sharp": "0.34.5",
 		"table": "6.9.0",
-		"vitest": "4.0.8"
+		"vitest": "4.0.15"
 	},
 	"dependencies": {
-		"better-sqlite3": "12.4.1",
 		"modern-normalize": "3.0.1"
 	}
 }
