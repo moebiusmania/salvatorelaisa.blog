@@ -31,7 +31,7 @@ jobs:
           echo "NUXT_PUBLIC_STUDIO_TOKENS=${{ secrets.NUXT_PUBLIC_STUDIO_TOKENS }}" >> .env
 
       - name: 📦 Install dependencies
-        run: npm ci
+        run: npm i --legacy-peer-deps
 
       - name: 🔍 Run lint
         run: npm run lint

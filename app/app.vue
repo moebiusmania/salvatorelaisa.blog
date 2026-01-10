@@ -80,7 +80,7 @@ useHead({
 
 <template>
 	<Header :dark="theme === options.dark" @change-theme="changeTheme" />
-	<Snow />
+	<!-- <Snow /> -->
 	<main>
 		<Container>
 			<NuxtPage />
