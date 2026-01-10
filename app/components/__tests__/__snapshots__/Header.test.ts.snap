@@ -1,14 +1,14 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Header > renders correctly 1`] = `
-"<header data-v-a81738bd="">
-  <div data-v-a81738bd="">
-    <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
-    <nav data-v-a81738bd="">
-      <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub data-v-a81738bd="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub data-v-a81738bd="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-          <path data-v-a81738bd="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+"<header data-v-daaa1507="">
+  <div data-v-daaa1507="">
+    <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
+    <nav data-v-daaa1507="">
+      <nuxt-link-stub data-v-daaa1507="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-daaa1507="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-daaa1507="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-daaa1507="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-daaa1507="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path data-v-daaa1507="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg></a>
     </nav>
   </div>
@@ -16,14 +16,14 @@ exports[`Header > renders correctly 1`] = `
 `;
 
 exports[`Header > renders site logo with correct attributes 1`] = `
-"<header data-v-a81738bd="">
-  <div data-v-a81738bd="">
-    <nuxt-link-stub data-v-a81738bd="" href="/"></nuxt-link-stub>
-    <nav data-v-a81738bd="">
-      <nuxt-link-stub data-v-a81738bd="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub data-v-a81738bd="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub data-v-a81738bd="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-a81738bd="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-a81738bd="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-          <path data-v-a81738bd="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+"<header data-v-daaa1507="">
+  <div data-v-daaa1507="">
+    <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
+    <nav data-v-daaa1507="">
+      <nuxt-link-stub data-v-daaa1507="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-daaa1507="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub data-v-daaa1507="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-daaa1507="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-daaa1507="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path data-v-daaa1507="" class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg></a>
     </nav>
   </div>

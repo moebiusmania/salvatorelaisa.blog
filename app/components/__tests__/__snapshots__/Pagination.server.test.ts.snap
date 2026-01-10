@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Pagination > renders correctly 1`] = `
-"<div data-v-b2d456d3="">
-  <nav data-v-b2d456d3=""><a data-v-b2d456d3="" href="/post/page/1"><button data-v-b2d456d3="" aria-label="precedente">← Precedente</button></a><span data-v-b2d456d3="">Pagina 2 di 5</span><button data-v-b2d456d3="" aria-label="successivo" disabled=""> Successivo → </button></nav>
+"<div data-v-91ee4d10="">
+  <nav data-v-91ee4d10=""><a data-v-91ee4d10="" href="/post/page/1"><button data-v-91ee4d10="" aria-label="precedente">← Precedente</button></a><span data-v-91ee4d10="">Pagina 2 di 5</span><button data-v-91ee4d10="" aria-label="successivo" disabled=""> Successivo → </button></nav>
 </div>"
 `;

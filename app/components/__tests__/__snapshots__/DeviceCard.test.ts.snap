@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`DeviceCard > matches snapshot 1`] = `
-"<article data-v-26916834="">
-  <figure data-v-26916834=""><img data-v-26916834="" src="/test-image.jpg" alt="Test Device"></figure>
-  <div data-v-26916834="">
-    <div data-v-26916834=""><span data-v-26916834="" class="sl-badge">tag1</span><span data-v-26916834="" class="sl-badge">tag2</span></div>
-    <p data-v-26916834=""> Data di acquisto: 20/03/2024</p>
-    <h2 data-v-26916834=""><a data-v-26916834="" href="https://example.com" rel="noopener noreferrer">Test Device</a>
-      <external data-v-26916834=""></external>
+"<article data-v-625f79f3="">
+  <figure data-v-625f79f3=""><img data-v-625f79f3="" src="/test-image.jpg" alt="Test Device"></figure>
+  <div data-v-625f79f3="">
+    <div data-v-625f79f3=""><span data-v-625f79f3="" class="sl-badge">tag1</span><span data-v-625f79f3="" class="sl-badge">tag2</span></div>
+    <p data-v-625f79f3=""> Data di acquisto: 20/03/2024</p>
+    <h2 data-v-625f79f3=""><a data-v-625f79f3="" href="https://example.com" rel="noopener noreferrer">Test Device</a>
+      <external data-v-625f79f3=""></external>
       <!--v-if-->
     </h2>
     <!---->

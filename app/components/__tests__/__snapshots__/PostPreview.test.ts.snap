@@ -1,30 +1,30 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`PostPreview > renders correctly 1`] = `
-"<li data-v-ef65044c="" class="">
-  <!--v-if--><time data-v-ef65044c=""><span data-v-ef65044c="">20 marzo 2024</span></time>
-  <div data-v-ef65044c="">
-    <routerlink data-v-ef65044c="" to="/post/test-post"></routerlink>
-    <div data-v-ef65044c="">
-      <routerlink data-v-ef65044c="" to="/tags/test"></routerlink>
-      <routerlink data-v-ef65044c="" to="/tags/vue"></routerlink>
+"<li data-v-4ef15649="" class="">
+  <!--v-if--><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
+  <div data-v-4ef15649="">
+    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
+    <div data-v-4ef15649="">
+      <routerlink data-v-4ef15649="" to="/tags/test"></routerlink>
+      <routerlink data-v-4ef15649="" to="/tags/vue"></routerlink>
     </div>
-    <p data-v-ef65044c="">This is a test post summary</p>
-    <routerlink data-v-ef65044c="" to="/post/test-post"></routerlink>
+    <p data-v-4ef15649="">This is a test post summary</p>
+    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
   </div>
 </li>"
 `;
 
 exports[`PostPreview > renders pinned post correctly 1`] = `
-"<li data-v-ef65044c="" class="pinned"><span data-v-ef65044c="" class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time data-v-ef65044c=""><span data-v-ef65044c="">20 marzo 2024</span></time>
-  <div data-v-ef65044c="">
-    <routerlink data-v-ef65044c="" to="/post/test-post"></routerlink>
-    <div data-v-ef65044c="">
-      <routerlink data-v-ef65044c="" to="/tags/test"></routerlink>
-      <routerlink data-v-ef65044c="" to="/tags/vue"></routerlink>
+"<li data-v-4ef15649="" class="pinned"><span data-v-4ef15649="" class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
+  <div data-v-4ef15649="">
+    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
+    <div data-v-4ef15649="">
+      <routerlink data-v-4ef15649="" to="/tags/test"></routerlink>
+      <routerlink data-v-4ef15649="" to="/tags/vue"></routerlink>
     </div>
-    <p data-v-ef65044c="">This is a test post summary</p>
-    <routerlink data-v-ef65044c="" to="/post/test-post"></routerlink>
+    <p data-v-4ef15649="">This is a test post summary</p>
+    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
   </div>
 </li>"
 `;

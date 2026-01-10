@@ -1,3 +1,3 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`GamingPlatforms > renders correctly 1`] = `"<p data-v-a98cfd4d="" class="platforms"> Giocato su: <a data-v-a98cfd4d="" href="https://example.com/ps5" rel="noopener noreferrer" class="sl-badge">PlayStation 5</a><a data-v-a98cfd4d="" href="https://example.com/switch" rel="noopener noreferrer" class="sl-badge">Nintendo Switch</a></p>"`;
+exports[`GamingPlatforms > renders correctly 1`] = `"<p data-v-58143e6a="" class="platforms"> Giocato su: <a data-v-58143e6a="" href="https://example.com/ps5" rel="noopener noreferrer" class="sl-badge">PlayStation 5</a><a data-v-58143e6a="" href="https://example.com/switch" rel="noopener noreferrer" class="sl-badge">Nintendo Switch</a></p>"`;

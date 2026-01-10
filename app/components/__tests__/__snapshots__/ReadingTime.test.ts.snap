@@ -1,3 +1,3 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ReadingTime > renders correctly 1`] = `"<p data-v-a3fe6d3a="" class="reading"><small data-v-a3fe6d3a="">Tempo di lettura: 5 minuti</small></p>"`;
+exports[`ReadingTime > renders correctly 1`] = `"<p data-v-827cb4c0="" class="reading"><small data-v-827cb4c0="">Tempo di lettura: 5 minuti</small></p>"`;

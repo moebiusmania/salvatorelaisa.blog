@@ -1,18 +1,18 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Timeline > matches snapshot 1`] = `
-"<section data-v-8c6e1942="" class="timeline-container" role="region" aria-label="Timeline degli eventi" aria-describedby="timeline-description">
-  <ul data-v-8c6e1942="" class="timeline" role="list" aria-label="3 timeline items">
-    <li data-v-8c6e1942="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 1 of 3: Event 1">
-      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 1</span></div>
+"<section data-v-cbc896cf="" class="timeline-container" role="region" aria-label="Timeline degli eventi" aria-describedby="timeline-description">
+  <ul data-v-cbc896cf="" class="timeline" role="list" aria-label="3 timeline items">
+    <li data-v-cbc896cf="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 1 of 3: Event 1">
+      <div data-v-cbc896cf="" class="timeline-content"><span data-v-cbc896cf="" class="timeline-text">Event 1</span></div>
     </li>
-    <li data-v-8c6e1942="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 2 of 3: Event 2">
-      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 2</span></div>
+    <li data-v-cbc896cf="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 2 of 3: Event 2">
+      <div data-v-cbc896cf="" class="timeline-content"><span data-v-cbc896cf="" class="timeline-text">Event 2</span></div>
     </li>
-    <li data-v-8c6e1942="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 3 of 3: Event 3">
-      <div data-v-8c6e1942="" class="timeline-content"><span data-v-8c6e1942="" class="timeline-text">Event 3</span></div>
+    <li data-v-cbc896cf="" class="timeline-item" role="listitem" tabindex="0" aria-label="Timeline item 3 of 3: Event 3">
+      <div data-v-cbc896cf="" class="timeline-content"><span data-v-cbc896cf="" class="timeline-text">Event 3</span></div>
     </li>
   </ul>
-  <div data-v-8c6e1942="" class="sr-only" aria-live="polite" aria-atomic="true"> Timeline with 3 items loaded </div>
+  <div data-v-cbc896cf="" class="sr-only" aria-live="polite" aria-atomic="true"> Timeline with 3 items loaded </div>
 </section>"
 `;
