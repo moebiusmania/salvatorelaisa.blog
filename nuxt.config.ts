@@ -33,6 +33,36 @@ export default defineNuxtConfig({
 
 	compatibilityDate: "2024-08-20",
 
+	routeRules: {
+		// Static assets with long cache lifetime (1 year)
+		"/styles/**": {
+			headers: {
+				"Cache-Control": "public, max-age=31536000, immutable",
+			},
+		},
+		"/static/**": {
+			headers: {
+				"Cache-Control": "public, max-age=31536000, immutable",
+			},
+		},
+		"/images/**": {
+			headers: {
+				"Cache-Control": "public, max-age=31536000, immutable",
+			},
+		},
+		"/_nuxt/**": {
+			headers: {
+				"Cache-Control": "public, max-age=31536000, immutable",
+			},
+		},
+		// HTML pages with shorter cache (1 hour) to allow for content updates
+		"/**": {
+			headers: {
+				"Cache-Control": "public, max-age=3600, must-revalidate",
+			},
+		},
+	},
+
 	hooks: {
 		"content:file:afterParse"(ctx) {
 			const { file, content } = ctx;
