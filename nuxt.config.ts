@@ -14,6 +14,9 @@ export default defineNuxtConfig({
 		families: {
 			Lexend: [300, 400, 700, 800],
 		},
+		display: "swap",
+		preload: true,
+		preconnect: true,
 	},
 
 	experimental: {
