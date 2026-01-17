@@ -9,7 +9,7 @@ draft: false
 summary: 'I tablet hanno attraversato varie fasi e trasformazioni da quando sono stati introdotti per la prima volta quasi quindici anni fa, e anche se ammetto che non ero particolarmente convinto delle varianti da 7-8" al loro esordio, oggi sono invece convinto che questo specifico fattore forma sia la vera rappresentazione del termine "PC portatile".'
 images:
   [
-    "/content/ipad_mini_sora.webp",
+    "https://salvatorelaisa.blog/content/ipad_mini_sora.webp",
   ]
 ---
 

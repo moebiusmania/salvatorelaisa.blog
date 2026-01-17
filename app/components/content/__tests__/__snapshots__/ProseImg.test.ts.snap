@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProseImg > renders first image with fetchpriority high when using props 1`] = `"<img src="https://example.com/image.jpg" alt="Test image" fetchpriority="high">"`;
+
+exports[`ProseImg > renders image with additional attributes from attrs 1`] = `"<img src="https://example.com/image.jpg" alt="Test image" class="custom-class" loading="lazy">"`;
+
+exports[`ProseImg > renders image with fetchpriority high when using attrs 1`] = `"<img src="https://example.com/image-from-attrs.jpg" alt="Image from attrs">"`;
+
+exports[`ProseImg > renders image with only src attribute 1`] = `"<img src="https://example.com/image-no-alt.jpg">"`;
+
+exports[`ProseImg > renders image with props taking precedence over attrs 1`] = `"<img src="https://example.com/prop-image.jpg" alt="Prop image">"`;
+
+exports[`ProseImg > renders subsequent images without fetchpriority 1`] = `"<img src="https://example.com/second-image.jpg" alt="Second image">"`;

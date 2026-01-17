@@ -4,6 +4,8 @@ const props = defineProps<{
 	alt?: string;
 }>();
 
+const attrs = useAttrs();
+
 // Track if we've already rendered the first image on this page
 const isFirstImage = useState("firstProseImage", () => true);
 
@@ -14,13 +16,17 @@ const fetchPriority = isFirstImage.value ? "high" : undefined;
 if (isFirstImage.value) {
 	isFirstImage.value = false;
 }
+
+// Get src and alt from props or attrs, properly typed
+const imageSrc = computed(() => {
+	return props.src || (attrs.src as string | undefined);
+});
+
+const imageAlt = computed(() => {
+	return props.alt || (attrs.alt as string | undefined);
+});
 </script>
 
 <template>
-	<img
-		:src="src || $attrs.src"
-		:alt="alt || $attrs.alt"
-		:fetchpriority="fetchPriority"
-		v-bind="$attrs"
-	/>
+	<img :src="imageSrc" :alt="imageAlt" :fetchpriority="fetchPriority" v-bind="attrs" />
 </template>
