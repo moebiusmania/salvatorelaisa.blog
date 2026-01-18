@@ -27,7 +27,9 @@ describe("ProseImg", () => {
 		});
 
 		const img = wrapper.find("img");
-		expect(img.attributes("src")).toBe("https://example.com/image-from-attrs.jpg");
+		expect(img.attributes("src")).toBe(
+			"https://example.com/image-from-attrs.jpg",
+		);
 		expect(img.attributes("alt")).toBe("Image from attrs");
 		// Note: fetchpriority may be undefined here because useState persists across tests
 		// The first test already set the state to false

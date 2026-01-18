@@ -9,11 +9,11 @@ draft: false
 summary: 'I tablet hanno attraversato varie fasi e trasformazioni da quando sono stati introdotti per la prima volta quasi quindici anni fa, e anche se ammetto che non ero particolarmente convinto delle varianti da 7-8" al loro esordio, oggi sono invece convinto che questo specifico fattore forma sia la vera rappresentazione del termine "PC portatile".'
 images:
   [
-    "https://salvatorelaisa.blog/content/ipad_mini_sora.webp",
+    "https://salvatorelaisa.blog/content/2024/ipad_mini_sora.webp",
   ]
 ---
 
-![Immagine generata con Sora AI di un iPad Mini 6th gen appoggiato su una scrivania di legno.](/content/ipad_mini_sora.webp)<small>_Immagine generata con Sora, il prompt è stato "an ipad mini 6th generation lying down in a wooden desk with an abstract wallpapaer, soft natural light, photorealistic scene"._</small>
+![Immagine generata con Sora AI di un iPad Mini 6th gen appoggiato su una scrivania di legno.](/content/2024/ipad_mini_sora.webp)<small>_Immagine generata con Sora, il prompt è stato "an ipad mini 6th generation lying down in a wooden desk with an abstract wallpapaer, soft natural light, photorealistic scene"._</small>
 
 I tablet hanno attraversato varie fasi e trasformazioni da quando sono stati introdotti per la prima volta quasi quindici anni fa, e anche se ammetto che non ero particolarmente convinto delle varianti da 7-8" al loro esordio, **oggi sono invece convinto che questo specifico fattore forma sia la vera rappresentazione del termine "PC portatile"**.
 
