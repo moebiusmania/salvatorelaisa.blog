@@ -28,9 +28,9 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.3.11",
 		"@nuxt/content": "3.11.0",
+		"@nuxt/fonts": "0.12.1",
 		"@nuxt/image": "2.0.0",
 		"@nuxt/test-utils": "3.23.0",
-		"@nuxtjs/google-fonts": "3.2.0",
 		"@nuxtjs/sitemap": "7.5.2",
 		"@vue/test-utils": "2.4.6",
 		"better-sqlite3": "12.6.2",

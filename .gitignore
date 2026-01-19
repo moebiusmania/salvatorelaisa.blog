@@ -10,6 +10,7 @@ dist
 todo.md
 .content
 .data/content/contents.sqlite
+.data
 *.db
 *.sqlite
 *.sqlite3

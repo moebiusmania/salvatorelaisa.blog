@@ -7,16 +7,18 @@ export default defineNuxtConfig({
 		"@nuxt/content",
 		"@nuxt/image",
 		"@nuxt/test-utils/module",
-		"@nuxtjs/google-fonts",
+		"@nuxt/fonts",
 	],
 
-	googleFonts: {
-		families: {
-			Lexend: [300, 400, 700, 800],
-		},
-		display: "swap",
-		preload: true,
-		preconnect: true,
+	fonts: {
+		families: [
+			{
+				name: "Lexend",
+				provider: "bunny",
+				weights: [300, 400, 700, 800],
+				global: true,
+			},
+		],
 	},
 
 	experimental: {
