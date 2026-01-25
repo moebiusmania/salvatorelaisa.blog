@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+	future: {
+		compatibilityVersion: 5,
+	},
+
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 	},

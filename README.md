@@ -10,8 +10,7 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 - [Nuxt 3](https://nuxt.com/) - main application framework based on [Vue 3](https://vuejs.org/)
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
-  - [@nuxt/google-fonts](https://google-fonts.nuxtjs.org/) - module to easily integrate Google Fonts
-  - [@nuxt/studio](https://nuxt.studio/) - module to enable the integration with the Nuxt Studio editing UI
+  - [@nuxt/fonts](https://nuxt.com/modules/fonts) - module to easily integrate external fonts from [Bunny Fonts 🇪🇺](https://fonts.bunny.net/)
 - [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, leveraging [Vue's CSS Module](https://vuejs.org/api/sfc-css-features.html#css-modules) support
 
 I'm also integrating with [Nuxt Studio](https://nuxt.studio/) to play a bit with **visual editing**, which comes pretty handy when editing/writing content from devices like the iPad Mini.
