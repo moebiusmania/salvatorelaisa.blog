@@ -34,7 +34,7 @@
 		"@nuxtjs/sitemap": "7.5.2",
 		"@vue/test-utils": "2.4.6",
 		"better-sqlite3": "12.6.2",
-		"happy-dom": "20.3.7",
+		"happy-dom": "20.8.8",
 		"nuxt": "4.3.0",
 		"oxlint": "1.41.0",
 		"sharp": "0.34.5",
