@@ -5,6 +5,7 @@ exports[`Header > renders correctly 1`] = `
   <div data-v-daaa1507="">
     <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
     <nav data-v-daaa1507="">
+      <nuxt-link-stub data-v-daaa1507="" href="https://www.earthday.org/earth-day-2026/" target="_blank" title="Giornata della terra 2026" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-daaa1507="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-daaa1507="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -20,6 +21,7 @@ exports[`Header > renders site logo with correct attributes 1`] = `
   <div data-v-daaa1507="">
     <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
     <nav data-v-daaa1507="">
+      <nuxt-link-stub data-v-daaa1507="" href="https://www.earthday.org/earth-day-2026/" target="_blank" title="Giornata della terra 2026" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub data-v-daaa1507="" href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a data-v-daaa1507="" class="navitem" aria-label="theme switcher" href="#" id="theme"><svg data-v-daaa1507="" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
