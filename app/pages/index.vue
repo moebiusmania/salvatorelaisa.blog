@@ -14,7 +14,9 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 
 const pinnedPost = nonDrafts.find((post) => post.pinned === true);
 
-pinnedPost ? posts.unshift(pinnedPost) : posts;
+if (pinnedPost) {
+	posts.unshift(pinnedPost);
+}
 </script>
 
 <template>

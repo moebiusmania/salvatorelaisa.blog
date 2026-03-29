@@ -42,6 +42,12 @@ export default defineNuxtConfig({
 
 	compatibilityDate: "2024-08-20",
 
+	vite: {
+		optimizeDeps: {
+			include: ["@vue/devtools-core", "@vue/devtools-kit"],
+		},
+	},
+
 	routeRules: {
 		// Static assets with long cache lifetime (1 year)
 		"/styles/**": {
