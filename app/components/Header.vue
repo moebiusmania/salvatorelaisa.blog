@@ -2,41 +2,41 @@
 import { SITE_TITLE, SEASON_EMOJI, EVENTS } from "@/utils/config";
 
 export interface NavItem {
-	name: string;
-	href: string;
-	title: string;
-	external?: boolean;
+  name: string;
+  href: string;
+  title: string;
+  external?: boolean;
 }
 
 defineEmits(["changeTheme"]);
 
 const items: Array<NavItem> = [
-	{
-		name: "Cerca",
-		href: "/post/page/1",
-		title: "Tutti gli articoli del blog",
-	},
-	{
-		name: "About",
-		href: "/about",
-		title: "Qualche riga su di me",
-	},
-	{
-		name: "Tags",
-		href: "/tags",
-		title: "Articoli per tag",
-	},
+  {
+    name: "Cerca",
+    href: "/post/page/1",
+    title: "Tutti gli articoli del blog",
+  },
+  {
+    name: "About",
+    href: "/about",
+    title: "Qualche riga su di me",
+  },
+  {
+    name: "Tags",
+    href: "/tags",
+    title: "Articoli per tag",
+  },
 ];
 
-const nav: Array<NavItem> = [EVENTS.earthDay, ...items];
-// const nav: Array<NavItem> = [...items];
+// const nav: Array<NavItem> = [EVENTS.earthDay, ...items];
+const nav: Array<NavItem> = [...items];
 
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
 
 const isActive = (href: string, route: any) => [
-	"navitem",
-	{ "router-link-active": href === route.path },
+  "navitem",
+  { "router-link-active": href === route.path },
 ];
 </script>
 
