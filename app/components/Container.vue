@@ -6,6 +6,6 @@
   </section>
 </template>
 
-<style scoped>
+<style>
 @import './Container.css';
 </style>

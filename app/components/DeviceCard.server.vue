@@ -40,6 +40,6 @@ const formatDate = (date: string): string => {
 @import url('./Badge.css');
 </style>
 
-<style scoped>
+<style>
 @import './DeviceCard.css';
 </style>

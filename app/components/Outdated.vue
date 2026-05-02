@@ -24,6 +24,6 @@ const isOutdated: boolean = current - postYear > 3;
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './Outdated.css';
 </style>

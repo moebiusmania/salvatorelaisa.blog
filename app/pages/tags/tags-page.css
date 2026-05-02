@@ -1,4 +1,4 @@
-.tags-page section {
+.tags-page {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -8,7 +8,7 @@
 }
 
 @media (min-width: 768px) {
-	.tags-page section {
+	.tags-page {
 		margin-top: var(--sp-8);
 		margin-left: var(--sp-3);
 		flex-direction: row;
@@ -19,47 +19,47 @@
 	}
 }
 
-.tags-page section > hgroup {
+.tags-page > hgroup {
 	padding-top: var(--sp-3);
 	padding-bottom: var(--sp-4);
 	margin-left: var(--sp-1);
 }
 
 @media (min-width: 768px) {
-	.tags-page section > hgroup {
+	.tags-page > hgroup {
 		margin-top: var(--sp-3);
 	}
 }
 
-.tags-page section h1 {
+.tags-page h1 {
 	text-transform: capitalize;
 }
 
-.tags-page section > ul {
+.tags-page > ul {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 32rem;
 	padding: 0;
 }
 
-.tags-page section > ul > li {
+.tags-page > ul > li {
 	list-style: none;
 	margin-top: var(--sp-1);
 	margin-bottom: var(--sp-1);
 	margin-right: var(--sp-3);
 }
 
-.tags-page section > ul > li > a {
+.tags-page > ul > li > a {
 	text-transform: uppercase;
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 }
 
-.tags-page section > ul > li > a:hover {
+.tags-page > ul > li > a:hover {
 	text-decoration: underline;
 }
 
-.tags-page section > ul > li > a:first-child {
+.tags-page > ul > li > a:first-child {
 	margin-right: var(--sp-2);
 	font-weight: 500;
 	color: var(--primary);
@@ -68,7 +68,7 @@
 	transition-duration: 400ms;
 }
 
-.tags-page section > ul > li > a:last-child {
+.tags-page > ul > li > a:last-child {
 	margin-left: calc(var(--sp-1) * -1);
 	font-weight: 600;
 	color: rgb(75, 85, 99);

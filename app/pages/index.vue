@@ -54,6 +54,6 @@ if (pinnedPost) {
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './home-page.css';
 </style>

@@ -20,6 +20,6 @@ const { value = new Date().toISOString() } = defineProps<Props>();
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './Published.css';
 </style>

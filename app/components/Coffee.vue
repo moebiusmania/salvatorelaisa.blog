@@ -38,6 +38,6 @@
   </a>
 </template>
 
-<style scoped>
+<style>
 @import './Coffee.css';
 </style>

@@ -41,6 +41,6 @@ const posts: DevicesCollectionItem[] = slug ? await getOne() : await getAll();
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './devices-page.css';
 </style>

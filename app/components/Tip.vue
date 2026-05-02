@@ -12,6 +12,6 @@
   </section>
 </template>
 
-<style scoped>
+<style>
 @import './Tip.css';
 </style>

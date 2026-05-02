@@ -21,6 +21,6 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './post-year.css';
 </style>

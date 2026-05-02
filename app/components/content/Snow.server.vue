@@ -19,6 +19,6 @@ const snowflakes = Array.from({ length: count }, (_, index) => ({
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './Snow.css';
 </style>

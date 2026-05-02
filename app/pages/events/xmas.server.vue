@@ -13,6 +13,6 @@ const { data } = await useAsyncData(() =>
   <Tip />
 </template>
 
-<style scoped>
+<style>
 @import './xmas-page.css';
 </style>

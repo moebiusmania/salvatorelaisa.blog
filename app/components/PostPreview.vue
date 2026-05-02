@@ -49,6 +49,6 @@ defineProps<{
   </li>
 </template>
 
-<style scoped>
+<style>
 @import './PostPreview.css';
 </style>

@@ -120,6 +120,6 @@ onMounted(() => {
   </Transition>
 </template>
 
-<style scoped>
+<style>
 @import './PWAInstallBanner.css';
 </style>

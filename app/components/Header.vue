@@ -65,6 +65,6 @@ const isActive = (href: string, route: any) => [
   </header>
 </template>
 
-<style scoped>
+<style>
 @import './Header.css';
 </style>

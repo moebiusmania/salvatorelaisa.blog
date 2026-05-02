@@ -37,6 +37,6 @@ const { url } = defineProps<Props>();
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './Sharing.css';
 </style>

@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Container > matches snapshot 1`] = `
-"<section data-v-d86550a4="" class="container">
-  <div data-v-d86550a4="">Test content</div>
+"<section class="container">
+  <div>Test content</div>
 </section>"
 `;

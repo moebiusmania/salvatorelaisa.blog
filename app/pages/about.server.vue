@@ -17,6 +17,6 @@ const { data } = await useAsyncData(() =>
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './about-page.css';
 </style>
