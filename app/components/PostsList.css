@@ -1,0 +1,5 @@
+.posts-list ul {
+	border-top: 1px solid var(--border);
+	margin: var(--sp-4) 0;
+	padding: 0;
+}

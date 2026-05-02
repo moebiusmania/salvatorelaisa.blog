@@ -1,0 +1,5 @@
+.post-page h1 {
+	font-size: 3.75rem;
+	line-height: 1;
+	color: var(--text-base-content);
+}

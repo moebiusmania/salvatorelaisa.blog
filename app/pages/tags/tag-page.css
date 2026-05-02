@@ -1,0 +1,12 @@
+.tag-page p {
+	margin-bottom: var(--sp-2);
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	line-height: 1.75rem;
+	color: var(--text-secondary-content);
+}
+
+.tag-page h1 {
+	text-transform: capitalize;
+	color: var(--text-base-content);
+}

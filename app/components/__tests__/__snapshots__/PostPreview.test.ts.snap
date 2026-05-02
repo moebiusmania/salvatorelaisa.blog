@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`PostPreview > renders correctly 1`] = `
-"<li data-v-4ef15649="" class="">
+"<li data-v-4ef15649="" class="post-preview">
   <!--v-if--><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
   <div data-v-4ef15649="">
     <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
@@ -16,7 +16,7 @@ exports[`PostPreview > renders correctly 1`] = `
 `;
 
 exports[`PostPreview > renders pinned post correctly 1`] = `
-"<li data-v-4ef15649="" class="pinned"><span data-v-4ef15649="" class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
+"<li data-v-4ef15649="" class="post-preview pinned"><span data-v-4ef15649="" class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
   <div data-v-4ef15649="">
     <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
     <div data-v-4ef15649="">

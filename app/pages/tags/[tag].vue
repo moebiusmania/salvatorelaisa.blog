@@ -12,7 +12,7 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 </script>
 
 <template>
-  <div>
+  <div class="tag-page">
     <p>
       {{ posts.length }} articoli trovati con il tag
     </p>
@@ -24,18 +24,5 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 </template>
 
 <style scoped>
-div {
-  & p {
-    margin-bottom: var(--sp-2);
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    line-height: 1.75rem;
-    color: var(--text-secondary-content);
-  }
-
-  & h1 {
-    text-transform: capitalize;
-    color: var(--text-base-content);
-  }
-}
+@import './tag-page.css';
 </style>

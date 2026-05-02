@@ -4,7 +4,7 @@ const today: Date = new Date();
 </script>
 
 <template>
-  <footer>
+  <footer class="footer">
     <div>
       <span>{{ SITE_TITLE }} Blog {{ SEASON_EMOJI }}</span>
       <p>
@@ -82,75 +82,5 @@ const today: Date = new Date();
 </template>
 
 <style scoped>
-footer {
-  color: var(--text);
-
-  &>div {
-    display: flex;
-    padding: var(--sp-4) 0;
-    flex-direction: column;
-    align-items: center;
-    max-width: 64rem;
-    margin: 0 auto;
-    justify-content: center;
-    gap: var(--sp-3);
-
-    @media (min-width: 640px) {
-      flex-direction: row;
-    }
-
-    &>span {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-    }
-
-    &>p {
-      display: flex;
-      margin: var(--sp-2) 0 0 0;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      color: var(--text-content-dark);
-
-      @media (min-width: 640px) {
-        padding: var(--sp-1) 0 var(--sp-1) var(--sp-2);
-        margin-top: 0;
-        border-left-width: 2px;
-      }
-
-      & a {
-        margin-left: 0.25rem;
-        color: var(--primary);
-      }
-    }
-
-    &>.social {
-      display: flex;
-      margin-top: var(--sp-2);
-      gap: 0.75rem;
-      justify-content: center;
-      width: 9rem;
-
-      @media (min-width: 640px) {
-        margin-top: 0;
-      }
-
-      @media (min-width: 768px) {
-        justify-content: flex-end;
-      }
-
-      &>a {
-        color: var(--text-base-content) !important;
-
-        & svg {
-          width: 1.25rem;
-          height: 1.25rem;
-        }
-      }
-
-      & a:hover {
-        color: var(--primary);
-      }
-    }
-  }
-}
+@import './Footer.css';
 </style>

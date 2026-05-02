@@ -58,7 +58,7 @@ const onTyping = async (value: string): Promise<void> => {
 </script>
 
 <template>
-  <div>
+  <div class="post-page">
     <h1>Tutti gli articoli</h1>
     <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
     <PostsList>
@@ -72,13 +72,7 @@ const onTyping = async (value: string): Promise<void> => {
 </template>
 
 <style scoped>
-div {
-  h1 {
-    font-size: 3.75rem;
-    line-height: 1;
-    color: var(--text-base-content)
-  }
-}
+@import './post-page.css';
 </style>
 
 <!-- 

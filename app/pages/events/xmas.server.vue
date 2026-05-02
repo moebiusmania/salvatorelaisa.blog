@@ -5,7 +5,7 @@ const { data } = await useAsyncData(() =>
 </script>
 
 <template>
-  <article class="content">
+  <article class="content xmas-page">
     <h1>{{ data?.title }}</h1>
     <ContentRenderer :value="data || {}" />
     <hr />
@@ -14,9 +14,5 @@ const { data } = await useAsyncData(() =>
 </template>
 
 <style scoped>
-iframe {
-  width: 100%;
-  height: 450px;
-  border: 1px solid var(--border);
-}
+@import './xmas-page.css';
 </style>

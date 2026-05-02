@@ -13,40 +13,5 @@
 </template>
 
 <style scoped>
-.tip-section {
-  border-top-width: 0 !important;
-  margin: 0 auto;
-}
-
-.tip-text {
-  margin-bottom: var(--sp-2);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-style: italic;
-
-  & span {
-    font-style: normal;
-  }
-}
-
-.tip-action {
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: max-content;
-  }
-}
-
-/* Screen reader only content */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+@import './Tip.css';
 </style>

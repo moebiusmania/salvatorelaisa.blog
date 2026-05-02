@@ -1,0 +1,39 @@
+.post-slug > article {
+	max-width: none;
+}
+
+.post-slug > article header {
+	margin-bottom: var(--sp-6);
+	text-align: center;
+}
+
+.post-slug > article header > h1 {
+	margin: var(--sp-2) 0;
+}
+
+@media (min-width: 768px) {
+	.post-slug > article header > h1 {
+		font-size: 3rem;
+	}
+}
+
+.post-slug > article header > p {
+	margin: var(--sp-1) 0;
+}
+
+.post-slug > article header > p a {
+	display: inline-block;
+	margin: 0 var(--sp-05);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.post-slug > article header > p a:hover {
+	text-decoration: underline;
+}
+
+.post-slug > hr {
+	border: 0;
+	border-top: 1px solid var(--border);
+	margin: var(--sp-3) 0;
+}

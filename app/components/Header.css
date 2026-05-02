@@ -1,0 +1,92 @@
+.header {
+	color: var(--text-base-content);
+}
+
+.header > div {
+	display: flex;
+	padding: var(--sp-3);
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 64rem;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.header > div {
+		flex-direction: row;
+	}
+}
+
+.header > div > a {
+	display: flex;
+	margin-bottom: var(--sp-2);
+	align-items: center;
+	font-weight: 500;
+	color: var(--text-base-content);
+}
+
+@media (min-width: 768px) {
+	.header > div > a {
+		margin-bottom: 0;
+	}
+}
+
+.header > div > a img {
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	color: var(--white);
+	border: 2px solid var(--primary);
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.header > div > a img:hover {
+	box-shadow: 0 0 5px var(--primary);
+}
+
+.header > div > a span {
+	margin-left: var(--sp-2);
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+}
+
+.header > div > nav {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	gap: var(--sp-3);
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.header > div > nav {
+		margin-left: auto;
+	}
+}
+
+.header > div > nav > a.navitem {
+	color: var(--text-base-content);
+}
+
+.header > div > nav > a.navitem:hover {
+	color: var(--header-link-hover);
+	text-decoration: underline;
+}
+
+.header > div > nav > a.router-link-active {
+	text-decoration: underline;
+}
+
+.header > div > nav a#theme {
+	padding-top: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+}
+
+.header > div > nav a#theme svg {
+	width: 1.5rem;
+	height: 1.5rem;
+}

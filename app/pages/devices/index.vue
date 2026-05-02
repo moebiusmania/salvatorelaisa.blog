@@ -24,7 +24,7 @@ const posts: DevicesCollectionItem[] = slug ? await getOne() : await getAll();
 </script>
 
 <template>
-  <div>
+  <div class="devices-page">
     <h1>Devices</h1>
     <p>
       Un breve riassunto dei miei vari device passati e presenti per avere una
@@ -42,36 +42,5 @@ const posts: DevicesCollectionItem[] = slug ? await getOne() : await getAll();
 </template>
 
 <style scoped>
-div {
-  &>h1 {
-    color: var(--text-base-content);
-  }
-
-  &>p {
-    margin-top: var(--sp-2);
-    line-height: 1.50em;
-  }
-
-  &>ul {
-    display: grid;
-    margin: var(--sp-3) 0;
-    padding: 0;
-    gap: var(--sp-3);
-    border-top-width: 0px;
-
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-
-  & ul.multi {
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-}
+@import './devices-page.css';
 </style>

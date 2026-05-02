@@ -30,7 +30,7 @@ const isReview = (tags: Array<string>): boolean => {
 </script>
 
 <template>
-  <div v-if="post">
+  <div class="post-slug" v-if="post">
 
     <Head>
       <Title>{{ title }}</Title>
@@ -71,45 +71,7 @@ const isReview = (tags: Array<string>): boolean => {
 </template>
 
 <style scoped>
-div {
-  &>article {
-    max-width: none;
-
-    & header {
-      margin-bottom: var(--sp-6);
-      text-align: center;
-
-      &>h1 {
-        margin: var(--sp-2) 0;
-
-        @media (min-width: 768px) {
-          font-size: 3rem;
-        }
-      }
-
-      &>p {
-        margin: var(--sp-1) 0;
-
-        & a {
-          display: inline-block;
-          margin: 0 var(--sp-05);
-          text-decoration: none;
-          text-transform: uppercase;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-
-  &>hr {
-    border: 0;
-    border-top: 1px solid var(--border);
-    margin: var(--sp-3) 0;
-  }
-}
+@import './post-slug.css';
 </style>
 
 <style>
