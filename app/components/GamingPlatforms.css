@@ -1,9 +1,9 @@
-.gaming-platforms p.platforms {
-	margin-top: 0;
+p.gaming-platforms.platforms {
+  margin-top: 0;
 }
 
-.gaming-platforms p.platforms a {
-	margin: 0 var(--sp-05);
-	text-decoration: none;
-	color: white;
+p.gaming-platforms.platforms a {
+  margin: 0 var(--sp-05);
+  text-decoration: none;
+  color: white;
 }

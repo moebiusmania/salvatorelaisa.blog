@@ -23,6 +23,6 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './tag-page.css';
 </style>

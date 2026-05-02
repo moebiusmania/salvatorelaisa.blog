@@ -70,7 +70,7 @@ const isReview = (tags: Array<string>): boolean => {
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './post-slug.css';
 </style>
 

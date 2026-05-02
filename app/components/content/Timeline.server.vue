@@ -42,6 +42,6 @@ const handleItemClick = (event: KeyboardEvent) => {
   </section>
 </template>
 
-<style scoped>
+<style>
 @import './Timeline.css';
 </style>

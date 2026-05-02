@@ -81,6 +81,6 @@ const today: Date = new Date();
   </footer>
 </template>
 
-<style scoped>
+<style>
 @import './Footer.css';
 </style>

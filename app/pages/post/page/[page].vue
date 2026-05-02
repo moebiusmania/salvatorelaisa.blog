@@ -71,7 +71,7 @@ const onTyping = async (value: string): Promise<void> => {
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './post-page.css';
 </style>
 

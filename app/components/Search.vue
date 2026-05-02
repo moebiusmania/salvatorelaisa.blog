@@ -47,6 +47,6 @@ const placeholders = {
   </p>
 </template>
 
-<style scoped>
+<style>
 @import './Search.css';
 </style>

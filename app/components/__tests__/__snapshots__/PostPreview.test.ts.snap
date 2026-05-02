@@ -1,30 +1,30 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`PostPreview > renders correctly 1`] = `
-"<li data-v-4ef15649="" class="post-preview">
-  <!--v-if--><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
-  <div data-v-4ef15649="">
-    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
-    <div data-v-4ef15649="">
-      <routerlink data-v-4ef15649="" to="/tags/test"></routerlink>
-      <routerlink data-v-4ef15649="" to="/tags/vue"></routerlink>
+"<li class="post-preview">
+  <!--v-if--><time><span>20 marzo 2024</span></time>
+  <div>
+    <routerlink to="/post/test-post"></routerlink>
+    <div>
+      <routerlink to="/tags/test"></routerlink>
+      <routerlink to="/tags/vue"></routerlink>
     </div>
-    <p data-v-4ef15649="">This is a test post summary</p>
-    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
+    <p>This is a test post summary</p>
+    <routerlink to="/post/test-post"></routerlink>
   </div>
 </li>"
 `;
 
 exports[`PostPreview > renders pinned post correctly 1`] = `
-"<li data-v-4ef15649="" class="post-preview pinned"><span data-v-4ef15649="" class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time data-v-4ef15649=""><span data-v-4ef15649="">20 marzo 2024</span></time>
-  <div data-v-4ef15649="">
-    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
-    <div data-v-4ef15649="">
-      <routerlink data-v-4ef15649="" to="/tags/test"></routerlink>
-      <routerlink data-v-4ef15649="" to="/tags/vue"></routerlink>
+"<li class="post-preview pinned"><span class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time><span>20 marzo 2024</span></time>
+  <div>
+    <routerlink to="/post/test-post"></routerlink>
+    <div>
+      <routerlink to="/tags/test"></routerlink>
+      <routerlink to="/tags/vue"></routerlink>
     </div>
-    <p data-v-4ef15649="">This is a test post summary</p>
-    <routerlink data-v-4ef15649="" to="/post/test-post"></routerlink>
+    <p>This is a test post summary</p>
+    <routerlink to="/post/test-post"></routerlink>
   </div>
 </li>"
 `;

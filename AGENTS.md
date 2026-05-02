@@ -42,7 +42,7 @@ Deploy workflow uses `npm i --legacy-peer-deps` (not `npm ci`) and requires `NUX
 - **Content schema**: defined in `content.config.ts` — two collections: `content` (posts) and `devices`. Frontmatter must include `title`, `date`, `tags`, `pinned`, `draft`, `readingTime`, and `meta: { images, summary }`.
 - **Config**: `app/utils/config.ts` — site title, description, current theme, events.
 - **Themes**: CSS files in `public/styles/themes/`. Change `CURRENT_THEME` in config to switch.
-- **Styling**: vanilla CSS with Vue CSS Modules. No CSS preprocessor.
+- **Styling**: each component has a sibling `.css` file (e.g., `Header.vue` / `Header.css`). Styles are class-scoped (e.g., `.header`, `.footer`) via root classes on the outermost element. Vue `<style>` blocks only contain `@import`. No CSS preprocessor. `Badge.css` and `slide-animations.css` are shared imports.
 
 ## Key quirks
 

@@ -19,6 +19,6 @@ const formatReadingTime = (value: number | string): string => {
   </p>
 </template>
 
-<style scoped>
+<style>
 @import './ReadingTime.css';
 </style>

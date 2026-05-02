@@ -21,6 +21,6 @@ const years: Array<string> = Array.from(
   </section>
 </template>
 
-<style scoped>
+<style>
 @import './post-year-index.css';
 </style>

@@ -42,6 +42,6 @@ const tags: Array<Tag> = [...new Set(allTags)]
   </section>
 </template>
 
-<style scoped>
+<style>
 @import './tags-page.css';
 </style>

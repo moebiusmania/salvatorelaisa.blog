@@ -4,6 +4,6 @@
   </ul>
 </template>
 
-<style scoped>
+<style>
 @import './PostsList.css';
 </style>

@@ -34,6 +34,6 @@ const next: number = page + 1;
   </div>
 </template>
 
-<style scoped>
+<style>
 @import './Pagination.css';
 </style>

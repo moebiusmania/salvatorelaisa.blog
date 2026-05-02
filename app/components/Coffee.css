@@ -1,24 +1,24 @@
-.coffee a {
-	display: flex;
-	padding: var(--sp-2) var(--sp-4);
-	gap: var(--sp-1);
-	justify-content: center;
-	align-items: center;
-	border-radius: var(--sp-1);
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	font-weight: 600;
-	color: var(--white);
-	text-decoration: none;
-	background: var(--primary);
+a.coffee {
+  display: flex;
+  padding: var(--sp-2) var(--sp-4);
+  gap: var(--sp-1);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--sp-1);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  background: var(--primary);
 }
 
-.coffee a:hover {
-	color: var(--white);
-	background: rgb(2, 132, 199);
+a.coffee:hover {
+  color: var(--white);
+  background: rgb(2, 132, 199);
 }
 
-.coffee a svg {
-	display: flex;
-	align-items: center;
+a.coffee svg {
+  display: flex;
+  align-items: center;
 }

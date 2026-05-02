@@ -21,6 +21,6 @@ const { platforms = [] } = defineProps<Props>();
 @import url('./Badge.css');
 </style>
 
-<style scoped>
+<style>
 @import './GamingPlatforms.css';
 </style>
