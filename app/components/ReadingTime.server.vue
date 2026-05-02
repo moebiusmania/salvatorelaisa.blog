@@ -14,13 +14,11 @@ const formatReadingTime = (value: number | string): string => {
 </script>
 
 <template>
-  <p class="reading">
+  <p class="reading-time reading">
     <small>Tempo di lettura: {{ formatReadingTime(value) }}</small>
   </p>
 </template>
 
 <style scoped>
-p.reading {
-  margin: 0 0 var(--sp-1);
-}
+@import './ReadingTime.css';
 </style>

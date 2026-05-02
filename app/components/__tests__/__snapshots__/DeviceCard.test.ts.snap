@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`DeviceCard > matches snapshot 1`] = `
-"<article data-v-625f79f3="">
+"<article data-v-625f79f3="" class="device-card">
   <figure data-v-625f79f3=""><img data-v-625f79f3="" src="/test-image.jpg" alt="Test Device"></figure>
   <div data-v-625f79f3="">
     <div data-v-625f79f3=""><span data-v-625f79f3="" class="sl-badge">tag1</span><span data-v-625f79f3="" class="sl-badge">tag2</span></div>

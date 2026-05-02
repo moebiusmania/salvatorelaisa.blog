@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <div>
       <slot />
     </div>
@@ -7,14 +7,5 @@
 </template>
 
 <style scoped>
-section {
-  overflow: hidden;
-  color: var(--text);
-
-  &>div {
-    margin: 0 auto;
-    padding: var(--sp-8) var(--sp-3);
-    max-width: 64rem;
-  }
-}
+@import './Container.css';
 </style>

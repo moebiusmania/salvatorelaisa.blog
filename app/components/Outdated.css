@@ -1,0 +1,25 @@
+.outdated div {
+	background-color: var(--bg-neutral);
+	display: grid;
+	gap: var(--sp-2);
+	width: 100%;
+	grid-auto-flow: column;
+	grid-template-columns: auto minmax(auto, 1fr);
+	justify-items: start;
+	text-align: start;
+	margin: var(--sp-5) 0;
+	box-shadow:
+		0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	align-content: flex-start;
+	align-items: center;
+	border-width: 1px;
+	padding: var(--sp-2);
+	color: var(--text-base-content);
+}
+
+.outdated div svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	stroke: currentColor;
+}

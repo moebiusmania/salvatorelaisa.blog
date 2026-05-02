@@ -28,7 +28,7 @@ const tags: Array<Tag> = [...new Set(allTags)]
 </script>
 
 <template>
-  <section>
+  <section class="tags-page">
     <hgroup>
       <h1>Tags</h1>
     </hgroup>
@@ -43,82 +43,5 @@ const tags: Array<Tag> = [...new Set(allTags)]
 </template>
 
 <style scoped>
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-top-width: 1px;
-  border-color: #E5E7EB;
-
-  @media (min-width: 768px) {
-    margin-top: var(--sp-8);
-    margin-left: var(--sp-3);
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-top-width: 0;
-    gap: var(--sp-3);
-  }
-
-  &>hgroup {
-    padding-top: var(--sp-3);
-    padding-bottom: var(--sp-4);
-    margin-left: var(--sp-1);
-
-    @media (min-width: 768px) {
-      margin-top: var(--sp-3);
-    }
-  }
-
-  & h1 {
-    text-transform: capitalize;
-  }
-
-  &>ul {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 32rem;
-    padding: 0;
-
-    &>li {
-      list-style: none;
-      margin-top: var(--sp-1);
-      margin-bottom: var(--sp-1);
-      margin-right: var(--sp-3);
-      /* transition-property: all;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 300ms; */
-
-      &>a {
-        text-transform: uppercase;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      &>a:first-child {
-        margin-right: var(--sp-2);
-        font-weight: 500;
-        color: var(--primary);
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 400ms;
-
-        &:hover {
-          /* text-shadow: 2px 2px 0 rgb(75, 85, 99); */
-        }
-      }
-
-      &>a:last-child {
-        margin-left: calc(var(--sp-1) * -1);
-        font-weight: 600;
-        color: rgb(75, 85, 99);
-      }
-    }
-  }
-}
+@import './tags-page.css';
 </style>

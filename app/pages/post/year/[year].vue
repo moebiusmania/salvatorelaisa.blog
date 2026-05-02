@@ -12,7 +12,7 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 </script>
 
 <template>
-  <div>
+  <div class="post-year">
     <p>{{ posts.length }} articoli trovati</p>
     <h1>Ricerca per anno: {{ year }}</h1>
     <PostsList>
@@ -22,17 +22,5 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 </template>
 
 <style scoped>
-div {
-  & h1 {
-    color: var(--text-base-content);
-  }
-
-  & p {
-    margin-bottom: var(--sp-2);
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    line-height: 1.75rem;
-    color: var(--text-secondary-content);
-  }
-}
+@import './post-year.css';
 </style>

@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Header > renders correctly 1`] = `
-"<header data-v-daaa1507="">
+"<header data-v-daaa1507="" class="header">
   <div data-v-daaa1507="">
     <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
     <nav data-v-daaa1507="">
@@ -16,7 +16,7 @@ exports[`Header > renders correctly 1`] = `
 `;
 
 exports[`Header > renders site logo with correct attributes 1`] = `
-"<header data-v-daaa1507="">
+"<header data-v-daaa1507="" class="header">
   <div data-v-daaa1507="">
     <nuxt-link-stub data-v-daaa1507="" href="/"></nuxt-link-stub>
     <nav data-v-daaa1507="">

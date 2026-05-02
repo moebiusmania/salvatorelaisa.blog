@@ -2,30 +2,30 @@
 import { SITE_TITLE, SEASON_EMOJI, EVENTS } from "@/utils/config";
 
 export interface NavItem {
-  name: string;
-  href: string;
-  title: string;
-  external?: boolean;
+	name: string;
+	href: string;
+	title: string;
+	external?: boolean;
 }
 
 defineEmits(["changeTheme"]);
 
 const items: Array<NavItem> = [
-  {
-    name: "Cerca",
-    href: "/post/page/1",
-    title: "Tutti gli articoli del blog",
-  },
-  {
-    name: "About",
-    href: "/about",
-    title: "Qualche riga su di me",
-  },
-  {
-    name: "Tags",
-    href: "/tags",
-    title: "Articoli per tag",
-  },
+	{
+		name: "Cerca",
+		href: "/post/page/1",
+		title: "Tutti gli articoli del blog",
+	},
+	{
+		name: "About",
+		href: "/about",
+		title: "Qualche riga su di me",
+	},
+	{
+		name: "Tags",
+		href: "/tags",
+		title: "Articoli per tag",
+	},
 ];
 
 // const nav: Array<NavItem> = [EVENTS.earthDay, ...items];
@@ -35,13 +35,13 @@ const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
 
 const isActive = (href: string, route: any) => [
-  "navitem",
-  { "router-link-active": href === route.path },
+	"navitem",
+	{ "router-link-active": href === route.path },
 ];
 </script>
 
 <template>
-  <header>
+  <header class="header">
     <div>
       <NuxtLink href="/">
         <img src="/static/images/avatar.webp" alt="Il mio avatar in pixel art" />
@@ -66,91 +66,5 @@ const isActive = (href: string, route: any) => [
 </template>
 
 <style scoped>
-header {
-  color: var(--text-base-content);
-
-  &>div {
-    display: flex;
-    padding: var(--sp-3);
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 64rem;
-    margin: 0 auto;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
-
-    &>a {
-      display: flex;
-      margin-bottom: var(--sp-2);
-      align-items: center;
-      font-weight: 500;
-      color: var(--text-base-content);
-
-      @media (min-width: 768px) {
-        margin-bottom: 0;
-      }
-
-      & img {
-        border-radius: 50%;
-        width: 2.5rem;
-        height: 2.5rem;
-        color: var(--white);
-        border: 2px solid var(--primary);
-        transition: box-shadow 0.2s ease-in-out;
-
-        &:hover {
-          box-shadow: 0 0 5px var(--primary);
-        }
-      }
-
-      & span {
-        margin-left: var(--sp-2);
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-      }
-    }
-
-    &>nav {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      gap: var(--sp-3);
-      justify-content: center;
-
-      @media (min-width: 768px) {
-        margin-left: auto;
-      }
-
-      &>a.navitem {
-        /* margin-right: var(--sp-3); */
-        color: var(--text-base-content);
-
-        &:hover {
-          color: var(--header-link-hover);
-          text-decoration: underline;
-        }
-      }
-
-      &>a.router-link-active {
-        text-decoration: underline;
-      }
-
-      & a#theme {
-        padding-top: 0;
-        width: 1.5rem;
-        height: 1.5rem;
-        cursor: pointer;
-
-        & svg {
-          width: 1.5rem;
-          height: 1.5rem;
-        }
-      }
-    }
-  }
-}
+@import './Header.css';
 </style>

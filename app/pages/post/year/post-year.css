@@ -1,0 +1,11 @@
+.post-year h1 {
+	color: var(--text-base-content);
+}
+
+.post-year p {
+	margin-bottom: var(--sp-2);
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	line-height: 1.75rem;
+	color: var(--text-secondary-content);
+}

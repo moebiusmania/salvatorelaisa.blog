@@ -5,7 +5,7 @@ const { data } = await useAsyncData(() =>
 </script>
 
 <template>
-  <div>
+  <div class="about-page">
     <article class="content">
       <header>
         <h1>{{ data?.title }}</h1>
@@ -18,18 +18,5 @@ const { data } = await useAsyncData(() =>
 </template>
 
 <style scoped>
-article {
-  max-width: none;
-
-  & h1 {
-    @media (min-width: 768px) {
-      /* font-size: 3rem; */
-      line-height: 1;
-    }
-  }
-
-  a {
-    color: var(--primary);
-  }
-}
+@import './about-page.css';
 </style>

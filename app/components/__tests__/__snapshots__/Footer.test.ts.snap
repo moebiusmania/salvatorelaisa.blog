@@ -2,6 +2,7 @@
 
 exports[`Footer > renders correctly 1`] = `
 <footer
+  class="footer"
   data-v-e7c65e8e=""
 >
   <div

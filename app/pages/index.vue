@@ -20,7 +20,7 @@ if (pinnedPost) {
 </script>
 
 <template>
-  <div>
+  <div class="home-page">
 
     <Head>
       <Meta name="generator" content="Nuxt" />
@@ -55,20 +55,5 @@ if (pinnedPost) {
 </template>
 
 <style scoped>
-div {
-  &>p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: var(--text-secondary-content);
-  }
-
-  &>section {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-
-  }
-}
+@import './home-page.css';
 </style>

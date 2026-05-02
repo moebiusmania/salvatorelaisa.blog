@@ -1,0 +1,13 @@
+.home-page > p {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: var(--text-secondary-content);
+}
+
+.home-page > section {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}

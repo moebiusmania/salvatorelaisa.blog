@@ -1,0 +1,17 @@
+.about-page article {
+	max-width: none;
+}
+
+.about-page article h1 {
+	line-height: 1;
+}
+
+@media (min-width: 768px) {
+	.about-page article h1 {
+		line-height: 1;
+	}
+}
+
+.about-page article a {
+	color: var(--primary);
+}

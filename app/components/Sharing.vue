@@ -25,7 +25,7 @@ const { url } = defineProps<Props>();
 </script>
 
 <template>
-  <div>
+  <div class="sharing">
     <a target="_blank" rel="nofollow noopener noreferrer" :href="bsky(url || '')">Parlane
       su Bluesky</a>
     <span>•</span>
@@ -38,33 +38,5 @@ const { url } = defineProps<Props>();
 </template>
 
 <style scoped>
-div {
-  display: flex;
-  flex-direction: column;
-  padding: var(--sp-1) 0 var(--sp-3);
-  align-items: center;
-  justify-content: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: start;
-  }
-
-  & a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--primary);
-    }
-  }
-
-  & span {
-    display: inline-block;
-    padding: 0 var(--sp-1);
-  }
-}
+@import './Sharing.css';
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <a href="https://www.buymeacoffee.com/moebiusmania" rel="noreferrer noopener" target="_blank">
+  <a class="coffee" href="https://www.buymeacoffee.com/moebiusmania" rel="noreferrer noopener" target="_blank">
     <svg width="25px" height="32px" viewBox="0 0 884 1279" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M791.109 297.518L790.231 297.002L788.201 296.383C789.018 297.072 790.04 297.472 791.109 297.518Z"
         fill="#0D0C22"></path>
@@ -39,28 +39,5 @@
 </template>
 
 <style scoped>
-a {
-  display: flex;
-  padding: var(--sp-2) var(--sp-4);
-  gap: var(--sp-1);
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--sp-1);
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  color: var(--white);
-  text-decoration: none;
-  background: var(--primary);
-
-  &:hover {
-    color: var(--white);
-    background: rgb(2, 132, 199);
-  }
-
-  & svg {
-    display: flex;
-    align-items: center;
-  }
-}
+@import './Coffee.css';
 </style>
