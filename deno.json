@@ -1,9 +1,18 @@
 {
   "tasks": {
-    "drafts": "deno run --allow-read scripts/drafts.ts"
+    "drafts": "deno run --allow-read scripts/drafts.ts",
+    "new:post": "deno run --allow-write scripts/post.ts",
+    "new:device": "deno run --allow-write scripts/device.ts",
+    "stats": "deno run --allow-read scripts/stats.ts",
+    "todo:init": "deno run --allow-read --allow-write scripts/todo.ts init",
+    "todo:list": "deno run --allow-read scripts/todo.ts list",
+    "todo:add": "deno run --allow-read --allow-write scripts/todo.ts add",
+    "todo:remove": "deno run --allow-read --allow-write scripts/todo.ts remove",
+    "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done"
   },
   "imports": {
     "@cliffy/table": "jsr:@cliffy/table@1.0.0-rc.7",
+    "@cliffy/command": "jsr:@cliffy/command@1.0.0-rc.7",
     "@std/yaml": "jsr:@std/yaml@1.0.5"
   }
 }
