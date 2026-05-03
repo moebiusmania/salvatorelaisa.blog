@@ -18,7 +18,7 @@
 		"new:device": "deno run --allow-write scripts/device.ts",
 		"stats": "deno run --allow-read scripts/stats.ts",
 		"drafts": "deno run --allow-read scripts/drafts.ts",
-		"convert:webp": "node scripts/images-converter.js",
+		"convert:webp": "deno run --allow-read --allow-write scripts/images-converter.ts",
 		"todo:init": "deno run --allow-read --allow-write scripts/todo.ts init",
 		"todo:list": "deno run --allow-read scripts/todo.ts list",
 		"todo:add": "deno run --allow-read --allow-write scripts/todo.ts add",
@@ -37,7 +37,6 @@
 		"happy-dom": "20.9.0",
 		"nuxt": "4.4.4",
 		"oxlint": "1.62.0",
-		"sharp": "0.34.5",
 		"table": "6.9.0",
 		"vitest": "4.1.5"
 	}

@@ -34,15 +34,15 @@ I've added some small new features over the starting Nuxt template to handle som
 
 ## 💻 CLI commands
 
-Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some custom scripts to better manage the blog through terminal:
+Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some custom scripts to better manage the blog through terminal, the scripts are written in [Deno](https://deno.com/), but can be executed via NPM inf you have the Deno runtime installed:
 
-| Command                             | Description                     |
-| ----------------------------------- | ------------------------------- |
-| `npm run new:post`                  | Create new blog post            |
-| `npm run new:device`                | Create new device card          |
-| `npm run stats`                     | Generate simple blog statistics |
-| `npm run drafts`                    | List draft posts                |
-| `npm run convert:webp path/to/file` | Convert images to `.webp`       |
+| Deno Task Command                     | NPM Command                         | Description                     |
+| ------------------------------------- | ----------------------------------- | ------------------------------- |
+| `deno task new:post`                  | `npm run new:post`                  | Create new blog post            |
+| `deno task new:device`                | `npm run new:device`                | Create new device card          |
+| `deno task stats`                     | `npm run stats`                     | Generate simple blog statistics |
+| `deno task drafts`                    | `npm run drafts`                    | List draft posts                |
+| `deno task convert:webp path/to/file` | `npm run convert:webp path/to/file` | Convert images to `.webp`       |
 
 ## ✅ Built-in todo utility
 
@@ -50,13 +50,13 @@ I've added an internal file-based todo list utility, it can be useful if you nee
 
 You can create and edit the file manually, but there are some small NPM scripts that can help to manage it:
 
-| Command                         | Description                                |
-| ------------------------------- | ------------------------------------------ |
-| `npm run todo:init`             | Create the `todo.md` file                  |
-| `npm run todo:list`             | As it says, print the list on the terminal |
-| `npm run todo:add -- "content"` | Add "content" to the todo list             |
-| `npm run todo:done -- 1`        | Set todo item with provided index as done  |
-| `npm run todo:remove -- 1`      | Remove todo item based on provided index   |
+| NPM Command                     | Description                                  |
+| ------------------------------- | -------------------------------------------- |
+| `npm run todo:init`             | Create the `todo.md` file                    |
+| `npm run todo:list`             | Print the todo list in the terminal          |
+| `npm run todo:add -- "content"` | Add "content" to the todo list               |
+| `npm run todo:done -- 1`        | Mark the todo item with the given index done |
+| `npm run todo:remove -- 1`      | Remove the todo item with the given index    |
 
 > **Note:** the `todo.md` file **is git-ignored by default** so if you want it to be synced on every cloned copy of the repo you will have to remove it from the the `.gitignore`, but remember that in case of a public repository the file will be visible to anyone.
 
@@ -67,12 +67,16 @@ To achieve better page loading performance, you should [use as much as possible 
 For this reason I've included a simple converter script based on [sharp](https://sharp.pixelplumbing.com/) that can convert a single file or a whote folder of `.png`, `.jpg`/`.jpeg` files and convert them to `.webp` format, making it very easy to do some optimizations.
 
 ```bash
+deno task convert:webp path/to/file-or-folder
+--- or ---
 npm run convert:webp path/to/file-or-folder
 ```
 
 the default `.webp` quality is set to `90`, but you can change this using an optional flag
 
 ```bash
+deno task convert:webp ath/to/file-or-folder -- --quality 100
+-- or --
 npm run convert:webp path/to/file-or-folder -- --quality 100
 ```
 
