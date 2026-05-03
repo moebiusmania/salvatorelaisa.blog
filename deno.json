@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "drafts": "deno run --allow-read scripts/drafts.ts"
+  },
+  "imports": {
+    "@cliffy/table": "jsr:@cliffy/table@1.0.0-rc.7",
+    "@std/yaml": "jsr:@std/yaml@1.0.5"
+  }
+}

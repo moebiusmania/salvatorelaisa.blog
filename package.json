@@ -17,7 +17,7 @@
 		"new:post": "node scripts/post.js",
 		"new:device": "node scripts/device.js",
 		"stats": "node scripts/stats.js",
-		"drafts": "node scripts/drafts.js",
+		"drafts": "deno run --allow-read scripts/drafts.ts",
 		"convert:webp": "node scripts/images-converter.js",
 		"todo:init": "node scripts/todo.js init",
 		"todo:list": "node scripts/todo.js list",
