@@ -9,7 +9,11 @@
     "todo:list": "deno run --allow-read scripts/todo.ts list",
     "todo:add": "deno run --allow-read --allow-write scripts/todo.ts add",
     "todo:remove": "deno run --allow-read --allow-write scripts/todo.ts remove",
-    "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done"
+    "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done",
+    "lint": "deno run -A npm:oxlint",
+    "lint:fix": "deno run -A npm:oxlint --fix",
+    "format": "deno run -A npm:biome format --write .",
+    "test": "deno run -A npm:vitest"
   },
   "imports": {
     "@cliffy/table": "jsr:@cliffy/table@1.0.0-rc.7",

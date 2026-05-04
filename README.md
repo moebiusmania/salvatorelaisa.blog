@@ -8,6 +8,8 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 ## 🛠️ Built on top of
 
+> **NOTE:** I'm starting a slow migration to a full Deno stack, the stack below is still valid but some packages and scripts are being moved to Deno ones.
+
 - [Nuxt 3](https://nuxt.com/) - main application framework based on [Vue 3](https://vuejs.org/)
   - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
   - [@nuxt/fonts](https://nuxt.com/modules/fonts) - module to easily integrate external fonts from [Bunny Fonts 🇪🇺](https://fonts.bunny.net/)
@@ -50,13 +52,13 @@ I've added an internal file-based todo list utility, it can be useful if you nee
 
 You can create and edit the file manually, but there are some small NPM scripts that can help to manage it:
 
-| NPM Command                     | Description                                  |
-| ------------------------------- | -------------------------------------------- |
-| `npm run todo:init`             | Create the `todo.md` file                    |
-| `npm run todo:list`             | Print the todo list in the terminal          |
-| `npm run todo:add -- "content"` | Add "content" to the todo list               |
-| `npm run todo:done -- 1`        | Mark the todo item with the given index done |
-| `npm run todo:remove -- 1`      | Remove the todo item with the given index    |
+| Deno Task Command                 | NPM Command                     | Description                                  |
+| --------------------------------- | ------------------------------- | -------------------------------------------- |
+| `deno task todo:init`             | `npm run todo:init`             | Create the `todo.md` file                    |
+| `deno task todo:list`             | `npm run todo:list`             | Print the todo list in the terminal          |
+| `deno task todo:add -- "content"` | `npm run todo:add -- "content"` | Add "content" to the todo list               |
+| `deno task todo:done -- 1`        | `npm run todo:done -- 1`        | Mark the todo item with the given index done |
+| `deno task todo:remove -- 1`      | `npm run todo:remove -- 1`      | Remove the todo item with the given index    |
 
 > **Note:** the `todo.md` file **is git-ignored by default** so if you want it to be synced on every cloned copy of the repo you will have to remove it from the the `.gitignore`, but remember that in case of a public repository the file will be visible to anyone.
 
