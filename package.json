@@ -26,7 +26,7 @@
 		"todo:done": "deno run --allow-read --allow-write scripts/todo.ts done"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.13",
+		"@biomejs/biome": "2.4.14",
 		"@nuxt/content": "3.13.0",
 		"@nuxt/fonts": "0.14.0",
 		"@nuxt/image": "2.0.0",
@@ -36,7 +36,7 @@
 		"better-sqlite3": "12.9.0",
 		"happy-dom": "20.9.0",
 		"nuxt": "4.4.4",
-		"oxlint": "1.62.0",
+		"oxlint": "1.63.0",
 		"vitest": "4.1.5"
 	}
 }
