@@ -4,13 +4,10 @@ date: "2020-11-07"
 tags: ["docker", "ut99", "gaming", "tecnicismi"]
 draft: false
 summary: "Il mio (38°) compleanno si avvicina, e volevo festeggiarlo rievocando un LAN party di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale."
-images:
-  [
-    "https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2020/LanParty_01.jpg",
-  ]
+images: ["https://salvatorelaisa.blog/content/2020/lanparty.webp"]
 ---
 
-![la schermata iniziale di UT99](https://external-preview.redd.it/Rz9Gwj1URmf6I4IGUTWLruCb58fAsPNE_qn2WQBu98I.png?auto=webp&s=cfc13c82491d8202b4feb655389f97e10c35b7c0)
+![la schermata iniziale di UT99](/content/2020/ut99.webp)
 
 > Il mio (_38°_) compleanno si avvicina, e volevo festeggiarlo rievocando un **LAN party** di UT99 come ai vecchi tempi, ma siamo stati così fortunati che ci troviamo nel mezzo di un secondo lockdown nazionale.
 
@@ -33,7 +30,7 @@ Mille grazie a [Roemer](https://github.com/Roemer) che non solo ha salvato il mi
 
 Era uscito quasi in contemporane con il suo rivale **Quake 3: Arena**, li ho sempre apprezzati entrambi ma dato che il più dei miei amici giocava a UT rispetto a Quake, le mie memorie sull'alba del multiplayer online sono più legate a questo titolo.
 
-![Io con alcuni amici in una ormai lontana sera di Marzo del 2007 mentre ci confrontiamo a fraggate su UT99 in LAN](https://raw.githubusercontent.com/moebiusmania/blog-assets/master/images/2020/LanParty_01.jpg) <small>_Io con alcuni amici in una ormai lontana sera di Marzo del 2007 mentre ci confrontiamo a fraggate su UT99 in LAN_</small>
+![Io con alcuni amici in una ormai lontana sera di Marzo del 2007 mentre ci confrontiamo a fraggate su UT99 in LAN](/content/2020/lanparty.webp) <small>_Io con alcuni amici in una ormai lontana sera di Marzo del 2007 mentre ci confrontiamo a fraggate su UT99 in LAN_</small>
 
 Giocavamo tantissimo online ma poi verso il 2004 ci siamo comprati uno switch da 4 soldi ma che ci permetteva di collegarci fino a 16 persone in una rete locale, e da li abbiamo iniziato la nostra tradizione dei LAN party in casa 🤓. Non era una cosa che facevamo di frequente, ma quando capitava qualcuno con casa libera era facile che ci si caricasse i PC in macchina, si compravano birre e kebab... e giu di frag tutta la sera!
 
