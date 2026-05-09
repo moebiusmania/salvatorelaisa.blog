@@ -60,7 +60,6 @@
       "dependencies": [
         "npm:@biomejs/biome@2.4.14",
         "npm:@nuxt/content@3.13.0",
-        "npm:@nuxt/fonts@0.14.0",
         "npm:@nuxt/image@2.0.0",
         "npm:@nuxt/test-utils@4.0.3",
         "npm:@nuxtjs/sitemap@8.0.15",

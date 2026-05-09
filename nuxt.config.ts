@@ -1,3 +1,5 @@
+import process from "node:process";
+
 export default defineNuxtConfig({
 	future: {
 		compatibilityVersion: 5,
@@ -7,23 +9,7 @@ export default defineNuxtConfig({
 		pageTransition: { name: "page", mode: "out-in" },
 	},
 
-	modules: [
-		"@nuxt/content",
-		"@nuxt/image",
-		"@nuxt/test-utils/module",
-		"@nuxt/fonts",
-	],
-
-	fonts: {
-		families: [
-			{
-				name: "Lexend",
-				provider: "bunny",
-				weights: [300, 400, 700, 800],
-				global: true,
-			},
-		],
-	},
+	modules: ["@nuxt/content", "@nuxt/image", "@nuxt/test-utils/module"],
 
 	experimental: {
 		componentIslands: true,

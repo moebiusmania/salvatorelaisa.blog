@@ -2,60 +2,99 @@
 
 ## Project overview
 
-Personal blog built with **Nuxt 4** (Vue 3), exported as a **static site** to GitHub Pages. Content is written in Markdown and managed via `@nuxt/content` v3 with SQLite-backed storage (in dev) or memory (in test).
+Personal blog built with **Nuxt 4** (Vue 3), exported as a **static site** to GitHub Pages.
+Content is authored in Markdown and managed with `@nuxt/content` v3:
+- Dev/build: SQLite-backed content index.
+- Tests: memory storage to avoid SQLite corruption.
+
+## Tooling model (important)
+
+This repo now uses a **split runtime**:
+- **npm/Nuxt toolchain** for the app lifecycle (`dev`, `build`, `generate`, `preview`, `postinstall`).
+- **Deno scripts** for local authoring/utilities (`scripts/*.ts`).
+
+`deno.json` is the source of truth for Deno tasks. `package.json` mirrors those tasks as npm scripts so both entry points work.
 
 ## Developer commands
+
+### App lifecycle (npm)
 
 | Command | Description |
 |---|---|
 | `npm run dev` | Starts dev server (auto-runs `npm run format` via `predev`) |
+| `npm run build` | Build Nuxt app |
 | `npm run generate` | Static site build for deployment |
+| `npm run preview` | Preview generated output |
 | `npm run lint` | Run oxlint (no auto-fix) |
 | `npm run lint:fix` | Run oxlint with auto-fix |
-| `npm run format` | Run Biome formatter (writes in place, no config file — uses defaults) |
+| `npm run format` | Run Biome formatter (writes in place) |
 | `npm test` | Run Vitest in watch mode |
+| `npm run test:update` | Update Vitest snapshots |
 | `npm run test:coverage` | Run Vitest with coverage |
-| `npm run new:post` | Scaffold a new blog post (creates draft in `content/`) |
-| `npm run new:device` | Scaffold a new device card |
-| `npm run stats` | Print blog stats to terminal |
+
+### Content and utility scripts (Deno-backed)
+
+| Command | Description |
+|---|---|
+| `npm run new:post` | Scaffold a new post in `content/` |
+| `npm run new:device` | Scaffold a new device card in `content/devices/` |
+| `npm run stats` | Print blog stats |
 | `npm run drafts` | List draft posts |
-| `npm run convert:webp <path>` | Convert PNG/JPG to WebP (supports `--quality N` flag) |
+| `npm run convert:webp -- <path> [--quality N]` | Convert PNG/JPG to WebP |
+| `npm run todo:init` | Initialize todo metadata |
+| `npm run todo:list` | List todo items |
+| `npm run todo:add -- "<text>"` | Add todo item |
+| `npm run todo:remove -- <id>` | Remove todo item |
+| `npm run todo:done -- <id>` | Mark todo item done |
+
+If needed, these can also be run directly with Deno tasks (for example `deno task drafts`).
 
 ## CI pipeline order
 
-PR builds on `main` run: `npm ci` → `npm run lint` → `npm run test` → `npm run generate`.
+PR checks on `main` run:
+`npm ci` → `npm run lint` → `npm run test` → `npm run generate`
+
 Deploy workflow uses `npm i --legacy-peer-deps` (not `npm ci`) and requires `NUXT_PUBLIC_STUDIO_TOKENS` in `.env`.
 
 ## Testing
 
-- Tests use **Vitest** with `@nuxt/test-utils`, env set to `"nuxt"`, globals enabled.
-- Test files: `**/*.test.ts` (no `.spec.ts` used).
-- **Critical**: `vitest.setup.ts` forces `NUXT_CONTENT_CACHE=false` and `NUXT_CONTENT_STORAGE=memory` to prevent SQLite corruption during tests. `nuxt.config.ts` mirrors this via `process.env.NODE_ENV === "test"`.
-- Tests live in `app/components/__tests__/` and `app/utils/__tests__/`.
-- Many component tests use `.server.test.ts` suffix for server-side components.
+- Test runner: **Vitest** with `@nuxt/test-utils` (`environment: "nuxt"`, globals enabled).
+- File naming: `**/*.test.ts` (not `.spec.ts`).
+- Locations: primarily `app/components/__tests__/` and `app/utils/__tests__/`.
+- Many server-side component tests use `.server.test.ts`.
+- **Critical**: tests must run with content cache disabled and memory storage:
+  - `vitest.setup.ts` sets `NUXT_CONTENT_CACHE=false` and `NUXT_CONTENT_STORAGE=memory`.
+  - `nuxt.config.ts` mirrors this for `NODE_ENV === "test"` via `content.cache = false` and `content.storage = "memory"`.
 
 ## Architecture
 
-- **App entry**: `app/app.vue` — handles theme switching, global head config.
-- **Pages**: `app/pages/` — file-based routing (`index.vue`, `post/`, `devices/`, `tags/`, `events/`).
-- **Content**: `content/` — blog posts as `.md` files with frontmatter. `content/pages/` for static pages. `content/devices/` for device cards.
-- **Content schema**: defined in `content.config.ts` — two collections: `content` (posts) and `devices`. Frontmatter must include `title`, `date`, `tags`, `pinned`, `draft`, `readingTime`, and `meta: { images, summary }`.
-- **Config**: `app/utils/config.ts` — site title, description, current theme, events.
-- **Themes**: CSS files in `public/styles/themes/`. Change `CURRENT_THEME` in config to switch.
-- **Styling**: each component has a sibling `.css` file (e.g., `Header.vue` / `Header.css`). Styles are class-scoped (e.g., `.header`, `.footer`) via root classes on the outermost element. Vue `<style>` blocks only contain `@import`. No CSS preprocessor. `Badge.css` and `slide-animations.css` are shared imports.
+- **App entry**: `app/app.vue` (theme switching + global head config).
+- **Routing**: file-based routes in `app/pages/` (`index.vue`, `post/`, `devices/`, `tags/`, `events/`).
+- **Content**:
+  - `content/` for posts.
+  - `content/pages/` for static pages.
+  - `content/devices/` for device cards.
+- **Schema**: `content.config.ts` defines two collections (`content`, `devices`).
+- **Site config**: `app/utils/config.ts` (title, description, theme, events).
+- **Styling pattern**:
+  - Each component has a sibling CSS file (`Component.vue` + `Component.css`).
+  - Vue `<style>` blocks generally only contain `@import`.
+  - No CSS preprocessor.
+  - Shared styles include `Badge.css` and `slide-animations.css`.
 
 ## Key quirks
 
-- `npm run dev` auto-runs Biome format via `predev` hook — expect formatting on every dev start.
-- `@nuxt/content` v3 uses SQLite for content indexing by default. `.data/content/contents.sqlite` is git-ignored.
-- `npm install` triggers `nuxt prepare` via `postinstall` (generates `.nuxt/` types).
-- Biome has **no config file** — uses defaults. Only used for formatting, not linting (oxlint handles linting).
-- `.npmrc` sets `save-exact=true` — no `^` or `~` prefixes on new deps.
-- Nuxt compatibility version is set to **5** (`future.compatibilityVersion: 5` in `nuxt.config.ts`).
+- `npm run dev` triggers `predev` → `npm run format`, so starting dev can rewrite files.
+- `npm install` triggers `nuxt prepare` via `postinstall` (updates `.nuxt/` types).
+- `@nuxt/content` uses SQLite indexing in non-test environments (`.data/content/contents.sqlite` is git-ignored).
+- Biome is used for formatting; oxlint is used for linting.
+- No custom Biome config file in repo (defaults are used).
+- `.npmrc` has `save-exact=true` (no `^`/`~` prefixes on new deps).
+- Nuxt future compatibility mode is set to 5 (`future.compatibilityVersion: 5`).
 
 ## Content authoring
 
-- New posts start as `draft: true` — set to `false` to publish.
-- Pinned posts: add `pinned: true` in frontmatter.
-- Reading time is auto-computed via `content:file:afterParse` hook (180 wpm).
-- Device cards go in `content/devices/` with schema: `title`, `purchase`, `tags`, `image`, optional `url` and `post`.
+- New posts default to `draft: true`; set to `false` to publish.
+- Pinned posts use `pinned: true` in frontmatter.
+- Reading time is auto-calculated in `content:file:afterParse` (180 wpm) and injected into `content.readingTime`.
+- Device cards in `content/devices/` use: `title`, `purchase`, `tags`, `image`, optional `url` and `post`.

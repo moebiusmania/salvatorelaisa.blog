@@ -1,3 +1,5 @@
+@import "/fonts/fonts.css";
+
 html {
 	background-color: var(--bg);
 	font-family: "Lexend", sans-serif;
