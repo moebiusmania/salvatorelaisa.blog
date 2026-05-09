@@ -1,10 +1,10 @@
 section.container {
-  overflow: hidden;
-  color: var(--text);
+	overflow: hidden;
+	color: var(--text);
 }
 
 section.container > div {
-  margin: 0 auto;
-  padding: var(--sp-8) var(--sp-3);
-  max-width: 64rem;
+	margin: 0 auto;
+	padding: var(--sp-8) var(--sp-3);
+	max-width: 64rem;
 }

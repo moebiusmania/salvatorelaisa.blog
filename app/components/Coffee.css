@@ -1,24 +1,24 @@
 a.coffee {
-  display: flex;
-  padding: var(--sp-2) var(--sp-4);
-  gap: var(--sp-1);
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--sp-1);
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  color: var(--white);
-  text-decoration: none;
-  background: var(--primary);
+	display: flex;
+	padding: var(--sp-2) var(--sp-4);
+	gap: var(--sp-1);
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--sp-1);
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	color: var(--white);
+	text-decoration: none;
+	background: var(--primary);
 }
 
 a.coffee:hover {
-  color: var(--white);
-  background: rgb(2, 132, 199);
+	color: var(--white);
+	background: rgb(2, 132, 199);
 }
 
 a.coffee svg {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }

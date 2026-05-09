@@ -58,7 +58,7 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:@biomejs/biome@2.4.13",
+        "npm:@biomejs/biome@2.4.14",
         "npm:@nuxt/content@3.13.0",
         "npm:@nuxt/fonts@0.14.0",
         "npm:@nuxt/image@2.0.0",
@@ -68,7 +68,7 @@
         "npm:better-sqlite3@12.9.0",
         "npm:happy-dom@20.9.0",
         "npm:nuxt@4.4.4",
-        "npm:oxlint@1.62.0",
+        "npm:oxlint@1.63.0",
         "npm:vitest@4.1.5"
       ]
     }
