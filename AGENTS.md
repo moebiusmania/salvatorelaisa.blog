@@ -21,13 +21,10 @@ This repo now uses a **split runtime**:
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Starts dev server (auto-runs `npm run format` via `predev`) |
+| `npm run dev` | Starts dev server |
 | `npm run build` | Build Nuxt app |
 | `npm run generate` | Static site build for deployment |
 | `npm run preview` | Preview generated output |
-| `npm run lint` | Run oxlint (no auto-fix) |
-| `npm run lint:fix` | Run oxlint with auto-fix |
-| `npm run format` | Run Biome formatter (writes in place) |
 | `npm test` | Run Vitest in watch mode |
 | `npm run test:update` | Update Vitest snapshots |
 | `npm run test:coverage` | Run Vitest with coverage |
@@ -52,7 +49,7 @@ If needed, these can also be run directly with Deno tasks (for example `deno tas
 ## CI pipeline order
 
 PR checks on `main` run:
-`npm ci` → `npm run lint` → `npm run test` → `npm run generate`
+`npm ci` → `npm run test` → `npm run generate`
 
 Deploy workflow uses `npm i --legacy-peer-deps` (not `npm ci`) and requires `NUXT_PUBLIC_STUDIO_TOKENS` in `.env`.
 
@@ -84,11 +81,8 @@ Deploy workflow uses `npm i --legacy-peer-deps` (not `npm ci`) and requires `NUX
 
 ## Key quirks
 
-- `npm run dev` triggers `predev` → `npm run format`, so starting dev can rewrite files.
 - `npm install` triggers `nuxt prepare` via `postinstall` (updates `.nuxt/` types).
 - `@nuxt/content` uses SQLite indexing in non-test environments (`.data/content/contents.sqlite` is git-ignored).
-- Biome is used for formatting; oxlint is used for linting.
-- No custom Biome config file in repo (defaults are used).
 - `.npmrc` has `save-exact=true` (no `^`/`~` prefixes on new deps).
 - Nuxt future compatibility mode is set to 5 (`future.compatibilityVersion: 5`).
 

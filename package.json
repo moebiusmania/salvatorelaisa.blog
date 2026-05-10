@@ -2,13 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
-    "format": "biome format --write .",
     "fonts:download": "deno run --allow-read --allow-write --allow-net scripts/fonts-download.ts",
     "pregenerate": "npm run fonts:download",
     "build": "nuxt build",
-    "predev": "npm run format",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -28,7 +24,6 @@
     "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.14",
     "@nuxt/content": "3.13.0",
     "@nuxt/image": "2.0.0",
     "@nuxt/test-utils": "4.0.3",
@@ -37,7 +32,6 @@
     "better-sqlite3": "12.9.0",
     "happy-dom": "20.9.0",
     "nuxt": "4.4.4",
-    "oxlint": "1.63.0",
     "vitest": "4.1.5"
   }
 }

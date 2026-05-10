@@ -11,9 +11,6 @@
 		"todo:remove": "deno run --allow-read --allow-write scripts/todo.ts remove",
 		"todo:done": "deno run --allow-read --allow-write scripts/todo.ts done",
 		"fonts:download": "deno run --allow-read --allow-write --allow-net scripts/fonts-download.ts",
-		"lint": "deno run -A npm:oxlint",
-		"lint:fix": "deno run -A npm:oxlint --fix",
-		"format": "deno run -A npm:biome format --write .",
 		"test": "deno run -A npm:vitest"
 	},
 	"imports": {
