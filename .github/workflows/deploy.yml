@@ -22,7 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       
-      - uses: denoland/setup-deno@v2
+      - name: 💻 Use Deno v2
+        uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x # Run with latest stable Deno.
 
@@ -30,13 +31,9 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
-      
-      - name: 🫢 Create .env file
-        run: |
-          echo "NUXT_PUBLIC_STUDIO_TOKENS=${{ secrets.NUXT_PUBLIC_STUDIO_TOKENS }}" >> .env
 
       - name: 📦 Install dependencies
-        run: npm i --legacy-peer-deps
+        run: npm ci
 
       - name: 📝 Run unit tests
         run: npm run test
