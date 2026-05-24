@@ -24,14 +24,14 @@
     "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done"
   },
   "devDependencies": {
-    "@nuxt/content": "3.13.0",
+    "@nuxt/content": "3.14.0",
     "@nuxt/image": "2.0.0",
     "@nuxt/test-utils": "4.0.3",
     "@nuxtjs/sitemap": "8.0.15",
     "@vue/test-utils": "2.4.10",
-    "better-sqlite3": "12.9.0",
+    "better-sqlite3": "12.10.0",
     "happy-dom": "20.9.0",
-    "nuxt": "4.4.4",
-    "vitest": "4.1.5"
+    "nuxt": "4.4.6",
+    "vitest": "4.1.7"
   }
 }
