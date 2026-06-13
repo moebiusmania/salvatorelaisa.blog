@@ -1,4 +1,4 @@
-import { Command } from "jsr:@cliffy/command@1.0.0-rc.7";
+import { Command } from "@cliffy/command";
 
 const TODO_FILE = `${Deno.cwd()}/todo.md`;
 const TEMPLATE_FILE = `${Deno.cwd()}/todo.template.md`;

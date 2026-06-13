@@ -44,11 +44,13 @@ for await (const entry of Deno.readDir(contentDir)) {
 	}
 }
 
+const fileContents = await Promise.all(
+	files.map((file) => Deno.readTextFile(`${contentDir}/${file}`)),
+);
+
 const draftPosts: Post[] = [];
 
-for (const file of files) {
-	const filePath = `${contentDir}/${file}`;
-	const fileContent = await Deno.readTextFile(filePath);
+for (const fileContent of fileContents) {
 	const { data } = parseFrontmatter(fileContent);
 
 	if (data.draft) {

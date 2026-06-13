@@ -66,22 +66,24 @@ async function processBunnyFamily(family: FontFamilyConfig): Promise<string> {
 	];
 
 	const urlToFile = new Map<string, string>();
-	for (const [index, fontUrl] of uniqueFontUrls.entries()) {
-		const parsedUrl = new URL(fontUrl);
-		const pathname = parsedUrl.pathname.toLowerCase();
-		const extension = pathname.endsWith(".woff2")
-			? "woff2"
-			: pathname.endsWith(".woff")
-				? "woff"
-				: pathname.endsWith(".ttf")
-					? "ttf"
-					: pathname.endsWith(".otf")
-						? "otf"
-						: "bin";
-		const filename = `${familySlug}-${String(index + 1).padStart(2, "0")}.${extension}`;
-		await downloadFile(fontUrl, `${targetDir}/${filename}`);
-		urlToFile.set(fontUrl, filename);
-	}
+	await Promise.all(
+		uniqueFontUrls.map((fontUrl, index) => {
+			const parsedUrl = new URL(fontUrl);
+			const pathname = parsedUrl.pathname.toLowerCase();
+			const extension = pathname.endsWith(".woff2")
+				? "woff2"
+				: pathname.endsWith(".woff")
+					? "woff"
+					: pathname.endsWith(".ttf")
+						? "ttf"
+						: pathname.endsWith(".otf")
+							? "otf"
+							: "bin";
+			const filename = `${familySlug}-${String(index + 1).padStart(2, "0")}.${extension}`;
+			urlToFile.set(fontUrl, filename);
+			return downloadFile(fontUrl, `${targetDir}/${filename}`);
+		}),
+	);
 
 	return rewriteCssUrls(remoteCss, familySlug, urlToFile);
 }

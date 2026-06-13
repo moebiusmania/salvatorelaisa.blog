@@ -23,6 +23,7 @@ async function convertToWebp(inputPath: string) {
 	if (stat.isFile) {
 		await convertFile(inputPath);
 	} else if (stat.isDirectory) {
+		const filePaths: string[] = [];
 		for await (const entry of Deno.readDir(inputPath)) {
 			if (entry.isFile) {
 				const ext = entry.name.toLowerCase();
@@ -31,8 +32,15 @@ async function convertToWebp(inputPath: string) {
 					ext.endsWith(".jpg") ||
 					ext.endsWith(".jpeg")
 				) {
-					await convertFile(`${inputPath}/${entry.name}`);
+					filePaths.push(`${inputPath}/${entry.name}`);
 				}
+			}
+		}
+
+		const results = await Promise.allSettled(filePaths.map(convertFile));
+		for (const [i, result] of results.entries()) {
+			if (result.status === "rejected") {
+				console.error(`🚨 Failed to convert ${filePaths[i]}:`, result.reason);
 			}
 		}
 	}

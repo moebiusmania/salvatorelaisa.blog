@@ -16,13 +16,12 @@ try {
 		}
 	}
 
-	let draftCount = 0;
-	for (const file of files) {
-		const content = await Deno.readTextFile(`${contentDir}/${file}`);
-		if (content.includes("draft: true")) {
-			draftCount++;
-		}
-	}
+	const contents = await Promise.all(
+		files.map((file) => Deno.readTextFile(`${contentDir}/${file}`)),
+	);
+	const draftCount = contents.filter((content) =>
+		content.includes("draft: true"),
+	).length;
 
 	const deviceFiles: string[] = [];
 	for await (const entry of Deno.readDir(devicesDir)) {
