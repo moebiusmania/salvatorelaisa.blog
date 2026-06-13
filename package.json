@@ -27,11 +27,11 @@
     "@nuxt/content": "3.14.0",
     "@nuxt/image": "2.0.0",
     "@nuxt/test-utils": "4.0.3",
-    "@nuxtjs/sitemap": "8.0.15",
-    "@vue/test-utils": "2.4.10",
+    "@nuxtjs/sitemap": "8.2.1",
+    "@vue/test-utils": "2.4.11",
     "better-sqlite3": "12.10.0",
-    "happy-dom": "20.9.0",
-    "nuxt": "4.4.6",
-    "vitest": "4.1.7"
+    "happy-dom": "20.10.3",
+    "nuxt": "4.4.8",
+    "vitest": "4.1.8"
   }
 }
