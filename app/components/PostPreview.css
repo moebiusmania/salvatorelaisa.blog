@@ -144,4 +144,53 @@ li.post-preview > div:last-child > a:last-child svg {
 	margin-left: var(--sp-1);
 	width: 1rem;
 	height: 1rem;
+	transition: transform 150ms ease;
+}
+
+/* Micro-interaction: nudge the "continua a leggere" arrow on hover/focus. */
+li.post-preview > div:last-child > a:last-child:hover svg,
+li.post-preview > div:last-child > a:last-child:focus-visible svg {
+	transform: translateX(4px);
+}
+
+/* Gentle hover transition on the tag links. */
+li.post-preview > div:last-child > div > a {
+	transition: color 150ms ease;
+}
+
+/*
+ * Scroll-reveal: fade + rise each post as it scrolls into view, using the
+ * native CSS scroll-driven animations API. Guarded by @supports so browsers
+ * without it (and SSR first paint) simply render the content statically, and
+ * by prefers-reduced-motion so reduced-motion users get no reveal. The pinned
+ * post is excluded so it keeps its borderPulse animation.
+ */
+@media (prefers-reduced-motion: no-preference) {
+	@supports (animation-timeline: view()) {
+		@keyframes post-reveal {
+			from {
+				opacity: 0;
+				transform: translateY(16px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		li.post-preview:not(.pinned) {
+			animation: post-reveal linear both;
+			animation-timeline: view();
+			animation-range: entry 0% cover 25%;
+		}
+	}
+}
+
+/* Honour reduced-motion for the always-on pinned-post pulses. */
+@media (prefers-reduced-motion: reduce) {
+	li.post-preview.pinned,
+	li.post-preview.pinned .badge {
+		animation: none;
+	}
 }

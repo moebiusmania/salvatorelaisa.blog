@@ -6,7 +6,9 @@ export default defineNuxtConfig({
 	},
 
 	app: {
-		pageTransition: { name: "page", mode: "out-in" },
+		// Page transitions are handled by the native View Transitions API
+		// (app/plugins/view-transitions.client.ts) instead of Vue transitions.
+		pageTransition: false,
 	},
 
 	modules: ["@nuxt/content", "@nuxt/image", "@nuxt/test-utils/module"],

@@ -2,9 +2,12 @@
 import type { ContentCollectionItem } from "@nuxt/content";
 import { PINNED_POST_DESCRIPTION } from "~/utils/config";
 
-defineProps<{
+const props = defineProps<{
 	post: ContentCollectionItem;
 }>();
+
+// Strip the leading slash so the name matches the article page's slug.
+const slug = computed(() => (props.post.path || "").replace(/^\//, ""));
 </script>
 
 <template>
@@ -23,7 +26,7 @@ defineProps<{
     </time>
     <div>
       <NuxtLink :href="`/post${post.path}`">
-        <h2>
+        <h2 :style="{ 'view-transition-name': `post-title-${slug}` }">
           {{ post.title }}
         </h2>
       </NuxtLink>

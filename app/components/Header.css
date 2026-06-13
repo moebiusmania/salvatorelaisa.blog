@@ -1,5 +1,7 @@
 .header {
 	color: var(--text-base-content);
+	/* Keep the header stable (no fade/slide) during page view transitions. */
+	view-transition-name: site-header;
 }
 
 .header > div {
@@ -68,6 +70,7 @@
 
 .header > div > nav > a.navitem {
 	color: var(--text-base-content);
+	transition: color 150ms ease;
 }
 
 .header > div > nav > a.navitem:hover {
@@ -89,4 +92,22 @@
 .header > div > nav a#theme svg {
 	width: 1.5rem;
 	height: 1.5rem;
+	transition: transform 0.3s ease;
+}
+
+/* Micro-interaction: rotate the sun/moon icon on hover/focus. */
+.header > div > nav a#theme:hover svg,
+.header > div > nav a#theme:focus-visible svg {
+	transform: rotate(20deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.header > div > nav a#theme svg {
+		transition: none;
+	}
+
+	.header > div > nav a#theme:hover svg,
+	.header > div > nav a#theme:focus-visible svg {
+		transform: none;
+	}
 }

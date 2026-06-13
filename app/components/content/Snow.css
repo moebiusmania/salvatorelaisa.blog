@@ -116,3 +116,10 @@
 	left: 90%;
 	animation-delay: 3s, 1.5s;
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.snowflakes .snowflake {
+		animation: none;
+		display: none;
+	}
+}

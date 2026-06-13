@@ -2,4 +2,7 @@ ul.posts-list {
 	border-top: 1px solid var(--border);
 	margin: var(--sp-4) 0;
 	padding: 0;
+	/* Positioning context so search-filtered items (position: absolute while
+	   leaving) anchor here and animate out cleanly instead of jumping. */
+	position: relative;
 }

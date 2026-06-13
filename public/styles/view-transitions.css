@@ -1,0 +1,76 @@
+/**
+ * Native View Transitions API styling.
+ *
+ * Driven by app/plugins/view-transitions.client.ts, which wraps each
+ * navigation in document.startViewTransition() and sets
+ * <html data-vt-direction="forward | back | fade"> beforehand.
+ *
+ * Default is a subtle, editorial cross-fade. Paginated list navigation
+ * adds a small directional slide. Everything is neutralized under
+ * prefers-reduced-motion.
+ */
+
+/* Default: gentle cross-fade for the page root. */
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 240ms;
+	animation-timing-function: ease;
+}
+
+/* Directional slide for paginated list navigation. */
+@keyframes vt-slide-out-left {
+	to {
+		opacity: 0;
+		transform: translateX(-24px);
+	}
+}
+
+@keyframes vt-slide-in-right {
+	from {
+		opacity: 0;
+		transform: translateX(24px);
+	}
+}
+
+@keyframes vt-slide-out-right {
+	to {
+		opacity: 0;
+		transform: translateX(24px);
+	}
+}
+
+@keyframes vt-slide-in-left {
+	from {
+		opacity: 0;
+		transform: translateX(-24px);
+	}
+}
+
+html[data-vt-direction="forward"]::view-transition-old(root) {
+	animation: vt-slide-out-left 240ms ease both;
+}
+
+html[data-vt-direction="forward"]::view-transition-new(root) {
+	animation: vt-slide-in-right 240ms ease both;
+}
+
+html[data-vt-direction="back"]::view-transition-old(root) {
+	animation: vt-slide-out-right 240ms ease both;
+}
+
+html[data-vt-direction="back"]::view-transition-new(root) {
+	animation: vt-slide-in-left 240ms ease both;
+}
+
+/* Shared-element morph (post title -> article heading) easing. */
+::view-transition-group(*) {
+	animation-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}

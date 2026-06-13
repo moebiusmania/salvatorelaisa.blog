@@ -3,20 +3,6 @@ import type { ContentCollectionItem } from "@nuxt/content/";
 import type { Ref } from "vue";
 import { ref } from "vue";
 
-definePageMeta({
-	pageTransition: {
-		name: "slide-right",
-		mode: "out-in",
-	},
-	middleware(to, from) {
-		// @ts-ignore
-		to.meta.pageTransition.name =
-			+(to.params.id || 0) > +(from.params.id || 0)
-				? "slide-left"
-				: "slide-right";
-	},
-});
-
 const route = useRoute();
 const search: Ref<string> = ref("");
 const posts: Ref<ContentCollectionItem[]> = ref([]);
@@ -82,25 +68,36 @@ const onTyping = async (value: string): Promise<void> => {
 -->
 <style>
 .list-move,
-/* apply transition to moving elements */
+/* apply transition to moving (re-flowing) items */
 .list-enter-active,
 .list-leave-active {
-  transition: all 0.5s ease;
+  transition: all 0.35s ease;
 }
 
-.list-enter-from,
-.list-leave-to {
+/* entering items slide in from the right */
+.list-enter-from {
   opacity: 0;
   transform: translateX(30px);
 }
 
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
+/* filtered-out items fade, shrink and drift away to the left */
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(-40px) scale(0.95);
+}
+
+/* take leaving items out of flow so the remaining ones animate up smoothly.
+   keep full width so the row doesn't collapse mid-animation. */
 .list-leave-active {
   position: absolute;
+  width: 100%;
 }
-</style>
 
-<style>
-@import "@/styles/slide-animations.css";
+@media (prefers-reduced-motion: reduce) {
+  .list-move,
+  .list-enter-active,
+  .list-leave-active {
+    transition: none;
+  }
+}
 </style>

@@ -61,6 +61,7 @@ useHead({
 		{ rel: "stylesheet", href: themeImport.value },
 		{ rel: "stylesheet", href: "/styles/typography.css" },
 		// Non-critical resources (don't block rendering)
+		{ rel: "stylesheet", href: "/styles/view-transitions.css" },
 		{ rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
 		{ rel: "manifest", href: "/manifest.json" },
 		{ rel: "icon", type: "image/png", href: "/static/favicons/favicon.ico" },

@@ -2,20 +2,6 @@
 import type { ContentCollectionItem } from "@nuxt/content";
 import { SITE_TITLE } from "../../utils/config";
 
-definePageMeta({
-	pageTransition: {
-		name: "slide-right",
-		mode: "out-in",
-	},
-	middleware(to, from) {
-		// @ts-ignore
-		to.meta.pageTransition.name =
-			+(to.params.id || 0) > +(from.params.id || 0)
-				? "slide-left"
-				: "slide-right";
-	},
-});
-
 const route = useRoute();
 const slug: string = route.params.slug as string;
 
@@ -52,7 +38,7 @@ const isReview = (tags: Array<string>): boolean => {
     <article class="content">
       <header>
         <Published :value="post.date" />
-        <h1>{{ post.title }}</h1>
+        <h1 :style="{ 'view-transition-name': `post-title-${slug}` }">{{ post.title }}</h1>
         <p>
           Tags:
           <NuxtLink v-for="tag in post.tags" :href="`/tags/${tag}`">{{
@@ -72,8 +58,4 @@ const isReview = (tags: Array<string>): boolean => {
 
 <style>
 @import './post-slug.css';
-</style>
-
-<style>
-@import "@/styles/slide-animations.css";
 </style>
