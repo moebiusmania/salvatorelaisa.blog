@@ -1,3 +1,12 @@
 p.reading-time.reading {
-	margin: 0 0 var(--sp-1);
+	margin: var(--sp-2) 0 0;
+}
+
+p.reading-time.reading small {
+	font-family: var(--font-sans);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
 }

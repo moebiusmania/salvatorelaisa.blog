@@ -2,13 +2,18 @@
 	max-width: none;
 }
 
+/* Left-aligned editorial header: metadata kicker, serif headline, tags, rule. */
 .post-slug > article header {
+	max-width: 40rem;
+	margin-inline: auto;
 	margin-bottom: var(--sp-6);
-	text-align: center;
+	padding-bottom: var(--sp-4);
+	border-bottom: 1px solid var(--border);
+	text-align: left;
 }
 
 .post-slug > article header > h1 {
-	margin: var(--sp-2) 0;
+	margin: var(--sp-3) 0;
 }
 
 @media (min-width: 768px) {
@@ -18,14 +23,21 @@
 }
 
 .post-slug > article header > p {
-	margin: var(--sp-1) 0;
+	margin: var(--sp-2) 0 0 0;
+	font-family: var(--font-sans);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
 }
 
 .post-slug > article header > p a {
 	display: inline-block;
-	margin: 0 var(--sp-05);
+	margin: 0 var(--sp-05) 0 0;
 	text-decoration: none;
 	text-transform: uppercase;
+	color: var(--primary);
 }
 
 .post-slug > article header > p a:hover {
@@ -35,5 +47,6 @@
 .post-slug > hr {
 	border: 0;
 	border-top: 1px solid var(--border);
-	margin: var(--sp-3) 0;
+	margin: var(--sp-3) auto;
+	max-width: 40rem;
 }

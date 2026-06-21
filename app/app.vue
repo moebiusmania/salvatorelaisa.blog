@@ -50,6 +50,14 @@ useHead({
 	//   },
 	// ],
 	link: [
+		// Preload the display serif (latin, 700) so headlines don't flash.
+		{
+			rel: "preload",
+			href: "/fonts/fraunces/fraunces-07.woff2",
+			as: "font",
+			type: "font/woff2",
+			crossorigin: "anonymous",
+		},
 		// Preload critical CSS for parallel loading
 		{ rel: "preload", href: "/styles/normalize.css", as: "style" },
 		{ rel: "preload", href: "/styles/spacing.css", as: "style" },

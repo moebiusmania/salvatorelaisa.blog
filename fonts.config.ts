@@ -12,4 +12,9 @@ export const fontFamilies: FontFamilyConfig[] = [
 		weights: [300, 400, 700, 800],
 		global: true,
 	},
+	{
+		name: "Fraunces",
+		provider: "bunny",
+		weights: [500, 700],
+	},
 ];

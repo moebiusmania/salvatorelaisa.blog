@@ -1,36 +1,46 @@
 /**
- * Default color theme
+ * Default color theme — "warm paper & ink"
+ *
+ * Light: warm off-white paper, near-black ink, a single restrained accent.
+ * Dark:  warm near-black, off-white text, a softened warm accent.
  */
 html.light {
-	--white: #fff;
+	--white: #faf8f4;
 	--primary: #2563eb;
-	--secondary: #2d2d2dcc;
-	--text: #4b5563;
+	--secondary: #8a8178;
+	--text: #4a443d;
 	--text-dark: inherit;
 	--text-content-dark: inherit;
-	--text-base-content: #2a2a2a;
-	--text-secodary-content: #6b7280;
+	--text-base-content: #1a1714;
+	--text-secodary-content: #8a8178;
+	/* Alias for the historically misspelled token above so consumers using the
+	   correctly-spelled name (e.g. home-page.css) also resolve. */
+	--text-secondary-content: #8a8178;
 	--bg: var(--white);
-	--bg-neutral: #f5f5f5;
+	--bg-neutral: #f1ede5;
 
-	--header-link-hover: inherit;
-	--border: rgb(229, 231, 235);
+	--header-link-hover: #6b6258;
+	--border: #e4ddd1;
 
 	--badge-bg: var(--primary);
-	--badge-text: #ffffff;
+	--badge-text: #faf8f4;
 }
 
 html.dark {
-	--primary: #f59e0b;
-	--text: #d1d5db;
-	--text-dark: #1f2937;
-	--text-content-dark: #d1d5db;
-	--text-base-content: var(--text-content-dark);
+	--white: #f2ede3;
+	--primary: #f0b35e;
+	--secondary: #9a9183;
+	--text: #d8d1c4;
+	--text-dark: #16140f;
+	--text-content-dark: #d8d1c4;
+	--text-base-content: #f2ede3;
+	--text-secodary-content: #9a9183;
+	--text-secondary-content: #9a9183;
 	--bg: var(--text-dark);
-	--bg-neutral: var(--text-dark);
+	--bg-neutral: #211d16;
 
-	--header-link-hover: #9ca3af;
-	--border: #4b5563;
+	--header-link-hover: #c9c0b0;
+	--border: #3a342b;
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--text-dark);
