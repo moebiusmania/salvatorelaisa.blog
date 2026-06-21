@@ -3,13 +3,20 @@
 }
 
 .devices-page > p {
-	margin-top: var(--sp-2);
-	line-height: 1.5em;
+	max-width: 40rem;
+	margin-top: var(--sp-3);
+	font-size: 1.125rem;
+	line-height: 1.7;
+	color: var(--text);
+}
+
+.devices-page > p:first-of-type {
+	margin-top: var(--sp-4);
 }
 
 .devices-page > ul {
 	display: grid;
-	margin: var(--sp-3) 0;
+	margin: var(--sp-5) 0 0;
 	padding: 0;
 	gap: var(--sp-3);
 	border-top-width: 0px;

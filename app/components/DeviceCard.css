@@ -1,31 +1,31 @@
-/*
-Card component from DaisyUI
-https://daisyui.com/components/card/
-*/
-
 article.device-card {
-	border-style: none;
-	box-shadow:
-		0 20px 25px -5px rgba(0, 0, 0, 0.1),
-		0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid var(--border);
 	border-radius: var(--sp-05);
 	background-color: var(--bg-neutral);
+	overflow: hidden;
+	transition:
+		transform 200ms ease,
+		border-color 200ms ease,
+		box-shadow 200ms ease;
+}
+
+article.device-card:hover {
+	transform: translateY(-2px);
+	border-color: var(--primary);
+	box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.25);
 }
 
 article.device-card figure {
-	padding: var(--sp-2);
-	background-color: #ffffff;
+	padding: var(--sp-3);
+	background-color: var(--white);
+	border-bottom: 1px solid var(--border);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	border-start-start-radius: inherit;
-	border-start-end-radius: inherit;
-	border-end-start-radius: unset;
-	border-end-end-radius: unset;
 	width: 100%;
 	margin: 0;
 }
@@ -34,27 +34,37 @@ article.device-card figure img {
 	display: block;
 	width: 100%;
 	height: auto;
+	object-fit: contain;
 }
 
 article.device-card > div {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
-	gap: var(--sp-1);
-	padding: var(--sp-4);
+	gap: var(--sp-2);
+	padding: var(--sp-3);
 	color: var(--text-base-content);
 }
 
+/* Tag row + acquisition date as editorial kicker captions. */
 article.device-card > div > div {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--sp-1);
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	line-height: 1.4;
 }
 
 article.device-card > div > p {
 	flex: none;
-	font-size: 1rem;
-	line-height: 1.25rem;
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
 }
 
 article.device-card > div > h2 {
@@ -62,24 +72,31 @@ article.device-card > div > h2 {
 	align-items: center;
 	gap: var(--sp-1);
 	margin: 0;
+	font-size: 1.4rem;
+	line-height: 1.25;
 }
 
 article.device-card > div > h2 > a {
-	text-decoration: underline;
+	color: var(--text-base-content);
+	text-decoration: none;
+	transition: color 150ms ease;
 }
 
 article.device-card > div > h2 > a:hover {
 	color: var(--primary);
-	text-decoration-color: var(--primary);
 }
 
 article.device-card > div > h2 svg {
 	display: inline-block;
 	width: 1rem;
 	height: 1rem;
+	color: var(--text-secodary-content);
 }
 
-article.device-card > div > div {
-	font-size: 0.875rem;
-	line-height: 1.25rem;
+@media (prefers-reduced-motion: reduce) {
+	article.device-card,
+	article.device-card:hover {
+		transform: none;
+		transition: none;
+	}
 }
