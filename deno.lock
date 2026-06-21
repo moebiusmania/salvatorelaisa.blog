@@ -6855,10 +6855,10 @@
         "npm:@nuxt/test-utils@4.0.3",
         "npm:@nuxtjs/sitemap@8.2.1",
         "npm:@vue/test-utils@2.4.11",
-        "npm:better-sqlite3@12.10.0",
-        "npm:happy-dom@20.10.3",
+        "npm:better-sqlite3@12.11.1",
+        "npm:happy-dom@20.10.6",
         "npm:nuxt@4.4.8",
-        "npm:vitest@4.1.8"
+        "npm:vitest@4.1.9"
       ]
     }
   }
