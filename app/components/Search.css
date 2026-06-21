@@ -31,8 +31,12 @@ form.search input:disabled {
 	border-color: var(--text-secondary-content);
 }
 
+form.search input {
+	transition: box-shadow 0.2s ease;
+}
+
 form.search input:focus {
-	box-shadow: none;
+	box-shadow: 0 2px 12px -4px var(--primary);
 	border-color: var(--primary);
 	outline: var(--primary);
 	outline-style: solid;
@@ -57,4 +61,47 @@ form.search button {
 	user-select: none;
 	color: var(--text-base-content);
 	background-color: oklch(0.93 0 0);
+}
+
+/* Clear button fades + scales in/out instead of popping. */
+.clear-enter-active,
+.clear-leave-active {
+	transition:
+		opacity 0.18s ease,
+		transform 0.18s ease;
+}
+
+.clear-enter-from,
+.clear-leave-to {
+	opacity: 0;
+	transform: scale(0.6);
+}
+
+/* Result count pops gently when the number changes (paired with mode="out-in"). */
+.count-enter-active,
+.count-leave-active {
+	transition:
+		opacity 0.15s ease,
+		transform 0.15s ease;
+	display: inline-block;
+}
+
+.count-enter-from {
+	opacity: 0;
+	transform: translateY(-0.4em);
+}
+
+.count-leave-to {
+	opacity: 0;
+	transform: translateY(0.4em);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	form.search input,
+	.clear-enter-active,
+	.clear-leave-active,
+	.count-enter-active,
+	.count-leave-active {
+		transition: none;
+	}
 }

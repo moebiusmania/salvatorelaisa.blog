@@ -40,28 +40,46 @@ export default defineNuxtPlugin((nuxtApp) => {
 	});
 
 	let commitPage: (() => void) | undefined;
+	let fallbackTimer: ReturnType<typeof setTimeout> | undefined;
+
+	// Resolve the in-flight transition's commit promise (if any) and clear the
+	// safety timer. Idempotent: safe to call from page:finish, vue:error, an
+	// overlapping page:start, or the fallback timeout.
+	const settle = (): void => {
+		if (fallbackTimer !== undefined) {
+			clearTimeout(fallbackTimer);
+			fallbackTimer = undefined;
+		}
+		const resolve = commitPage;
+		commitPage = undefined;
+		resolve?.();
+	};
 
 	nuxtApp.hook("page:start", () => {
 		if (prefersReducedMotion()) {
 			return;
 		}
 
+		// A previous navigation may still be mid-commit (rapid clicks). Settle it
+		// first so its resolver can't leak and so we never start a transition on
+		// top of a dangling promise.
+		settle();
+
 		const pageCommitted = new Promise<void>((resolve) => {
 			commitPage = resolve;
 		});
 
+		// Safety net: if page:finish never arrives (or the Suspense pair doesn't
+		// complete as expected), commit anyway so the page swap isn't held back
+		// and the next navigation starts clean.
+		fallbackTimer = setTimeout(settle, 600);
+
 		const transition = document.startViewTransition(() => pageCommitted);
-		transition.finished.finally(() => {
-			commitPage = undefined;
-		});
+		transition.finished.finally(settle);
 	});
 
-	nuxtApp.hook("page:finish", () => {
-		commitPage?.();
-	});
+	nuxtApp.hook("page:finish", settle);
 
 	// Make sure a failed navigation never leaves the transition hanging.
-	nuxtApp.hook("vue:error", () => {
-		commitPage?.();
-	});
+	nuxtApp.hook("vue:error", settle);
 });

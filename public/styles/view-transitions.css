@@ -5,12 +5,12 @@
  * navigation in document.startViewTransition() and sets
  * <html data-vt-direction="forward | back | fade"> beforehand.
  *
- * Default is a subtle, editorial cross-fade. Paginated list navigation
- * adds a small directional slide. Everything is neutralized under
+ * Default is a simple opacity cross-fade. Paginated list navigation overrides
+ * it with a small directional slide. Everything is neutralized under
  * prefers-reduced-motion.
  */
 
-/* Default: gentle cross-fade for the page root. */
+/* Default: plain opacity cross-fade for the whole page (header included). */
 ::view-transition-old(root),
 ::view-transition-new(root) {
 	animation-duration: 240ms;

@@ -49,7 +49,8 @@ const onTyping = async (value: string): Promise<void> => {
     <Search :value="search" :results="posts.length" @typing="onTyping" @clear="onClear" />
     <PostsList>
       <TransitionGroup name="list">
-        <PostPreview v-for="post in posts" :post="post" :key="post.path?.replace('/', '')" />
+        <PostPreview v-for="(post, index) in posts" :post="post" :key="post.path"
+          :style="{ '--i': index }" />
       </TransitionGroup>
     </PostsList>
     <Pagination v-if="search.length === 0" :total-pages="totalPages" :page="page" :limit="limit"
@@ -59,45 +60,4 @@ const onTyping = async (value: string): Promise<void> => {
 
 <style>
 @import './post-page.css';
-</style>
-
-<!-- 
-  just following the Vue 3 docs here
-
-  https://vuejs.org/guide/built-ins/transition-group.html
--->
-<style>
-.list-move,
-/* apply transition to moving (re-flowing) items */
-.list-enter-active,
-.list-leave-active {
-  transition: all 0.35s ease;
-}
-
-/* entering items slide in from the right */
-.list-enter-from {
-  opacity: 0;
-  transform: translateX(30px);
-}
-
-/* filtered-out items fade, shrink and drift away to the left */
-.list-leave-to {
-  opacity: 0;
-  transform: translateX(-40px) scale(0.95);
-}
-
-/* take leaving items out of flow so the remaining ones animate up smoothly.
-   keep full width so the row doesn't collapse mid-animation. */
-.list-leave-active {
-  position: absolute;
-  width: 100%;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .list-move,
-  .list-enter-active,
-  .list-leave-active {
-    transition: none;
-  }
-}
 </style>
