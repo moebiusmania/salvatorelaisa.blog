@@ -1,25 +1,30 @@
 div.outdated {
-	background-color: var(--bg-neutral);
 	display: grid;
-	gap: var(--sp-2);
-	width: 100%;
 	grid-auto-flow: column;
 	grid-template-columns: auto minmax(auto, 1fr);
-	justify-items: start;
-	text-align: start;
+	gap: var(--sp-2);
+	align-items: start;
+	width: 100%;
 	margin: var(--sp-5) 0;
-	box-shadow:
-		0 10px 15px -3px rgba(0, 0, 0, 0.1),
-		0 4px 6px -2px rgba(0, 0, 0, 0.05);
-	align-content: flex-start;
-	align-items: center;
-	border-width: 1px;
-	padding: var(--sp-2);
+	padding: var(--sp-3);
+	background-color: var(--bg-neutral);
+	border-left: 3px solid var(--primary);
 	color: var(--text-base-content);
+	text-align: start;
+	line-height: 1.6;
 }
 
 div.outdated svg {
 	width: 1.5rem;
 	height: 1.5rem;
-	stroke: currentColor;
+	stroke: var(--primary);
+	margin-top: 0.1em;
+}
+
+div.outdated strong {
+	display: inline;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary);
 }

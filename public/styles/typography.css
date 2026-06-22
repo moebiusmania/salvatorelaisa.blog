@@ -200,6 +200,37 @@ a {
 }
 
 /*
+ * Desktop: keep the text column at the title's 40rem measure but let media break
+ * out wider via a 3-track grid. Markdown wraps a standalone image as
+ * <p><img><small>…</small></p>, so the wrapping <p> (matched with :has) is what
+ * gets the full span. Browsers without :has() keep media at column width.
+ */
+@media (min-width: 768px) {
+	.content {
+		display: grid;
+		grid-template-columns: 1fr min(40rem, 100%) 1fr;
+		max-width: none;
+		margin-inline: 0;
+	}
+
+	.content > * {
+		grid-column: 2;
+	}
+
+	.content > p:has(img),
+	.content > p:has(iframe),
+	.content > img,
+	.content > iframe,
+	.content > figure {
+		/* "Out of the box" effect: 25% wider than the 40rem text column. */
+		grid-column: 1 / -1;
+		justify-self: center;
+		width: 50rem;
+		max-width: 100%;
+	}
+}
+
+/*
  * Editorial drop cap on the article's opening paragraph. Purely decorative and
  * scoped to the first body paragraph; harmless if the article opens with another
  * element. Suppressed on small screens where a large initial would crowd the

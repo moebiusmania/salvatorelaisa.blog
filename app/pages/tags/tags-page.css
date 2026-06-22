@@ -4,7 +4,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	border-top-width: 1px;
-	border-color: #e5e7eb;
+	border-color: var(--border);
 }
 
 @media (min-width: 768px) {
@@ -50,26 +50,47 @@
 }
 
 .tags-page > ul > li > a {
+	display: inline-block;
 	text-transform: uppercase;
 	font-size: 0.875rem;
+	letter-spacing: 0.04em;
 	line-height: 1.25rem;
-}
-
-.tags-page > ul > li > a:hover {
-	text-decoration: underline;
 }
 
 .tags-page > ul > li > a:first-child {
 	margin-right: var(--sp-2);
 	font-weight: 500;
 	color: var(--primary);
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 400ms;
+	/* Animated underline reveal that grows from left on hover/focus. */
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 1px;
+	transition:
+		background-size 200ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tags-page > ul > li > a:first-child:hover,
+.tags-page > ul > li > a:first-child:focus-visible {
+	background-size: 100% 1px;
+	transform: translateY(-2px);
 }
 
 .tags-page > ul > li > a:last-child {
 	margin-left: calc(var(--sp-1) * -1);
 	font-weight: 600;
-	color: rgb(75, 85, 99);
+	color: var(--text-secodary-content);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tags-page > ul > li > a:first-child {
+		transition: none;
+	}
+
+	.tags-page > ul > li > a:first-child:hover,
+	.tags-page > ul > li > a:first-child:focus-visible {
+		transform: none;
+		text-decoration: underline;
+	}
 }
