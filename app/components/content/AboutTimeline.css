@@ -1,0 +1,98 @@
+.about-timeline {
+	position: relative;
+	margin: var(--sp-4) 0;
+}
+
+.about-timeline__track {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-3);
+}
+
+/* Vertical connector line running through the node markers. */
+.about-timeline__track::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 19px;
+	width: 2px;
+	background-color: var(--border);
+}
+
+/* Scroll hint is only meaningful on the horizontal (desktop) layout. */
+.about-timeline__hint {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.about-timeline__track {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: var(--sp-3);
+		overflow-x: auto;
+		scroll-snap-type: x proximity;
+		padding-bottom: var(--sp-2);
+		scrollbar-width: thin;
+	}
+
+	.about-timeline__track::before {
+		top: 19px;
+		bottom: auto;
+		left: 0;
+		right: 0;
+		width: auto;
+		height: 2px;
+	}
+
+	/* Fade the right edge to imply more content beyond the viewport. */
+	.about-timeline::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: var(--sp-4);
+		width: 56px;
+		background: linear-gradient(to right, transparent, var(--bg));
+		pointer-events: none;
+	}
+
+	.about-timeline__hint {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: var(--sp-05);
+		width: fit-content;
+		margin: var(--sp-1) 0 0 auto;
+		font-size: 0.75rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--text-secodary-content);
+	}
+
+	.about-timeline__arrow {
+		display: inline-block;
+		animation: about-timeline-nudge 1.6s ease-in-out infinite;
+	}
+}
+
+@keyframes about-timeline-nudge {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(5px);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.about-timeline__arrow {
+		animation: none;
+	}
+}

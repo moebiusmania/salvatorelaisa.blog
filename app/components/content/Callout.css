@@ -1,0 +1,44 @@
+.callout {
+	margin: var(--sp-3) 0;
+	padding: var(--sp-3);
+	border: 1px solid var(--border);
+	border-left: 4px solid var(--primary);
+	border-radius: var(--sp-1);
+	background-color: var(--bg-neutral);
+}
+
+.callout__header {
+	display: flex;
+	align-items: center;
+	gap: var(--sp-1);
+	margin: 0 0 var(--sp-2);
+}
+
+.callout__icon {
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+.callout__title {
+	font-family: var(--font-serif);
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.2;
+	color: var(--text-base-content);
+}
+
+.callout__body {
+	color: var(--text-base-content);
+}
+
+.callout__body :first-child {
+	margin-top: 0;
+}
+
+.callout__body :last-child {
+	margin-bottom: 0;
+}
+
+.callout__body a {
+	color: var(--primary);
+}

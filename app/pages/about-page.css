@@ -15,3 +15,9 @@
 .about-page article a {
 	color: var(--primary);
 }
+
+/* Give the composed blocks breathing room from surrounding prose. */
+.about-page .about-timeline,
+.about-page .callout {
+	margin-block: var(--sp-4);
+}
