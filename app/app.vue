@@ -132,8 +132,8 @@ useHead({
 	],
 	htmlAttrs: {
 		lang: "it-IT",
-		"data-theme": theme.value,
-		class: theme.value,
+		"data-theme": theme,
+		class: theme,
 	},
 });
 </script>
