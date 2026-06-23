@@ -1,0 +1,79 @@
+.back-to-top {
+	position: fixed;
+	bottom: var(--sp-4);
+	right: var(--sp-4);
+	z-index: 900;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-2);
+	padding: var(--sp-2) var(--sp-3);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--badge-text);
+	background-color: var(--primary);
+	border: none;
+	border-radius: 9999px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-top:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.24);
+}
+
+.back-to-top:focus-visible {
+	outline: 2px solid var(--text-base-content);
+	outline-offset: 2px;
+}
+
+.back-to-top svg {
+	width: 1rem;
+	height: 1rem;
+}
+
+/* Enter/leave fade + slide. */
+.back-to-top-enter-active,
+.back-to-top-leave-active {
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top-enter-from,
+.back-to-top-leave-to {
+	opacity: 0;
+	transform: translateY(0.5rem);
+}
+
+@media (max-width: 480px) {
+	.back-to-top span {
+		/* Keep just the icon on narrow viewports to stay out of the way. */
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.back-to-top {
+		padding: var(--sp-3);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.back-to-top,
+	.back-to-top-enter-active,
+	.back-to-top-leave-active {
+		transition: none;
+	}
+
+	.back-to-top:hover {
+		transform: none;
+	}
+}
