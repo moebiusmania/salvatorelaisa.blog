@@ -28,8 +28,8 @@ const formatDate = (date: string): string => {
         <NuxtLink :href="device.post || device.url">
           {{ device.title }}
         </NuxtLink>
-        <External v-if="device.url" />
-        <Doc v-if="device.post" />
+        <IconsExternal v-if="device.url" />
+        <IconsDoc v-if="device.post" />
       </h2>
       <ContentRenderer :value="device" />
     </div>

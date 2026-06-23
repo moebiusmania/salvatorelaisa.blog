@@ -7,7 +7,7 @@ exports[`DeviceCard > matches snapshot 1`] = `
     <div><span class="sl-badge">tag1</span><span class="sl-badge">tag2</span></div>
     <p> Data di acquisto: 20/03/2024</p>
     <h2><a href="https://example.com" rel="noopener noreferrer">Test Device</a>
-      <external></external>
+      <!---->
       <!--v-if-->
     </h2>
     <!---->

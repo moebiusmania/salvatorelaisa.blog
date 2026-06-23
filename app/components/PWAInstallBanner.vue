@@ -12,11 +12,7 @@ const dismissBanner = () => {
 const installPWA = async () => {
 	if (deferredPrompt.value) {
 		deferredPrompt.value.prompt();
-		const { outcome } = await deferredPrompt.value.userChoice;
-
-		if (outcome === "accepted") {
-			console.log("PWA installed successfully");
-		}
+		await deferredPrompt.value.userChoice;
 
 		deferredPrompt.value = null;
 		dismissBanner();
@@ -24,12 +20,9 @@ const installPWA = async () => {
 };
 
 onMounted(() => {
-	console.log("PWA Banner: Component mounted");
-
 	// Check if user already dismissed the banner
 	const dismissed = localStorage.getItem("pwa-install-dismissed");
 	if (dismissed) {
-		console.log("PWA Banner: Previously dismissed by user");
 		return;
 	}
 
@@ -38,20 +31,17 @@ onMounted(() => {
 		window.matchMedia &&
 		window.matchMedia("(display-mode: standalone)").matches
 	) {
-		console.log("PWA Banner: App already running in standalone mode");
 		return;
 	}
 
 	// Check if running in PWA mode on iOS
 	const isInStandaloneMode = (navigator as any).standalone;
 	if (isInStandaloneMode) {
-		console.log("PWA Banner: Running in iOS standalone mode");
 		return;
 	}
 
 	// Listen for beforeinstallprompt event
 	window.addEventListener("beforeinstallprompt", (e) => {
-		console.log("PWA Banner: beforeinstallprompt event fired");
 		e.preventDefault();
 		deferredPrompt.value = e;
 		showBanner.value = true;
@@ -62,26 +52,9 @@ onMounted(() => {
 	const isSafari =
 		/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
 
-	console.log("PWA Banner: Device detection", {
-		isIOS,
-		isSafari,
-		userAgent: navigator.userAgent,
-		isInStandaloneMode,
-	});
-
 	if (isIOS && isSafari && !isInStandaloneMode) {
-		console.log("PWA Banner: Showing for iOS Safari");
 		showBanner.value = true;
 	}
-
-	// For testing purposes - show banner after 3 seconds if no other conditions met
-	// Remove this in production
-	setTimeout(() => {
-		if (!showBanner.value && !dismissed && !isInStandaloneMode) {
-			console.log("PWA Banner: Showing test banner (remove in production)");
-			showBanner.value = true;
-		}
-	}, 3000);
 });
 </script>
 
@@ -96,7 +69,7 @@ onMounted(() => {
             </svg>
           </div>
           <div class="banner-text">
-            <h4>📱 Installa come App</h4>
+            <h4>Installa come App</h4>
             <p>Accesso rapido dalla home screen</p>
           </div>
         </div>
@@ -112,7 +85,11 @@ onMounted(() => {
             </svg>
           </div>
           <button @click="dismissBanner" class="dismiss-btn" aria-label="Chiudi">
-            ✕
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
           </button>
         </div>
       </div>
