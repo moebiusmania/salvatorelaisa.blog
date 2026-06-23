@@ -103,17 +103,19 @@ useHead({
 			crossorigin: "anonymous",
 		},
 		// Preload critical CSS for parallel loading
+		{ rel: "preload", href: "/fonts/fonts.css", as: "style" },
 		{ rel: "preload", href: "/styles/normalize.css", as: "style" },
 		{ rel: "preload", href: "/styles/spacing.css", as: "style" },
 		{ rel: "preload", href: themeImport.value, as: "style" },
 		{ rel: "preload", href: "/styles/typography.css", as: "style" },
 		// Critical CSS (load these first)
+		{ rel: "stylesheet", href: "/fonts/fonts.css" },
 		{ rel: "stylesheet", href: "/styles/normalize.css" },
 		{ rel: "stylesheet", href: "/styles/spacing.css" },
 		{ rel: "stylesheet", href: themeImport.value },
 		{ rel: "stylesheet", href: "/styles/typography.css" },
 		// Non-critical resources (don't block rendering)
-		{ rel: "stylesheet", href: "/styles/view-transitions.css" },
+		{ rel: "stylesheet", href: "/styles/view-transitions.css", media: "print", onload: "this.media='all'" },
 		{ rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
 		{ rel: "manifest", href: "/manifest.json" },
 		{ rel: "icon", type: "image/png", href: "/static/favicons/favicon.ico" },

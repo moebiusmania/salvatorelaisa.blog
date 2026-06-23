@@ -1,0 +1,18 @@
+# Cache-Control headers for GitHub Pages
+# Long-lived assets with content-hash filenames
+/_nuxt/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static assets (images, favicons, fonts)
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/styles/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages — shorter cache so content updates propagate
+/*
+  Cache-Control: public, max-age=3600, must-revalidate
