@@ -53,6 +53,7 @@ const isReview = (tags: Array<string>): boolean => {
     <hr />
     <Sharing :url="post.path" />
     <Tip />
+    <BackToTop />
   </div>
 </template>
 
