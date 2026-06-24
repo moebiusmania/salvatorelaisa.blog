@@ -1,40 +1,67 @@
 /**
- * Summer color theme - Sun, Sky, and Sand
+ * Summer color theme — "Mediterranean sea & sun"
+ *
+ * Light: warm sand/cream paper, turquoise sea accent, coral secondary, deep
+ *        sea-ink text, and a soft golden sunlight glow from the top.
+ * Dark:  deep teal-night sea, bright turquoise accent, warm sunset secondary,
+ *        sea-foam text, and a cool silver moonlight glow from the top.
  */
 html.light {
-	--white: #fff8e7; /* Warm sand/cream */
-	--primary: #4a90e2; /* Clear sky blue */
-	--secondary: #e67e22; /* Warm terracotta/clay */
-	--accent: #ff8a65; /* Warm sunset coral */
-	--text: #2c3e50; /* Deep ocean blue for text */
+	--white: #fdf6e9; /* Warm sun-bleached sand */
+	--primary: #0e9aa7; /* Turquoise sea */
+	--secondary: #e07856; /* Warm coral / terracotta */
+	--accent: #f4a93b; /* Golden sun */
+	--text: #173034; /* Deep sea-ink */
 	--text-dark: inherit;
 	--text-content-dark: inherit;
-	--text-base-content: #2c3e50;
-	--text-secodary-content: #5d6d7e; /* Muted blue-gray */
+	--text-base-content: #173034;
+	--text-secodary-content: #6b7d7a; /* Muted sea-grey */
+	/* Alias for the historically misspelled token above so consumers using the
+	   correctly-spelled name also resolve. */
+	--text-secondary-content: #6b7d7a;
 	--bg: var(--white);
-	--bg-neutral: #f5f7fa; /* Light cloud */
+	--bg-neutral: #f7eeda; /* Deeper sand for cards */
 
-	--header-link-hover: inherit;
-	--border: #e8f4fd; /* Very light sky blue */
+	--header-link-hover: #0b7d88; /* Darker turquoise */
+	--border: #ece0c8; /* Warm sand border */
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--white);
+
+	/* Sunlight: soft warm golden glow radiating from the top. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(255, 176, 59, 0.28),
+		rgba(255, 200, 110, 0.1) 40%,
+		transparent 70%
+	);
 }
 
 html.dark {
-	--primary: #64b5f6; /* Bright summer sky */
-	--secondary: #ffb74d; /* Warm sunset */
-	--accent: #ff7043; /* Sunset coral */
-	--text: #e3f2fd; /* Light sky */
-	--text-dark: #0f172a; /* Very dark navy/black */
-	--text-content-dark: #e3f2fd;
-	--text-base-content: var(--text-content-dark);
+	--white: #e8f3ef; /* Sea-foam light */
+	--primary: #2dd4bf; /* Bright turquoise */
+	--secondary: #f0a868; /* Warm sunset */
+	--accent: #ff8a65; /* Sunset coral */
+	--text: #cfe6e0; /* Soft sea-foam */
+	--text-dark: #0a1f24; /* Deep teal-night sea */
+	--text-content-dark: #cfe6e0;
+	--text-base-content: #e8f3ef;
+	--text-secodary-content: #7d9b96; /* Muted sea-grey */
+	--text-secondary-content: #7d9b96;
 	--bg: var(--text-dark);
-	--bg-neutral: #1e293b; /* Dark slate blue */
+	--bg-neutral: #0f2b30; /* Darker sea slate */
 
-	--header-link-hover: #90caf9; /* Light blue hover */
-	--border: #3f51b5; /* Medium blue border */
+	--header-link-hover: #5eead4; /* Light turquoise hover */
+	--border: #1d4a4f; /* Deep teal border */
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--text-dark);
+
+	/* Moonlight: soft cool silver-blue glow radiating from the top. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(190, 222, 240, 0.18),
+		rgba(150, 188, 218, 0.07) 40%,
+		transparent 70%
+	);
 }

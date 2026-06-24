@@ -2,7 +2,7 @@
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
-export const CURRENT_THEME = "default";
+export const CURRENT_THEME = "summer";
 export const EVENTS = {
 	xmas: {
 		name: "🎁",
@@ -21,6 +21,6 @@ export const EVENTS = {
 		external: true,
 	},
 };
-export const SEASON_EMOJI = "";
+export const SEASON_EMOJI = "🌤️🏖️";
 export const PINNED_POST_DESCRIPTION =
 	"Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.";

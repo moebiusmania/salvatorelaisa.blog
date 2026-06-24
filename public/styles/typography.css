@@ -10,6 +10,24 @@ html {
 	font-display: swap;
 }
 
+/*
+ * Opt-in per-theme ambient glow at the top of the page. Rendered as an absolute,
+ * click-through overlay so it scrolls away with the page (not pinned) and sits
+ * behind all content. Themes that don't set --page-gradient render nothing, so
+ * the default theme is unaffected.
+ */
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60vh;
+	z-index: -1;
+	pointer-events: none;
+	background: var(--page-gradient, none);
+}
+
 /* TYPOGRAPHY ELEMENTS */
 
 h1,
