@@ -1,0 +1,87 @@
+/*
+ * Decorative drifting clouds. Spans the full page height (absolute, so it scrolls
+ * away with the page rather than staying pinned) and sits behind all content
+ * (z-index: -1, same layer strategy as the ambient gradient overlay in
+ * typography.css). pointer-events are off so reading is never impaired.
+ *
+ * Positioning context: the clouds box stretches to the full document height via
+ * `inset: 0` against a positioned body, so each cloud's percentage `top`
+ * distributes it across the whole page instead of just the first viewport.
+ */
+body {
+	position: relative;
+}
+
+.clouds {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.cloud {
+	position: absolute;
+	top: var(--top, 20%);
+	left: -20%;
+	width: 80px;
+	height: 24px;
+	/* Bright, mostly-opaque white with a soft cool shadow so the cloud reads
+	   clearly against the warm cream "sky". It sits behind content (z-index: -1),
+	   so even at this contrast the text on top stays fully legible. */
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 24px;
+	transform: scale(var(--scale, 1));
+	filter: blur(1px) drop-shadow(0 6px 8px rgba(70, 110, 150, 0.22));
+	animation: clouds-drift var(--duration, 60s) linear var(--delay, 0s) infinite;
+	will-change: transform;
+}
+
+/* Two rounded "puffs" on top of the base pill make a classic cloud silhouette. */
+.cloud::before,
+.cloud::after {
+	content: "";
+	position: absolute;
+	background: inherit;
+	border-radius: 50%;
+}
+
+.cloud::before {
+	width: 34px;
+	height: 34px;
+	top: -16px;
+	left: 14px;
+}
+
+.cloud::after {
+	width: 24px;
+	height: 24px;
+	top: -10px;
+	left: 44px;
+}
+
+@keyframes clouds-drift {
+	from {
+		transform: translateX(0) scale(var(--scale, 1));
+	}
+
+	to {
+		transform: translateX(140vw) scale(var(--scale, 1));
+	}
+}
+
+/* Dark mode: cooler, dimmer night clouds with a soft dark shadow for definition. */
+html.dark .cloud {
+	background: rgba(214, 230, 245, 0.18);
+	filter: blur(1px) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.clouds {
+		display: none;
+	}
+
+	.cloud {
+		animation: none;
+	}
+}
