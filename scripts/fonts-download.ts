@@ -27,6 +27,18 @@ async function downloadFile(url: string, outputPath: string): Promise<void> {
 	await Deno.writeFile(outputPath, bytes);
 }
 
+function ensureFontDisplaySwap(css: string): string {
+	return css.replace(
+		/@font-face\s*\{([\s\S]*?)\}/g,
+		(block, body: string) => {
+			if (/font-display\s*:/.test(body)) {
+				return block;
+			}
+			return block.replace(/@font-face\s*\{/, "$&\n  font-display: swap;");
+		},
+	);
+}
+
 function rewriteCssUrls(
 	css: string,
 	familySlug: string,
@@ -85,7 +97,7 @@ async function processBunnyFamily(family: FontFamilyConfig): Promise<string> {
 		}),
 	);
 
-	return rewriteCssUrls(remoteCss, familySlug, urlToFile);
+	return ensureFontDisplaySwap(rewriteCssUrls(remoteCss, familySlug, urlToFile));
 }
 
 async function main(): Promise<void> {
