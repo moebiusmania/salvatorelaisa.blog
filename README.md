@@ -33,6 +33,7 @@ I've added some small new features over the starting Nuxt template to handle som
 - "personal devices timeline" section
 - CSS themes support (_at the moment only an "xmas" one is included_)
 - basic CLI stats (_total posts, drafts, device cards_)
+- RSS feed generated as `rss.xml` after the static build
 
 ## 💻 CLI commands
 
@@ -45,6 +46,7 @@ Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some c
 | `deno task stats`                     | `npm run stats`                     | Generate simple blog statistics |
 | `deno task drafts`                    | `npm run drafts`                    | List draft posts                |
 | `deno task convert:webp path/to/file` | `npm run convert:webp path/to/file` | Convert images to `.webp`       |
+| `deno task generate:rss`              | `npm run generate:rss`              | Generate the `rss.xml` feed     |
 
 ## ✅ Built-in todo utility
 
@@ -80,6 +82,18 @@ the default `.webp` quality is set to `90`, but you can change this using an opt
 deno task convert:webp ath/to/file-or-folder -- --quality 100
 -- or --
 npm run convert:webp path/to/file-or-folder -- --quality 100
+```
+
+## 📡 RSS feed
+
+The blog exposes an RSS feed at `/rss.xml`. It's built by a Deno script that reads the published posts (newest 20, drafts excluded) and writes `rss.xml` into the generated output.
+
+The script runs **automatically** after the static build via the `postgenerate` npm hook, so `npm run generate` always ships an up-to-date feed. You can also run it on its own (it expects a previous build to exist in `.output/public`):
+
+```bash
+deno task generate:rss
+--- or ---
+npm run generate:rss
 ```
 
 ## How to change theme

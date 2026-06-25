@@ -11,6 +11,7 @@
     "todo:remove": "deno run --allow-read --allow-write scripts/todo.ts remove",
     "todo:done": "deno run --allow-read --allow-write scripts/todo.ts done",
     "fonts:download": "deno run --allow-read --allow-write --allow-net scripts/fonts-download.ts",
+    "generate:rss": "deno run --allow-read --allow-write scripts/generate-rss.ts",
     "test": "deno run -A npm:vitest"
   },
   "imports": {

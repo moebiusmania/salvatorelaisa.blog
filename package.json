@@ -7,6 +7,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "postgenerate": "npm run generate:rss",
+    "generate:rss": "deno run --allow-read --allow-write scripts/generate-rss.ts",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test": "vitest",
