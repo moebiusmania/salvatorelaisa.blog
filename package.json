@@ -29,7 +29,6 @@
     "@nuxt/content": "3.14.0",
     "@nuxt/image": "2.0.0",
     "@nuxt/test-utils": "4.0.3",
-    "@nuxtjs/sitemap": "8.2.1",
     "@vue/test-utils": "2.4.11",
     "better-sqlite3": "12.11.1",
     "happy-dom": "20.10.6",
