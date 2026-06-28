@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`now/Work > renders correctly 1`] = `
+"<article class="now-card now-work">
+  <p class="now-card-kicker">Al lavoro</p>
+  <h2>Engineer</h2>
+  <p class="now-work-company">Acme Inc</p>
+  <p class="now-work-city"><span aria-label="luogo" role="img">📍</span> Milano</p>
+</article>"
+`;

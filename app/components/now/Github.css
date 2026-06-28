@@ -1,0 +1,40 @@
+article.now-github .now-github-state {
+	margin: 0;
+	color: var(--text-secodary-content);
+}
+
+article.now-github > ul {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+article.now-github li {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-05);
+	padding-bottom: var(--sp-2);
+	border-bottom: 1px solid var(--border);
+}
+
+article.now-github li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+article.now-github li > a {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-05);
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+article.now-github .now-github-desc {
+	margin: 0;
+	font-size: 0.9rem;
+	color: var(--text-secodary-content);
+}

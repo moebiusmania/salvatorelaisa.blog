@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`now/Watching > renders correctly 1`] = `
+"<article class="now-card now-watching">
+  <p class="now-card-kicker">Cosa sto guardando</p>
+  <ul>
+    <li><span class="now-watching-type">Serie TV</span><a href="https://www.imdb.com/title/series" target="_blank" rel="noopener">A Series <icons-external-stub lazy="false"></icons-external-stub></a></li>
+    <li><span class="now-watching-type">Film</span><a href="https://www.imdb.com/title/movie" target="_blank" rel="noopener">A Movie <icons-external-stub lazy="false"></icons-external-stub></a></li>
+  </ul>
+</article>"
+`;

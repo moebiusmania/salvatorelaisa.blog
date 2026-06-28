@@ -1,0 +1,27 @@
+article.now-weather {
+	align-items: flex-start;
+}
+
+article.now-weather .now-weather-state {
+	margin: 0;
+	color: var(--text-secodary-content);
+}
+
+article.now-weather .now-weather-emoji {
+	margin: 0;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+article.now-weather .now-weather-temp {
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--text-base-content);
+}
+
+article.now-weather .now-weather-meta {
+	margin: 0;
+	color: var(--text-secodary-content);
+}

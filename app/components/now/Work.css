@@ -1,0 +1,18 @@
+article.now-work > h2 {
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	color: var(--text-base-content);
+}
+
+article.now-work .now-work-company {
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--primary);
+}
+
+article.now-work .now-work-city {
+	margin: 0;
+	color: var(--text-secodary-content);
+}

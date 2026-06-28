@@ -26,6 +26,11 @@ const items: Array<NavItem> = [
 		href: "/tags",
 		title: "Articoli per tag",
 	},
+	{
+		name: "Adesso",
+		href: "/now",
+		title: "Cosa sto facendo in questo periodo",
+	},
 ];
 
 // const nav: Array<NavItem> = [EVENTS.earthDay, ...items];
