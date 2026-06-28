@@ -1,37 +1,68 @@
 /**
- * HALLOWEEN THEME built on top of https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28
+ * Halloween color theme — "Pumpkin lantern & witching night"
+ *
+ * Light: warm parchment paper, pumpkin-orange accent, witchy-purple secondary,
+ *        candle-gold highlight, dark ink text, and a soft pumpkin glow rising
+ *        from the top of the page.
+ * Dark:  deep midnight purple-black, glowing pumpkin/amber accent, eerie-green
+ *        highlight, soft bone text, and a cold moon-green glow from the top.
  */
 html.light {
-	--white: #fffcf2;
-	--primary: #eb5e28;
-	--secondary: #403d39;
-	--text: #252422;
+	--white: #fdf3e3; /* Warm parchment paper */
+	--primary: #e8590c; /* Pumpkin orange */
+	--secondary: #6b3fa0; /* Witchy purple */
+	--accent: #f0a202; /* Candle gold */
+	--text: #241a2e; /* Dark ink with a purple hue */
 	--text-dark: inherit;
 	--text-content-dark: inherit;
-	--text-base-content: var(--text);
-	--text-secodary-content: var(--secondary);
+	--text-base-content: #241a2e;
+	--text-secodary-content: #6f6275; /* Muted dusk grey */
+	/* Alias for the historically misspelled token above so consumers using the
+	   correctly-spelled name also resolve. */
+	--text-secondary-content: #6f6275;
 	--bg: var(--white);
-	--bg-neutral: #f5f5f5;
+	--bg-neutral: #f6e8cf; /* Deeper parchment for cards */
 
-	--header-link-hover: inherit;
-	--border: rgb(229, 231, 235);
+	--header-link-hover: #b8460a; /* Darker pumpkin */
+	--border: #e7d4b3; /* Warm parchment border */
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--white);
+
+	/* Candlelight: soft warm pumpkin glow radiating from the top. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(232, 89, 12, 0.26),
+		rgba(240, 162, 2, 0.1) 40%,
+		transparent 70%
+	);
 }
 
 html.dark {
-	--primary: #f59e0b;
-	--text: #d1d5db;
-	--text-dark: #1f2937;
-	--text-content-dark: #d1d5db;
-	--text-base-content: var(--text-content-dark);
+	--white: #f3ead9; /* Bone light */
+	--primary: #ff7a18; /* Glowing pumpkin */
+	--secondary: #b388ff; /* Soft witch-light purple */
+	--accent: #76c043; /* Eerie green */
+	--text: #e6dcc8; /* Soft bone */
+	--text-dark: #15101d; /* Deep midnight purple-black */
+	--text-content-dark: #e6dcc8;
+	--text-base-content: #f3ead9;
+	--text-secodary-content: #9b8fa6; /* Muted dusk grey */
+	--text-secondary-content: #9b8fa6;
 	--bg: var(--text-dark);
-	--bg-neutral: var(--text-dark);
+	--bg-neutral: #1f1730; /* Darker witching slate */
 
-	--header-link-hover: #9ca3af;
-	--border: #4b5563;
+	--header-link-hover: #ffa45c; /* Light pumpkin hover */
+	--border: #3a2d4f; /* Deep purple border */
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--text-dark);
+
+	/* Witching moon: cold eerie-green glow radiating from the top. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(118, 192, 67, 0.16),
+		rgba(179, 136, 255, 0.08) 40%,
+		transparent 70%
+	);
 }
