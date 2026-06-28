@@ -5,14 +5,26 @@ tags:
   - "google"
   - "servizi"
   - "privacy"
-draft: true
-summary: ""
+draft: false
+summary: "Dal 2008 circa sono stato un grande fan di Google e i suoi servizi. All'inizio Gmail, poi Android, poi Drive e Photos, il Play Store fino ad essere uno dei primi utenti di Stadia. \n Poi il continuo aumentare di servizi che si sono spostati verso il famigerato \"Cimitero di Google\", la malagestione dei millemila servizi di chat creati negli ultimi anni e in generale la enshittification della compagnia in sé mi hanno portato prima ad una rottura di questa mia \"luna di miele\" con Google e ora a prendere la decisione più drastica di ridurre il più possibile il mio utilizzo quotidiano dei prodotti di Google."
 images: ["https://salvatorelaisa.blog/content/2025/degoogling.webp"]
 ---
 
 ![Liberarsi dalle catene di Google.](/content/2025/degoogling.webp)<small>_Immagine generate con Sora._</small>
 
-## Un pò di sano "hacktivismo"
+Dal **2008 circa** sono stato un grande fan di Google e i suoi servizi. All'inizio Gmail, poi Android, poi Drive e Photos, il Play Store fino ad essere uno dei primi utenti di [Stadia](/post/google-stadia).
+
+Poi il continuo aumentare di servizi che si sono spostati verso il famigerato "Cimitero di Google", sopratutto quelli che usavo e mi facevano comodo tipo **Inbox** e **Android Auto per smartphone**, la malagestione dei millemila servizi di chat creati negli ultimi anni e in generale la __enshittification__ della compagnia in sé mi hanno portato prima ad una rottura di questa mia "luna di miele" con Google e ora a prendere la **decisione più drastica di ridurre il più possibile il mio utilizzo quotidiano dei prodotti di Google**.
+
+<!-- ## Un pò di sano "hacktivismo"
+
+Non è una novità che -->
+
+## Servono ancora le ricerche?
+
+Ovviamente il primo strumento da cui mi sono sganciato è stata **la ricerca di Google.com**, ho impostato il default di tutti i miei browser su [Qwant](https://www.qwant.com/), sia perché è quello che mi ricorda di più il layout dei motori di ricerca classici prima che venissero bombardati di annunci, sia perché è un prodotto europeo 🇪🇺.
+
+Anche se in realtà di questi tempi uso molto meno i motori di ricerca e mi sono spostato maggiormente su tool con [ChatGPT](https://chatgpt.com/) e [Perplexity](https://www.perplexity.ai/) per avere informazioni di vario tipo.
 
 ## Basta con i Single Sign On
 
@@ -36,14 +48,22 @@ Questo mi aiuta anche a tenere cronologie e sessioni separate e poter _alt-tabba
 
 Non ci ho messo molto a scegliere la piattaforma di Proton come rimpiazzo principale per il grosso dei servizi di Google:
 
-- sono una società Europea 🇪🇺 (_sono svizzeri 🇨🇭_)
-- la suite di prodotti attaule è buona e in continua evoluzione
+- è una società Europea 🇪🇺 (_sono svizzeri 🇨🇭_)
+- la suite di prodotti attuale è buona e in continua evoluzione
 - focus sulla privacy 👀 e sulle feature principali dei prodotti
 - design funzionale
 - il tier free offre il giusto per poter sperimentare
 
 ## Cosa non migrerò (_almeno per ora_)
 
+Non sono così illuso da pensare di potermi liberare al 100% della morsa di Google, ci sono alcuni servizi che so che **non lascerò mai o ci vorrà molto tempo prima di trovare un'alternativa che mi convinca**:
+
 - **Google Photos**: sto ancora valutando delle alternative, sia self hosted che servizi, però avendo degli album condivisi con altre persone, di sicuro alcune foto resteranno li.
 
-- **Youtube**: ad oggi non esiste un vero rivale di Youtube, è di fatto un monopolio. E questo rende praticamente impossibile migrare verso un'altra piattaforma.
+- **Youtube**: ad oggi non esiste un vero rivale di Youtube, è di fatto un monopolio. E questo rende praticamente impossibile migrare verso un'altra piattaforma al momento.
+
+## In conclusione
+
+Non sarà facile, non sarà veloce, ma ho intenzione di sradicare il più possibile questo legame con i servizi Google e tornare a vivere il Web in modo leggermente pù sano.
+
+Non credo torneremo mai al Web del periodo 2000-2010, ma almeno voglio cercare di riavvicinarmi un po a quello spirito, **quando ancora non si era costantemente tracciati** e **non centralizzavamo tutta la nostra esperienza online su singole piattaforme**.
