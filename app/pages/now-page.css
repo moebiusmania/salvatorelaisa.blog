@@ -1,0 +1,52 @@
+section.now-page > hgroup {
+	margin-bottom: var(--sp-5);
+}
+
+section.now-page > hgroup > h1 {
+	margin: 0 0 var(--sp-1);
+}
+
+section.now-page > hgroup > p {
+	margin: 0;
+	max-width: 42rem;
+	color: var(--text-secodary-content);
+}
+
+/* Mobile first: single column, source order. */
+.now-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--sp-3);
+}
+
+/* Bento layout from the md breakpoint up: a tall GitHub column on the left,
+   stacked cards on the right. */
+@media (min-width: 768px) {
+	.now-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"work    weather"
+			"github  watching"
+			"github  event";
+	}
+
+	.now-grid-work {
+		grid-area: work;
+	}
+
+	.now-grid-weather {
+		grid-area: weather;
+	}
+
+	.now-grid-github {
+		grid-area: github;
+	}
+
+	.now-grid-watching {
+		grid-area: watching;
+	}
+
+	.now-grid-event {
+		grid-area: event;
+	}
+}

@@ -1,0 +1,62 @@
+/*
+Shared base styling for the "Adesso" (/now) widget cards.
+Each widget imports this file plus its own sibling stylesheet.
+*/
+
+.now-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+	height: 100%;
+	padding: var(--sp-3);
+	border: 1px solid var(--border);
+	border-radius: var(--sp-05);
+	background-color: var(--bg-neutral);
+	color: var(--text-base-content);
+	transition:
+		transform 200ms ease,
+		border-color 200ms ease,
+		box-shadow 200ms ease;
+}
+
+.now-card:hover {
+	transform: translateY(-2px);
+	border-color: var(--primary);
+	box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.25);
+}
+
+/* Editorial kicker shared by every widget header. */
+.now-card > .now-card-kicker {
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
+}
+
+.now-card a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: color 150ms ease;
+}
+
+.now-card a:hover {
+	color: var(--header-link-hover);
+}
+
+.now-card svg {
+	display: inline-block;
+	width: 0.85rem;
+	height: 0.85rem;
+	color: var(--text-secodary-content);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.now-card,
+	.now-card:hover {
+		transform: none;
+		transition: none;
+	}
+}

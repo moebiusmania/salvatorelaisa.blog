@@ -1,0 +1,29 @@
+article.now-watching > ul {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+article.now-watching li {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-05);
+}
+
+article.now-watching .now-watching-type {
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
+}
+
+article.now-watching li a {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-05);
+	font-size: 1.15rem;
+	font-weight: 600;
+}

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`now/Event > renders correctly 1`] = `
+"<article class="now-card now-event">
+  <p class="now-card-kicker">Prossimo evento</p>
+  <h2><a href="https://example.com/event" target="_blank" rel="noopener">An Event <icons-external-stub lazy="false"></icons-external-stub></a></h2>
+  <p class="now-event-date"><span aria-label="calendario" role="img">📅</span> next month</p>
+</article>"
+`;

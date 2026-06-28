@@ -7,7 +7,8 @@ exports[`Header > renders correctly 1`] = `
     <nav>
       <nuxt-link-stub href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a class="navitem" aria-label="theme switcher" href="#" id="theme"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+      <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub href="/now" target="_self" title="Cosa sto facendo in questo periodo" class="navitem"></nuxt-link-stub><a class="navitem" aria-label="theme switcher" href="#" id="theme"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
           <path class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg></a>
     </nav>
@@ -22,7 +23,8 @@ exports[`Header > renders site logo with correct attributes 1`] = `
     <nav>
       <nuxt-link-stub href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
-      <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub><a class="navitem" aria-label="theme switcher" href="#" id="theme"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+      <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub href="/now" target="_self" title="Cosa sto facendo in questo periodo" class="navitem"></nuxt-link-stub><a class="navitem" aria-label="theme switcher" href="#" id="theme"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
           <path class="moon" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg></a>
     </nav>
