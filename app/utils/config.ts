@@ -23,6 +23,18 @@ export const EVENTS = {
 		external: true,
 	},
 };
-export const SEASON_EMOJI = CURRENT_THEME === "summer" ? "🌤️🏖️" : "";
+export const SEASON_EMOJI =
+	CURRENT_THEME === "summer"
+		? "🌤️🏖️"
+		: CURRENT_THEME === "halloween"
+			? "🎃👻"
+			: "";
+// Event page surfaced as the first nav item when its matching theme is active.
+export const SEASON_EVENT =
+	CURRENT_THEME === "halloween"
+		? EVENTS.halloween
+		: CURRENT_THEME === "xmas"
+			? EVENTS.xmas
+			: null;
 export const PINNED_POST_DESCRIPTION =
 	"Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.";

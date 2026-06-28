@@ -144,6 +144,7 @@ useHead({
 	<Header :dark="theme === options.dark" @change-theme="changeTheme" />
 	<!-- <Snow /> -->
 	<Clouds v-if="CURRENT_THEME === 'summer'" />
+	<Spooks v-if="CURRENT_THEME === 'halloween'" />
 	<main>
 		<Container>
 			<NuxtPage />

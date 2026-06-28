@@ -1,0 +1,83 @@
+/*
+ * Decorative drifting Halloween creatures (bats, ghosts, bones, skulls). Spans
+ * the full page height (absolute, so it scrolls away with the page rather than
+ * staying pinned) and sits behind all content (z-index: -1, same layer strategy
+ * as the ambient gradient overlay in typography.css). pointer-events are off so
+ * reading is never impaired.
+ *
+ * Positioning context: the spooks box stretches to the full document height via
+ * `inset: 0` against the positioned body (body is `position: relative` from
+ * Clouds.css; restated here so the effect works standalone), so each spook's
+ * percentage `top` distributes it across the whole page, not just the first
+ * viewport.
+ *
+ * Two layers of motion are composed without fighting over `transform`: the outer
+ * `.spook` drifts horizontally, while the inner `.spook-inner` bobs vertically.
+ */
+body {
+	position: relative;
+}
+
+.spooks {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.spook {
+	position: absolute;
+	top: var(--top, 20%);
+	left: -10%;
+	/* Emoji size scales per-item; 1.6rem base reads as a "small item". */
+	font-size: calc(1.6rem * var(--scale, 1));
+	line-height: 1;
+	animation: spooks-drift var(--duration, 40s) linear var(--delay, 0s) infinite;
+	will-change: transform;
+}
+
+.spook-inner {
+	display: inline-block;
+	/* Slight opacity so the creatures stay atmospheric, never distracting. */
+	opacity: 0.55;
+	animation: spooks-bob var(--bob, 3s) ease-in-out infinite;
+	will-change: transform;
+}
+
+@keyframes spooks-drift {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(120vw);
+	}
+}
+
+@keyframes spooks-bob {
+	0%,
+	100% {
+		transform: translateY(-6px) rotate(-4deg);
+	}
+
+	50% {
+		transform: translateY(6px) rotate(4deg);
+	}
+}
+
+/* Dark mode: a touch brighter so the creatures stay visible against the night. */
+html.dark .spook-inner {
+	opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.spooks {
+		display: none;
+	}
+
+	.spook,
+	.spook-inner {
+		animation: none;
+	}
+}

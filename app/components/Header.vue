@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SITE_TITLE, SEASON_EMOJI, EVENTS } from "@/utils/config";
+import { SITE_TITLE, SEASON_EMOJI, SEASON_EVENT } from "@/utils/config";
 
 export interface NavItem {
 	name: string;
@@ -33,8 +33,10 @@ const items: Array<NavItem> = [
 	},
 ];
 
-// const nav: Array<NavItem> = [EVENTS.earthDay, ...items];
-const nav: Array<NavItem> = [...items];
+// When a seasonal theme is active, surface its event page as the first nav item.
+const nav: Array<NavItem> = SEASON_EVENT
+	? [SEASON_EVENT, ...items]
+	: [...items];
 
 const { dark } = defineProps<{ dark: boolean }>();
 const route = useRoute();
