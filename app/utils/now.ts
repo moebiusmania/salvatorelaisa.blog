@@ -9,11 +9,11 @@
 export const NOW_WORK = {
 	company: "Carol Health",
 	role: "Engineering Tech Lead",
-	city: "Milano",
+	city: "Edimburgo",
 };
 
 // City queried for the weather widget.
-export const NOW_WEATHER_LOCATION = "Milano";
+export const NOW_WEATHER_LOCATION = "Edinburgh";
 
 export const NOW_GITHUB_USER = "moebiusmania";
 
