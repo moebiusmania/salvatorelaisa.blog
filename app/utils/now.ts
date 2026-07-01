@@ -9,7 +9,7 @@
 export const NOW_WORK = {
 	company: "Carol Health",
 	role: "Engineering Tech Lead",
-	city: "Edimburgo",
+	city: "Milano",
 };
 
 // City queried for the weather widget.
