@@ -13,7 +13,7 @@ export const NOW_WORK = {
 };
 
 // City queried for the weather widget.
-export const NOW_WEATHER_LOCATION = "Milano";
+export const NOW_WEATHER_LOCATION = "Edinburgh";
 
 export const NOW_GITHUB_USER = "moebiusmania";
 
