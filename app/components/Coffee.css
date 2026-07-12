@@ -15,7 +15,7 @@ a.coffee {
 
 a.coffee:hover {
 	color: var(--white);
-	background: rgb(2, 132, 199);
+	background: color-mix(in srgb, var(--primary), black 15%);
 }
 
 a.coffee svg {

@@ -4,7 +4,7 @@ export type SeasonTheme = "default" | "halloween" | "spring" | "summer" | "xmas"
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
-export const CURRENT_THEME: SeasonTheme = "summer";
+export const CURRENT_THEME: SeasonTheme = "halloween";
 export const EVENTS = {
 	xmas: {
 		name: "🎁",
