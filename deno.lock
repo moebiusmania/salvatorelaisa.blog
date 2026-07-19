@@ -6855,8 +6855,8 @@
         "npm:@nuxt/test-utils@4.0.3",
         "npm:@vue/test-utils@2.4.11",
         "npm:better-sqlite3@12.11.1",
-        "npm:happy-dom@20.10.6",
-        "npm:nuxt@4.4.8",
+        "npm:happy-dom@20.11.0",
+        "npm:nuxt@4.5.0",
         "npm:vitest@4.1.10"
       ]
     }
