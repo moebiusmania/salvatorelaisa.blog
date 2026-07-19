@@ -1,0 +1,110 @@
+.about-milestone {
+	position: relative;
+	padding-left: calc(40px + var(--sp-3));
+	min-height: 40px;
+}
+
+/* Node marker sitting on the connector line. */
+.about-milestone__marker {
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--primary);
+	border: 3px solid var(--bg);
+	z-index: 1;
+}
+
+.about-milestone__figure {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 220px;
+	aspect-ratio: 16 / 10;
+	margin: 0 0 var(--sp-1);
+	border-radius: var(--sp-1);
+	overflow: hidden;
+	background-color: var(--bg-neutral);
+	transition:
+		transform 200ms ease,
+		box-shadow 200ms ease;
+}
+
+.about-milestone__figure.is-placeholder {
+	border: 1px dashed var(--border);
+}
+
+.about-milestone__figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-milestone__icon {
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.about-milestone__period {
+	margin: 0;
+	color: var(--text-secodary-content);
+}
+
+.about-milestone__title {
+	margin: var(--sp-05) 0 0;
+	font-family: var(--font-serif);
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.2;
+	color: var(--text-base-content);
+}
+
+.about-milestone__desc {
+	font-size: 0.95rem;
+	line-height: 1.5;
+	color: var(--text-secodary-content);
+}
+
+.about-milestone__desc :first-child {
+	margin-top: var(--sp-05);
+}
+
+.about-milestone__desc :last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.about-milestone {
+		flex: 0 0 200px;
+		padding-left: 0;
+		padding-top: calc(20px + var(--sp-2));
+		scroll-snap-align: start;
+	}
+
+	.about-milestone__marker {
+		top: 13px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.about-milestone__figure {
+		max-width: none;
+	}
+
+	.about-milestone:hover .about-milestone__figure {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.25);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.about-milestone__figure,
+	.about-milestone:hover .about-milestone__figure {
+		transform: none;
+		transition: none;
+	}
+}
