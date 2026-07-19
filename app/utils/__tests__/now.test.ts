@@ -1,9 +1,13 @@
-import { describe, it, expect, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, vi } from "vitest";
+import { mockNuxtImport } from "@nuxt/test-utils/runtime";
 import {
 	weatherCodeToIcon,
 	getWeather,
 	getLatestRepos,
 } from "../now";
+
+const fetchMock = vi.hoisted(() => vi.fn());
+mockNuxtImport("$fetch", () => fetchMock);
 
 describe("weatherCodeToIcon", () => {
 	it("maps representative WMO codes to the expected Italian labels", () => {
@@ -31,20 +35,18 @@ describe("weatherCodeToIcon", () => {
 });
 
 describe("getWeather", () => {
-	afterEach(() => {
-		vi.unstubAllGlobals();
+	beforeEach(() => {
+		fetchMock.mockReset();
 	});
 
 	it("resolves a city to its rounded temperature and condition", async () => {
-		const fetchMock = vi
-			.fn()
+		fetchMock
 			.mockResolvedValueOnce({
 				results: [{ name: "Milano", latitude: 45.46, longitude: 9.18 }],
 			})
 			.mockResolvedValueOnce({
 				current: { temperature_2m: 21.6, weather_code: 0 },
 			});
-		vi.stubGlobal("$fetch", fetchMock);
 
 		const weather = await getWeather("Milano");
 
@@ -58,8 +60,7 @@ describe("getWeather", () => {
 	});
 
 	it("throws when the location cannot be geocoded", async () => {
-		const fetchMock = vi.fn().mockResolvedValueOnce({ results: [] });
-		vi.stubGlobal("$fetch", fetchMock);
+		fetchMock.mockResolvedValueOnce({ results: [] });
 
 		await expect(getWeather("Nowhere")).rejects.toThrow("Località non trovata");
 		expect(fetchMock).toHaveBeenCalledTimes(1);
@@ -67,12 +68,12 @@ describe("getWeather", () => {
 });
 
 describe("getLatestRepos", () => {
-	afterEach(() => {
-		vi.unstubAllGlobals();
+	beforeEach(() => {
+		fetchMock.mockReset();
 	});
 
 	it("maps the GitHub API response and honors the count", async () => {
-		const fetchMock = vi.fn().mockResolvedValueOnce([
+		fetchMock.mockResolvedValueOnce([
 			{
 				name: "repo-one",
 				html_url: "https://github.com/user/repo-one",
@@ -81,7 +82,6 @@ describe("getLatestRepos", () => {
 				updated_at: "2026-06-01T00:00:00Z",
 			},
 		]);
-		vi.stubGlobal("$fetch", fetchMock);
 
 		const repos = await getLatestRepos("user", 3);
 

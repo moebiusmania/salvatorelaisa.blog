@@ -13,7 +13,7 @@ export const NOW_WORK = {
 };
 
 // City queried for the weather widget.
-export const NOW_WEATHER_LOCATION = "Milano";
+export const NOW_WEATHER_LOCATION = "Lillaz";
 
 export const NOW_GITHUB_USER = "moebiusmania";
 
@@ -22,10 +22,16 @@ export const NOW_WATCHING = {
 	// movie: { label: "TODO", imdb: "https://www.imdb.com/title/TODO" },
 };
 
+// export const NOW_EVENT = {
+// 	name: "Festa del Ticino - Pavia",
+// 	url: "https://www.visitpavia.com/en/event/festa-del-ticino-pavia",
+// 	date: "primi di Settembre",
+// };
+
 export const NOW_EVENT = {
-	name: "Festa del Ticino - Pavia",
-	url: "https://www.visitpavia.com/en/event/festa-del-ticino-pavia",
-	date: "primi di Settembre",
+	name: "AD1398 - Volterra",
+	url: "https://volterra1398.it",
+	date: "9 Agosto",
 };
 
 // --- weather ------------------------------------------------------------------
