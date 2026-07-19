@@ -21,6 +21,23 @@ export default defineContentConfig({
 						}),
 					)
 					.optional(),
+				sections: z
+					.array(
+						z.object({
+							heading: z.string(),
+							icon: z.string().optional(),
+							items: z.array(
+								z.object({
+									title: z.string(),
+									badge: z.string().optional(),
+									url: z.string().optional(),
+									note: z.string().optional(),
+									featured: z.boolean().optional(),
+								}),
+							),
+						}),
+					)
+					.optional(),
 				meta: z.object({
 					images: z.array(z.string()),
 					summary: z.string(),
