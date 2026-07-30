@@ -27,7 +27,7 @@ export const SEASON_EMOJI =
 	CURRENT_THEME === "summer"
 		? "🌤️🏖️"
 		: CURRENT_THEME === "halloween"
-			? "🎃👻"
+			? "👻🕸️"
 			: "";
 // Event page surfaced as the first nav item when its matching theme is active.
 export const SEASON_EVENT =
