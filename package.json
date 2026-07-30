@@ -12,6 +12,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test": "vitest",
+    "test:ci": "vitest run",
     "test:update": "vitest -u",
     "test:coverage": "vitest run --coverage",
     "new:post": "deno run --allow-write scripts/post.ts",
