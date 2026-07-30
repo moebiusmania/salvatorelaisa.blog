@@ -3,28 +3,28 @@
 exports[`PostPreview > renders correctly 1`] = `
 "<li class="post-preview">
   <!--v-if--><time><span>20 marzo 2024</span></time>
-  <div>
-    <routerlink to="/post/test-post"></routerlink>
-    <div>
-      <routerlink to="/tags/test"></routerlink>
-      <routerlink to="/tags/vue"></routerlink>
-    </div>
-    <p>This is a test post summary</p>
-    <routerlink to="/post/test-post"></routerlink>
+  <div><a href="/post/test-post">
+      <h2>Test Post Title</h2>
+    </a>
+    <div><a href="/tags/test">test</a><a href="/tags/vue">vue</a></div>
+    <p>This is a test post summary</p><a href="/post/test-post"> Continua a leggere (5) minuti <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"></path>
+        <path d="M12 5l7 7-7 7"></path>
+      </svg></a>
   </div>
 </li>"
 `;
 
 exports[`PostPreview > renders pinned post correctly 1`] = `
 "<li class="post-preview pinned"><span class="badge" title="Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale.">in evidenza</span><time><span>20 marzo 2024</span></time>
-  <div>
-    <routerlink to="/post/test-post"></routerlink>
-    <div>
-      <routerlink to="/tags/test"></routerlink>
-      <routerlink to="/tags/vue"></routerlink>
-    </div>
-    <p>This is a test post summary</p>
-    <routerlink to="/post/test-post"></routerlink>
+  <div><a href="/post/test-post">
+      <h2>Test Post Title</h2>
+    </a>
+    <div><a href="/tags/test">test</a><a href="/tags/vue">vue</a></div>
+    <p>This is a test post summary</p><a href="/post/test-post"> Continua a leggere (5) minuti <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"></path>
+        <path d="M12 5l7 7-7 7"></path>
+      </svg></a>
   </div>
 </li>"
 `;

@@ -1,10 +1,10 @@
 // Global configuration
 
-export type Theme = "default" | "halloween" | "spring" | "summer" | "xmas";
+export type SeasonTheme = "default" | "halloween" | "spring" | "summer" | "xmas";
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
-export const CURRENT_THEME: Theme = "summer";
+export const CURRENT_THEME: SeasonTheme = "summer";
 export const EVENTS = {
 	xmas: {
 		name: "🎁",

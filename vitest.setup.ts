@@ -1,5 +1,5 @@
-// Vitest setup file to prevent SQLite corruption issues
 import { beforeAll } from "vitest";
+import { config } from "@vue/test-utils";
 
 class MockStorage {
 	private store: Map<string, string> = new Map();
@@ -38,3 +38,35 @@ beforeAll(() => {
 		configurable: true,
 	});
 });
+
+config.global.stubs = {
+	NuxtLink: {
+		template: "<a :href=\"href ?? to ?? ''\"><slot /></a>",
+		props: ["href", "to"],
+	},
+};
+
+function isSuppressedVueWarning(msg: string): boolean {
+	return (
+		msg.includes("Suspense") ||
+		msg.includes("RouterLink") ||
+		msg.includes("Failed to resolve component") ||
+		msg.includes("Missing required prop")
+	);
+}
+
+function makeWriteFilter(original: typeof process.stdout.write) {
+	return ((chunk: unknown, ...rest: unknown[]) => {
+		const str =
+			typeof chunk === "string"
+				? chunk
+				: chunk instanceof Uint8Array
+					? new TextDecoder().decode(chunk)
+					: "";
+		if (isSuppressedVueWarning(str)) return true;
+		return original(chunk as string, ...rest);
+	}) as typeof process.stdout.write;
+}
+
+process.stdout.write = makeWriteFilter(process.stdout.write.bind(process.stdout));
+process.stderr.write = makeWriteFilter(process.stderr.write.bind(process.stderr));

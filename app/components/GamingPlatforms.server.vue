@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-	platforms: Array<{
+	platforms?: Array<{
 		label: string;
 		url: string;
 	}>;

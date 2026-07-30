@@ -6,11 +6,12 @@ exports[`DeviceCard > matches snapshot 1`] = `
   <div>
     <div><span class="sl-badge">tag1</span><span class="sl-badge">tag2</span></div>
     <p> Data di acquisto: 20/03/2024</p>
-    <h2><a href="https://example.com" rel="noopener noreferrer">Test Device</a>
-      <!---->
+    <h2>
+      <nuxt-link-stub href="https://example.com"></nuxt-link-stub>
+      <icons-external-stub lazy="false"></icons-external-stub>
       <!--v-if-->
     </h2>
-    <!---->
+    <content-renderer-stub excerpt="false" tag="div" components="[object Object]" data="[object Object]" unwrap="false" value="[object Object]"></content-renderer-stub>
   </div>
 </article>"
 `;

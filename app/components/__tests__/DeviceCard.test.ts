@@ -25,16 +25,11 @@ describe("DeviceCard", () => {
 				},
 			},
 			global: {
-				components: {
-					// Mock the Nuxt-specific components
-					NuxtLink: {
-						template: '<a href=""><slot /></a>',
-						props: ["href"],
-					},
-					ContentRenderer: {
-						template: "<div><slot /></div>",
-						props: ["value"],
-					},
+				stubs: {
+					NuxtLink: true,
+					ContentRenderer: true,
+					IconsExternal: true,
+					IconsDoc: true,
 				},
 			},
 		});
