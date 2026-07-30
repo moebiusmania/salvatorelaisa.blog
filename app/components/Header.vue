@@ -56,7 +56,7 @@ const isActive = (href: string, route: any) => [
         <span>{{ SEASON_EMOJI }}</span>
       </NuxtLink>
       <nav>
-        <NuxtLink v-for="(item, index) in nav" :title="item.title" :key="index" :class="isActive(item.href, route)"
+        <NuxtLink v-for="(item, index) in nav" :title="item.title" :key="index" :class="[isActive(item.href, route), { 'event-nav': SEASON_EVENT && index === 0 }]"
           :href="item.href" :target="item.external ? '_blank' : '_self'">{{
             item.name }}</NuxtLink>
         <a class="navitem" aria-label="theme switcher" href="#" id="theme" @click="$emit('changeTheme')">

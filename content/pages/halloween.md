@@ -1,5 +1,5 @@
 ---
-title: Halloween 2025 🎃
+title: Halloween 2026 🎃
 sections:
   - heading: Film & serie TV
     icon: 🎬
@@ -16,14 +16,12 @@ sections:
     icon: 🎮
     items:
       - title: Pumpkin Jack
-        featured: true
         note: platformer colorato e molto arcade-style, con protagonista una zucca, quindi perfetto!
       - title: Forgive me father 1 & 2
       - title: Heretic + Hexen
       - title: Dusk
       - title: Resident Evil 2 Remaster
       - title: Diablo (il primo)
-        featured: true
         note: rigiocato di recente grazie al sourceport DevilutionX, è quello con le atmosfere più gotiche e claustrofobiche.
       - title: Gylt
       - title: Little Nightmares I & II
@@ -62,13 +60,15 @@ sections:
         url: https://www.fotonerd.it/foto-halloween-123rf/
 ---
 
-Per il periodo da inizio Ottobre fino ad Halloween 2025 ho voluto dare un tocco un più autunalle e spettrale al mio blog:
+In questa pagina ho voluto raccogliere e condividere vari media/attività con cui mi piace tenere occupato il tempo libero durante il mese di Ottobre, anche detto *Spooktober*...
 
-- Sostituito i colori principali della tipografia con una [palette autunnale/"hallowiniana"](https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28) presa da **Coolors.co**.
+<!-- Per il periodo da inizio Ottobre fino ad Halloween 2026 ho voluto dare un tocco un più autunalle e spettrale al mio blog: -->
+
+<!-- - Sostituito i colori principali della tipografia con una [palette autunnale/"hallowiniana"](https://coolors.co/palette/fffcf2-ccc5b9-403d39-252422-eb5e28) presa da **Coolors.co**.
 - Aggiunta qualche **emoji** a tema delle festività (🎃, 👻, 🐈‍⬛, 🪦), cosa molto comoda per avere facilmente delle icone senza dover importare direttamente immagini 🤓.
 - Ho pinnato e aggiornato un [articolo del 2016](/post/halloween-2016) in cui avevo già raccolto vari link a diverso tipo di materiale per l'occasione (_wallpapers, brochure, video, consigli per le foto.._) e segnalato i link che ora risultano 404 😢.
 
-Dato che però non mi dispiaceva l'idea di avere una pagina di raccolta con altro materiale senza modificare ulteriormente il vecchio articolo, ecco qui un listone che funzionerà un po da checklist per me e come suggerimenti/consigli per chiunque capiti su questa pagina:
+Dato che però non mi dispiaceva l'idea di avere una pagina di raccolta con altro materiale senza modificare ulteriormente il vecchio articolo, ecco qui un listone che funzionerà un po da checklist per me e come suggerimenti/consigli per chiunque capiti su questa pagina: -->
 
 <!-- - Aggiunto un [effetto di neve in puro CSS](https://codepen.io/codeconvey/pen/xRzQay) preso da **CodePen** e incapsulato in un semplice [componente Vue](https://github.com/moebiusmania/salvatorelaisa.blog/blob/main/components/content/Snow.server.vue).
 

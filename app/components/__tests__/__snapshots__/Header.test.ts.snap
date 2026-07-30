@@ -5,7 +5,7 @@ exports[`Header > renders correctly 1`] = `
   <div>
     <nuxt-link-stub href="/"></nuxt-link-stub>
     <nav>
-      <nuxt-link-stub href="/events/halloween" target="_self" title="Contenuti speciali di Halloween" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub href="/events/halloween" target="_self" title="Contenuti speciali di Halloween" class="navitem event-nav"></nuxt-link-stub>
       <nuxt-link-stub href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub>
@@ -22,7 +22,7 @@ exports[`Header > renders site logo with correct attributes 1`] = `
   <div>
     <nuxt-link-stub href="/"></nuxt-link-stub>
     <nav>
-      <nuxt-link-stub href="/events/halloween" target="_self" title="Contenuti speciali di Halloween" class="navitem"></nuxt-link-stub>
+      <nuxt-link-stub href="/events/halloween" target="_self" title="Contenuti speciali di Halloween" class="navitem event-nav"></nuxt-link-stub>
       <nuxt-link-stub href="/post/page/1" target="_self" title="Tutti gli articoli del blog" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/about" target="_self" title="Qualche riga su di me" class="navitem"></nuxt-link-stub>
       <nuxt-link-stub href="/tags" target="_self" title="Articoli per tag" class="navitem"></nuxt-link-stub>

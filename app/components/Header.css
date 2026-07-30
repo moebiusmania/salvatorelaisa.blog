@@ -107,6 +107,10 @@
 	transform: rotate(20deg);
 }
 
+.header > div > nav > a.event-nav {
+	transform: scale(1.7);
+}
+
 @media (prefers-reduced-motion: reduce) {
 	.header > div > nav a#theme svg {
 		transition: none;
