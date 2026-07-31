@@ -16,13 +16,13 @@ sections:
     icon: 🎮
     items:
       - title: Pumpkin Jack
-        note: platformer colorato e molto arcade-style, con protagonista una zucca, quindi perfetto!
+        description: platformer colorato e molto arcade-style, con protagonista una zucca, quindi perfetto!
       - title: Forgive me father 1 & 2
       - title: Heretic + Hexen
       - title: Dusk
       - title: Resident Evil 2 Remaster
       - title: Diablo (il primo)
-        note: rigiocato di recente grazie al sourceport DevilutionX, è quello con le atmosfere più gotiche e claustrofobiche.
+        description: rigiocato di recente grazie al sourceport DevilutionX, è quello con le atmosfere più gotiche e claustrofobiche.
       - title: Gylt
       - title: Little Nightmares I & II
       - title: Bloodrayne 1 & 2

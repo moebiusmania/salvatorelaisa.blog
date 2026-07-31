@@ -25,7 +25,7 @@ const { data } = await useAsyncData(() =>
             :href="item.url || undefined"
             :target="item.url ? '_blank' : undefined"
             :rel="item.url ? 'noopener noreferrer' : undefined"
-            :title="item.note || undefined"
+            :title="item.description || undefined"
             class="halloween-chip"
             :class="{ featured: item.featured }"
           >
