@@ -31,7 +31,7 @@ export default defineContentConfig({
 									title: z.string(),
 									badge: z.string().optional(),
 									url: z.string().optional(),
-									note: z.string().optional(),
+									description: z.string().optional(),
 									featured: z.boolean().optional(),
 								}),
 							),
