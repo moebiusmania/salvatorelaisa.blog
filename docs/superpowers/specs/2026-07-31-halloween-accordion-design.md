@@ -53,7 +53,8 @@ New client component `HalloweenSection.vue` receives one section as a prop and r
 ### `app/pages/events/halloween-page.css` (modified)
 
 - Chip, chips-list, and chip-hover styles move to `HalloweenSection.css`.
-- Keeps page-level styles (`iframe` rule, section spacing/heading) that the new component's styles compose with, or moves them to the component as appropriate; final split keeps the page CSS minimal and non-conflicting.
+- Section container (`section` margin, `h2` layout) and chip styles move to `HalloweenSection.css` too, since the component now renders that markup.
+- `halloween-page.css` keeps only the `iframe` rule.
 
 ### `app/components/__tests__/HalloweenSection.test.ts` (new)
 
