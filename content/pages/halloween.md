@@ -20,9 +20,10 @@ sections:
       - title: Forgive me father 1 & 2
       - title: Heretic + Hexen
       - title: Dusk
+        description: FPS low poly che unisce il cosmic horror alle zone rurali americane.
       - title: Resident Evil 2 Remaster
       - title: Diablo (il primo)
-        description: rigiocato di recente grazie al sourceport DevilutionX, è quello con le atmosfere più gotiche e claustrofobiche.
+        description: rigiocato di recente grazie al sourceport DevilutionX (che consiglio vivamente), è quello con le atmosfere più gotiche e claustrofobiche.
       - title: Gylt
       - title: Little Nightmares I & II
       - title: Bloodrayne 1 & 2

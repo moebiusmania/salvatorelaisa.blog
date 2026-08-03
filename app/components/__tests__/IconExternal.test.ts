@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import ExternalIcon from "../icons/External.server.vue";
+import ExternalIcon from "../icons/External.vue";
 
 describe("ExternalIcon", () => {
 	it("renders correctly", () => {
