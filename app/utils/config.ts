@@ -4,7 +4,10 @@ export type SeasonTheme = "default" | "halloween" | "spring" | "summer" | "xmas"
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
-export const CURRENT_THEME: SeasonTheme = "halloween";
+// Widened to `SeasonTheme` on purpose: with a plain annotation TypeScript keeps
+// the literal type, and every `CURRENT_THEME === "..."` check below (and in
+// app.vue) fails as a comparison between non-overlapping types.
+export const CURRENT_THEME = "default" as SeasonTheme;
 export const EVENTS = {
 	xmas: {
 		name: "🎁",
