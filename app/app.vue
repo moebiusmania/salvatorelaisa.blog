@@ -37,6 +37,13 @@ const themeImport = computed(() => {
 	return themes[CURRENT_THEME];
 });
 
+// Optional per-season decoration layer, loaded on top of the palette. Themes
+// without an entry here stay colour-only, so nothing is downloaded for them.
+const themeDecor: Partial<Record<BlogTheme, string>> = {
+	halloween: "/styles/themes/halloween.decor.css",
+};
+const decorImport = computed(() => themeDecor[CURRENT_THEME]);
+
 const applyTheme = (value: Theme) => {
 	const el = document.documentElement;
 	el.setAttribute("data-theme", value);
@@ -114,6 +121,11 @@ useHead({
 		{ rel: "stylesheet", href: "/styles/spacing.css" },
 		{ rel: "stylesheet", href: themeImport.value },
 		{ rel: "stylesheet", href: "/styles/typography.css" },
+		// Seasonal decoration layer: must come after typography.css so it can
+		// override the base layer.
+		...(decorImport.value
+			? [{ rel: "stylesheet" as const, href: decorImport.value }]
+			: []),
 		// Non-critical resources (don't block rendering)
 		{ rel: "stylesheet", href: "/styles/view-transitions.css", media: "print", onload: "this.media='all'" },
 		{ rel: "alternate", type: "application/rss+xml", href: "/rss.xml" },
@@ -136,6 +148,12 @@ useHead({
 		lang: "it-IT",
 		"data-theme": theme,
 		class: theme,
+		// `data-theme`/`class` carry light-vs-dark; this carries the season, so
+		// stylesheets can target one without clobbering the other. It is a
+		// build-time constant, baked into the HTML by `generate`, and it
+		// survives theme toggling because `applyTheme` only rewrites the two
+		// attributes above.
+		"data-season": CURRENT_THEME,
 	},
 });
 </script>

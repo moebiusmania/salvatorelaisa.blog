@@ -248,13 +248,28 @@ a {
 }
 
 /*
- * Editorial drop cap on the article's opening paragraph. Purely decorative and
- * scoped to the first body paragraph; harmless if the article opens with another
- * element. Suppressed on small screens where a large initial would crowd the
- * narrow column.
+ * Editorial drop cap on the article's opening paragraph. Purely decorative,
+ * theme-independent, and suppressed on small screens where a large initial
+ * would crowd the narrow column.
+ *
+ * Two structural facts shape the selector:
+ *
+ *  - <ContentRenderer> wraps the rendered markdown in a <div>, so the body
+ *    paragraphs are grandchildren of .content, not children. (This is also why
+ *    the image-breakout rules above, which target `.content > p`, never match.)
+ *
+ *  - Nearly every post opens with a hero image, which markdown emits as
+ *    <p><img><small>caption</small></p>. Targeting the first <p> would drop-cap
+ *    the photo caption, so media paragraphs are excluded and the first *prose*
+ *    paragraph gets the initial instead.
+ *
+ * CSS has no "first sibling matching X" selector, so the cap goes on every prose
+ * paragraph and is then cancelled on any that follows another one — leaving
+ * exactly the opening paragraph. Articles that open with a blockquote or an
+ * iframe still get the cap on their first prose paragraph.
  */
 @media (min-width: 640px) {
-	.content > p:first-of-type::first-letter {
+	.post-slug .content > div > p:not(:has(img)):not(:has(iframe))::first-letter {
 		font-family: var(--font-serif);
 		font-weight: 700;
 		float: left;
@@ -262,6 +277,24 @@ a {
 		line-height: 0.78;
 		padding-right: var(--sp-1);
 		margin-top: 0.05em;
-		color: var(--text-base-content);
+		/* Themes can recolour the initial without restating this selector. */
+		color: var(--dropcap-color, var(--text-base-content));
+		text-shadow: var(--dropcap-shadow, none);
+	}
+
+	.post-slug
+		.content
+		> div
+		> p:not(:has(img)):not(:has(iframe))
+		~ p::first-letter {
+		font-family: inherit;
+		font-weight: inherit;
+		font-size: inherit;
+		float: none;
+		line-height: inherit;
+		padding-right: 0;
+		margin-top: 0;
+		color: inherit;
+		text-shadow: none;
 	}
 }

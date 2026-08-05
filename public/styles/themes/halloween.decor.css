@@ -1,0 +1,448 @@
+/**
+ * Halloween decoration layer — "Stitches, candlelight & dripping wax"
+ *
+ * Loaded by app.vue only when CURRENT_THEME === "halloween" (see `themeDecor`),
+ * on top of halloween.css. The palette file stays a pure set of custom
+ * properties; everything that changes the *shape* of the UI lives here.
+ *
+ * WHY EVERY SELECTOR STARTS WITH html[data-season="halloween"]:
+ * not for scoping — this file only ships for Halloween anyway — but for
+ * specificity. Component CSS is bundled by Vite and injected separately, so its
+ * link order relative to the useHead stylesheets is not guaranteed. The
+ * html[…] prefix adds an attribute selector to every rule, which beats the
+ * component rules being overridden no matter which file wins on order. Do not
+ * "simplify" it away.
+ *
+ * Colours are derived from the existing theme tokens via color-mix() so a single
+ * rule works in both light and dark. The only exception is the cobweb SVG: a
+ * data: URI cannot resolve currentColor, so it is declared once per mode.
+ */
+
+/* ---------------------------------------------------------------------------
+ * 1. Stitched tag chips
+ *
+ * Tags render as bare uppercase text in three places (post preview, tag index,
+ * post header). Give all three the same chip: a dashed hairline reads as
+ * stitching, and hover fills it with the badge tokens.
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] li.post-preview > div:last-child > div > a,
+html[data-season="halloween"] .tags-page > ul > li > a:first-child,
+html[data-season="halloween"] .post-slug > article header > p a {
+	padding: 2px var(--sp-1);
+	border: 1px dashed color-mix(in srgb, var(--secondary) 55%, transparent);
+	border-radius: var(--sp-05);
+	background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+	transition:
+		color 150ms ease,
+		background-color 150ms ease,
+		border-color 150ms ease,
+		transform 150ms ease;
+}
+
+html[data-season="halloween"] li.post-preview > div:last-child > div > a:hover,
+html[data-season="halloween"]
+	li.post-preview
+	> div:last-child
+	> div
+	> a:focus-visible,
+html[data-season="halloween"] .tags-page > ul > li > a:first-child:hover,
+html[data-season="halloween"] .tags-page > ul > li > a:first-child:focus-visible,
+html[data-season="halloween"] .post-slug > article header > p a:hover,
+html[data-season="halloween"] .post-slug > article header > p a:focus-visible {
+	border-color: var(--badge-bg);
+	border-style: solid;
+	background-color: var(--badge-bg);
+	color: var(--badge-text);
+	text-decoration: none;
+	/* A chip knocked slightly askew, as if pinned to a noticeboard. */
+	transform: rotate(-1.5deg);
+}
+
+/*
+ * The tag index draws its hover underline with a background-image gradient
+ * (tags-page.css). That would fight the chip fill, so neutralise it and undo the
+ * translateY it pairs with — the rotate above replaces it.
+ */
+html[data-season="halloween"] .tags-page > ul > li > a:first-child,
+html[data-season="halloween"] .tags-page > ul > li > a:first-child:hover,
+html[data-season="halloween"]
+	.tags-page
+	> ul
+	> li
+	> a:first-child:focus-visible {
+	background-image: none;
+	background-size: auto;
+}
+
+/* ---------------------------------------------------------------------------
+ * 2. Pagination
+ *
+ * Prev/next reuse the chip motif from section 1 so the archive footer speaks the
+ * same language as the tags above it, and the "Pagina X di Y" label — which the
+ * base component leaves entirely unstyled, inheriting body text — is pulled into
+ * the site's kicker voice with a stitched underline.
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] div.pagination nav button {
+	padding: var(--sp-05) var(--sp-2);
+	border: 1px dashed color-mix(in srgb, var(--secondary) 55%, transparent);
+	border-radius: var(--sp-05);
+	background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+	font-family: var(--font-sans);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition:
+		color 150ms ease,
+		background-color 150ms ease,
+		border-color 150ms ease,
+		transform 150ms ease;
+}
+
+html[data-season="halloween"] div.pagination nav button:hover:not(:disabled),
+html[data-season="halloween"]
+	div.pagination
+	nav
+	button:focus-visible:not(:disabled) {
+	border-color: var(--badge-bg);
+	border-style: solid;
+	background-color: var(--badge-bg);
+	color: var(--badge-text);
+	transform: rotate(-1.5deg);
+}
+
+/*
+ * Pagination.css fills *any* hovered button, including the disabled one at the
+ * start and end of the archive. Pin the disabled state above that rule so a dead
+ * end reads as dead rather than lighting up under the cursor.
+ */
+html[data-season="halloween"] div.pagination nav > button:disabled {
+	border-color: var(--border);
+	background-color: transparent;
+	color: var(--text-secodary-content);
+	cursor: not-allowed;
+	transform: none;
+}
+
+/* "Pagina X di Y" as an engraved caption between the two chips. */
+html[data-season="halloween"] div.pagination nav > span {
+	padding-bottom: 2px;
+	border-bottom: 1px dashed color-mix(in srgb, var(--secondary) 55%, transparent);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Dripping wax separators
+ *
+ * The 1px rule between posts stays as the "surface"; three droplets hang off it.
+ * Fixed positions rather than randomised ones — deterministic and cheap.
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] li.post-preview:not(.pinned)::after {
+	content: "";
+	position: absolute;
+	inset: auto 0 -4px 0;
+	height: 5px;
+	pointer-events: none;
+	background-image: radial-gradient(
+			circle 4px at 12px 0,
+			var(--border) 98%,
+			transparent 100%
+		),
+		radial-gradient(circle 3px at 46% 0, var(--border) 98%, transparent 100%),
+		radial-gradient(circle 5px at 80% 0, var(--border) 98%, transparent 100%);
+	background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------------------
+ * 4. The pinned post: candlelit panel with a cobweb in the corner
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] li.post-preview.pinned {
+	/* Candlelight pooling inside the panel. */
+	box-shadow: inset 0 0 40px -12px color-mix(in srgb, var(--primary) 45%, transparent);
+}
+
+html[data-season="halloween"] li.post-preview.pinned::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 64px;
+	height: 64px;
+	opacity: 0.35;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	background-size: 64px 64px;
+}
+
+html.light[data-season="halloween"] li.post-preview.pinned::before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23241a2e' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M64 0L2 0M64 0L6.7 23.7M64 0L20.2 43.8M64 0L40.3 57.3M64 0L64 62'/%3E%3Cpath d='M44 0L45.5 7.7L49.9 14.1L56.3 18.5L64 20'/%3E%3Cpath d='M28 0L30.7 13.8L38.5 25.5L50.2 33.3L64 36'/%3E%3Cpath d='M12 0L16 19.9L27.2 36.8L44.1 48L64 52'/%3E%3C/svg%3E");
+}
+
+html.dark[data-season="halloween"] li.post-preview.pinned::before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23f3ead9' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M64 0L2 0M64 0L6.7 23.7M64 0L20.2 43.8M64 0L40.3 57.3M64 0L64 62'/%3E%3Cpath d='M44 0L45.5 7.7L49.9 14.1L56.3 18.5L64 20'/%3E%3Cpath d='M28 0L30.7 13.8L38.5 25.5L50.2 33.3L64 36'/%3E%3Cpath d='M12 0L16 19.9L27.2 36.8L44.1 48L64 52'/%3E%3C/svg%3E");
+}
+
+/* "in evidenza" glowing like an ember rather than sitting flat. */
+html[data-season="halloween"] li.post-preview.pinned .badge {
+	color: var(--primary);
+	text-shadow: 0 0 10px color-mix(in srgb, var(--primary) 60%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 5. Candlelight on hover
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] li.post-preview > div:last-child h2 {
+	transition:
+		color 200ms ease,
+		text-shadow 200ms ease;
+}
+
+html[data-season="halloween"] li.post-preview > div:last-child > a:hover h2,
+html[data-season="halloween"]
+	li.post-preview
+	> div:last-child
+	> a:focus-visible
+	h2 {
+	color: var(--primary);
+	text-shadow: 0 0 18px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+html[data-season="halloween"]
+	li.post-preview
+	> div:last-child
+	> a:last-child:hover,
+html[data-season="halloween"]
+	li.post-preview
+	> div:last-child
+	> a:last-child:focus-visible {
+	text-shadow: 0 0 14px color-mix(in srgb, var(--primary) 50%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 6. Article body
+ * ------------------------------------------------------------------------ */
+
+/*
+ * The drop cap becomes the page's candle flame. The cap itself is a base-layer
+ * feature (typography.css) rendered in every theme; these two hooks only
+ * recolour it, so the (fiddly) selector lives in exactly one place.
+ */
+html[data-season="halloween"] {
+	--dropcap-color: var(--primary);
+	--dropcap-shadow: 0 0 24px color-mix(in srgb, var(--primary) 45%, transparent);
+}
+
+/* Blockquote accent bar drips and fades out toward the bottom. */
+html[data-season="halloween"] .content blockquote {
+	border-left-color: transparent;
+	background-image: linear-gradient(180deg, var(--primary), transparent);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 3px 100%;
+}
+
+/* Rules fade out at both ends, with wax hanging off the middle. */
+html[data-season="halloween"] .content hr,
+html[data-season="halloween"] .post-slug > hr {
+	position: relative;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		90deg,
+		transparent,
+		var(--border) 20%,
+		var(--border) 80%,
+		transparent
+	);
+}
+
+html[data-season="halloween"] .content hr::after,
+html[data-season="halloween"] .post-slug > hr::after {
+	content: "";
+	position: absolute;
+	inset: auto 0 -4px 0;
+	height: 5px;
+	pointer-events: none;
+	background-image: radial-gradient(
+			circle 3px at 34% 0,
+			var(--border) 98%,
+			transparent 100%
+		),
+		radial-gradient(circle 4px at 58% 0, var(--border) 98%, transparent 100%);
+	background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------------------
+ * 7. Header & footer
+ *
+ * These rules stay hairlines rather than drips: the wax motif belongs to post
+ * separators, and repeating it on every horizontal line would flatten it.
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] .header,
+html[data-season="halloween"] .footer {
+	position: relative;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+
+html[data-season="halloween"] .header::after,
+html[data-season="halloween"] .footer::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1px;
+	pointer-events: none;
+	background-image: linear-gradient(
+		90deg,
+		transparent,
+		var(--border) 15%,
+		var(--border) 85%,
+		transparent
+	);
+}
+
+html[data-season="halloween"] .header::after {
+	bottom: 0;
+}
+
+html[data-season="halloween"] .footer::after {
+	top: 0;
+}
+
+/* The avatar keeps a low jack-o'-lantern glow, which flares on hover. */
+html[data-season="halloween"] .header > div > a img {
+	box-shadow: 0 0 10px -2px color-mix(in srgb, var(--primary) 70%, transparent);
+}
+
+html[data-season="halloween"] .header > div > a img:hover {
+	box-shadow: 0 0 16px 1px color-mix(in srgb, var(--primary) 85%, transparent);
+}
+
+/* Wavy underlines: the cheapest spooky signal in CSS. */
+html[data-season="halloween"] .header > div > nav > a.navitem:hover,
+html[data-season="halloween"] .header > div > nav > a.router-link-active {
+	text-decoration: underline wavy;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+}
+
+/* The 🎃 nav item bobs. Keyframes must restate the scale(1.7) from Header.css,
+   otherwise the animation clobbers it. */
+html[data-season="halloween"] .header > div > nav > a.event-nav {
+	animation: halloween-bob 4s ease-in-out infinite;
+	transform-origin: center;
+}
+
+@keyframes halloween-bob {
+	0%,
+	100% {
+		transform: scale(1.7) translateY(0) rotate(0deg);
+	}
+
+	50% {
+		transform: scale(1.7) translateY(-2px) rotate(-4deg);
+	}
+}
+
+html[data-season="halloween"] .footer > div > .social a:hover {
+	filter: drop-shadow(0 0 6px color-mix(in srgb, var(--primary) 55%, transparent));
+}
+
+/* ---------------------------------------------------------------------------
+ * 8. Global details
+ * ------------------------------------------------------------------------ */
+html[data-season="halloween"] {
+	scrollbar-color: var(--primary) var(--bg-neutral);
+}
+
+html[data-season="halloween"] ::selection {
+	background-color: var(--primary);
+	color: var(--badge-text);
+}
+
+/* Dashed focus ring, matching the stitching on the tag chips. */
+html[data-season="halloween"] :focus-visible {
+	outline: 2px dashed var(--secondary);
+	outline-offset: 3px;
+}
+
+/*
+ * BackToTop.css sets its own :focus-visible outline at the same specificity as
+ * the rule above, which would leave the winner down to file order. Restate it
+ * here so the dashed ring is deterministic.
+ */
+html[data-season="halloween"] .back-to-top:focus-visible {
+	outline: 2px dashed var(--secondary);
+	outline-offset: 3px;
+}
+
+/* Filled badges get stitched too, so they read as siblings of the tag chips. */
+html[data-season="halloween"] .sl-badge {
+	border-style: dashed;
+	border-color: color-mix(in srgb, var(--badge-text) 45%, transparent);
+}
+
+html[data-season="halloween"] .back-to-top {
+	box-shadow: 0 4px 14px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+html[data-season="halloween"] .back-to-top:hover {
+	box-shadow: 0 6px 20px color-mix(in srgb, var(--primary) 60%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 9. Reduced motion
+ *
+ * Only the two moving pieces are dropped. The glows, chips, drips and cobweb are
+ * static, so reduced-motion users still get the full seasonal look.
+ * ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+	html[data-season="halloween"] .header > div > nav > a.event-nav {
+		animation: none;
+	}
+
+	html[data-season="halloween"] li.post-preview > div:last-child > div > a,
+	html[data-season="halloween"] .tags-page > ul > li > a:first-child,
+	html[data-season="halloween"] .post-slug > article header > p a,
+	/* Pagination.css declares `transition: all 0.3s ease` with no guard of its
+	   own, so this is the only place it gets switched off. */
+	html[data-season="halloween"] div.pagination nav button {
+		transition: none;
+	}
+
+	html[data-season="halloween"]
+		li.post-preview
+		> div:last-child
+		> div
+		> a:hover,
+	html[data-season="halloween"]
+		li.post-preview
+		> div:last-child
+		> div
+		> a:focus-visible,
+	html[data-season="halloween"] .tags-page > ul > li > a:first-child:hover,
+	html[data-season="halloween"]
+		.tags-page
+		> ul
+		> li
+		> a:first-child:focus-visible,
+	html[data-season="halloween"] .post-slug > article header > p a:hover,
+	html[data-season="halloween"]
+		.post-slug
+		> article
+		header
+		> p
+		a:focus-visible,
+	html[data-season="halloween"] div.pagination nav button:hover:not(:disabled),
+	html[data-season="halloween"]
+		div.pagination
+		nav
+		button:focus-visible:not(:disabled) {
+		transform: none;
+	}
+}
