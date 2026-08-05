@@ -24,6 +24,11 @@ html.light {
 
 	--badge-bg: var(--primary);
 	--badge-text: #faf8f4;
+
+	--scrollbar-track: var(--bg-neutral);
+	--scrollbar-thumb: color-mix(in srgb, var(--secondary) 40%, var(--bg-neutral));
+	--scrollbar-thumb-hover: color-mix(in srgb, var(--secondary) 70%, var(--bg-neutral));
+	--scrollbar-thumb-active: var(--secondary);
 }
 
 html.dark {
@@ -44,4 +49,58 @@ html.dark {
 
 	--badge-bg: var(--primary);
 	--badge-text: var(--text-dark);
+
+	--scrollbar-track: var(--bg-neutral);
+	--scrollbar-thumb: color-mix(in srgb, var(--secondary) 30%, var(--bg-neutral));
+	--scrollbar-thumb-hover: color-mix(in srgb, var(--secondary) 55%, var(--bg-neutral));
+	--scrollbar-thumb-active: color-mix(in srgb, var(--secondary) 80%, var(--bg-neutral));
+}
+
+/* ---------------------------------------------------------------------------
+ * Scrollbars
+ *
+ * Two implementations of the same look, kept mutually exclusive on purpose:
+ * Chromium ignores the ::-webkit-scrollbar rules as soon as a non-`auto`
+ * `scrollbar-color` is present, so the standard properties are fenced behind
+ * an @supports test and only reach engines without the pseudo-elements
+ * (Firefox).
+ * ------------------------------------------------------------------------ */
+html.light,
+html.dark {
+	--scrollbar-size: 12px;
+}
+
+::-webkit-scrollbar {
+	width: var(--scrollbar-size);
+	height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+	background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-thumb);
+	/* Inset the thumb with a transparent border rather than a track-coloured
+	   one, so it stays correct over any scrollable element's own background. */
+	border: 3px solid transparent;
+	background-clip: padding-box;
+	border-radius: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--scrollbar-thumb-active);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	html.light,
+	html.dark {
+		scrollbar-width: thin;
+		scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+	}
 }
