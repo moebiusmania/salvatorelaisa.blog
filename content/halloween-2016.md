@@ -4,10 +4,10 @@ date: "2016-10-15"
 tags: ["eventi", "halloween"]
 draft: false
 summary: "Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween."
-images: ["https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg"]
+images: ["https://salvatorelaisa.blog/content/content/2016/halloween.webp"]
 ---
 
-![Un mio scatto "hallowiniano" uploadato su Flickr](https://c1.staticflickr.com/7/6111/6307073191_7986800be9_o.jpg)<small>_Un mio scatto "hallowiniano" [uploadato su Flickr](https://www.flickr.com/photos/moebius06/6307073191/)._</small>
+![Un mio scatto "hallowiniano" uploadato su Flickr](/content/2016/halloween.webp)<small>_Un mio scatto "hallowiniano" [uploadato su Flickr](https://www.flickr.com/photos/moebius06/6307073191/)._</small>
 
 Nel mio vecchio blog di tutorial era mia abitudine da alcuni anni pubblicare degli articoli e risorse a tema nel periodo di Halloween. Ora non avrei il tempo (_e forse un po anche la voglia_) di creare materiale ad hoc e scrivere più articoli... ma uno solo di wrap-up di cose interessanti in giro per il web, perché no :) .
 
@@ -36,11 +36,11 @@ Tutorial di grafica, brochures, flyers e vari assets grafici che possono essere 
 
 <!-- - [Coolor palette](https://coolors.co/palettes/popular/halloween) - _raccolta di palette di colori con tag "halloween"_ -->
 
-- [How to Make a Fun and Cute Halloween Pattern Vector!](http://vectips.com/tutorials/make-a-fun-and-cute-halloween-pattern-vector/?utm_content=buffere668d&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+- ~~[How to Make a Fun and Cute Halloween Pattern Vector!](http://vectips.com/tutorials/make-a-fun-and-cute-halloween-pattern-vector/?utm_content=buffere668d&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)~~
 - [Halloween Mask Vectors](https://www.vecteezy.com/vector-art/90968-halloween-mask-vectors)
 - [Spooky Halloween Elements Vector Collection](https://www.vecteezy.com/vector-art/123257-spooky-halloween-elements-vector-collection)
 - [Halloween Brushes](https://www.brusheezy.com/brushes/22368-halloween-brushes)
-- [Halloween Party flyer](https://graphicriver.net/item/halloween/13125056?s_rank=10)
+- ~~[Halloween Party flyer](https://graphicriver.net/item/halloween/13125056?s_rank=10)~~
 - [How to Create a Halloween Themed Icon Pack in Adobe Illustrator](https://design.tutsplus.com/tutorials/how-to-create-a-halloween-themed-icon-pack--cms-27240)
 
 ## Web

@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "jsr:@cliffy/table@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@cross/image@*": "0.4.3",
     "jsr:@std/fmt@~1.0.2": "1.0.10",
     "jsr:@std/yaml@1.0.5": "1.0.5"
   },
@@ -11,6 +12,9 @@
       "dependencies": [
         "jsr:@std/fmt"
       ]
+    },
+    "@cross/image@0.4.3": {
+      "integrity": "35de7afd2b3ea800dad368ff364e735f66b2719dbd053084fa42b0d233e3492c"
     },
     "@std/fmt@1.0.10": {
       "integrity": "90dfba288802ac6de82fb31d0917eb9e4450b9925b954d5e51fc29ac07419db5"

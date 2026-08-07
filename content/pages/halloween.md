@@ -1,5 +1,5 @@
 ---
-title: Halloween 2026 🎃
+title: Ottobre 2026 🎃
 sections:
   - heading: Film & serie TV
     icon: 🎬
@@ -70,6 +70,12 @@ sections:
   - heading: Photo tips
     icon: 📷
     items:
+      - title: Halloween Photography Tips
+        badge: 🇬🇧
+        url: http://digital-photography-school.com/halloween-photography-tips/
+      - title: Tips To Improve Your Scary Images
+        badge: 🇬🇧
+        url: http://www.apogeephoto.com/5-tips-to-improve-your-halloween-photography/
       - title: 5 consigli per fotografare Halloween
         badge: 🇮🇹
         url: https://www.pieropausin.net/5-consigli-fotografare-halloween/
@@ -78,7 +84,7 @@ sections:
         url: https://www.fotonerd.it/foto-halloween-123rf/
 ---
 
-In questa pagina ho voluto raccogliere e condividere vari media/attività con cui mi piace tenere occupato il tempo libero durante il mese di Ottobre, anche detto *Spooktober*...
+In questa pagina ho voluto raccogliere e condividere vari media/attività con cui mi piace passare il tempo nel mese di Ottobre, anche detto *Spooktober*...
 
 <!-- Per il periodo da inizio Ottobre fino ad Halloween 2026 ho voluto dare un tocco un più autunalle e spettrale al mio blog: -->
 
