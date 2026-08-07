@@ -17,23 +17,61 @@ li.post-preview.pinned {
 	background-color: var(--bg-neutral);
 }
 
+/*
+ * The badge is a sibling of <time>, so in the nowrap flex row it would be laid
+ * out *beside* the date and the two collide. Pinned previews use a grid
+ * instead: the badge takes a full-width row of its own above the date/body
+ * columns, which keeps the date and title aligned exactly as in a normal row.
+ */
+li.post-preview.pinned {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-content: start;
+}
+
+/*
+ * The chip is the one element allowed to shout on the page: a filled accent
+ * pill with a diamond marker, so a pinned post reads as deliberate rather than
+ * as a slightly darker row. Sizing stays in the same small-caps key as the
+ * date and tag captions it sits above.
+ */
 li.post-preview.pinned .badge {
 	position: static;
-	display: inline-block;
-	margin-bottom: var(--sp-2);
-	padding: 0;
-	background: none;
-	color: var(--text-secodary-content);
+	grid-column: 1 / -1;
+	justify-self: start;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-1);
+	margin-bottom: var(--sp-3);
+	padding: var(--sp-05) var(--sp-2);
+	border-radius: 999px;
+	background-color: var(--badge-bg);
+	color: var(--badge-text);
 	cursor: help;
-	font-size: 0.75rem;
-	font-weight: 500;
-	letter-spacing: 0.08em;
+	font-size: 0.7rem;
+	font-weight: 600;
+	line-height: 1.7;
+	letter-spacing: 0.12em;
 	text-transform: uppercase;
 }
 
+/* Decorative marker — empty content keeps it out of the accessibility tree. */
+li.post-preview.pinned .badge::before {
+	content: "";
+	flex: none;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color: currentColor;
+	transform: rotate(45deg);
+}
+
 @media (min-width: 768px) {
+	li.post-preview.pinned {
+		grid-template-columns: 14rem 1fr;
+	}
+
 	li.post-preview.pinned > time {
-		width: 14rem;
+		width: auto;
 	}
 }
 
