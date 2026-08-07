@@ -3,8 +3,9 @@ title: Quake, un quarto di secolo dopo
 date: "2021-08-21"
 tags: ["gaming", "retro", "recensione"]
 draft: false
-summary: A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (finalmente) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.
+summary: "[POST AGGIORNATO 07/08/2026] A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (finalmente) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.""
 platforms: [{ label: "PC - MSI Gaming Infinite A", url: "#" }]
+pinned: true
 images:
   [
     "https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg?t=1629409782",
@@ -81,3 +82,13 @@ Per utilizzarle dovreste copiare la cartella della mod all'interno di `[director
 Visto il prezzo (_ed è anche disponibile su Game Pass_) e sopratutto vista l'inedità disponibilità del gioco sulle varie consoles, che aumenta notevolemente il vantaggio del multiplayer (_che come già detto sfrutta il crossplay_), non posso fare altro che citare [il post su UT99](/post/ut99-server-docker): **dateci dentro con i frag!** 🤓
 
 <iframe src="https://store.steampowered.com/widget/2310/" frameborder="0" loading="lazy" class="w-full" height="200"></iframe>
+
+---
+
+## Update 7 Agosto 2026 - 30 anni
+
+Ieri in occasione del Quakecon 2026 che celebra i **30 anni** dall'uscita del gioco, è stato rilasciato un corposo update che include un nuovo episodio sviluppato sempre da _MachineGames_ e una molto apprezzata galleria di concept art e prototipi di livelli giocabili.
+
+<iframe className="w-full" height="450" src="https://www.youtube.com/embed/2Uf4PcgE8gA?si=ximedEG-yfDYE3bk" title="YouTube video player" frameborder="0"  allowfullscreen></iframe> <small><i>Il trailer di annuncio del nuovo episodio di Quake come evento celebrativo per i 30 anni.</i></small>
+
+Tutto questo sempre come update gratuito della nuova re-release di 5 anni fa. Quindi ancora più valore per lo stesso prezzo 🤓. 
