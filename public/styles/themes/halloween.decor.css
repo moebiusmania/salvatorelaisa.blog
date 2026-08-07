@@ -186,10 +186,25 @@ html.dark[data-season="halloween"] li.post-preview.pinned::before {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23f3ead9' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M64 0L2 0M64 0L6.7 23.7M64 0L20.2 43.8M64 0L40.3 57.3M64 0L64 62'/%3E%3Cpath d='M44 0L45.5 7.7L49.9 14.1L56.3 18.5L64 20'/%3E%3Cpath d='M28 0L30.7 13.8L38.5 25.5L50.2 33.3L64 36'/%3E%3Cpath d='M12 0L16 19.9L27.2 36.8L44.1 48L64 52'/%3E%3C/svg%3E");
 }
 
-/* "in evidenza" glowing like an ember rather than sitting flat. */
+/*
+ * "in evidenza" is a filled pill (PostPreview.css), so the ember can't be a
+ * text-shadow on primary-coloured text — that colour is the pill's own fill.
+ * Glow the chip instead, and stitch it askew like the tag chips above.
+ */
 html[data-season="halloween"] li.post-preview.pinned .badge {
-	color: var(--primary);
-	text-shadow: 0 0 10px color-mix(in srgb, var(--primary) 60%, transparent);
+	border: 1px dashed color-mix(in srgb, currentColor 45%, transparent);
+	box-shadow: 0 0 12px color-mix(in srgb, var(--primary) 50%, transparent);
+	transform: rotate(-1.5deg);
+}
+
+/*
+ * Light mode's --badge-text is parchment, and parchment on pumpkin (#fdf3e3 on
+ * #e8590c) is ~3.3:1 — under AA at this size. The theme's ink clears 4.5:1 on
+ * the same fill, and the stitched border above follows it via currentColor.
+ * Dark mode already uses near-black ink on the glowing pumpkin, so it stands.
+ */
+html.light[data-season="halloween"] li.post-preview.pinned .badge {
+	color: var(--text);
 }
 
 /* ---------------------------------------------------------------------------
