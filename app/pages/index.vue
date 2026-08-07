@@ -6,7 +6,7 @@ const nonDrafts: ContentCollectionItem[] = await queryCollection("content")
 	.where("draft", "=", false)
 	.all();
 
-const posts: ContentCollectionItem[] = await queryCollection("content")
+const latest: ContentCollectionItem[] = await queryCollection("content")
 	.where("draft", "=", false)
 	.order("date", "DESC")
 	.limit(5)
@@ -14,9 +14,11 @@ const posts: ContentCollectionItem[] = await queryCollection("content")
 
 const pinnedPost = nonDrafts.find((post) => post.pinned === true);
 
-if (pinnedPost) {
-	posts.unshift(pinnedPost);
-}
+// The pinned post goes first, but it may already be among the latest five:
+// drop it from the tail so it is never rendered twice.
+const posts: ContentCollectionItem[] = pinnedPost
+	? [pinnedPost, ...latest.filter((post) => post.path !== pinnedPost.path)]
+	: latest;
 </script>
 
 <template>
@@ -43,7 +45,7 @@ if (pinnedPost) {
     <p>{{ SITE_DESCRIPTION }}</p>
 
     <PostsList>
-      <PostPreview v-for="post in posts" :post="post" />
+      <PostPreview v-for="post in posts" :key="post.path" :post="post" />
     </PostsList>
 
     <section>
