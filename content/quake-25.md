@@ -50,7 +50,9 @@ Reggetevi forte perché qui non si scherza:
 - gestore di addon "ufficiali", per ora c'è solo Quake64 ma ne rilasceranno altri in futuro
 - la versione originale e inalterata di Quake e i primi 2 mission pack
 - [**Aggiunta di Dicembre 2021**] modalità a ondate (_horde mode_)
-- [**Aggiunta di Dicembre 2021**] un mini-episodio di 3 livelli di nome Honey.
+- [**Aggiunta di Dicembre 2021**] diverse mod di terze parti, scaricabili e attivabili tramite UI.
+- [**Aggiunta di Agosto 2026**] un nuovo quinto Mission Pack "Dawn of the Machine"
+- [**Aggiunta di Agosto 2026**] "ID Vault", una collezione di asset e artwork creati nelle fasi di sviluppo del gioco. Tipo un mini-museo.
 
 ![L'hub introduttivo del nuovo episodio "Dimensions of the machine" aggiunto in questa rerelease.](https://github.com/moebiusmania/blog-assets/blob/master/images/2021/quake-rr-ep6.png?raw=true) <small>_L'hub introduttivo del nuovo episodio "Dimensions of the machine" aggiunto in questa rerelease._</small>
 

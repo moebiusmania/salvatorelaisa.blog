@@ -22,17 +22,12 @@ export const NOW_WATCHING = {
 	// movie: { label: "TODO", imdb: "https://www.imdb.com/title/TODO" },
 };
 
-// export const NOW_EVENT = {
-// 	name: "Festa del Ticino - Pavia",
-// 	url: "https://www.visitpavia.com/en/event/festa-del-ticino-pavia",
-// 	date: "primi di Settembre",
-// };
-
 export const NOW_EVENT = {
-	name: "AD1398 - Volterra",
-	url: "https://volterra1398.it",
-	date: "9 Agosto",
+	name: "Festa del Ticino - Pavia",
+	url: "https://www.visitpavia.com/it/evento/festa-del-ticino-2026-pavia",
+	date: "4-6 Settembre",
 };
+
 
 // --- weather ------------------------------------------------------------------
 
