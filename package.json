@@ -32,8 +32,8 @@
     "@nuxt/test-utils": "4.1.0",
     "@vue/test-utils": "2.4.11",
     "better-sqlite3": "12.11.1",
-    "happy-dom": "20.11.1",
-    "nuxt": "4.5.1",
+    "happy-dom": "20.11.2",
+    "nuxt": "4.5.2",
     "vitest": "4.1.10"
   }
 }

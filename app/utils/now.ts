@@ -18,8 +18,8 @@ export const NOW_WEATHER_LOCATION = "Milano";
 export const NOW_GITHUB_USER = "moebiusmania";
 
 export const NOW_WATCHING = {
-	series: { label: "Spider Noir", imdb: "https://www.imdb.com/title/tt30460310/" },
-	// movie: { label: "TODO", imdb: "https://www.imdb.com/title/TODO" },
+	series: { label: "X-men '97", imdb: "https://www.imdb.com/title/tt16026746/" },
+	movie: { label: "The Odyssey", imdb: "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_odyssey" },
 };
 
 export const NOW_EVENT = {

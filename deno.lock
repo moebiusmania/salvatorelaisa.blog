@@ -37,8 +37,8 @@
         "npm:@nuxt/test-utils@4.1.0",
         "npm:@vue/test-utils@2.4.11",
         "npm:better-sqlite3@12.11.1",
-        "npm:happy-dom@20.11.1",
-        "npm:nuxt@4.5.1",
+        "npm:happy-dom@20.11.2",
+        "npm:nuxt@4.5.2",
         "npm:vitest@4.1.10"
       ]
     }
