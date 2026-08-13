@@ -1,0 +1,65 @@
+.books-page > h1 {
+	color: var(--text-base-content);
+}
+
+.books-page > p {
+	max-width: 40rem;
+	margin-top: var(--sp-3);
+	font-size: 1.125rem;
+	line-height: 1.7;
+	color: var(--text);
+}
+
+.books-page > p:first-of-type {
+	margin-top: var(--sp-4);
+}
+
+/* The shelf.
+ *
+ * Wrapping is plain flex-wrap — given the newest-first order, a full row simply
+ * pushes the older books onto the next shelf. The planks are a single repeating
+ * gradient on the container, which only lines up if every row is exactly one
+ * plank pitch tall; that is what the fixed-height slots below are for. A flex
+ * row otherwise sizes to its tallest item and would drift out of step with the
+ * gradient after the first row. */
+.shelf {
+	/* Sized so the longest realistic title fits along the shortest spine
+	   without being cut — see SPINE_HEIGHTS in app/utils/books.ts. */
+	--shelf-row: 20rem;
+	--shelf-plank: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	/* Rows must tile exactly against the gradient: spacing lives on the slots. */
+	gap: 0;
+	margin: var(--sp-5) 0 0;
+	padding: 0 var(--sp-2);
+	list-style: none;
+	border: 1px solid var(--border);
+	border-radius: var(--sp-05);
+	background-color: var(--bg-neutral);
+	background-image: repeating-linear-gradient(
+		to bottom,
+		transparent 0 calc(var(--shelf-row) - var(--shelf-plank)),
+		var(--border) calc(var(--shelf-row) - var(--shelf-plank)) var(--shelf-row)
+	);
+}
+
+.shelf__slot {
+	display: flex;
+	align-items: flex-end;
+	height: var(--shelf-row);
+	padding: 0 2px var(--shelf-plank);
+}
+
+/* Only the shelf's own padding shrinks on small screens. The spines keep their
+   size: a book has to stay tall and thick enough to hold its title and author
+   in full, and that requirement does not change with the viewport. */
+@media (max-width: 767px) {
+	.shelf {
+		--shelf-plank: 8px;
+
+		padding: 0 var(--sp-1);
+	}
+}

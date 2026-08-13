@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BookSpine > matches snapshot 1`] = `"<button class="book-spine" type="button" style="--book-color: #a5491a; --book-lit: #aa5428; --book-shade: #873c15; --book-height: 93%; --book-width: 2.6rem; --book-ink: #f6f2ea;" title="Dune — Frank Herbert"><span class="book-spine__text"><span class="book-spine__title">Dune</span><span class="book-spine__author">Frank Herbert</span></span></button>"`;

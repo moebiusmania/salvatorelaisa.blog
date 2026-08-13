@@ -1,0 +1,107 @@
+/* One book seen from the side. Size and colour arrive as custom properties from
+   `spineStyle()` in app/utils/books.ts.
+
+   The depth here is tonal, not skeuomorphic. A classical binding is drawn with
+   grey and white laid over the colour to fake a moulded, rounded surface; this
+   sweep is mixed from the book's own colour instead, so the spine turns like a
+   solid object while staying a flat-ish graphic panel. The lighter end sits on
+   the left, where the text is, giving that edge more presence. */
+.book-spine {
+	position: relative;
+	width: var(--book-width);
+	height: var(--book-height);
+	padding: var(--sp-1) var(--sp-05);
+	border: 0;
+	border-radius: 2px;
+	color: var(--book-ink);
+	font-family: inherit;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: var(--book-color);
+	background-image: linear-gradient(
+		to right,
+		var(--book-lit),
+		var(--book-color) 45%,
+		var(--book-shade)
+	);
+	box-shadow:
+		/* Crisp lit and shaded edges. These sit in the 4px padding, clear of the
+		   text, so they add definition without touching its contrast — and the
+		   shaded one is what separates two same-coloured neighbours. */
+		inset 1px 0 0 rgba(255, 255, 255, 0.14),
+		inset -1px 0 0 rgba(0, 0, 0, 0.25),
+		/* Where the book meets the plank. */
+		inset 0 -2px 0 rgba(0, 0, 0, 0.16),
+		/* Soft ambient elevation rather than a hard drop shadow. */
+		0 3px 8px -2px rgba(0, 0, 0, 0.35);
+	transition:
+		transform 200ms ease,
+		box-shadow 200ms ease;
+}
+
+/* Rotation lives on the inner span, not the button, so the button's own
+   transform stays free for the hover lift.
+   In this writing mode the inline axis runs along the spine's length, so a
+   `column` flex direction stacks the two items across its thickness — giving
+   title and author a line each, with the spine's full length available to
+   both. Sharing one line would make them compete for it and truncate.
+
+   Both axes start-align, which after the 180° rotation puts the text in the
+   bottom-left corner reading upward: `justify-content` runs along the block
+   axis (across the thickness, so flex-start lands on the left edge) and
+   `align-items` along the inline axis (the length, so flex-start is the
+   bottom). Centring on either axis would float the text mid-spine. */
+.book-spine__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--sp-05);
+	width: 100%;
+	height: 100%;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+/* No ellipsis and no nowrap on either line: both are meant to be read in full,
+   and the height/width tiers in app/utils/books.ts are sized so they fit. */
+.book-spine__title {
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+}
+
+.book-spine__author {
+	font-size: 0.62rem;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	opacity: 0.78;
+}
+
+/* Pulled half out of the shelf: the elevation deepens with the lift, keeping
+   the contact line so the book still reads as a solid slab. */
+.book-spine:hover {
+	transform: translateY(-10px);
+	box-shadow:
+		inset 1px 0 0 rgba(255, 255, 255, 0.14),
+		inset -1px 0 0 rgba(0, 0, 0, 0.25),
+		inset 0 -2px 0 rgba(0, 0, 0, 0.16),
+		0 14px 22px -8px rgba(0, 0, 0, 0.5);
+}
+
+.book-spine:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 3px;
+	transform: translateY(-10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.book-spine,
+	.book-spine:hover,
+	.book-spine:focus-visible {
+		transform: none;
+		transition: none;
+	}
+}

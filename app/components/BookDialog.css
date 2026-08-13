@@ -1,0 +1,95 @@
+.book-dialog {
+	position: relative;
+	width: min(36rem, calc(100vw - var(--sp-4)));
+	margin: auto;
+	padding: var(--sp-4);
+	border: 1px solid var(--border);
+	border-radius: var(--sp-05);
+	background-color: var(--bg-neutral);
+	color: var(--text);
+	box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.6);
+}
+
+.book-dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.55);
+	backdrop-filter: blur(2px);
+}
+
+.book-dialog__close {
+	position: absolute;
+	top: var(--sp-2);
+	right: var(--sp-2);
+	width: var(--sp-4);
+	height: var(--sp-4);
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	background-color: transparent;
+	color: var(--text-secodary-content);
+	font-size: 0.9rem;
+	line-height: 1;
+	cursor: pointer;
+	transition: color 150ms ease, border-color 150ms ease;
+}
+
+.book-dialog__close:hover {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+.book-dialog > h2 {
+	margin: 0 var(--sp-5) 0 0;
+	font-size: 1.5rem;
+	line-height: 1.25;
+	color: var(--text-base-content);
+}
+
+/* Same editorial kicker treatment as the device cards. */
+.book-dialog__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--sp-1);
+	margin: var(--sp-1) 0 0;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
+}
+
+.book-dialog__meta > span + span::before {
+	content: "·";
+	margin-right: var(--sp-1);
+}
+
+.book-dialog__link {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--sp-1);
+	margin-top: var(--sp-2);
+	color: var(--primary);
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+.book-dialog__link:hover {
+	text-decoration: underline;
+}
+
+.book-dialog__link svg {
+	width: 0.75rem;
+	height: 0.75rem;
+}
+
+.book-dialog > hr {
+	margin: var(--sp-3) 0;
+	border: 0;
+	border-top: 1px solid var(--border);
+}
+
+.book-dialog p {
+	line-height: 1.7;
+}
+
+.book-dialog p:last-child {
+	margin-bottom: 0;
+}

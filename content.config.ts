@@ -57,5 +57,23 @@ export default defineContentConfig({
 				draft: z.boolean().optional(),
 			}),
 		}),
+		books: defineCollection({
+			type: "page",
+			source: "**/books/*.md",
+			schema: z.object({
+				title: z.string(),
+				author: z.string(),
+				language: z.string(),
+				// String rather than a date so partial values like "2023-06" are
+				// allowed, same trade-off as `purchase` on devices.
+				read: z.string().optional(),
+				url: z.string().optional(),
+				// Overrides for the spine look, which is otherwise derived from a
+				// hash of the file path. See app/utils/books.ts.
+				color: z.string().optional(),
+				height: z.string().optional(),
+				draft: z.boolean().optional(),
+			}),
+		}),
 	},
 });
