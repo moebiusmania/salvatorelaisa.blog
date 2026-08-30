@@ -32,12 +32,12 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:@nuxt/content@3.15.2",
+        "npm:@nuxt/content@3.16.0",
         "npm:@nuxt/image@2.1.0",
-        "npm:@nuxt/test-utils@4.1.0",
-        "npm:@vue/test-utils@2.4.11",
+        "npm:@nuxt/test-utils@4.2.0",
+        "npm:@vue/test-utils@2.5.0",
         "npm:better-sqlite3@12.11.1",
-        "npm:happy-dom@20.11.6",
+        "npm:happy-dom@20.12.0",
         "npm:nuxt@4.5.2",
         "npm:vitest@4.1.11"
       ]
