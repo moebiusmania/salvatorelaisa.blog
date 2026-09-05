@@ -1,13 +1,21 @@
-import { describe, it, expect, beforeEach, vi } from "vitest";
+import { describe, it, expect, beforeAll, beforeEach, vi } from "vitest";
 import { mockNuxtImport } from "@nuxt/test-utils/runtime";
-import {
-	weatherCodeToIcon,
-	getWeather,
-	getLatestRepos,
-} from "../now";
 
 const fetchMock = vi.hoisted(() => vi.fn());
 mockNuxtImport("$fetch", () => fetchMock);
+
+// Test files share a worker (`isolate: false` in vitest.config.ts), so `../now`
+// may already sit in the module registry — pulled in by one of the `now/*`
+// component tests — bound to the real auto-imported `$fetch`. Resetting the
+// registry and importing it here forces a fresh evaluation against the mock.
+let weatherCodeToIcon: typeof import("../now").weatherCodeToIcon;
+let getWeather: typeof import("../now").getWeather;
+let getLatestRepos: typeof import("../now").getLatestRepos;
+
+beforeAll(async () => {
+	vi.resetModules();
+	({ weatherCodeToIcon, getWeather, getLatestRepos } = await import("../now"));
+});
 
 describe("weatherCodeToIcon", () => {
 	it("maps representative WMO codes to the expected Italian labels", () => {

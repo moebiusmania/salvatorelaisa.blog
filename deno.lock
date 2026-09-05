@@ -37,10 +37,18 @@
         "npm:@nuxt/test-utils@4.2.0",
         "npm:@vue/test-utils@2.5.0",
         "npm:better-sqlite3@12.11.1",
-        "npm:happy-dom@20.12.0",
+        "npm:happy-dom@20.14.0",
         "npm:nuxt@4.5.2",
-        "npm:vitest@4.1.11"
-      ]
+        "npm:vitest@5.0.0"
+      ],
+      "overrides": {
+        "@nuxt/test-utils": {
+          "vitest": "5.0.0"
+        },
+        "vitest-environment-nuxt": {
+          "vitest": "5.0.0"
+        }
+      }
     }
   }
 }
