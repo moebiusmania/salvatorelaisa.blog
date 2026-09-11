@@ -1,0 +1,81 @@
+.about-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--sp-3);
+	margin: var(--sp-4) 0 var(--sp-6);
+	text-align: center;
+}
+
+/* Poster-like rectangular portrait. */
+.about-hero__portrait {
+	flex: none;
+	width: 180px;
+	aspect-ratio: 3 / 4;
+	margin: 0;
+	border-radius: var(--sp-1);
+	overflow: hidden;
+	border: 1px solid var(--border);
+	background-color: var(--bg-neutral);
+	box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero__portrait img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-hero__portrait.is-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: dashed;
+	box-shadow: none;
+}
+
+.about-hero__placeholder {
+	font-size: 3rem;
+	line-height: 1;
+	opacity: 0.7;
+}
+
+.about-hero__body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-1);
+}
+
+.about-hero__role {
+	margin: 0;
+	color: var(--text-secodary-content);
+}
+
+.about-hero__lead {
+	margin-top: var(--sp-1);
+	font-size: 1.125rem;
+	line-height: 1.7;
+	color: var(--text-base-content);
+}
+
+.about-hero__lead :first-child {
+	margin-top: 0;
+}
+
+.about-hero__lead :last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.about-hero {
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+		gap: var(--sp-5);
+	}
+
+	.about-hero__portrait {
+		width: 220px;
+	}
+}
