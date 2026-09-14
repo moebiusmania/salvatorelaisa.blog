@@ -2,6 +2,8 @@
 
 exports[`Pagination > renders correctly 1`] = `
 "<div class="pagination">
-  <nav><a href="/post/page/1"><button aria-label="precedente">← Precedente</button></a><span>Pagina 2 di 5</span><button aria-label="successivo" disabled=""> Successivo → </button></nav>
+  <nav>
+    <routerlink to="/post/page/1"><button aria-label="precedente">← Precedente</button></routerlink><span>Pagina 2 di 5</span><button aria-label="successivo" disabled=""> Successivo → </button>
+  </nav>
 </div>"
 `;

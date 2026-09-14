@@ -29,10 +29,9 @@
   "devDependencies": {
     "@nuxt/content": "3.16.0",
     "@nuxt/image": "2.1.0",
-    "@nuxt/test-utils": "4.2.0",
+    "@nuxt/test-utils": "4.3.2",
     "@vue/test-utils": "2.5.0",
-    "better-sqlite3": "12.11.1",
-    "happy-dom": "20.14.0",
+    "happy-dom": "20.14.5",
     "nuxt": "4.5.2",
     "vitest": "5.0.0"
   },
