@@ -1,0 +1,108 @@
+# Kick off Spooktober 2026: switch the site to the halloween theme, publish the
+# related post, commit the changes on main and trigger a deploy
+
+name: Spooktober 2026
+
+on:
+  schedule:
+    # GitHub cron runs in UTC: 22:01 UTC on Sep 30 is 00:01 Europe/Rome (CEST) on Oct 1.
+    # Cron has no year field, the `guard` job below prevents runs in later years.
+    - cron: "1 22 30 9 *"
+  # Manual fallback, in case the scheduled run is delayed or skipped
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: spooktober-2026
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+
+    steps:
+      - name: 📅 Check the year
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=Europe/Rome date +%Y)" != "2026" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  enable-halloween:
+    needs: guard
+    if: needs.guard.outputs.run == 'true'
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [26.1.0]
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: 💻 Use Deno v2
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x # Run with latest stable Deno.
+          cache: true
+
+      - name: 💻 Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: 🎃 Set halloween theme & publish post
+        run: |
+          sed -i -E 's/^export const CURRENT_THEME = "[a-z]+" as SeasonTheme;$/export const CURRENT_THEME = "halloween" as SeasonTheme;/' app/utils/config.ts
+          sed -i -E '0,/^draft: (true|false)$/s//draft: false/' content/spooktober-reloaded.md
+
+          # Fail loudly if the files drifted and the replacements did not apply
+          grep -qx 'export const CURRENT_THEME = "halloween" as SeasonTheme;' app/utils/config.ts
+          grep -qx 'draft: false' content/spooktober-reloaded.md
+
+      - name: 📦 Install dependencies
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      # The seasonal nav item and emoji change the Header/Footer snapshots,
+      # without this the deploy would fail on the unit tests
+      - name: 📸 Update seasonal snapshots
+        # `--update` accepts an optional value, keep it after the file filters
+        run: npx vitest run app/components/__tests__/Header.test.ts app/components/__tests__/Footer.test.ts --update
+
+      - name: 📝 Run unit tests
+        run: npm run test:ci
+
+      - name: 💾 Commit & push on main
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/utils/config.ts content/spooktober-reloaded.md app/components/__tests__/__snapshots__
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit, halloween theme already enabled"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore: enable halloween theme and publish spooktober-reloaded"
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows,
+      # so the deploy has to be dispatched explicitly
+      - name: 🚀 Trigger deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
