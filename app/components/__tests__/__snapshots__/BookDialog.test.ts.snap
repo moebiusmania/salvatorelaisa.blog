@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BookDialog > matches snapshot with a book 1`] = `
+"<dialog class="book-dialog"><button class="book-dialog__close" type="button" aria-label="Chiudi"> ✕ </button>
+  <h2>Dune</h2>
+  <p class="book-dialog__meta"><span>Frank Herbert</span><span>EN</span><span>Letto: 20/09/2022</span></p><a class="book-dialog__link" href="https://example.com/dune" target="_blank" rel="noopener"> Scheda del libro <icons-external-stub></icons-external-stub></a>
+  <hr>
+  <content-renderer-stub excerpt="false" tag="div" components="[object Object]" data="[object Object]" unwrap="false" value="[object Object]"></content-renderer-stub>
+</dialog>"
+`;
