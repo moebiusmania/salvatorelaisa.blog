@@ -5,6 +5,8 @@ name: Build & deploy
 on:
   push:
     branches: [main]
+  # Allows other workflows (e.g. scheduled ones) to trigger a deploy
+  workflow_dispatch:
 
 permissions:
   contents: read
