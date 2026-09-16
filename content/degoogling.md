@@ -58,7 +58,7 @@ Non ci ho messo molto a scegliere la piattaforma di Proton come rimpiazzo princi
 
 Non sono così illuso da pensare di potermi liberare al 100% della morsa di Google, ci sono alcuni servizi che so che **non lascerò mai o ci vorrà molto tempo prima di trovare un'alternativa che mi convinca**:
 
-- **Google Photos**: sto ancora valutando delle alternative, sia self hosted che servizi, però avendo degli album condivisi con altre persone, di sicuro alcune foto resteranno li.
+- **Google Photos**: ~~sto ancora valutando delle alternative, sia self hosted che servizi,~~ però avendo degli album condivisi con altre persone, di sicuro alcune foto resteranno li. **Update Settembre 2026:** alla fine ho optato per l'utilizzo di [Immich](https://immich.app/), un _clone_ open source di Google Photos, self hostato su un Raspberry Pi.
 
 - **Youtube**: ad oggi non esiste un vero rivale di Youtube, è di fatto un monopolio. E questo rende praticamente impossibile migrare verso un'altra piattaforma al momento.
 

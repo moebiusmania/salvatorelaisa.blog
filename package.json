@@ -30,10 +30,10 @@
     "@nuxt/content": "3.16.0",
     "@nuxt/image": "2.1.0",
     "@nuxt/test-utils": "4.3.2",
-    "@vue/test-utils": "2.5.0",
+    "@vue/test-utils": "2.5.1",
     "happy-dom": "20.14.5",
     "nuxt": "4.5.2",
-    "vitest": "5.0.0"
+    "vitest": "5.0.1"
   },
   "overrides": {
     "@nuxt/test-utils": {
