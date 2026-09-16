@@ -18,14 +18,14 @@ export const NOW_WEATHER_LOCATION = "Milano";
 export const NOW_GITHUB_USER = "moebiusmania";
 
 export const NOW_WATCHING = {
-	series: { label: "X-men '97", imdb: "https://www.imdb.com/title/tt16026746/" },
-	movie: { label: "The Odyssey", imdb: "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_odyssey" },
+	series: { label: "The Mighty Nein", imdb: "https://www.imdb.com/title/tt26453092" },
+	//movie: { label: "The Odyssey", imdb: "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_odyssey" },
 };
 
 export const NOW_EVENT = {
-	name: "Festa del Ticino - Pavia",
-	url: "https://www.visitpavia.com/it/evento/festa-del-ticino-2026-pavia",
-	date: "4-6 Settembre",
+	name: "Festival Filosofia - Modena",
+	url: "https://www.festivalfilosofia.it/",
+	date: "18-20 Settembre",
 };
 
 
