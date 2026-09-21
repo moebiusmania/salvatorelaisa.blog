@@ -6,6 +6,7 @@
     "pregenerate": "npm run fonts:download",
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:host": "nuxt dev --host",
     "generate": "nuxt generate",
     "postgenerate": "npm run generate:rss",
     "generate:rss": "deno run --allow-read --allow-write scripts/generate-rss.ts",
@@ -28,7 +29,6 @@
   },
   "devDependencies": {
     "@nuxt/content": "3.16.0",
-    "@nuxt/image": "2.1.0",
     "@nuxt/test-utils": "4.3.2",
     "@vue/test-utils": "2.5.1",
     "happy-dom": "20.14.5",

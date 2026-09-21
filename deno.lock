@@ -10,7 +10,6 @@
     "jsr:@std/text@~1.0.7": "1.0.19",
     "jsr:@std/yaml@1.0.5": "1.0.5",
     "npm:@nuxt/content@3.16.0": "3.16.0_rolldown@1.2.8_vite@8.3.0__esbuild@0.28.2__jiti@2.7.0",
-    "npm:@nuxt/image@2.1.0": "2.1.0_rolldown@1.2.8",
     "npm:@nuxt/test-utils@4.3.2": "4.3.2_@vue+test-utils@2.5.0__@vue+compiler-dom@3.5.42__vue@3.5.42_happy-dom@20.14.5_vitest@5.0.0__happy-dom@20.14.5__vite@8.3.0___esbuild@0.28.2___jiti@2.7.0_@vue+compiler-dom@3.5.42_rolldown@1.2.8_vite@8.3.0__esbuild@0.28.2__jiti@2.7.0",
     "npm:happy-dom@20.14.5": "20.14.5",
     "npm:nuxt@4.5.2": "4.5.2_rolldown@1.2.8_vite@8.3.0__esbuild@0.28.2__jiti@2.7.0"
@@ -6442,7 +6441,6 @@
     "packageJson": {
       "dependencies": [
         "npm:@nuxt/content@3.16.0",
-        "npm:@nuxt/image@2.1.0",
         "npm:@nuxt/test-utils@4.3.2",
         "npm:@vue/test-utils@2.5.1",
         "npm:happy-dom@20.14.5",

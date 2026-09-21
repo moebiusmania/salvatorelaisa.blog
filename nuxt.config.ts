@@ -11,7 +11,11 @@ export default defineNuxtConfig({
 		pageTransition: false,
 	},
 
-	modules: ["@nuxt/content", "@nuxt/image", "@nuxt/test-utils/module"],
+	modules: [
+		"@nuxt/content",
+		// Only needed by Vitest / devtools; skipping it speeds up `nuxt generate`.
+		...(process.env.NODE_ENV === "production" ? [] : ["@nuxt/test-utils/module"]),
+	],
 
 	experimental: {
 		componentIslands: true,
