@@ -15,10 +15,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [26.9.0]
-
     steps:
       - uses: actions/checkout@v6
 
@@ -28,17 +24,8 @@ jobs:
           deno-version: v2.x # Run with latest stable Deno.
           cache: true
 
-      - name: 💻 Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
-
-      - name: 📦 Install dependencies
-        run: npm ci --prefer-offline --no-audit --no-fund
-
-      - name: 📝 Run unit tests
-        run: npm run test:ci
+      - name: 📝 Run tests
+        run: deno task test
 
       - name: 🏗️ Build static website
-        run: npm run generate
+        run: deno task build

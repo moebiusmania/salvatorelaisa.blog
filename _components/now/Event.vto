@@ -1,0 +1,14 @@
+<article class="now-card now-event{{ className ? ` ${className}` : '' }}">
+  <p class="now-card-kicker">Prossimo evento</p>
+  <h2>
+    <a href="{{ now.NOW_EVENT.url }}" target="_blank" rel="noopener">
+      {{ now.NOW_EVENT.name }}
+      {{ comp.icons.External() }}
+    </a>
+  </h2>
+  {{- if now.NOW_EVENT.date }}
+  <p class="now-event-date">
+    <span aria-label="calendario" role="img">📅</span> {{ now.NOW_EVENT.date }}
+  </p>
+  {{- /if }}
+</article>

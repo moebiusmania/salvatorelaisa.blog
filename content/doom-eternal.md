@@ -1,6 +1,6 @@
 ---
 title: Doom Eternal
-date: "2020-04-3"
+date: "2020-04-03"
 tags: ["gaming", "recensione"]
 draft: true
 summary: "E dopo 2 anni di attesa da quando ho visto la preview alla QuakeCon 2018, ecco che finalmente esce Doom Eternal! In realtà è uscito qualche settimana fa ma ho preferito scrivere questo post dopo aver finito la mia prima run 😈."

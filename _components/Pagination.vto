@@ -1,0 +1,27 @@
+{{- set prev = page - 1 }}
+{{- set next = page + 1 }}
+<div class="pagination">
+  <nav>
+    {{- if prev > 0 }}
+    <a href="/post/page/{{ prev }}">
+      <button aria-label="precedente">&larr; Precedente</button>
+    </a>
+    {{- else }}
+    <button aria-label="precedente" disabled>
+      &larr; Precedente
+    </button>
+    {{- /if }}
+
+    <span>Pagina {{ page }} di {{ totalPages }}</span>
+
+    {{- if next <= totalPages }}
+    <a href="/post/page/{{ next }}">
+      <button aria-label="successivo">Successivo &rarr;</button>
+    </a>
+    {{- else }}
+    <button aria-label="successivo" disabled>
+      Successivo &rarr;
+    </button>
+    {{- /if }}
+  </nav>
+</div>

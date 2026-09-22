@@ -1,0 +1,82 @@
+---
+layout: layouts/base.vto
+---
+<div class="post-page" x-data="postSearch">
+  <h1>Tutti gli articoli</h1>
+
+  <form class="search" @submit.prevent>
+    <div>
+      <input aria-label="" type="text" x-model="query" @focus="load" @input="load"
+        disabled placeholder="Ricerca disattivata, JavaScript non disponibile"
+        :disabled="!enabled"
+        :placeholder="enabled ? 'Cerca tra gli articoli (per titolo)' : 'Ricerca disattivata, JavaScript non disponibile'" />
+      <button
+        x-show="query.length !== 0"
+        x-transition:enter="clear-enter-active"
+        x-transition:enter-start="clear-enter-from"
+        x-transition:enter-end="clear-enter-to"
+        x-transition:leave="clear-leave-active"
+        x-transition:leave-start="clear-leave-from"
+        x-transition:leave-end="clear-leave-to"
+        style="display: none"
+        type="button"
+        @click="clear"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </form>
+  <p x-show="query.length !== 0" style="display: none">
+    Risultato ricerca:
+    <strong x-text="results.length"></strong>
+    articoli
+  </p>
+
+  {{# Build-time list of this page, shown while the search box is empty. #}}
+  <div x-show="query.length === 0">
+    {{ comp PostsList }}
+      {{- for index, post of results }}
+      {{ comp.PostPreview({ post, style: `--i: ${index}` }) }}
+      {{- /for }}
+    {{ /comp }}
+    {{ comp.Pagination({ page: pagination.page, totalPages: pagination.totalPages }) }}
+  </div>
+
+  {{# Search results, rendered client side from /search.json. Same markup as
+      _components/PostPreview.vto. #}}
+  <template x-if="query.length !== 0">
+    <ul class="posts-list">
+      <template x-for="(post, index) in results" :key="post.href">
+        <li class="post-preview" :class="{ pinned: post.pinned }" :style="{ '--i': index }">
+          <template x-if="post.pinned">
+            <span class="badge" title="{{ config.PINNED_POST_DESCRIPTION }}">in evidenza</span>
+          </template>
+          <time>
+            <span x-text="post.date"></span>
+          </time>
+          <div>
+            <a :href="post.href">
+              <h2 :style="{ 'view-transition-name': `post-title-${post.slug}` }" x-text="post.title"></h2>
+            </a>
+            <div>
+              <template x-for="tag in post.tags" :key="tag">
+                <a :href="`/tags/${tag}`" x-text="tag"></a>
+              </template>
+            </div>
+            <p x-text="post.summary"></p>
+            <a :href="post.href">
+              <span x-text="`Continua a leggere (${post.readingTime}) minuti`"></span>
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </template>
+    </ul>
+  </template>
+</div>

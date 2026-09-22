@@ -1,0 +1,10 @@
+---
+url: /events/xmas/
+---
+{{- set entry = contentPages.xmas }}
+<article class="content xmas-page">
+  <h1>{{ entry.title }}</h1>
+  <div>{{ entry.body |> md }}</div>
+  <hr />
+</article>
+{{ comp.Tip() }}

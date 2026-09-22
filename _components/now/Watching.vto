@@ -1,0 +1,20 @@
+{{# Only render an entry when its config node is present, so the widget
+    gracefully shows just the series, just the movie, or nothing at all. #}}
+{{- set items = [
+  { type: "Serie TV", ...now.NOW_WATCHING.series },
+  { type: "Film", ...now.NOW_WATCHING.movie },
+].filter((item) => item.label && item.imdb) }}
+<article class="now-card now-watching{{ className ? ` ${className}` : '' }}">
+  <p class="now-card-kicker">Cosa sto guardando</p>
+  <ul>
+    {{- for item of items }}
+    <li>
+      <span class="now-watching-type">{{ item.type }}</span>
+      <a href="{{ item.imdb }}" target="_blank" rel="noopener">
+        {{ item.label }}
+        {{ comp.icons.External() }}
+      </a>
+    </li>
+    {{- /for }}
+  </ul>
+</article>

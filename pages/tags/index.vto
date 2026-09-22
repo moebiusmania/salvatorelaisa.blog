@@ -1,0 +1,21 @@
+---
+url: /tags/
+---
+{{- set posts = search.pages("type=post") }}
+{{- set tags = search.values("tags", "type=post")
+  .map((label) => ({ label, items: posts.filter((post) => post.tags.includes(label)).length }))
+  .sort((a, b) => b.items - a.items) }}
+<section class="tags-page">
+  <hgroup>
+    <h1>Tags</h1>
+  </hgroup>
+  <ul>
+    {{- for tag of tags }}
+    <li>
+      <a href="/tags/{{ tag.label }}">
+        {{ tag.label }}</a>
+      <a href="/tags/{{ tag.label }}">({{ tag.items }})</a>
+    </li>
+    {{- /for }}
+  </ul>
+</section>

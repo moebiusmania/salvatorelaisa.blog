@@ -1,0 +1,16 @@
+---
+url: /post/year/
+---
+{{- set years = Array.from({ length: new Date().getFullYear() - 2010 + 1 }, (_, i) => String(2010 + i)) }}
+<section class="post-year-index">
+  <div>
+    <h1>Anni</h1>
+  </div>
+  <div>
+    {{- for year of years }}
+    <div>
+      <a href="/post/year/{{ year }}">{{ year }}</a>
+    </div>
+    {{- /for }}
+  </div>
+</section>

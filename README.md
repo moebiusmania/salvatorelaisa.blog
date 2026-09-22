@@ -1,6 +1,6 @@
 # salvatorelaisa.blog
 
-Personal blog built on top of the [Nuxt](https://nuxt.com/) framework and exported as a static website.
+Personal blog built with [Lume](https://lume.land/), the static site generator for [Deno](https://deno.com/), and exported as a static website.
 
 Hosting and Continous Deployment is based on Github Pages & Actions.
 
@@ -8,23 +8,22 @@ The contents are **my own personal thoughts and opinions**. Images and videos th
 
 ## 🛠️ Built on top of
 
-> **NOTE:** I'm starting a slow migration to a full Deno stack, the stack below is still valid but some packages and scripts are being moved to Deno ones.
+The whole project runs on **Deno** only: no `package.json`, no `node_modules`.
 
-- [Nuxt 3](https://nuxt.com/) - main application framework based on [Vue 3](https://vuejs.org/)
-  - [@nuxt/content](https://content.nuxtjs.org/) - module to easily integrate content from `markdown` files
-  - [@nuxt/fonts](https://nuxt.com/modules/fonts) - module to easily integrate external fonts from [Bunny Fonts 🇪🇺](https://fonts.bunny.net/)
-- [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, leveraging [Vue's CSS Module](https://vuejs.org/api/sfc-css-features.html#css-modules) support
-
-I'm also integrating with [Nuxt Studio](https://nuxt.studio/) to play a bit with **visual editing**, which comes pretty handy when editing/writing content from devices like the iPad Mini.
+- [Lume 3](https://lume.land/) - static site generator, turning the `markdown` content into pages
+  - [Vento](https://vento.js.org/) - template engine for layouts and components
+- [Alpine.js](https://alpinejs.dev/) - the few interactive bits (theme switcher, search, books, `/now` widgets…)
+- [vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - every style has been written using regular CSS syntax, one file per component
+- self-hosted fonts from [Bunny Fonts 🇪🇺](https://fonts.bunny.net/) (`deno task fonts:download`)
 
 ## ⚙️ Customizations
 
-I've added some small new features over the starting Nuxt template to handle some more blog-specific functionalities
+I've added some small new features on top of Lume to handle some more blog-specific functionalities
 
 - light/dark mode switcher (_client side_)
 - live textual search for posts (_by title only_)
 - pinned posts (_just add `pinned: true` in the frontmatter_)
-- "comments" to post through [Threads](https://www.threads.net/) or check the source markdown file on Github
+- "comments" to post through [Bluesky](https://bsky.app/) or check the source markdown file on Github
 - filter posts by tag
 - "posts by year" page template, available at `/post/year`
 - ["_Buy me a coffee_"](https://www.buymeacoffee.com/moebiusmania) tip button
@@ -33,34 +32,36 @@ I've added some small new features over the starting Nuxt template to handle som
 - "personal devices timeline" section
 - CSS themes support (_at the moment only an "xmas" one is included_)
 - basic CLI stats (_total posts, drafts, device cards_)
-- RSS feed generated as `rss.xml` after the static build
+- RSS feed generated as `rss.xml` during the static build
 
 ## 💻 CLI commands
 
-Besides the typical dev scripts (_mostly inherited from Nuxt_) I've added some custom scripts to better manage the blog through terminal, the scripts are written in [Deno](https://deno.com/), but can be executed via NPM inf you have the Deno runtime installed:
+| Deno Task Command                     | Description                              |
+| ------------------------------------- | ---------------------------------------- |
+| `deno task serve`                     | Start the dev server with live reload    |
+| `deno task build`                     | Build the static website into `_site/`   |
+| `deno task test`                      | Run the tests                            |
+| `deno task new:post`                  | Create new blog post                     |
+| `deno task new:device`                | Create new device card                   |
+| `deno task stats`                     | Generate simple blog statistics          |
+| `deno task drafts`                    | List draft posts                         |
+| `deno task convert:webp path/to/file` | Convert images to `.webp`                |
 
-| Deno Task Command                     | NPM Command                         | Description                     |
-| ------------------------------------- | ----------------------------------- | ------------------------------- |
-| `deno task new:post`                  | `npm run new:post`                  | Create new blog post            |
-| `deno task new:device`                | `npm run new:device`                | Create new device card          |
-| `deno task stats`                     | `npm run stats`                     | Generate simple blog statistics |
-| `deno task drafts`                    | `npm run drafts`                    | List draft posts                |
-| `deno task convert:webp path/to/file` | `npm run convert:webp path/to/file` | Convert images to `.webp`       |
-| `deno task generate:rss`              | `npm run generate:rss`              | Generate the `rss.xml` feed     |
+Draft posts can be previewed locally with `LUME_DRAFTS=true deno task serve`.
 
 ## ✅ Built-in todo utility
 
 I've added an internal file-based todo list utility, it can be useful if you need to keep some notes within the project. The list is stored and read from a `todo.md` file. **This is a very simple solution**, with no interest in replacing full fledged todo app.
 
-You can create and edit the file manually, but there are some small NPM scripts that can help to manage it:
+You can create and edit the file manually, but there are some small Deno tasks that can help to manage it:
 
-| Deno Task Command                 | NPM Command                     | Description                                  |
-| --------------------------------- | ------------------------------- | -------------------------------------------- |
-| `deno task todo:init`             | `npm run todo:init`             | Create the `todo.md` file                    |
-| `deno task todo:list`             | `npm run todo:list`             | Print the todo list in the terminal          |
-| `deno task todo:add -- "content"` | `npm run todo:add -- "content"` | Add "content" to the todo list               |
-| `deno task todo:done -- 1`        | `npm run todo:done -- 1`        | Mark the todo item with the given index done |
-| `deno task todo:remove -- 1`      | `npm run todo:remove -- 1`      | Remove the todo item with the given index    |
+| Deno Task Command                 | Description                                  |
+| --------------------------------- | -------------------------------------------- |
+| `deno task todo:init`             | Create the `todo.md` file                    |
+| `deno task todo:list`             | Print the todo list in the terminal          |
+| `deno task todo:add -- "content"` | Add "content" to the todo list               |
+| `deno task todo:done -- 1`        | Mark the todo item with the given index done |
+| `deno task todo:remove -- 1`      | Remove the todo item with the given index    |
 
 > **Note:** the `todo.md` file **is git-ignored by default** so if you want it to be synced on every cloned copy of the repo you will have to remove it from the the `.gitignore`, but remember that in case of a public repository the file will be visible to anyone.
 
@@ -72,37 +73,25 @@ For this reason I've included a simple converter script based on [sharp](https:/
 
 ```bash
 deno task convert:webp path/to/file-or-folder
---- or ---
-npm run convert:webp path/to/file-or-folder
 ```
 
 the default `.webp` quality is set to `90`, but you can change this using an optional flag
 
 ```bash
-deno task convert:webp ath/to/file-or-folder -- --quality 100
--- or --
-npm run convert:webp path/to/file-or-folder -- --quality 100
+deno task convert:webp path/to/file-or-folder -- --quality 100
 ```
 
 ## 📡 RSS feed
 
-The blog exposes an RSS feed at `/rss.xml`. It's built by a Deno script that reads the published posts (newest 20, drafts excluded) and writes `rss.xml` into the generated output.
-
-The script runs **automatically** after the static build via the `postgenerate` npm hook, so `npm run generate` always ships an up-to-date feed. You can also run it on its own (it expects a previous build to exist in `.output/public`):
-
-```bash
-deno task generate:rss
---- or ---
-npm run generate:rss
-```
+The blog exposes an RSS feed at `/rss.xml`, with the newest 20 published posts (drafts excluded). It's generated by `pages/rss.xml.page.ts` as part of every build, so `deno task build` always ships an up-to-date feed.
 
 ## How to change theme
 
-It's easier as changing a line in the `/utils/config.ts`, however you need a CSS theme file with the same name in `/public/styles/themes`.
+It's easier as changing a line in `src/utils/config.ts`, however you need a CSS theme file with the same name in `/public/styles/themes`.
 
 If you wante to create a new theme you can just copy and rename one of the existing files and change the values of the CSS variables in it.
 
-## 👀 Can I use this to bootstrap my new Nuxt blog?
+## 👀 Can I use this to bootstrap my new Lume blog?
 
 Sure you can! But this repo is not structured as a template for new projects so you will need to delete all of my content (_which is **not** free to use_) and references and add your own. It's not difficult but just a bit tedious, have fun!
 

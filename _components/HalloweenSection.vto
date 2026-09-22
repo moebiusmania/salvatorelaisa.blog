@@ -1,0 +1,76 @@
+{{- set slugify = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") }}
+{{- set sectionSlug = slugify(section.heading || "") }}
+{{- set chipId = (title) => `chip-${sectionSlug}-${slugify(title)}` }}
+{{- set panelId = (title) => `panel-${sectionSlug}-${slugify(title)}` }}
+<section class="halloween-section" x-data="{ open: null }">
+  {{- if section.heading }}
+  <h2>
+    {{- if section.icon }}
+    <span aria-hidden="true">{{ section.icon }}</span>
+    {{- /if }}
+    {{ section.heading }}
+  </h2>
+  {{- /if }}
+  <ul class="halloween-chips">
+    {{- for item of (section.items || []) }}
+    <li>
+      {{- if item.url }}
+      <a class="halloween-chip{{ item.featured ? ' featured' : '' }}" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+        <span class="chip-title">{{ item.title }}</span>
+        {{- if item.badge }}
+        <span class="sl-badge">{{ item.badge }}</span>
+        {{- /if }}
+        {{ comp.icons.External() }}
+      </a>
+      {{- else if item.description }}
+      <button
+        id="{{ chipId(item.title) }}"
+        type="button"
+        class="halloween-chip{{ item.featured ? ' featured' : '' }}"
+        :class="{ open: open === {{ JSON.stringify(item.title) |> escape }} }"
+        :aria-expanded="open === {{ JSON.stringify(item.title) |> escape }}"
+        aria-expanded="false"
+        aria-controls="{{ panelId(item.title) }}"
+        @click="open = open === {{ JSON.stringify(item.title) |> escape }} ? null : {{ JSON.stringify(item.title) |> escape }}"
+      >
+        <span class="chip-title">{{ item.title }}</span>
+        {{- if item.badge }}
+        <span class="sl-badge">{{ item.badge }}</span>
+        {{- /if }}
+      </button>
+      {{- else }}
+      <span class="halloween-chip{{ item.featured ? ' featured' : '' }}">
+        <span class="chip-title">{{ item.title }}</span>
+        {{- if item.badge }}
+        <span class="sl-badge">{{ item.badge }}</span>
+        {{- /if }}
+      </span>
+      {{- /if }}
+    </li>
+    {{- /for }}
+  </ul>
+  {{- for item of (section.items || []).filter((item) => !item.url && item.description) }}
+  <div
+    class="halloween-accordion-wrap"
+    x-show="open === {{ JSON.stringify(item.title) |> escape }}"
+    x-transition:enter="halloween-accordion-enter-active"
+    x-transition:enter-start="halloween-accordion-enter-from"
+    x-transition:enter-end="halloween-accordion-enter-to"
+    x-transition:leave="halloween-accordion-leave-active"
+    x-transition:leave-start="halloween-accordion-leave-from"
+    x-transition:leave-end="halloween-accordion-leave-to"
+    style="display: none"
+  >
+    <div class="halloween-accordion-clip">
+      <p
+        id="{{ panelId(item.title) }}"
+        class="halloween-accordion"
+        role="region"
+        aria-labelledby="{{ chipId(item.title) }}"
+      >
+        {{ item.description }}
+      </p>
+    </div>
+  </div>
+  {{- /for }}
+</section>

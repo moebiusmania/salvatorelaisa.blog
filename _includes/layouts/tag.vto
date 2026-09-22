@@ -1,0 +1,14 @@
+---
+layout: layouts/base.vto
+---
+<div class="tag-page">
+  <p>
+    {{ results.length }} articoli trovati con il tag
+  </p>
+  <h1>{{ tag }}</h1>
+  {{ comp PostsList }}
+    {{- for post of results }}
+    {{ comp.PostPreview({ post }) }}
+    {{- /for }}
+  {{ /comp }}
+</div>

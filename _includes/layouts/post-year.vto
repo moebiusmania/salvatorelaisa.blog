@@ -1,0 +1,12 @@
+---
+layout: layouts/base.vto
+---
+<div class="post-year">
+  <p>{{ results.length }} articoli trovati</p>
+  <h1>Ricerca per anno: {{ year }}</h1>
+  {{ comp PostsList }}
+    {{- for post of results }}
+    {{ comp.PostPreview({ post }) }}
+    {{- /for }}
+  {{ /comp }}
+</div>

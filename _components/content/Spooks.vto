@@ -1,0 +1,12 @@
+{{# Bats lead the cast (weighted), with the occasional ghost, bone and skull.
+    Positions, speeds and sizes are computed once at build time. #}}
+{{- set icons = ["🦇", "🦇", "🦇", "👻", "👻", "🦴", "💀"] }}
+{{- set rand = (min, max) => min + Math.random() * (max - min) }}
+<div class="spooks" role="presentation" aria-label="Decorative drifting Halloween creatures animation">
+  {{- for index of Array.from({ length: count || 9 }, (_, i) => i) }}
+  {{- set duration = rand(28, 55) }}
+  <div class="spook" role="presentation" aria-hidden="true" style="--top:{{ rand(2, 92).toFixed(1) }}%;--duration:{{ duration.toFixed(1) }}s;--delay:{{ (-rand(0, duration)).toFixed(1) }}s;--scale:{{ rand(0.7, 1.4).toFixed(2) }};--bob:{{ rand(2.2, 4).toFixed(2) }}s;">
+    <span class="spook-inner">{{ icons[Math.floor(Math.random() * icons.length)] }}</span>
+  </div>
+  {{- /for }}
+</div>

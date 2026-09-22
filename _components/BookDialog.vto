@@ -1,0 +1,29 @@
+{{# One dialog per book, rendered at build time and opened with showModal()
+    by the `bookshelf` Alpine component: that buys the focus trap, the
+    ::backdrop, Escape-to-close and focus returning to the spine. #}}
+<dialog class="book-dialog" data-book="{{ book.slug }}" @click="$event.target === $el && $el.close()">
+  <button
+    class="book-dialog__close"
+    type="button"
+    aria-label="Chiudi"
+    @click="$el.closest('dialog').close()"
+  >
+    ✕
+  </button>
+  <h2>{{ book.title }}</h2>
+  <p class="book-dialog__meta">
+    <span>{{ book.author }}</span>
+    <span>{{ book.language.toUpperCase() }}</span>
+    {{- if book.read }}
+    <span>Letto: {{ utils.formatRead(book.read) }}</span>
+    {{- /if }}
+  </p>
+  {{- if book.url }}
+  <a class="book-dialog__link" href="{{ book.url }}" target="_blank" rel="noopener">
+    Scheda del libro
+    {{ comp.icons.External() }}
+  </a>
+  {{- /if }}
+  <hr />
+  <div>{{ book.body |> md }}</div>
+</dialog>

@@ -2,93 +2,79 @@
 
 ## Project overview
 
-Personal blog built with **Nuxt 4** (Vue 3), exported as a **static site** to GitHub Pages.
-Content is authored in Markdown and managed with `@nuxt/content` v3:
-- Dev/build: SQLite-backed content index.
-- Tests: memory storage to avoid SQLite corruption.
+Personal blog built with **[Lume 3](https://lume.land/)** on **Deno**, exported as a **static site** to GitHub Pages.
+Templates use **Vento**, client-side interactivity uses **Alpine.js**, and content is authored in Markdown.
 
-## Tooling model (important)
+## Tooling model
 
-This repo now uses a **split runtime**:
-- **npm/Nuxt toolchain** for the app lifecycle (`dev`, `build`, `generate`, `preview`, `postinstall`).
-- **Deno scripts** for local authoring/utilities (`scripts/*.ts`).
-
-`deno.json` is the source of truth for Deno tasks. `package.json` mirrors those tasks as npm scripts so both entry points work.
+Everything runs on **Deno**. There is no `package.json` and no `node_modules`. `deno.json` holds all tasks and the import map; npm packages (Alpine, Zod) are pulled through `npm:` specifiers.
 
 ## Developer commands
 
-### App lifecycle (npm)
+### Site lifecycle
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Starts dev server |
-| `npm run build` | Build Nuxt app |
-| `npm run generate` | Static site build for deployment |
-| `npm run preview` | Preview generated output |
-| `npm test` | Run Vitest in watch mode |
-| `npm run test:update` | Update Vitest snapshots |
-| `npm run test:coverage` | Run Vitest with coverage |
+| `deno task serve` | Dev server with live reload |
+| `deno task serve:host` | Same, listening on all interfaces |
+| `deno task build` | Static build into `_site/` |
+| `deno task test` | Unit tests + full build test |
+| `LUME_DRAFTS=true deno task serve` | Preview including draft posts |
 
-### Content and utility scripts (Deno-backed)
+### Content and utility scripts
 
 | Command | Description |
 |---|---|
-| `npm run new:post` | Scaffold a new post in `content/` |
-| `npm run new:device` | Scaffold a new device card in `content/devices/` |
-| `npm run stats` | Print blog stats |
-| `npm run drafts` | List draft posts |
-| `npm run convert:webp -- <path> [--quality N]` | Convert PNG/JPG to WebP |
-| `npm run todo:init` | Initialize todo metadata |
-| `npm run todo:list` | List todo items |
-| `npm run todo:add -- "<text>"` | Add todo item |
-| `npm run todo:remove -- <id>` | Remove todo item |
-| `npm run todo:done -- <id>` | Mark todo item done |
-
-If needed, these can also be run directly with Deno tasks (for example `deno task drafts`).
+| `deno task new:post` | Scaffold a new post in `content/` |
+| `deno task new:device` | Scaffold a new device card in `content/devices/` |
+| `deno task stats` | Print blog stats |
+| `deno task drafts` | List draft posts |
+| `deno task convert:webp <path> [--quality N]` | Convert PNG/JPG to WebP |
+| `deno task fonts:download` | Download the fonts declared in `fonts.config.ts` |
+| `deno task todo:init` | Initialize todo metadata |
+| `deno task todo:list` | List todo items |
+| `deno task todo:add -- "<text>"` | Add todo item |
+| `deno task todo:remove -- <id>` | Remove todo item |
+| `deno task todo:done -- <id>` | Mark todo item done |
 
 ## CI pipeline order
 
-PR checks on `main` run:
-`npm ci` → `npm run test` → `npm run generate`
+PR checks and the deploy on `main` both run:
+`deno task test` → `deno task build`. The deploy then uploads `_site/` to GitHub Pages.
 
-Deploy workflow uses `npm i --legacy-peer-deps` (not `npm ci`) and requires `NUXT_PUBLIC_STUDIO_TOKENS` in `.env`.
+The scheduled Spooktober workflows toggle `CURRENT_THEME` in `src/utils/config.ts` (and publish a post) with `sed`, run the tests, commit and dispatch a deploy.
 
 ## Testing
 
-- Test runner: **Vitest** with `@nuxt/test-utils` (`environment: "nuxt"`, globals enabled).
-- File naming: `**/*.test.ts` (not `.spec.ts`).
-- Locations: primarily `app/components/__tests__/` and `app/utils/__tests__/`.
-- Many server-side component tests use `.server.test.ts`.
-- **Critical**: tests must run with content cache disabled and memory storage:
-  - `vitest.setup.ts` sets `NUXT_CONTENT_CACHE=false` and `NUXT_CONTENT_STORAGE=memory`.
-  - `nuxt.config.ts` mirrors this for `NODE_ENV === "test"` via `content.cache = false` and `content.storage = "memory"`.
+- Runner: `deno test` with `@std/testing/bdd` and `@std/expect`.
+- `tests/utils/`: unit tests for `src/utils/` (`fetch` is stubbed with `@std/testing/mock`).
+- `tests/build.test.ts`: builds the site into `_site_test/` (set through `BLOG_DEST`) and checks routes, drafts, the home page, the feed, the search index and the seasonal header.
 
 ## Architecture
 
-- **App entry**: `app/app.vue` (theme switching + global head config).
-- **Routing**: file-based routes in `app/pages/` (`index.vue`, `post/`, `devices/`, `tags/`, `events/`).
+- **Config**: `_config.ts` (Lume site, plugins, ignore allowlist, data, preprocessors).
+- **Routes**: `pages/` (each page sets its own `url`); generators in `pages/**/*.page.ts` build `/post/page/<n>/`, `/post/year/<y>/`, `/tags/<tag>/`, `/rss.xml` and `/search.json`.
+- **Layouts**: `_includes/layouts/` (`base.vto` shell → `post.vto`, `post-page.vto`, `post-year.vto`, `tag.vto`).
+- **Components**: `_components/*.vto` (called as `comp.Name({...})`), including `now/`, `content/` (seasonal decorations) and `icons/`.
 - **Content**:
-  - `content/` for posts.
-  - `content/pages/` for static pages.
-  - `content/devices/` for device cards.
-- **Schema**: `content.config.ts` defines two collections (`content`, `devices`).
-- **Site config**: `app/utils/config.ts` (title, description, theme, events).
+  - `content/*.md`: posts, served at `/post/<slug>/` (see `content/_data.ts`).
+  - `content/pages/`: about, halloween and xmas page bodies (data only).
+  - `content/devices/`: device cards (data only).
+  - `content/books/`: bookshelf entries (data only).
+- **Loaders and schema**: `src/content.ts` reads the data-only collections, and `src/content-schema.ts` validates all front matter with Zod.
+- **Markdown**: `src/markdown/` holds the markdown-it plugins (timeline block, heading ids, first-image priority).
+- **Client**: `assets/js/main.ts` holds the Alpine components, bundled to `/assets/js/main.js`.
+- **Site config**: `src/utils/config.ts` (title, description, theme, events).
 - **Styling pattern**:
-  - Each component has a sibling CSS file (`Component.vue` + `Component.css`).
-  - Vue `<style>` blocks generally only contain `@import`.
+  - Each component has a sibling CSS file (`Component.vto` + `Component.css`); page styles are in `_includes/css/`.
+  - `assets/styles.page.ts` bundles them into `/assets/app.css`, with separate files for the seasonal decorations.
   - No CSS preprocessor.
-  - Shared styles include `Badge.css` and `slide-animations.css`.
-
-## Key quirks
-
-- `npm install` triggers `nuxt prepare` via `postinstall` (updates `.nuxt/` types).
-- `@nuxt/content` uses SQLite indexing in non-test environments (`.data/content/contents.sqlite` is git-ignored).
-- `.npmrc` has `save-exact=true` (no `^`/`~` prefixes on new deps).
-- Nuxt future compatibility mode is set to 5 (`future.compatibilityVersion: 5`).
 
 ## Content authoring
 
-- New posts default to `draft: true`; set to `false` to publish.
-- Pinned posts use `pinned: true` in frontmatter.
-- Reading time is auto-calculated in `content:file:afterParse` (180 wpm) and injected into `content.readingTime`.
-- Device cards in `content/devices/` use: `title`, `purchase`, `tags`, `image`, optional `url` and `post`.
+- New posts default to `draft: true`; set it to `false` to publish.
+- Pinned posts use `pinned: true` in the front matter.
+- Reading time is computed at build time (180 wpm over the raw file).
+- Device cards in `content/devices/` use `title`, `purchase`, `tags`, `image`, and optionally `url` and `post`.
+- Hide a device or book by prefixing its filename with `-` or setting `draft: true`.
+- Timelines inside posts: `::timeline{items="2013 - one, 2015 - two"}` followed by a closing `::` line.

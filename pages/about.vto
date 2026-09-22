@@ -1,0 +1,14 @@
+---
+url: /about/
+---
+{{- set about = contentPages.about }}
+<div class="about-page">
+  <article class="content">
+    <header>
+      <h1>{{ about.title }}</h1>
+    </header>
+    <div>{{ about.body |> md }}</div>
+    <hr />
+  </article>
+  {{ comp.Tip() }}
+</div>

@@ -6,59 +6,57 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Personal blog (Italian-language) built with **Nuxt 4** (Vue 3) and **@nuxt/content v3**, exported as a **static site** to GitHub Pages. Content is Markdown.
-
-## Split runtime (important)
-
-Two toolchains coexist:
-
-- **npm / Nuxt** drives the app lifecycle (`dev`, `build`, `generate`, `preview`, `postinstall`).
-- **Deno** drives local authoring/utility scripts in `scripts/*.ts`. `deno.json` is the source of truth for these tasks; `package.json` mirrors them as npm scripts so either entry point works.
+Personal blog (Italian-language) built with **[Lume 3](https://lume.land/)** on **Deno**, with **Vento** templates and **Alpine.js** for client-side interactivity, exported as a **static site** to GitHub Pages. Content is Markdown. There is no npm/Node toolchain: `deno.json` is the single source of truth for tasks and dependencies.
 
 ## Commands
 
 ```bash
-npm run dev          # dev server
-npm run generate     # static build for deployment (what CI runs)
-npm run preview      # preview generated output
-npm test             # Vitest in watch mode
-npm run test:coverage
+deno task serve      # dev server with live reload (serve:host to expose on the LAN)
+deno task build      # static build into _site/ (what CI deploys)
+deno task test       # deno test: util unit tests + a full build test
 
-# Run a single test file / filter (Vitest)
-npx vitest run app/utils/__tests__/index.test.ts
-npx vitest run -t "name of test"
+# Run a single test file / filter
+deno test -A tests/utils/books.test.ts
+deno test -A --filter "spineStyle"
 
-# Authoring (Deno-backed, also work as `deno task ...`)
-npm run new:post     # scaffold a post in content/
-npm run new:device   # scaffold a device card in content/devices/
-npm run drafts       # list draft posts
-npm run stats        # blog stats
-npm run convert:webp -- <path> [--quality N]
-npm run fonts:download   # fetch local font files into public/fonts/
+# Authoring
+deno task new:post     # scaffold a post in content/
+deno task new:device   # scaffold a device card in content/devices/
+deno task drafts       # list draft posts
+deno task stats        # blog stats
+deno task convert:webp <path> [--quality N]
+deno task fonts:download   # fetch local font files into public/fonts/
+
+LUME_DRAFTS=true deno task serve   # preview draft posts
 ```
 
 ## Architecture
 
-- **Entry**: `app/app.vue` (theme switching + global head). `app/router.options.ts` and `app/plugins/view-transitions.client.ts` handle routing/transitions — page transitions use the **native View Transitions API**, not Vue transitions (`app.pageTransition` is `false` in `nuxt.config.ts`).
-- **Routing**: file-based in `app/pages/` (`index`, `post/`, `post/page/[page]`, `post/year/[year]`, `tags/`, `devices/`, `events/`).
-- **Content collections** (`content.config.ts`): `content` (all `**/*.md`) and `devices` (`**/devices/*.md`), each with a Zod schema. Posts default to `draft: true`; pin with `pinned: true`.
-- **Reading time** is computed in the `content:file:afterParse` hook in `nuxt.config.ts` (180 wpm) and injected as `content.readingTime`.
-- **Site config**: `app/utils/config.ts` (title, description, theme, seasonal events).
-- **Fonts**: `fonts.config.ts` declares families; `npm run fonts:download` pulls them from Bunny Fonts into `public/fonts/` for self-hosting.
+- **Config**: `_config.ts`. Lume runs with `src: "."`, and an allowlist in `site.ignore()` limits the site to `_components/`, `_includes/`, `pages/`, `content/`, `assets/` and `public/`. `public/` is copied verbatim to the site root.
+- **Posts**: every `content/*.md` is a page. `content/_data.ts` sets `type: "post"`, the `layouts/post.vto` layout and the `/post/<slug>/` URL. Lume drops `draft: true` pages from the build.
+- **Data-only content**: `content/devices/`, `content/books/` and `content/pages/` (about, halloween, xmas) are *not* Lume pages. `src/content.ts` loads them and they are exposed as site data (`devices`, `books`, `contentPages`), with bodies rendered through the `md` filter. Files starting with `-` or marked `draft: true` are skipped.
+- **Schema**: `src/content-schema.ts` (Zod). It validates post, device, book and page front matter at build time, and invalid front matter fails the build.
+- **Reading time** is computed in a `site.preprocess` in `_config.ts`: 180 wpm over the raw file.
+- **Markdown plugins** (`src/markdown/`): `::timeline{items="…"}` blocks, heading `id`s matching the old Nuxt slugs, and `fetchpriority="high"` on each document's first image.
+- **Templates**: layouts in `_includes/layouts/` (`base.vto` is the HTML shell, plus post, post-page, post-year and tag). Components live in `_components/` and are called as `comp.Name(...)`. Routes are in `pages/`, each with an explicit `url`, and generators (`*.page.ts`) produce the pagination, year and tag pages, `rss.xml` and `search.json`.
+- **Client JS**: `assets/js/main.ts` (bundled by the esbuild plugin) registers the Alpine components (`themeToggle`, `backToTop`, `pwaInstallBanner`, `postSearch`, `bookshelf`, `weather`, `githubRepos`). Templates reference them with `x-data`.
+- **View transitions**: native cross-document transitions (`@view-transition` in `base.vto`). `_includes/partials/view-transitions.js` sets the slide direction for pagination.
+- **Site config**: `src/utils/config.ts` (title, description, `CURRENT_THEME`, seasonal events). `/now` data lives in `src/utils/now.ts`.
+- **Fonts**: `fonts.config.ts` declares families; `deno task fonts:download` pulls them from Bunny Fonts into `public/fonts/`.
 
 ## Styling convention
 
-- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** (`Component.vue` + `Component.css`); the Vue `<style>` block generally only `@import`s it.
-- Themes live in `public/styles/themes`; switch via `CURRENT_THEME` in `app/utils/config.ts`.
+- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** in `_components/`, and page styles live in `_includes/css/`.
+- `assets/styles.page.ts` concatenates them into `/assets/app.css`. The seasonal decorations (`Clouds`, `Spooks`, `Snow`) are emitted as separate files because they style `body`, and `base.vto` links them only while their theme is active.
+- Themes live in `public/styles/themes`; switch via `CURRENT_THEME` in `src/utils/config.ts`.
 
 ## Testing
 
-- **Vitest** + `@nuxt/test-utils` (`environment: "nuxt"`, globals on). Test files are `*.test.ts` (note: `.spec.ts` also matched but convention is `.test.ts`), located in `app/components/__tests__/` and `app/utils/__tests__/`. Server-component tests use `.server.test.ts`.
-- **Critical**: content cache must be off and storage in memory for tests, or SQLite indexing corrupts. `vitest.setup.ts` sets `NUXT_CONTENT_CACHE=false` / `NUXT_CONTENT_STORAGE=memory`, and `nuxt.config.ts` mirrors this when `NODE_ENV === "test"`.
+- `deno test` with `@std/testing/bdd` + `@std/expect` (a Jest-like API). Tests live in `tests/`.
+- `tests/build.test.ts` builds the whole site into `_site_test/` (via the `BLOG_DEST` env var read by `_config.ts`) and asserts on the output. Lume resolves `dest` against the cwd, so it must be a relative path.
 
 ## Quirks
 
-- `npm install` runs `nuxt prepare` via `postinstall` (regenerates `.nuxt/` types).
-- `.npmrc` sets `save-exact=true` — pin new deps with no `^`/`~`.
-- Nuxt `future.compatibilityVersion: 5`.
-- CI on `main`: `npm ci` → `npm run test` → `npm run generate`. Deploy uses `npm i --legacy-peer-deps` and needs `NUXT_PUBLIC_STUDIO_TOKENS`.
+- Pin dependency versions exactly in `deno.json` `imports` (no `^`/`~`).
+- Vento has no autoescape; use `|> escape` for untrusted text in attributes.
+- CI on `main`: `deno task test` → `deno task build` → deploy `_site`. The Spooktober workflows edit `src/utils/config.ts` with `sed`, so keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format.

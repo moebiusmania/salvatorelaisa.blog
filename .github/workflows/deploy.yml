@@ -21,10 +21,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [26.9.0]
-
     steps:
       - uses: actions/checkout@v6
 
@@ -33,15 +29,6 @@ jobs:
         with:
           deno-version: v2.x # Run with latest stable Deno.
           cache: true
-
-      - name: 💻 Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
-
-      - name: 📦 Install dependencies
-        run: npm ci --prefer-offline --no-audit --no-fund
 
       # Fonts are committed in public/fonts/: only hit the network when a
       # family declared in fonts.config.ts has no local files yet.
@@ -57,21 +44,21 @@ jobs:
             fi
           done < <(grep -oP 'name:\s*"\K[^"]+' fonts.config.ts)
           if [ "$missing" -eq 1 ]; then
-            npm run fonts:download
+            deno task fonts:download
           else
             echo "Fonts already committed, skipping download"
           fi
 
-      - name: 📝 Run unit tests
-        run: npm run test:ci
+      - name: 📝 Run tests
+        run: deno task test
 
       - name: 🏗️ Build static website
-        run: npm run generate
+        run: deno task build
 
       - name: 🚀 Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .output/public
+          path: _site
 
       - name: 🏁 Deploy to GitHub Pages
         id: gh-pages

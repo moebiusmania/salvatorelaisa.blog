@@ -1,0 +1,29 @@
+---
+layout: layouts/base.vto
+---
+{{- set slug = url.replace(/^\/post\//, "").replace(/\/$/, "") }}
+{{- set isReview = tags.includes("gaming") && tags.includes("recensione") }}
+<div class="post-slug">
+  <article class="content">
+    <header>
+      {{ comp.Published({ value: date }) }}
+      <h1 style="view-transition-name:post-title-{{ slug }};">{{ title }}</h1>
+      <p>
+        Tags:
+        {{- for tag of tags }}
+        <a href="/tags/{{ tag }}">{{ tag }}</a>
+        {{- /for }}
+      </p>
+      {{ comp.ReadingTime({ value: readingTime }) }}
+      {{- if isReview }}
+      {{ comp.GamingPlatforms({ platforms: platforms || [] }) }}
+      {{- /if }}
+      {{ comp.Outdated({ date }) }}
+    </header>
+    <div>{{ content }}</div>
+  </article>
+  <hr />
+  {{ comp.Sharing({ slug }) }}
+  {{ comp.Tip() }}
+  {{ comp.BackToTop() }}
+</div>
