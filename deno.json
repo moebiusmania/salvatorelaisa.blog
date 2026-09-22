@@ -2,8 +2,9 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
-    "serve": "deno task lume -s",
-    "serve:host": "deno task lume -s --hostname 0.0.0.0",
+    "serve": "LUME_DRAFTS=false deno task lume -s",
+    "serve:host": "LUME_DRAFTS=false deno task lume -s --hostname 0.0.0.0",
+    "serve:drafts": "LUME_DRAFTS=true deno task lume -s",
     "test": "deno test -A",
     "drafts": "deno run --allow-read scripts/drafts.ts",
     "new:post": "deno run --allow-write scripts/post.ts",
