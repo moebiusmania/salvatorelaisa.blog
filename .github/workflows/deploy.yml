@@ -43,6 +43,25 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci --prefer-offline --no-audit --no-fund
 
+      # Fonts are committed in public/fonts/: only hit the network when a
+      # family declared in fonts.config.ts has no local files yet.
+      - name: 🔤 Download fonts (if missing)
+        run: |
+          missing=0
+          [ -s public/fonts/fonts.css ] || missing=1
+          while IFS= read -r family; do
+            slug=$(printf '%s' "$family" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g')
+            if ! ls public/fonts/"$slug"/*.woff2 >/dev/null 2>&1; then
+              echo "Missing font files for $family"
+              missing=1
+            fi
+          done < <(grep -oP 'name:\s*"\K[^"]+' fonts.config.ts)
+          if [ "$missing" -eq 1 ]; then
+            npm run fonts:download
+          else
+            echo "Fonts already committed, skipping download"
+          fi
+
       - name: 📝 Run unit tests
         run: npm run test:ci
 

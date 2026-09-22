@@ -3,7 +3,6 @@
   "type": "module",
   "scripts": {
     "fonts:download": "deno run --allow-read --allow-write --allow-net scripts/fonts-download.ts",
-    "pregenerate": "npm run fonts:download",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "dev:host": "nuxt dev --host",
