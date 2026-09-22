@@ -27,7 +27,7 @@ deno task stats        # blog stats
 deno task convert:webp <path> [--quality N]
 deno task fonts:download   # fetch local font files into public/fonts/
 
-LUME_DRAFTS=true deno task serve   # preview draft posts
+deno task serve:drafts   # same, including draft posts (Lume serve shows drafts unless LUME_DRAFTS=false)
 ```
 
 ## Architecture

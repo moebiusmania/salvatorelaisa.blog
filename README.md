@@ -47,7 +47,7 @@ I've added some small new features on top of Lume to handle some more blog-speci
 | `deno task drafts`                    | List draft posts                         |
 | `deno task convert:webp path/to/file` | Convert images to `.webp`                |
 
-Draft posts can be previewed locally with `LUME_DRAFTS=true deno task serve`.
+Draft posts are hidden by `serve` too; preview them locally with `deno task serve:drafts`.
 
 ## ✅ Built-in todo utility
 

@@ -19,7 +19,7 @@ Everything runs on **Deno**. There is no `package.json` and no `node_modules`. `
 | `deno task serve:host` | Same, listening on all interfaces |
 | `deno task build` | Static build into `_site/` |
 | `deno task test` | Unit tests + full build test |
-| `LUME_DRAFTS=true deno task serve` | Preview including draft posts |
+| `deno task serve:drafts` | Dev server including draft posts |
 
 ### Content and utility scripts
 
