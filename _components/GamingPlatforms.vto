@@ -1,0 +1,6 @@
+<p class="gaming-platforms platforms">
+  Giocato su:
+  {{- for platform of (platforms || []) }}
+  <a href="{{ platform.url }}" class="sl-badge">{{ platform.label }}</a>
+  {{- /for }}
+</p>

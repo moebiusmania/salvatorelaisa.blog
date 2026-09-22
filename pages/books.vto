@@ -1,0 +1,25 @@
+---
+url: /books/
+---
+<div class="books-page" x-data="bookshelf">
+  <h1>Libri</h1>
+  <p>
+    Una libreria dei libri che ho letto, con due righe di commento su ognuno.
+    Niente voti né stelline: solo quello che mi è rimasto.
+  </p>
+  <p>
+    I libri sono in ordine di lettura, dal più recente al più vecchio, e
+    quelli di cui non ricordo il periodo finiscono in fondo. Clicca su un
+    libro per leggere il commento.
+  </p>
+  <ul class="shelf">
+    {{- for book of books }}
+    <li class="shelf__slot">
+      {{ comp.BookSpine({ book }) }}
+    </li>
+    {{- /for }}
+  </ul>
+  {{- for book of books }}
+  {{ comp.BookDialog({ book }) }}
+  {{- /for }}
+</div>

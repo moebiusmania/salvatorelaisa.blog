@@ -1,0 +1,22 @@
+<article class="now-card now-github{{ className ? ` ${className}` : '' }}" x-data="githubRepos">
+  <p class="now-card-kicker">Ultimi progetti su GitHub</p>
+
+  <p x-show="loading" class="now-github-state">Caricamento…</p>
+
+  <p x-show="!loading && error" style="display: none" class="now-github-state">
+    Progetti non disponibili
+  </p>
+
+  <ul x-show="!loading && !error" style="display: none">
+    <template x-for="repo in repos" :key="repo.url">
+      <li>
+        <a :href="repo.url" target="_blank" rel="noopener">
+          <span x-text="repo.name"></span>
+          {{ comp.icons.External() }}
+        </a>
+        <p x-show="repo.description" class="now-github-desc" x-text="repo.description"></p>
+        <span x-show="repo.language" class="sl-badge" x-text="repo.language"></span>
+      </li>
+    </template>
+  </ul>
+</article>

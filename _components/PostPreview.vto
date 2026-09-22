@@ -1,0 +1,29 @@
+{{- set slug = post.url.replace(/^\/post\//, "").replace(/\/$/, "") }}
+{{- set href = `/post/${slug}` }}
+<li class="post-preview{{ post.pinned ? ' pinned' : '' }}"{{ style ? ` style="${style}"` : '' }}>
+  {{- if post.pinned }}
+  <span class="badge" title="{{ config.PINNED_POST_DESCRIPTION }}">in evidenza</span>
+  {{- /if }}
+  <time>
+    <span>{{ utils.longDate(post.date) }}</span>
+  </time>
+  <div>
+    <a href="{{ href }}">
+      <h2 style="view-transition-name:post-title-{{ slug }};">{{ post.title }}</h2>
+    </a>
+    <div>
+      {{- for tag of post.tags }}
+      <a href="/tags/{{ tag }}">{{ tag }}</a>
+      {{- /for }}
+    </div>
+    <p>{{ post.summary || "" }}</p>
+    <a href="{{ href }}">
+      Continua a leggere ({{ post.readingTime }}) minuti
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M5 12h14"></path>
+        <path d="M12 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</li>

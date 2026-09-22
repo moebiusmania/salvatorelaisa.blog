@@ -1,0 +1,9 @@
+{{# Random, organic-looking clouds. Values are computed once at build time, so
+    each build bakes a fixed set. #}}
+{{- set rand = (min, max) => min + Math.random() * (max - min) }}
+<div class="clouds" role="presentation" aria-label="Decorative drifting clouds animation">
+  {{- for index of Array.from({ length: count || 8 }, (_, i) => i) }}
+  {{- set duration = rand(45, 90) }}
+  <div class="cloud" role="presentation" aria-hidden="true" style="--top:{{ rand(2, 95).toFixed(1) }}%;--duration:{{ duration.toFixed(1) }}s;--delay:{{ (-rand(0, duration)).toFixed(1) }}s;--scale:{{ rand(0.6, 1.2).toFixed(2) }};"></div>
+  {{- /for }}
+</div>

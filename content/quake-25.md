@@ -3,7 +3,7 @@ title: Quake, un quarto di secolo dopo
 date: "2021-08-21"
 tags: ["gaming", "retro", "recensione"]
 draft: false
-summary: "[POST AGGIORNATO 07/08/2026] A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (finalmente) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise.""
+summary: "[POST AGGIORNATO 07/08/2026] A giugno questa pietra miliare del gaming ha compiuto 25 anni e due giorni fa con l'apertura del QuakeCon 2021 è stata (finalmente) annunciata una re-release che sembra avere tutte le carte in regola per riportare la giusta attenzione a questo franchise."
 platforms: [{ label: "PC - MSI Gaming Infinite A", url: "#" }]
 images:
   [

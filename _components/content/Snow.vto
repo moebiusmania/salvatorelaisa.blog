@@ -1,0 +1,8 @@
+{{- set icons = ["❅", "❆"] }}
+<div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
+  {{- for index of Array.from({ length: count || 10 }, (_, i) => i) }}
+  <div class="snowflake" role="presentation" aria-hidden="true">
+    {{ icons[Math.floor(Math.random() * icons.length)] }}
+  </div>
+  {{- /for }}
+</div>

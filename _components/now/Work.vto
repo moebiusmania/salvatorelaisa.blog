@@ -1,0 +1,8 @@
+<article class="now-card now-work{{ className ? ` ${className}` : '' }}">
+  <p class="now-card-kicker">Al lavoro</p>
+  <h2>{{ now.NOW_WORK.role }}</h2>
+  <p class="now-work-company">{{ now.NOW_WORK.company }}</p>
+  <p class="now-work-city">
+    <span aria-label="luogo" role="img">📍</span> {{ now.NOW_WORK.city }}
+  </p>
+</article>

@@ -1,9 +1,10 @@
 /**
  * Native View Transitions API styling.
  *
- * Driven by app/plugins/view-transitions.client.ts, which wraps each
- * navigation in document.startViewTransition() and sets
- * <html data-vt-direction="forward | back | fade"> beforehand.
+ * Cross-document transitions are enabled by `@view-transition` in the base
+ * layout (_includes/layouts/base.vto); the inline script from
+ * _includes/partials/view-transitions.js sets
+ * <html data-vt-direction="forward | back | fade"> on both pages.
  *
  * Default is a simple opacity cross-fade. Paginated list navigation overrides
  * it with a small directional slide. Everything is neutralized under

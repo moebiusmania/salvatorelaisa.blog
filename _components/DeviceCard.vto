@@ -1,0 +1,28 @@
+<article class="device-card">
+  <figure>
+    <img src="{{ device.image }}" alt="{{ device.title }}" />
+  </figure>
+  <div>
+    <div>
+      {{- for tag of device.tags }}
+      <span class="sl-badge">{{ tag }}</span>
+      {{- /for }}
+    </div>
+    <p>
+      Data di acquisto:
+      {{ utils.formatDate(device.purchase) }}
+    </p>
+    <h2>
+      <a href="{{ device.post || device.url }}">
+        {{ device.title }}
+      </a>
+      {{- if device.url }}
+      {{ comp.icons.External() }}
+      {{- /if }}
+      {{- if device.post }}
+      {{ comp.icons.Doc() }}
+      {{- /if }}
+    </h2>
+    <div>{{ device.body |> md }}</div>
+  </div>
+</article>

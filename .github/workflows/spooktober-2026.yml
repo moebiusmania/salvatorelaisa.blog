@@ -40,10 +40,6 @@ jobs:
     if: needs.guard.outputs.run == 'true'
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [26.9.0]
-
     steps:
       - uses: actions/checkout@v6
         with:
@@ -55,39 +51,24 @@ jobs:
           deno-version: v2.x # Run with latest stable Deno.
           cache: true
 
-      - name: 💻 Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: npm
-
       - name: 🎃 Set halloween theme & publish post
         run: |
-          sed -i -E 's/^export const CURRENT_THEME = "[a-z]+" as SeasonTheme;$/export const CURRENT_THEME = "halloween" as SeasonTheme;/' app/utils/config.ts
+          sed -i -E 's/^export const CURRENT_THEME = "[a-z]+" as SeasonTheme;$/export const CURRENT_THEME = "halloween" as SeasonTheme;/' src/utils/config.ts
           sed -i -E '0,/^draft: (true|false)$/s//draft: false/' content/spooktober-reloaded.md
 
           # Fail loudly if the files drifted and the replacements did not apply
-          grep -qx 'export const CURRENT_THEME = "halloween" as SeasonTheme;' app/utils/config.ts
+          grep -qx 'export const CURRENT_THEME = "halloween" as SeasonTheme;' src/utils/config.ts
           grep -qx 'draft: false' content/spooktober-reloaded.md
 
-      - name: 📦 Install dependencies
-        run: npm ci --prefer-offline --no-audit --no-fund
-
-      # The seasonal nav item and emoji change the Header/Footer snapshots,
-      # without this the deploy would fail on the unit tests
-      - name: 📸 Update seasonal snapshots
-        # `--update` accepts an optional value, keep it after the file filters
-        run: npx vitest run app/components/__tests__/Header.test.ts app/components/__tests__/Footer.test.ts --update
-
-      - name: 📝 Run unit tests
-        run: npm run test:ci
+      - name: 📝 Run tests
+        run: deno task test
 
       - name: 💾 Commit & push on main
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/utils/config.ts content/spooktober-reloaded.md app/components/__tests__/__snapshots__
+          git add src/utils/config.ts content/spooktober-reloaded.md
 
           if git diff --cached --quiet; then
             echo "Nothing to commit, halloween theme already enabled"

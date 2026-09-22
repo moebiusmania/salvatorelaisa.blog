@@ -1,0 +1,23 @@
+---
+url: /now/
+metaTitle: Salvatore Laisa - Adesso
+metaDescription: Una fotografia del presente, ma con i dati invece che con la pellicola.
+og:
+  url: https://salvatorelaisa.blog/now
+  description: Una fotografia del presente, ma con i dati invece che con la pellicola.
+  image: https://salvatorelaisa.blog/static/images/twitter-card.png
+---
+<section class="now-page">
+  <hgroup>
+    <h1>Adesso</h1>
+    <p>{{ metaDescription }}</p>
+  </hgroup>
+
+  <div class="now-grid">
+    {{ comp.now.Work({ className: "now-grid-work" }) }}
+    {{ comp.now.Weather({ className: "now-grid-weather" }) }}
+    {{ comp.now.Github({ className: "now-grid-github" }) }}
+    {{ comp.now.Watching({ className: "now-grid-watching" }) }}
+    {{ comp.now.Event({ className: "now-grid-event" }) }}
+  </div>
+</section>

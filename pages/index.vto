@@ -1,0 +1,28 @@
+---
+url: /
+og:
+  url: https://salvatorelaisa.blog
+  description: Blog personale.
+  image: https://salvatorelaisa.blog/static/images/twitter-card.png
+---
+{{- set all = search.pages("type=post", "date=desc") }}
+{{- set pinned = all.find((post) => post.pinned === true) }}
+{{- set latest = all.slice(0, 5) }}
+{{# The pinned post goes first, but it may already be among the latest five:
+    drop it from the tail so it is never rendered twice. #}}
+{{- set posts = pinned ? [pinned, ...latest.filter((post) => post.url !== pinned.url)] : latest }}
+<div class="home-page">
+  <p>{{ config.SITE_DESCRIPTION }}</p>
+
+  {{ comp PostsList }}
+    {{- for post of posts }}
+    {{ comp.PostPreview({ post }) }}
+    {{- /for }}
+  {{ /comp }}
+
+  <section>
+    <a href="/post/page/1" aria-label="Tutti gli articoli">
+      Tutti gli articoli &rarr;
+    </a>
+  </section>
+</div>

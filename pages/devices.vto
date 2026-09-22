@@ -1,0 +1,20 @@
+---
+url: /devices/
+---
+<div class="devices-page">
+  <h1>Devices</h1>
+  <p>
+    Un breve riassunto dei miei vari device passati e presenti per avere una
+    piccola traccia storica senza dover per forza scrivere un post dedicato
+    per ognuno di questi.
+  </p>
+  <p>
+    L'ordine è cronologico sulla base del giorno o periodo in cui li ho
+    comprati, ma non di tutti mi ricordo la data esatta...
+  </p>
+  <ul class="divide-neutral-content dark:divide-neutral multi">
+    {{- for device of devices }}
+    {{ comp.DeviceCard({ device }) }}
+    {{- /for }}
+  </ul>
+</div>

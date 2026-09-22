@@ -1,0 +1,17 @@
+<article class="now-card now-weather{{ className ? ` ${className}` : '' }}" x-data="weather">
+  <p class="now-card-kicker">Meteo</p>
+
+  <p x-show="loading" class="now-weather-state">Caricamento…</p>
+
+  <p x-show="!loading && (error || !data)" style="display: none" class="now-weather-state">
+    Meteo non disponibile
+  </p>
+
+  <template x-if="!loading && !error && data">
+    <div style="display: contents">
+      <p class="now-weather-emoji" :aria-label="data.label" role="img" x-text="data.emoji"></p>
+      <p class="now-weather-temp" x-text="`${data.temperature}°C`"></p>
+      <p class="now-weather-meta" x-text="`${data.label} · ${data.city}`"></p>
+    </div>
+  </template>
+</article>

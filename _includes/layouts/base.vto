@@ -1,0 +1,103 @@
+{{- set season = config.CURRENT_THEME }}
+{{- set themes = {
+  default: "/styles/themes/default.css",
+  halloween: "/styles/themes/halloween.css",
+  spring: "/styles/themes/spring.css",
+  summer: "/styles/themes/summer.css",
+  xmas: "/styles/themes/xmas.css",
+} }}
+{{- set themeDecor = { halloween: "/styles/themes/halloween.decor.css" } }}
+{{- set themeCss = themes[season] }}
+{{- set decorCss = themeDecor[season] }}
+{{- set pageTitle = metaTitle || config.SITE_TITLE }}
+<!DOCTYPE html>
+<html lang="it-IT" data-theme="{{ theme.LIGHT }}" class="{{ theme.LIGHT }}" data-season="{{ season }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ pageTitle |> escape }}</title>
+  {{# Render-blocking theme bootstrap: must run before the body paints so the
+      correct theme (persisted cookie or, on first visit, the system preference)
+      is applied with no flash of light content. #}}
+  <script>{{ theme.themeInitScript }}</script>
+  {{# Opt in to cross-document View Transitions. Inline (not in the async
+      view-transitions.css) because the incoming page must opt in before its
+      first render. #}}
+  <style>@view-transition { navigation: auto; }</style>
+  <script>{{ include "partials/view-transitions.js" }}</script>
+
+  {{# Preload the display serif (latin, 700) so headlines don't flash. #}}
+  <link rel="preload" href="/fonts/fraunces/fraunces-07.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/fonts.css" as="style">
+  <link rel="preload" href="/styles/normalize.css" as="style">
+  <link rel="preload" href="/styles/spacing.css" as="style">
+  <link rel="preload" href="{{ themeCss }}" as="style">
+  <link rel="preload" href="/styles/typography.css" as="style">
+
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/spacing.css">
+  <link rel="stylesheet" href="{{ themeCss }}">
+  <link rel="stylesheet" href="/styles/typography.css">
+  {{# Seasonal decoration layer: must come after typography.css so it can
+      override the base layer. #}}
+  {{- if decorCss }}
+  <link rel="stylesheet" href="{{ decorCss }}">
+  {{- /if }}
+  <link rel="stylesheet" href="/assets/app.css">
+  {{- if season === "summer" }}
+  <link rel="stylesheet" href="/assets/clouds.css">
+  {{- /if }}
+  {{- if season === "halloween" }}
+  <link rel="stylesheet" href="/assets/spooks.css">
+  {{- /if }}
+  <link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'">
+
+  <meta name="title" content="{{ pageTitle |> escape }}">
+  <meta name="description" content="{{ (metaDescription || config.SITE_DESCRIPTION) |> escape }}">
+  <meta property="og:description" content="{{ (metaDescription || config.SITE_DESCRIPTION) |> escape }}">
+  {{- if og }}
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ og.url }}">
+  <meta property="og:title" content="{{ pageTitle |> escape }}">
+  {{- if og.image }}
+  <meta property="og:image" content="{{ og.image }}">
+  {{- /if }}
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ og.url }}">
+  <meta property="twitter:title" content="{{ pageTitle |> escape }}">
+  {{- if og.description }}
+  <meta property="twitter:description" content="{{ og.description |> escape }}">
+  {{- /if }}
+  {{- if og.image }}
+  <meta property="twitter:image" content="{{ og.image }}">
+  {{- /if }}
+  {{- /if }}
+
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" href="/static/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+  {{ comp.Header({ url }) }}
+  {{- if season === "summer" }}
+  {{ comp.content.Clouds() }}
+  {{- /if }}
+  {{- if season === "halloween" }}
+  {{ comp.content.Spooks() }}
+  {{- /if }}
+  <main>
+    {{ comp Container }}{{ content }}{{ /comp }}
+    {{ comp.Footer() }}
+  </main>
+  {{ comp.PWAInstallBanner() }}
+</body>
+</html>
