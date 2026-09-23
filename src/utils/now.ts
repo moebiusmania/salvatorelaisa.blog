@@ -23,7 +23,7 @@ export const NOW_WATCHING = {
 };
 
 export const NOW_EVENT = {
-	name: "Autunno Pavede DOC - Pavia",
+	name: "Autunno Pavese DOC - Pavia",
 	url: "https://www.autunnopavesedoc.it/",
 	date: "2-5 Ottobre",
 };
