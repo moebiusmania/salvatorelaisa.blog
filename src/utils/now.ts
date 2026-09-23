@@ -18,14 +18,14 @@ export const NOW_WEATHER_LOCATION = "Milano";
 export const NOW_GITHUB_USER = "moebiusmania";
 
 export const NOW_WATCHING = {
-	series: { label: "The Mighty Nein", imdb: "https://www.imdb.com/title/tt26453092" },
+	series: { label: "The Legend of Vox Machina", imdb: "https://www.imdb.com/title/tt11247158" },
 	//movie: { label: "The Odyssey", imdb: "https://www.imdb.com/title/tt33764258/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_odyssey" },
 };
 
 export const NOW_EVENT = {
-	name: "Festival Filosofia - Modena",
-	url: "https://www.festivalfilosofia.it/",
-	date: "18-20 Settembre",
+	name: "Autunno Pavede DOC - Pavia",
+	url: "https://www.autunnopavesedoc.it/",
+	date: "2-5 Ottobre",
 };
 
 
