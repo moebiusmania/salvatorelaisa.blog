@@ -22,6 +22,8 @@ deno test -A --filter "spineStyle"
 # Authoring
 deno task new:post     # scaffold a post in content/
 deno task new:device   # scaffold a device card in content/devices/
+deno task new:book     # scaffold a book (draft) in content/books/
+deno task dashboard    # TUI admin dashboard (scripts/dashboard/): stats + buttons that run the new:* tasks
 deno task drafts       # list draft posts
 deno task stats        # blog stats
 deno task convert:webp <path> [--quality N]

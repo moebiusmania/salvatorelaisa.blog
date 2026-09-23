@@ -27,6 +27,8 @@ Everything runs on **Deno**. There is no `package.json` and no `node_modules`. `
 |---|---|
 | `deno task new:post` | Scaffold a new post in `content/` |
 | `deno task new:device` | Scaffold a new device card in `content/devices/` |
+| `deno task new:book` | Scaffold a new book (as a draft) in `content/books/` |
+| `deno task dashboard` | Mouse-driven TUI with blog stats and buttons for the `new:*` tasks |
 | `deno task stats` | Print blog stats |
 | `deno task drafts` | List draft posts |
 | `deno task convert:webp <path> [--quality N]` | Convert PNG/JPG to WebP |
