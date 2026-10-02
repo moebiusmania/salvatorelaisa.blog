@@ -5,7 +5,7 @@ tags:
   - "blog"
   - "halloween"
 draft: false
-pinned: false
+pinned: true
 summary: "Una decina di anni fa avevo portato su questo blog una mia vecchia abitudine di un precedente blog di pubblicare contenuti a tema \"stagionali\", sopratutto per il periodo spooky dell'anno, che include il grosso di Ottobre fino alla festa dei Morti."
 images: ["https://salvatorelaisa.blog/content/content/2026/spooktober.webp"]
 ---
