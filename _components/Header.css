@@ -68,6 +68,14 @@
 	justify-content: center;
 }
 
+/* The Halloween event link adds a sixth nav item: tighten the gap on mobile
+   so the theme switcher stays on the same row. */
+@media (max-width: 767px) {
+	html[data-season="halloween"] .header > div > nav {
+		gap: var(--sp-2);
+	}
+}
+
 @media (min-width: 768px) {
 	.header > div > nav {
 		margin-left: auto;
