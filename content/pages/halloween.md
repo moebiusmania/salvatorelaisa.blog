@@ -37,7 +37,7 @@ sections:
     icon: 🎵
     items:
       - title: Lofi Halloween Mix 2
-        badge: YoutTube
+        badge: YouTube
         url: https://www.youtube.com/watch?v=9uGe8o1uC_s
       - title: LoFi Girl | Halloween 2025
         badge: Spotify
