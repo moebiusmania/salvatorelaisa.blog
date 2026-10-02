@@ -39,6 +39,9 @@ sections:
       - title: Lofi Halloween Mix 2
         badge: YouTube
         url: https://www.youtube.com/watch?v=9uGe8o1uC_s
+      - title: LoFi Girl | Halloween 2026 - LIVE
+        badge: YouTube
+        url: https://www.youtube.com/watch?v=1-LpQekNa9g
       - title: LoFi Girl | Halloween 2025
         badge: Spotify
         url: https://open.spotify.com/album/52zmIcBrOZAsSZko1DZlHr?si=vlIedkLWTle5DlLfNsu2tg
