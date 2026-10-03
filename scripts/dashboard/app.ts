@@ -14,7 +14,15 @@ import {
 } from "@preact/signals-core";
 import { slugify } from "../_compose.ts";
 import type { InputEvent } from "./terminal.ts";
-import { graphemes, type Rect, Screen, textWidth, truncate } from "./screen.ts";
+import { loadNow, type NowData } from "./now.ts";
+import {
+	graphemes,
+	type Rect,
+	Screen,
+	type Style,
+	textWidth,
+	truncate,
+} from "./screen.ts";
 import { loadStats, type PostInfo, type Stats } from "./stats.ts";
 import { lighten, mix, palette } from "./theme.ts";
 import {
@@ -97,6 +105,9 @@ interface Modal {
 
 type ListKey = "recent" | "drafts";
 
+/** One row of the "Now" modal, as styled segments. */
+type Line = [string, Style][];
+
 const exists = (path: string) => {
 	try {
 		Deno.statSync(path);
@@ -158,6 +169,8 @@ export const createApp = ({ write, quit }: AppOptions) => {
 	const pressed = signal<string | null>(null);
 	const focus = signal("action:post");
 	const modal = signal<Modal | null>(null);
+	const nowView = signal<NowData | null>(null);
+	const nowScroll = signal(0);
 	const toast = signal<{ text: string; ok: boolean } | null>(null);
 	const scroll: Record<ListKey, Signal<number>> = {
 		recent: signal(0),
@@ -165,7 +178,11 @@ export const createApp = ({ write, quit }: AppOptions) => {
 	};
 	const now = signal(new Date());
 	const clock = computed(() => clockFormat.format(now.value));
-	const spinning = computed(() => loading.value || !!modal.value?.busy);
+	const spinning = computed(() =>
+		loading.value || !!modal.value?.busy ||
+		nowView.value?.weather.status === "loading" ||
+		nowView.value?.repos.status === "loading"
+	);
 	const frame = signal(0);
 
 	const target = computed(() => {
@@ -180,6 +197,10 @@ export const createApp = ({ write, quit }: AppOptions) => {
 	// Non-reactive bits the input handlers need from the last frame.
 	const listRows: Record<ListKey, number> = { recent: 0, drafts: 0 };
 	let inputScroll = 0;
+	let nowRows = 0;
+	let nowTotal = 0;
+	/** Bumped on every open/close, so late fetches don't touch a stale view. */
+	let nowToken = 0;
 	let returnFocus = focus.peek();
 	let mouse = { x: -1, y: -1 };
 
@@ -239,6 +260,46 @@ export const createApp = ({ write, quit }: AppOptions) => {
 			focus.value = returnFocus;
 			pressed.value = null;
 		});
+	};
+
+	const openNow = async () => {
+		if (modal.peek() || nowView.peek()) return;
+		const token = ++nowToken;
+		// Fetches may settle before loadNow resolves; hold their results until then.
+		const pending: Partial<NowData> = {};
+		try {
+			const data = await loadNow((patch) => {
+				if (token !== nowToken) return;
+				const current = nowView.peek();
+				if (current) nowView.value = { ...current, ...patch };
+				else Object.assign(pending, patch);
+			});
+			if (token !== nowToken || modal.peek()) return;
+			batch(() => {
+				returnFocus = focus.peek();
+				nowScroll.value = 0;
+				nowView.value = { ...data, ...pending };
+				focus.value = "now:close";
+				pressed.value = null;
+			});
+		} catch (error) {
+			notify(`Could not load now.ts: ${(error as Error).message}`, false);
+		}
+	};
+
+	const closeNow = () => {
+		if (!nowView.peek()) return;
+		nowToken++;
+		batch(() => {
+			nowView.value = null;
+			focus.value = returnFocus;
+			pressed.value = null;
+		});
+	};
+
+	const scrollNow = (delta: number) => {
+		const max = Math.max(0, nowTotal - nowRows);
+		nowScroll.value = clamp(nowScroll.peek() + delta, 0, max);
 	};
 
 	/** Applies an edit to the title; any edit clears the previous error. */
@@ -406,9 +467,30 @@ export const createApp = ({ write, quit }: AppOptions) => {
 		}
 	};
 
+	const handleNowKey = (event: InputEvent) => {
+		if (event.type === "text") {
+			if (event.text === "q" || event.text === "n" || event.text === " ") {
+				closeNow();
+			}
+		} else if (event.type === "key") {
+			switch (event.name) {
+				case "escape":
+				case "enter":
+					return closeNow();
+				case "up":
+				case "down":
+					return scrollNow(event.name === "up" ? -1 : 1);
+				case "pageup":
+				case "pagedown":
+					return scrollNow((event.name === "pageup" ? -1 : 1) * nowRows);
+			}
+		}
+	};
+
 	const handleKey = (event: InputEvent) => {
 		if (event.type === "text") {
 			for (const char of event.text) {
+				if (char === "n") return void openNow();
 				const kind = KINDS.find((k) => k.key === char || k.id[0] === char);
 				if (kind) return openModal(kind);
 				if (char === " ") return activate();
@@ -445,6 +527,7 @@ export const createApp = ({ write, quit }: AppOptions) => {
 		if (event.type === "mouse") return handleMouse(event);
 		const m = modal.peek();
 		if (m) handleModalKey(event, m);
+		else if (nowView.peek()) handleNowKey(event);
 		else handleKey(event);
 	};
 
@@ -790,6 +873,11 @@ export const createApp = ({ write, quit }: AppOptions) => {
 
 		const extra = [
 			{
+				id: "action:now",
+				label: compactLabels ? "◷" : "◷ Now",
+				run: () => void openNow(),
+			},
+			{
 				id: "action:refresh",
 				label: compactLabels ? "↻" : "↻ Refresh",
 				run: () => void reload(),
@@ -864,8 +952,11 @@ export const createApp = ({ write, quit }: AppOptions) => {
 
 		const hints: [string, string][] = modal.value
 			? [["⏎", "create"], ["esc", "cancel"], ["tab", "focus"]]
+			: nowView.value
+			? [["esc", "close"], ["↑ ↓", "scroll"]]
 			: [
 				["1 2 3", "new"],
+				["n", "now"],
 				["r", "refresh"],
 				["tab ⏎", "keyboard"],
 				["q", "quit"],
@@ -931,15 +1022,19 @@ export const createApp = ({ write, quit }: AppOptions) => {
 		});
 	};
 
-	const drawModal = (m: Modal, width: number, height: number) => {
-		// Dim everything painted so far, then block it with a backdrop region.
+	/** Dims everything painted so far, then blocks it with a backdrop region. */
+	const backdrop = (width: number, height: number, onClick: () => void) => {
 		screen.mapColors((color) => mix(color, 0x000000, 0.55));
 		regions.layer = 1;
 		regions.add({
 			id: "modal:backdrop",
 			rect: { x: 0, y: 0, w: width, h: height },
-			onClick: closeModal,
+			onClick,
 		});
+	};
+
+	const drawModal = (m: Modal, width: number, height: number) => {
+		backdrop(width, height, closeModal);
 
 		const w = Math.min(66, width - 4);
 		const h = 11;
@@ -1005,6 +1100,139 @@ export const createApp = ({ write, quit }: AppOptions) => {
 			tall: true,
 			state: buttonState("modal:create"),
 			onClick: submit,
+		});
+	};
+
+	const nowLines = (n: NowData, room: number): Line[] => {
+		const heading = (text: string, color: number): Line => [
+			[text.toUpperCase(), { fg: color, bold: true }],
+		];
+		const plain = (text: string, style: Style = { fg: palette.text }): Line => [
+			[`  ${truncate(text, room - 2)}`, style],
+		];
+		const spinner = SPINNER[frame.value % SPINNER.length];
+		const muted = { fg: palette.faint, italic: true };
+
+		const lines: Line[] = [
+			heading("Work", palette.accent),
+			plain(n.work.role, { fg: palette.white, bold: true }),
+			plain(`${n.work.company} · ${n.work.city}`, { fg: palette.muted }),
+			[],
+			heading("Weather", palette.blue),
+		];
+		const { weather, repos } = n;
+		if (weather.status === "ok") {
+			const { temperature, label, city } = weather.value;
+			lines.push([
+				[`  ${temperature}°C`, { fg: palette.white, bold: true }],
+				[truncate(`  ${label} · ${city}`, room - 6), { fg: palette.muted }],
+			]);
+		} else {
+			lines.push(
+				weather.status === "loading"
+					? plain(`${spinner} loading ${n.weatherLocation}…`, muted)
+					: plain(`Weather unavailable for ${n.weatherLocation}`, muted),
+			);
+		}
+
+		lines.push([], heading("Watching", palette.violet));
+		if (!n.watching.length) lines.push(plain("Nothing right now", muted));
+		for (const { type, label } of n.watching) {
+			lines.push([
+				[`  ${type.padEnd(8)}`, { fg: palette.faint }],
+				[truncate(label, room - 10), { fg: palette.text }],
+			]);
+		}
+
+		lines.push(
+			[],
+			heading("Next event", palette.green),
+			plain(n.event.name, { fg: palette.text, bold: true }),
+		);
+		if (n.event.date) lines.push(plain(n.event.date, { fg: palette.muted }));
+
+		lines.push([], heading(`GitHub · ${n.githubUser}`, palette.teal));
+		if (repos.status !== "ok") {
+			lines.push(
+				repos.status === "loading"
+					? plain(`${spinner} loading repositories…`, muted)
+					: plain("Repositories unavailable", muted),
+			);
+		} else if (!repos.value.length) {
+			lines.push(plain("No public repositories", muted));
+		}
+		for (const repo of repos.status === "ok" ? repos.value : []) {
+			const language = repo.language ? `  ${repo.language}` : "";
+			lines.push([
+				[`  ${truncate(repo.name, room - 2 - textWidth(language))}`, {
+					fg: palette.text,
+					bold: true,
+				}],
+				[language, { fg: palette.faint }],
+			]);
+			if (repo.description) {
+				lines.push(plain(`  ${repo.description}`, { fg: palette.muted }));
+			}
+		}
+		return lines;
+	};
+
+	const drawNow = (n: NowData, width: number, height: number) => {
+		backdrop(width, height, closeNow);
+
+		const w = Math.min(72, width - 4);
+		const lines = nowLines(n, w - 4);
+		// Border (2) + gap above the button (1) + tall button (3).
+		const h = Math.min(lines.length + 6, height - 4);
+		const x = Math.floor((width - w) / 2);
+		const y = Math.floor((height - h) / 2);
+		screen.fill({ x: x + 2, y: y + 1, w, h }, { bg: 0x07070b });
+		const inner = panel(screen, { x, y, w, h }, {
+			title: "Now",
+			color: palette.blue,
+			border: palette.borderHi,
+			info: "/now",
+			footer: "src/utils/now.ts",
+		});
+		regions.add({
+			id: "modal:box",
+			rect: { x, y, w, h },
+			onWheel: (delta) => scrollNow(delta * 2),
+		});
+
+		nowRows = inner.h - 4;
+		nowTotal = lines.length;
+		const offset = clamp(
+			nowScroll.value,
+			0,
+			Math.max(0, lines.length - nowRows),
+		);
+		lines.slice(offset, offset + nowRows).forEach((line, i) => {
+			let lx = inner.x;
+			for (const [text, style] of line) {
+				lx += screen.text(lx, inner.y + i, text, style);
+			}
+		});
+		scrollbar(
+			screen,
+			{ x, y: inner.y - 1, w, h: nowRows + 2 },
+			offset,
+			nowRows,
+			lines.length,
+		);
+
+		const label = "Close";
+		button(screen, regions, {
+			id: "now:close",
+			x: inner.x + inner.w - buttonWidth(label),
+			y: inner.y + inner.h - 3,
+			label,
+			color: palette.surfaceHi,
+			textColor: palette.text,
+			on: palette.surface,
+			tall: true,
+			state: buttonState("now:close"),
+			onClick: closeNow,
 		});
 	};
 
@@ -1082,6 +1310,8 @@ export const createApp = ({ write, quit }: AppOptions) => {
 
 		const m = modal.value;
 		if (m) drawModal(m, width, height);
+		const n = nowView.value;
+		if (n && !m) drawNow(n, width, height);
 		// After the modal so its key hints aren't dimmed with the rest.
 		drawStatus(statusY, width, s);
 	};

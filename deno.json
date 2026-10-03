@@ -10,7 +10,7 @@
     "new:post": "deno run --allow-write scripts/post.ts",
     "new:device": "deno run --allow-write scripts/device.ts",
     "new:book": "deno run --allow-write scripts/book.ts",
-    "dashboard": "deno run --allow-read --allow-run=deno scripts/dashboard/main.ts",
+    "dashboard": "deno run --allow-read --allow-run=deno --allow-net=geocoding-api.open-meteo.com,api.open-meteo.com,api.github.com scripts/dashboard/main.ts",
     "stats": "deno run --allow-read scripts/stats.ts",
     "convert:webp": "deno run --allow-read --allow-write scripts/images-converter.ts",
     "todo:init": "deno run --allow-read --allow-write scripts/todo.ts init",
