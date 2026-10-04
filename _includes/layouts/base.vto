@@ -6,7 +6,10 @@
   summer: "/styles/themes/summer.css",
   xmas: "/styles/themes/xmas.css",
 } }}
-{{- set themeDecor = { halloween: "/styles/themes/halloween.decor.css" } }}
+{{- set themeDecor = {
+  halloween: "/styles/themes/halloween.decor.css",
+  xmas: "/styles/themes/xmas.decor.css",
+} }}
 {{- set themeCss = themes[season] }}
 {{- set decorCss = themeDecor[season] }}
 {{- set pageTitle = metaTitle || config.SITE_TITLE }}
@@ -51,6 +54,9 @@
   {{- if season === "halloween" }}
   <link rel="stylesheet" href="/assets/spooks.css">
   {{- /if }}
+  {{- if season === "xmas" }}
+  <link rel="stylesheet" href="/assets/snow.css">
+  {{- /if }}
   <link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'">
 
   <meta name="title" content="{{ pageTitle |> escape }}">
@@ -93,6 +99,9 @@
   {{- /if }}
   {{- if season === "halloween" }}
   {{ comp.content.Spooks() }}
+  {{- /if }}
+  {{- if season === "xmas" }}
+  {{ comp.content.Snow() }}
   {{- /if }}
   <main>
     {{ comp Container }}{{ content }}{{ /comp }}

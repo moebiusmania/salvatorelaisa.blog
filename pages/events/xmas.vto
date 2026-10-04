@@ -5,6 +5,11 @@ url: /events/xmas/
 <article class="content xmas-page">
   <h1>{{ entry.title }}</h1>
   <div>{{ entry.body |> md }}</div>
+
+  {{- for section of (entry.sections || []) }}
+  {{ comp.HalloweenSection({ section }) }}
+  {{- /for }}
+
   <hr />
 </article>
 {{ comp.Tip() }}

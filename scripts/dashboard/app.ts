@@ -88,7 +88,7 @@ const THEME_COLORS: Record<string, number> = {
 	halloween: 0xff7a18,
 	spring: palette.green,
 	summer: 0xf4a93b,
-	xmas: palette.teal,
+	xmas: 0xff5a5f,
 };
 
 const SPINNER = "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏";

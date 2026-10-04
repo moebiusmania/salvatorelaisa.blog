@@ -1,0 +1,69 @@
+# Kick off the Christmas season, every year: switch the site to the xmas theme,
+# commit the change on main and trigger a deploy
+
+name: Xmas
+
+on:
+  schedule:
+    # GitHub cron runs in UTC: 23:01 UTC on Nov 23 is 00:01 Europe/Rome (CET) on Nov 24.
+    - cron: "1 23 23 11 *"
+  # Manual fallback, in case the scheduled run is delayed or skipped
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: xmas
+  cancel-in-progress: false
+
+jobs:
+  enable-xmas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: 💻 Use Deno v2
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x # Run with latest stable Deno.
+          cache: true
+
+      - name: 🎄 Set xmas theme
+        run: |
+          sed -i -E 's/^export const CURRENT_THEME = "[a-z]+" as SeasonTheme;$/export const CURRENT_THEME = "xmas" as SeasonTheme;/' src/utils/config.ts
+
+          # Fail loudly if the file drifted and the replacement did not apply
+          grep -qx 'export const CURRENT_THEME = "xmas" as SeasonTheme;' src/utils/config.ts
+
+      - name: 📝 Run tests
+        run: deno task test
+
+      - name: 💾 Commit & push on main
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/utils/config.ts
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit, xmas theme already enabled"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "chore: enable xmas theme"
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows,
+      # so the deploy has to be dispatched explicitly
+      - name: 🚀 Trigger deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
