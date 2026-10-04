@@ -3,12 +3,12 @@
   Demo page for <snow-fall>, see ../snow-fall.js (MIT License).
   Copyright (c) 2026 Salvatore Laisa
 -->
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>&lt;snow-fall&gt; demo</title>
-<meta name="description" content="A dependency-free snowfall web component: live demo and usage.">
+<meta name="description" content="Un web component senza dipendenze che fa nevicare sulla pagina: demo dal vivo e istruzioni d'uso.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
 <script type="module" src="../snow-fall.js"></script>
 <style>
@@ -160,7 +160,8 @@ output {
 
 .segmented button:focus-visible,
 input:focus-visible,
-.link-button:focus-visible {
+.link-button:focus-visible,
+.download-button:focus-visible {
 	outline: 2px solid var(--pine);
 	outline-offset: 2px;
 }
@@ -184,6 +185,24 @@ input[type="color"] {
 	font-size: 0.9rem;
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.download-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0.75rem 0 1.25rem;
+	padding: 0.55rem 1.1rem;
+	border-radius: 999px;
+	background-color: var(--accent);
+	color: var(--bg);
+	font-weight: 600;
+	text-decoration: none;
+	transition: filter 200ms ease;
+}
+
+.download-button:hover {
+	filter: brightness(1.1);
 }
 
 /* Contained example: a little night-time window */
@@ -264,52 +283,56 @@ footer {
 
 <main>
 	<h1><code>&lt;snow-fall&gt;</code></h1>
+	<a class="download-button" href="../snow-fall.js" download>
+		<span aria-hidden="true">⬇</span> Scarica snow-fall.js
+	</a>
 	<p class="lead">
-		A dependency-free snowfall web component: three depth layers of flakes,
-		animated with CSS only. The same snow that falls on
-		<a href="https://salvatorelaisa.blog">salvatorelaisa.blog</a> at Christmas.
+		Un web component senza dipendenze che fa nevicare sulla pagina: tre
+		livelli di profondità per i fiocchi, animati solo con CSS. È la stessa
+		neve che cade su <a href="https://salvatorelaisa.blog">salvatorelaisa.blog</a>
+		a Natale.
 	</p>
 
 	<p class="motion-note">
-		Your system asks for reduced motion, so the snow is hidden on purpose.
-		Disable that setting to see the demo.
+		Il tuo sistema richiede di ridurre le animazioni, quindi la neve è
+		nascosta di proposito. Disattiva questa impostazione per vedere la demo.
 	</p>
 
-	<h2>Try it</h2>
+	<h2>Provalo</h2>
 	<div class="panel">
 		<div class="row">
-			<label for="count">Flakes</label>
+			<label for="count">Fiocchi</label>
 			<input id="count" type="range" min="0" max="300" step="1" value="42">
 			<output id="count-value" for="count">42</output>
 		</div>
 
 		<div class="row">
-			<span><strong>Layer</strong></span>
-			<div class="segmented" role="group" aria-label="Snow layer">
-				<button type="button" data-layer="front" aria-pressed="true">In front</button>
-				<button type="button" data-layer="behind" aria-pressed="false">Behind</button>
+			<span><strong>Livello</strong></span>
+			<div class="segmented" role="group" aria-label="Livello della neve">
+				<button type="button" data-layer="front" aria-pressed="true">Davanti</button>
+				<button type="button" data-layer="behind" aria-pressed="false">Dietro</button>
 			</div>
 		</div>
 
 		<div class="row">
-			<span><strong>Page</strong></span>
-			<div class="segmented" role="group" aria-label="Page theme">
-				<button type="button" data-theme-choice="light" aria-pressed="true">Light</button>
-				<button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+			<span><strong>Pagina</strong></span>
+			<div class="segmented" role="group" aria-label="Tema della pagina">
+				<button type="button" data-theme-choice="light" aria-pressed="true">Chiaro</button>
+				<button type="button" data-theme-choice="dark" aria-pressed="false">Scuro</button>
 			</div>
 		</div>
 
 		<div class="row">
-			<label for="color">Color</label>
+			<label for="color">Colore</label>
 			<input id="color" type="color" value="#ffffff">
-			<button type="button" class="link-button" id="color-reset">Reset to theme</button>
+			<button type="button" class="link-button" id="color-reset">Ripristina il colore del tema</button>
 		</div>
 	</div>
 
-	<h2>Contained</h2>
+	<h2>Contenuta</h2>
 	<p>
-		With the <code>contained</code> attribute the snow fills its nearest
-		positioned ancestor instead of the viewport.
+		Con l'attributo <code>contained</code> la neve riempie il primo elemento
+		antenato posizionato invece dell'intera finestra.
 	</p>
 	<div class="window">
 		<snow-fall contained count="30"></snow-fall>
@@ -317,40 +340,40 @@ footer {
 		<div class="ground"></div>
 	</div>
 
-	<h2>Usage</h2>
+	<h2>Utilizzo</h2>
 <pre><code>&lt;script type="module" src="snow-fall.js"&gt;&lt;/script&gt;
 
 &lt;snow-fall&gt;&lt;/snow-fall&gt;
 
-&lt;!-- 80 flakes, behind the content, tinted for a light page --&gt;
+&lt;!-- 80 fiocchi, dietro al contenuto, colorati per una pagina chiara --&gt;
 &lt;snow-fall count="80"
   style="--snow-z-index: -1; --snow-color: #b9cdd8"&gt;&lt;/snow-fall&gt;
 
-&lt;!-- inside a box --&gt;
+&lt;!-- dentro un box --&gt;
 &lt;div style="position: relative; overflow: hidden; height: 16rem"&gt;
   &lt;snow-fall contained count="30"&gt;&lt;/snow-fall&gt;
 &lt;/div&gt;</code></pre>
 
 	<table>
 		<thead>
-			<tr><th>Option</th><th>Default</th><th>Description</th></tr>
+			<tr><th>Opzione</th><th>Predefinito</th><th>Descrizione</th></tr>
 		</thead>
 		<tbody>
-			<tr><td><code>count</code></td><td><code>42</code></td><td>Number of flakes, capped at 300.</td></tr>
-			<tr><td><code>contained</code></td><td>off</td><td>Fill the nearest positioned ancestor instead of the viewport.</td></tr>
-			<tr><td><code>--snow-color</code></td><td><code>#fff</code></td><td>Flake colour.</td></tr>
-			<tr><td><code>--snow-glow</code></td><td>blue-grey</td><td>Halo around each flake; keeps white snow visible on light pages.</td></tr>
-			<tr><td><code>--snow-z-index</code></td><td><code>9999</code></td><td>Stacking order; <code>-1</code> lets the snow fall behind the content.</td></tr>
+			<tr><td><code>count</code></td><td><code>42</code></td><td>Numero di fiocchi, massimo 300.</td></tr>
+			<tr><td><code>contained</code></td><td>disattivo</td><td>Riempie il primo elemento antenato posizionato invece della finestra.</td></tr>
+			<tr><td><code>--snow-color</code></td><td><code>#fff</code></td><td>Colore dei fiocchi.</td></tr>
+			<tr><td><code>--snow-glow</code></td><td>grigio-blu</td><td>Alone attorno a ogni fiocco; mantiene visibile la neve bianca sulle pagine chiare.</td></tr>
+			<tr><td><code>--snow-z-index</code></td><td><code>9999</code></td><td>Ordine di sovrapposizione; con <code>-1</code> la neve cade dietro al contenuto.</td></tr>
 		</tbody>
 	</table>
 
 	<p style="margin-top: 1rem">
-		<a href="../snow-fall.js" download>Download snow-fall.js</a> · MIT License
+		<a href="../snow-fall.js" download>Scarica snow-fall.js</a> · Licenza MIT
 	</p>
 
 	<footer>
-		Made by <a href="https://salvatorelaisa.blog">Salvatore Laisa</a>.
-		The snow ignores clicks, is hidden from screen readers and respects
+		Realizzato da <a href="https://salvatorelaisa.blog">Salvatore Laisa</a>.
+		La neve ignora i clic, è nascosta agli screen reader e rispetta
 		<code>prefers-reduced-motion</code>.
 	</footer>
 </main>
