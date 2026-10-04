@@ -347,13 +347,13 @@ html[data-season="xmas"] .header > div > a {
 html[data-season="xmas"] .header > div > a::before {
 	content: "";
 	position: absolute;
-	top: -0.85rem;
-	left: -0.6rem;
-	width: 1.8rem;
-	height: 1.45rem;
+	top: -0.95rem;
+	left: 0.35rem;
+	width: 2rem;
+	height: 1.6rem;
 	z-index: 1;
 	pointer-events: none;
-	transform: rotate(-20deg);
+	transform: rotate(-5deg);
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32'%3E%3Cpath d='M5 25C8 12 18 3 31 5C29 10 28 17 31 25Z' fill='%23d62839'/%3E%3Cpath d='M12 25C14 16 20 9 27 7' stroke='%23fff' stroke-opacity='.25' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='33' cy='6' r='4.5' fill='%23fff' stroke='%23cfd8dc' stroke-width='.8'/%3E%3Crect x='2' y='22' width='32' height='8' rx='4' fill='%23fff' stroke='%23cfd8dc' stroke-width='.8'/%3E%3C/svg%3E")
 		no-repeat center / contain;
 }
