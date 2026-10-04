@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--
+  Demo page for <snow-fall>, see ../snow-fall.js (MIT License).
+  Copyright (c) 2026 Salvatore Laisa
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&lt;snow-fall&gt; demo</title>
+<meta name="description" content="A dependency-free snowfall web component: live demo and usage.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
+<script type="module" src="../snow-fall.js"></script>
+<style>
+:root {
+	color-scheme: light dark;
+	--bg: #f8f6f1;
+	--panel: #eef1ea;
+	--ink: #16211c;
+	--muted: #66726b;
+	--border: #dbe1d6;
+	--accent: #c0262d;
+	--pine: #1f6b4a;
+	--code-bg: #16211c;
+	--code-ink: #eef1ea;
+	--snow-color: #b9cdd8;
+	--snow-glow: rgba(60, 90, 110, 0.25);
+}
+
+:root[data-theme="dark"] {
+	--bg: #0e191d;
+	--panel: #15252b;
+	--ink: #f4f1ea;
+	--muted: #8ea19a;
+	--border: #273c43;
+	--accent: #ff5a5f;
+	--pine: #5fbf8f;
+	--code-bg: #081013;
+	--code-ink: #dde5e0;
+	--snow-color: rgba(255, 255, 255, 0.85);
+	--snow-glow: rgba(255, 255, 255, 0.45);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg);
+	color: var(--ink);
+	font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+	transition: background-color 200ms ease, color 200ms ease;
+}
+
+main {
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: 3rem 1rem 4rem;
+}
+
+h1 {
+	margin: 0 0 0.25rem;
+	font-size: clamp(2rem, 6vw, 2.75rem);
+	line-height: 1.1;
+}
+
+h1 code {
+	color: var(--accent);
+}
+
+h2 {
+	margin: 2.5rem 0 0.75rem;
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+.lead {
+	color: var(--muted);
+}
+
+a {
+	color: var(--accent);
+}
+
+code {
+	font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+	font-size: 0.9em;
+}
+
+pre {
+	margin: 0 0 1rem;
+	padding: 1rem;
+	overflow-x: auto;
+	border-radius: 8px;
+	background-color: var(--code-bg);
+	color: var(--code-ink);
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+/* Controls */
+.panel {
+	display: grid;
+	gap: 1rem;
+	padding: 1.25rem;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	background-color: color-mix(in srgb, var(--panel) 85%, transparent);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem 1rem;
+}
+
+.row > label:first-child {
+	min-width: 7rem;
+	font-weight: 600;
+}
+
+input[type="range"] {
+	flex: 1;
+	min-width: 10rem;
+	accent-color: var(--accent);
+}
+
+output {
+	min-width: 2.5rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--muted);
+}
+
+.segmented {
+	display: inline-flex;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.segmented button {
+	padding: 0.35rem 0.9rem;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.segmented button[aria-pressed="true"] {
+	background-color: var(--accent);
+	color: var(--bg);
+}
+
+.segmented button:focus-visible,
+input:focus-visible,
+.link-button:focus-visible {
+	outline: 2px solid var(--pine);
+	outline-offset: 2px;
+}
+
+input[type="color"] {
+	width: 2.5rem;
+	height: 2rem;
+	padding: 0;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: none;
+	cursor: pointer;
+}
+
+.link-button {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--accent);
+	font: inherit;
+	font-size: 0.9rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Contained example: a little night-time window */
+.window {
+	position: relative;
+	display: grid;
+	place-items: end center;
+	height: 16rem;
+	overflow: hidden;
+	border-radius: 12px;
+	background: linear-gradient(#0b1a2a, #1d3a4f 70%, #2c4f63);
+	color: #f4f1ea;
+}
+
+.window snow-fall {
+	--snow-color: #fff;
+	--snow-glow: rgba(255, 255, 255, 0.5);
+}
+
+.window .ground {
+	width: 100%;
+	height: 3.5rem;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	background-color: #e8eef0;
+}
+
+.window .tree {
+	position: absolute;
+	bottom: 1.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 4.5rem;
+	line-height: 1;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+}
+
+th,
+td {
+	padding: 0.5rem 0.5rem 0.5rem 0;
+	border-bottom: 1px solid var(--border);
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	color: var(--muted);
+	font-weight: 600;
+}
+
+footer {
+	margin-top: 3rem;
+	color: var(--muted);
+	font-size: 0.85rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.motion-note {
+		display: block !important;
+	}
+}
+
+.motion-note {
+	display: none;
+	padding: 0.75rem 1rem;
+	border-left: 3px solid var(--accent);
+	background-color: var(--panel);
+	font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+<snow-fall id="snow"></snow-fall>
+
+<main>
+	<h1><code>&lt;snow-fall&gt;</code></h1>
+	<p class="lead">
+		A dependency-free snowfall web component: three depth layers of flakes,
+		animated with CSS only. The same snow that falls on
+		<a href="https://salvatorelaisa.blog">salvatorelaisa.blog</a> at Christmas.
+	</p>
+
+	<p class="motion-note">
+		Your system asks for reduced motion, so the snow is hidden on purpose.
+		Disable that setting to see the demo.
+	</p>
+
+	<h2>Try it</h2>
+	<div class="panel">
+		<div class="row">
+			<label for="count">Flakes</label>
+			<input id="count" type="range" min="0" max="300" step="1" value="42">
+			<output id="count-value" for="count">42</output>
+		</div>
+
+		<div class="row">
+			<span><strong>Layer</strong></span>
+			<div class="segmented" role="group" aria-label="Snow layer">
+				<button type="button" data-layer="front" aria-pressed="true">In front</button>
+				<button type="button" data-layer="behind" aria-pressed="false">Behind</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<span><strong>Page</strong></span>
+			<div class="segmented" role="group" aria-label="Page theme">
+				<button type="button" data-theme-choice="light" aria-pressed="true">Light</button>
+				<button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<label for="color">Color</label>
+			<input id="color" type="color" value="#ffffff">
+			<button type="button" class="link-button" id="color-reset">Reset to theme</button>
+		</div>
+	</div>
+
+	<h2>Contained</h2>
+	<p>
+		With the <code>contained</code> attribute the snow fills its nearest
+		positioned ancestor instead of the viewport.
+	</p>
+	<div class="window">
+		<snow-fall contained count="30"></snow-fall>
+		<span class="tree" aria-hidden="true">🎄</span>
+		<div class="ground"></div>
+	</div>
+
+	<h2>Usage</h2>
+<pre><code>&lt;script type="module" src="snow-fall.js"&gt;&lt;/script&gt;
+
+&lt;snow-fall&gt;&lt;/snow-fall&gt;
+
+&lt;!-- 80 flakes, behind the content, tinted for a light page --&gt;
+&lt;snow-fall count="80"
+  style="--snow-z-index: -1; --snow-color: #b9cdd8"&gt;&lt;/snow-fall&gt;
+
+&lt;!-- inside a box --&gt;
+&lt;div style="position: relative; overflow: hidden; height: 16rem"&gt;
+  &lt;snow-fall contained count="30"&gt;&lt;/snow-fall&gt;
+&lt;/div&gt;</code></pre>
+
+	<table>
+		<thead>
+			<tr><th>Option</th><th>Default</th><th>Description</th></tr>
+		</thead>
+		<tbody>
+			<tr><td><code>count</code></td><td><code>42</code></td><td>Number of flakes, capped at 300.</td></tr>
+			<tr><td><code>contained</code></td><td>off</td><td>Fill the nearest positioned ancestor instead of the viewport.</td></tr>
+			<tr><td><code>--snow-color</code></td><td><code>#fff</code></td><td>Flake colour.</td></tr>
+			<tr><td><code>--snow-glow</code></td><td>blue-grey</td><td>Halo around each flake; keeps white snow visible on light pages.</td></tr>
+			<tr><td><code>--snow-z-index</code></td><td><code>9999</code></td><td>Stacking order; <code>-1</code> lets the snow fall behind the content.</td></tr>
+		</tbody>
+	</table>
+
+	<p style="margin-top: 1rem">
+		<a href="../snow-fall.js" download>Download snow-fall.js</a> · MIT License
+	</p>
+
+	<footer>
+		Made by <a href="https://salvatorelaisa.blog">Salvatore Laisa</a>.
+		The snow ignores clicks, is hidden from screen readers and respects
+		<code>prefers-reduced-motion</code>.
+	</footer>
+</main>
+
+<script type="module">
+const root = document.documentElement;
+const snow = document.getElementById("snow");
+const count = document.getElementById("count");
+const countValue = document.getElementById("count-value");
+const color = document.getElementById("color");
+
+count.addEventListener("input", () => {
+	countValue.value = count.value;
+	snow.setAttribute("count", count.value);
+});
+
+// Toggle one button of a segmented group and run its action.
+const segmented = (selector, attribute, apply) => {
+	const buttons = document.querySelectorAll(selector);
+	for (const button of buttons) {
+		button.addEventListener("click", () => {
+			for (const other of buttons) other.setAttribute("aria-pressed", String(other === button));
+			apply(button.getAttribute(attribute));
+		});
+	}
+};
+
+segmented("[data-layer]", "data-layer", (layer) => {
+	snow.style.setProperty("--snow-z-index", layer === "behind" ? "-1" : "9999");
+});
+
+const setTheme = (theme) => {
+	root.dataset.theme = theme;
+	for (const button of document.querySelectorAll("[data-theme-choice]")) {
+		button.setAttribute("aria-pressed", String(button.dataset.themeChoice === theme));
+	}
+};
+segmented("[data-theme-choice]", "data-theme-choice", setTheme);
+setTheme(matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+color.addEventListener("input", () => snow.style.setProperty("--snow-color", color.value));
+document.getElementById("color-reset").addEventListener("click", () => {
+	snow.style.removeProperty("--snow-color");
+});
+</script>
+</body>
+</html>
