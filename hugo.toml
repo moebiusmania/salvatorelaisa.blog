@@ -111,6 +111,7 @@ pinnedPostDescription = "Questo post è stato messo in evidenza perché potrebbe
 [params.seasonEmoji]
 summer = "🌤️🏖️"
 halloween = "👻🕸️"
+xmas = "🎄☃️"
 
 # Event page surfaced as the first nav item when its matching theme is active.
 [params.seasonEvents]

@@ -36,7 +36,7 @@ var themeColors = map[string]Color{
 	"halloween": RGB(0xff7a18),
 	"spring":    palette.green,
 	"summer":    RGB(0xf4a93b),
-	"xmas":      palette.teal,
+	"xmas":      RGB(0xff5a5f),
 }
 
 // mix moves color towards target by amount (0..1), channel by channel.

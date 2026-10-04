@@ -1,6 +1,6 @@
 {{- $season := partial "season.html" -}}
 {{- $themeCss := printf "/styles/themes/%s.css" $season.theme -}}
-{{- $decorCss := cond (eq $season.theme "halloween") "/styles/themes/halloween.decor.css" "" -}}
+{{- $decorCss := index (dict "halloween" "/styles/themes/halloween.decor.css" "xmas" "/styles/themes/xmas.decor.css") $season.theme | default "" -}}
 {{- $meta := partial "meta.html" . -}}
 {{- partialCached "assets/styles.html" . -}}
 {{- partialCached "assets/scripts.html" . -}}
@@ -45,6 +45,9 @@
   {{- if eq $season.theme "halloween" }}
   <link rel="stylesheet" href="/assets/spooks.css">
   {{- end }}
+  {{- if eq $season.theme "xmas" }}
+  <link rel="stylesheet" href="/assets/snow.css">
+  {{- end }}
   <link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'">
 
   <meta name="title" content="{{ $meta.title }}">
@@ -85,6 +88,9 @@
   {{- end }}
   {{- if eq $season.theme "halloween" }}
   {{ partial "components/content/Spooks.html" }}
+  {{- end }}
+  {{- if eq $season.theme "xmas" }}
+  {{ partial "components/content/Snow.html" }}
   {{- end }}
   <main>
     <section class="container">

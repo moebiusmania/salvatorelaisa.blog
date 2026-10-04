@@ -1,9 +1,27 @@
-{{- /* Context: optional count. */ -}}
-{{- $icons := slice "❅" "❆" -}}
-<div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
-  {{- range seq (. | default 10) }}
-  <div class="snowflake" role="presentation" aria-hidden="true">
-    {{ index $icons (int (mul (math.Rand) (len $icons))) }}
+{{- /* Snowfall in three depth layers: many tiny, slow, faint flakes far away, a
+  middle layer of soft dots, and a few large crystal glyphs up close that fall
+  fastest. Layer, position, speed and sway are computed once at build time, so
+  each build bakes a fixed (but organic-looking) snowfall.
+  U+FE0E keeps the crystals as text glyphs, so they take the theme colour
+  instead of being swapped for a platform emoji.
+  Context: optional count. */ -}}
+{{- $glyphs := slice "❄︎" "❅︎" "❆︎" -}}
+{{- $layers := dict
+  "far" (dict "fall" (slice 22 34) "size" (slice 2 3))
+  "mid" (dict "fall" (slice 14 21) "size" (slice 3 5))
+  "near" (dict "fall" (slice 9 13) "size" (slice 0.8 1.3))
+-}}
+<div class="snow" aria-hidden="true">
+  {{- range seq (. | default 42) }}
+  {{- $roll := math.Rand }}
+  {{- $layer := cond (lt $roll 0.5) "far" (cond (lt $roll 0.85) "mid" "near") }}
+  {{- $spec := index $layers $layer }}
+  {{- $fallMin := index $spec.fall 0 }}
+  {{- $fall := add $fallMin (mul (math.Rand) (sub (index $spec.fall 1) $fallMin)) }}
+  {{- $sizeMin := index $spec.size 0 }}
+  {{- $size := add $sizeMin (mul (math.Rand) (sub (index $spec.size 1) $sizeMin)) }}
+  <div class="flake flake--{{ $layer }}" style="{{ printf "--x:%.1f%%;--fall:%.1fs;--delay:%.1fs;--size:%.2f%s;--sway:%.0fpx;--sway-time:%.1fs;" (mul (math.Rand) 100) $fall (mul -1 (mul (math.Rand) $fall)) $size (cond (eq $layer "near") "rem" "px") (add 8 (mul (math.Rand) 32)) (add 3 (mul (math.Rand) 4)) | safeCSS }}">
+    <span>{{ if eq $layer "near" }}{{ index $glyphs (int (mul (math.Rand) (len $glyphs))) }}{{ end }}</span>
   </div>
   {{- end }}
 </div>
