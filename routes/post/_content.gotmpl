@@ -1,0 +1,13 @@
+{{- /* /post/page/<n>/ (10 per page, starting at 1), /post/year/ and one page
+  per year from 2010 to now, empty years included (were pages/post/*). The
+  post count comes from `blog gen`, which knows whether drafts are included.
+  `build` must be complete: a partial map leaves `render` at "never". */ -}}
+{{- $hidden := dict "list" "never" "render" "always" "publishResources" true }}
+{{- $published := hugo.Data.gen.posts.published }}
+{{- range seq (int (math.Ceil (div (float $published) 10))) }}
+  {{- $.AddPage (dict "path" (printf "page/%d" .) "title" "page" "type" "route" "layout" "post-page" "params" (dict "pageNumber" .) "build" $hidden) }}
+{{- end }}
+{{- $.AddPage (dict "path" "year" "kind" "section" "title" "year" "type" "route" "layout" "year-index" "build" $hidden) }}
+{{- range seq 2010 now.Year }}
+  {{- $.AddPage (dict "path" (printf "year/%d" .) "title" "year" "type" "route" "layout" "year" "params" (dict "year" (string .)) "build" $hidden) }}
+{{- end }}
