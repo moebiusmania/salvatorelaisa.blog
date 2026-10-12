@@ -49,7 +49,7 @@ func build(t *testing.T) string {
 	dest := t.TempDir()
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Minute)
 	defer cancel()
-	cmd := exec.CommandContext(ctx, "go", "tool", "hugo", "--quiet", "--panicOnWarning", "--destination", dest)
+	cmd := exec.CommandContext(ctx, "go", "tool", "-modfile=tools/hugo/go.mod", "hugo", "--quiet", "--panicOnWarning", "--destination", dest)
 	cmd.Dir = root
 	if out, err := cmd.CombinedOutput(); err != nil {
 		t.Fatalf("hugo build failed: %v\n%s", err, out)

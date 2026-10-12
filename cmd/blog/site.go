@@ -7,6 +7,7 @@ import (
 	"os/exec"
 	"os/signal"
 	"path/filepath"
+	"slices"
 	"strings"
 	"syscall"
 	"time"
@@ -74,9 +75,12 @@ func serveCmd() *cobra.Command {
 	return cmd
 }
 
-// hugo runs the Hugo version pinned in go.mod.
+// hugoTool runs the Hugo version pinned in tools/hugo/go.mod.
+var hugoTool = []string{"tool", "-modfile=tools/hugo/go.mod", "hugo"}
+
+// hugo runs the pinned Hugo with args.
 func hugo(ctx context.Context, args ...string) error {
-	cmd := exec.CommandContext(ctx, "go", append([]string{"tool", "hugo"}, args...)...)
+	cmd := exec.CommandContext(ctx, "go", append(slices.Clone(hugoTool), args...)...)
 	cmd.Stdin, cmd.Stdout, cmd.Stderr = os.Stdin, os.Stdout, os.Stderr
 	cmd.Cancel = func() error { return cmd.Process.Signal(os.Interrupt) }
 	cmd.WaitDelay = 5 * time.Second
