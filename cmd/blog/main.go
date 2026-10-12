@@ -23,7 +23,7 @@ func main() {
 	root.AddCommand(
 		genCmd(), buildCmd(), serveCmd(),
 		newCmd(), draftsCmd(), statsCmd(), webpCmd(), todoCmd(),
-		fontsCmd(), vendorCmd(),
+		fontsCmd(), vendorCmd(), dashboardCmd(),
 	)
 
 	if err := root.Execute(); err != nil {
