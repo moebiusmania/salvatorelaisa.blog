@@ -20,13 +20,27 @@ func main() {
 		// Every command works from the repository root, wherever it's run from.
 		PersistentPreRunE: func(*cobra.Command, []string) error { return chdirRoot() },
 	}
-	root.AddCommand(genCmd(), buildCmd(), serveCmd())
+	root.AddCommand(
+		genCmd(), buildCmd(), serveCmd(),
+		newCmd(), draftsCmd(), statsCmd(), webpCmd(), todoCmd(),
+		fontsCmd(), vendorCmd(),
+	)
 
 	if err := root.Execute(); err != nil {
-		fmt.Fprintf(os.Stderr, "🚨 %v\n", err)
+		var msg message
+		if errors.As(err, &msg) {
+			fmt.Fprintln(os.Stderr, msg)
+		} else {
+			fmt.Fprintf(os.Stderr, "🚨 %v\n", err)
+		}
 		os.Exit(1)
 	}
 }
+
+// message is an error printed verbatim (no "🚨" prefix).
+type message string
+
+func (m message) Error() string { return string(m) }
 
 // chdirRoot moves to the closest parent folder holding hugo.toml.
 func chdirRoot() error {
