@@ -1,0 +1,13 @@
+{{- define "main" }}
+{{- $about := hugo.Data.gen.pages.about }}
+<div class="about-page">
+  <article class="content">
+    <header>
+      <h1>{{ $about.title }}</h1>
+    </header>
+    <div>{{ partial "markdown.html" (dict "page" . "source" $about.body) }}</div>
+    <hr />
+  </article>
+  {{ partial "components/Tip.html" }}
+</div>
+{{- end }}

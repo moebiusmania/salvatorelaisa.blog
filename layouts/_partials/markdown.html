@@ -1,0 +1,4 @@
+{{- /* Renders the Markdown body of a data-only entry (device, book, page) the
+  way posts are rendered: same render hooks, same post-processing.
+  Context: dict "page" "source". */ -}}
+{{- partial "content.html" (.page.RenderString (dict "display" "block") .source) -}}

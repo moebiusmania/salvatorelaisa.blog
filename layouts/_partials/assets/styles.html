@@ -1,0 +1,27 @@
+{{- /* Concatenates the component and page stylesheets (sibling .css files,
+  untouched from the Nuxt version) into /assets/app.css. Every selector in them
+  is scoped by a component or page class, so serving them together is safe.
+  The seasonal decorations style `body`, so they get their own files and
+  baseof.html links them only while their theme is active.
+  Each file is preceded by a comment naming its path; files are joined by "\n". */ -}}
+{{- $decorations := slice "_components/content/Clouds.css" "_components/content/Snow.css" "_components/content/Spooks.css" -}}
+{{- /* Shared by several components, so they go first. */ -}}
+{{- $first := slice "_components/Badge.css" "_components/now/card.css" -}}
+{{- $components := slice -}}
+{{- range partial "assets/css-files.html" "_components" -}}
+  {{- if not (or (in $decorations .) (in $first .)) }}{{ $components = $components | append . }}{{ end -}}
+{{- end -}}
+{{- $bundles := dict
+  "app" ($first | append $components | append (partial "assets/css-files.html" "_includes/css"))
+  "clouds" (slice "_components/content/Clouds.css")
+  "spooks" (slice "_components/content/Spooks.css")
+  "snow" (slice "_components/content/Snow.css")
+-}}
+{{- range $name, $files := $bundles -}}
+  {{- $parts := slice -}}
+  {{- range $files -}}
+    {{- /* Read through the assets mount so `hugo server` tracks the dependency. */ -}}
+    {{- $parts = $parts | append (printf "/* %s */\n%s" . (resources.Get .).Content) -}}
+  {{- end -}}
+  {{- (resources.FromString (printf "assets/%s.css" $name) (delimit $parts "\n")).Publish -}}
+{{- end -}}

@@ -1,0 +1,8 @@
+{{- /* Per-post values the templates share: the slug (filename), the link
+  (no trailing slash, as Nuxt generated) and the reading time from data/gen. */ -}}
+{{- $slug := .File.ContentBaseName -}}
+{{- return dict
+  "slug" $slug
+  "href" (printf "/post/%s" $slug)
+  "readingTime" (int (index hugo.Data.gen.posts.readingTime $slug))
+-}}

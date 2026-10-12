@@ -39,7 +39,7 @@ func buildCmd() *cobra.Command {
 			if err := gen.Run(gen.Options{Root: "."}); err != nil {
 				return err
 			}
-			return hugo(context.Background(), append([]string{"--cleanDestinationDir"}, args...)...)
+			return hugo(context.Background(), append([]string{"--cleanDestinationDir", "--panicOnWarning"}, args...)...)
 		},
 	}
 }

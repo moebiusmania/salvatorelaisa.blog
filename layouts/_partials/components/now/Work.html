@@ -1,0 +1,10 @@
+{{- /* Context: extra class name. */ -}}
+{{- $work := hugo.Data.now.work -}}
+<article class="now-card now-work{{ with . }} {{ . }}{{ end }}">
+  <p class="now-card-kicker">Al lavoro</p>
+  <h2>{{ $work.role }}</h2>
+  <p class="now-work-company">{{ $work.company }}</p>
+  <p class="now-work-city">
+    <span aria-label="luogo" role="img">📍</span> {{ $work.city }}
+  </p>
+</article>

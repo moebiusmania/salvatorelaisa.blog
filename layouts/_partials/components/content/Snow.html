@@ -1,0 +1,9 @@
+{{- /* Context: optional count. */ -}}
+{{- $icons := slice "❅" "❆" -}}
+<div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
+  {{- range seq (. | default 10) }}
+  <div class="snowflake" role="presentation" aria-hidden="true">
+    {{ index $icons (int (mul (math.Rand) (len $icons))) }}
+  </div>
+  {{- end }}
+</div>

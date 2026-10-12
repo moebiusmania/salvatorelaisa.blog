@@ -1,0 +1,23 @@
+{{- define "main" }}
+{{- $all := partial "posts.html" }}
+{{- $pinned := index (where $all "Params.pinned" true) 0 }}
+{{- $latest := first 5 $all }}
+{{- /* The pinned post goes first, but it may already be among the latest five:
+  drop it from the tail so it is never rendered twice. */}}
+{{- $posts := $latest }}
+{{- with $pinned }}
+  {{- $posts = slice . }}
+  {{- range where $latest "Permalink" "ne" .Permalink }}{{ $posts = $posts | append . }}{{ end }}
+{{- end }}
+<div class="home-page">
+  <p>{{ site.Params.siteDescription }}</p>
+
+  {{ partial "components/PostsList.html" (dict "posts" $posts) }}
+
+  <section>
+    <a href="/post/page/1" aria-label="Tutti gli articoli">
+      Tutti gli articoli &rarr;
+    </a>
+  </section>
+</div>
+{{- end }}

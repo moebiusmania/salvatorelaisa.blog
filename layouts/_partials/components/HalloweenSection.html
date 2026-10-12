@@ -1,0 +1,84 @@
+{{- /* Context: one entry of the halloween page's `sections`. */ -}}
+{{- $slugify := `[^a-z0-9]+` -}}
+{{- $sectionSlug := replaceRE `^-|-$` "" (replaceRE $slugify "-" (lower (.heading | default ""))) -}}
+<section class="halloween-section" x-data="{ open: null }">
+  {{- with .heading }}
+  <h2>
+    {{- with $.icon }}
+    <span aria-hidden="true">{{ . }}</span>
+    {{- end }}
+    {{ . }}
+  </h2>
+  {{- end }}
+  <ul class="halloween-chips">
+    {{- range .items }}
+    {{- $itemSlug := replaceRE `^-|-$` "" (replaceRE $slugify "-" (lower .title)) }}
+    {{- $chipId := printf "chip-%s-%s" $sectionSlug $itemSlug }}
+    {{- $panelId := printf "panel-%s-%s" $sectionSlug $itemSlug }}
+    {{- $title := jsonify (dict "noHTMLEscape" true) .title }}
+    {{- $featured := cond (.featured | default false) " featured" "" }}
+    <li>
+      {{- if .url }}
+      <a class="halloween-chip{{ $featured }}" {{ partial "href.html" .url | safeHTMLAttr }} target="_blank" rel="noopener noreferrer">
+        <span class="chip-title">{{ .title }}</span>
+        {{- with .badge }}
+        <span class="sl-badge">{{ . }}</span>
+        {{- end }}
+        {{ partial "components/icons/External.html" }}
+      </a>
+      {{- else if .description }}
+      <button
+        id="{{ $chipId }}"
+        type="button"
+        class="halloween-chip{{ $featured }}"
+        :class="{ open: open === {{ $title }} }"
+        :aria-expanded="open === {{ $title }}"
+        aria-expanded="false"
+        aria-controls="{{ $panelId }}"
+        @click="open = open === {{ $title }} ? null : {{ $title }}"
+      >
+        <span class="chip-title">{{ .title }}</span>
+        {{- with .badge }}
+        <span class="sl-badge">{{ . }}</span>
+        {{- end }}
+      </button>
+      {{- else }}
+      <span class="halloween-chip{{ $featured }}">
+        <span class="chip-title">{{ .title }}</span>
+        {{- with .badge }}
+        <span class="sl-badge">{{ . }}</span>
+        {{- end }}
+      </span>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- range .items }}
+  {{- if and (not .url) .description }}
+  {{- $itemSlug := replaceRE `^-|-$` "" (replaceRE $slugify "-" (lower .title)) }}
+  {{- $title := jsonify (dict "noHTMLEscape" true) .title }}
+  <div
+    class="halloween-accordion-wrap"
+    x-show="open === {{ $title }}"
+    x-transition:enter="halloween-accordion-enter-active"
+    x-transition:enter-start="halloween-accordion-enter-from"
+    x-transition:enter-end="halloween-accordion-enter-to"
+    x-transition:leave="halloween-accordion-leave-active"
+    x-transition:leave-start="halloween-accordion-leave-from"
+    x-transition:leave-end="halloween-accordion-leave-to"
+    style="display: none"
+  >
+    <div class="halloween-accordion-clip">
+      <p
+        id="panel-{{ $sectionSlug }}-{{ $itemSlug }}"
+        class="halloween-accordion"
+        role="region"
+        aria-labelledby="chip-{{ $sectionSlug }}-{{ $itemSlug }}"
+      >
+        {{ .description }}
+      </p>
+    </div>
+  </div>
+  {{- end }}
+  {{- end }}
+</section>

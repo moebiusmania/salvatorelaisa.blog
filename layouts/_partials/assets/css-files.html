@@ -1,0 +1,12 @@
+{{- /* Every .css file under a folder (recursively), as repo-relative paths in
+  byte order, like the old `collect()` in assets/styles.page.ts. */ -}}
+{{- $files := slice -}}
+{{- range os.ReadDir . -}}
+  {{- $path := printf "%s/%s" $ .Name -}}
+  {{- if .IsDir -}}
+    {{- $files = $files | append (partial "assets/css-files.html" $path) -}}
+  {{- else if strings.HasSuffix .Name ".css" -}}
+    {{- $files = $files | append $path -}}
+  {{- end -}}
+{{- end -}}
+{{- return $files -}}

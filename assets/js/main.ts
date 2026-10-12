@@ -1,12 +1,9 @@
 // Client-side interactivity, powered by Alpine.js. Every component below is
-// referenced from the Vento templates via `x-data="<name>"`; the markup itself
-// is rendered at build time.
+// referenced from the Hugo templates via `x-data="<name>"`; the markup itself
+// is rendered at build time. Bundled by Hugo's js.Build into /assets/js/main.js.
 
-// Browser-only code: `window` is the right global here.
-// deno-lint-ignore-file no-window no-window-prefix
-
-import Alpine from "alpinejs";
-import { DARK, LIGHT, THEME_COOKIE, type Theme } from "../../src/utils/index.ts";
+import Alpine from "./vendor/alpinejs-3.17.4.esm.js";
+import { DARK, LIGHT, THEME_COOKIE, THEME_MAX_AGE, type Theme } from "./theme.ts";
 import {
 	getLatestRepos,
 	getWeather,
@@ -14,8 +11,7 @@ import {
 	NOW_WEATHER_LOCATION,
 	type Repo,
 	type Weather,
-} from "../../src/utils/now.ts";
-import { THEME_MAX_AGE } from "../../src/helpers.ts";
+} from "./now.ts";
 
 const prefersReducedMotion = (): boolean =>
 	window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
@@ -152,46 +148,33 @@ Alpine.data("pwaInstallBanner", () => ({
 
 // --- post search --------------------------------------------------------------
 
-export interface SearchEntry {
-	title: string;
-	href: string;
-	slug: string;
-	date: string;
-	tags: string[];
-	summary: string;
-	readingTime: number;
-	pinned: boolean;
-}
-
-// Filters every published post by title. The index is only downloaded on the
-// first keystroke; while the query is empty the build-time page list is shown.
+// Filters every published post by title. On first focus htmx loads the
+// pre-rendered list (/fragments/posts.html, the same PostPreview markup as the
+// build-time pages) into the results container; each item there is shown or
+// hidden by `matches`. While the query is empty the page's own list is shown.
 Alpine.data("postSearch", () => ({
 	enabled: false,
 	query: "",
-	index: [] as SearchEntry[],
-	loading: null as Promise<void> | null,
+	index: [] as { slug: string; title: string }[],
 
 	init(): void {
 		this.enabled = true;
 	},
 
-	get results(): SearchEntry[] {
-		const value = this.query.toLowerCase();
-		return value.length > 0
-			? this.index.filter((post) => post.title.toLowerCase().includes(value))
-			: [];
+	// Called by htmx:afterSwap once the fragment is in the page.
+	indexResults(container: HTMLElement): void {
+		this.index = [...container.querySelectorAll<HTMLElement>("[data-slug]")].map(
+			(item) => ({ slug: item.dataset.slug ?? "", title: item.dataset.title ?? "" }),
+		);
 	},
 
-	async load(): Promise<void> {
-		this.loading ??= fetch("/search.json")
-			.then((response) => response.json())
-			.then((index: SearchEntry[]) => {
-				this.index = index;
-			})
-			.catch(() => {
-				this.loading = null;
-			});
-		await this.loading;
+	get results(): string[] {
+		const value = this.query.toLowerCase();
+		return value.length > 0
+			? this.index
+				.filter((post) => post.title.toLowerCase().includes(value))
+				.map((post) => post.slug)
+			: [];
 	},
 
 	clear(): void {

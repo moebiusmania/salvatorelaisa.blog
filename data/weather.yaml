@@ -1,0 +1,17 @@
+# WMO weather interpretation codes → emoji + Italian label, shared by the /now
+# page (assets/js/now.ts, via js.Build params) and the dashboard.
+# Reference: https://open-meteo.com/en/docs (WMO Weather interpretation codes).
+codes:
+  - { from: 0, to: 0, emoji: "☀️", label: "Sereno" }
+  - { from: 1, to: 3, emoji: "⛅", label: "Poco nuvoloso" }
+  - { from: 45, to: 45, emoji: "🌫️", label: "Nebbia" }
+  - { from: 48, to: 48, emoji: "🌫️", label: "Nebbia" }
+  - { from: 51, to: 57, emoji: "🌦️", label: "Pioviggine" }
+  - { from: 61, to: 67, emoji: "🌧️", label: "Pioggia" }
+  - { from: 71, to: 77, emoji: "🌨️", label: "Neve" }
+  - { from: 80, to: 82, emoji: "🌧️", label: "Rovesci" }
+  - { from: 85, to: 86, emoji: "🌨️", label: "Rovesci di neve" }
+  - { from: 95, to: 95, emoji: "⛈️", label: "Temporale" }
+  - { from: 96, to: 96, emoji: "⛈️", label: "Temporale con grandine" }
+  - { from: 99, to: 99, emoji: "⛈️", label: "Temporale con grandine" }
+unknown: { emoji: "❓", label: "Non disponibile" }

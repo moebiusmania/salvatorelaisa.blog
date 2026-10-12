@@ -1,0 +1,33 @@
+{{- define "main" }}
+{{- /* /tags/: every tag with its post count, most used first. Ties keep the
+  order in which tags first appear walking the posts oldest first, as Lume's
+  (stable) sort did. */}}
+{{- $counts := dict }}
+{{- $seen := slice }}
+{{- range (partial "posts.html").Reverse }}
+  {{- range .Params.tags }}
+    {{- if not (in $seen .) }}{{ $seen = $seen | append . }}{{ end }}
+    {{- $counts = merge $counts (dict . (add (index $counts . | default 0) 1)) }}
+  {{- end }}
+{{- end }}
+{{- $max := 0 }}
+{{- range $seen }}{{ $max = math.Max $max (index $counts .) }}{{ end }}
+<section class="tags-page">
+  <hgroup>
+    <h1>Tags</h1>
+  </hgroup>
+  <ul>
+    {{- range $n := seq (int $max) 1 }}
+    {{- range $seen }}
+    {{- if eq (index $counts .) $n }}
+    <li>
+      <a href="/tags/{{ . }}">
+        {{ . }}</a>
+      <a href="/tags/{{ . }}">({{ $n }})</a>
+    </li>
+    {{- end }}
+    {{- end }}
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

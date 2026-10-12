@@ -4,7 +4,6 @@
 // the slide for paginated lists (`/post/page/N`), exposed to
 // view-transitions.css as <html data-vt-direction="forward | back | fade">.
 // Inlined as a classic script in <head>, hence the ES5 style.
-// deno-lint-ignore-file no-var no-window no-window-prefix
 (function () {
 	var pageNumber = function (url) {
 		if (!url) return null;

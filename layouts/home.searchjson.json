@@ -1,0 +1,18 @@
+{{- /* /search.json: title index of every post (keys in the original order). */ -}}
+{{- $entries := slice -}}
+{{- range partial "posts.html" -}}
+  {{- $info := partial "post-info.html" . -}}
+  {{- $fields := slice
+    (printf `"title":%s` (jsonify (dict "noHTMLEscape" true) .Title))
+    (printf `"href":%s` (jsonify $info.href))
+    (printf `"slug":%s` (jsonify $info.slug))
+    (printf `"date":%s` (jsonify (dict "noHTMLEscape" true) (time.Format ":date_long" .Date)))
+    (printf `"tags":%s` (jsonify (dict "noHTMLEscape" true) (.Params.tags | default slice)))
+    (printf `"summary":%s` (jsonify (dict "noHTMLEscape" true) (.Params.summary | default "")))
+    (printf `"readingTime":%d` $info.readingTime)
+    (printf `"pinned":%t` (eq .Params.pinned true))
+  -}}
+  {{- $entries = $entries | append (printf "{%s}" (delimit $fields ",")) -}}
+{{- end -}}
+[{{ delimit $entries "," }}]
+{{- /**/ -}}

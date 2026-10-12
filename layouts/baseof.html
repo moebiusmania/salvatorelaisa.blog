@@ -1,0 +1,99 @@
+{{- $season := partial "season.html" -}}
+{{- $themeCss := printf "/styles/themes/%s.css" $season.theme -}}
+{{- $decorCss := cond (eq $season.theme "halloween") "/styles/themes/halloween.decor.css" "" -}}
+{{- $meta := partial "meta.html" . -}}
+{{- partialCached "assets/styles.html" . -}}
+{{- partialCached "assets/scripts.html" . -}}
+<!DOCTYPE html>
+<html lang="it-IT" data-theme="light" class="light" data-season="{{ $season.theme }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ $meta.title }}</title>
+  {{- /* Render-blocking theme bootstrap: must run before the body paints so the
+    correct theme (persisted cookie or, on first visit, the system preference)
+    is applied with no flash of light content. */}}
+  <script>{{ partial "head/theme-init.js" | strings.TrimSpace | safeJS }}</script>
+  {{- /* Opt in to cross-document View Transitions. Inline (not in the async
+    view-transitions.css) because the incoming page must opt in before its
+    first render. */}}
+  <style>@view-transition { navigation: auto; }</style>
+  <script>{{ partial "head/view-transitions.js" | safeJS }}</script>
+
+  {{- /* Preload the display serif (latin, 700) so headlines don't flash. */}}
+  <link rel="preload" href="/fonts/fraunces/fraunces-07.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/fonts.css" as="style">
+  <link rel="preload" href="/styles/normalize.css" as="style">
+  <link rel="preload" href="/styles/spacing.css" as="style">
+  <link rel="preload" href="{{ $themeCss }}" as="style">
+  <link rel="preload" href="/styles/typography.css" as="style">
+
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/spacing.css">
+  <link rel="stylesheet" href="{{ $themeCss }}">
+  <link rel="stylesheet" href="/styles/typography.css">
+  {{- /* Seasonal decoration layer: must come after typography.css so it can
+    override the base layer. */}}
+  {{- with $decorCss }}
+  <link rel="stylesheet" href="{{ . }}">
+  {{- end }}
+  <link rel="stylesheet" href="/assets/app.css">
+  {{- if eq $season.theme "summer" }}
+  <link rel="stylesheet" href="/assets/clouds.css">
+  {{- end }}
+  {{- if eq $season.theme "halloween" }}
+  <link rel="stylesheet" href="/assets/spooks.css">
+  {{- end }}
+  <link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'">
+
+  <meta name="title" content="{{ $meta.title }}">
+  <meta name="description" content="{{ $meta.description }}">
+  <meta property="og:description" content="{{ $meta.description }}">
+  {{- with $meta.og }}
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .url }}">
+  <meta property="og:title" content="{{ $meta.title }}">
+  {{- with .image }}
+  <meta property="og:image" content="{{ . }}">
+  {{- end }}
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .url }}">
+  <meta property="twitter:title" content="{{ $meta.title }}">
+  {{- with .description }}
+  <meta property="twitter:description" content="{{ . }}">
+  {{- end }}
+  {{- with .image }}
+  <meta property="twitter:image" content="{{ . }}">
+  {{- end }}
+  {{- end }}
+
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" href="/static/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+  {{ partial "components/Header.html" .RelPermalink }}
+  {{- if eq $season.theme "summer" }}
+  {{ partial "components/content/Clouds.html" }}
+  {{- end }}
+  {{- if eq $season.theme "halloween" }}
+  {{ partial "components/content/Spooks.html" }}
+  {{- end }}
+  <main>
+    <section class="container">
+      <div>
+        {{ block "main" . }}{{ end }}
+      </div>
+    </section>
+    {{ partial "components/Footer.html" }}
+  </main>
+  {{ partial "components/PWAInstallBanner.html" }}
+</body>
+</html>
