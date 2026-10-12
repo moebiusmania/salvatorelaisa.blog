@@ -1,0 +1,126 @@
+baseURL = "https://salvatorelaisa.blog/"
+locale = "it-IT"
+defaultContentLanguage = "it"
+timeZone = "UTC"
+title = "Salvatore Laisa"
+# Hugo's default output folder is `public/`, which is our static *source*.
+publishDir = "_site"
+# Lume published future-dated posts too.
+buildFuture = true
+disableKinds = ["sitemap", "robotsTXT"]
+enableRobotsTXT = false
+
+[taxonomies]
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser]
+# Heading ids are set by layouts/_markup/render-heading.html (Nuxt-style slugs).
+autoHeadingID = false
+[markup.goldmark.extensions]
+linkify = false
+# markdown-it rendered `~~x~~` as <s>, Goldmark uses <del> (which the CSS styles
+# differently): layouts/_partials/content.html converts the literal `~~` instead.
+strikethrough = false
+[markup.goldmark.extensions.typographer]
+disable = true
+
+# --- folders -------------------------------------------------------------------
+# Posts are the top-level content/*.md files, published under /post/<name>/.
+# devices/, books/ and pages/ are data-only: `blog gen` turns them into data/gen.
+[[module.mounts]]
+source = "content"
+target = "content/post"
+files = ["! devices/**", "! books/**", "! pages/**", "! _data.ts"]
+# Route pages (about, books, pagination, years…) come from content adapters.
+# The post/ one must live in the same content folder as the posts, or Hugo
+# drops the pages it adds there.
+[[module.mounts]]
+source = "routes"
+target = "content"
+files = ["! post/**"]
+[[module.mounts]]
+source = "routes/post"
+target = "content/post"
+[[module.mounts]]
+source = "public"
+target = "static"
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+[[module.mounts]]
+source = "data"
+target = "data"
+[[module.mounts]]
+source = "assets"
+target = "assets"
+[[module.mounts]]
+source = "_components"
+target = "assets/_components"
+files = ["**.css"]
+[[module.mounts]]
+source = "_includes/css"
+target = "assets/_includes/css"
+
+# --- outputs -------------------------------------------------------------------
+[outputFormats.rss]
+baseName = "rss"
+[outputFormats.searchjson]
+mediaType = "application/json"
+baseName = "search"
+isPlainText = true
+notAlternative = true
+[outputFormats.searchfragment]
+mediaType = "text/html"
+baseName = "posts"
+path = "fragments"
+isHTML = true
+notAlternative = true
+
+[outputs]
+home = ["html", "rss", "searchjson", "searchfragment"]
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
+page = ["html"]
+
+# Lume had no /post/ index page.
+[[cascade]]
+[cascade.build]
+render = "never"
+list = "never"
+[cascade.target]
+kind = "section"
+path = "/post"
+
+# --- site config (was src/utils/config.ts) ------------------------------------
+[params]
+siteTitle = "Salvatore Laisa"
+siteDescription = "Blog personale."
+# Edited by the Spooktober workflows with sed: keep this exact one-line format.
+currentTheme = "halloween"
+pinnedPostDescription = "Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale."
+
+[params.seasonEmoji]
+summer = "🌤️🏖️"
+halloween = "👻🕸️"
+
+# Event page surfaced as the first nav item when its matching theme is active.
+[params.seasonEvents]
+halloween = "halloween"
+xmas = "xmas"
+
+[params.events.xmas]
+name = "🎁"
+href = "/events/xmas"
+title = "Contenuti speciali natalizi"
+[params.events.halloween]
+name = "🎃"
+href = "/events/halloween"
+title = "Contenuti speciali di Halloween"
+[params.events.earthDay]
+name = "🌍"
+href = "https://www.earthday.org/earth-day-2026/"
+title = "Giornata della terra 2026"
+external = true

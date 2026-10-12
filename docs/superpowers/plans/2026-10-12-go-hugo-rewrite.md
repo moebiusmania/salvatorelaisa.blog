@@ -73,11 +73,12 @@ Files to delete:
   - `assets`, `layouts` and `data` mounted explicitly, because defining any mount replaces the defaults
   - `_components` → `assets/_components` (CSS only)
   - `_includes/css` → `assets/_includes/css`
-- `permalinks.page.post = "/post/:contentbasename/"`.
+- No `permalinks` rule: the default `/post/<filename>/` already matches, and a `post` permalink rule made Hugo silently drop the adapter pages under `post/`.
 - Markup:
   - `goldmark.renderer.unsafe = true`
   - `extensions.typographer.disable = true`
   - `extensions.linkify = false`
+  - `extensions.strikethrough = false`: Goldmark renders `~~x~~` as `<del>`, and `typography.css` fades `del > a`, which would dim 11 struck-through links. The literal `~~x~~` is converted to `<s>x</s>` in `layouts/_partials/content.html` instead, so raw `<del>` in content stays as it is.
   - `parser.autoHeadingID = false`, since the heading hook sets the ids
 - Outputs:
   - home: `html`, `rss` (baseName `rss`, giving `/rss.xml`), `searchjson` (baseName `search`, giving `/search.json`), `searchfragment` (`/fragments/posts.html`)
@@ -88,7 +89,14 @@ Files to delete:
   - **`currentTheme = "halloween"`** on its own line, in a fixed format the workflows edit with `sed`
   - `seasonEvent` is derived in a template partial
 
-**Spike items.** Verify each with a throwaway build before going further:
+**Spike results (done):**
+- (a) ✅ `.nojekyll`, `_headers` and `CNAME` are copied from `public/`.
+- (b) ✅ Works with two adapters: `routes/_content.gotmpl` → `content/`, and `routes/post/_content.gotmpl` → `content/post`. Pages added under `post/` from the root adapter are dropped. Route pages pass a complete `build` map (`list: never, render: always, publishResources: true`); a partial map leaves `render` at never.
+- (c) ✅ The adapter reads `hugo.Data.gen.posts` (`site.Data` is deprecated).
+- (d) ✅ `:date_long` gives "7 aprile 2025" and `:date_full` gives "martedì 25 ottobre 2022".
+- (e) ✅ `render-heading.html` reproduces all 183 heading ids in the 63 published posts, inner markup included.
+
+**Spike items (original list):**
 - (a) Dotfiles in `public/` (`.nojekyll`, `_headers`, `CNAME`) get copied. If they don't, `blog build` copies them after the Hugo build.
 - (b) Adapter pages can sit at `post/page/N`, `post/year`, `post/year/YYYY`, `about`, `events/halloween`, and so on, with the exact URLs.
 - (c) The adapter can read `data/gen/posts.json` (with `site.Data`, or `os.ReadFile` plus `transform.Unmarshal`).

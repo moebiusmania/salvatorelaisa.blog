@@ -1,0 +1,15 @@
+{{- /* Same slugs as the old Nuxt/Lume build (github-slugger style, "_" before a
+  leading digit) so existing #fragment links keep working. JS's \s also matches
+  Unicode spaces, hence the extra \p{Z} and BOM. */ -}}
+{{- $ws := `\s\p{Z}\x{FEFF}` -}}
+{{- $slug := .PlainText | htmlUnescape | lower | strings.TrimSpace -}}
+{{- $slug = replaceRE (printf `[^\p{L}\p{M}\p{N}\p{Pc}%s-]` $ws) "" $slug -}}
+{{- $slug = replaceRE (printf `[%s]` $ws) "-" $slug -}}
+{{- $slug = replaceRE `-{2,}` "-" $slug -}}
+{{- $slug = replaceRE `^-|-$` "" $slug -}}
+{{- if findRE `^\d` $slug }}{{ $slug = printf "_%s" $slug }}{{ end -}}
+{{- $seen := .Page.Store.Get "headingIds" | default dict -}}
+{{- $count := index $seen $slug | default 0 -}}
+{{- .Page.Store.Set "headingIds" (merge $seen (dict $slug (add $count 1))) -}}
+{{- $id := cond (eq $count 0) $slug (printf "%s-%d" $slug $count) -}}
+<h{{ .Level }} id="{{ $id }}">{{ .Text }}</h{{ .Level }}>

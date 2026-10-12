@@ -1,0 +1,12 @@
+{{- /* Standalone routes (were pages/*.vto). Their data lives in data/gen. */ -}}
+{{- $routes := slice
+  (dict "path" "about" "layout" "about")
+  (dict "path" "books" "layout" "books")
+  (dict "path" "devices" "layout" "devices")
+  (dict "path" "now" "layout" "now")
+  (dict "path" "events/halloween" "layout" "halloween")
+  (dict "path" "events/xmas" "layout" "xmas")
+-}}
+{{- range $routes }}
+  {{- $.AddPage (merge . (dict "kind" "page" "type" "route" "title" .layout)) }}
+{{- end }}
