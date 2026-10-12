@@ -1,0 +1,4 @@
+{{- /* A post's first image: `images` may be a list or a single string. */ -}}
+{{- $images := .Params.images | default "" -}}
+{{- if reflect.IsSlice $images }}{{ $images = index $images 0 | default "" }}{{ end -}}
+{{- return $images -}}

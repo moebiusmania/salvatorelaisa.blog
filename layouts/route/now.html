@@ -1,0 +1,16 @@
+{{- define "main" }}
+<section class="now-page">
+  <hgroup>
+    <h1>Adesso</h1>
+    <p>{{ .Params.metaDescription }}</p>
+  </hgroup>
+
+  <div class="now-grid">
+    {{ partial "components/now/Work.html" "now-grid-work" }}
+    {{ partial "components/now/Weather.html" "now-grid-weather" }}
+    {{ partial "components/now/Github.html" "now-grid-github" }}
+    {{ partial "components/now/Watching.html" "now-grid-watching" }}
+    {{ partial "components/now/Event.html" "now-grid-event" }}
+  </div>
+</section>
+{{- end }}

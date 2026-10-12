@@ -1,0 +1,12 @@
+{{- /* Bats lead the cast (weighted), with the occasional ghost, bone and skull.
+  Positions, speeds and sizes are computed once at build time.
+  Context: optional count. */ -}}
+{{- $icons := slice "🦇" "🦇" "🦇" "👻" "👻" "🦴" "💀" -}}
+<div class="spooks" role="presentation" aria-label="Decorative drifting Halloween creatures animation">
+  {{- range seq (. | default 9) }}
+  {{- $duration := add 28 (mul (math.Rand) 27) }}
+  <div class="spook" role="presentation" aria-hidden="true" style="{{ printf "--top:%.1f%%;--duration:%.1fs;--delay:%.1fs;--scale:%.2f;--bob:%.2fs;" (add 2 (mul (math.Rand) 90)) $duration (mul -1 (mul (math.Rand) $duration)) (add 0.7 (mul (math.Rand) 0.7)) (add 2.2 (mul (math.Rand) 1.8)) | safeCSS }}">
+    <span class="spook-inner">{{ index $icons (int (mul (math.Rand) (len $icons))) }}</span>
+  </div>
+  {{- end }}
+</div>

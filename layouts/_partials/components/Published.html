@@ -1,0 +1,4 @@
+{{- /* Context: the post date. */ -}}
+<div class="published" role="contentinfo" aria-label="Data di pubblicazione">
+  <time datetime="{{ .Format "2006-01-02" }}">Pubblicato: {{ time.Format ":date_full" . }}</time>
+</div>

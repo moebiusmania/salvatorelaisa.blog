@@ -1,0 +1,7 @@
+{{- /* The active seasonal theme (params.currentTheme in hugo.toml) and what
+  depends on it: the footer/header emoji and the event page surfaced as the
+  first nav item. Param keys are case-insensitive in Hugo. */ -}}
+{{- $theme := site.Params.currentTheme -}}
+{{- $event := false -}}
+{{- with index site.Params.seasonEvents $theme }}{{ $event = index site.Params.events . }}{{ end -}}
+{{- return dict "theme" $theme "emoji" (index site.Params.seasonEmoji $theme | default "") "event" $event -}}

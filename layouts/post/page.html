@@ -1,0 +1,29 @@
+{{- define "main" }}
+{{- $info := partial "post-info.html" . }}
+{{- $tags := .Params.tags }}
+{{- $isReview := and (in $tags "gaming") (in $tags "recensione") }}
+<div class="post-slug">
+  <article class="content">
+    <header>
+      {{ partial "components/Published.html" .Date }}
+      <h1 style="view-transition-name:post-title-{{ $info.slug }};">{{ .Title }}</h1>
+      <p>
+        Tags:
+        {{- range $tags }}
+        <a href="/tags/{{ . }}">{{ . }}</a>
+        {{- end }}
+      </p>
+      {{ partial "components/ReadingTime.html" $info.readingTime }}
+      {{- if $isReview }}
+      {{ partial "components/GamingPlatforms.html" .Params.platforms }}
+      {{- end }}
+      {{ partial "components/Outdated.html" .Date }}
+    </header>
+    <div>{{ partial "content.html" .Content }}</div>
+  </article>
+  <hr />
+  {{ partial "components/Sharing.html" $info.slug }}
+  {{ partial "components/Tip.html" }}
+  {{ partial "components/BackToTop.html" }}
+</div>
+{{- end }}

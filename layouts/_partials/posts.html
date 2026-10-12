@@ -1,0 +1,2 @@
+{{- /* Every post in the build, newest first. */ -}}
+{{- return (where site.RegularPages "Section" "post").ByDate.Reverse -}}

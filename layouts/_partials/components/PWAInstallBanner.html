@@ -1,0 +1,49 @@
+<div
+  x-data="pwaInstallBanner"
+  x-show="showBanner"
+  x-transition:enter="banner-enter-active"
+  x-transition:enter-start="banner-enter-from"
+  x-transition:enter-end="banner-enter-to"
+  x-transition:leave="banner-leave-active"
+  x-transition:leave-start="banner-leave-from"
+  x-transition:leave-end="banner-leave-to"
+  style="display: none"
+  class="pwa-banner"
+>
+  <div class="banner-content">
+    <div class="banner-info">
+      <div class="banner-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
+        </svg>
+      </div>
+      <div class="banner-text">
+        <h4>Installa come App</h4>
+        <p>Accesso rapido dalla home screen</p>
+      </div>
+    </div>
+    <div class="banner-actions">
+      <template x-if="canPrompt">
+        <button @click="install" class="install-btn">
+          Installa
+        </button>
+      </template>
+      <template x-if="!canPrompt">
+        <div class="ios-hint">
+          <span>Tocca</span>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.58L19 8l-9 9z" />
+          </svg>
+        </div>
+      </template>
+      <button @click="dismiss" class="dismiss-btn" aria-label="Chiudi">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

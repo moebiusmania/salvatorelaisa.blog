@@ -1,0 +1,20 @@
+{{- /* Context: dict "page" "totalPages". */ -}}
+{{- $prev := sub .page 1 -}}
+{{- $next := add .page 1 -}}
+<div class="pagination">
+  <nav aria-label="Paginazione articoli">
+    {{- if gt $prev 0 }}
+    <a class="prev" href="/post/page/{{ $prev }}" rel="prev">&larr; Precedente</a>
+    {{- else }}
+    <span class="prev" aria-disabled="true">&larr; Precedente</span>
+    {{- end }}
+
+    <span class="current" aria-current="page">Pagina {{ .page }} di {{ .totalPages }}</span>
+
+    {{- if le $next .totalPages }}
+    <a class="next" href="/post/page/{{ $next }}" rel="next">Successivo &rarr;</a>
+    {{- else }}
+    <span class="next" aria-disabled="true">Successivo &rarr;</span>
+    {{- end }}
+  </nav>
+</div>

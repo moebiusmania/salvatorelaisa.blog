@@ -1,0 +1,4 @@
+{{- /* An href attribute with the URL kept exactly as written: Go's html/template
+  would percent-encode characters like parentheses, which the old build left
+  alone. Context: the URL. Use as {{ partial "href.html" $url | safeHTMLAttr }}. */ -}}
+{{- return printf `href="%s"` (htmlEscape .) -}}

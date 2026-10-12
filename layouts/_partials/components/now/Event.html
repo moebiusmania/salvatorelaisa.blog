@@ -1,0 +1,16 @@
+{{- /* Context: extra class name. */ -}}
+{{- $event := hugo.Data.now.event -}}
+<article class="now-card now-event{{ with . }} {{ . }}{{ end }}">
+  <p class="now-card-kicker">Prossimo evento</p>
+  <h2>
+    <a {{ partial "href.html" $event.url | safeHTMLAttr }} target="_blank" rel="noopener">
+      {{ $event.name }}
+      {{ partial "components/icons/External.html" }}
+    </a>
+  </h2>
+  {{- with $event.date }}
+  <p class="now-event-date">
+    <span aria-label="calendario" role="img">📅</span> {{ . }}
+  </p>
+  {{- end }}
+</article>

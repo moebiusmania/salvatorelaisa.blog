@@ -1,0 +1,13 @@
+{{- /* Context: an entry of data/gen/books.json (style precomputed by blog gen). */ -}}
+<button
+  class="book-spine"
+  type="button"
+  style="{{ .style | safeCSS }}"
+  title="{{ .title }} — {{ .author }}"
+  @click="open('{{ .slug }}')"
+>
+  <span class="book-spine__text">
+    <span class="book-spine__title">{{ .title }}</span>
+    <span class="book-spine__author">{{ .author }}</span>
+  </span>
+</button>
