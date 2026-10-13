@@ -43,7 +43,7 @@ Every command is part of the `blog` CLI: run it with `go run ./cmd/blog <command
 | ---------------------------- | ------------------------------------------------ |
 | `blog serve`                 | Start the dev server with live reload (`:3000`)  |
 | `blog build`                 | Build the static website into `_site/`           |
-| `go test ./...`              | Run the tests                                    |
+| `go test -count=1 ./...`     | Run the tests                                    |
 | `blog new post "Title"`      | Create new blog post                             |
 | `blog new device "Title"`    | Create new device card                           |
 | `blog new book "Title"`      | Create new book                                  |

@@ -28,7 +28,9 @@ jobs:
             tools/hugo/go.sum
 
       - name: 📝 Run tests
-        run: go test ./...
+        # -count=1: never trust cached results, the build test runs Hugo, whose
+        # inputs (layouts, routes, assets, data) the Go test cache cannot see.
+        run: go test -count=1 ./...
 
       - name: 🏗️ Build static website
         run: go run ./cmd/blog build

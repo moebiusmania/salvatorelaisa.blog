@@ -18,7 +18,7 @@ Everything runs through `go run ./cmd/blog <command>` (or a built `./blog`):
 blog serve               # dev server on :3000 with live reload, drafts hidden
 blog serve --drafts      # including draft posts (--host to listen on the LAN)
 blog build               # static build into _site/ (what CI deploys; never drafts)
-go test ./...            # unit, dashboard and full site build tests (-short skips the build)
+go test -count=1 ./...   # unit, dashboard and full site build tests (-short skips the build)
 go vet ./... && gofmt -l .
 
 # Run a single test / package
@@ -59,12 +59,12 @@ blog gen [--drafts]      # validate content + write data/gen/ (build and serve r
 ## Testing
 
 - `go test` with table tests. `internal/books/testdata/golden.json` holds values captured from the original TypeScript (spines, hashes, reading times, dates): keep them matching.
-- `internal/site/build_test.go` builds the whole site with the pinned Hugo into a temp dir and asserts on the output (routes, drafts, pagination, home pinned post, feed, search, hidden devices/books, seasonal nav, timeline, heading ids, CSS bundle).
+- `internal/site/build_test.go` builds the whole site with the pinned Hugo into a temp dir and asserts on the output (routes, drafts, pagination, home pinned post, feed, search, hidden devices/books, seasonal nav, timeline, heading ids, CSS bundle). Run it with `-count=1`: Go's test cache only tracks files the test process opens, not what Hugo reads (layouts, routes, assets, data), so a cached pass can be stale.
 - `internal/dashboard` tests drive the Bubble Tea model directly and compare frames with golden snapshots in `testdata/`.
 
 ## Quirks
 
 - Pin dependency versions exactly (`go.mod`/`go.sum`; Hugo in `tools/hugo/go.mod`; Alpine/htmx versions + SHA-256 in `cmd/blog/assets.go`).
 - Hugo templates escape by default: use `.Params.summary` (never `.Summary`, which Hugo renders as Markdown), `partial "href.html" $url | safeHTMLAttr` for data-driven links whose URL must stay byte-identical, and `jsonify (dict "noHTMLEscape" true)` for JSON in Alpine attributes.
-- CI: PRs to `main` run `go test ./...` → `blog build` (`build.yml`). Pushes to `main` do the same, download fonts if missing, and deploy `_site` (`deploy.yml`).
+- CI: PRs to `main` run `go test -count=1 ./...` → `blog build` (`build.yml`). Pushes to `main` do the same, download fonts if missing, and deploy `_site` (`deploy.yml`).
 - The Spooktober workflows edit `hugo.toml` and `content/spooktober-reloaded.md` with `sed`, so keep the `currentTheme = "…"` line format in `hugo.toml` and the `draft: true|false` front-matter line.
