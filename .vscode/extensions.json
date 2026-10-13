@@ -1,8 +1,8 @@
 {
 	"recommendations": [
-		"vue.volar",
+		"golang.go",
+		"budparr.language-hugo-vscode",
 		"github.vscode-github-actions",
-		"esbenp.prettier-vscode",
-		"biomejs.biome"
+		"esbenp.prettier-vscode"
 	]
 }

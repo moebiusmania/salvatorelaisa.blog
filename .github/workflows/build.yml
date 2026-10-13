@@ -18,14 +18,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: 💻 Use Deno v2
-        uses: denoland/setup-deno@v2
+      - name: 💻 Use Go
+        uses: actions/setup-go@v6
         with:
-          deno-version: v2.x # Run with latest stable Deno.
-          cache: true
+          go-version-file: go.mod
+          # Also caches the compiled Hugo (pinned in tools/hugo/go.mod).
+          cache-dependency-path: |
+            go.sum
+            tools/hugo/go.sum
 
       - name: 📝 Run tests
-        run: deno task test
+        run: go test ./...
 
       - name: 🏗️ Build static website
-        run: deno task build
+        run: go run ./cmd/blog build

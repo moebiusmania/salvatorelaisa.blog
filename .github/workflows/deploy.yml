@@ -24,14 +24,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: 💻 Use Deno v2
-        uses: denoland/setup-deno@v2
+      - name: 💻 Use Go
+        uses: actions/setup-go@v6
         with:
-          deno-version: v2.x # Run with latest stable Deno.
-          cache: true
+          go-version-file: go.mod
+          # Also caches the compiled Hugo (pinned in tools/hugo/go.mod).
+          cache-dependency-path: |
+            go.sum
+            tools/hugo/go.sum
 
       # Fonts are committed in public/fonts/: only hit the network when a
-      # family declared in fonts.config.ts has no local files yet.
+      # family declared in fonts.yaml has no local files yet.
       - name: 🔤 Download fonts (if missing)
         run: |
           missing=0
@@ -42,18 +45,18 @@ jobs:
               echo "Missing font files for $family"
               missing=1
             fi
-          done < <(grep -oP 'name:\s*"\K[^"]+' fonts.config.ts)
+          done < <(grep -oP 'name:\s*"\K[^"]+' fonts.yaml)
           if [ "$missing" -eq 1 ]; then
-            deno task fonts:download
+            go run ./cmd/blog fonts download
           else
             echo "Fonts already committed, skipping download"
           fi
 
       - name: 📝 Run tests
-        run: deno task test
+        run: go test ./...
 
       - name: 🏗️ Build static website
-        run: deno task build
+        run: go run ./cmd/blog build
 
       - name: 🚀 Upload artifact
         uses: actions/upload-pages-artifact@v5
