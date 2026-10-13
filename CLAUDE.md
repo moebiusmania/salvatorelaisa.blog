@@ -6,65 +6,65 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Personal blog (Italian-language) built with **[Lume 3](https://lume.land/)** on **Deno**, with **Vento** templates and **Alpine.js** for client-side interactivity, exported as a **static site** to GitHub Pages. Content is Markdown. There is no npm/Node toolchain (no `package.json`, no `node_modules`): `deno.json` is the single source of truth for tasks and the import map, and npm packages (Alpine, Zod) come in through `npm:` specifiers.
+Personal blog (Italian-language) built with **[Hugo](https://gohugo.io/)** and a small **Go** toolbox (`cmd/blog`), with **Alpine.js** and **htmx** for client-side interactivity, exported as a **static site** to GitHub Pages. Content is Markdown. There is no JS toolchain (no Node, npm or Deno): Hugo bundles the client TypeScript with its built-in esbuild, and Alpine/htmx are vendored in `assets/js/vendor/`.
 
-The site was migrated from Nuxt. Some code comments still mention Nuxt to explain why URLs, heading slugs and reading times stay unchanged. Don't reintroduce Node tooling.
+The site was migrated from Nuxt, then Lume. Some comments still mention them to explain why URLs, heading slugs, reading times and markup stay unchanged: the output must stay identical for visitors. Don't reintroduce a JS toolchain.
 
 ## Commands
 
-```bash
-deno task serve          # dev server with live reload, drafts hidden (serve:host to expose on the LAN)
-deno task serve:drafts   # same, including draft posts
-deno task build          # static build into _site/ (what CI deploys)
-deno task test           # deno test -A: util, dashboard and full build tests
-deno lint                # uses Lume's lint plugin (configured in deno.json)
+Everything runs through `go run ./cmd/blog <command>` (or a built `./blog`):
 
-# Run a single test file / filter
-deno test -A tests/utils/books.test.ts
-deno test -A --filter "spineStyle"
+```bash
+blog serve               # dev server on :3000 with live reload, drafts hidden
+blog serve --drafts      # including draft posts (--host to listen on the LAN)
+blog build               # static build into _site/ (what CI deploys; never drafts)
+go test ./...            # unit, dashboard and full site build tests (-short skips the build)
+go vet ./... && gofmt -l .
+
+# Run a single test / package
+go test ./internal/books/ -run TestSpineStyle
+go test ./internal/dashboard/ -update     # rewrite the dashboard golden snapshots
 
 # Authoring
-deno task new:post     # scaffold a post in content/
-deno task new:device   # scaffold a device card in content/devices/
-deno task new:book     # scaffold a book (draft) in content/books/
-deno task dashboard    # TUI admin dashboard (scripts/dashboard/): stats + buttons that run the new:* tasks
-deno task drafts       # list draft posts
-deno task stats        # blog stats
-deno task convert:webp <path> [--quality N]
-deno task fonts:download   # fetch local font files into public/fonts/
+blog new post "Title"    # scaffold a post in content/ (also: new device, new book)
+blog dashboard           # TUI admin dashboard (internal/dashboard): stats + buttons for `new`
+blog drafts              # list draft posts
+blog stats               # blog stats
+blog webp <path> [--quality N]
+blog todo list|add|done|remove|init
+blog fonts download      # fetch the fonts in fonts.yaml into public/fonts/
+blog vendor              # check/download the pinned Alpine.js and htmx builds
+blog gen [--drafts]      # validate content + write data/gen/ (build and serve run it)
 ```
-
-`LUME_DRAFTS` controls whether drafts are rendered: `serve` sets it to `false`, `serve:drafts` sets it to `true`, and `build` never includes drafts.
 
 ## Architecture
 
-- **Config**: `_config.ts`. Lume runs with `src: "."`, and an allowlist in `site.ignore()` limits the site to `_components/`, `_includes/`, `pages/`, `content/`, `assets/` and `public/`. Everything else (`scripts/`, `src/`, `tests/`, `docs/`) stays out of the build. `public/` is copied verbatim to the site root. `_headers` and `.nojekyll` are copied explicitly because Lume skips dotfiles and `_`-prefixed files.
-- **Posts**: every `content/*.md` is a page. `content/_data.ts` sets `type: "post"`, the `layouts/post.vto` layout and the `/post/<slug>/` URL. Lume drops `draft: true` pages from the build.
-- **Data-only content**: `content/devices/`, `content/books/` and `content/pages/` (about, halloween, xmas) are *not* Lume pages. `src/content.ts` (`loadCollection`, `parseMarkdown`) loads them, and `_config.ts` exposes them as site data (`devices` sorted by purchase date with the newest first, `books`, `contentPages`), with bodies rendered through the `md` filter. Files starting with `-` or marked `draft: true` are skipped.
-- **Schema**: `src/content-schema.ts` (Zod). It validates post, device, book and page front matter at build time, and invalid front matter fails the build.
-- **Site data**: `_config.ts` also registers `config`, `now`, `theme` and `utils` (template helpers from `src/helpers.ts` and `src/utils/books.ts`).
-- **Reading time** is computed in a `site.preprocess` in `_config.ts`: 180 wpm over the raw file, front matter included. The same preprocess sets `metaTitle` and `og` for `<head>`.
-- **Markdown plugins** (`src/markdown/`): `::timeline{items="…"}` blocks, heading `id`s matching the old Nuxt slugs, and `fetchpriority="high"` on each document's first image.
-- **Templates**: layouts in `_includes/layouts/` (`base.vto` is the HTML shell, plus post, post-page, post-year and tag). Components live in `_components/` and are called as `comp.Name(...)`. Routes are in `pages/`, each with an explicit `url`, and `pages/_data.ts` sets `base.vto` as their default layout. Generators (`*.page.ts`) produce the pagination, year and tag pages, `rss.xml` and `search.json`. Seasonal pages live in `pages/events/`.
-- **Client JS**: `assets/js/main.ts` (bundled by the esbuild plugin to `/assets/js/main.js`) registers the Alpine components (`themeToggle`, `backToTop`, `pwaInstallBanner`, `postSearch`, `bookshelf`, `weather`, `githubRepos`). Templates reference them with `x-data`.
-- **View transitions**: native cross-document transitions (`@view-transition` in `base.vto`). `_includes/partials/view-transitions.js` sets the slide direction for pagination.
-- **Site config**: `src/utils/config.ts` (title, description, `CURRENT_THEME`, seasonal events). `/now` data lives in `src/utils/now.ts`.
-- **Fonts**: `fonts.config.ts` declares families; `deno task fonts:download` pulls them from Bunny Fonts into `public/fonts/`.
+- **Hugo config**: `hugo.toml`. `publishDir` is `_site` because `public/` is our static *source* (mounted as Hugo's `static`). Mounts map `content/*.md` to the `post` section (`/post/<filename>/`), `routes/` to the content root, and the component/page CSS into assets. Goldmark: raw HTML on; typographer, linkify, strikethrough and auto heading ids off (see Markdown below).
+- **Hugo version**: pinned in its own module, `tools/hugo/go.mod`, run as `go tool -modfile=tools/hugo/go.mod hugo …`, so the blog's dependencies never change Hugo's. Upgrade with `go get -modfile=tools/hugo/go.mod -tool github.com/gohugoio/hugo@vX.Y.Z`.
+- **`blog gen`** (`internal/gen`) runs before every build/serve: it validates all front matter (`internal/content`, port of the old zod schemas; invalid front matter fails the build) and writes `data/gen/*.json` (gitignored): reading times and post count, devices, books (with precomputed spine styles, `internal/books`) and the about/halloween/xmas page bodies. `content/devices|books|pages` are data only, never Hugo pages.
+- **Routes**: content adapters. `routes/_content.gotmpl` adds about, books, devices, now and `events/*`; `routes/post/_content.gotmpl` adds `/post/page/<n>/` (10 per page, from 1) and `/post/year/[<yyyy>/]`. Their layouts are in `layouts/route/`. Tags use Hugo's taxonomy (`layouts/taxonomy.html`, `term.html`). Home outputs: `rss.xml`, `search.json` and the htmx search fragment `/fragments/posts.html`.
+- **Templates**: `layouts/baseof.html` is the HTML shell; components are partials in `layouts/_partials/components/` (one per former Vento component); helpers in `layouts/_partials/` (season, meta, post-info, href…).
+- **Markdown**: `layouts/_markup/render-heading.html` reproduces the old Nuxt heading ids (`_` before a leading digit, etc.); `render-image.html` adds `fetchpriority="high"` to the first image; `layouts/_partials/content.html` post-processes rendered HTML for `::timeline{items="…"}` blocks and `~~strike~~` (→ `<s>`).
+- **Client JS**: `assets/js/main.ts` (Alpine components: `themeToggle`, `backToTop`, `pwaInstallBanner`, `postSearch`, `bookshelf`, `weather`, `githubRepos`), bundled by `js.Build` in `layouts/_partials/assets/scripts.html`; `/now` config arrives via `@params` from `data/now.yaml` and `data/weather.yaml`. htmx is loaded only on the pagination pages, for the search.
+- **Site config**: `hugo.toml` `[params]` (title, description, `currentTheme`, events, season emoji). `/now` data: `data/now.yaml`.
+- **Go code**: `cmd/blog` (cobra CLI), `internal/{content,books,gen,scaffold,drafts,stats,todo,fonts,images,now,termtable}`, `internal/dashboard` (Bubble Tea v2 + Lip Gloss, frames painted into a cell canvas), `internal/site` (build test).
+- **View transitions**: native cross-document transitions; `layouts/_partials/head/view-transitions.js` sets the slide direction for pagination.
 
 ## Styling convention
 
-- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** in `_components/`, and page styles live in `_includes/css/`.
-- `assets/styles.page.ts` concatenates them into `/assets/app.css`. The seasonal decorations (`Clouds`, `Spooks`, `Snow`) are emitted as separate files (`/assets/clouds.css`, `spooks.css` and `snow.css`) because they style `body`, and `base.vto` links them only while their theme is active.
-- Global styles (`normalize`, `spacing`, `typography`, `view-transitions`) and themes are in `public/styles/`. Each theme in `public/styles/themes/` has a CSS file, and a theme can add an optional `*.decor.css` layer (currently only `halloween.decor.css`). Switch themes via `CURRENT_THEME` in `src/utils/config.ts`.
+- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** in `_components/`, page styles live in `_includes/css/` (those folders now hold only CSS).
+- `layouts/_partials/assets/styles.html` concatenates them into `/assets/app.css` (Badge and now/card first, then byte order, each file under a `/* path */` header). The seasonal decorations (`Clouds`, `Spooks`, `Snow`) are separate files (`/assets/clouds.css`, `spooks.css`, `snow.css`) linked by `baseof.html` only while their theme is active.
+- Global styles and themes are in `public/styles/`. Switch themes via `currentTheme` in `hugo.toml`.
 
 ## Testing
 
-- `deno test` with `@std/testing/bdd` + `@std/expect` (a Jest-like API). Tests live in `tests/`: `tests/utils/` covers `src/utils/` (with `fetch` stubbed), and `tests/dashboard/` covers the TUI screen.
-- `tests/build.test.ts` builds the whole site into `_site_test/` (via the `BLOG_DEST` env var read by `_config.ts`) and asserts on the output. Lume resolves `dest` against the cwd, so it must be a relative path.
+- `go test` with table tests. `internal/books/testdata/golden.json` holds values captured from the original TypeScript (spines, hashes, reading times, dates): keep them matching.
+- `internal/site/build_test.go` builds the whole site with the pinned Hugo into a temp dir and asserts on the output (routes, drafts, pagination, home pinned post, feed, search, hidden devices/books, seasonal nav, timeline, heading ids, CSS bundle).
+- `internal/dashboard` tests drive the Bubble Tea model directly and compare frames with golden snapshots in `testdata/`.
 
 ## Quirks
 
-- Pin dependency versions exactly in `deno.json` `imports` (no `^`/`~`). Keep the Lume version in `lint.plugins` in sync with the `lume/` import.
-- Vento has no autoescape; use `|> escape` for untrusted text in attributes.
-- CI: PRs to `main` run `deno task test` → `deno task build` (`build.yml`). Pushes to `main` do the same, download fonts if they're missing, and deploy `_site` (`deploy.yml`).
-- The Spooktober workflows edit `src/utils/config.ts` and `content/spooktober-reloaded.md` with `sed`, so keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format and the `draft: true|false` front-matter line.
+- Pin dependency versions exactly (`go.mod`/`go.sum`; Hugo in `tools/hugo/go.mod`; Alpine/htmx versions + SHA-256 in `cmd/blog/assets.go`).
+- Hugo templates escape by default: use `.Params.summary` (never `.Summary`, which Hugo renders as Markdown), `partial "href.html" $url | safeHTMLAttr` for data-driven links whose URL must stay byte-identical, and `jsonify (dict "noHTMLEscape" true)` for JSON in Alpine attributes.
+- CI: PRs to `main` run `go test ./...` → `blog build` (`build.yml`). Pushes to `main` do the same, download fonts if missing, and deploy `_site` (`deploy.yml`).
+- The Spooktober workflows edit `hugo.toml` and `content/spooktober-reloaded.md` with `sed`, so keep the `currentTheme = "…"` line format in `hugo.toml` and the `draft: true|false` front-matter line.

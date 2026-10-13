@@ -1,14 +1,19 @@
 {
 	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "Vue.volar",
-	"[vue]": {
-		"editor.defaultFormatter": "Vue.volar"
-	},
 	"editor.formatOnPaste": true,
-	"[javascript]": {
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"[javascript][typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	// Posts are kept exactly as written: no formatter on Markdown.
 	"[markdown]": {
-		"editor.defaultFormatter": "denoland.vscode-deno"
+		"editor.formatOnSave": false,
+		"editor.formatOnPaste": false
+	},
+	"files.associations": {
+		"layouts/**/*.html": "go-template",
+		"**/_content.gotmpl": "go-template"
 	}
 }

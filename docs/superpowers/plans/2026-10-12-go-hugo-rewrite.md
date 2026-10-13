@@ -1,5 +1,13 @@
 # Rewrite: Deno + Lume → Go + Hugo + htmx + Alpine
 
+
+> **Status: implemented** on `rewrite/go-hugo` (Phases 0–7). Where the result differs from the plan below:
+> - Hugo is pinned in its own module, `tools/hugo/go.mod` (`go tool -modfile=tools/hugo/go.mod hugo`), not in the main `go.mod`: Bubble Tea pulled newer versions of libraries Hugo shares, which would have changed Hugo's build.
+> - No `permalinks` rule (the default already gives `/post/<filename>/`, and the rule made Hugo drop the adapter pages); two content adapters (`routes/` and `routes/post/`).
+> - Goldmark's strikethrough is off; `~~x~~` is turned into `<s>` in `layouts/_partials/content.html`, because Goldmark's `<del>` is styled differently by `typography.css`.
+> - The dashboard paints into its own cell canvas with exact hit regions instead of using bubblezone.
+> - The parity check (227/236 files identical as normalized DOM; the 9 others are the intentional htmx search changes) passed before `internal/parity` and the baseline were deleted.
+
 ## Context
 
 The blog runs on Deno + Lume 3 (Vento templates, esbuild-bundled Alpine, Deno CLI scripts, and a hand-rolled TUI dashboard). The goal is to replace the whole toolchain with **Go + Hugo**, keeping **Alpine.js** and adding **htmx**, with **no JS toolchain** (no Deno, no Node, no npm). The CLI utilities and the dashboard become one Go binary.
