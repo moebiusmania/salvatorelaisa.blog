@@ -1,0 +1,521 @@
+/**
+ * Christmas decoration layer — "Fairy lights, gift tags & fresh snow"
+ *
+ * Linked by base.vto only when CURRENT_THEME === "xmas" (see `themeDecor`), on
+ * top of xmas.css. The palette file stays a pure set of custom properties;
+ * everything that changes the *shape* of the UI lives here. The falling snow
+ * itself is a component (_components/content/Snow.vto).
+ *
+ * WHY EVERY SELECTOR STARTS WITH html[data-season="xmas"]:
+ * not for scoping (this file only ships for Christmas anyway) but for
+ * specificity. /assets/app.css is linked *after* this file, so at equal
+ * specificity the component rules would win. The html[…] prefix adds an
+ * attribute selector to every rule, which beats them regardless of order. Do
+ * not "simplify" it away.
+ *
+ * Colours are derived from the theme tokens via color-mix() wherever possible
+ * so one rule works in both light and dark. The exceptions are the SVG data
+ * URIs (fairy lights, holly, Santa hat): a data: URI cannot resolve custom
+ * properties, so they use fixed colours chosen to read on both backgrounds.
+ */
+
+html[data-season="xmas"] {
+	--xmas-hairline: color-mix(in srgb, var(--secondary) 35%, var(--border));
+	--xmas-stripe: #fff;
+}
+
+html.light[data-season="xmas"] {
+	--snowbank: #dde7ec;
+}
+
+html.dark[data-season="xmas"] {
+	--snowbank: rgba(232, 238, 240, 0.7);
+}
+
+/* ---------------------------------------------------------------------------
+ * 1. Gift-tag chips
+ *
+ * Tags render as bare uppercase text in three places (post preview, tag index,
+ * post header). Give all three the same gift tag: a hairline label with a
+ * punched hole on the left, which swings slightly on its string when hovered
+ * and fills with the badge colours.
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] li.post-preview > div:last-child > div > a,
+html[data-season="xmas"] .tags-page > ul > li > a:first-child,
+html[data-season="xmas"] .post-slug > article header > p a {
+	display: inline-block;
+	padding: 1px var(--sp-1) 1px calc(var(--sp-1) + 9px);
+	border: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+	border-radius: 3px var(--sp-05) var(--sp-05) 3px;
+	background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+	/* The punched hole: a page-coloured dot inside a thin ring. */
+	background-image: radial-gradient(
+		circle at 7px 50%,
+		var(--bg) 0 1.8px,
+		color-mix(in srgb, var(--secondary) 60%, transparent) 2.2px 2.8px,
+		transparent 3.2px
+	);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: auto;
+	transform-origin: 7px 50%;
+	transition:
+		color 150ms ease,
+		background-color 150ms ease,
+		border-color 150ms ease,
+		transform 200ms ease;
+}
+
+html[data-season="xmas"] li.post-preview > div:last-child > div > a:hover,
+html[data-season="xmas"] li.post-preview > div:last-child > div > a:focus-visible,
+html[data-season="xmas"] .tags-page > ul > li > a:first-child:hover,
+html[data-season="xmas"] .tags-page > ul > li > a:first-child:focus-visible,
+html[data-season="xmas"] .post-slug > article header > p a:hover,
+html[data-season="xmas"] .post-slug > article header > p a:focus-visible {
+	border-color: var(--badge-bg);
+	background-color: var(--badge-bg);
+	background-size: auto;
+	color: var(--badge-text);
+	text-decoration: none;
+	/* Swings from the hole, like a tag hanging off a ribbon. This also replaces
+	   the translateY lift of the tag index (tags-page.css). */
+	transform: rotate(-3deg);
+}
+
+/* ---------------------------------------------------------------------------
+ * 2. Pagination
+ *
+ * Prev/next reuse the gift tag from section 1 (minus the hole, which would
+ * crowd the arrows), and the "Pagina X di Y" caption gets a candy-cane ribbon
+ * underneath.
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] div.pagination nav > .prev,
+html[data-season="xmas"] div.pagination nav > .next {
+	padding: var(--sp-05) var(--sp-2);
+	border: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+	border-radius: var(--sp-05);
+	background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	transition:
+		color 150ms ease,
+		background-color 150ms ease,
+		border-color 150ms ease,
+		transform 200ms ease;
+}
+
+html[data-season="xmas"] div.pagination nav > a:hover,
+html[data-season="xmas"] div.pagination nav > a:focus-visible {
+	border-color: var(--badge-bg);
+	background-color: var(--badge-bg);
+	color: var(--badge-text);
+	transform: rotate(-2deg);
+}
+
+/* A dead end reads as dead: no fill, no tint, just a faint outline. */
+html[data-season="xmas"] div.pagination nav > [aria-disabled="true"] {
+	border-color: var(--border);
+	background-color: transparent;
+}
+
+html[data-season="xmas"] div.pagination nav > .current {
+	padding-bottom: 7px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-secodary-content);
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--primary) 0 4px,
+		transparent 4px 8px
+	);
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 3px;
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Baubles hanging off the post separators
+ *
+ * The 1px rule between posts stays as the branch; three baubles (red, gold,
+ * green, each with a glint) hang off it. Fixed positions rather than random
+ * ones: deterministic and cheap.
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] li.post-preview:not(.pinned)::after {
+	content: "";
+	position: absolute;
+	inset: auto 0 -10px 0;
+	height: 10px;
+	pointer-events: none;
+	opacity: 0.85;
+	background-image:
+		radial-gradient(circle 1.2px at 11px 4px, rgba(255, 255, 255, 0.75) 90%, transparent),
+		radial-gradient(circle 1.2px at calc(46% - 1px) 4px, rgba(255, 255, 255, 0.75) 90%, transparent),
+		radial-gradient(circle 1.4px at calc(80% - 1px) 5px, rgba(255, 255, 255, 0.75) 90%, transparent),
+		radial-gradient(circle 4px at 12px 5px, var(--primary) 92%, transparent),
+		radial-gradient(circle 3.5px at 46% 4.5px, var(--accent) 92%, transparent),
+		radial-gradient(circle 4.5px at 80% 5.5px, var(--secondary) 92%, transparent);
+	background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------------------
+ * 4. The pinned post: a candy-cane rule and a sprig of holly in the corner
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] li.post-preview.pinned {
+	/* The solid accent rule from PostPreview.css becomes a candy cane, drawn
+	   as a background strip so the bottom border is left alone. */
+	border-left: 0;
+	padding-left: calc(var(--sp-3) + 4px);
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--primary) 0 6px,
+		var(--xmas-stripe) 6px 12px
+	);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 4px 100%;
+	box-shadow: inset 0 0 40px -14px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+html[data-season="xmas"] li.post-preview.pinned::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 6px;
+	width: 56px;
+	height: 34px;
+	pointer-events: none;
+	transform: rotate(8deg);
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 34'%3E%3Cg fill='%232f7d4f'%3E%3Cpath transform='translate(26 20) rotate(-160)' d='M0 0Q4-6 7-3Q9-8 13-4Q16-8 19-3Q23-6 26 0Q23 6 19 3Q16 8 13 4Q9 8 7 3Q4 6 0 0Z'/%3E%3Cpath transform='translate(30 20) rotate(-20)' d='M0 0Q4-6 7-3Q9-8 13-4Q16-8 19-3Q23-6 26 0Q23 6 19 3Q16 8 13 4Q9 8 7 3Q4 6 0 0Z'/%3E%3C/g%3E%3Cg stroke='%23a7d3b5' stroke-width='.8' stroke-linecap='round'%3E%3Cpath transform='translate(26 20) rotate(-160)' d='M2 0H22'/%3E%3Cpath transform='translate(30 20) rotate(-20)' d='M2 0H22'/%3E%3C/g%3E%3Cg fill='%23d7263d'%3E%3Ccircle cx='28' cy='23' r='3.6'/%3E%3Ccircle cx='23.8' cy='27' r='3.4'/%3E%3Ccircle cx='32.2' cy='27' r='3.4'/%3E%3C/g%3E%3Cg fill='%23fff' fill-opacity='.6'%3E%3Ccircle cx='27' cy='22' r='1'/%3E%3Ccircle cx='22.8' cy='26' r='.9'/%3E%3Ccircle cx='31.2' cy='26' r='.9'/%3E%3C/g%3E%3C/svg%3E")
+		no-repeat center / contain;
+}
+
+/* "in evidenza" is a filled pill (PostPreview.css): give it a gold ribbon edge
+   and a soft fairy-light glow. */
+html[data-season="xmas"] li.post-preview.pinned .badge {
+	box-shadow:
+		0 0 0 1px color-mix(in srgb, var(--accent) 70%, transparent),
+		0 0 12px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 5. Fairy-light glow on hover
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] li.post-preview > div:last-child h2 {
+	transition:
+		color 200ms ease,
+		text-shadow 200ms ease;
+}
+
+html[data-season="xmas"] li.post-preview > div:last-child > a:hover h2,
+html[data-season="xmas"] li.post-preview > div:last-child > a:focus-visible h2 {
+	color: var(--primary);
+	text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+html[data-season="xmas"] li.post-preview > div:last-child > a:last-child:hover,
+html[data-season="xmas"]
+	li.post-preview
+	> div:last-child
+	> a:last-child:focus-visible {
+	text-shadow: 0 0 14px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 6. Article body
+ * ------------------------------------------------------------------------ */
+
+/*
+ * The drop cap becomes an illuminated initial: berry red with a gold halo. The
+ * cap itself is a base-layer feature (typography.css); these two hooks only
+ * recolour it, so the (fiddly) selector lives in exactly one place.
+ */
+html[data-season="xmas"] {
+	--dropcap-color: var(--primary);
+	--dropcap-shadow: 0 0 22px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+/* Blockquote accent bar becomes a candy cane. */
+html[data-season="xmas"] .content blockquote {
+	border-left-color: transparent;
+	background-image: repeating-linear-gradient(
+		-45deg,
+		var(--primary) 0 5px,
+		var(--xmas-stripe) 5px 10px
+	);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 3px 100%;
+}
+
+/* Rules fade out at both ends, with a snowflake ornament in the middle. */
+html[data-season="xmas"] .content hr,
+html[data-season="xmas"] .post-slug > hr {
+	position: relative;
+	overflow: visible;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		90deg,
+		transparent,
+		var(--xmas-hairline) 20%,
+		var(--xmas-hairline) 80%,
+		transparent
+	);
+}
+
+html[data-season="xmas"] .content hr::after,
+html[data-season="xmas"] .post-slug > hr::after {
+	/* U+FE0E keeps it a text glyph, so it takes the theme colour. */
+	content: "\2744\FE0E";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0 var(--sp-1);
+	transform: translate(-50%, -50%);
+	font-family: system-ui, sans-serif;
+	font-size: 0.9rem;
+	line-height: 1;
+	color: var(--secondary);
+	background-color: var(--bg);
+	pointer-events: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * 7. Header & footer
+ *
+ * The header rule becomes the wire of a string of fairy lights, two sets of
+ * bulbs twinkling out of phase. The footer rule becomes the ground, with a
+ * snowbank piled on it.
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] .header {
+	position: relative;
+	border-bottom-color: var(--xmas-hairline);
+}
+
+html[data-season="xmas"] .header::before,
+html[data-season="xmas"] .header::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 16px;
+	z-index: 1;
+	pointer-events: none;
+	background-repeat: repeat-x;
+	background-size: 160px 16px;
+	animation: xmas-twinkle 2.6s ease-in-out infinite;
+}
+
+/* Red & green bulbs. */
+html[data-season="xmas"] .header::before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='16' viewBox='0 0 160 16'%3E%3Cg transform='rotate(10 20 1)'%3E%3Cpath d='M20 0v3' stroke='%234a5a52'/%3E%3Crect x='18.5' y='3' width='3' height='3' rx='.6' fill='%234a5a52'/%3E%3Cellipse cx='20' cy='10.4' rx='2.9' ry='4.3' fill='%23e5383b'/%3E%3Cellipse cx='19' cy='9' rx='.8' ry='1.4' fill='%23fff' fill-opacity='.55'/%3E%3C/g%3E%3Cg transform='rotate(-10 100 1)'%3E%3Cpath d='M100 0v3' stroke='%234a5a52'/%3E%3Crect x='98.5' y='3' width='3' height='3' rx='.6' fill='%234a5a52'/%3E%3Cellipse cx='100' cy='10.4' rx='2.9' ry='4.3' fill='%232fa866'/%3E%3Cellipse cx='99' cy='9' rx='.8' ry='1.4' fill='%23fff' fill-opacity='.55'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Gold & ice-blue bulbs, half a cycle behind. */
+html[data-season="xmas"] .header::after {
+	animation-delay: -1.3s;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='16' viewBox='0 0 160 16'%3E%3Cg transform='rotate(-8 60 1)'%3E%3Cpath d='M60 0v3' stroke='%234a5a52'/%3E%3Crect x='58.5' y='3' width='3' height='3' rx='.6' fill='%234a5a52'/%3E%3Cellipse cx='60' cy='10.4' rx='2.9' ry='4.3' fill='%23f4b400'/%3E%3Cellipse cx='59' cy='9' rx='.8' ry='1.4' fill='%23fff' fill-opacity='.55'/%3E%3C/g%3E%3Cg transform='rotate(8 140 1)'%3E%3Cpath d='M140 0v3' stroke='%234a5a52'/%3E%3Crect x='138.5' y='3' width='3' height='3' rx='.6' fill='%234a5a52'/%3E%3Cellipse cx='140' cy='10.4' rx='2.9' ry='4.3' fill='%233aa0e8'/%3E%3Cellipse cx='139' cy='9' rx='.8' ry='1.4' fill='%23fff' fill-opacity='.55'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* At night the bulbs actually glow. */
+html.dark[data-season="xmas"] .header::before,
+html.dark[data-season="xmas"] .header::after {
+	filter: drop-shadow(0 0 3px rgba(255, 214, 140, 0.75));
+}
+
+@keyframes xmas-twinkle {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.35;
+	}
+}
+
+/* A Santa hat perched on the avatar. */
+html[data-season="xmas"] .header > div > a {
+	position: relative;
+}
+
+html[data-season="xmas"] .header > div > a::before {
+	content: "";
+	position: absolute;
+	top: -0.95rem;
+	left: 0.35rem;
+	width: 2rem;
+	height: 1.6rem;
+	z-index: 1;
+	pointer-events: none;
+	transform: rotate(-5deg);
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32'%3E%3Cpath d='M5 25C8 12 18 3 31 5C29 10 28 17 31 25Z' fill='%23d62839'/%3E%3Cpath d='M12 25C14 16 20 9 27 7' stroke='%23fff' stroke-opacity='.25' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='33' cy='6' r='4.5' fill='%23fff' stroke='%23cfd8dc' stroke-width='.8'/%3E%3Crect x='2' y='22' width='32' height='8' rx='4' fill='%23fff' stroke='%23cfd8dc' stroke-width='.8'/%3E%3C/svg%3E")
+		no-repeat center / contain;
+}
+
+/* The avatar keeps a low fairy-light glow, which flares on hover. */
+html[data-season="xmas"] .header > div > a img {
+	box-shadow: 0 0 10px -2px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+html[data-season="xmas"] .header > div > a img:hover {
+	box-shadow: 0 0 16px 1px color-mix(in srgb, var(--accent) 85%, transparent);
+}
+
+html[data-season="xmas"] .header > div > nav > a.navitem:hover,
+html[data-season="xmas"] .header > div > nav > a.router-link-active {
+	text-decoration-color: var(--primary);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+}
+
+/* The 🎁 nav item gets shaken every few seconds, like a present someone is
+   trying to guess. Keyframes must restate the scale(1.7) from Header.css,
+   otherwise the animation clobbers it. */
+html[data-season="xmas"] .header > div > nav > a.event-nav {
+	animation: xmas-gift-shake 6s ease-in-out infinite;
+	transform-origin: 50% 80%;
+}
+
+@keyframes xmas-gift-shake {
+	0%,
+	70%,
+	100% {
+		transform: scale(1.7) rotate(0deg);
+	}
+
+	74% {
+		transform: scale(1.7) rotate(-12deg);
+	}
+
+	78% {
+		transform: scale(1.7) rotate(10deg);
+	}
+
+	82% {
+		transform: scale(1.7) rotate(-8deg);
+	}
+
+	86% {
+		transform: scale(1.7) rotate(5deg);
+	}
+
+	90% {
+		transform: scale(1.7) rotate(-2deg);
+	}
+}
+
+html[data-season="xmas"] .footer {
+	position: relative;
+	border-top-color: var(--xmas-hairline);
+}
+
+/* Snowbank: two rows of overlapping mounds at different scales, so the drift
+   doesn't look stamped. */
+html[data-season="xmas"] .footer::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	height: 9px;
+	pointer-events: none;
+	background-image:
+		radial-gradient(ellipse 50% 100% at 50% 100%, var(--snowbank) 96%, transparent 100%),
+		radial-gradient(ellipse 50% 100% at 50% 100%, var(--snowbank) 96%, transparent 100%);
+	background-position:
+		0 100%,
+		17px 100%;
+	background-repeat: repeat-x;
+	background-size:
+		38px 6px,
+		56px 9px;
+}
+
+html[data-season="xmas"] .footer > div > .social a:hover {
+	filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 60%, transparent));
+}
+
+/* ---------------------------------------------------------------------------
+ * 8. Global details
+ * ------------------------------------------------------------------------ */
+html[data-season="xmas"] {
+	scrollbar-color: var(--primary) var(--bg-neutral);
+}
+
+html[data-season="xmas"] ::selection {
+	background-color: var(--primary);
+	color: var(--badge-text);
+}
+
+html[data-season="xmas"] :focus-visible {
+	outline: 2px solid var(--secondary);
+	outline-offset: 3px;
+}
+
+/*
+ * BackToTop.css sets its own :focus-visible outline at the same specificity as
+ * the rule above, which would leave the winner down to file order. Restate it
+ * here so the ring is deterministic.
+ */
+html[data-season="xmas"] .back-to-top:focus-visible {
+	outline: 2px solid var(--secondary);
+	outline-offset: 3px;
+}
+
+html[data-season="xmas"] .back-to-top {
+	box-shadow: 0 4px 14px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+html[data-season="xmas"] .back-to-top:hover {
+	box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+ * 9. Reduced motion
+ *
+ * Only the moving pieces are dropped (the snow hides itself in Snow.css). The
+ * lights stay lit, and the tags, baubles, holly and hat are static, so
+ * reduced-motion users still get the full seasonal look.
+ * ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+	html[data-season="xmas"] .header::before,
+	html[data-season="xmas"] .header::after,
+	html[data-season="xmas"] .header > div > nav > a.event-nav {
+		animation: none;
+	}
+
+	html[data-season="xmas"] li.post-preview > div:last-child > div > a,
+	html[data-season="xmas"] .tags-page > ul > li > a:first-child,
+	html[data-season="xmas"] .post-slug > article header > p a,
+	/* Pagination.css declares `transition: all 0.3s ease` with no guard of its
+	   own, so this is the only place it gets switched off. */
+	html[data-season="xmas"] div.pagination nav > .prev,
+	html[data-season="xmas"] div.pagination nav > .next {
+		transition: none;
+	}
+
+	html[data-season="xmas"] li.post-preview > div:last-child > div > a:hover,
+	html[data-season="xmas"]
+		li.post-preview
+		> div:last-child
+		> div
+		> a:focus-visible,
+	html[data-season="xmas"] .tags-page > ul > li > a:first-child:hover,
+	html[data-season="xmas"]
+		.tags-page
+		> ul
+		> li
+		> a:first-child:focus-visible,
+	html[data-season="xmas"] .post-slug > article header > p a:hover,
+	html[data-season="xmas"] .post-slug > article header > p a:focus-visible,
+	html[data-season="xmas"] div.pagination nav > a:hover,
+	html[data-season="xmas"] div.pagination nav > a:focus-visible {
+		transform: none;
+	}
+}

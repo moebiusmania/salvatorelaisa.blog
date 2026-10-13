@@ -1,40 +1,80 @@
 /**
- * XMAS THEME built on top of https://coolors.co/palette/f2545b-a93f55-19323c-f3f7f0-8c5e58
+ * Christmas color theme — "Pine, cranberries & fairy lights"
+ *
+ * Light: fresh-snow paper, cranberry-red accent, pine-green secondary,
+ *        ornament-gold highlight, deep pine ink text, and a soft hearth glow
+ *        rising from the top of the page.
+ * Dark:  a deep winter-night blue-green, bright berry-red accent, glowing pine
+ *        secondary, fairy-light gold highlight, snow-white text, and a faint
+ *        aurora glow from the top.
+ *
+ * The shape of the UI (garland, gift tags, holly, snowbank…) lives in
+ * xmas.decor.css; this file stays a pure set of custom properties.
  */
 html.light {
-	--white: #f3f7f0;
-	--primary: #f2545b;
-	--secondary: #a93f55;
-	--text: #19323c;
+	--white: #f8f6f1; /* Fresh snow paper */
+	--primary: #c0262d; /* Cranberry red */
+	--secondary: #1f6b4a; /* Pine green */
+	--accent: #c8961e; /* Ornament gold */
+	--text: #1d2a24; /* Deep pine ink */
 	--text-dark: inherit;
 	--text-content-dark: inherit;
-	--text-base-content: var(--text);
-	--text-secodary-content: var(--text);
+	--text-base-content: #16211c;
+	--text-secodary-content: #66726b; /* Frosted bark grey */
+	/* Alias for the historically misspelled token above so consumers using the
+	   correctly-spelled name also resolve. */
+	--text-secondary-content: #66726b;
 	--bg: var(--white);
-	--bg-neutral: oklch(0.958796 0.008588 247.915);
+	--bg-neutral: #eef1ea; /* Frosted card */
 
-	--header-link-hover: inherit;
-	--border: rgba(25, 50, 60, 0.2);
+	--header-link-hover: #9a1c22; /* Darker cranberry */
+	--border: #dbe1d6; /* Frost hairline */
 
 	--badge-bg: var(--primary);
-	--badge-text: oklch(1 0 0);
+	--badge-text: var(--white);
+
+	/* Snow is drawn white in the dark, so here it needs a cold blue tint to
+	   read at all against the paper. Shared by Snow.css and the decor layer. */
+	--snow: #b9cdd8;
+	--snow-glow: rgba(60, 90, 110, 0.25);
+
+	/* Hearth: a warm cranberry & gold glow radiating from the top. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(192, 38, 45, 0.14),
+		rgba(200, 150, 30, 0.08) 40%,
+		transparent 70%
+	);
 }
 
 html.dark {
-	--white: #19323c;
-	--primary: #f2545b;
-	--secondary: #a93f55;
-	--text: #f3f7f0;
-	--text-dark: inherit;
-	--text-content-dark: inherit;
-	--text-base-content: var(--text);
-	--text-secodary-content: var(--text);
-	--bg: var(--white);
-	--bg-neutral: var(--secondary);
+	--white: #f4f1ea; /* Snow */
+	--primary: #ff5a5f; /* Berry red */
+	--secondary: #5fbf8f; /* Glowing pine */
+	--accent: #f2c14e; /* Fairy-light gold */
+	--text: #dde5e0; /* Moonlit snow */
+	--text-dark: #0e191d; /* Winter night */
+	--text-content-dark: #dde5e0;
+	--text-base-content: #f4f1ea;
+	--text-secodary-content: #8ea19a; /* Misty pine grey */
+	--text-secondary-content: #8ea19a;
+	--bg: var(--text-dark);
+	--bg-neutral: #15252b; /* Darker frosted slate */
 
-	--header-link-hover: inherit;
-	--border: rgb(243, 247, 240, 0.2);
+	--header-link-hover: #ff8a8d; /* Light berry hover */
+	--border: #273c43; /* Night-ice border */
 
 	--badge-bg: var(--primary);
-	--badge-text: oklch(1 0 0);
+	--badge-text: var(--text-dark);
+
+	--snow: rgba(255, 255, 255, 0.85);
+	--snow-glow: rgba(255, 255, 255, 0.45);
+
+	/* Northern lights: a faint pine-green aurora with a hint of gold. */
+	--page-gradient: radial-gradient(
+		120% 90% at 50% 0%,
+		rgba(95, 191, 143, 0.16),
+		rgba(242, 193, 78, 0.06) 40%,
+		transparent 70%
+	);
 }

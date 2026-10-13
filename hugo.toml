@@ -104,13 +104,14 @@ path = "{/post,/events}"
 [params]
 siteTitle = "Salvatore Laisa"
 siteDescription = "Blog personale."
-# Edited by the Spooktober workflows with sed: keep this exact one-line format.
+# Edited by the Spooktober and Xmas workflows with sed: keep this exact one-line format.
 currentTheme = "halloween"
 pinnedPostDescription = "Questo post è stato messo in evidenza perché potrebbe essere stato aggiornato di recente o per qualche contesto attuale."
 
 [params.seasonEmoji]
 summer = "🌤️🏖️"
 halloween = "👻🕸️"
+xmas = "🎄☃️"
 
 # Event page surfaced as the first nav item when its matching theme is active.
 [params.seasonEvents]
