@@ -145,6 +145,20 @@ describe("site build", () => {
 		expect(css).not.toContain(".cloud");
 	});
 
+	it("renders the blocks of the about page", async () => {
+		const html = await read("/about/index.html");
+
+		expect(html.match(/class="about-milestone"/g)).toHaveLength(5);
+		expect(html).toContain('<aside class="callout callout--disclaimer">');
+		expect(html).toContain('<aside class="callout callout--privacy">');
+		expect(html).toContain("Tech Lead / Engineering Manager");
+		expect(html).toContain("<strong>non</strong>");
+		expect(html).not.toContain("::");
+
+		const href = html.match(/href="(\/assets\/[^"]+\.css)"/)?.[1];
+		expect(await read(href as string)).toContain(".about-milestone__marker");
+	});
+
 	it("loads no htmx", async () => {
 		expect(await read("/post/page/1/index.html")).not.toContain("htmx");
 	});
