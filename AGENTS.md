@@ -21,8 +21,7 @@ The site was migrated from Nuxt, then Lume (Deno), then Hugo. Comments that ment
 
 | Command | Description |
 |---|---|
-| `bun run dev` | Dev server on :3000 with live reload (drafts hidden) |
-| `bun run dev:host` | Same, listening on all interfaces |
+| `bun run dev` | Dev server on :3000 with live reload, listening on all interfaces (drafts hidden) |
 | `bun run dev:drafts` | Dev server including draft posts |
 | `bun run build` | Static build into `_site/` (never includes drafts) |
 | `bun run preview` | Serve the built site locally |
@@ -49,7 +48,7 @@ The site was migrated from Nuxt, then Lume (Deno), then Hugo. Comments that ment
 ## CI pipeline order
 
 PR checks (`build.yml`) and the deploy on `main` (`deploy.yml`) both run:
-`bun install --frozen-lockfile` → `bun test` → `bun run build`. Before the tests, the deploy runs `bun run fonts:download` if any family in `fonts.yaml` has no local files. It then uploads `_site/` to GitHub Pages.
+`bun install --frozen-lockfile` → `bun test` → `bun run build`. PR checks also run `bun audit --audit-level=high` before the tests, and fail on any high or critical advisory; the deploy skips it so a new advisory can't block a deploy. Before the tests, the deploy runs `bun run fonts:download` if any family in `fonts.yaml` has no local files. It then uploads `_site/` to GitHub Pages.
 
 The scheduled Spooktober workflows (`spooktober*.yml`) toggle `CURRENT_THEME` in `src/utils/config.ts` (and flip `draft:` in `content/spooktober-reloaded.md`) with `sed`, run the tests, commit and dispatch a deploy. Keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format.
 

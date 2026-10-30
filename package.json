@@ -4,8 +4,7 @@
   "type": "module",
   "packageManager": "bun@1.4.4",
   "scripts": {
-    "dev": "bun --bun astro dev --port 3000",
-    "dev:host": "bun --bun astro dev --port 3000 --host",
+    "dev": "bun --bun astro dev --port 3000 --host",
     "dev:drafts": "BLOG_DRAFTS=true bun --bun astro dev --port 3000",
     "build": "bun --bun astro build",
     "preview": "bun --bun astro preview --port 3000",
