@@ -12,14 +12,14 @@ import { visit } from "unist-util-visit";
 
 const BLOCK = /^::timeline\{(.*)\}\s*\n::\s*$/;
 
-const escape = (value: string): string =>
+export const escape = (value: string): string =>
 	value
 		.replace(/&/g, "&amp;")
 		.replace(/</g, "&lt;")
 		.replace(/>/g, "&gt;")
 		.replace(/"/g, "&quot;");
 
-const parseAttrs = (source: string): Record<string, string> => {
+export const parseAttrs = (source: string): Record<string, string> => {
 	const attrs: Record<string, string> = {};
 	for (const match of source.matchAll(/(\w+)="([^"]*)"/g)) {
 		attrs[match[1] as string] = match[2] as string;
