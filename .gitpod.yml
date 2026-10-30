@@ -3,6 +3,5 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  # Downloads the dependencies and compiles the pinned Hugo once.
-  - init: go mod download && go tool -modfile=tools/hugo/go.mod hugo version
-    # command: go run ./cmd/blog serve
+  - init: bun install --frozen-lockfile
+    # command: bun run dev

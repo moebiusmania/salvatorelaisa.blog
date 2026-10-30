@@ -1,0 +1,9 @@
+---
+import { isoDay, publishedDate } from "../helpers.ts";
+
+const { value } = Astro.props as { value: Date };
+---
+
+<div class="published" role="contentinfo" aria-label="Data di pubblicazione">
+	<time datetime={isoDay(value)}>Pubblicato: {publishedDate(value)}</time>
+</div>

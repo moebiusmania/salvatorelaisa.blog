@@ -1,0 +1,21 @@
+---
+import { getEntry, render } from "astro:content";
+import Tip from "../components/Tip.astro";
+import Base from "../layouts/Base.astro";
+
+const about = await getEntry("pages", "about");
+const { Content } = await render(about!);
+---
+
+<Base>
+	<div class="about-page">
+		<article class="content">
+			<header>
+				<h1>{about!.data.title}</h1>
+			</header>
+			<div><Content /></div>
+			<hr />
+		</article>
+		<Tip />
+	</div>
+</Base>

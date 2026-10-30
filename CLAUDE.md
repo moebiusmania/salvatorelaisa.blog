@@ -6,65 +6,67 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Personal blog (Italian-language) built with **[Hugo](https://gohugo.io/)** and a small **Go** toolbox (`cmd/blog`), with **Alpine.js** and **htmx** for client-side interactivity, exported as a **static site** to GitHub Pages. Content is Markdown. There is no JS toolchain (no Node, npm or Deno): Hugo bundles the client TypeScript with its built-in esbuild, and Alpine/htmx are vendored in `assets/js/vendor/`.
+Personal blog (Italian-language) built with **[Astro](https://astro.build/)** on **[Bun](https://bun.sh/)**, exported as a **static site** to GitHub Pages. Every page is rendered by Astro at build time; **Alpine.js** handles the client-side interactivity. Content is Markdown. There is no Node, npm, Deno, Go or htmx: Bun is the runtime, package manager, test runner and script runner.
 
-The site was migrated from Nuxt, then Lume. Some comments still mention them to explain why URLs, heading slugs, reading times and markup stay unchanged: the output must stay identical for visitors. Don't reintroduce a JS toolchain.
+The site was migrated from Nuxt, then Lume, then Hugo. Some comments still mention them to explain why URLs, heading slugs, reading times and markup stay unchanged: the output must stay identical for visitors.
 
 ## Commands
 
-Everything runs through `go run ./cmd/blog <command>` (or a built `./blog`):
-
 ```bash
-blog serve               # dev server on :3000 with live reload, drafts hidden
-blog serve --drafts      # including draft posts (--host to listen on the LAN)
-blog build               # static build into _site/ (what CI deploys; never drafts)
-go test -count=1 ./...   # unit, dashboard and full site build tests (-short skips the build)
-go vet ./... && gofmt -l .
+bun install --frozen-lockfile
+bun run dev              # dev server on :3000, drafts hidden
+bun run dev:drafts       # including draft posts (dev:host listens on the LAN)
+bun run build            # static build into _site/ (what CI deploys; never drafts)
+bun run preview          # serve _site/ locally
+bun test                 # unit, dashboard and full site build tests
 
-# Run a single test / package
-go test ./internal/books/ -run TestSpineStyle
-go test ./internal/dashboard/ -update     # rewrite the dashboard golden snapshots
+# Run a single test file / test
+bun test tests/utils/books.test.ts
+bun test -t "spineStyle"
 
 # Authoring
-blog new post "Title"    # scaffold a post in content/ (also: new device, new book)
-blog dashboard           # TUI admin dashboard (internal/dashboard): stats + buttons for `new`
-blog drafts              # list draft posts
-blog stats               # blog stats
-blog webp <path> [--quality N]
-blog todo list|add|done|remove|init
-blog fonts download      # fetch the fonts in fonts.yaml into public/fonts/
-blog vendor              # check/download the pinned Alpine.js and htmx builds
-blog gen [--drafts]      # validate content + write data/gen/ (build and serve run it)
+bun run new:post "Title" # scaffold a post in content/ (also: new:device, new:book)
+bun run dashboard        # TUI admin dashboard (scripts/dashboard): stats + buttons for new:*
+bun run drafts           # list draft posts
+bun run stats            # blog stats
+bun run convert:webp <path> [--quality N]
+bun run todo list|add|done|remove|init
+bun run fonts:download   # fetch the fonts in fonts.yaml into public/fonts/
 ```
+
+Always go through the package scripts: they pass `bun --bun`, so Astro runs on Bun and not on a system Node.
 
 ## Architecture
 
-- **Hugo config**: `hugo.toml`. `publishDir` is `_site` because `public/` is our static *source* (mounted as Hugo's `static`). Mounts map `content/*.md` to the `post` section (`/post/<filename>/`), `routes/` to the content root, and the component/page CSS into assets. Goldmark: raw HTML on; typographer, linkify, strikethrough and auto heading ids off (see Markdown below).
-- **Hugo version**: pinned in its own module, `tools/hugo/go.mod`, run as `go tool -modfile=tools/hugo/go.mod hugo …`, so the blog's dependencies never change Hugo's. Upgrade with `go get -modfile=tools/hugo/go.mod -tool github.com/gohugoio/hugo@vX.Y.Z`.
-- **`blog gen`** (`internal/gen`) runs before every build/serve: it validates all front matter (`internal/content`, port of the old zod schemas; invalid front matter fails the build) and writes `data/gen/*.json` (gitignored): reading times and post count, devices, books (with precomputed spine styles, `internal/books`) and the about/halloween/xmas page bodies. `content/devices|books|pages` are data only, never Hugo pages.
-- **Routes**: content adapters. `routes/_content.gotmpl` adds about, books, devices, now and `events/*`; `routes/post/_content.gotmpl` adds `/post/page/<n>/` (10 per page, from 1) and `/post/year/[<yyyy>/]`. Their layouts are in `layouts/route/`. Tags use Hugo's taxonomy (`layouts/taxonomy.html`, `term.html`). Home outputs: `rss.xml`, `search.json` and the htmx search fragment `/fragments/posts.html`.
-- **Templates**: `layouts/baseof.html` is the HTML shell; components are partials in `layouts/_partials/components/` (one per former Vento component); helpers in `layouts/_partials/` (season, meta, post-info, href…).
-- **Markdown**: `layouts/_markup/render-heading.html` reproduces the old Nuxt heading ids (`_` before a leading digit, etc.); `render-image.html` adds `fetchpriority="high"` to the first image; `layouts/_partials/content.html` post-processes rendered HTML for `::timeline{items="…"}` blocks and `~~strike~~` (→ `<s>`).
-- **Client JS**: `assets/js/main.ts` (Alpine components: `themeToggle`, `backToTop`, `pwaInstallBanner`, `postSearch`, `bookshelf`, `weather`, `githubRepos`), bundled by `js.Build` in `layouts/_partials/assets/scripts.html`; `/now` config arrives via `@params` from `data/now.yaml` and `data/weather.yaml`. htmx is loaded only on the pagination pages, for the search.
-- **Site config**: `hugo.toml` `[params]` (title, description, `currentTheme`, events, season emoji). `/now` data: `data/now.yaml`.
-- **Go code**: `cmd/blog` (cobra CLI), `internal/{content,books,gen,scaffold,drafts,stats,todo,fonts,images,now,termtable}`, `internal/dashboard` (Bubble Tea v2 + Lip Gloss, frames painted into a cell canvas), `internal/site` (build test).
-- **View transitions**: native cross-document transitions; `layouts/_partials/head/view-transitions.js` sets the slide direction for pagination.
+- **Astro config**: `astro.config.ts`. Output goes to `_site/`, assets to `/assets/` (not `_astro/`), one page per folder (`/post/<slug>/index.html`). `public/` is copied verbatim, dotfiles included.
+- **Content**: `src/content.config.ts` defines the `posts`, `pages`, `devices` and `books` collections and their zod schemas (invalid front matter fails the build). The glob loaders read the repo-level `content/` folder; `generateId` keeps the raw file names, because they end up in URLs and spine hashes. Files starting with `-` are hidden.
+- **Queries**: `src/utils/posts.ts` (`getPosts`, `getTags`, `getDevices`, `getBooks`) filters drafts, sorts, and computes reading times. Pages use these, never `getCollection` directly.
+- **Routes**: `src/pages/`. `post/[slug].astro`, `post/page/[page].astro` (10 per page), `post/year/`, `tags/`, `events/`; endpoints `rss.xml.ts` and `search.json.ts`.
+- **Templates**: `src/layouts/Base.astro` is the HTML shell; components are in `src/components/` (`now/`, `content/` seasonal decorations, `icons/`).
+- **Markdown**: the `unified()` processor (not Astro's default Sätteri) with remark plugins in `src/markdown/`: Nuxt-style heading ids (`_` before a leading digit), `fetchpriority="high"` on the first image, `::timeline{items="…"}` blocks and `<s>` for `~~strike~~`. Smart punctuation and code highlighting are off.
+- **Client JS**: `src/client/main.ts` (Alpine components: `themeToggle`, `backToTop`, `pwaInstallBanner`, `postSearch`, `bookshelf`, `weather`, `githubRepos`), bundled by Astro from the `<script>` in `Base.astro`. Alpine directives (`x-data`, `@click`, `:class`) go straight in the `.astro` markup. The search fetches `/search.json` on first use.
+- **Site config**: `src/utils/config.ts` (title, description, `CURRENT_THEME`, events, season emoji). `/now` data: `src/utils/now.ts`.
+- **CLI**: `scripts/` (Bun TypeScript), dashboard in `scripts/dashboard/` (signals + a hand-written cell-diffing screen).
+- **View transitions**: native cross-document transitions; `src/client/view-transitions.js` is inlined in `<head>` and sets the slide direction for pagination.
 
 ## Styling convention
 
-- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** in `_components/`, page styles live in `_includes/css/` (those folders now hold only CSS).
-- `layouts/_partials/assets/styles.html` concatenates them into `/assets/app.css` (Badge and now/card first, then byte order, each file under a `/* path */` header). The seasonal decorations (`Clouds`, `Spooks`, `Snow`) are separate files (`/assets/clouds.css`, `spooks.css`, `snow.css`) linked by `baseof.html` only while their theme is active.
-- Global styles and themes are in `public/styles/`. Switch themes via `currentTheme` in `hugo.toml`.
+- Vanilla CSS only, no preprocessor. Each component has a **sibling `.css` file** in `src/components/`, page styles live in `src/styles/pages/`. Don't use `<style>` blocks in `.astro` files.
+- **A new stylesheet must be added to `src/styles/app.css`**, the single bundle imported by `Base.astro`. Its `@import` list has a fixed order (Badge and now/card first, then byte order), so the cascade doesn't depend on which components a page uses.
+- The seasonal decorations style `body`, so they are not in the bundle: they live in `public/styles/decorations/` and `Base.astro` links them only while their theme is active.
+- Global styles and themes are in `public/styles/`. Switch themes via `CURRENT_THEME` in `src/utils/config.ts`.
 
 ## Testing
 
-- `go test` with table tests. `internal/books/testdata/golden.json` holds values captured from the original TypeScript (spines, hashes, reading times, dates): keep them matching.
-- `internal/site/build_test.go` builds the whole site with the pinned Hugo into a temp dir and asserts on the output (routes, drafts, pagination, home pinned post, feed, search, hidden devices/books, seasonal nav, timeline, heading ids, CSS bundle). Run it with `-count=1`: Go's test cache only tracks files the test process opens, not what Hugo reads (layouts, routes, assets, data), so a cached pass can be stale.
-- `internal/dashboard` tests drive the Bubble Tea model directly and compare frames with golden snapshots in `testdata/`.
+- `bun test` (`bun:test`). `tests/utils/books.test.ts` pins spine hashes and styles: keep them matching.
+- `tests/build.test.ts` builds the whole site into `_site_test/` and asserts on the output (routes, drafts, pagination, home pinned post, feed, search, hidden devices/books, seasonal nav, timeline, heading ids, CSS bundle).
+- `tests/dashboard/` covers the terminal input parser and the screen diffing.
 
 ## Quirks
 
-- Pin dependency versions exactly (`go.mod`/`go.sum`; Hugo in `tools/hugo/go.mod`; Alpine/htmx versions + SHA-256 in `cmd/blog/assets.go`).
-- Hugo templates escape by default: use `.Params.summary` (never `.Summary`, which Hugo renders as Markdown), `partial "href.html" $url | safeHTMLAttr` for data-driven links whose URL must stay byte-identical, and `jsonify (dict "noHTMLEscape" true)` for JSON in Alpine attributes.
-- CI: PRs to `main` run `go test -count=1 ./...` → `blog build` (`build.yml`). Pushes to `main` do the same, download fonts if missing, and deploy `_site` (`deploy.yml`).
-- The Spooktober workflows edit `hugo.toml` and `content/spooktober-reloaded.md` with `sed`, so keep the `currentTheme = "…"` line format in `hugo.toml` and the `draft: true|false` front-matter line.
+- Pin dependency versions exactly in `package.json`; the Bun version is pinned by `packageManager`, which CI reads.
+- `_site_test` must stay inside the repo: Astro moves files into `outDir` with a rename, which fails across filesystems.
+- Astro detects AI agents and backgrounds `astro dev` on its own, tracking it in `.astro/dev.json` (`astro dev status|logs|stop`). A later `dev` attaches to that server, so env vars like `BLOG_DRAFTS` may not apply; pass `--ignore-lock` for a one-off foreground server.
+- The `.md` files are plain Markdown, not MDX. GFM autolinks bare URLs.
+- CI: PRs to `main` run `bun test` → `bun run build` (`build.yml`). Pushes to `main` do the same, download fonts if missing, and deploy `_site` (`deploy.yml`).
+- The Spooktober workflows edit `src/utils/config.ts` and `content/spooktober-reloaded.md` with `sed`, so keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format and the `draft: true|false` front-matter line.

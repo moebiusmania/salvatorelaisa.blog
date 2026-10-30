@@ -1,9 +1,6 @@
 {
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
-	"[go]": {
-		"editor.defaultFormatter": "golang.go"
-	},
 	"[javascript][typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -11,9 +8,5 @@
 	"[markdown]": {
 		"editor.formatOnSave": false,
 		"editor.formatOnPaste": false
-	},
-	"files.associations": {
-		"layouts/**/*.html": "go-template",
-		"**/_content.gotmpl": "go-template"
 	}
 }

@@ -1,0 +1,28 @@
+---
+// /tags/<tag>/ — published posts with a given tag.
+import PostPreview from "../../components/PostPreview.astro";
+import PostsList from "../../components/PostsList.astro";
+import Base from "../../layouts/Base.astro";
+import { getTags, type Post } from "../../utils/posts.ts";
+
+export const getStaticPaths = async () =>
+	(await getTags()).map((tag) => ({
+		params: { tag: tag.label },
+		props: { results: tag.posts },
+	}));
+
+const { tag } = Astro.params;
+const { results } = Astro.props as { results: Post[] };
+---
+
+<Base>
+	<div class="tag-page">
+		<p>
+			{results.length} articoli trovati con il tag
+		</p>
+		<h1>{tag}</h1>
+		<PostsList>
+			{results.map((post) => <PostPreview post={post} />)}
+		</PostsList>
+	</div>
+</Base>

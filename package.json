@@ -1,0 +1,36 @@
+{
+  "name": "salvatorelaisa.blog",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "dev": "bun --bun astro dev --port 3000",
+    "dev:host": "bun --bun astro dev --port 3000 --host",
+    "dev:drafts": "BLOG_DRAFTS=true bun --bun astro dev --port 3000",
+    "build": "bun --bun astro build",
+    "preview": "bun --bun astro preview --port 3000",
+    "drafts": "bun scripts/drafts.ts",
+    "new:post": "bun scripts/post.ts",
+    "new:device": "bun scripts/device.ts",
+    "new:book": "bun scripts/book.ts",
+    "dashboard": "bun scripts/dashboard/main.ts",
+    "stats": "bun scripts/stats.ts",
+    "convert:webp": "bun scripts/images-converter.ts",
+    "todo": "bun scripts/todo.ts",
+    "fonts:download": "bun scripts/fonts-download.ts"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "7.3.5",
+    "@preact/signals-core": "1.14.4",
+    "alpinejs": "3.17.5",
+    "astro": "7.4.4",
+    "unist-util-visit": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "3.17.0",
+    "@types/bun": "1.4.4",
+    "@types/mdast": "4.0.4",
+    "sharp": "0.35.5",
+    "typescript": "7.0.2"
+  }
+}

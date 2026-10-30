@@ -1,0 +1,24 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getTags } from "../../utils/posts.ts";
+
+const tags = await getTags();
+---
+
+<Base>
+	<section class="tags-page">
+		<hgroup>
+			<h1>Tags</h1>
+		</hgroup>
+		<ul>
+			{
+				tags.map((tag) => (
+					<li>
+						<a href={`/tags/${tag.label}`}>{tag.label}</a>
+						<a href={`/tags/${tag.label}`}>({tag.posts.length})</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</Base>

@@ -1,7 +1,0 @@
-{{- /* /fragments/posts.html: every post as a PostPreview, loaded by htmx into
-  the /post/page/<n>/ search (see layouts/route/post-page.html). */ -}}
-<ul class="posts-list">
-  {{- range partial "posts.html" }}
-  {{ partial "components/PostPreview.html" (dict "post" . "search" true) }}
-  {{- end }}
-</ul>

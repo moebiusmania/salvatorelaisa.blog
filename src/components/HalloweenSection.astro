@@ -1,0 +1,95 @@
+---
+import External from "./icons/External.astro";
+
+interface Item {
+	title: string;
+	badge?: string;
+	url?: string;
+	description?: string;
+	featured?: boolean;
+}
+
+interface Props {
+	section: { heading: string; icon?: string; items: Item[] };
+}
+
+const { section } = Astro.props;
+const slugify = (value: string): string =>
+	value
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/^-|-$/g, "");
+const sectionSlug = slugify(section.heading);
+const chipId = (title: string): string => `chip-${sectionSlug}-${slugify(title)}`;
+const panelId = (title: string): string => `panel-${sectionSlug}-${slugify(title)}`;
+// Alpine expressions: the title as a JS string literal.
+const js = (title: string): string => JSON.stringify(title);
+---
+
+<section class="halloween-section" x-data="{ open: null }">
+	{
+		section.heading && (
+			<h2>
+				{section.icon && <span aria-hidden="true">{section.icon}</span>}
+				{section.heading}
+			</h2>
+		)
+	}
+	<ul class="halloween-chips">
+		{
+			section.items.map((item) => (
+				<li>
+					{item.url ? (
+						<a class:list={["halloween-chip", { featured: item.featured }]} href={item.url} target="_blank" rel="noopener noreferrer">
+							<span class="chip-title">{item.title}</span>
+							{item.badge && <span class="sl-badge">{item.badge}</span>}
+							<External />
+						</a>
+					) : item.description ? (
+						<button
+							id={chipId(item.title)}
+							type="button"
+							class:list={["halloween-chip", { featured: item.featured }]}
+							:class={`{ open: open === ${js(item.title)} }`}
+							:aria-expanded={`open === ${js(item.title)}`}
+							aria-expanded="false"
+							aria-controls={panelId(item.title)}
+							@click={`open = open === ${js(item.title)} ? null : ${js(item.title)}`}
+						>
+							<span class="chip-title">{item.title}</span>
+							{item.badge && <span class="sl-badge">{item.badge}</span>}
+						</button>
+					) : (
+						<span class:list={["halloween-chip", { featured: item.featured }]}>
+							<span class="chip-title">{item.title}</span>
+							{item.badge && <span class="sl-badge">{item.badge}</span>}
+						</span>
+					)}
+				</li>
+			))
+		}
+	</ul>
+	{
+		section.items
+			.filter((item) => !item.url && item.description)
+			.map((item) => (
+				<div
+					class="halloween-accordion-wrap"
+					x-show={`open === ${js(item.title)}`}
+					x-transition:enter="halloween-accordion-enter-active"
+					x-transition:enter-start="halloween-accordion-enter-from"
+					x-transition:enter-end="halloween-accordion-enter-to"
+					x-transition:leave="halloween-accordion-leave-active"
+					x-transition:leave-start="halloween-accordion-leave-from"
+					x-transition:leave-end="halloween-accordion-leave-to"
+					style="display: none"
+				>
+					<div class="halloween-accordion-clip">
+						<p id={panelId(item.title)} class="halloween-accordion" role="region" aria-labelledby={chipId(item.title)}>
+							{item.description}
+						</p>
+					</div>
+				</div>
+			))
+	}
+</section>

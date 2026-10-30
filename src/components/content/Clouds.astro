@@ -1,0 +1,14 @@
+---
+// Random, organic-looking clouds. Values are computed once at build time, so
+// each build bakes a fixed set.
+const { count = 8 } = Astro.props as { count?: number };
+const rand = (min: number, max: number): number => min + Math.random() * (max - min);
+const clouds = Array.from({ length: count }, () => {
+	const duration = rand(45, 90);
+	return `--top:${rand(2, 95).toFixed(1)}%;--duration:${duration.toFixed(1)}s;--delay:${(-rand(0, duration)).toFixed(1)}s;--scale:${rand(0.6, 1.2).toFixed(2)};`;
+});
+---
+
+<div class="clouds" role="presentation" aria-label="Decorative drifting clouds animation">
+	{clouds.map((style) => <div class="cloud" role="presentation" aria-hidden="true" style={style} />)}
+</div>

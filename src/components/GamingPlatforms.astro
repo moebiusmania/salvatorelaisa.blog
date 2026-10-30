@@ -1,0 +1,10 @@
+---
+const { platforms = [] } = Astro.props as {
+	platforms?: { label: string; url: string }[];
+};
+---
+
+<p class="gaming-platforms platforms">
+	Giocato su:
+	{platforms.map((platform) => <a href={platform.url} class="sl-badge">{platform.label}</a>)}
+</p>

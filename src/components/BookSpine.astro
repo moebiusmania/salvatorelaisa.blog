@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { cssVars } from "../helpers.ts";
+import { spineStyle } from "../utils/books.ts";
+
+const { book } = Astro.props as { book: CollectionEntry<"books"> };
+const { title, author } = book.data;
+---
+
+<button
+	class="book-spine"
+	type="button"
+	style={cssVars(spineStyle({ ...book.data, path: `/books/${book.id}` }))}
+	title={`${title} — ${author}`}
+	@click={`open('${book.id}')`}
+>
+	<span class="book-spine__text">
+		<span class="book-spine__title">{title}</span>
+		<span class="book-spine__author">{author}</span>
+	</span>
+</button>

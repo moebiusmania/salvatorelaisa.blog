@@ -1,0 +1,23 @@
+---
+import { NOW_EVENT } from "../../utils/now.ts";
+import External from "../icons/External.astro";
+
+const { className } = Astro.props as { className?: string };
+---
+
+<article class:list={["now-card now-event", className]}>
+	<p class="now-card-kicker">Prossimo evento</p>
+	<h2>
+		<a href={NOW_EVENT.url} target="_blank" rel="noopener">
+			{NOW_EVENT.name}
+			<External />
+		</a>
+	</h2>
+	{
+		NOW_EVENT.date && (
+			<p class="now-event-date">
+				<span aria-label="calendario" role="img">📅</span> {NOW_EVENT.date}
+			</p>
+		)
+	}
+</article>

@@ -1,0 +1,26 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { FIRST_YEAR } from "../../../utils/config.ts";
+
+const years = Array.from(
+	{ length: new Date().getFullYear() - FIRST_YEAR + 1 },
+	(_, index) => String(FIRST_YEAR + index),
+);
+---
+
+<Base>
+	<section class="post-year-index">
+		<div>
+			<h1>Anni</h1>
+		</div>
+		<div>
+			{
+				years.map((year) => (
+					<div>
+						<a href={`/post/year/${year}`}>{year}</a>
+					</div>
+				))
+			}
+		</div>
+	</section>
+</Base>

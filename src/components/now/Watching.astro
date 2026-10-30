@@ -1,0 +1,33 @@
+---
+// Only render an entry when its config node is present, so the widget gracefully
+// shows just the series, just the movie, or nothing at all.
+import { NOW_WATCHING } from "../../utils/now.ts";
+import External from "../icons/External.astro";
+
+const { className } = Astro.props as { className?: string };
+const { series, movie } = NOW_WATCHING as {
+	series?: { label: string; imdb: string };
+	movie?: { label: string; imdb: string };
+};
+const items = [
+	{ type: "Serie TV", ...series },
+	{ type: "Film", ...movie },
+].filter((item) => item.label && item.imdb);
+---
+
+<article class:list={["now-card now-watching", className]}>
+	<p class="now-card-kicker">Cosa sto guardando</p>
+	<ul>
+		{
+			items.map((item) => (
+				<li>
+					<span class="now-watching-type">{item.type}</span>
+					<a href={item.imdb} target="_blank" rel="noopener">
+						{item.label}
+						<External />
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</article>

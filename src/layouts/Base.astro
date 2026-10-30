@@ -1,0 +1,107 @@
+---
+import "../styles/app.css";
+import viewTransitions from "../client/view-transitions.js?raw";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import PWAInstallBanner from "../components/PWAInstallBanner.astro";
+import Clouds from "../components/content/Clouds.astro";
+import Spooks from "../components/content/Spooks.astro";
+import { themeInitScript } from "../helpers.ts";
+import { CURRENT_THEME, SITE_DESCRIPTION, SITE_TITLE } from "../utils/config.ts";
+import { LIGHT } from "../utils/index.ts";
+
+interface Props {
+	metaTitle?: string;
+	metaDescription?: string;
+	og?: { url: string; description?: string; image?: string };
+}
+
+// In <head>, in this order:
+// - the render-blocking theme bootstrap, which must run before the body paints so
+//   the correct theme (persisted cookie or, on first visit, the system
+//   preference) is applied with no flash of light content;
+// - the opt-in to cross-document View Transitions, inline (not in the async
+//   view-transitions.css) because the incoming page must opt in before its first
+//   render;
+// - a preload of the display serif (latin, 700) so headlines don't flash;
+// - the seasonal decoration layers, after typography.css so they can override it.
+const { metaTitle, metaDescription, og } = Astro.props;
+const season = CURRENT_THEME;
+const themeCss = `/styles/themes/${season}.css`;
+const decorCss =
+	season === "halloween" ? "/styles/themes/halloween.decor.css" : undefined;
+const pageTitle = metaTitle || SITE_TITLE;
+const description = metaDescription || SITE_DESCRIPTION;
+---
+
+<!doctype html>
+<html lang="it-IT" data-theme={LIGHT} class={LIGHT} data-season={season}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<script is:inline set:html={themeInitScript} />
+		<style is:inline>@view-transition { navigation: auto; }</style>
+		<script is:inline set:html={viewTransitions} />
+
+		<link rel="preload" href="/fonts/fraunces/fraunces-07.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href="/fonts/fonts.css" as="style" />
+		<link rel="preload" href="/styles/normalize.css" as="style" />
+		<link rel="preload" href="/styles/spacing.css" as="style" />
+		<link rel="preload" href={themeCss} as="style" />
+		<link rel="preload" href="/styles/typography.css" as="style" />
+
+		<link rel="stylesheet" href="/fonts/fonts.css" />
+		<link rel="stylesheet" href="/styles/normalize.css" />
+		<link rel="stylesheet" href="/styles/spacing.css" />
+		<link rel="stylesheet" href={themeCss} />
+		<link rel="stylesheet" href="/styles/typography.css" />
+		{decorCss && <link rel="stylesheet" href={decorCss} />}
+		{season === "summer" && <link rel="stylesheet" href="/styles/decorations/clouds.css" />}
+		{season === "halloween" && <link rel="stylesheet" href="/styles/decorations/spooks.css" />}
+		<link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'" />
+
+		<meta name="title" content={pageTitle} />
+		<meta name="description" content={description} />
+		<meta property="og:description" content={description} />
+		{
+			og && (
+				<>
+					<meta property="og:type" content="website" />
+					<meta property="og:url" content={og.url} />
+					<meta property="og:title" content={pageTitle} />
+					{og.image && <meta property="og:image" content={og.image} />}
+					<meta property="twitter:card" content="summary_large_image" />
+					<meta property="twitter:url" content={og.url} />
+					<meta property="twitter:title" content={pageTitle} />
+					{og.description && <meta property="twitter:description" content={og.description} />}
+					{og.image && <meta property="twitter:image" content={og.image} />}
+				</>
+			)
+		}
+
+		<link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="icon" type="image/png" href="/static/favicons/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
+
+		<script>
+			import "../client/main.ts";
+		</script>
+	</head>
+	<body>
+		<Header />
+		{season === "summer" && <Clouds />}
+		{season === "halloween" && <Spooks />}
+		<main>
+			<section class="container">
+				<div>
+					<slot />
+				</div>
+			</section>
+			<Footer />
+		</main>
+		<PWAInstallBanner />
+	</body>
+</html>

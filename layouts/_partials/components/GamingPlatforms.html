@@ -1,7 +1,0 @@
-{{- /* Context: the platforms list (may be nil). */ -}}
-<p class="gaming-platforms platforms">
-  Giocato su:
-  {{- range . }}
-  <a {{ partial "href.html" .url | safeHTMLAttr }} class="sl-badge">{{ .label }}</a>
-  {{- end }}
-</p>

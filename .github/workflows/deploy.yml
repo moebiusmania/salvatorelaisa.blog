@@ -24,14 +24,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: 💻 Use Go
-        uses: actions/setup-go@v6
+      - name: 💻 Use Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          go-version-file: go.mod
-          # Also caches the compiled Hugo (pinned in tools/hugo/go.mod).
-          cache-dependency-path: |
-            go.sum
-            tools/hugo/go.sum
+          bun-version-file: package.json
+
+      - name: 📦 Install dependencies
+        run: bun install --frozen-lockfile
 
       # Fonts are committed in public/fonts/: only hit the network when a
       # family declared in fonts.yaml has no local files yet.
@@ -47,18 +46,16 @@ jobs:
             fi
           done < <(grep -oP 'name:\s*"\K[^"]+' fonts.yaml)
           if [ "$missing" -eq 1 ]; then
-            go run ./cmd/blog fonts download
+            bun run fonts:download
           else
             echo "Fonts already committed, skipping download"
           fi
 
       - name: 📝 Run tests
-        # -count=1: never trust cached results, the build test runs Hugo, whose
-        # inputs (layouts, routes, assets, data) the Go test cache cannot see.
-        run: go test -count=1 ./...
+        run: bun test
 
       - name: 🏗️ Build static website
-        run: go run ./cmd/blog build
+        run: bun run build
 
       - name: 🚀 Upload artifact
         uses: actions/upload-pages-artifact@v5

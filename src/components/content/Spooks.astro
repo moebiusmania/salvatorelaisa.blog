@@ -1,0 +1,24 @@
+---
+// Bats lead the cast (weighted), with the occasional ghost, bone and skull.
+// Positions, speeds and sizes are computed once at build time.
+const { count = 9 } = Astro.props as { count?: number };
+const icons = ["🦇", "🦇", "🦇", "👻", "👻", "🦴", "💀"];
+const rand = (min: number, max: number): number => min + Math.random() * (max - min);
+const spooks = Array.from({ length: count }, () => {
+	const duration = rand(28, 55);
+	return {
+		style: `--top:${rand(2, 92).toFixed(1)}%;--duration:${duration.toFixed(1)}s;--delay:${(-rand(0, duration)).toFixed(1)}s;--scale:${rand(0.7, 1.4).toFixed(2)};--bob:${rand(2.2, 4).toFixed(2)}s;`,
+		icon: icons[Math.floor(Math.random() * icons.length)],
+	};
+});
+---
+
+<div class="spooks" role="presentation" aria-label="Decorative drifting Halloween creatures animation">
+	{
+		spooks.map(({ style, icon }) => (
+			<div class="spook" role="presentation" aria-hidden="true" style={style}>
+				<span class="spook-inner">{icon}</span>
+			</div>
+		))
+	}
+</div>

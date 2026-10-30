@@ -1,7 +1,0 @@
-{{- /* Context: dict "posts", optional "indexed" (adds --i to each item, for the
-  staggered entry animation). */ -}}
-<ul class="posts-list">
-  {{- range $index, $post := .posts }}
-  {{ partial "components/PostPreview.html" (dict "post" $post "style" (cond ($.indexed | default false) (printf "--i: %d" $index) "")) }}
-  {{- end }}
-</ul>

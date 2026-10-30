@@ -1,0 +1,37 @@
+---
+import PostPreview from "../components/PostPreview.astro";
+import PostsList from "../components/PostsList.astro";
+import Base from "../layouts/Base.astro";
+import { SITE_DESCRIPTION } from "../utils/config.ts";
+import { getPosts } from "../utils/posts.ts";
+
+const all = await getPosts();
+const pinned = all.find((post) => post.pinned === true);
+const latest = all.slice(0, 5);
+// The pinned post goes first, but it may already be among the latest five: drop
+// it from the tail so it is never rendered twice.
+const posts = pinned
+	? [pinned, ...latest.filter((post) => post.slug !== pinned.slug)]
+	: latest;
+const og = {
+	url: "https://salvatorelaisa.blog",
+	description: "Blog personale.",
+	image: "https://salvatorelaisa.blog/static/images/twitter-card.png",
+};
+---
+
+<Base og={og}>
+	<div class="home-page">
+		<p>{SITE_DESCRIPTION}</p>
+
+		<PostsList>
+			{posts.map((post) => <PostPreview post={post} />)}
+		</PostsList>
+
+		<section>
+			<a href="/post/page/1" aria-label="Tutti gli articoli">
+				Tutti gli articoli &rarr;
+			</a>
+		</section>
+	</div>
+</Base>
