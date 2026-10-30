@@ -55,7 +55,7 @@ All commands are subcommands of `cmd/blog`: `go run ./cmd/blog <command>`, or bu
 PR checks (`build.yml`) and the deploy on `main` (`deploy.yml`) both run:
 `go test -count=1 ./...` → `go run ./cmd/blog build`. Before that, the deploy runs `blog fonts download` if any family in `fonts.yaml` has no local files. It then uploads `_site/` to GitHub Pages. `actions/setup-go` caches the modules and the compiled Hugo.
 
-The scheduled Spooktober workflows (`spooktober-2026*.yml`) toggle `currentTheme` in `hugo.toml` (and flip `draft:` in `content/spooktober-reloaded.md`) with `sed`, run the tests, commit and dispatch a deploy. Keep the `currentTheme = "…"` line format.
+The scheduled Spooktober workflows (`spooktober*.yml`) toggle `currentTheme` in `hugo.toml` (and flip `draft:` in `content/spooktober-reloaded.md`) with `sed`, run the tests, commit and dispatch a deploy. Keep the `currentTheme = "…"` line format.
 
 ## Testing
 

@@ -1,13 +1,12 @@
-# Wrap up Spooktober 2026: switch the site back to the default theme, commit the
-# changes on main and trigger a deploy. The spooktober-reloaded post stays published
+# Kick off Spooktober every year: switch the site to the halloween theme, publish
+# the related post, commit the changes on main and trigger a deploy
 
-name: Spooktober 2026 end
+name: Spooktober
 
 on:
   schedule:
-    # GitHub cron runs in UTC: 23:01 UTC on Nov 1 is 00:01 Europe/Rome (CET) on Nov 2.
-    # Cron has no year field, the `guard` job below prevents runs in later years.
-    - cron: "1 23 1 11 *"
+    # GitHub cron runs in UTC: 22:01 UTC on Sep 30 is 00:01 Europe/Rome (CEST) on Oct 1.
+    - cron: "1 22 30 9 *"
   # Manual fallback, in case the scheduled run is delayed or skipped
   workflow_dispatch:
 
@@ -16,28 +15,11 @@ permissions:
   actions: write
 
 concurrency:
-  group: spooktober-2026-end
+  group: spooktober
   cancel-in-progress: false
 
 jobs:
-  guard:
-    runs-on: ubuntu-latest
-    outputs:
-      run: ${{ steps.check.outputs.run }}
-
-    steps:
-      - name: 📅 Check the year
-        id: check
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=Europe/Rome date +%Y)" != "2026" ]; then
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          fi
-
-  restore-default:
-    needs: guard
-    if: needs.guard.outputs.run == 'true'
+  enable-halloween:
     runs-on: ubuntu-latest
 
     steps:
@@ -54,12 +36,14 @@ jobs:
             go.sum
             tools/hugo/go.sum
 
-      - name: 🧹 Restore default theme
+      - name: 🎃 Set halloween theme & publish post
         run: |
-          sed -i -E 's/^currentTheme = "[a-z]+"$/currentTheme = "default"/' hugo.toml
+          sed -i -E 's/^currentTheme = "[a-z]+"$/currentTheme = "halloween"/' hugo.toml
+          sed -i -E '0,/^draft: (true|false)$/s//draft: false/' content/spooktober-reloaded.md
 
-          # Fail loudly if the file drifted and the replacement did not apply
-          grep -qx 'currentTheme = "default"' hugo.toml
+          # Fail loudly if the files drifted and the replacements did not apply
+          grep -qx 'currentTheme = "halloween"' hugo.toml
+          grep -qx 'draft: false' content/spooktober-reloaded.md
 
       - name: 📝 Run tests
         # -count=1: never trust cached results, the build test runs Hugo, whose
@@ -71,15 +55,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hugo.toml
+          git add hugo.toml content/spooktober-reloaded.md
 
           if git diff --cached --quiet; then
-            echo "Nothing to commit, default theme already enabled"
+            echo "Nothing to commit, halloween theme already enabled"
             echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          git commit -m "chore: restore default theme after spooktober"
+          git commit -m "chore: enable halloween theme and publish spooktober-reloaded"
           git push origin HEAD:main
           echo "pushed=true" >> "$GITHUB_OUTPUT"
 
