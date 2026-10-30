@@ -1,5 +1,6 @@
 ---
 import { getEntry, render } from "astro:content";
+import HalloweenSection from "../../components/HalloweenSection.astro";
 import Tip from "../../components/Tip.astro";
 import Base from "../../layouts/Base.astro";
 
@@ -11,6 +12,9 @@ const { Content } = await render(entry!);
 	<article class="content xmas-page">
 		<h1>{entry!.data.title}</h1>
 		<div><Content /></div>
+
+		{(entry!.data.sections ?? []).map((section) => <HalloweenSection section={section} />)}
+
 		<hr />
 	</article>
 	<Tip />
