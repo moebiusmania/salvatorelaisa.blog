@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import PWAInstallBanner from "../components/PWAInstallBanner.astro";
 import Clouds from "../components/content/Clouds.astro";
+import Snow from "../components/content/Snow.astro";
 import Spooks from "../components/content/Spooks.astro";
 import { themeInitScript } from "../helpers.ts";
 import { CURRENT_THEME, SITE_DESCRIPTION, SITE_TITLE } from "../utils/config.ts";
@@ -29,7 +30,9 @@ const { metaTitle, metaDescription, og } = Astro.props;
 const season = CURRENT_THEME;
 const themeCss = `/styles/themes/${season}.css`;
 const decorCss =
-	season === "halloween" ? "/styles/themes/halloween.decor.css" : undefined;
+	season === "halloween" || season === "xmas"
+		? `/styles/themes/${season}.decor.css`
+		: undefined;
 const pageTitle = metaTitle || SITE_TITLE;
 const description = metaDescription || SITE_DESCRIPTION;
 ---
@@ -59,6 +62,7 @@ const description = metaDescription || SITE_DESCRIPTION;
 		{decorCss && <link rel="stylesheet" href={decorCss} />}
 		{season === "summer" && <link rel="stylesheet" href="/styles/decorations/clouds.css" />}
 		{season === "halloween" && <link rel="stylesheet" href="/styles/decorations/spooks.css" />}
+		{season === "xmas" && <link rel="stylesheet" href="/styles/decorations/snow.css" />}
 		<link rel="stylesheet" href="/styles/view-transitions.css" media="print" onload="this.media='all'" />
 
 		<meta name="title" content={pageTitle} />
@@ -94,6 +98,7 @@ const description = metaDescription || SITE_DESCRIPTION;
 		<Header />
 		{season === "summer" && <Clouds />}
 		{season === "halloween" && <Spooks />}
+		{season === "xmas" && <Snow />}
 		<main>
 			<section class="container">
 				<div>

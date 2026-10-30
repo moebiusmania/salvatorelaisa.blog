@@ -1,12 +1,42 @@
 ---
-const { count = 10 } = Astro.props as { count?: number };
-const icons = ["❅", "❆"];
-const flakes = Array.from(
-	{ length: count },
-	() => icons[Math.floor(Math.random() * icons.length)],
-);
+// Snowfall in three depth layers: many tiny, slow, faint flakes far away, a
+// middle layer of soft dots, and a few large crystal glyphs up close that fall
+// fastest. Layer, position, speed and sway are computed at build time, so each
+// page bakes a fixed (but organic-looking) snowfall.
+// U+FE0E keeps the crystals as text glyphs, so they take the theme colour
+// instead of being swapped for a platform emoji.
+const { count = 42 } = Astro.props as { count?: number };
+const glyphs = ["❄︎", "❅︎", "❆︎"];
+const layers = {
+	far: { fall: [22, 34], size: [2, 3] },
+	mid: { fall: [14, 21], size: [3, 5] },
+	near: { fall: [9, 13], size: [0.8, 1.3] },
+} as const;
+const between = (min: number, max: number): number =>
+	min + Math.random() * (max - min);
+
+const flakes = Array.from({ length: count }, () => {
+	const roll = Math.random();
+	const layer = roll < 0.5 ? "far" : roll < 0.85 ? "mid" : "near";
+	const { fall: fallRange, size: sizeRange } = layers[layer];
+	const fall = between(...fallRange);
+	const size = between(...sizeRange).toFixed(2);
+	const style = [
+		`--x:${(Math.random() * 100).toFixed(1)}%`,
+		`--fall:${fall.toFixed(1)}s`,
+		`--delay:${(-Math.random() * fall).toFixed(1)}s`,
+		`--size:${size}${layer === "near" ? "rem" : "px"}`,
+		`--sway:${between(8, 40).toFixed(0)}px`,
+		`--sway-time:${between(3, 7).toFixed(1)}s`,
+	].join(";");
+	const glyph =
+		layer === "near"
+			? glyphs[Math.floor(Math.random() * glyphs.length)]
+			: undefined;
+	return { layer, style, glyph };
+});
 ---
 
-<div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
-	{flakes.map((icon) => <div class="snowflake" role="presentation" aria-hidden="true">{icon}</div>)}
+<div class="snow" aria-hidden="true">
+	{flakes.map(({ layer, style, glyph }) => <div class={`flake flake--${layer}`} style={style}><span>{glyph}</span></div>)}
 </div>
