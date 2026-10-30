@@ -7,7 +7,7 @@ export type SeasonTheme = "default" | "halloween" | "spring" | "summer" | "xmas"
 
 export const SITE_TITLE = "Salvatore Laisa";
 export const SITE_DESCRIPTION = "Blog personale.";
-// Edited by the Spooktober workflows with sed: keep this exact one-line format.
+// Edited by the Spooktober and Xmas workflows with sed: keep this exact one-line format.
 // Widened to `SeasonTheme` on purpose: with a plain annotation TypeScript keeps
 // the literal type, and every `CURRENT_THEME === "..."` check below fails as a
 // comparison between non-overlapping types.
@@ -35,7 +35,9 @@ export const SEASON_EMOJI =
 		? "🌤️🏖️"
 		: CURRENT_THEME === "halloween"
 			? "👻🕸️"
-			: "";
+			: CURRENT_THEME === "xmas"
+				? "🎄☃️"
+				: "";
 // Event page surfaced as the first nav item when its matching theme is active.
 export const SEASON_EVENT =
 	CURRENT_THEME === "halloween"

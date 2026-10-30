@@ -69,4 +69,4 @@ Always go through the package scripts: they pass `bun --bun`, so Astro runs on B
 - Astro detects AI agents and backgrounds `astro dev` on its own, tracking it in `.astro/dev.json` (`astro dev status|logs|stop`). A later `dev` attaches to that server, so env vars like `BLOG_DRAFTS` may not apply; pass `--ignore-lock` for a one-off foreground server.
 - The `.md` files are plain Markdown, not MDX. GFM autolinks bare URLs.
 - CI: PRs to `main` run `bun audit --audit-level=high` → `bun test` → `bun run build` (`build.yml`). Pushes to `main` run the tests and build, download fonts if missing, and deploy `_site` (`deploy.yml`); they skip the audit so a new advisory can't block a deploy.
-- The Spooktober workflows edit `src/utils/config.ts` and `content/spooktober-reloaded.md` with `sed`, so keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format and the `draft: true|false` front-matter line.
+- The Spooktober and Xmas workflows edit `src/utils/config.ts` (Spooktober also `content/spooktober-reloaded.md`) with `sed`, so keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format and the `draft: true|false` front-matter line.

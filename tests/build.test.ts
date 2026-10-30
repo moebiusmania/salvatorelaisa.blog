@@ -141,8 +141,15 @@ describe("site build", () => {
 
 		expect(css).toContain(".post-preview");
 		expect(css).not.toContain(".spook");
-		expect(css).not.toContain(".snowflake");
+		expect(css).not.toContain(".flake");
 		expect(css).not.toContain(".cloud");
+	});
+
+	it("renders the sections of the xmas page", async () => {
+		const html = await read("/events/xmas/index.html");
+
+		expect(html).toContain("Musica/Playlists");
+		expect(html).toContain('href="/downloads/demo/snow-fall.html"');
 	});
 
 	it("loads no htmx", async () => {

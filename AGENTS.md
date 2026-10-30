@@ -50,7 +50,7 @@ The site was migrated from Nuxt, then Lume (Deno), then Hugo. Comments that ment
 PR checks (`build.yml`) and the deploy on `main` (`deploy.yml`) both run:
 `bun install --frozen-lockfile` → `bun test` → `bun run build`. PR checks also run `bun audit --audit-level=high` before the tests, and fail on any high or critical advisory; the deploy skips it so a new advisory can't block a deploy. Before the tests, the deploy runs `bun run fonts:download` if any family in `fonts.yaml` has no local files. It then uploads `_site/` to GitHub Pages.
 
-The scheduled Spooktober workflows (`spooktober*.yml`) toggle `CURRENT_THEME` in `src/utils/config.ts` (and flip `draft:` in `content/spooktober-reloaded.md`) with `sed`, run the tests, commit and dispatch a deploy. Keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format.
+The scheduled Spooktober and Xmas workflows (`spooktober*.yml`, `xmas*.yml`) toggle `CURRENT_THEME` in `src/utils/config.ts` (Spooktober also flips `draft:` in `content/spooktober-reloaded.md`) with `sed`, run the tests, commit and dispatch a deploy. Keep the `export const CURRENT_THEME = "…" as SeasonTheme;` line format.
 
 ## Testing
 
