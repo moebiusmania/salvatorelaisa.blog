@@ -1,0 +1,32 @@
+---
+import Event from "../components/now/Event.astro";
+import Github from "../components/now/Github.astro";
+import Watching from "../components/now/Watching.astro";
+import Weather from "../components/now/Weather.astro";
+import Work from "../components/now/Work.astro";
+import Base from "../layouts/Base.astro";
+
+const description = "Una fotografia del presente, ma con i dati invece che con la pellicola.";
+const og = {
+	url: "https://salvatorelaisa.blog/now",
+	description,
+	image: "https://salvatorelaisa.blog/static/images/twitter-card.png",
+};
+---
+
+<Base metaTitle="Salvatore Laisa - Adesso" metaDescription={description} og={og}>
+	<section class="now-page">
+		<hgroup>
+			<h1>Adesso</h1>
+			<p>{description}</p>
+		</hgroup>
+
+		<div class="now-grid">
+			<Work className="now-grid-work" />
+			<Weather className="now-grid-weather" />
+			<Github className="now-grid-github" />
+			<Watching className="now-grid-watching" />
+			<Event className="now-grid-event" />
+		</div>
+	</section>
+</Base>

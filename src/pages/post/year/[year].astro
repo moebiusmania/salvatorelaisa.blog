@@ -1,0 +1,35 @@
+---
+// /post/year/<yyyy>/ — one page per year since the blog started, even the empty
+// ones (the /post/year/ index links all of them).
+import PostPreview from "../../../components/PostPreview.astro";
+import PostsList from "../../../components/PostsList.astro";
+import Base from "../../../layouts/Base.astro";
+import { FIRST_YEAR } from "../../../utils/config.ts";
+import { getPosts, type Post } from "../../../utils/posts.ts";
+
+export const getStaticPaths = async () => {
+	const posts = await getPosts();
+	const current = new Date().getFullYear();
+
+	return Array.from({ length: current - FIRST_YEAR + 1 }, (_, index) => {
+		const year = FIRST_YEAR + index;
+		return {
+			params: { year: String(year) },
+			props: { results: posts.filter((post) => post.date.getUTCFullYear() === year) },
+		};
+	});
+};
+
+const { year } = Astro.params;
+const { results } = Astro.props as { results: Post[] };
+---
+
+<Base>
+	<div class="post-year">
+		<p>{results.length} articoli trovati</p>
+		<h1>Ricerca per anno: {year}</h1>
+		<PostsList>
+			{results.map((post) => <PostPreview post={post} />)}
+		</PostsList>
+	</div>
+</Base>

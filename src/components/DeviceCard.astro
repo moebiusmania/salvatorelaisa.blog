@@ -1,0 +1,32 @@
+---
+import { type CollectionEntry, render } from "astro:content";
+import { formatDate } from "../helpers.ts";
+import Doc from "./icons/Doc.astro";
+import External from "./icons/External.astro";
+
+const { device } = Astro.props as { device: CollectionEntry<"devices"> };
+const { Content } = await render(device);
+const { title, purchase, tags, image, url, post } = device.data;
+---
+
+<article class="device-card">
+	<figure>
+		<img src={image} alt={title} />
+	</figure>
+	<div>
+		<div>
+			{tags.map((tag) => <span class="sl-badge">{tag}</span>)}
+		</div>
+		<p>
+			Data di acquisto: {formatDate(purchase)}
+		</p>
+		<h2>
+			<a href={post || url}>
+				{title}
+			</a>
+			{url && <External />}
+			{post && <Doc />}
+		</h2>
+		<div><Content /></div>
+	</div>
+</article>

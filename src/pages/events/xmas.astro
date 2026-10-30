@@ -1,0 +1,17 @@
+---
+import { getEntry, render } from "astro:content";
+import Tip from "../../components/Tip.astro";
+import Base from "../../layouts/Base.astro";
+
+const entry = await getEntry("pages", "xmas");
+const { Content } = await render(entry!);
+---
+
+<Base>
+	<article class="content xmas-page">
+		<h1>{entry!.data.title}</h1>
+		<div><Content /></div>
+		<hr />
+	</article>
+	<Tip />
+</Base>

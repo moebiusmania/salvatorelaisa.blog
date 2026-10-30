@@ -1,0 +1,9 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"include": [".astro/types.d.ts", "**/*"],
+	"exclude": ["_site", "public", "node_modules"],
+	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"types": ["bun", "alpinejs"]
+	}
+}

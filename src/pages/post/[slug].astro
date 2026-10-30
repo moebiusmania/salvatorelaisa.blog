@@ -1,0 +1,51 @@
+---
+import { render } from "astro:content";
+import BackToTop from "../../components/BackToTop.astro";
+import GamingPlatforms from "../../components/GamingPlatforms.astro";
+import Outdated from "../../components/Outdated.astro";
+import Published from "../../components/Published.astro";
+import ReadingTime from "../../components/ReadingTime.astro";
+import Sharing from "../../components/Sharing.astro";
+import Tip from "../../components/Tip.astro";
+import Base from "../../layouts/Base.astro";
+import { SITE_TITLE } from "../../utils/config.ts";
+import { getPosts, type Post } from "../../utils/posts.ts";
+
+export const getStaticPaths = async () =>
+	(await getPosts()).map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
+	}));
+
+const { post } = Astro.props as { post: Post };
+const { slug, title, date, tags, readingTime, platforms, images } = post;
+const { Content } = await render(post.entry);
+const isReview = tags.includes("gaming") && tags.includes("recensione");
+const og = {
+	url: `https://salvatorelaisa.blog/post/${slug}`,
+	image: images?.[0],
+};
+---
+
+<Base metaTitle={`${SITE_TITLE} - ${title}`} og={og}>
+	<div class="post-slug">
+		<article class="content">
+			<header>
+				<Published value={date} />
+				<h1 style={`view-transition-name:post-title-${slug};`}>{title}</h1>
+				<p>
+					Tags:
+					{tags.map((tag) => <a href={`/tags/${tag}`}>{tag}</a>)}
+				</p>
+				<ReadingTime value={readingTime} />
+				{isReview && <GamingPlatforms platforms={platforms} />}
+				<Outdated date={date} />
+			</header>
+			<div><Content /></div>
+		</article>
+		<hr />
+		<Sharing slug={slug} />
+		<Tip />
+		<BackToTop />
+	</div>
+</Base>

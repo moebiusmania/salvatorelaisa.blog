@@ -1,3 +1,0 @@
-{{- /* fetchpriority="high" on the document's first image (likely the LCP). */ -}}
-<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if eq .Ordinal 0 }} fetchpriority="high"{{ end }}>
-{{- /**/ -}}

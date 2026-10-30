@@ -1,0 +1,12 @@
+---
+const { count = 10 } = Astro.props as { count?: number };
+const icons = ["❅", "❆"];
+const flakes = Array.from(
+	{ length: count },
+	() => icons[Math.floor(Math.random() * icons.length)],
+);
+---
+
+<div class="snowflakes" role="presentation" aria-label="Decorative snowfall animation">
+	{flakes.map((icon) => <div class="snowflake" role="presentation" aria-hidden="true">{icon}</div>)}
+</div>

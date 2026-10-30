@@ -1,0 +1,34 @@
+---
+// One dialog per book, rendered at build time and opened with showModal() by the
+// `bookshelf` Alpine component: that buys the focus trap, the ::backdrop,
+// Escape-to-close and focus returning to the spine.
+import { type CollectionEntry, render } from "astro:content";
+import { formatRead } from "../utils/books.ts";
+import External from "./icons/External.astro";
+
+const { book } = Astro.props as { book: CollectionEntry<"books"> };
+const { Content } = await render(book);
+const { title, author, language, read, url } = book.data;
+---
+
+<dialog class="book-dialog" data-book={book.id} @click="$event.target === $el && $el.close()">
+	<button class="book-dialog__close" type="button" aria-label="Chiudi" @click="$el.closest('dialog').close()">
+		✕
+	</button>
+	<h2>{title}</h2>
+	<p class="book-dialog__meta">
+		<span>{author}</span>
+		<span>{language.toUpperCase()}</span>
+		{read && <span>Letto: {formatRead(read)}</span>}
+	</p>
+	{
+		url && (
+			<a class="book-dialog__link" href={url} target="_blank" rel="noopener">
+				Scheda del libro
+				<External />
+			</a>
+		)
+	}
+	<hr />
+	<div><Content /></div>
+</dialog>

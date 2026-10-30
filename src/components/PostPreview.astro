@@ -1,0 +1,36 @@
+---
+import { longDate } from "../helpers.ts";
+import { PINNED_POST_DESCRIPTION } from "../utils/config.ts";
+import type { Post } from "../utils/posts.ts";
+
+interface Props {
+	post: Post;
+	style?: string;
+}
+
+const { post, style } = Astro.props;
+const href = `/post/${post.slug}`;
+---
+
+<li class:list={["post-preview", { pinned: post.pinned }]} style={style}>
+	{post.pinned && <span class="badge" title={PINNED_POST_DESCRIPTION}>in evidenza</span>}
+	<time>
+		<span>{longDate(post.date)}</span>
+	</time>
+	<div>
+		<a href={href}>
+			<h2 style={`view-transition-name:post-title-${post.slug};`}>{post.title}</h2>
+		</a>
+		<div>
+			{post.tags.map((tag) => <a href={`/tags/${tag}`}>{tag}</a>)}
+		</div>
+		<p>{post.summary || ""}</p>
+		<a href={href}>
+			Continua a leggere ({post.readingTime}) minuti
+			<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M5 12h14"></path>
+				<path d="M12 5l7 7-7 7"></path>
+			</svg>
+		</a>
+	</div>
+</li>

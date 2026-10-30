@@ -1,5 +1,5 @@
 # Font families self-hosted under public/fonts/, downloaded from Bunny Fonts
-# with `go run ./cmd/blog fonts download` (CI runs it only when files are
+# with `bun run fonts:download` (CI runs it only when files are
 # missing). Keep `- name: "…"` on one line: the deploy workflow greps it.
 families:
   - name: "Lexend"

@@ -1,0 +1,21 @@
+---
+import { getEntry, render } from "astro:content";
+import HalloweenSection from "../../components/HalloweenSection.astro";
+import Tip from "../../components/Tip.astro";
+import Base from "../../layouts/Base.astro";
+
+const entry = await getEntry("pages", "halloween");
+const { Content } = await render(entry!);
+---
+
+<Base>
+	<article class="content halloween-page">
+		<h1>{entry!.data.title}</h1>
+		<div><Content /></div>
+
+		{(entry!.data.sections ?? []).map((section) => <HalloweenSection section={section} />)}
+
+		<hr />
+	</article>
+	<Tip />
+</Base>
