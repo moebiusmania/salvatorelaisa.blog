@@ -1,6 +1,7 @@
 import { unified } from "@astrojs/markdown-remark";
 import { defineConfig } from "astro/config";
 
+import blocks from "./src/markdown/blocks.ts";
 import firstImage from "./src/markdown/first-image.ts";
 import headingIds from "./src/markdown/heading-ids.ts";
 import strikethrough from "./src/markdown/strikethrough.ts";
@@ -23,7 +24,7 @@ export default defineConfig({
 		syntaxHighlight: false,
 		processor: unified({
 			smartypants: false,
-			remarkPlugins: [timeline, firstImage, headingIds, strikethrough],
+			remarkPlugins: [blocks, timeline, firstImage, headingIds, strikethrough],
 		}),
 	},
 });

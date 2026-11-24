@@ -23,6 +23,10 @@
 @import "../components/Search.css";
 @import "../components/Sharing.css";
 @import "../components/Tip.css";
+@import "../components/content/AboutHero.css";
+@import "../components/content/AboutMilestone.css";
+@import "../components/content/AboutTimeline.css";
+@import "../components/content/Callout.css";
 @import "../components/content/Timeline.css";
 @import "../components/now/Event.css";
 @import "../components/now/Github.css";
