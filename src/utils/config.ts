@@ -11,7 +11,7 @@ export const SITE_DESCRIPTION = "Blog personale.";
 // Widened to `SeasonTheme` on purpose: with a plain annotation TypeScript keeps
 // the literal type, and every `CURRENT_THEME === "..."` check below fails as a
 // comparison between non-overlapping types.
-export const CURRENT_THEME = "default" as SeasonTheme;
+export const CURRENT_THEME = "xmas" as SeasonTheme;
 export const EVENTS = {
 	xmas: {
 		name: "🎁",
