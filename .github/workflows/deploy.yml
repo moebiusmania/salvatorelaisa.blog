@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: 💻 Use Bun
         uses: oven-sh/setup-bun@v2
@@ -62,6 +62,18 @@ jobs:
         with:
           path: _site
 
+  # A separate job, as in GitHub's Pages starter: deploy-pages looks the artifact
+  # up through the API, which may not list it yet right after an upload in the
+  # same job. A failed deploy can also be re-run alone, without uploading a
+  # second "github-pages" artifact to the same run (which deploy-pages rejects).
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.gh-pages.outputs.page_url }}
+
+    steps:
       - name: 🏁 Deploy to GitHub Pages
         id: gh-pages
         uses: actions/deploy-pages@v5
