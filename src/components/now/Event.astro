@@ -1,4 +1,5 @@
 ---
+// No upcoming event for now: uncomment the markup below to show NOW_EVENT again.
 import { NOW_EVENT } from "../../utils/now.ts";
 import External from "../icons/External.astro";
 
@@ -7,6 +8,7 @@ const { className } = Astro.props as { className?: string };
 
 <article class:list={["now-card now-event", className]}>
 	<p class="now-card-kicker">Prossimo evento</p>
+	{/*
 	<h2>
 		<a href={NOW_EVENT.url} target="_blank" rel="noopener">
 			{NOW_EVENT.name}
@@ -20,4 +22,5 @@ const { className } = Astro.props as { className?: string };
 			</p>
 		)
 	}
+	*/}
 </article>
